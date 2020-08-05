@@ -1,5 +1,3 @@
-$start_time = Get-Date
-
 #Remove old package
 if (Test-Path $env:ProgramData\PS7x64) {
     Remove-Item $env:ProgramData\PS7x64 -Recurse -Force
@@ -41,6 +39,7 @@ function Invoke-Unzip {
         [string]$outpath
     )
 
+    $ErrorActionPreference = Silentlycontinue
     if (Get-Command expand-archive) {
         $ErrorActionPreference = 'SilentlyContinue'
         Expand-Archive -Path $zipfile -DestinationPath $outpath
@@ -77,7 +76,3 @@ Write-Host " "
 Write-Host "Pin pwsh.exe.lnk to the Taskbar." -ForegroundColor Green
 Write-Host " "
 Write-Host " "
-
-
-Write-Host "Time to Complete: $((Get-Date).Subtract($start_time).Seconds) second(s)" -ForegroundColor Green
-#
