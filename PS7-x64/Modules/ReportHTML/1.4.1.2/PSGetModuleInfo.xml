@@ -1,0 +1,222 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">ReportHTML</S>
+      <Version N="Version">1.4.1.2</Version>
+      <S N="Type">Module</S>
+      <S N="Description">A powerful module for creating HTML reports within PowerShell no HTML coding required.  For more details on what is possible, you can view the help file https://azurefieldnotesblog.blob.core.windows.net/wp-content/2017/06/Help-ReportHTML2.html _x000D__x000A__x000D__x000A_There is a multi-part blog series.  (which is a little out of date but still relevant) http://www.azurefieldnotes.com/2016/08/04/powershellhtmlreportingpart1</S>
+      <S N="Author">Matthew Quickenden</S>
+      <S N="CompanyName">MattQuickenden</S>
+      <S N="Copyright">(c) 2017. All rights reserved.</S>
+      <DT N="PublishedDate">2019-01-03T20:38:57-06:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2020-04-20T16:08:12.0616681-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://github.com/azurefieldnotes/ReportHTML/</URI>
+      <URI N="IconUri">https://azurefieldnotesblog.blob.core.windows.net/wp-content/2016/08/HTMLReport-600x239.jpg</URI>
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+          <S>HTML</S>
+          <S>Reporting</S>
+          <S>Charts</S>
+          <S>AzureAutomation</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>New-HTMLReportOptions</S>
+                <S>Get-HTMLLogos</S>
+                <S>Get-HTMLCSS</S>
+                <S>Get-HTMLJavaScripts</S>
+                <S>Get-HTMLColorSchemes</S>
+                <S>Connect-HTMLToAzure</S>
+                <S>Get-Functions</S>
+                <S>Get-Parameters</S>
+                <S>grc</S>
+                <S>GenerateRandomColorScheme</S>
+                <S>Get-HTMLOpenPage</S>
+                <S>Get-HTMLClosePage</S>
+                <S>Get-HTMLContentOpen</S>
+                <S>Get-HTMLContentClose</S>
+                <S>Get-HTMLContentTable</S>
+                <S>Get-HTMLContentTableAdvanced</S>
+                <S>Get-HTMLContentDataTable</S>
+                <S>Get-HTMLContentText</S>
+                <S>Set-TableRowColor</S>
+                <S>Get-HTMLColumn1of2</S>
+                <S>Get-HTMLColumn2of2</S>
+                <S>Get-HTMLColumnClose</S>
+                <S>Get-HTMLColumnOpen</S>
+                <S>Get-HTMLAnchorLink</S>
+                <S>Get-HTMLAnchor</S>
+                <S>Get-HTMLTabHeader</S>
+                <S>Get-HTMLTabContentOpen</S>
+                <S>Get-HTMLTabContentClose</S>
+                <S>Get-HTMLCodeBlock</S>
+                <S>Get-HTMLSpan</S>
+                <S>Get-HTMLPowerShellSyntax</S>
+                <S>Get-HTMLHeading</S>
+                <S>Get-HTMLBarChartObject</S>
+                <S>Get-HTMLBarChart</S>
+                <S>Get-HTMLPieChartObject</S>
+                <S>Get-HTMLPieChart</S>
+                <S>Get-HTMLStackedChartObject</S>
+                <S>Get-HTMLStackedChart</S>
+                <S>Save-HTMLReport</S>
+                <S>Save-HTMLToBlobStorage</S>
+                <S>Send-HTMLReport</S>
+                <S>Get-HTMLReportHelp</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>New-HTMLReportOptions</S>
+                <S>Get-HTMLLogos</S>
+                <S>Get-HTMLCSS</S>
+                <S>Get-HTMLJavaScripts</S>
+                <S>Get-HTMLColorSchemes</S>
+                <S>Connect-HTMLToAzure</S>
+                <S>Get-Functions</S>
+                <S>Get-Parameters</S>
+                <S>grc</S>
+                <S>GenerateRandomColorScheme</S>
+                <S>Get-HTMLOpenPage</S>
+                <S>Get-HTMLClosePage</S>
+                <S>Get-HTMLContentOpen</S>
+                <S>Get-HTMLContentClose</S>
+                <S>Get-HTMLContentTable</S>
+                <S>Get-HTMLContentTableAdvanced</S>
+                <S>Get-HTMLContentDataTable</S>
+                <S>Get-HTMLContentText</S>
+                <S>Set-TableRowColor</S>
+                <S>Get-HTMLColumn1of2</S>
+                <S>Get-HTMLColumn2of2</S>
+                <S>Get-HTMLColumnClose</S>
+                <S>Get-HTMLColumnOpen</S>
+                <S>Get-HTMLAnchorLink</S>
+                <S>Get-HTMLAnchor</S>
+                <S>Get-HTMLTabHeader</S>
+                <S>Get-HTMLTabContentOpen</S>
+                <S>Get-HTMLTabContentClose</S>
+                <S>Get-HTMLCodeBlock</S>
+                <S>Get-HTMLSpan</S>
+                <S>Get-HTMLPowerShellSyntax</S>
+                <S>Get-HTMLHeading</S>
+                <S>Get-HTMLBarChartObject</S>
+                <S>Get-HTMLBarChart</S>
+                <S>Get-HTMLPieChartObject</S>
+                <S>Get-HTMLPieChart</S>
+                <S>Get-HTMLStackedChartObject</S>
+                <S>Get-HTMLStackedChart</S>
+                <S>Save-HTMLReport</S>
+                <S>Save-HTMLToBlobStorage</S>
+                <S>Send-HTMLReport</S>
+                <S>Get-HTMLReportHelp</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">Added Change log to Help File</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2017. All rights reserved.</S>
+          <S N="description">A powerful module for creating HTML reports within PowerShell no HTML coding required.  For more details on what is possible, you can view the help file https://azurefieldnotesblog.blob.core.windows.net/wp-content/2017/06/Help-ReportHTML2.html _x000D__x000A__x000D__x000A_There is a multi-part blog series.  (which is a little out of date but still relevant) http://www.azurefieldnotes.com/2016/08/04/powershellhtmlreportingpart1</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">Added Change log to Help File</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">14990</S>
+          <S N="downloadCount">23480</S>
+          <S N="packageSize">1808288</S>
+          <S N="published">1/3/2019 8:38:57 PM -06:00</S>
+          <S N="created">1/3/2019 8:38:57 PM -06:00</S>
+          <S N="lastUpdated">4/20/2020 8:15:15 PM -05:00</S>
+          <S N="tags">PSModule HTML Reporting Charts AzureAutomation PSFunction_New-HTMLReportOptions PSCommand_New-HTMLReportOptions PSFunction_Get-HTMLLogos PSCommand_Get-HTMLLogos PSFunction_Get-HTMLCSS PSCommand_Get-HTMLCSS PSFunction_Get-HTMLJavaScripts PSCommand_Get-HTMLJavaScripts PSFunction_Get-HTMLColorSchemes PSCommand_Get-HTMLColorSchemes PSFunction_Connect-HTMLToAzure PSCommand_Connect-HTMLToAzure PSFunction_Get-Functions PSCommand_Get-Functions PSFunction_Get-Parameters PSCommand_Get-Parameters PSFunction_grc PSCommand_grc PSFunction_GenerateRandomColorScheme PSCommand_GenerateRandomColorScheme PSFunction_Get-HTMLOpenPage PSCommand_Get-HTMLOpenPage PSFunction_Get-HTMLClosePage PSCommand_Get-HTMLClosePage PSFunction_Get-HTMLContentOpen PSCommand_Get-HTMLContentOpen PSFunction_Get-HTMLContentClose PSCommand_Get-HTMLContentClose PSFunction_Get-HTMLContentTable PSCommand_Get-HTMLContentTable PSFunction_Get-HTMLContentTableAdvanced PSCommand_Get-HTMLContentTableAdvanced PSFunction_Get-HTMLContentDataTable PSCommand_Get-HTMLContentDataTable PSFunction_Get-HTMLContentText PSCommand_Get-HTMLContentText PSFunction_Set-TableRowColor PSCommand_Set-TableRowColor PSFunction_Get-HTMLColumn1of2 PSCommand_Get-HTMLColumn1of2 PSFunction_Get-HTMLColumn2of2 PSCommand_Get-HTMLColumn2of2 PSFunction_Get-HTMLColumnClose PSCommand_Get-HTMLColumnClose PSFunction_Get-HTMLColumnOpen PSCommand_Get-HTMLColumnOpen PSFunction_Get-HTMLAnchorLink PSCommand_Get-HTMLAnchorLink PSFunction_Get-HTMLAnchor PSCommand_Get-HTMLAnchor PSFunction_Get-HTMLTabHeader PSCommand_Get-HTMLTabHeader PSFunction_Get-HTMLTabContentOpen PSCommand_Get-HTMLTabContentOpen PSFunction_Get-HTMLTabContentClose PSCommand_Get-HTMLTabContentClose PSFunction_Get-HTMLCodeBlock PSCommand_Get-HTMLCodeBlock PSFunction_Get-HTMLSpan PSCommand_Get-HTMLSpan PSFunction_Get-HTMLPowerShellSyntax PSCommand_Get-HTMLPowerShellSyntax PSFunction_Get-HTMLHeading PSCommand_Get-HTMLHeading PSFunction_Get-HTMLBarChartObject PSCommand_Get-HTMLBarChartObject PSFunction_Get-HTMLBarChart PSCommand_Get-HTMLBarChart PSFunction_Get-HTMLPieChartObject PSCommand_Get-HTMLPieChartObject PSFunction_Get-HTMLPieChart PSCommand_Get-HTMLPieChart PSFunction_Get-HTMLStackedChartObject PSCommand_Get-HTMLStackedChartObject PSFunction_Get-HTMLStackedChart PSCommand_Get-HTMLStackedChart PSFunction_Save-HTMLReport PSCommand_Save-HTMLReport PSFunction_Save-HTMLToBlobStorage PSCommand_Save-HTMLToBlobStorage PSFunction_Send-HTMLReport PSCommand_Send-HTMLReport PSFunction_Get-HTMLReportHelp PSCommand_Get-HTMLReportHelp PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2020-04-20T20:15:15Z</S>
+          <S N="NormalizedVersion">1.4.1.2</S>
+          <S N="Authors">Matthew Quickenden</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">ReportHTML.nuspec|Alternate.jpg|Blank.jpg|Chart.js|ColorScheme1.rcs|ColorScheme2.rcs|ColorScheme3.rcs|ColorScheme4.rcs|Corporate.jpg|default.css|Help-ReportHTML.html|HideSection.js|jquery-1.12.4.js|jquery.dataTables.min.css|jquery.dataTables.min.js|PowerShell.jpg|ReportHTML.psd1|ReportHTML.psm1|ReportHTMLHelp.psm1|sample.css|Sample.jpg|Sortable.js|Tabs.js</S>
+          <S N="GUID">13c25942-f436-44e1-b236-66e3ae11a8a0</S>
+          <S N="PowerShellVersion">2.0</S>
+          <S N="DotNetFrameworkVersion">2.0</S>
+          <S N="CLRVersion">2.0.50727</S>
+          <S N="CompanyName">Avanade</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\admin-taylor\Documents\PowerShell\Modules\ReportHTML\1.4.1.2</S>
+    </MS>
+  </Obj>
+</Objs>

@@ -1,0 +1,278 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.Monitor</S>
+      <Version N="Version">1.7.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell - Monitor service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core._x000D__x000A__x000D__x000A_For more information on Monitor, please visit the following: https://docs.microsoft.com/azure/monitoring-and-diagnostics/</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2020-04-21T10:27:43-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2020-04-28T10:43:45.7191927-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>Monitor</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-AzMetricDefinition</S>
+                <S>Get-AzMetric</S>
+                <S>Remove-AzLogProfile</S>
+                <S>Get-AzLogProfile</S>
+                <S>Add-AzLogProfile</S>
+                <S>Get-AzLog</S>
+                <S>Set-AzDiagnosticSetting</S>
+                <S>Get-AzDiagnosticSetting</S>
+                <S>Remove-AzDiagnosticSetting</S>
+                <S>New-AzAutoscaleNotification</S>
+                <S>New-AzAutoscaleProfile</S>
+                <S>New-AzAutoscaleRule</S>
+                <S>Add-AzAutoscaleSetting</S>
+                <S>Get-AzAutoscaleHistory</S>
+                <S>Get-AzAutoscaleSetting</S>
+                <S>New-AzAutoscaleWebhook</S>
+                <S>Remove-AzAutoscaleSetting</S>
+                <S>Add-AzMetricAlertRule</S>
+                <S>Add-AzWebtestAlertRule</S>
+                <S>Get-AzAlertHistory</S>
+                <S>Get-AzAlertRule</S>
+                <S>New-AzAlertRuleEmail</S>
+                <S>New-AzAlertRuleWebhook</S>
+                <S>Remove-AzAlertRule</S>
+                <S>Set-AzActivityLogAlert</S>
+                <S>Get-AzActivityLogAlert</S>
+                <S>New-AzActionGroup</S>
+                <S>New-AzActivityLogAlertCondition</S>
+                <S>Enable-AzActivityLogAlert</S>
+                <S>Disable-AzActivityLogAlert</S>
+                <S>Remove-AzActivityLogAlert</S>
+                <S>New-AzActionGroupReceiver</S>
+                <S>Set-AzActionGroup</S>
+                <S>Get-AzActionGroup</S>
+                <S>Remove-AzActionGroup</S>
+                <S>New-AzMetricFilter</S>
+                <S>Add-AzMetricAlertRuleV2</S>
+                <S>Get-AzMetricAlertRuleV2</S>
+                <S>New-AzMetricAlertRuleV2DimensionSelection</S>
+                <S>New-AzMetricAlertRuleV2Criteria</S>
+                <S>Remove-AzMetricAlertRuleV2</S>
+                <S>New-AzScheduledQueryRuleSource</S>
+                <S>New-AzScheduledQueryRuleSchedule</S>
+                <S>New-AzScheduledQueryRuleTriggerCondition</S>
+                <S>New-AzScheduledQueryRuleLogMetricTrigger</S>
+                <S>New-AzScheduledQueryRuleAznsActionGroup</S>
+                <S>New-AzScheduledQueryRuleAlertingAction</S>
+                <S>New-AzScheduledQueryRule</S>
+                <S>Get-AzScheduledQueryRule</S>
+                <S>Set-AzScheduledQueryRule</S>
+                <S>Update-AzScheduledQueryRule</S>
+                <S>Remove-AzScheduledQueryRule</S>
+                <S>New-AzInsightsPrivateLinkScope</S>
+                <S>Get-AzInsightsPrivateLinkScope</S>
+                <S>Update-AzInsightsPrivateLinkScope</S>
+                <S>Remove-AzInsightsPrivateLinkScope</S>
+                <S>New-AzInsightsPrivateLinkScopedResource</S>
+                <S>Get-AzInsightsPrivateLinkScopedResource</S>
+                <S>Remove-AzInsightsPrivateLinkScopedResource</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-AzMetricDefinition</S>
+                <S>Get-AzMetric</S>
+                <S>Remove-AzLogProfile</S>
+                <S>Get-AzLogProfile</S>
+                <S>Add-AzLogProfile</S>
+                <S>Get-AzLog</S>
+                <S>Set-AzDiagnosticSetting</S>
+                <S>Get-AzDiagnosticSetting</S>
+                <S>Remove-AzDiagnosticSetting</S>
+                <S>New-AzAutoscaleNotification</S>
+                <S>New-AzAutoscaleProfile</S>
+                <S>New-AzAutoscaleRule</S>
+                <S>Add-AzAutoscaleSetting</S>
+                <S>Get-AzAutoscaleHistory</S>
+                <S>Get-AzAutoscaleSetting</S>
+                <S>New-AzAutoscaleWebhook</S>
+                <S>Remove-AzAutoscaleSetting</S>
+                <S>Add-AzMetricAlertRule</S>
+                <S>Add-AzWebtestAlertRule</S>
+                <S>Get-AzAlertHistory</S>
+                <S>Get-AzAlertRule</S>
+                <S>New-AzAlertRuleEmail</S>
+                <S>New-AzAlertRuleWebhook</S>
+                <S>Remove-AzAlertRule</S>
+                <S>Set-AzActivityLogAlert</S>
+                <S>Get-AzActivityLogAlert</S>
+                <S>New-AzActionGroup</S>
+                <S>New-AzActivityLogAlertCondition</S>
+                <S>Enable-AzActivityLogAlert</S>
+                <S>Disable-AzActivityLogAlert</S>
+                <S>Remove-AzActivityLogAlert</S>
+                <S>New-AzActionGroupReceiver</S>
+                <S>Set-AzActionGroup</S>
+                <S>Get-AzActionGroup</S>
+                <S>Remove-AzActionGroup</S>
+                <S>New-AzMetricFilter</S>
+                <S>Add-AzMetricAlertRuleV2</S>
+                <S>Get-AzMetricAlertRuleV2</S>
+                <S>New-AzMetricAlertRuleV2DimensionSelection</S>
+                <S>New-AzMetricAlertRuleV2Criteria</S>
+                <S>Remove-AzMetricAlertRuleV2</S>
+                <S>New-AzScheduledQueryRuleSource</S>
+                <S>New-AzScheduledQueryRuleSchedule</S>
+                <S>New-AzScheduledQueryRuleTriggerCondition</S>
+                <S>New-AzScheduledQueryRuleLogMetricTrigger</S>
+                <S>New-AzScheduledQueryRuleAznsActionGroup</S>
+                <S>New-AzScheduledQueryRuleAlertingAction</S>
+                <S>New-AzScheduledQueryRule</S>
+                <S>Get-AzScheduledQueryRule</S>
+                <S>Set-AzScheduledQueryRule</S>
+                <S>Update-AzScheduledQueryRule</S>
+                <S>Remove-AzScheduledQueryRule</S>
+                <S>New-AzInsightsPrivateLinkScope</S>
+                <S>Get-AzInsightsPrivateLinkScope</S>
+                <S>Update-AzInsightsPrivateLinkScope</S>
+                <S>Remove-AzInsightsPrivateLinkScope</S>
+                <S>New-AzInsightsPrivateLinkScopedResource</S>
+                <S>Get-AzInsightsPrivateLinkScopedResource</S>
+                <S>Remove-AzInsightsPrivateLinkScopedResource</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Added cmdlets for private link scope_x000D__x000A_    - 'Get-AzInsightsPrivateLinkScope'_x000D__x000A_    - 'Remove-AzInsightsPrivateLinkScope'_x000D__x000A_    - 'New-AzInsightsPrivateLinkScope'_x000D__x000A_    - 'Update-AzInsightsPrivateLinkScope'_x000D__x000A_    - 'Get-AzInsightsPrivateLinkScopedResource'_x000D__x000A_    - 'New-AzInsightsPrivateLinkScopedResource'_x000D__x000A_    - 'Remove-AzInsightsPrivateLinkScopedResource'</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">1.7.5</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/1.7.5</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell - Monitor service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core._x000D__x000A__x000D__x000A_For more information on Monitor, please visit the following: https://docs.microsoft.com/azure/monitoring-and-diagnostics/</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Added cmdlets for private link scope_x000D__x000A_    - 'Get-AzInsightsPrivateLinkScope'_x000D__x000A_    - 'Remove-AzInsightsPrivateLinkScope'_x000D__x000A_    - 'New-AzInsightsPrivateLinkScope'_x000D__x000A_    - 'Update-AzInsightsPrivateLinkScope'_x000D__x000A_    - 'Get-AzInsightsPrivateLinkScopedResource'_x000D__x000A_    - 'New-AzInsightsPrivateLinkScopedResource'_x000D__x000A_    - 'Remove-AzInsightsPrivateLinkScopedResource'</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">False</S>
+          <S N="versionDownloadCount">99263</S>
+          <S N="downloadCount">5171650</S>
+          <S N="packageSize">515573</S>
+          <S N="published">4/21/2020 10:27:43 AM -05:00</S>
+          <S N="created">4/21/2020 10:27:43 AM -05:00</S>
+          <S N="lastUpdated">4/28/2020 3:41:36 PM -05:00</S>
+          <S N="tags">Azure ResourceManager ARM Monitor PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_Get-AzMetricDefinition PSCommand_Get-AzMetricDefinition PSCmdlet_Get-AzMetric PSCommand_Get-AzMetric PSCmdlet_Remove-AzLogProfile PSCommand_Remove-AzLogProfile PSCmdlet_Get-AzLogProfile PSCommand_Get-AzLogProfile PSCmdlet_Add-AzLogProfile PSCommand_Add-AzLogProfile PSCmdlet_Get-AzLog PSCommand_Get-AzLog PSCmdlet_Set-AzDiagnosticSetting PSCommand_Set-AzDiagnosticSetting PSCmdlet_Get-AzDiagnosticSetting PSCommand_Get-AzDiagnosticSetting PSCmdlet_Remove-AzDiagnosticSetting PSCommand_Remove-AzDiagnosticSetting PSCmdlet_New-AzAutoscaleNotification PSCommand_New-AzAutoscaleNotification PSCmdlet_New-AzAutoscaleProfile PSCommand_New-AzAutoscaleProfile PSCmdlet_New-AzAutoscaleRule PSCommand_New-AzAutoscaleRule PSCmdlet_Add-AzAutoscaleSetting PSCommand_Add-AzAutoscaleSetting PSCmdlet_Get-AzAutoscaleHistory PSCommand_Get-AzAutoscaleHistory PSCmdlet_Get-AzAutoscaleSetting PSCommand_Get-AzAutoscaleSetting PSCmdlet_New-AzAutoscaleWebhook PSCommand_New-AzAutoscaleWebhook PSCmdlet_Remove-AzAutoscaleSetting PSCommand_Remove-AzAutoscaleSetting PSCmdlet_Add-AzMetricAlertRule PSCommand_Add-AzMetricAlertRule PSCmdlet_Add-AzWebtestAlertRule PSCommand_Add-AzWebtestAlertRule PSCmdlet_Get-AzAlertHistory PSCommand_Get-AzAlertHistory PSCmdlet_Get-AzAlertRule PSCommand_Get-AzAlertRule PSCmdlet_New-AzAlertRuleEmail PSCommand_New-AzAlertRuleEmail PSCmdlet_New-AzAlertRuleWebhook PSCommand_New-AzAlertRuleWebhook PSCmdlet_Remove-AzAlertRule PSCommand_Remove-AzAlertRule PSCmdlet_Set-AzActivityLogAlert PSCommand_Set-AzActivityLogAlert PSCmdlet_Get-AzActivityLogAlert PSCommand_Get-AzActivityLogAlert PSCmdlet_New-AzActionGroup PSCommand_New-AzActionGroup PSCmdlet_New-AzActivityLogAlertCondition PSCommand_New-AzActivityLogAlertCondition PSCmdlet_Enable-AzActivityLogAlert PSCommand_Enable-AzActivityLogAlert PSCmdlet_Disable-AzActivityLogAlert PSCommand_Disable-AzActivityLogAlert PSCmdlet_Remove-AzActivityLogAlert PSCommand_Remove-AzActivityLogAlert PSCmdlet_New-AzActionGroupReceiver PSCommand_New-AzActionGroupReceiver PSCmdlet_Set-AzActionGroup PSCommand_Set-AzActionGroup PSCmdlet_Get-AzActionGroup PSCommand_Get-AzActionGroup PSCmdlet_Remove-AzActionGroup PSCommand_Remove-AzActionGroup PSCmdlet_New-AzMetricFilter PSCommand_New-AzMetricFilter PSCmdlet_Add-AzMetricAlertRuleV2 PSCommand_Add-AzMetricAlertRuleV2 PSCmdlet_Get-AzMetricAlertRuleV2 PSCommand_Get-AzMetricAlertRuleV2 PSCmdlet_New-AzMetricAlertRuleV2DimensionSelection PSCommand_New-AzMetricAlertRuleV2DimensionSelection PSCmdlet_New-AzMetricAlertRuleV2Criteria PSCommand_New-AzMetricAlertRuleV2Criteria PSCmdlet_Remove-AzMetricAlertRuleV2 PSCommand_Remove-AzMetricAlertRuleV2 PSCmdlet_New-AzScheduledQueryRuleSource PSCommand_New-AzScheduledQueryRuleSource PSCmdlet_New-AzScheduledQueryRuleSchedule PSCommand_New-AzScheduledQueryRuleSchedule PSCmdlet_New-AzScheduledQueryRuleTriggerCondition PSCommand_New-AzScheduledQueryRuleTriggerCondition PSCmdlet_New-AzScheduledQueryRuleLogMetricTrigger PSCommand_New-AzScheduledQueryRuleLogMetricTrigger PSCmdlet_New-AzScheduledQueryRuleAznsActionGroup PSCommand_New-AzScheduledQueryRuleAznsActionGroup PSCmdlet_New-AzScheduledQueryRuleAlertingAction PSCommand_New-AzScheduledQueryRuleAlertingAction PSCmdlet_New-AzScheduledQueryRule PSCommand_New-AzScheduledQueryRule PSCmdlet_Get-AzScheduledQueryRule PSCommand_Get-AzScheduledQueryRule PSCmdlet_Set-AzScheduledQueryRule PSCommand_Set-AzScheduledQueryRule PSCmdlet_Update-AzScheduledQueryRule PSCommand_Update-AzScheduledQueryRule PSCmdlet_Remove-AzScheduledQueryRule PSCommand_Remove-AzScheduledQueryRule PSCmdlet_New-AzInsightsPrivateLinkScope PSCommand_New-AzInsightsPrivateLinkScope PSCmdlet_Get-AzInsightsPrivateLinkScope PSCommand_Get-AzInsightsPrivateLinkScope PSCmdlet_Update-AzInsightsPrivateLinkScope PSCommand_Update-AzInsightsPrivateLinkScope PSCmdlet_Remove-AzInsightsPrivateLinkScope PSCommand_Remove-AzInsightsPrivateLinkScope PSCmdlet_New-AzInsightsPrivateLinkScopedResource PSCommand_New-AzInsightsPrivateLinkScopedResource PSCmdlet_Get-AzInsightsPrivateLinkScopedResource PSCommand_Get-AzInsightsPrivateLinkScopedResource PSCmdlet_Remove-AzInsightsPrivateLinkScopedResource PSCommand_Remove-AzInsightsPrivateLinkScopedResource PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2020-04-28T15:41:36Z</S>
+          <S N="NormalizedVersion">1.7.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.Monitor.nuspec|AutoMapper.dll|Az.Monitor.psd1|Az.Monitor.psm1|Microsoft.Azure.Management.Monitor.dll|Microsoft.Azure.PowerShell.Cmdlets.Monitor.deps.json|Microsoft.Azure.PowerShell.Cmdlets.Monitor.dll|Microsoft.Azure.PowerShell.Cmdlets.Monitor.dll-Help.xml|Monitor.format.ps1xml</S>
+          <S N="GUID">bc723b54-a697-44a2-9c48-d5749b138d1a</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\admin-taylor\Documents\PowerShell\Modules\Az.Monitor\1.7.0</S>
+    </MS>
+  </Obj>
+</Objs>

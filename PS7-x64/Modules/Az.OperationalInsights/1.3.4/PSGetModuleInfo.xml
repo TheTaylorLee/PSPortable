@@ -1,0 +1,242 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.OperationalInsights</S>
+      <Version N="Version">1.3.4</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell - Operational Insights service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core.</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2019-12-17T02:30:54-06:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2020-04-28T10:43:49.0789901-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>OperationalInsights</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>New-AzOperationalInsightsAzureActivityLogDataSource</S>
+                <S>New-AzOperationalInsightsCustomLogDataSource</S>
+                <S>Disable-AzOperationalInsightsLinuxCustomLogCollection</S>
+                <S>Disable-AzOperationalInsightsIISLogCollection</S>
+                <S>Enable-AzOperationalInsightsLinuxCustomLogCollection</S>
+                <S>Enable-AzOperationalInsightsIISLogCollection</S>
+                <S>Enable-AzOperationalInsightsLinuxSyslogCollection</S>
+                <S>Enable-AzOperationalInsightsLinuxPerformanceCollection</S>
+                <S>Disable-AzOperationalInsightsLinuxPerformanceCollection</S>
+                <S>New-AzOperationalInsightsWindowsPerformanceCounterDataSource</S>
+                <S>New-AzOperationalInsightsLinuxPerformanceObjectDataSource</S>
+                <S>New-AzOperationalInsightsLinuxSyslogDataSource</S>
+                <S>New-AzOperationalInsightsApplicationInsightsDataSource</S>
+                <S>Disable-AzOperationalInsightsLinuxSyslogCollection</S>
+                <S>New-AzOperationalInsightsWindowsEventDataSource</S>
+                <S>Get-AzOperationalInsightsSavedSearch</S>
+                <S>Get-AzOperationalInsightsSavedSearchResult</S>
+                <S>Get-AzOperationalInsightsSchema</S>
+                <S>Get-AzOperationalInsightsSearchResult</S>
+                <S>New-AzOperationalInsightsComputerGroup</S>
+                <S>New-AzOperationalInsightsSavedSearch</S>
+                <S>Set-AzOperationalInsightsSavedSearch</S>
+                <S>Remove-AzOperationalInsightsSavedSearch</S>
+                <S>Get-AzOperationalInsightsDataSource</S>
+                <S>Remove-AzOperationalInsightsDataSource</S>
+                <S>Set-AzOperationalInsightsDataSource</S>
+                <S>Get-AzOperationalInsightsStorageInsight</S>
+                <S>Set-AzOperationalInsightsStorageInsight</S>
+                <S>New-AzOperationalInsightsStorageInsight</S>
+                <S>Remove-AzOperationalInsightsStorageInsight</S>
+                <S>Set-AzOperationalInsightsIntelligencePack</S>
+                <S>Get-AzOperationalInsightsIntelligencePack</S>
+                <S>Get-AzOperationalInsightsWorkspaceManagementGroup</S>
+                <S>Get-AzOperationalInsightsLinkTarget</S>
+                <S>Get-AzOperationalInsightsWorkspaceUsage</S>
+                <S>Get-AzOperationalInsightsWorkspaceSharedKey</S>
+                <S>Get-AzOperationalInsightsWorkspace</S>
+                <S>New-AzOperationalInsightsWorkspace</S>
+                <S>Remove-AzOperationalInsightsWorkspace</S>
+                <S>Set-AzOperationalInsightsWorkspace</S>
+                <S>Invoke-AzOperationalInsightsQuery</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>New-AzOperationalInsightsAzureActivityLogDataSource</S>
+                <S>New-AzOperationalInsightsCustomLogDataSource</S>
+                <S>Disable-AzOperationalInsightsLinuxCustomLogCollection</S>
+                <S>Disable-AzOperationalInsightsIISLogCollection</S>
+                <S>Enable-AzOperationalInsightsLinuxCustomLogCollection</S>
+                <S>Enable-AzOperationalInsightsIISLogCollection</S>
+                <S>Enable-AzOperationalInsightsLinuxSyslogCollection</S>
+                <S>Enable-AzOperationalInsightsLinuxPerformanceCollection</S>
+                <S>Disable-AzOperationalInsightsLinuxPerformanceCollection</S>
+                <S>New-AzOperationalInsightsWindowsPerformanceCounterDataSource</S>
+                <S>New-AzOperationalInsightsLinuxPerformanceObjectDataSource</S>
+                <S>New-AzOperationalInsightsLinuxSyslogDataSource</S>
+                <S>New-AzOperationalInsightsApplicationInsightsDataSource</S>
+                <S>Disable-AzOperationalInsightsLinuxSyslogCollection</S>
+                <S>New-AzOperationalInsightsWindowsEventDataSource</S>
+                <S>Get-AzOperationalInsightsSavedSearch</S>
+                <S>Get-AzOperationalInsightsSavedSearchResult</S>
+                <S>Get-AzOperationalInsightsSchema</S>
+                <S>Get-AzOperationalInsightsSearchResult</S>
+                <S>New-AzOperationalInsightsComputerGroup</S>
+                <S>New-AzOperationalInsightsSavedSearch</S>
+                <S>Set-AzOperationalInsightsSavedSearch</S>
+                <S>Remove-AzOperationalInsightsSavedSearch</S>
+                <S>Get-AzOperationalInsightsDataSource</S>
+                <S>Remove-AzOperationalInsightsDataSource</S>
+                <S>Set-AzOperationalInsightsDataSource</S>
+                <S>Get-AzOperationalInsightsStorageInsight</S>
+                <S>Set-AzOperationalInsightsStorageInsight</S>
+                <S>New-AzOperationalInsightsStorageInsight</S>
+                <S>Remove-AzOperationalInsightsStorageInsight</S>
+                <S>Set-AzOperationalInsightsIntelligencePack</S>
+                <S>Get-AzOperationalInsightsIntelligencePack</S>
+                <S>Get-AzOperationalInsightsWorkspaceManagementGroup</S>
+                <S>Get-AzOperationalInsightsLinkTarget</S>
+                <S>Get-AzOperationalInsightsWorkspaceUsage</S>
+                <S>Get-AzOperationalInsightsWorkspaceSharedKey</S>
+                <S>Get-AzOperationalInsightsWorkspace</S>
+                <S>New-AzOperationalInsightsWorkspace</S>
+                <S>Remove-AzOperationalInsightsWorkspace</S>
+                <S>Set-AzOperationalInsightsWorkspace</S>
+                <S>Invoke-AzOperationalInsightsQuery</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Update references in .psd1 to use relative path</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">1.6.5</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/1.6.5</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell - Operational Insights service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core.</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Update references in .psd1 to use relative path</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">1927656</S>
+          <S N="downloadCount">5194660</S>
+          <S N="packageSize">200447</S>
+          <S N="published">12/17/2019 2:30:54 AM -06:00</S>
+          <S N="created">12/17/2019 2:30:54 AM -06:00</S>
+          <S N="lastUpdated">4/28/2020 3:41:36 PM -05:00</S>
+          <S N="tags">Azure ResourceManager ARM OperationalInsights PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_New-AzOperationalInsightsAzureActivityLogDataSource PSCommand_New-AzOperationalInsightsAzureActivityLogDataSource PSCmdlet_New-AzOperationalInsightsCustomLogDataSource PSCommand_New-AzOperationalInsightsCustomLogDataSource PSCmdlet_Disable-AzOperationalInsightsLinuxCustomLogCollection PSCommand_Disable-AzOperationalInsightsLinuxCustomLogCollection PSCmdlet_Disable-AzOperationalInsightsIISLogCollection PSCommand_Disable-AzOperationalInsightsIISLogCollection PSCmdlet_Enable-AzOperationalInsightsLinuxCustomLogCollection PSCommand_Enable-AzOperationalInsightsLinuxCustomLogCollection PSCmdlet_Enable-AzOperationalInsightsIISLogCollection PSCommand_Enable-AzOperationalInsightsIISLogCollection PSCmdlet_Enable-AzOperationalInsightsLinuxSyslogCollection PSCommand_Enable-AzOperationalInsightsLinuxSyslogCollection PSCmdlet_Enable-AzOperationalInsightsLinuxPerformanceCollection PSCommand_Enable-AzOperationalInsightsLinuxPerformanceCollection PSCmdlet_Disable-AzOperationalInsightsLinuxPerformanceCollection PSCommand_Disable-AzOperationalInsightsLinuxPerformanceCollection PSCmdlet_New-AzOperationalInsightsWindowsPerformanceCounterDataSource PSCommand_New-AzOperationalInsightsWindowsPerformanceCounterDataSource PSCmdlet_New-AzOperationalInsightsLinuxPerformanceObjectDataSource PSCommand_New-AzOperationalInsightsLinuxPerformanceObjectDataSource PSCmdlet_New-AzOperationalInsightsLinuxSyslogDataSource PSCommand_New-AzOperationalInsightsLinuxSyslogDataSource PSCmdlet_New-AzOperationalInsightsApplicationInsightsDataSource PSCommand_New-AzOperationalInsightsApplicationInsightsDataSource PSCmdlet_Disable-AzOperationalInsightsLinuxSyslogCollection PSCommand_Disable-AzOperationalInsightsLinuxSyslogCollection PSCmdlet_New-AzOperationalInsightsWindowsEventDataSource PSCommand_New-AzOperationalInsightsWindowsEventDataSource PSCmdlet_Get-AzOperationalInsightsSavedSearch PSCommand_Get-AzOperationalInsightsSavedSearch PSCmdlet_Get-AzOperationalInsightsSavedSearchResult PSCommand_Get-AzOperationalInsightsSavedSearchResult PSCmdlet_Get-AzOperationalInsightsSchema PSCommand_Get-AzOperationalInsightsSchema PSCmdlet_Get-AzOperationalInsightsSearchResult PSCommand_Get-AzOperationalInsightsSearchResult PSCmdlet_New-AzOperationalInsightsComputerGroup PSCommand_New-AzOperationalInsightsComputerGroup PSCmdlet_New-AzOperationalInsightsSavedSearch PSCommand_New-AzOperationalInsightsSavedSearch PSCmdlet_Set-AzOperationalInsightsSavedSearch PSCommand_Set-AzOperationalInsightsSavedSearch PSCmdlet_Remove-AzOperationalInsightsSavedSearch PSCommand_Remove-AzOperationalInsightsSavedSearch PSCmdlet_Get-AzOperationalInsightsDataSource PSCommand_Get-AzOperationalInsightsDataSource PSCmdlet_Remove-AzOperationalInsightsDataSource PSCommand_Remove-AzOperationalInsightsDataSource PSCmdlet_Set-AzOperationalInsightsDataSource PSCommand_Set-AzOperationalInsightsDataSource PSCmdlet_Get-AzOperationalInsightsStorageInsight PSCommand_Get-AzOperationalInsightsStorageInsight PSCmdlet_Set-AzOperationalInsightsStorageInsight PSCommand_Set-AzOperationalInsightsStorageInsight PSCmdlet_New-AzOperationalInsightsStorageInsight PSCommand_New-AzOperationalInsightsStorageInsight PSCmdlet_Remove-AzOperationalInsightsStorageInsight PSCommand_Remove-AzOperationalInsightsStorageInsight PSCmdlet_Set-AzOperationalInsightsIntelligencePack PSCommand_Set-AzOperationalInsightsIntelligencePack PSCmdlet_Get-AzOperationalInsightsIntelligencePack PSCommand_Get-AzOperationalInsightsIntelligencePack PSCmdlet_Get-AzOperationalInsightsWorkspaceManagementGroup PSCommand_Get-AzOperationalInsightsWorkspaceManagementGroup PSCmdlet_Get-AzOperationalInsightsLinkTarget PSCommand_Get-AzOperationalInsightsLinkTarget PSCmdlet_Get-AzOperationalInsightsWorkspaceUsage PSCommand_Get-AzOperationalInsightsWorkspaceUsage PSCmdlet_Get-AzOperationalInsightsWorkspaceSharedKey PSCommand_Get-AzOperationalInsightsWorkspaceSharedKey PSCmdlet_Get-AzOperationalInsightsWorkspace PSCommand_Get-AzOperationalInsightsWorkspace PSCmdlet_New-AzOperationalInsightsWorkspace PSCommand_New-AzOperationalInsightsWorkspace PSCmdlet_Remove-AzOperationalInsightsWorkspace PSCommand_Remove-AzOperationalInsightsWorkspace PSCmdlet_Set-AzOperationalInsightsWorkspace PSCommand_Set-AzOperationalInsightsWorkspace PSCmdlet_Invoke-AzOperationalInsightsQuery PSCommand_Invoke-AzOperationalInsightsQuery PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2020-04-28T15:41:36Z</S>
+          <S N="NormalizedVersion">1.3.4</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.OperationalInsights.nuspec|Az.OperationalInsights.psd1|Az.OperationalInsights.psm1|Microsoft.Azure.Management.OperationalInsights.dll|Microsoft.Azure.OperationalInsights.dll|Microsoft.Azure.PowerShell.Cmdlets.OperationalInsights.deps.json|Microsoft.Azure.PowerShell.Cmdlets.OperationalInsights.dll|Microsoft.Azure.PowerShell.Cmdlets.OperationalInsights.dll-Help.xml|OperationalInsights.format.ps1xml</S>
+          <S N="GUID">c0fd6ad6-f349-46a5-a57b-4e8aa07544a0</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\admin-taylor\Documents\PowerShell\Modules\Az.OperationalInsights\1.3.4</S>
+    </MS>
+  </Obj>
+</Objs>

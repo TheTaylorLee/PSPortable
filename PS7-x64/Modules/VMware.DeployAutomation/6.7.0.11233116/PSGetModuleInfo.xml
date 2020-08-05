@@ -1,0 +1,206 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.DeployAutomation</S>
+      <Version N="Version">6.7.0.11233116</Version>
+      <S N="Type">Module</S>
+      <S N="Description">This Windows PowerShell module contains PowerCLI Auto Deploy cmdlets.</S>
+      <S N="Author">"VMware"</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) VMware, Inc. All rights reserved.</S>
+      <DT N="PublishedDate">2018-12-18T08:51:41-06:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2020-01-25T23:47:57.2191491-06:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <Nil N="ProjectUri" />
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-DeployRule</S>
+                <S>Add-ProxyServer</S>
+                <S>Add-ScriptBundle</S>
+                <S>Copy-DeployRule</S>
+                <S>Export-AutoDeployState</S>
+                <S>Get-DeployOption</S>
+                <S>Get-DeployRule</S>
+                <S>Get-DeployRuleSet</S>
+                <S>Get-ProxyServer</S>
+                <S>Get-ScriptBundle</S>
+                <S>Get-VMHostAttributes</S>
+                <S>Get-VMHostImageProfile</S>
+                <S>Get-VMHostMatchingRules</S>
+                <S>Import-AutoDeployState</S>
+                <S>New-DeployRule</S>
+                <S>Remove-DeployRule</S>
+                <S>Remove-ProxyServer</S>
+                <S>Remove-ScriptBundle</S>
+                <S>Repair-DeployImageCache</S>
+                <S>Repair-DeployRuleSetCompliance</S>
+                <S>Set-DeployOption</S>
+                <S>Set-DeployRule</S>
+                <S>Set-DeployRuleSet</S>
+                <S>Set-ESXImageProfileAssociation</S>
+                <S>Set-ScriptBundleAssociation</S>
+                <S>Switch-ActiveDeployRuleSet</S>
+                <S>Test-DeployRuleSetCompliance</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-DeployRule</S>
+                <S>Add-ProxyServer</S>
+                <S>Add-ScriptBundle</S>
+                <S>Copy-DeployRule</S>
+                <S>Export-AutoDeployState</S>
+                <S>Get-DeployOption</S>
+                <S>Get-DeployRule</S>
+                <S>Get-DeployRuleSet</S>
+                <S>Get-ProxyServer</S>
+                <S>Get-ScriptBundle</S>
+                <S>Get-VMHostAttributes</S>
+                <S>Get-VMHostImageProfile</S>
+                <S>Get-VMHostMatchingRules</S>
+                <S>Import-AutoDeployState</S>
+                <S>New-DeployRule</S>
+                <S>Remove-DeployRule</S>
+                <S>Remove-ProxyServer</S>
+                <S>Remove-ScriptBundle</S>
+                <S>Repair-DeployImageCache</S>
+                <S>Repair-DeployRuleSetCompliance</S>
+                <S>Set-DeployOption</S>
+                <S>Set-DeployRule</S>
+                <S>Set-DeployRuleSet</S>
+                <S>Set-ESXImageProfileAssociation</S>
+                <S>Set-ScriptBundleAssociation</S>
+                <S>Switch-ActiveDeployRuleSet</S>
+                <S>Test-DeployRuleSetCompliance</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.ImageBuilder</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">6.7.0.11233116</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.ImageBuilder/6.7.0.11233116</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) VMware, Inc. All rights reserved.</S>
+          <S N="description">This Windows PowerShell module contains PowerCLI Auto Deploy cmdlets.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">871298</S>
+          <S N="downloadCount">1293791</S>
+          <S N="packageSize">1774659</S>
+          <S N="published">12/18/2018 8:51:41 AM -06:00</S>
+          <S N="created">12/18/2018 8:51:41 AM -06:00</S>
+          <S N="lastEdited">12/20/2018 9:22:29 AM -06:00</S>
+          <S N="lastUpdated">1/26/2020 5:41:58 AM -06:00</S>
+          <S N="tags">PSModule PSCmdlet_Add-DeployRule PSCommand_Add-DeployRule PSCmdlet_Add-ProxyServer PSCommand_Add-ProxyServer PSCmdlet_Add-ScriptBundle PSCommand_Add-ScriptBundle PSCmdlet_Copy-DeployRule PSCommand_Copy-DeployRule PSCmdlet_Export-AutoDeployState PSCommand_Export-AutoDeployState PSCmdlet_Get-DeployOption PSCommand_Get-DeployOption PSCmdlet_Get-DeployRule PSCommand_Get-DeployRule PSCmdlet_Get-DeployRuleSet PSCommand_Get-DeployRuleSet PSCmdlet_Get-ProxyServer PSCommand_Get-ProxyServer PSCmdlet_Get-ScriptBundle PSCommand_Get-ScriptBundle PSCmdlet_Get-VMHostAttributes PSCommand_Get-VMHostAttributes PSCmdlet_Get-VMHostImageProfile PSCommand_Get-VMHostImageProfile PSCmdlet_Get-VMHostMatchingRules PSCommand_Get-VMHostMatchingRules PSCmdlet_Import-AutoDeployState PSCommand_Import-AutoDeployState PSCmdlet_New-DeployRule PSCommand_New-DeployRule PSCmdlet_Remove-DeployRule PSCommand_Remove-DeployRule PSCmdlet_Remove-ProxyServer PSCommand_Remove-ProxyServer PSCmdlet_Remove-ScriptBundle PSCommand_Remove-ScriptBundle PSCmdlet_Repair-DeployImageCache PSCommand_Repair-DeployImageCache PSCmdlet_Repair-DeployRuleSetCompliance PSCommand_Repair-DeployRuleSetCompliance PSCmdlet_Set-DeployOption PSCommand_Set-DeployOption PSCmdlet_Set-DeployRule PSCommand_Set-DeployRule PSCmdlet_Set-DeployRuleSet PSCommand_Set-DeployRuleSet PSCmdlet_Set-ESXImageProfileAssociation PSCommand_Set-ESXImageProfileAssociation PSCmdlet_Set-ScriptBundleAssociation PSCommand_Set-ScriptBundleAssociation PSCmdlet_Switch-ActiveDeployRuleSet PSCommand_Switch-ActiveDeployRuleSet PSCmdlet_Test-DeployRuleSetCompliance PSCommand_Test-DeployRuleSetCompliance PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2020-01-26T05:41:58Z</S>
+          <S N="NormalizedVersion">6.7.0.11233116</S>
+          <S N="Authors">"VMware"</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.DeployAutomation.nuspec|EULA.rtf|VMware.DeployAutomation.cat|VMware.DeployAutomation.psd1|VMware.DeployAutomation.psm1|net45\ComponentDescriptor-VMware.DeployAutomation.Cmdlets.xml|net45\VMware.DeployAutomation.dll|net45\VMware.DeployAutomation.dll-Help.xml|net45\VMware.DeployAutomation.Format.ps1xml|net45\VMware.DeployAutomation.ps1|net45\VMware.DeployAutomation.psd1|net45\VMware.DeployAutomation.SoapService50.dll|net45\VMware.DeployAutomation.SoapService50.XmlSerializers.dll</S>
+          <S N="GUID">e1728e10-8af0-4383-a2ac-299dcbf4e153</S>
+          <S N="CompanyName">VMware, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\VMware.DeployAutomation\6.7.0.11233116</S>
+    </MS>
+  </Obj>
+</Objs>

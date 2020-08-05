@@ -1,0 +1,189 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.PowerBIEmbedded</S>
+      <Version N="Version">1.1.1</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell - Power BI Embedded service management cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core.  Creates and manages Power BI Embedded workspace collections and Power BI Dedicated Capacities in Azure Resource Manager._x000D__x000A__x000D__x000A_For more information on Power BI Embedded, please visit the following: https://docs.microsoft.com/azure/power-bi-embedded/</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2019-12-17T02:31:04-06:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2020-04-28T10:43:50.5282302-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>PowerBI</S>
+          <S>PowerBIEmbedded</S>
+          <S>PowerBIDedicated</S>
+          <S>PowerBIEmbeddedCapacity</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Remove-AzPowerBIWorkspaceCollection</S>
+                <S>Get-AzPowerBIWorkspaceCollection</S>
+                <S>Get-AzPowerBIWorkspaceCollectionAccessKey</S>
+                <S>Get-AzPowerBIWorkspace</S>
+                <S>New-AzPowerBIWorkspaceCollection</S>
+                <S>Reset-AzPowerBIWorkspaceCollectionAccessKey</S>
+                <S>Resume-AzPowerBIEmbeddedCapacity</S>
+                <S>Suspend-AzPowerBIEmbeddedCapacity</S>
+                <S>Get-AzPowerBIEmbeddedCapacity</S>
+                <S>Remove-AzPowerBIEmbeddedCapacity</S>
+                <S>Update-AzPowerBIEmbeddedCapacity</S>
+                <S>Test-AzPowerBIEmbeddedCapacity</S>
+                <S>New-AzPowerBIEmbeddedCapacity</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Remove-AzPowerBIWorkspaceCollection</S>
+                <S>Get-AzPowerBIWorkspaceCollection</S>
+                <S>Get-AzPowerBIWorkspaceCollectionAccessKey</S>
+                <S>Get-AzPowerBIWorkspace</S>
+                <S>New-AzPowerBIWorkspaceCollection</S>
+                <S>Reset-AzPowerBIWorkspaceCollectionAccessKey</S>
+                <S>Resume-AzPowerBIEmbeddedCapacity</S>
+                <S>Suspend-AzPowerBIEmbeddedCapacity</S>
+                <S>Get-AzPowerBIEmbeddedCapacity</S>
+                <S>Remove-AzPowerBIEmbeddedCapacity</S>
+                <S>Update-AzPowerBIEmbeddedCapacity</S>
+                <S>Test-AzPowerBIEmbeddedCapacity</S>
+                <S>New-AzPowerBIEmbeddedCapacity</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Update references in .psd1 to use relative path</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">1.6.5</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/1.6.5</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell - Power BI Embedded service management cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core.  Creates and manages Power BI Embedded workspace collections and Power BI Dedicated Capacities in Azure Resource Manager._x000D__x000A__x000D__x000A_For more information on Power BI Embedded, please visit the following: https://docs.microsoft.com/azure/power-bi-embedded/</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Update references in .psd1 to use relative path</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">1898171</S>
+          <S N="downloadCount">4971280</S>
+          <S N="packageSize">148517</S>
+          <S N="published">12/17/2019 2:31:04 AM -06:00</S>
+          <S N="created">12/17/2019 2:31:04 AM -06:00</S>
+          <S N="lastUpdated">4/28/2020 3:41:36 PM -05:00</S>
+          <S N="tags">Azure ResourceManager ARM PowerBI PowerBIEmbedded PowerBIDedicated PowerBIEmbeddedCapacity PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_Remove-AzPowerBIWorkspaceCollection PSCommand_Remove-AzPowerBIWorkspaceCollection PSCmdlet_Get-AzPowerBIWorkspaceCollection PSCommand_Get-AzPowerBIWorkspaceCollection PSCmdlet_Get-AzPowerBIWorkspaceCollectionAccessKey PSCommand_Get-AzPowerBIWorkspaceCollectionAccessKey PSCmdlet_Get-AzPowerBIWorkspace PSCommand_Get-AzPowerBIWorkspace PSCmdlet_New-AzPowerBIWorkspaceCollection PSCommand_New-AzPowerBIWorkspaceCollection PSCmdlet_Reset-AzPowerBIWorkspaceCollectionAccessKey PSCommand_Reset-AzPowerBIWorkspaceCollectionAccessKey PSCmdlet_Resume-AzPowerBIEmbeddedCapacity PSCommand_Resume-AzPowerBIEmbeddedCapacity PSCmdlet_Suspend-AzPowerBIEmbeddedCapacity PSCommand_Suspend-AzPowerBIEmbeddedCapacity PSCmdlet_Get-AzPowerBIEmbeddedCapacity PSCommand_Get-AzPowerBIEmbeddedCapacity PSCmdlet_Remove-AzPowerBIEmbeddedCapacity PSCommand_Remove-AzPowerBIEmbeddedCapacity PSCmdlet_Update-AzPowerBIEmbeddedCapacity PSCommand_Update-AzPowerBIEmbeddedCapacity PSCmdlet_Test-AzPowerBIEmbeddedCapacity PSCommand_Test-AzPowerBIEmbeddedCapacity PSCmdlet_New-AzPowerBIEmbeddedCapacity PSCommand_New-AzPowerBIEmbeddedCapacity PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2020-04-28T15:41:36Z</S>
+          <S N="NormalizedVersion">1.1.1</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.PowerBIEmbedded.nuspec|Az.PowerBIEmbedded.psd1|Az.PowerBIEmbedded.psm1|Microsoft.Azure.Management.PowerBIDedicated.dll|Microsoft.Azure.Management.PowerBIEmbedded.dll|Microsoft.Azure.PowerShell.Cmdlets.PowerBI.deps.json|Microsoft.Azure.PowerShell.Cmdlets.PowerBI.dll|Microsoft.Azure.PowerShell.Cmdlets.PowerBI.dll-Help.xml|Microsoft.Azure.PowerShell.Cmdlets.PowerBIEmbedded.deps.json|Microsoft.Azure.PowerShell.Cmdlets.PowerBIEmbedded.dll|Microsoft.Azure.PowerShell.Cmdlets.PowerBIEmbedded.dll-Help.xml</S>
+          <S N="GUID">b45b352f-17bd-465e-b162-10724c318e14</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\admin-taylor\Documents\PowerShell\Modules\Az.PowerBIEmbedded\1.1.1</S>
+    </MS>
+  </Obj>
+</Objs>

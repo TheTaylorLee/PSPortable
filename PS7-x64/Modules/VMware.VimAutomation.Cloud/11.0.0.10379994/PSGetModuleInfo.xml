@@ -1,0 +1,287 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.VimAutomation.Cloud</S>
+      <Version N="Version">11.0.0.10379994</Version>
+      <S N="Type">Module</S>
+      <S N="Description">This Windows PowerShell module contains PowerCLI Cloud cmdlets.</S>
+      <S N="Author">VMware</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) VMware, Inc. All rights reserved.</S>
+      <DT N="PublishedDate">2018-10-10T09:22:28-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2020-01-25T23:47:27.9344539-06:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <Nil N="ProjectUri" />
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-CIDatastore</S>
+                <S>Connect-CIServer</S>
+                <S>Disconnect-CIServer</S>
+                <S>Get-Catalog</S>
+                <S>Get-CIAccessControlRule</S>
+                <S>Get-CIDatastore</S>
+                <S>Get-CINetworkAdapter</S>
+                <S>Get-CIRole</S>
+                <S>Get-CIUser</S>
+                <S>Get-CIVApp</S>
+                <S>Get-CIVAppNetwork</S>
+                <S>Get-CIVAppStartRule</S>
+                <S>Get-CIVAppTemplate</S>
+                <S>Get-CIView</S>
+                <S>Get-CIVM</S>
+                <S>Get-CIVMTemplate</S>
+                <S>Get-EdgeGateway</S>
+                <S>Get-ExternalNetwork</S>
+                <S>Get-Media</S>
+                <S>Get-NetworkPool</S>
+                <S>Get-Org</S>
+                <S>Get-OrgNetwork</S>
+                <S>Get-OrgVdc</S>
+                <S>Get-OrgVdcNetwork</S>
+                <S>Get-ProviderVdc</S>
+                <S>Import-CIVApp</S>
+                <S>Import-CIVAppTemplate</S>
+                <S>New-CIAccessControlRule</S>
+                <S>New-CIVApp</S>
+                <S>New-CIVAppNetwork</S>
+                <S>New-CIVAppTemplate</S>
+                <S>New-CIVM</S>
+                <S>New-Org</S>
+                <S>New-OrgNetwork</S>
+                <S>New-OrgVdc</S>
+                <S>New-OrgVdcNetwork</S>
+                <S>Remove-CIAccessControlRule</S>
+                <S>Remove-CIVApp</S>
+                <S>Remove-CIVAppNetwork</S>
+                <S>Remove-CIVAppTemplate</S>
+                <S>Remove-Org</S>
+                <S>Remove-OrgNetwork</S>
+                <S>Remove-OrgVdc</S>
+                <S>Remove-OrgVdcNetwork</S>
+                <S>Restart-CIVApp</S>
+                <S>Restart-CIVAppGuest</S>
+                <S>Restart-CIVM</S>
+                <S>Restart-CIVMGuest</S>
+                <S>Search-Cloud</S>
+                <S>Set-CIAccessControlRule</S>
+                <S>Set-CINetworkAdapter</S>
+                <S>Set-CIVApp</S>
+                <S>Set-CIVAppNetwork</S>
+                <S>Set-CIVAppStartRule</S>
+                <S>Set-CIVAppTemplate</S>
+                <S>Set-Org</S>
+                <S>Set-OrgNetwork</S>
+                <S>Set-OrgVdc</S>
+                <S>Set-OrgVdcNetwork</S>
+                <S>Start-CIVApp</S>
+                <S>Start-CIVM</S>
+                <S>Stop-CIVApp</S>
+                <S>Stop-CIVAppGuest</S>
+                <S>Stop-CIVM</S>
+                <S>Stop-CIVMGuest</S>
+                <S>Suspend-CIVApp</S>
+                <S>Suspend-CIVM</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-CIDatastore</S>
+                <S>Connect-CIServer</S>
+                <S>Disconnect-CIServer</S>
+                <S>Get-Catalog</S>
+                <S>Get-CIAccessControlRule</S>
+                <S>Get-CIDatastore</S>
+                <S>Get-CINetworkAdapter</S>
+                <S>Get-CIRole</S>
+                <S>Get-CIUser</S>
+                <S>Get-CIVApp</S>
+                <S>Get-CIVAppNetwork</S>
+                <S>Get-CIVAppStartRule</S>
+                <S>Get-CIVAppTemplate</S>
+                <S>Get-CIView</S>
+                <S>Get-CIVM</S>
+                <S>Get-CIVMTemplate</S>
+                <S>Get-EdgeGateway</S>
+                <S>Get-ExternalNetwork</S>
+                <S>Get-Media</S>
+                <S>Get-NetworkPool</S>
+                <S>Get-Org</S>
+                <S>Get-OrgNetwork</S>
+                <S>Get-OrgVdc</S>
+                <S>Get-OrgVdcNetwork</S>
+                <S>Get-ProviderVdc</S>
+                <S>Import-CIVApp</S>
+                <S>Import-CIVAppTemplate</S>
+                <S>New-CIAccessControlRule</S>
+                <S>New-CIVApp</S>
+                <S>New-CIVAppNetwork</S>
+                <S>New-CIVAppTemplate</S>
+                <S>New-CIVM</S>
+                <S>New-Org</S>
+                <S>New-OrgNetwork</S>
+                <S>New-OrgVdc</S>
+                <S>New-OrgVdcNetwork</S>
+                <S>Remove-CIAccessControlRule</S>
+                <S>Remove-CIVApp</S>
+                <S>Remove-CIVAppNetwork</S>
+                <S>Remove-CIVAppTemplate</S>
+                <S>Remove-Org</S>
+                <S>Remove-OrgNetwork</S>
+                <S>Remove-OrgVdc</S>
+                <S>Remove-OrgVdcNetwork</S>
+                <S>Restart-CIVApp</S>
+                <S>Restart-CIVAppGuest</S>
+                <S>Restart-CIVM</S>
+                <S>Restart-CIVMGuest</S>
+                <S>Search-Cloud</S>
+                <S>Set-CIAccessControlRule</S>
+                <S>Set-CINetworkAdapter</S>
+                <S>Set-CIVApp</S>
+                <S>Set-CIVAppNetwork</S>
+                <S>Set-CIVAppStartRule</S>
+                <S>Set-CIVAppTemplate</S>
+                <S>Set-Org</S>
+                <S>Set-OrgNetwork</S>
+                <S>Set-OrgVdc</S>
+                <S>Set-OrgVdcNetwork</S>
+                <S>Start-CIVApp</S>
+                <S>Start-CIVM</S>
+                <S>Stop-CIVApp</S>
+                <S>Stop-CIVAppGuest</S>
+                <S>Stop-CIVM</S>
+                <S>Stop-CIVMGuest</S>
+                <S>Suspend-CIVApp</S>
+                <S>Suspend-CIVM</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.VimAutomation.Vds</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">11.0.0.10336077</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.VimAutomation.Vds/11.0.0.10336077</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) VMware, Inc. All rights reserved.</S>
+          <S N="description">This Windows PowerShell module contains PowerCLI Cloud cmdlets.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">964783</S>
+          <S N="downloadCount">1337666</S>
+          <S N="packageSize">2011151</S>
+          <S N="published">10/10/2018 9:22:28 AM -05:00</S>
+          <S N="created">10/10/2018 9:22:28 AM -05:00</S>
+          <S N="lastEdited">10/11/2018 8:28:06 AM -05:00</S>
+          <S N="lastUpdated">1/26/2020 5:41:58 AM -06:00</S>
+          <S N="tags">PSModule PSCmdlet_Add-CIDatastore PSCommand_Add-CIDatastore PSCmdlet_Connect-CIServer PSCommand_Connect-CIServer PSCmdlet_Disconnect-CIServer PSCommand_Disconnect-CIServer PSCmdlet_Get-Catalog PSCommand_Get-Catalog PSCmdlet_Get-CIAccessControlRule PSCommand_Get-CIAccessControlRule PSCmdlet_Get-CIDatastore PSCommand_Get-CIDatastore PSCmdlet_Get-CINetworkAdapter PSCommand_Get-CINetworkAdapter PSCmdlet_Get-CIRole PSCommand_Get-CIRole PSCmdlet_Get-CIUser PSCommand_Get-CIUser PSCmdlet_Get-CIVApp PSCommand_Get-CIVApp PSCmdlet_Get-CIVAppNetwork PSCommand_Get-CIVAppNetwork PSCmdlet_Get-CIVAppStartRule PSCommand_Get-CIVAppStartRule PSCmdlet_Get-CIVAppTemplate PSCommand_Get-CIVAppTemplate PSCmdlet_Get-CIView PSCommand_Get-CIView PSCmdlet_Get-CIVM PSCommand_Get-CIVM PSCmdlet_Get-CIVMTemplate PSCommand_Get-CIVMTemplate PSCmdlet_Get-EdgeGateway PSCommand_Get-EdgeGateway PSCmdlet_Get-ExternalNetwork PSCommand_Get-ExternalNetwork PSCmdlet_Get-Media PSCommand_Get-Media PSCmdlet_Get-NetworkPool PSCommand_Get-NetworkPool PSCmdlet_Get-Org PSCommand_Get-Org PSCmdlet_Get-OrgNetwork PSCommand_Get-OrgNetwork PSCmdlet_Get-OrgVdc PSCommand_Get-OrgVdc PSCmdlet_Get-OrgVdcNetwork PSCommand_Get-OrgVdcNetwork PSCmdlet_Get-ProviderVdc PSCommand_Get-ProviderVdc PSCmdlet_Import-CIVApp PSCommand_Import-CIVApp PSCmdlet_Import-CIVAppTemplate PSCommand_Import-CIVAppTemplate PSCmdlet_New-CIAccessControlRule PSCommand_New-CIAccessControlRule PSCmdlet_New-CIVApp PSCommand_New-CIVApp PSCmdlet_New-CIVAppNetwork PSCommand_New-CIVAppNetwork PSCmdlet_New-CIVAppTemplate PSCommand_New-CIVAppTemplate PSCmdlet_New-CIVM PSCommand_New-CIVM PSCmdlet_New-Org PSCommand_New-Org PSCmdlet_New-OrgNetwork PSCommand_New-OrgNetwork PSCmdlet_New-OrgVdc PSCommand_New-OrgVdc PSCmdlet_New-OrgVdcNetwork PSCommand_New-OrgVdcNetwork PSCmdlet_Remove-CIAccessControlRule PSCommand_Remove-CIAccessControlRule PSCmdlet_Remove-CIVApp PSCommand_Remove-CIVApp PSCmdlet_Remove-CIVAppNetwork PSCommand_Remove-CIVAppNetwork PSCmdlet_Remove-CIVAppTemplate PSCommand_Remove-CIVAppTemplate PSCmdlet_Remove-Org PSCommand_Remove-Org PSCmdlet_Remove-OrgNetwork PSCommand_Remove-OrgNetwork PSCmdlet_Remove-OrgVdc PSCommand_Remove-OrgVdc PSCmdlet_Remove-OrgVdcNetwork PSCommand_Remove-OrgVdcNetwork PSCmdlet_Restart-CIVApp PSCommand_Restart-CIVApp PSCmdlet_Restart-CIVAppGuest PSCommand_Restart-CIVAppGuest PSCmdlet_Restart-CIVM PSCommand_Restart-CIVM PSCmdlet_Restart-CIVMGuest PSCommand_Restart-CIVMGuest PSCmdlet_Search-Cloud PSCommand_Search-Cloud PSCmdlet_Set-CIAccessControlRule PSCommand_Set-CIAccessControlRule PSCmdlet_Set-CINetworkAdapter PSCommand_Set-CINetworkAdapter PSCmdlet_Set-CIVApp PSCommand_Set-CIVApp PSCmdlet_Set-CIVAppNetwork PSCommand_Set-CIVAppNetwork PSCmdlet_Set-CIVAppStartRule PSCommand_Set-CIVAppStartRule PSCmdlet_Set-CIVAppTemplate PSCommand_Set-CIVAppTemplate PSCmdlet_Set-Org PSCommand_Set-Org PSCmdlet_Set-OrgNetwork PSCommand_Set-OrgNetwork PSCmdlet_Set-OrgVdc PSCommand_Set-OrgVdc PSCmdlet_Set-OrgVdcNetwork PSCommand_Set-OrgVdcNetwork PSCmdlet_Start-CIVApp PSCommand_Start-CIVApp PSCmdlet_Start-CIVM PSCommand_Start-CIVM PSCmdlet_Stop-CIVApp PSCommand_Stop-CIVApp PSCmdlet_Stop-CIVAppGuest PSCommand_Stop-CIVAppGuest PSCmdlet_Stop-CIVM PSCommand_Stop-CIVM PSCmdlet_Stop-CIVMGuest PSCommand_Stop-CIVMGuest PSCmdlet_Suspend-CIVApp PSCommand_Suspend-CIVApp PSCmdlet_Suspend-CIVM PSCommand_Suspend-CIVM PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2020-01-26T05:41:58Z</S>
+          <S N="NormalizedVersion">11.0.0.10379994</S>
+          <S N="Authors">VMware</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.VimAutomation.Cloud.nuspec|EULA.rtf|VMware.VimAutomation.Cloud.cat|VMware.VimAutomation.Cloud.psd1|VMware.VimAutomation.Cloud.psm1|net45\ComponentDescriptor-VMware.VimAutomation.Cloud.Commands.xml|net45\ComponentDescriptor-VMware.VimAutomation.Cloud.xml|net45\VMware.VimAutomation.Cloud.Commands.dll|net45\VMware.VimAutomation.Cloud.Commands.dll-Help.xml|net45\VMware.VimAutomation.Cloud.Format.ps1xml|net45\VMware.VimAutomation.Cloud.Impl.dll|net45\VMware.VimAutomation.Cloud.Interop.dll|net45\VMware.VimAutomation.Cloud.ps1|net45\VMware.VimAutomation.Cloud.psd1|net45\VMware.VimAutomation.Cloud.Schema.dll|net45\VMware.VimAutomation.Cloud.Types.dll|net45\VMware.VimAutomation.Cloud.Util10.dll|net45\VMware.VimAutomation.Cloud.Views.dll|netcoreapp2.0\ComponentDescriptor-VMware.VimAutomation.Cloud.Commands.xml|netcoreapp2.0\ComponentDescriptor-VMware.VimAutomation.Cloud.xml|netcoreapp2.0\VMware.VimAutomation.Cloud.Commands.dll|netcoreapp2.0\VMware.VimAutomation.Cloud.Commands.dll-Help.xml|netcoreapp2.0\VMware.VimAutomation.Cloud.Format.ps1xml|netcoreapp2.0\VMware.VimAutomation.Cloud.Impl.dll|netcoreapp2.0\VMware.VimAutomation.Cloud.Interop.dll|netcoreapp2.0\VMware.VimAutomation.Cloud.ps1|netcoreapp2.0\VMware.VimAutomation.Cloud.psd1|netcoreapp2.0\VMware.VimAutomation.Cloud.Schema.dll|netcoreapp2.0\VMware.VimAutomation.Cloud.Types.dll|netcoreapp2.0\VMware.VimAutomation.Cloud.Util10.dll|netcoreapp2.0\VMware.VimAutomation.Cloud.Views.dll</S>
+          <S N="GUID">7c10c27e-df66-4c5e-a93e-c2c4ddf43a85</S>
+          <S N="PowerShellVersion">3.0</S>
+          <S N="CompanyName">VMware, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\VMware.VimAutomation.Cloud\11.0.0.10379994</S>
+    </MS>
+  </Obj>
+</Objs>

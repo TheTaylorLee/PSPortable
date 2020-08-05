@@ -1,0 +1,193 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.ContainerRegistry</S>
+      <Version N="Version">1.1.1</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell - Container Registry service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core._x000D__x000A__x000D__x000A_For more information on Container Registry, please visit the following: https://docs.microsoft.com/azure/container-registry/</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2019-12-17T02:28:50-06:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2020-04-28T10:43:30.1871856-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>Registry</S>
+          <S>ContainerRegistry</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>New-AzContainerRegistry</S>
+                <S>Get-AzContainerRegistry</S>
+                <S>Update-AzContainerRegistry</S>
+                <S>Remove-AzContainerRegistry</S>
+                <S>Get-AzContainerRegistryCredential</S>
+                <S>Update-AzContainerRegistryCredential</S>
+                <S>Test-AzContainerRegistryNameAvailability</S>
+                <S>Get-AzContainerRegistryReplication</S>
+                <S>New-AzContainerRegistryReplication</S>
+                <S>Remove-AzContainerRegistryReplication</S>
+                <S>New-AzContainerRegistryWebhook</S>
+                <S>Get-AzContainerRegistryWebhook</S>
+                <S>Update-AzContainerRegistryWebhook</S>
+                <S>Test-AzContainerRegistryWebhook</S>
+                <S>Remove-AzContainerRegistryWebhook</S>
+                <S>Get-AzContainerRegistryWebhookEvent</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>New-AzContainerRegistry</S>
+                <S>Get-AzContainerRegistry</S>
+                <S>Update-AzContainerRegistry</S>
+                <S>Remove-AzContainerRegistry</S>
+                <S>Get-AzContainerRegistryCredential</S>
+                <S>Update-AzContainerRegistryCredential</S>
+                <S>Test-AzContainerRegistryNameAvailability</S>
+                <S>Get-AzContainerRegistryReplication</S>
+                <S>New-AzContainerRegistryReplication</S>
+                <S>Remove-AzContainerRegistryReplication</S>
+                <S>New-AzContainerRegistryWebhook</S>
+                <S>Get-AzContainerRegistryWebhook</S>
+                <S>Update-AzContainerRegistryWebhook</S>
+                <S>Test-AzContainerRegistryWebhook</S>
+                <S>Remove-AzContainerRegistryWebhook</S>
+                <S>Get-AzContainerRegistryWebhookEvent</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Update references in .psd1 to use relative path</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">1.6.5</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/1.6.5</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell - Container Registry service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core._x000D__x000A__x000D__x000A_For more information on Container Registry, please visit the following: https://docs.microsoft.com/azure/container-registry/</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Update references in .psd1 to use relative path</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">1941073</S>
+          <S N="downloadCount">5217174</S>
+          <S N="packageSize">138644</S>
+          <S N="published">12/17/2019 2:28:50 AM -06:00</S>
+          <S N="created">12/17/2019 2:28:50 AM -06:00</S>
+          <S N="lastUpdated">4/28/2020 3:41:36 PM -05:00</S>
+          <S N="tags">Azure ResourceManager ARM Registry ContainerRegistry PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_New-AzContainerRegistry PSCommand_New-AzContainerRegistry PSCmdlet_Get-AzContainerRegistry PSCommand_Get-AzContainerRegistry PSCmdlet_Update-AzContainerRegistry PSCommand_Update-AzContainerRegistry PSCmdlet_Remove-AzContainerRegistry PSCommand_Remove-AzContainerRegistry PSCmdlet_Get-AzContainerRegistryCredential PSCommand_Get-AzContainerRegistryCredential PSCmdlet_Update-AzContainerRegistryCredential PSCommand_Update-AzContainerRegistryCredential PSCmdlet_Test-AzContainerRegistryNameAvailability PSCommand_Test-AzContainerRegistryNameAvailability PSCmdlet_Get-AzContainerRegistryReplication PSCommand_Get-AzContainerRegistryReplication PSCmdlet_New-AzContainerRegistryReplication PSCommand_New-AzContainerRegistryReplication PSCmdlet_Remove-AzContainerRegistryReplication PSCommand_Remove-AzContainerRegistryReplication PSCmdlet_New-AzContainerRegistryWebhook PSCommand_New-AzContainerRegistryWebhook PSCmdlet_Get-AzContainerRegistryWebhook PSCommand_Get-AzContainerRegistryWebhook PSCmdlet_Update-AzContainerRegistryWebhook PSCommand_Update-AzContainerRegistryWebhook PSCmdlet_Test-AzContainerRegistryWebhook PSCommand_Test-AzContainerRegistryWebhook PSCmdlet_Remove-AzContainerRegistryWebhook PSCommand_Remove-AzContainerRegistryWebhook PSCmdlet_Get-AzContainerRegistryWebhookEvent PSCommand_Get-AzContainerRegistryWebhookEvent PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2020-04-28T15:41:36Z</S>
+          <S N="NormalizedVersion">1.1.1</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.ContainerRegistry.nuspec|Az.ContainerRegistry.psd1|Az.ContainerRegistry.psm1|ContainerRegistry.format.ps1xml|Microsoft.Azure.Management.ContainerRegistry.dll|Microsoft.Azure.PowerShell.Cmdlets.ContainerRegistry.deps.json|Microsoft.Azure.PowerShell.Cmdlets.ContainerRegistry.dll|Microsoft.Azure.PowerShell.Cmdlets.ContainerRegistry.dll-Help.xml</S>
+          <S N="GUID">11a1f96b-f261-4be1-8e1e-1613eedddacc</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\admin-taylor\Documents\PowerShell\Modules\Az.ContainerRegistry\1.1.1</S>
+    </MS>
+  </Obj>
+</Objs>

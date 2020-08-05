@@ -1,0 +1,215 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">NTFSSecurity</S>
+      <Version N="Version">4.2.6</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Windows PowerShell Module for managing file and folder security on NTFS volumes</S>
+      <S N="Author">Raimund Andree</S>
+      <S N="CompanyName">Raimund</S>
+      <S N="Copyright">2018</S>
+      <DT N="PublishedDate">2019-07-12T19:07:52-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2020-01-25T23:49:26.472877-06:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/raandree/NTFSSecurity/blob/master/LICENSE</URI>
+      <URI N="ProjectUri">https://github.com/raandree/NTFSSecurity</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>AccessControl</S>
+          <S>ACL</S>
+          <S>DirectorySecurity</S>
+          <S>FileSecurity</S>
+          <S>FileSystem</S>
+          <S>FileSystemSecurity</S>
+          <S>NTFS</S>
+          <S>Module</S>
+          <S>AccessRights</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-NTFSAccess</S>
+                <S>Clear-NTFSAccess</S>
+                <S>Disable-NTFSAccessInheritance</S>
+                <S>Enable-NTFSAccessInheritance</S>
+                <S>Get-NTFSAccess</S>
+                <S>Get-NTFSEffectiveAccess</S>
+                <S>Get-NTFSOrphanedAccess</S>
+                <S>Get-NTFSSimpleAccess</S>
+                <S>Remove-NTFSAccess</S>
+                <S>Show-NTFSSimpleAccess</S>
+                <S>Add-NTFSAudit</S>
+                <S>Clear-NTFSAudit</S>
+                <S>Disable-NTFSAuditInheritance</S>
+                <S>Enable-NTFSAuditInheritance</S>
+                <S>Get-NTFSAudit</S>
+                <S>Get-NTFSOrphanedAudit</S>
+                <S>Remove-NTFSAudit</S>
+                <S>Get-NTFSInheritance</S>
+                <S>Set-NTFSInheritance</S>
+                <S>Get-NTFSOwner</S>
+                <S>Set-NTFSOwner</S>
+                <S>Get-NTFSSecurityDescriptor</S>
+                <S>Set-NTFSSecurityDescriptor</S>
+                <S>Disable-Privileges</S>
+                <S>Enable-Privileges</S>
+                <S>Get-Privileges</S>
+                <S>Copy-Item2</S>
+                <S>Get-ChildItem2</S>
+                <S>Get-Item2</S>
+                <S>Move-Item2</S>
+                <S>Remove-Item2</S>
+                <S>Test-Path2</S>
+                <S>Get-NTFSHardLink</S>
+                <S>New-NTFSHardLink</S>
+                <S>New-NTFSSymbolicLink</S>
+                <S>Get-DiskSpace</S>
+                <S>Get-FileHash2</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-NTFSAccess</S>
+                <S>Clear-NTFSAccess</S>
+                <S>Disable-NTFSAccessInheritance</S>
+                <S>Enable-NTFSAccessInheritance</S>
+                <S>Get-NTFSAccess</S>
+                <S>Get-NTFSEffectiveAccess</S>
+                <S>Get-NTFSOrphanedAccess</S>
+                <S>Get-NTFSSimpleAccess</S>
+                <S>Remove-NTFSAccess</S>
+                <S>Show-NTFSSimpleAccess</S>
+                <S>Add-NTFSAudit</S>
+                <S>Clear-NTFSAudit</S>
+                <S>Disable-NTFSAuditInheritance</S>
+                <S>Enable-NTFSAuditInheritance</S>
+                <S>Get-NTFSAudit</S>
+                <S>Get-NTFSOrphanedAudit</S>
+                <S>Remove-NTFSAudit</S>
+                <S>Get-NTFSInheritance</S>
+                <S>Set-NTFSInheritance</S>
+                <S>Get-NTFSOwner</S>
+                <S>Set-NTFSOwner</S>
+                <S>Get-NTFSSecurityDescriptor</S>
+                <S>Set-NTFSSecurityDescriptor</S>
+                <S>Disable-Privileges</S>
+                <S>Enable-Privileges</S>
+                <S>Get-Privileges</S>
+                <S>Copy-Item2</S>
+                <S>Get-ChildItem2</S>
+                <S>Get-Item2</S>
+                <S>Move-Item2</S>
+                <S>Remove-Item2</S>
+                <S>Test-Path2</S>
+                <S>Get-NTFSHardLink</S>
+                <S>New-NTFSHardLink</S>
+                <S>New-NTFSSymbolicLink</S>
+                <S>Get-DiskSpace</S>
+                <S>Get-FileHash2</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">2018</S>
+          <S N="description">Windows PowerShell Module for managing file and folder security on NTFS volumes</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">78886</S>
+          <S N="downloadCount">202190</S>
+          <S N="packageSize">3008688</S>
+          <S N="published">7/12/2019 7:07:52 PM -05:00</S>
+          <S N="created">7/12/2019 7:07:52 PM -05:00</S>
+          <S N="lastUpdated">1/26/2020 5:46:58 AM -06:00</S>
+          <S N="tags">AccessControl ACL DirectorySecurity FileSecurity FileSystem FileSystemSecurity NTFS Module AccessRights PSModule PSCmdlet_Add-NTFSAccess PSCommand_Add-NTFSAccess PSCmdlet_Clear-NTFSAccess PSCommand_Clear-NTFSAccess PSCmdlet_Disable-NTFSAccessInheritance PSCommand_Disable-NTFSAccessInheritance PSCmdlet_Enable-NTFSAccessInheritance PSCommand_Enable-NTFSAccessInheritance PSCmdlet_Get-NTFSAccess PSCommand_Get-NTFSAccess PSCmdlet_Get-NTFSEffectiveAccess PSCommand_Get-NTFSEffectiveAccess PSCmdlet_Get-NTFSOrphanedAccess PSCommand_Get-NTFSOrphanedAccess PSCmdlet_Get-NTFSSimpleAccess PSCommand_Get-NTFSSimpleAccess PSCmdlet_Remove-NTFSAccess PSCommand_Remove-NTFSAccess PSCmdlet_Show-NTFSSimpleAccess PSCommand_Show-NTFSSimpleAccess PSCmdlet_Add-NTFSAudit PSCommand_Add-NTFSAudit PSCmdlet_Clear-NTFSAudit PSCommand_Clear-NTFSAudit PSCmdlet_Disable-NTFSAuditInheritance PSCommand_Disable-NTFSAuditInheritance PSCmdlet_Enable-NTFSAuditInheritance PSCommand_Enable-NTFSAuditInheritance PSCmdlet_Get-NTFSAudit PSCommand_Get-NTFSAudit PSCmdlet_Get-NTFSOrphanedAudit PSCommand_Get-NTFSOrphanedAudit PSCmdlet_Remove-NTFSAudit PSCommand_Remove-NTFSAudit PSCmdlet_Get-NTFSInheritance PSCommand_Get-NTFSInheritance PSCmdlet_Set-NTFSInheritance PSCommand_Set-NTFSInheritance PSCmdlet_Get-NTFSOwner PSCommand_Get-NTFSOwner PSCmdlet_Set-NTFSOwner PSCommand_Set-NTFSOwner PSCmdlet_Get-NTFSSecurityDescriptor PSCommand_Get-NTFSSecurityDescriptor PSCmdlet_Set-NTFSSecurityDescriptor PSCommand_Set-NTFSSecurityDescriptor PSCmdlet_Disable-Privileges PSCommand_Disable-Privileges PSCmdlet_Enable-Privileges PSCommand_Enable-Privileges PSCmdlet_Get-Privileges PSCommand_Get-Privileges PSCmdlet_Copy-Item2 PSCommand_Copy-Item2 PSCmdlet_Get-ChildItem2 PSCommand_Get-ChildItem2 PSCmdlet_Get-Item2 PSCommand_Get-Item2 PSCmdlet_Move-Item2 PSCommand_Move-Item2 PSCmdlet_Remove-Item2 PSCommand_Remove-Item2 PSCmdlet_Test-Path2 PSCommand_Test-Path2 PSCmdlet_Get-NTFSHardLink PSCommand_Get-NTFSHardLink PSCmdlet_New-NTFSHardLink PSCommand_New-NTFSHardLink PSCmdlet_New-NTFSSymbolicLink PSCommand_New-NTFSSymbolicLink PSCmdlet_Get-DiskSpace PSCommand_Get-DiskSpace PSCmdlet_Get-FileHash2 PSCommand_Get-FileHash2 PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2020-01-26T05:46:58Z</S>
+          <S N="NormalizedVersion">4.2.6</S>
+          <S N="Authors">Raimund Andree</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">NTFSSecurity.nuspec|AlphaFS.dll|AlphaFS.pdb|AlphaFS.xml|NTFSSecurity-Help.xml|NTFSSecurity.dll|NTFSSecurity.format.ps1xml|NTFSSecurity.Init.ps1|NTFSSecurity.pdb|NTFSSecurity.psd1|NTFSSecurity.psm1|NTFSSecurity.types.ps1xml|PrivilegeControl.dll|PrivilegeControl.pdb|ProcessPrivileges.dll|ProcessPrivileges.pdb|Security2.dll|Security2.pdb|System.Management.Automation.dll</S>
+          <S N="GUID">cd303a6c-f405-4dcb-b1ce-fbc2c52264e9</S>
+          <S N="PowerShellVersion">2.0</S>
+          <S N="DotNetFrameworkVersion">3.5</S>
+          <S N="CompanyName">Raimund Andree</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\NTFSSecurity\4.2.6</S>
+    </MS>
+  </Obj>
+</Objs>

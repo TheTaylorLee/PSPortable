@@ -1,0 +1,10 @@
+<ModulePackages>
+   <Package Id="VMware.VimAutomation.Cis.Core.Interop" Version="11.5.0.14898113" />
+   <Package Id="VMware.VimAutomation.Cis.Core.Types" Version="11.5.0.14898113" />
+   <Package Id="VMware.VimAutomation.Cis.Core.Util10" Version="11.5.0.14898113" />
+   <Package Id="VMware.VimAutomation.Cis.Core.Impl" Version="11.5.0.14898113" />
+   <Package Id="VMware.VimAutomation.Cis.Core.Commands" Version="11.5.0.14898113" />
+   <Package Id="VMware.VimAutomation.Cis.Core.Util10Ps" Version="11.5.0.14898113" />
+   <Package Id="vmware.vapi" Version="2.10.5" />
+   <Package Id="vmware.vapi.client.bindings.extended" Version="2.10.5.14643313" />
+</ModulePackages>

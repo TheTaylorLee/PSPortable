@@ -1,0 +1,1177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<helpItems xmlns="http://msh" schema="maml">
+<!-- v 1.3.0.36 -->
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+	<command:details>
+		<command:name>
+                   Convert-MsolDomainToFederated
+		</command:name>
+		<maml:description>
+			<maml:para>將網域從使用標準驗證轉換成使用單一登入 (也稱為識別身分同盟)。</maml:para>
+		</maml:description>
+		<maml:copyright>
+			<maml:para></maml:para>
+		</maml:copyright>
+		<command:verb>Convert</command:verb>
+		<command:noun>MsolDomainToFederated</command:noun>
+		<dev:version></dev:version>
+	</command:details>
+	<maml:description>
+		<maml:para>Convert-MSOLDomainToFederated Cmdlet 會將指定的網域從標準驗證轉換成單一登入 (也稱為識別身分同盟)，包括在 Active Directory Federation Services 2.0 伺服器和 Microsoft Online 之間設定信賴憑證者信任設定。在將網域從標準驗證轉換成單一登入時，也必須轉換每個使用者。此轉換會在下次使用者登入時自動執行; 系統管理員不需要執行任何動作。</maml:para>
+	</maml:description>
+	<!-- Cmdlet syntax section-->
+	<command:syntax>
+		<command:syntaxItem>
+			<maml:name>Convert-MsolDomainToFederated</maml:name>
+			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>DomainName</maml:name>
+				<maml:description>
+					<maml:para>要轉換成單一登入 (也稱為識別身分同盟) 的網域名稱。</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>SupportMultipleDomain</maml:name>
+				<maml:description>
+					<maml:para></maml:para>
+				</maml:description>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>Confirm</maml:name>
+    			<maml:description>
+				<maml:para>在執行命令之前，提示您確認操作。</maml:para>
+    			</maml:description>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>WhatIf</maml:name>
+    			<maml:description>
+				<maml:para>在實際執行命令之前，描述執行命令之後會發生的狀況。</maml:para>
+    			</maml:description>
+			</command:parameter>
+		</command:syntaxItem>
+	</command:syntax>
+	<!-- Cmdlet parameter section  -->
+	<command:parameters>
+		<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>DomainName</maml:name>
+			<maml:description>
+				<maml:para>要轉換成單一登入 (也稱為識別身分同盟) 的網域名稱。</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			<dev:type>
+				<maml:name>string</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>SupportMultipleDomain</maml:name>
+			<maml:description>
+				<maml:para></maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+			<dev:type>
+				<maml:name>SwitchParameter</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>Confirm</maml:name>
+    			<maml:description>
+				<maml:para>在執行命令之前，提示您確認操作。</maml:para>
+    			</maml:description>
+    			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>	
+				<dev:type>
+  				<maml:name>SwitchParameter</maml:name> 
+					<maml:uri/> 
+					</dev:type>
+ 			<dev:defaultValue/> 
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>WhatIf</maml:name>
+    			<maml:description>
+				<maml:para>在實際執行命令之前，描述執行命令之後會發生的狀況。</maml:para>
+    			</maml:description>
+    			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>	
+				<dev:type>
+  				<maml:name>SwitchParameter</maml:name> 
+					<maml:uri/> 
+					</dev:type>
+ 			<dev:defaultValue/> 
+			</command:parameter>
+	</command:parameters>
+	<!-- Input - Output section-->
+	<command:inputTypes>
+		<command:inputType>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description>
+		</command:inputType>
+	</command:inputTypes>
+	<command:returnValues>
+		<command:returnValue>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>   
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description> 
+		</command:returnValue>
+	</command:returnValues>
+	<!-- Error section-->
+	<command:terminatingErrors/>
+	<command:nonTerminatingErrors/>
+		<!-- Notes section  -->
+	<maml:alertSet>
+		<maml:title></maml:title>
+		<maml:alert>
+			<maml:para>
+                          
+                        </maml:para>
+		</maml:alert>
+		<maml:alert>
+			<maml:para></maml:para>
+		</maml:alert>
+	</maml:alertSet>
+	<!-- Example section  --> 
+	<command:examples>
+    <command:example>
+      <maml:title>Example 1: Convert the domain to federated</maml:title>
+      <dev:code>PS C:\&gt;Convert-MsolDomainToFederated -DomainName Contoso.com</dev:code>
+      <dev:remarks>
+        <maml:para>Convert a managed domain name called 'contoso.com' to federated authentication and use an on-premise Active Directory Federation Services (ADFS) server.</maml:para>
+      </dev:remarks>
+    </command:example>
+    <command:example>
+      <maml:title>Example 2: Convert the domain while allowing for multiple domain support</maml:title>
+      <dev:code>PS C:\&gt;Convert-MsolDomainToFederated -DomainName Contoso.com -SupportMultipleDomain</dev:code>
+      <dev:remarks>
+        <maml:para>Use the SupportMultipleDomain switch if you need support for multiple top-level domains.</maml:para>
+      </dev:remarks>
+    </command:example>
+  </command:examples>
+	<!-- Link section  -->
+	<maml:relatedLinks>
+		<maml:navigationLink>
+			<maml:linkText></maml:linkText>
+			<maml:uri/>
+		</maml:navigationLink>
+	</maml:relatedLinks>
+</command:command>
+
+<!-- v 1.3.0.36 -->
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+	<command:details>
+		<command:name>
+                   Convert-MsolDomainToStandard
+		</command:name>
+		<maml:description>
+			<maml:para>將網域從使用單一登入 (也稱為識別身分同盟) 轉換成使用標準驗證。</maml:para>
+		</maml:description>
+		<maml:copyright>
+			<maml:para></maml:para>
+		</maml:copyright>
+		<command:verb>Convert</command:verb>
+		<command:noun>MsolDomainToStandard</command:noun>
+		<dev:version></dev:version>
+	</command:details>
+	<maml:description>
+		<maml:para>Convert-MsolDomainToStandard Cmdlet 會將指定的網域從單一登入 (也稱為識別身分同盟) 轉換成標準驗證。此程序也會一併移除 Active Directory Federation Services 2.0 伺服器和 Microsoft Online 中的信賴憑證者信任設定。轉換之後，此 Cmdlet 會將所有現有的使用者從單一登入轉換成標準驗證。轉換期間，系統會提供新的暫時密碼給原本設定為使用單一登入的任何現有使用者。每個轉換的使用者名稱和新暫時密碼都會記錄在檔案中供系統管理員參考。系統管理員接著可以將新的暫時密碼分配給每個轉換的使用者，讓使用者能夠登入 Microsoft Online Services。</maml:para>
+	</maml:description>
+	<!-- Cmdlet syntax section-->
+	<command:syntax>
+		<command:syntaxItem>
+			<maml:name>Convert-MsolDomainToStandard</maml:name>
+			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>DomainName</maml:name>
+				<maml:description>
+					<maml:para>要從單一登入 (也稱為識別身分同盟) 轉換成標準驗證的網域名稱。</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>PasswordFile</maml:name>
+				<maml:description>
+					<maml:para>記錄所轉換使用者的使用者名稱和暫時密碼的檔案。</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>SkipUserConversion</maml:name>
+				<maml:description>
+					<maml:para>如果設定為 True，使用者將不會隨作業一起轉換。系統管理員可以在日後再次執行 Cmdlet 來轉換使用者。</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>Confirm</maml:name>
+    			<maml:description>
+				<maml:para>在執行命令之前，提示您確認操作。</maml:para>
+    			</maml:description>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>WhatIf</maml:name>
+    			<maml:description>
+				<maml:para>在實際執行命令之前，描述執行命令之後會發生的狀況。</maml:para>
+    			</maml:description>
+			</command:parameter>
+		</command:syntaxItem>
+	</command:syntax>
+	<!-- Cmdlet parameter section  -->
+	<command:parameters>
+		<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>DomainName</maml:name>
+			<maml:description>
+				<maml:para>要從單一登入 (也稱為識別身分同盟) 轉換成標準驗證的網域名稱。</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			<dev:type>
+				<maml:name>string</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>PasswordFile</maml:name>
+			<maml:description>
+				<maml:para>記錄所轉換使用者的使用者名稱和暫時密碼的檔案。</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			<dev:type>
+				<maml:name>string</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>SkipUserConversion</maml:name>
+			<maml:description>
+				<maml:para>如果設定為 True，使用者將不會隨作業一起轉換。系統管理員可以在日後再次執行 Cmdlet 來轉換使用者。</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+			<dev:type>
+				<maml:name>Boolean</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>Confirm</maml:name>
+    			<maml:description>
+				<maml:para>在執行命令之前，提示您確認操作。</maml:para>
+    			</maml:description>
+    			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>	
+				<dev:type>
+  				<maml:name>SwitchParameter</maml:name> 
+					<maml:uri/> 
+					</dev:type>
+ 			<dev:defaultValue/> 
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>WhatIf</maml:name>
+    			<maml:description>
+				<maml:para>在實際執行命令之前，描述執行命令之後會發生的狀況。</maml:para>
+    			</maml:description>
+    			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>	
+				<dev:type>
+  				<maml:name>SwitchParameter</maml:name> 
+					<maml:uri/> 
+					</dev:type>
+ 			<dev:defaultValue/> 
+			</command:parameter>
+	</command:parameters>
+	<!-- Input - Output section-->
+	<command:inputTypes>
+		<command:inputType>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description>
+		</command:inputType>
+	</command:inputTypes>
+	<command:returnValues>
+		<command:returnValue>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>   
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description> 
+		</command:returnValue>
+	</command:returnValues>
+	<!-- Error section-->
+	<command:terminatingErrors/>
+	<command:nonTerminatingErrors/>
+		<!-- Notes section  -->
+	<maml:alertSet>
+		<maml:title></maml:title>
+		<maml:alert>
+			<maml:para>
+                          
+                        </maml:para>
+		</maml:alert>
+		<maml:alert>
+			<maml:para></maml:para>
+		</maml:alert>
+	</maml:alertSet>
+	<!-- Example section  --> 
+	<command:examples>
+    <command:example>
+      <maml:title>Example 1: Converts the domain from using single sign-on to using standard authentication.</maml:title>
+      <dev:code>PS C:\&gt;Convert-MsolDomainToStandard -DomainName Contoso.com -PasswordFile Passwords.txt</dev:code>
+      <dev:remarks>
+        <maml:para>The Convert-MsolDomainToStandard cmdlet converts the specified domain from single sign-on (also known as identity federation) to standard authentication. Single sign-on is also known as identity federation.</maml:para>
+      </dev:remarks>
+    </command:example>
+    <command:example>
+      <maml:title>Example 2: Converts the domain from using single sign-on to using standard authentication while skipping user conversion.</maml:title>
+      <dev:code>PS C:\&gt;Convert-MsolDomainToStandard -DomainName Contoso.com -PasswordFile Passwords.txt -SkipUserConversion $true</dev:code>
+      <dev:remarks>
+        <maml:para>Converts the domain while skipping user conversion.</maml:para>
+      </dev:remarks>
+    </command:example>
+	</command:examples>
+	<!-- Link section  -->
+	<maml:relatedLinks>
+		<maml:navigationLink>
+			<maml:linkText></maml:linkText>
+			<maml:uri/>
+		</maml:navigationLink>
+	</maml:relatedLinks>
+</command:command>
+
+<!-- v 1.3.0.36 -->
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+	<command:details>
+		<command:name>
+                   Get-MsolFederationProperty
+		</command:name>
+		<maml:description>
+			<maml:para>針對指定的網域，顯示 Active Directory Federation Services 2.0 伺服器和 Microsoft Online 的內容。</maml:para>
+		</maml:description>
+		<maml:copyright>
+			<maml:para></maml:para>
+		</maml:copyright>
+		<command:verb>Get</command:verb>
+		<command:noun>MsolFederationProperty</command:noun>
+		<dev:version></dev:version>
+	</command:details>
+	<maml:description>
+		<maml:para>Get-MSOLFederationProperty Cmdlet 會從 Active Directory Federation Services 2.0 伺服器和 Microsoft Online 取得金鑰設定。您可以使用這項資訊疑難排解因為 Active Directory Federation Services 2.0 伺服器和 Microsoft Online 之間設定不符造成的驗證問題。</maml:para>
+	</maml:description>
+	<!-- Cmdlet syntax section-->
+	<command:syntax>
+		<command:syntaxItem>
+			<maml:name>Get-MsolFederationProperty</maml:name>
+			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>DomainName</maml:name>
+				<maml:description>
+					<maml:para>要從 Active Directory Federation Services 2.0 伺服器和 Microsoft Online 顯示內容的網域名稱。</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>SupportMultipleDomain</maml:name>
+				<maml:description>
+					<maml:para></maml:para>
+				</maml:description>
+			</command:parameter>
+		</command:syntaxItem>
+	</command:syntax>
+	<!-- Cmdlet parameter section  -->
+	<command:parameters>
+		<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>DomainName</maml:name>
+			<maml:description>
+				<maml:para>要從 Active Directory Federation Services 2.0 伺服器和 Microsoft Online 顯示內容的網域名稱。</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			<dev:type>
+				<maml:name>string</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>SupportMultipleDomain</maml:name>
+			<maml:description>
+				<maml:para></maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+			<dev:type>
+				<maml:name>SwitchParameter</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+	</command:parameters>
+	<!-- Input - Output section-->
+	<command:inputTypes>
+		<command:inputType>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description>
+		</command:inputType>
+	</command:inputTypes>
+	<command:returnValues>
+		<command:returnValue>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>   
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description> 
+		</command:returnValue>
+	</command:returnValues>
+	<!-- Error section-->
+	<command:terminatingErrors/>
+	<command:nonTerminatingErrors/>
+		<!-- Notes section  -->
+	<maml:alertSet>
+		<maml:title></maml:title>
+		<maml:alert>
+			<maml:para>
+                          
+                        </maml:para>
+		</maml:alert>
+		<maml:alert>
+			<maml:para></maml:para>
+		</maml:alert>
+	</maml:alertSet>
+	<!-- Example section  --> 
+	<command:examples>
+	</command:examples>
+	<!-- Link section  -->
+	<maml:relatedLinks>
+		<maml:navigationLink>
+			<maml:linkText></maml:linkText>
+			<maml:uri/>
+		</maml:navigationLink>
+	</maml:relatedLinks>
+</command:command>
+
+<!-- v 1.3.0.36 -->
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+	<command:details>
+		<command:name>
+                   New-MsolFederatedDomain
+		</command:name>
+		<maml:description>
+			<maml:para>將新的單一登入網域 (也稱為識別身分同盟網域) 新增至 Microsoft Online Services，並在 Active Directory Federation Services 2.0 伺服器和 Microsoft Online 之間建立信賴憑證者信任。</maml:para>
+		</maml:description>
+		<maml:copyright>
+			<maml:para></maml:para>
+		</maml:copyright>
+		<command:verb>New</command:verb>
+		<command:noun>MsolFederatedDomain</command:noun>
+		<dev:version></dev:version>
+	</command:details>
+	<maml:description>
+		<maml:para>Add-MSOLFederatedDomain Cmdlet 會將新的單一登入網域 (也稱為識別身分同盟網域) 新增至 Microsoft Online Services，並在內部部署 Active Directory Federation Services 2.0 伺服器和 Microsoft Online 之間設定信賴憑證者信任設定。由於網域驗證需求之故，您可能需要執行此 Cmdlet 數次才能完成新增單一登入網域的程序。
+
+</maml:para>
+	</maml:description>
+	<!-- Cmdlet syntax section-->
+	<command:syntax>
+		<command:syntaxItem>
+			<maml:name>New-MsolFederatedDomain</maml:name>
+			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>DomainName</maml:name>
+				<maml:description>
+					<maml:para>要在 Microsoft Online 中建立的新單一登入網域 (也稱為識別身分同盟網域) 的名稱。</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>SupportMultipleDomain</maml:name>
+				<maml:description>
+					<maml:para></maml:para>
+				</maml:description>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>Confirm</maml:name>
+    			<maml:description>
+				<maml:para>在執行命令之前，提示您確認操作。</maml:para>
+    			</maml:description>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>WhatIf</maml:name>
+    			<maml:description>
+				<maml:para>在實際執行命令之前，描述執行命令之後會發生的狀況。</maml:para>
+    			</maml:description>
+			</command:parameter>
+		</command:syntaxItem>
+	</command:syntax>
+	<!-- Cmdlet parameter section  -->
+	<command:parameters>
+		<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>DomainName</maml:name>
+			<maml:description>
+				<maml:para>要在 Microsoft Online 中建立的新單一登入網域 (也稱為識別身分同盟網域) 的名稱。</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			<dev:type>
+				<maml:name>string</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>SupportMultipleDomain</maml:name>
+			<maml:description>
+				<maml:para></maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+			<dev:type>
+				<maml:name>SwitchParameter</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>Confirm</maml:name>
+    			<maml:description>
+				<maml:para>在執行命令之前，提示您確認操作。</maml:para>
+    			</maml:description>
+    			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>	
+				<dev:type>
+  				<maml:name>SwitchParameter</maml:name> 
+					<maml:uri/> 
+					</dev:type>
+ 			<dev:defaultValue/> 
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>WhatIf</maml:name>
+    			<maml:description>
+				<maml:para>在實際執行命令之前，描述執行命令之後會發生的狀況。</maml:para>
+    			</maml:description>
+    			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>	
+				<dev:type>
+  				<maml:name>SwitchParameter</maml:name> 
+					<maml:uri/> 
+					</dev:type>
+ 			<dev:defaultValue/> 
+			</command:parameter>
+	</command:parameters>
+	<!-- Input - Output section-->
+	<command:inputTypes>
+		<command:inputType>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description>
+		</command:inputType>
+	</command:inputTypes>
+	<command:returnValues>
+		<command:returnValue>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>   
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description> 
+		</command:returnValue>
+	</command:returnValues>
+	<!-- Error section-->
+	<command:terminatingErrors/>
+	<command:nonTerminatingErrors/>
+		<!-- Notes section  -->
+	<maml:alertSet>
+		<maml:title></maml:title>
+		<maml:alert>
+			<maml:para>
+                          
+                        </maml:para>
+		</maml:alert>
+		<maml:alert>
+			<maml:para></maml:para>
+		</maml:alert>
+	</maml:alertSet>
+	<!-- Example section  --> 
+	<command:examples>
+    <command:example>
+      <maml:title>Example 1: Adds a new single sign-on domain to Microsoft Online Services and establishes the relying party trust.</maml:title>
+      <dev:code>PS C:\&gt;New-MsolFederatedDomain -DomainName Contoso.com</dev:code>
+      <dev:remarks>
+        <maml:para>The New-MsolFederatedDomain cmdlet adds a new single sign-on domain to Microsoft Online Services and configures the relying party trust settings between the on-premises Active Directory Federation Services (ADFS) server and Microsoft Online.</maml:para>
+      </dev:remarks>
+    </command:example>
+    <command:example>
+      <maml:title>Example 2: Adds a new single sign-on domain to Microsoft Online Services and establishes the relying party trust.</maml:title>
+      <dev:code>PS C:\&gt;New-MsolFederatedDomain -DomainName Contoso.com -SupportMultipleDomain</dev:code>
+      <dev:remarks>
+        <maml:para>Use the SupportMultipleDomain switch if you need support for multiple top-level domains.</maml:para>
+      </dev:remarks>
+    </command:example>
+	</command:examples>
+	<!-- Link section  -->
+	<maml:relatedLinks>
+		<maml:navigationLink>
+			<maml:linkText></maml:linkText>
+			<maml:uri/>
+		</maml:navigationLink>
+	</maml:relatedLinks>
+</command:command>
+
+<!-- v 1.3.0.36 -->
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+	<command:details>
+		<command:name>
+                   Remove-MsolFederatedDomain
+		</command:name>
+		<maml:description>
+			<maml:para>從 Microsoft Online 中的網域清單移除指定的單一登入網域。</maml:para>
+		</maml:description>
+		<maml:copyright>
+			<maml:para></maml:para>
+		</maml:copyright>
+		<command:verb>Remove</command:verb>
+		<command:noun>MsolFederatedDomain</command:noun>
+		<dev:version></dev:version>
+	</command:details>
+	<maml:description>
+		<maml:para>此 Cmdlet 會從 Microsoft Online 和 Active Directory Federation Services 2.0 中關聯的信賴憑證者信任設定移除指定的單一登入網域。
+      
+注意: 如果指定的網域有關聯的物件，您將無法移除網域。</maml:para>
+	</maml:description>
+	<!-- Cmdlet syntax section-->
+	<command:syntax>
+		<command:syntaxItem>
+			<maml:name>Remove-MsolFederatedDomain</maml:name>
+			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>DomainName</maml:name>
+				<maml:description>
+					<maml:para>要移除的網域名稱</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>SupportMultipleDomain</maml:name>
+				<maml:description>
+					<maml:para></maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>Confirm</maml:name>
+    			<maml:description>
+				<maml:para>在執行命令之前，提示您確認操作。</maml:para>
+    			</maml:description>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>WhatIf</maml:name>
+    			<maml:description>
+				<maml:para>在實際執行命令之前，描述執行命令之後會發生的狀況。</maml:para>
+    			</maml:description>
+			</command:parameter>
+		</command:syntaxItem>
+	</command:syntax>
+	<!-- Cmdlet parameter section  -->
+	<command:parameters>
+		<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>DomainName</maml:name>
+			<maml:description>
+				<maml:para>要移除的網域名稱</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			<dev:type>
+				<maml:name>string</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>SupportMultipleDomain</maml:name>
+			<maml:description>
+				<maml:para></maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+			<dev:type>
+				<maml:name>Boolean</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>Confirm</maml:name>
+    			<maml:description>
+				<maml:para>在執行命令之前，提示您確認操作。</maml:para>
+    			</maml:description>
+    			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>	
+				<dev:type>
+  				<maml:name>SwitchParameter</maml:name> 
+					<maml:uri/> 
+					</dev:type>
+ 			<dev:defaultValue/> 
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>WhatIf</maml:name>
+    			<maml:description>
+				<maml:para>在實際執行命令之前，描述執行命令之後會發生的狀況。</maml:para>
+    			</maml:description>
+    			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>	
+				<dev:type>
+  				<maml:name>SwitchParameter</maml:name> 
+					<maml:uri/> 
+					</dev:type>
+ 			<dev:defaultValue/> 
+			</command:parameter>
+	</command:parameters>
+	<!-- Input - Output section-->
+	<command:inputTypes>
+		<command:inputType>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description>
+		</command:inputType>
+	</command:inputTypes>
+	<command:returnValues>
+		<command:returnValue>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>   
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description> 
+		</command:returnValue>
+	</command:returnValues>
+	<!-- Error section-->
+	<command:terminatingErrors/>
+	<command:nonTerminatingErrors/>
+		<!-- Notes section  -->
+	<maml:alertSet>
+		<maml:title></maml:title>
+		<maml:alert>
+			<maml:para>
+                          
+                        </maml:para>
+		</maml:alert>
+		<maml:alert>
+			<maml:para></maml:para>
+		</maml:alert>
+	</maml:alertSet>
+	<!-- Example section  --> 
+	<command:examples>
+    <command:example>
+      <maml:title>Example 1: Removes a single sign-on domain from the domains in Microsoft Online.</maml:title>
+      <dev:code>PS C:\&gt;Remove-MsolFederatedDomain -DomainName Contoso.com</dev:code>
+      <dev:remarks>
+        <maml:para>The Remove-MsolFederatedDomain cmdlet removes the specified single sign-on domain from Microsoft Online and the associated relying party trust settings in Active Directory Federation Services (ADFS).</maml:para>
+      </dev:remarks>
+    </command:example>
+    <command:example>
+      <maml:title>Example 2: Removes a single sign-on domain from the domains in Microsoft Online.</maml:title>
+      <dev:code>PS C:\&gt;Remove-MsolFederatedDomain -DomainName Contoso.com -SupportMultipleDomain</dev:code>
+      <dev:remarks>
+        <maml:para>The SupportMultipleDomain switch indicates this configuration is part of a multi-domain setup and provides additional logic checks when removing a domain.</maml:para>
+      </dev:remarks>
+    </command:example>
+	</command:examples>
+	<!-- Link section  -->
+	<maml:relatedLinks>
+		<maml:navigationLink>
+			<maml:linkText></maml:linkText>
+			<maml:uri/>
+		</maml:navigationLink>
+	</maml:relatedLinks>
+</command:command>
+
+<!-- v 1.3.0.36 -->
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+	<command:details>
+		<command:name>
+                   Set-MsolADFSContext
+		</command:name>
+		<maml:description>
+			<maml:para>設定連線到 Microsoft Online 和 Active Directory Federation Services 2.0 伺服器的內容和認證。此 Cmdlet 也會將記錄檔位置記錄起來。</maml:para>
+		</maml:description>
+		<maml:copyright>
+			<maml:para></maml:para>
+		</maml:copyright>
+		<command:verb>Set</command:verb>
+		<command:noun>MsolADFSContext</command:noun>
+		<dev:version></dev:version>
+	</command:details>
+	<maml:description>
+		<maml:para>Set-MsolADFSContext Cmdlet 會設定連線到 Microsoft Online 和 Active Directory Federation Services 2.0 (AD FS 2.0) 伺服器的認證。此 Cmdlet 必須先執行，才能進行其他單一登入 (也稱為識別身分同盟) Cmdlet 呼叫。如果呼叫此 Cmdlet 時未指定參數，系統將會提示使用者輸入連線到不同系統的認證。從遠端使用 AD FS 2.0 伺服器時，使用者必須指定主要 AD FS 2.0 伺服器的電腦名稱。請注意，指定的記錄檔會由該工作階段的所有單一登入 Cmdlet 共用。如果未指定記錄檔，系統會建立預設記錄檔。
+</maml:para>
+	</maml:description>
+	<!-- Cmdlet syntax section-->
+	<command:syntax>
+		<command:syntaxItem>
+			<maml:name>Set-MsolADFSContext</maml:name>
+			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>Computer</maml:name>
+				<maml:description>
+					<maml:para>主要 AD FS 2.0 伺服器的電腦名稱。請在從遠端使用 AD FS 2.0 伺服器時指定此名稱。</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>ADFSUserCredentials</maml:name>
+				<maml:description>
+					<maml:para>用來在 Active Directory Federation Services 2.0 伺服器上建立系統管理工作階段的認證物件。</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>LogFile</maml:name>
+				<maml:description>
+					<maml:para>用來記錄 Windows PowerShell 工作階段所有單一登入 Cmdlet 作業的記錄檔。如果未指定，Windows PowerShell 模組會在 %USERPROFILE%\Documents\MicrosoftOnline 中自動建立記錄檔</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			</command:parameter>
+		</command:syntaxItem>
+	</command:syntax>
+	<!-- Cmdlet parameter section  -->
+	<command:parameters>
+		<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>ADFSUserCredentials</maml:name>
+			<maml:description>
+				<maml:para>用來在 Active Directory Federation Services 2.0 伺服器上建立系統管理工作階段的認證物件。</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+			<dev:type>
+				<maml:name>PSCredential</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>Computer</maml:name>
+			<maml:description>
+				<maml:para>主要 AD FS 2.0 伺服器的電腦名稱。請在從遠端使用 AD FS 2.0 伺服器時指定此名稱。</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			<dev:type>
+				<maml:name>string</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>LogFile</maml:name>
+			<maml:description>
+				<maml:para>用來記錄 Windows PowerShell 工作階段所有單一登入 Cmdlet 作業的記錄檔。如果未指定，Windows PowerShell 模組會在 %USERPROFILE%\Documents\MicrosoftOnline 中自動建立記錄檔</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			<dev:type>
+				<maml:name>string</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+	</command:parameters>
+	<!-- Input - Output section-->
+	<command:inputTypes>
+		<command:inputType>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description>
+		</command:inputType>
+	</command:inputTypes>
+	<command:returnValues>
+		<command:returnValue>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>   
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description> 
+		</command:returnValue>
+	</command:returnValues>
+	<!-- Error section-->
+	<command:terminatingErrors/>
+	<command:nonTerminatingErrors/>
+		<!-- Notes section  -->
+	<maml:alertSet>
+		<maml:title></maml:title>
+		<maml:alert>
+			<maml:para>
+                          
+                        </maml:para>
+		</maml:alert>
+		<maml:alert>
+			<maml:para></maml:para>
+		</maml:alert>
+	</maml:alertSet>
+	<!-- Example section  --> 
+	<command:examples>
+	</command:examples>
+	<!-- Link section  -->
+	<maml:relatedLinks>
+		<maml:navigationLink>
+			<maml:linkText></maml:linkText>
+			<maml:uri/>
+		</maml:navigationLink>
+	</maml:relatedLinks>
+</command:command>
+
+<!-- v 1.3.0.36 -->
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+	<command:details>
+		<command:name>
+                   Update-MsolFederatedDomain
+		</command:name>
+		<maml:description>
+			<maml:para>更新 Active Directory Federation Services 2.0 伺服器和 Microsoft Online 中的設定。</maml:para>
+		</maml:description>
+		<maml:copyright>
+			<maml:para></maml:para>
+		</maml:copyright>
+		<command:verb>Update</command:verb>
+		<command:noun>MsolFederatedDomain</command:noun>
+		<dev:version></dev:version>
+	</command:details>
+	<maml:description>
+		<maml:para>Update-MSOLFederatedDomain Cmdlet 會變更 Active Directory Federation Services 2.0 伺服器和 Microsoft Online 中的設定。只要因為設定變更或透過定期維護憑證 (例如當憑證即將到期時)，導致 Active Directory Federation Services 2.0 內的 URL 或憑證變更，就需要執行此 Cmdlet。當 Microsoft Online 中發生變更時，也應執行此 Cmdlet。若要確認這兩個系統中的資訊是否正確，可以使用 Get-MSOLFederationProperty Cmdlet 來擷取設定。</maml:para>
+	</maml:description>
+	<!-- Cmdlet syntax section-->
+	<command:syntax>
+		<command:syntaxItem>
+			<maml:name>Update-MsolFederatedDomain</maml:name>
+			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>DomainName</maml:name>
+				<maml:description>
+					<maml:para>需要更新的單一登入網域 (也稱為識別身分同盟網域)。</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>SupportMultipleDomain</maml:name>
+				<maml:description>
+					<maml:para></maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>Confirm</maml:name>
+    			<maml:description>
+				<maml:para>在執行命令之前，提示您確認操作。</maml:para>
+    			</maml:description>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>WhatIf</maml:name>
+    			<maml:description>
+				<maml:para>在實際執行命令之前，描述執行命令之後會發生的狀況。</maml:para>
+    			</maml:description>
+			</command:parameter>
+		</command:syntaxItem>
+	</command:syntax>
+	<!-- Cmdlet parameter section  -->
+	<command:parameters>
+		<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>DomainName</maml:name>
+			<maml:description>
+				<maml:para>需要更新的單一登入網域 (也稱為識別身分同盟網域)。</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			<dev:type>
+				<maml:name>string</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>SupportMultipleDomain</maml:name>
+			<maml:description>
+				<maml:para></maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+			<dev:type>
+				<maml:name>Boolean</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>Confirm</maml:name>
+    			<maml:description>
+				<maml:para>在執行命令之前，提示您確認操作。</maml:para>
+    			</maml:description>
+    			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>	
+				<dev:type>
+  				<maml:name>SwitchParameter</maml:name> 
+					<maml:uri/> 
+					</dev:type>
+ 			<dev:defaultValue/> 
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>WhatIf</maml:name>
+    			<maml:description>
+				<maml:para>在實際執行命令之前，描述執行命令之後會發生的狀況。</maml:para>
+    			</maml:description>
+    			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>	
+				<dev:type>
+  				<maml:name>SwitchParameter</maml:name> 
+					<maml:uri/> 
+					</dev:type>
+ 			<dev:defaultValue/> 
+			</command:parameter>
+	</command:parameters>
+	<!-- Input - Output section-->
+	<command:inputTypes>
+		<command:inputType>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description>
+		</command:inputType>
+	</command:inputTypes>
+	<command:returnValues>
+		<command:returnValue>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>   
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description> 
+		</command:returnValue>
+	</command:returnValues>
+	<!-- Error section-->
+	<command:terminatingErrors/>
+	<command:nonTerminatingErrors/>
+		<!-- Notes section  -->
+	<maml:alertSet>
+		<maml:title></maml:title>
+		<maml:alert>
+			<maml:para>
+                          
+                        </maml:para>
+		</maml:alert>
+		<maml:alert>
+			<maml:para></maml:para>
+		</maml:alert>
+	</maml:alertSet>
+	<!-- Example section  --> 
+	<command:examples>
+    <command:example>
+      <maml:title>Example 1: Updates the settings in both the Active Directory Federation Services 2.0 server and Microsoft Online.</maml:title>
+      <dev:code>PS C:\&gt;Update-MsolFederatedDomain -DomainName Contoso.com</dev:code>
+      <dev:remarks>
+        <maml:para>It is necessary to run this cmdlet whenever the URLs or certificate information within Active Directory Federation Services (ADFS) change due to configuration changes or through regular maintenance of the certificates, such as when a certificate is about to expire. </maml:para>
+      </dev:remarks>
+    </command:example>
+    <command:example>
+      <maml:title>Example 2: Updates the settings in both the Active Directory Federation Services 2.0 server and Microsoft Online.</maml:title>
+      <dev:code>PS C:\&gt;Update-MsolFederatedDomain -DomainName Contoso.com -SupportMultipleDomain</dev:code>
+      <dev:remarks>
+        <maml:para>Use the SupportMultipleDomain switch if you need support for multiple top-level domains.</maml:para>
+      </dev:remarks>
+    </command:example>
+	</command:examples>
+	<!-- Link section  -->
+	<maml:relatedLinks>
+		<maml:navigationLink>
+			<maml:linkText></maml:linkText>
+			<maml:uri/>
+		</maml:navigationLink>
+	</maml:relatedLinks>
+</command:command>
+
+</helpItems>

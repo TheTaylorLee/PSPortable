@@ -1,0 +1,21 @@
+{
+  "runtimeOptions": {
+    "tfm": "netcoreapp3.1",
+    "includedFrameworks": [
+      {
+        "name": "Microsoft.NETCore.App",
+        "version": "3.1.2"
+      },
+      {
+        "name": "Microsoft.WindowsDesktop.App",
+        "version": "3.1.2"
+      }
+    ],
+    "rollForwardOnNoCandidateFx": 2,
+    "configProperties": {
+      "System.Runtime.TieredCompilation": true,
+      "System.Runtime.TieredCompilation.QuickJit": true,
+      "System.Runtime.TieredCompilation.QuickJitForLoops": true
+    }
+  }
+}

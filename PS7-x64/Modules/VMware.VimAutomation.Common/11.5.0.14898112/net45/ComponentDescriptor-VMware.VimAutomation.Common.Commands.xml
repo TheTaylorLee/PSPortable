@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ComponentDescriptor>
+  <Name>VMware.VimAutomation.Common.Commands</Name>
+  <Assembly>VMware.VimAutomation.Common.Commands</Assembly>
+  <ImplementingType>VMware.VimAutomation.Common.Commands.Component</ImplementingType>
+  <IsSnapin>true</IsSnapin>
+  <ProvidedServiceList>
+  </ProvidedServiceList>
+  <RequiredServiceList>
+    <ServiceDescriptor>
+      <Name>CommonOAuthService</Name>
+      <Version>1.0</Version>
+    </ServiceDescriptor>
+  </RequiredServiceList>
+  <ExtendedServiceList>
+  </ExtendedServiceList>
+  <Version>
+    <Major>11</Major>
+    <Minor>5</Minor>
+    <Revision>0</Revision>
+    <Build>14898112</Build>
+    <Company>VMware Inc.</Company>
+    <Copyright>Copyright 2019</Copyright>
+    <UserFriendlyVersion>VMware Common PowerCLI Component 11.5 build 14898112</UserFriendlyVersion>
+    <Description>Provides cmdlets for common functionality.</Description>
+  </Version>
+</ComponentDescriptor>

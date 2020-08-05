@@ -1,0 +1,10 @@
+<!-- ***************************** Dimensions defined for de ************************* -->
+
+<Include>
+  <?define LBA_LCIDH = "0x804"?>
+  <?define lang_id="zh-hans"?>
+  <?define BposIdAdministrationPSModuleToolResourcePath=$(var.BinariesBuildTypeArchDirectory)\Microsoft.Online.Administration.Automation.PSModule.Resources\$(var.lang_id)\Microsoft.Online.Administration.Automation.PSModule.Resources.resources.dll?>
+  <?define BposIdAdministrationPSModuleToolHelpXmlPath=.\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml?>
+  <?define BposIdIdentityFederationToolHelpXmlPath=.\Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml?>
+  <?define BposIdIdentityFederationToolResourcePath=$(var.BinariesBuildTypeArchDirectory)\Microsoft.Online.Identity.Federation.PowerShell.Strings\$(var.lang_id)\Microsoft.Online.Identity.Federation.PowerShell.Strings.resources.dll?>
+</Include>

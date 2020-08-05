@@ -1,0 +1,1177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<helpItems xmlns="http://msh" schema="maml">
+<!-- v 1.3.0.36 -->
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+	<command:details>
+		<command:name>
+                   Convert-MsolDomainToFederated
+		</command:name>
+		<maml:description>
+			<maml:para>Konvertiert die Domäne von der Standardauthentifizierung zum einmaligen Anmelden (auch als Identitätsverbund bezeichnet).</maml:para>
+		</maml:description>
+		<maml:copyright>
+			<maml:para></maml:para>
+		</maml:copyright>
+		<command:verb>Convert</command:verb>
+		<command:noun>MsolDomainToFederated</command:noun>
+		<dev:version></dev:version>
+	</command:details>
+	<maml:description>
+		<maml:para>Mit dem Cmdlet "Convert-MSOLDomainToFederated" wird die angegebene Domäne von einer Standardauthentifizierung zur einmaligen Anmeldung konvertiert (auch bekannt als Identitätsverbund). Des Weiteren werden die Vertrauensstellungseinstellungen der vertrauenden Seite zwischen den Active Directory-Verbunddiensten 2.0 und Microsoft Online konfiguriert. Zur Konvertierung einer Domäne von der Standardauthentifizierung zum einmaligen Anmelden gehört auch das Konvertieren jedes Benutzers. Diese Konvertierung findet automatisch bei der nächsten Anmeldung des Benutzers statt. Ein Eingreifen des Administrators ist nicht erforderlich.</maml:para>
+	</maml:description>
+	<!-- Cmdlet syntax section-->
+	<command:syntax>
+		<command:syntaxItem>
+			<maml:name>Convert-MsolDomainToFederated</maml:name>
+			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>DomainName</maml:name>
+				<maml:description>
+					<maml:para>Der Name der Domäne, die zum einmaligen Anmelden (auch als Identitätsverbund bezeichnet) konvertiert werden soll.</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>SupportMultipleDomain</maml:name>
+				<maml:description>
+					<maml:para></maml:para>
+				</maml:description>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>Confirm</maml:name>
+    			<maml:description>
+				<maml:para>Fordert Sie zu einer Bestätigung auf, bevor der Befehl ausgeführt wird.</maml:para>
+    			</maml:description>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>WhatIf</maml:name>
+    			<maml:description>
+				<maml:para>Beschreibt die Folgen der Ausführung des Befehls, ohne dass der Befehl tatsächlich ausgeführt wird.</maml:para>
+    			</maml:description>
+			</command:parameter>
+		</command:syntaxItem>
+	</command:syntax>
+	<!-- Cmdlet parameter section  -->
+	<command:parameters>
+		<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>DomainName</maml:name>
+			<maml:description>
+				<maml:para>Der Name der Domäne, die zum einmaligen Anmelden (auch als Identitätsverbund bezeichnet) konvertiert werden soll.</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			<dev:type>
+				<maml:name>string</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>SupportMultipleDomain</maml:name>
+			<maml:description>
+				<maml:para></maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+			<dev:type>
+				<maml:name>SwitchParameter</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>Confirm</maml:name>
+    			<maml:description>
+				<maml:para>Fordert Sie zu einer Bestätigung auf, bevor der Befehl ausgeführt wird.</maml:para>
+    			</maml:description>
+    			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>	
+				<dev:type>
+  				<maml:name>SwitchParameter</maml:name> 
+					<maml:uri/> 
+					</dev:type>
+ 			<dev:defaultValue/> 
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>WhatIf</maml:name>
+    			<maml:description>
+				<maml:para>Beschreibt die Folgen der Ausführung des Befehls, ohne dass der Befehl tatsächlich ausgeführt wird.</maml:para>
+    			</maml:description>
+    			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>	
+				<dev:type>
+  				<maml:name>SwitchParameter</maml:name> 
+					<maml:uri/> 
+					</dev:type>
+ 			<dev:defaultValue/> 
+			</command:parameter>
+	</command:parameters>
+	<!-- Input - Output section-->
+	<command:inputTypes>
+		<command:inputType>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description>
+		</command:inputType>
+	</command:inputTypes>
+	<command:returnValues>
+		<command:returnValue>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>   
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description> 
+		</command:returnValue>
+	</command:returnValues>
+	<!-- Error section-->
+	<command:terminatingErrors/>
+	<command:nonTerminatingErrors/>
+		<!-- Notes section  -->
+	<maml:alertSet>
+		<maml:title></maml:title>
+		<maml:alert>
+			<maml:para>
+                          
+                        </maml:para>
+		</maml:alert>
+		<maml:alert>
+			<maml:para></maml:para>
+		</maml:alert>
+	</maml:alertSet>
+	<!-- Example section  --> 
+	<command:examples>
+    <command:example>
+      <maml:title>Example 1: Convert the domain to federated</maml:title>
+      <dev:code>PS C:\&gt;Convert-MsolDomainToFederated -DomainName Contoso.com</dev:code>
+      <dev:remarks>
+        <maml:para>Convert a managed domain name called 'contoso.com' to federated authentication and use an on-premise Active Directory Federation Services (ADFS) server.</maml:para>
+      </dev:remarks>
+    </command:example>
+    <command:example>
+      <maml:title>Example 2: Convert the domain while allowing for multiple domain support</maml:title>
+      <dev:code>PS C:\&gt;Convert-MsolDomainToFederated -DomainName Contoso.com -SupportMultipleDomain</dev:code>
+      <dev:remarks>
+        <maml:para>Use the SupportMultipleDomain switch if you need support for multiple top-level domains.</maml:para>
+      </dev:remarks>
+    </command:example>
+  </command:examples>
+	<!-- Link section  -->
+	<maml:relatedLinks>
+		<maml:navigationLink>
+			<maml:linkText></maml:linkText>
+			<maml:uri/>
+		</maml:navigationLink>
+	</maml:relatedLinks>
+</command:command>
+
+<!-- v 1.3.0.36 -->
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+	<command:details>
+		<command:name>
+                   Convert-MsolDomainToStandard
+		</command:name>
+		<maml:description>
+			<maml:para>Konvertiert die Authentifizierung der Domäne von einmaligem Anmelden (auch als Identitätsverbund bezeichnet) zur Standardauthentifizierung.</maml:para>
+		</maml:description>
+		<maml:copyright>
+			<maml:para></maml:para>
+		</maml:copyright>
+		<command:verb>Convert</command:verb>
+		<command:noun>MsolDomainToStandard</command:noun>
+		<dev:version></dev:version>
+	</command:details>
+	<maml:description>
+		<maml:para>Mit dem Cmdlet "Convert-MsolDomainToStandard" wird die angegebene Domäne von einer einmaligen Anmeldung (auch bekannt als Identitätsverbund) zu einer Standardauthentifizierung konvertiert. Durch diesen Vorgang werden auch die Vertrauensstellungseinstellungen der vertrauenden Seite zwischen den Active Directory-Verbunddiensten 2.0 und Microsoft Online entfernt. Nach der Konvertierung werden mit dem Cmdlet alle bestehenden Benutzer von der einmaligen Anmeldung zur Standardauthentifizierung konvertiert. Jedem bestehenden Benutzer, für den eine einmalige Anmeldung konfiguriert wurde, wird während des Konvertierungsvorgangs ein neues temporäres Kennwort zugewiesen. Jeder konvertierte Benutzername und jedes neue temporäre Kennwort werden als Referenz für den Administrator in einer Datei erfasst. Der Administrator kann dann das neue temporäre Kennwort für jeden konvertierten Benutzer verteilen, damit sich der Benutzer bei Microsoft Online Services anmelden kann.</maml:para>
+	</maml:description>
+	<!-- Cmdlet syntax section-->
+	<command:syntax>
+		<command:syntaxItem>
+			<maml:name>Convert-MsolDomainToStandard</maml:name>
+			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>DomainName</maml:name>
+				<maml:description>
+					<maml:para>Der Name der Domäne, die von einmaligem Anmelden (auch als Identitätsverbund bezeichnet) zur Standardauthentifizierung konvertiert werden soll.</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>PasswordFile</maml:name>
+				<maml:description>
+					<maml:para>Die Datei, in der die Benutzernamen und die temporären Kennwörter der konvertierten Benutzer aufgezeichnet werden.</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>SkipUserConversion</maml:name>
+				<maml:description>
+					<maml:para>Wenn dieser Wert auf "true" festgelegt ist, werden Benutzer nicht im Rahmen des Vorgangs konvertiert. Administratoren können das Cmdlet später erneut ausführen, um Benutzer zu konvertieren.</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>Confirm</maml:name>
+    			<maml:description>
+				<maml:para>Fordert Sie zu einer Bestätigung auf, bevor der Befehl ausgeführt wird.</maml:para>
+    			</maml:description>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>WhatIf</maml:name>
+    			<maml:description>
+				<maml:para>Beschreibt die Folgen der Ausführung des Befehls, ohne dass der Befehl tatsächlich ausgeführt wird.</maml:para>
+    			</maml:description>
+			</command:parameter>
+		</command:syntaxItem>
+	</command:syntax>
+	<!-- Cmdlet parameter section  -->
+	<command:parameters>
+		<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>DomainName</maml:name>
+			<maml:description>
+				<maml:para>Der Name der Domäne, die von einmaligem Anmelden (auch als Identitätsverbund bezeichnet) zur Standardauthentifizierung konvertiert werden soll.</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			<dev:type>
+				<maml:name>string</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>PasswordFile</maml:name>
+			<maml:description>
+				<maml:para>Die Datei, in der die Benutzernamen und die temporären Kennwörter der konvertierten Benutzer aufgezeichnet werden.</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			<dev:type>
+				<maml:name>string</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>SkipUserConversion</maml:name>
+			<maml:description>
+				<maml:para>Wenn dieser Wert auf "true" festgelegt ist, werden Benutzer nicht im Rahmen des Vorgangs konvertiert. Administratoren können das Cmdlet später erneut ausführen, um Benutzer zu konvertieren.</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+			<dev:type>
+				<maml:name>Boolean</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>Confirm</maml:name>
+    			<maml:description>
+				<maml:para>Fordert Sie zu einer Bestätigung auf, bevor der Befehl ausgeführt wird.</maml:para>
+    			</maml:description>
+    			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>	
+				<dev:type>
+  				<maml:name>SwitchParameter</maml:name> 
+					<maml:uri/> 
+					</dev:type>
+ 			<dev:defaultValue/> 
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>WhatIf</maml:name>
+    			<maml:description>
+				<maml:para>Beschreibt die Folgen der Ausführung des Befehls, ohne dass der Befehl tatsächlich ausgeführt wird.</maml:para>
+    			</maml:description>
+    			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>	
+				<dev:type>
+  				<maml:name>SwitchParameter</maml:name> 
+					<maml:uri/> 
+					</dev:type>
+ 			<dev:defaultValue/> 
+			</command:parameter>
+	</command:parameters>
+	<!-- Input - Output section-->
+	<command:inputTypes>
+		<command:inputType>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description>
+		</command:inputType>
+	</command:inputTypes>
+	<command:returnValues>
+		<command:returnValue>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>   
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description> 
+		</command:returnValue>
+	</command:returnValues>
+	<!-- Error section-->
+	<command:terminatingErrors/>
+	<command:nonTerminatingErrors/>
+		<!-- Notes section  -->
+	<maml:alertSet>
+		<maml:title></maml:title>
+		<maml:alert>
+			<maml:para>
+                          
+                        </maml:para>
+		</maml:alert>
+		<maml:alert>
+			<maml:para></maml:para>
+		</maml:alert>
+	</maml:alertSet>
+	<!-- Example section  --> 
+	<command:examples>
+    <command:example>
+      <maml:title>Example 1: Converts the domain from using single sign-on to using standard authentication.</maml:title>
+      <dev:code>PS C:\&gt;Convert-MsolDomainToStandard -DomainName Contoso.com -PasswordFile Passwords.txt</dev:code>
+      <dev:remarks>
+        <maml:para>The Convert-MsolDomainToStandard cmdlet converts the specified domain from single sign-on (also known as identity federation) to standard authentication. Single sign-on is also known as identity federation.</maml:para>
+      </dev:remarks>
+    </command:example>
+    <command:example>
+      <maml:title>Example 2: Converts the domain from using single sign-on to using standard authentication while skipping user conversion.</maml:title>
+      <dev:code>PS C:\&gt;Convert-MsolDomainToStandard -DomainName Contoso.com -PasswordFile Passwords.txt -SkipUserConversion $true</dev:code>
+      <dev:remarks>
+        <maml:para>Converts the domain while skipping user conversion.</maml:para>
+      </dev:remarks>
+    </command:example>
+	</command:examples>
+	<!-- Link section  -->
+	<maml:relatedLinks>
+		<maml:navigationLink>
+			<maml:linkText></maml:linkText>
+			<maml:uri/>
+		</maml:navigationLink>
+	</maml:relatedLinks>
+</command:command>
+
+<!-- v 1.3.0.36 -->
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+	<command:details>
+		<command:name>
+                   Get-MsolFederationProperty
+		</command:name>
+		<maml:description>
+			<maml:para>Zeigt für die angegebene Domäne die Eigenschaften des Servers mit Active Directory-Verbunddienste 2.0 und Microsoft Online an.</maml:para>
+		</maml:description>
+		<maml:copyright>
+			<maml:para></maml:para>
+		</maml:copyright>
+		<command:verb>Get</command:verb>
+		<command:noun>MsolFederationProperty</command:noun>
+		<dev:version></dev:version>
+	</command:details>
+	<maml:description>
+		<maml:para>Mit dem Cmdlet "Get-MSOLFederationProperty" werden Schlüsseleinstellungen sowohl vom Server mit Active Directory-Verbunddienste 2.0 als auch Microsoft Online abgerufen. Diese Informationen können zur Fehlerbehebung bei Authentifizierungsproblemen verwendet werden, die bei nicht übereinstimmenden Einstellungen zwischen dem Server mit Active Directory-Verbunddienste 2.0 und Microsoft Online verursacht werden.</maml:para>
+	</maml:description>
+	<!-- Cmdlet syntax section-->
+	<command:syntax>
+		<command:syntaxItem>
+			<maml:name>Get-MsolFederationProperty</maml:name>
+			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>DomainName</maml:name>
+				<maml:description>
+					<maml:para>Der Domänenname, für den die Eigenschaften sowohl vom Server mit Active Directory-Verbunddienste 2.0 als auch von Microsoft Online angezeigt werden.</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>SupportMultipleDomain</maml:name>
+				<maml:description>
+					<maml:para></maml:para>
+				</maml:description>
+			</command:parameter>
+		</command:syntaxItem>
+	</command:syntax>
+	<!-- Cmdlet parameter section  -->
+	<command:parameters>
+		<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>DomainName</maml:name>
+			<maml:description>
+				<maml:para>Der Domänenname, für den die Eigenschaften sowohl vom Server mit Active Directory-Verbunddienste 2.0 als auch von Microsoft Online angezeigt werden.</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			<dev:type>
+				<maml:name>string</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>SupportMultipleDomain</maml:name>
+			<maml:description>
+				<maml:para></maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+			<dev:type>
+				<maml:name>SwitchParameter</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+	</command:parameters>
+	<!-- Input - Output section-->
+	<command:inputTypes>
+		<command:inputType>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description>
+		</command:inputType>
+	</command:inputTypes>
+	<command:returnValues>
+		<command:returnValue>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>   
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description> 
+		</command:returnValue>
+	</command:returnValues>
+	<!-- Error section-->
+	<command:terminatingErrors/>
+	<command:nonTerminatingErrors/>
+		<!-- Notes section  -->
+	<maml:alertSet>
+		<maml:title></maml:title>
+		<maml:alert>
+			<maml:para>
+                          
+                        </maml:para>
+		</maml:alert>
+		<maml:alert>
+			<maml:para></maml:para>
+		</maml:alert>
+	</maml:alertSet>
+	<!-- Example section  --> 
+	<command:examples>
+	</command:examples>
+	<!-- Link section  -->
+	<maml:relatedLinks>
+		<maml:navigationLink>
+			<maml:linkText></maml:linkText>
+			<maml:uri/>
+		</maml:navigationLink>
+	</maml:relatedLinks>
+</command:command>
+
+<!-- v 1.3.0.36 -->
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+	<command:details>
+		<command:name>
+                   New-MsolFederatedDomain
+		</command:name>
+		<maml:description>
+			<maml:para>Fügt Microsoft Online Services eine neue Domäne für einmaliges Anmelden (auch als Domäne mit Identitätsverbund bezeichnet) hinzu und erstellt die Vertrauensstellungseinstellungen der vertrauenden Seite zwischen dem Server mit Active Directory-Verbunddienste 2.0 und Microsoft Online.</maml:para>
+		</maml:description>
+		<maml:copyright>
+			<maml:para></maml:para>
+		</maml:copyright>
+		<command:verb>New</command:verb>
+		<command:noun>MsolFederatedDomain</command:noun>
+		<dev:version></dev:version>
+	</command:details>
+	<maml:description>
+		<maml:para>Mit dem Cmdlet "Add-MSOLFederatedDomain" wird Microsoft Online Services eine neue Domäne für einmaliges Anmelden (auch als Domäne mit Identitätsverbund bezeichnet) hinzugefügt. Des Weiteren werden die Vertrauensstellungseinstellungen der vertrauenden Seite zwischen dem lokalen Server mit Active Directory-Verbunddienste 2.0 und Microsoft Online konfiguriert. Aufgrund von Anforderungen an die Domänenüberprüfung müssen Sie dieses Cmdlet möglicherweise mehrmals ausführen, um das Hinzufügen der neuen Domäne für einmaliges Anmelden abzuschließen.
+
+</maml:para>
+	</maml:description>
+	<!-- Cmdlet syntax section-->
+	<command:syntax>
+		<command:syntaxItem>
+			<maml:name>New-MsolFederatedDomain</maml:name>
+			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>DomainName</maml:name>
+				<maml:description>
+					<maml:para>Der Name der neuen Domäne für einmaliges Anmelden (auch "Domäne mit Identitätsverbund"), die in Microsoft Online erstellt werden soll.</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>SupportMultipleDomain</maml:name>
+				<maml:description>
+					<maml:para></maml:para>
+				</maml:description>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>Confirm</maml:name>
+    			<maml:description>
+				<maml:para>Fordert Sie zu einer Bestätigung auf, bevor der Befehl ausgeführt wird.</maml:para>
+    			</maml:description>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>WhatIf</maml:name>
+    			<maml:description>
+				<maml:para>Beschreibt die Folgen der Ausführung des Befehls, ohne dass der Befehl tatsächlich ausgeführt wird.</maml:para>
+    			</maml:description>
+			</command:parameter>
+		</command:syntaxItem>
+	</command:syntax>
+	<!-- Cmdlet parameter section  -->
+	<command:parameters>
+		<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>DomainName</maml:name>
+			<maml:description>
+				<maml:para>Der Name der neuen Domäne für einmaliges Anmelden (auch "Domäne mit Identitätsverbund"), die in Microsoft Online erstellt werden soll.</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			<dev:type>
+				<maml:name>string</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>SupportMultipleDomain</maml:name>
+			<maml:description>
+				<maml:para></maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+			<dev:type>
+				<maml:name>SwitchParameter</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>Confirm</maml:name>
+    			<maml:description>
+				<maml:para>Fordert Sie zu einer Bestätigung auf, bevor der Befehl ausgeführt wird.</maml:para>
+    			</maml:description>
+    			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>	
+				<dev:type>
+  				<maml:name>SwitchParameter</maml:name> 
+					<maml:uri/> 
+					</dev:type>
+ 			<dev:defaultValue/> 
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>WhatIf</maml:name>
+    			<maml:description>
+				<maml:para>Beschreibt die Folgen der Ausführung des Befehls, ohne dass der Befehl tatsächlich ausgeführt wird.</maml:para>
+    			</maml:description>
+    			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>	
+				<dev:type>
+  				<maml:name>SwitchParameter</maml:name> 
+					<maml:uri/> 
+					</dev:type>
+ 			<dev:defaultValue/> 
+			</command:parameter>
+	</command:parameters>
+	<!-- Input - Output section-->
+	<command:inputTypes>
+		<command:inputType>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description>
+		</command:inputType>
+	</command:inputTypes>
+	<command:returnValues>
+		<command:returnValue>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>   
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description> 
+		</command:returnValue>
+	</command:returnValues>
+	<!-- Error section-->
+	<command:terminatingErrors/>
+	<command:nonTerminatingErrors/>
+		<!-- Notes section  -->
+	<maml:alertSet>
+		<maml:title></maml:title>
+		<maml:alert>
+			<maml:para>
+                          
+                        </maml:para>
+		</maml:alert>
+		<maml:alert>
+			<maml:para></maml:para>
+		</maml:alert>
+	</maml:alertSet>
+	<!-- Example section  --> 
+	<command:examples>
+    <command:example>
+      <maml:title>Example 1: Adds a new single sign-on domain to Microsoft Online Services and establishes the relying party trust.</maml:title>
+      <dev:code>PS C:\&gt;New-MsolFederatedDomain -DomainName Contoso.com</dev:code>
+      <dev:remarks>
+        <maml:para>The New-MsolFederatedDomain cmdlet adds a new single sign-on domain to Microsoft Online Services and configures the relying party trust settings between the on-premises Active Directory Federation Services (ADFS) server and Microsoft Online.</maml:para>
+      </dev:remarks>
+    </command:example>
+    <command:example>
+      <maml:title>Example 2: Adds a new single sign-on domain to Microsoft Online Services and establishes the relying party trust.</maml:title>
+      <dev:code>PS C:\&gt;New-MsolFederatedDomain -DomainName Contoso.com -SupportMultipleDomain</dev:code>
+      <dev:remarks>
+        <maml:para>Use the SupportMultipleDomain switch if you need support for multiple top-level domains.</maml:para>
+      </dev:remarks>
+    </command:example>
+	</command:examples>
+	<!-- Link section  -->
+	<maml:relatedLinks>
+		<maml:navigationLink>
+			<maml:linkText></maml:linkText>
+			<maml:uri/>
+		</maml:navigationLink>
+	</maml:relatedLinks>
+</command:command>
+
+<!-- v 1.3.0.36 -->
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+	<command:details>
+		<command:name>
+                   Remove-MsolFederatedDomain
+		</command:name>
+		<maml:description>
+			<maml:para>Entfernt die angegebene Domäne für einmaliges Anmelden aus der Liste der Domänen in Microsoft Online.</maml:para>
+		</maml:description>
+		<maml:copyright>
+			<maml:para></maml:para>
+		</maml:copyright>
+		<command:verb>Remove</command:verb>
+		<command:noun>MsolFederatedDomain</command:noun>
+		<dev:version></dev:version>
+	</command:details>
+	<maml:description>
+		<maml:para>Mit diesem Cmdlet werden die angegebene Domäne für einmaliges Anmelden aus Microsoft Online und die zugeordneten Vertrauensstellungseinstellungen der vertrauenden Seite in Active Directory-Verbunddienste 2.0 entfernt.
+      
+Hinweis: Wenn die angegebene Domäne über verknüpfte Objekte verfügt, können Sie die Domäne nicht entfernen.</maml:para>
+	</maml:description>
+	<!-- Cmdlet syntax section-->
+	<command:syntax>
+		<command:syntaxItem>
+			<maml:name>Remove-MsolFederatedDomain</maml:name>
+			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>DomainName</maml:name>
+				<maml:description>
+					<maml:para>Der Name der zu entfernenden Domäne.</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>SupportMultipleDomain</maml:name>
+				<maml:description>
+					<maml:para></maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>Confirm</maml:name>
+    			<maml:description>
+				<maml:para>Fordert Sie zu einer Bestätigung auf, bevor der Befehl ausgeführt wird.</maml:para>
+    			</maml:description>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>WhatIf</maml:name>
+    			<maml:description>
+				<maml:para>Beschreibt die Folgen der Ausführung des Befehls, ohne dass der Befehl tatsächlich ausgeführt wird.</maml:para>
+    			</maml:description>
+			</command:parameter>
+		</command:syntaxItem>
+	</command:syntax>
+	<!-- Cmdlet parameter section  -->
+	<command:parameters>
+		<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>DomainName</maml:name>
+			<maml:description>
+				<maml:para>Der Name der zu entfernenden Domäne.</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			<dev:type>
+				<maml:name>string</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>SupportMultipleDomain</maml:name>
+			<maml:description>
+				<maml:para></maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+			<dev:type>
+				<maml:name>Boolean</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>Confirm</maml:name>
+    			<maml:description>
+				<maml:para>Fordert Sie zu einer Bestätigung auf, bevor der Befehl ausgeführt wird.</maml:para>
+    			</maml:description>
+    			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>	
+				<dev:type>
+  				<maml:name>SwitchParameter</maml:name> 
+					<maml:uri/> 
+					</dev:type>
+ 			<dev:defaultValue/> 
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>WhatIf</maml:name>
+    			<maml:description>
+				<maml:para>Beschreibt die Folgen der Ausführung des Befehls, ohne dass der Befehl tatsächlich ausgeführt wird.</maml:para>
+    			</maml:description>
+    			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>	
+				<dev:type>
+  				<maml:name>SwitchParameter</maml:name> 
+					<maml:uri/> 
+					</dev:type>
+ 			<dev:defaultValue/> 
+			</command:parameter>
+	</command:parameters>
+	<!-- Input - Output section-->
+	<command:inputTypes>
+		<command:inputType>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description>
+		</command:inputType>
+	</command:inputTypes>
+	<command:returnValues>
+		<command:returnValue>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>   
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description> 
+		</command:returnValue>
+	</command:returnValues>
+	<!-- Error section-->
+	<command:terminatingErrors/>
+	<command:nonTerminatingErrors/>
+		<!-- Notes section  -->
+	<maml:alertSet>
+		<maml:title></maml:title>
+		<maml:alert>
+			<maml:para>
+                          
+                        </maml:para>
+		</maml:alert>
+		<maml:alert>
+			<maml:para></maml:para>
+		</maml:alert>
+	</maml:alertSet>
+	<!-- Example section  --> 
+	<command:examples>
+    <command:example>
+      <maml:title>Example 1: Removes a single sign-on domain from the domains in Microsoft Online.</maml:title>
+      <dev:code>PS C:\&gt;Remove-MsolFederatedDomain -DomainName Contoso.com</dev:code>
+      <dev:remarks>
+        <maml:para>The Remove-MsolFederatedDomain cmdlet removes the specified single sign-on domain from Microsoft Online and the associated relying party trust settings in Active Directory Federation Services (ADFS).</maml:para>
+      </dev:remarks>
+    </command:example>
+    <command:example>
+      <maml:title>Example 2: Removes a single sign-on domain from the domains in Microsoft Online.</maml:title>
+      <dev:code>PS C:\&gt;Remove-MsolFederatedDomain -DomainName Contoso.com -SupportMultipleDomain</dev:code>
+      <dev:remarks>
+        <maml:para>The SupportMultipleDomain switch indicates this configuration is part of a multi-domain setup and provides additional logic checks when removing a domain.</maml:para>
+      </dev:remarks>
+    </command:example>
+	</command:examples>
+	<!-- Link section  -->
+	<maml:relatedLinks>
+		<maml:navigationLink>
+			<maml:linkText></maml:linkText>
+			<maml:uri/>
+		</maml:navigationLink>
+	</maml:relatedLinks>
+</command:command>
+
+<!-- v 1.3.0.36 -->
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+	<command:details>
+		<command:name>
+                   Set-MsolADFSContext
+		</command:name>
+		<maml:description>
+			<maml:para>Legt den Kontext und die Anmeldeinformationen zum Herstellen einer Verbindung mit Microsoft Online und dem Server mit Active Directory-Verbunddienste 2.0 fest. Außerdem wird mit diesem Cmdlet auch der Speicherort der Protokolldatei erfasst.</maml:para>
+		</maml:description>
+		<maml:copyright>
+			<maml:para></maml:para>
+		</maml:copyright>
+		<command:verb>Set</command:verb>
+		<command:noun>MsolADFSContext</command:noun>
+		<dev:version></dev:version>
+	</command:details>
+	<maml:description>
+		<maml:para>Mit dem Cmdlet "Set-MsolADFSContext" werden die Anmeldeinformationen zum Herstellen einer Verbindung mit Microsoft Online und dem Server mit Active Directory-Verbunddienste 2.0 (AD FS 2.0) festgelegt. Dieses Cmdlet muss ausgeführt werden, bevor weitere Cmdlet-Aufrufe für einmaliges Anmelden (auch als Identitätsverbund bezeichnet) durchgeführt werden. Wird dieses Cmdlet ohne Parameter aufgerufen, wird der Benutzer zum Eingeben der Anmeldeinformationen zum Verbinden mit den verschiedenen Systemen aufgefordert. Wenn der Server mit AD FS 2.0 remote verwendet wird, muss der Benutzer den Computernamen des primären Servers mit AD FS 2.0 angeben. Beachten Sie, dass die angegebene Protokolldatei für diese Sitzung von allen Cmdlets für einmaliges Anmelden gemeinsam verwendet wird. Wenn keine Protokolldatei angegeben wird, wird eine Standardprotokolldatei erstellt.
+</maml:para>
+	</maml:description>
+	<!-- Cmdlet syntax section-->
+	<command:syntax>
+		<command:syntaxItem>
+			<maml:name>Set-MsolADFSContext</maml:name>
+			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>Computer</maml:name>
+				<maml:description>
+					<maml:para>Der Computername des primären Servers mit AD FS 2.0. Geben Sie diesen an, wenn der Server mit AD FS 2.0 als Remoteserver verwendet wird.</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>ADFSUserCredentials</maml:name>
+				<maml:description>
+					<maml:para>Das Anmeldeinformationsobjekt, mit dem die Verwaltungssitzung auf dem Server mit Active Directory-Verbunddienste 2.0 eingerichtet wird.</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>LogFile</maml:name>
+				<maml:description>
+					<maml:para>Die Protokolldatei, in der alle Cmdlet-Vorgänge für das einmalige Anmelden für die Windows PowerShell-Sitzung aufgezeichnet werden. Wenn keine Protokolldatei angegeben ist, wird vom Windows PowerShell-Modul automatisch eine Protokolldatei unter "%USERPROFILE%\Documents\MicrosoftOnline" erstellt.</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			</command:parameter>
+		</command:syntaxItem>
+	</command:syntax>
+	<!-- Cmdlet parameter section  -->
+	<command:parameters>
+		<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>ADFSUserCredentials</maml:name>
+			<maml:description>
+				<maml:para>Das Anmeldeinformationsobjekt, mit dem die Verwaltungssitzung auf dem Server mit Active Directory-Verbunddienste 2.0 eingerichtet wird.</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+			<dev:type>
+				<maml:name>PSCredential</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>Computer</maml:name>
+			<maml:description>
+				<maml:para>Der Computername des primären Servers mit AD FS 2.0. Geben Sie diesen an, wenn der Server mit AD FS 2.0 als Remoteserver verwendet wird.</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			<dev:type>
+				<maml:name>string</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>LogFile</maml:name>
+			<maml:description>
+				<maml:para>Die Protokolldatei, in der alle Cmdlet-Vorgänge für das einmalige Anmelden für die Windows PowerShell-Sitzung aufgezeichnet werden. Wenn keine Protokolldatei angegeben ist, wird vom Windows PowerShell-Modul automatisch eine Protokolldatei unter "%USERPROFILE%\Documents\MicrosoftOnline" erstellt.</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			<dev:type>
+				<maml:name>string</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+	</command:parameters>
+	<!-- Input - Output section-->
+	<command:inputTypes>
+		<command:inputType>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description>
+		</command:inputType>
+	</command:inputTypes>
+	<command:returnValues>
+		<command:returnValue>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>   
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description> 
+		</command:returnValue>
+	</command:returnValues>
+	<!-- Error section-->
+	<command:terminatingErrors/>
+	<command:nonTerminatingErrors/>
+		<!-- Notes section  -->
+	<maml:alertSet>
+		<maml:title></maml:title>
+		<maml:alert>
+			<maml:para>
+                          
+                        </maml:para>
+		</maml:alert>
+		<maml:alert>
+			<maml:para></maml:para>
+		</maml:alert>
+	</maml:alertSet>
+	<!-- Example section  --> 
+	<command:examples>
+	</command:examples>
+	<!-- Link section  -->
+	<maml:relatedLinks>
+		<maml:navigationLink>
+			<maml:linkText></maml:linkText>
+			<maml:uri/>
+		</maml:navigationLink>
+	</maml:relatedLinks>
+</command:command>
+
+<!-- v 1.3.0.36 -->
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+	<command:details>
+		<command:name>
+                   Update-MsolFederatedDomain
+		</command:name>
+		<maml:description>
+			<maml:para>Aktualisiert die Einstellungen sowohl auf dem Server mit Active Directory-Verbunddienste 2.0 als auch in Microsoft Online.</maml:para>
+		</maml:description>
+		<maml:copyright>
+			<maml:para></maml:para>
+		</maml:copyright>
+		<command:verb>Update</command:verb>
+		<command:noun>MsolFederatedDomain</command:noun>
+		<dev:version></dev:version>
+	</command:details>
+	<maml:description>
+		<maml:para>Mit dem Cmdlet "Update-MSOLFederatedDomain" werden Einstellungen sowohl auf dem Server mit Active Directory-Verbunddienste 2.0 als auch bei Microsoft Online geändert. Dieses Cmdlet muss immer dann ausgeführt werden, wenn sich die URLs oder Zertifikatinformationen innerhalb von Active Directory-Verbunddienste 2.0 aufgrund von Konfigurationsänderungen oder durch regelmäßige Wartung der Zertifikate, z. B. bevor ein Zertifikat abläuft, geändert werden. Es muss außerdem ausgeführt werden, wenn Änderungen in Microsoft Online auftreten. Das Cmdlet "Get-MSOLFederationProperty" kann zum Abrufen der Einstellungen verwendet werden, um zu bestätigen, dass die Informationen bei beiden Systemen korrekt sind.</maml:para>
+	</maml:description>
+	<!-- Cmdlet syntax section-->
+	<command:syntax>
+		<command:syntaxItem>
+			<maml:name>Update-MsolFederatedDomain</maml:name>
+			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>DomainName</maml:name>
+				<maml:description>
+					<maml:para>Die Domäne für einmaliges Anmelden (auch als Domäne mit Identitätsverbund bezeichnet), die aktualisiert werden muss.</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+				<maml:name>SupportMultipleDomain</maml:name>
+				<maml:description>
+					<maml:para></maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>Confirm</maml:name>
+    			<maml:description>
+				<maml:para>Fordert Sie zu einer Bestätigung auf, bevor der Befehl ausgeführt wird.</maml:para>
+    			</maml:description>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>WhatIf</maml:name>
+    			<maml:description>
+				<maml:para>Beschreibt die Folgen der Ausführung des Befehls, ohne dass der Befehl tatsächlich ausgeführt wird.</maml:para>
+    			</maml:description>
+			</command:parameter>
+		</command:syntaxItem>
+	</command:syntax>
+	<!-- Cmdlet parameter section  -->
+	<command:parameters>
+		<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>DomainName</maml:name>
+			<maml:description>
+				<maml:para>Die Domäne für einmaliges Anmelden (auch als Domäne mit Identitätsverbund bezeichnet), die aktualisiert werden muss.</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			<dev:type>
+				<maml:name>string</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+		<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="named">
+			<maml:name>SupportMultipleDomain</maml:name>
+			<maml:description>
+				<maml:para></maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+			<dev:type>
+				<maml:name>Boolean</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>Confirm</maml:name>
+    			<maml:description>
+				<maml:para>Fordert Sie zu einer Bestätigung auf, bevor der Befehl ausgeführt wird.</maml:para>
+    			</maml:description>
+    			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>	
+				<dev:type>
+  				<maml:name>SwitchParameter</maml:name> 
+					<maml:uri/> 
+					</dev:type>
+ 			<dev:defaultValue/> 
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>WhatIf</maml:name>
+    			<maml:description>
+				<maml:para>Beschreibt die Folgen der Ausführung des Befehls, ohne dass der Befehl tatsächlich ausgeführt wird.</maml:para>
+    			</maml:description>
+    			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>	
+				<dev:type>
+  				<maml:name>SwitchParameter</maml:name> 
+					<maml:uri/> 
+					</dev:type>
+ 			<dev:defaultValue/> 
+			</command:parameter>
+	</command:parameters>
+	<!-- Input - Output section-->
+	<command:inputTypes>
+		<command:inputType>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description>
+		</command:inputType>
+	</command:inputTypes>
+	<command:returnValues>
+		<command:returnValue>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>   
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description> 
+		</command:returnValue>
+	</command:returnValues>
+	<!-- Error section-->
+	<command:terminatingErrors/>
+	<command:nonTerminatingErrors/>
+		<!-- Notes section  -->
+	<maml:alertSet>
+		<maml:title></maml:title>
+		<maml:alert>
+			<maml:para>
+                          
+                        </maml:para>
+		</maml:alert>
+		<maml:alert>
+			<maml:para></maml:para>
+		</maml:alert>
+	</maml:alertSet>
+	<!-- Example section  --> 
+	<command:examples>
+    <command:example>
+      <maml:title>Example 1: Updates the settings in both the Active Directory Federation Services 2.0 server and Microsoft Online.</maml:title>
+      <dev:code>PS C:\&gt;Update-MsolFederatedDomain -DomainName Contoso.com</dev:code>
+      <dev:remarks>
+        <maml:para>It is necessary to run this cmdlet whenever the URLs or certificate information within Active Directory Federation Services (ADFS) change due to configuration changes or through regular maintenance of the certificates, such as when a certificate is about to expire. </maml:para>
+      </dev:remarks>
+    </command:example>
+    <command:example>
+      <maml:title>Example 2: Updates the settings in both the Active Directory Federation Services 2.0 server and Microsoft Online.</maml:title>
+      <dev:code>PS C:\&gt;Update-MsolFederatedDomain -DomainName Contoso.com -SupportMultipleDomain</dev:code>
+      <dev:remarks>
+        <maml:para>Use the SupportMultipleDomain switch if you need support for multiple top-level domains.</maml:para>
+      </dev:remarks>
+    </command:example>
+	</command:examples>
+	<!-- Link section  -->
+	<maml:relatedLinks>
+		<maml:navigationLink>
+			<maml:linkText></maml:linkText>
+			<maml:uri/>
+		</maml:navigationLink>
+	</maml:relatedLinks>
+</command:command>
+
+</helpItems>
