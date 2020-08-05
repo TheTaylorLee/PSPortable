@@ -15,7 +15,7 @@ Function Invoke-Download {
     $directories = $objects | where { $_.type -eq "dir" }
 
     $directories | ForEach-Object {
-        DownloadFilesFromRepo -Owner $Owner -Repository $Repository -Path $_.path -DestinationPath $($DestinationPath + $_.name)
+        Invoke-Download -Owner $Owner -Repository $Repository -Path $_.path -DestinationPath $($DestinationPath + $_.name)
     }
 
 
