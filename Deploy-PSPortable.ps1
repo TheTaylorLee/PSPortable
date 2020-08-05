@@ -64,14 +64,17 @@ function Invoke-Unzip {
 
 Invoke-Unzip -zipfile "$env:ProgramData\PS7x64.zip" -outpath "$env:ProgramData"
 Rename-Item "$env:ProgramData\PSPortable-master" "$env:ProgramData\PS7x64"
+Remove-Item "$env:ProgramData\PS7x64.zip" -Force
+
 
 #Pin shortcut to taskbar
+Invoke-Item "$env:ProgramData\PS7x64\PS7-x64"
 Write-Host " "
 Write-Host " "
 Write-Host "Pin pwsh.exe.lnk to the Taskbar." -ForegroundColor Green
 Write-Host " "
 Write-Host " "
-Invoke-Item "$env:ProgramData\PS7x64\PS7-x64"
+
 
 Write-Host "Time to Complete: $((Get-Date).Subtract($start_time).Seconds) second(s)" -ForegroundColor Green
 #
