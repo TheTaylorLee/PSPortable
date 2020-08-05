@@ -28,6 +28,15 @@ catch {
     }
 }
 
+##Import Support Files
+#Save the current value for Path in the $p variable.
+$p = [Environment]::GetEnvironmentVariable("Path")
+#Add the new path to the $p variable. Begin with a semi-colon separator.
+$FunctionPath = $PSScriptRoot + "\Support\"
+$p += ";$FunctionPath"
+#Add the paths in $p to the PSModulePath value.
+[Environment]::SetEnvironmentVariable("Path", $p)
+
 #Add Custom Aliases
 Set-Alias -Name scm -Value Show-Command
 Set-Alias -Name gmad -Value Get-ModuleAliases
