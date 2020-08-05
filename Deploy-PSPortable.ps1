@@ -1,7 +1,9 @@
 $start_time = Get-Date
 
 #Remove old package
-Remove-Item $env:ProgramData\PS7x64 -Recurse -Force -ErrorAction SilentlyContinue -WarningAction SilentlyContinue
+if (Test-Path $env:ProgramData\PS7x64) {
+    Remove-Item $env:ProgramData\PS7x64 -Recurse -Force
+}
 
 #Download new package as zip file
 Function Invoke-DLPSPortable {
