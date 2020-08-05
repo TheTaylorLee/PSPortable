@@ -1,10 +1,11 @@
 $start_time = Get-Date
 
 #Remove old package
-Remove-Item $env:ProgramData\PS7x64 -Recurse -Force
+Remove-Item $env:ProgramData\PS7x64 -Recurse -Force -ErrorAction SilentlyContinue -WarningAction SilentlyContinue
 
 #Download new package as zip file
 Function Invoke-DLPSPortable {
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
     $url = "https://github.com/thetaylorlee/psportable/archive/master.zip"
     $output = "$env:ProgramData\PS7x64.zip"
     $wc = New-Object System.Net.WebClient
