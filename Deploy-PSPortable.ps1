@@ -71,7 +71,7 @@ Remove-Item "$env:ProgramData\PS7x64.zip" -Force
 
 
 #Pin shortcut to taskbar
-Invoke-Item "$env:ProgramData\PS7x64\PS7-x64"
+Invoke-Item "$env:ProgramData\PS7x64\PS7-x64\pwsh.exe.lnk"
 Write-Host " "
 Write-Host " "
 Write-Host "Pin pwsh.exe.lnk to the Taskbar." -ForegroundColor Green
