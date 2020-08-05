@@ -1,50 +1,72 @@
+$start_time = Get-Date
 
-Function Invoke-Download {
-    Param(
-        [string]$Owner,
-        [string]$Repository,
-        [string]$Path,
-        [string]$DestinationPath
-    )
-
-    $baseUri = "https://api.github.com/"
-    $args = "repos/$Owner/$Repository/contents/$Path"
-    $wr = Invoke-WebRequest -Uri $($baseuri + $args)
-    $objects = $wr.Content | ConvertFrom-Json
-    $files = $objects | where { $_.type -eq "file" } | select -exp download_url
-    $directories = $objects | where { $_.type -eq "dir" }
-
-    $directories | ForEach-Object {
-        Invoke-Download -Owner $Owner -Repository $Repository -Path $_.path -DestinationPath $($DestinationPath + $_.name)
-    }
-
-
-    if (-not (Test-Path $DestinationPath)) {
-        # Destination path does not exist, let's create it
-        try {
-            New-Item -Path $DestinationPath -ItemType Directory -ErrorAction Stop
-        }
-        catch {
-            throw "Could not create path '$DestinationPath'!"
-        }
-    }
-
-    foreach ($file in $files) {
-        $fileDestination = Join-Path $DestinationPath (Split-Path $file -Leaf)
-        try {
-            Invoke-WebRequest -Uri $file -OutFile $fileDestination -ErrorAction Stop -Verbose
-            "Grabbed '$($file)' to '$fileDestination'"
-        }
-        catch {
-            throw "Unable to download '$($file.path)'"
-        }
-    }
-
-}
-
+#Remove old package
 Remove-Item $env:ProgramData\PS7x64 -Recurse -Force
 
-Invoke-Download -DestinationPath $env:ProgramData\PS7x64 -Owner TheTaylorLee -Repository PSPortable
+#Download new package as zip file
+Function Invoke-DLPSPortable {
+    $url = "https://github.com/thetaylorlee/psportable/archive/master.zip"
+    $output = "$env:ProgramData\PS7x64.zip"
+    $wc = New-Object System.Net.WebClient
+    $wc.DownloadFile($url, $output)
+}; Invoke-DLPSPortable
 
-Write-Host "Pin pwsh.exe.lnk to the Taskbar if desired from the opened explorer window" -ForegroundColor Green
+#Unzip to path download package
+function Invoke-Unzip {
+    <#
+    .DESCRIPTION
+    Provides robust zip file extraction by attempting 3 possible methods.
+
+    .Parameter zipfile
+    Specify the zipfile location and name
+
+    .Parameter outpath
+    Specify the extract path for extracted files
+
+    .EXAMPLE
+    Extracts folder.zip to c:\folder
+
+    Invoke-Unzip -zipfile c:\folder.zip -outpath c:\folder
+
+    .Link
+    https://github.com/TheTaylorLee/AdminToolbox
+    #>
+
+    [cmdletbinding()]
+    param(
+        [string]$zipfile,
+        [string]$outpath
+    )
+
+    if (Get-Command expand-archive) {
+        $ErrorActionPreference = 'SilentlyContinue'
+        Expand-Archive -Path $zipfile -DestinationPath $outpath
+        $ErrorActionPreference = 'Continue'
+    }
+
+
+
+    else {
+        try {
+            #Allows for unzipping folders in older versions of powershell if .net 4.5 or newer exists
+            Add-Type -AssemblyName System.IO.Compression.FileSystem
+            [System.IO.Compression.ZipFile]::ExtractToDirectory($zipfile, $outpath)
+        }
+
+        catch {
+            #If .net 4.5 or newer not present, com classes are used. This process is slower.
+            [void] (New-Item -Path $outpath -ItemType Directory -Force)
+            $Shell = New-Object -com Shell.Application
+            $Shell.Namespace($outpath).copyhere($Shell.NameSpace($zipfile).Items(), 4)
+        }
+    }
+}
+
+Invoke-Unzip -zipfile "$env:ProgramData\PS7x64.zip" -outpath "$env:ProgramData"
+Rename-Item "$env:ProgramData\PSPortable-master" "$env:ProgramData\PS7x64"
+
+#Pin shortcut to taskbar
+Write-Host "Pin pwsh.exe.lnk to the Taskbar." -ForegroundColor Green
 Invoke-Item "$env:ProgramData\PS7x64\PS7-x64"
+
+Write-Output "Time to Complete: $((Get-Date).Subtract($start_time).Seconds) second(s)"
