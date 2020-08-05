@@ -69,4 +69,5 @@ Rename-Item "$env:ProgramData\PSPortable-master" "$env:ProgramData\PS7x64"
 Write-Host "Pin pwsh.exe.lnk to the Taskbar." -ForegroundColor Green
 Invoke-Item "$env:ProgramData\PS7x64\PS7-x64"
 
-Write-Output "Time to Complete: $((Get-Date).Subtract($start_time).Seconds) second(s)"
+Write-Host "Time to Complete: $((Get-Date).Subtract($start_time).Seconds) second(s)" -ForegroundColor Green
+#
