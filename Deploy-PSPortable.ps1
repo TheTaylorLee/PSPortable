@@ -39,11 +39,9 @@ function Invoke-Unzip {
         [string]$outpath
     )
 
-    $ErrorActionPreference = Silentlycontinue
-    if (Get-Command expand-archive) {
-        $ErrorActionPreference = 'SilentlyContinue'
+
+    if (Get-Command expand-archive -ErrorAction 'SilentlyContinue') {
         Expand-Archive -Path $zipfile -DestinationPath $outpath
-        $ErrorActionPreference = 'Continue'
     }
 
 
