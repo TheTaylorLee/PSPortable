@@ -16,7 +16,7 @@ Function Grant-MailboxAccessOWAOnly {
     Grant-MailboxAccessOWAOnly -user jane -mailbox john
 
     .NOTES
-    Must have the Exchange module loaded
+    Must have the Exchange module loaded and importexcel module
     #>
 
     [CmdletBinding()]
@@ -25,5 +25,5 @@ Function Grant-MailboxAccessOWAOnly {
         [Parameter(Mandatory = $false)]$Mailbox
     )
 
-    Add-MailboxPermission -AutoMapping $false -Identity $Mailbox -user $User -AccessRights Full Access -InheritanceType All
+    Add-MailboxPermission -AutoMapping $false -Identity $Mailbox -user $User -AccessRights FullAccess -InheritanceType All
 }

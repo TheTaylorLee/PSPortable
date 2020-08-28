@@ -124,3 +124,4 @@
 * **7.0.0.1**  Remove Bettercredentials Required modules
 * **7.0.1.1**  Updated get-info to reflect changes in the last update
 * **7.1.0.0**  Added function Open-AdminMMC
+* **7.1.1.0**  Updated Required module versions

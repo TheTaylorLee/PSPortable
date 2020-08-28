@@ -9,3 +9,4 @@
 * **1.0.3.0** Spellcheck Everything
 * **1.1.0.0** Tested and marked Core compatbile
 * **1.2.0.0** Added 2 functions
+* **1.2.0.1** Made fixes to commands Grant-MailboxAccessOWAOnly and Get-MailboxScalereport

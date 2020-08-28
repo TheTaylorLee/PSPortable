@@ -26,7 +26,9 @@ Function Get-MailboxScaleReport {
     Get-MailboxScaleReport -Path C:\report.xlsx -MailboxAliases JOSmith, JASmith, SSmith
 
     .NOTES
-    Must have the Exchange module loaded
+    Must have the Exchange and importexcel modules loaded
+    Exchange 2007: 50000 messages per folder, 500 folders total
+    Exchange 2010/2013/2016/2019: 100000 messages per folder, 500 folders total
     #>
 
     [CmdletBinding()]
@@ -44,10 +46,10 @@ Function Get-MailboxScaleReport {
         foreach ($MailboxAlias in $MailboxAliases2) {
             $Mailfolderstats = Get-MailboxFolderStatistics $MailboxAlias | Select-Object *
             $FolderCount = ($Mailfolderstats | Select-Object Name).count
-            $FolderCount | Export-Excel -WorksheetName "$MailboxAlias" -Path "$Path" -FreezeTopRow -TableName "Folder Count" -AutoSize -Title "Folder Count" -TitleSize 11 -TitleBold
+            $FolderCount | Export-Excel -WorksheetName "$MailboxAlias" -Path "$Path" -FreezeTopRow -TableName "$mailboxalias Folder Count" -AutoSize -Title "$mailboxalias Folder Count" -TitleSize 11 -TitleBold
             $Mailboxstats = Get-MailboxStatistics $MailboxAlias | Select-Object Totalitemsize, itemcount
-            $Mailboxstats | Export-Excel -WorksheetName "$MailboxAlias" -Path "$Path" -FreezeTopRow -TableName "$MailboxAlias MailboxSize" -AutoSize -Title "MailboxSize" -TitleSize 11 -TitleBold  -StartRow 4
-            $Mailfolderstats | Select-Object Name, FolderandSubFolderSize, ItemsinFolderandSubfolders | Export-Excel -WorksheetName "$MailboxAlias" -Path "$Path" -FreezeTopRow -TableName "Folders" -AutoSize -StartColumn 4
+            $Mailboxstats | Export-Excel -WorksheetName "$MailboxAlias" -Path "$Path" -FreezeTopRow -TableName "$MailboxAlias MailboxSize" -AutoSize -Title "$mailboxalias MailboxSize" -TitleSize 11 -TitleBold  -StartRow 4
+            $Mailfolderstats | Select-Object Name, FolderandSubFolderSize, ItemsinFolderandSubfolders | Export-Excel -WorksheetName "$MailboxAlias" -Path "$Path" -FreezeTopRow -TableName "$mailboxalias Folders" -AutoSize -StartColumn 4
         }
     }
 
@@ -55,10 +57,10 @@ Function Get-MailboxScaleReport {
         foreach ($MailboxAlias in $MailboxAliases) {
             $Mailfolderstats = Get-MailboxFolderStatistics $MailboxAlias | Select-Object *
             $FolderCount = ($Mailfolderstats | Select-Object Name).count
-            $FolderCount | Export-Excel -WorksheetName "$MailboxAlias" -Path "$Path" -FreezeTopRow -TableName "Folder Count" -AutoSize -Title "Folder Count" -TitleSize 11 -TitleBold
+            $FolderCount | Export-Excel -WorksheetName "$MailboxAlias" -Path "$Path" -FreezeTopRow -TableName "$mailboxalias Folder Count" -AutoSize -Title "$mailboxalias Folder Count" -TitleSize 11 -TitleBold
             $Mailboxstats = Get-MailboxStatistics $MailboxAlias | Select-Object Totalitemsize, itemcount
-            $Mailboxstats | Export-Excel -WorksheetName "$MailboxAlias" -Path "$Path" -FreezeTopRow -TableName "$MailboxAlias MailboxSize" -AutoSize -Title "MailboxSize" -TitleSize 11 -TitleBold  -StartRow 4
-            $Mailfolderstats | Select-Object Name, FolderandSubFolderSize, ItemsinFolderandSubfolders | Export-Excel -WorksheetName "$MailboxAlias" -Path "$Path" -FreezeTopRow -TableName "Folders" -AutoSize -StartColumn 4
+            $Mailboxstats | Export-Excel -WorksheetName "$MailboxAlias" -Path "$Path" -FreezeTopRow -TableName "$MailboxAlias MailboxSize" -AutoSize -Title "$mailboxalias MailboxSize" -TitleSize 11 -TitleBold  -StartRow 4
+            $Mailfolderstats | Select-Object Name, FolderandSubFolderSize, ItemsinFolderandSubfolders | Export-Excel -WorksheetName "$MailboxAlias" -Path "$Path" -FreezeTopRow -TableName "$mailboxalias Folders" -AutoSize -StartColumn 4
         }
     }
 
