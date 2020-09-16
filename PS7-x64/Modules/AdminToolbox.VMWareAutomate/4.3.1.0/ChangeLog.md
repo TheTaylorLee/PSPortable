@@ -40,3 +40,4 @@
 * **4.1.2.0** Spellcheck Everything
 * **4.2.0.0** Tested and marked Core compatbile
 * **4.3.0.0** Added functions Enable-DatastoreRoundRobin and Get-VMFolderPAth
+* **4.3.1.0** Updated Get-VMFolderPaths to sort the report alphabetically
