@@ -16,7 +16,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimAsyncOperation.#ctor">
             <summary>
-            Constructor.
+            The constructor.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimAsyncOperation.NewCmdletActionHandler(System.Object,Microsoft.Management.Infrastructure.CimCmdlets.CmdletActionEventArgs)">
@@ -62,18 +62,18 @@
             </para>
             </summary>
             <param name="cmdletOperation">
-            wrapper of cmdlet, <seealso cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationBase"/> for details.
+            Wrapper of cmdlet, <seealso cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationBase"/> for details.
             </param>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimAsyncOperation.ProcessRemainActions(Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationBase)">
             <summary>
             <para>
-            process remaining actions until all operations are completed or
+            Process remaining actions until all operations are completed or
             current cmdlet is terminated by user.
             </para>
             </summary>
             <param name="cmdletOperation">
-            wrapper of cmdlet, <seealso cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationBase"/> for details.
+            Wrapper of cmdlet, <seealso cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationBase"/> for details.
             </param>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimAsyncOperation.GetActionAndRemove(Microsoft.Management.Infrastructure.CimCmdlets.CimBaseAction@)">
@@ -91,7 +91,6 @@
             Add temporary <seealso cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy"/> object to cache.
             </para>
             </summary>
-            <param name="computerName">Computer name of the cimsession.</param>
             <param name="sessionproxy">Cimsession wrapper object.</param>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimAsyncOperation.IsActive">
@@ -180,7 +179,7 @@
             </summary>
             <param name="value"></param>
             <param name="referenceType">Output the cimtype of the value, either Reference or ReferenceArray.</param>
-            <returns></returns>
+            <returns>The object.</returns>
         </member>
         <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.CimAsyncOperation.Disposed">
             <summary>
@@ -215,7 +214,7 @@
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimAsyncOperation.Cleanup">
             <summary>
             <para>
-            Clean up managed resources
+            Clean up managed resources.
             </para>
             </summary>
         </member>
@@ -255,7 +254,7 @@
         <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimAsyncOperation.ackedEvent">
             <summary>
             Event to notify ps thread that either a ACK message sent back
-            or a error happened. Currently only used by class
+            or a error happened. Currently only used by
             <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimRegisterCimIndication"/>.
             </summary>
         </member>
@@ -300,7 +299,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSyncAction.#ctor">
             <summary>
-            Constructor.
+            The constructor.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSyncAction.GetResponse">
@@ -314,7 +313,7 @@
         <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.CimSyncAction.ResponseType">
             <summary>
             <para>
-            Set response result
+            Set the response result.
             </para>
             </summary>
         </member>
@@ -322,14 +321,14 @@
             <summary>
             <para>
             Call this method when the action is completed or
-            the operation is terminated
+            the operation is terminated.
             </para>
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSyncAction.Block">
             <summary>
             <para>
-            block current thread.
+            Block current thread.
             </para>
             </summary>
         </member>
@@ -370,66 +369,6 @@
             </para>
             </summary>
             <param name="disposing">Whether it is directly called.</param>
-        </member>
-        <member name="T:Microsoft.Management.Infrastructure.CimCmdlets.CimCmdletsAssemblyInitializer">
-            <summary>
-            <para>
-            Initialize the cimcmdlets.
-            </para>
-            </summary>
-            <summary>
-            Provide a hook to the engine for startup initialization
-            w.r.t compiled assembly loading.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimCmdletsAssemblyInitializer.#ctor">
-            <summary>
-            <para>
-            constructor
-            </para>
-            </summary>
-        </member>
-        <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimCmdletsAssemblyInitializer.OnImport">
-            <summary>
-            PowerShell engine will call this method when the cimcmdlets module
-            is loaded.
-            </summary>
-        </member>
-        <member name="T:Microsoft.Management.Infrastructure.CimCmdlets.CimCmdletsAssemblyInitializer.CimCmdletAliasEntry">
-            <summary>
-            <para>
-            CimCmdlet alias entry
-            </para>
-            </summary>
-        </member>
-        <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimCmdletsAssemblyInitializer.CimCmdletAliasEntry.#ctor(System.String,System.String)">
-            <summary>
-            <para>
-            Constructor
-            </para>
-            </summary>
-            <param name="name"></param>
-            <param name="value"></param>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.CimCmdletsAssemblyInitializer.CimCmdletAliasEntry.Name">
-            <summary>
-            The string defining the name of this alias.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.CimCmdletsAssemblyInitializer.CimCmdletAliasEntry.Value">
-            <summary>
-            The string defining real cmdlet name.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.CimCmdletsAssemblyInitializer.CimCmdletAliasEntry.Options">
-            <summary>
-            The string defining real cmdlet name.
-            </summary>
-        </member>
-        <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimCmdletsAssemblyInitializer.Aliases">
-            <summary>
-            Returns a new array of alias entries everytime it's called.
-            </summary>
         </member>
         <member name="T:Microsoft.Management.Infrastructure.CimCmdlets.ParameterDefinitionEntry">
             <summary>
@@ -2154,7 +2093,7 @@
         <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionState.sessionNameCounter">
             <summary>
             <para>
-            session counter bound to current runspace.
+            Session counter bound to current runspace.
             </para>
             </summary>
         </member>
@@ -2196,7 +2135,7 @@
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionState.#ctor">
             <summary>
             <para>
-            constructor
+            The constructor.
             </para>
             </summary>
         </member>
@@ -2219,7 +2158,7 @@
         <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionState._disposed">
             <summary>
             <para>
-            Indicates whether this object was disposed or not
+            Indicates whether this object was disposed or not.
             </para>
             </summary>
         </member>
@@ -2257,13 +2196,15 @@
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionState.AddObjectToCache(Microsoft.Management.Infrastructure.CimSession,System.UInt32,System.Guid,System.String,System.String,Microsoft.Management.Infrastructure.CimCmdlets.ProtocolType)">
             <summary>
             <para>
-            Add new CimSession object to cache
+            Add new CimSession object to cache.
             </para>
             </summary>
             <param name="session"></param>
             <param name="sessionId"></param>
             <param name="instanceId"></param>
             <param name="name"></param>
+            <param name="computerName"></param>
+            <param name="protocol"></param>
             <returns></returns>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionState.GetRemoveSessionObjectTarget(System.Management.Automation.PSObject)">
@@ -2277,7 +2218,7 @@
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionState.RemoveOneSessionObjectFromCache(System.Management.Automation.PSObject)">
             <summary>
             <para>
-            Remove given <see cref="T:System.Management.Automation.PSObject"/> object from cache
+            Remove given <see cref="T:System.Management.Automation.PSObject"/> object from cache.
             </para>
             </summary>
             <param name="psObject"></param>
@@ -2285,7 +2226,7 @@
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionState.RemoveOneSessionObjectFromCache(Microsoft.Management.Infrastructure.CimSession)">
             <summary>
             <para>
-            Remove given <see cref="T:Microsoft.Management.Infrastructure.CimSession"/> object from cache
+            Remove given <see cref="T:Microsoft.Management.Infrastructure.CimSession"/> object from cache.
             </para>
             </summary>
             <param name="session"></param>
@@ -2370,7 +2311,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionBase.#ctor">
             <summary>
-            Constructor.
+            The constructor.
             </summary>
         </member>
         <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionBase.cimSessions">
@@ -2385,7 +2326,7 @@
         <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionBase.defaultRunspaceId">
             <summary>
             <para>
-            Default runspace id
+            Default runspace Id.
             </para>
             </summary>
         </member>
@@ -2405,7 +2346,7 @@
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionBase.DefaultRunspace_StateChanged(System.Object,System.Management.Automation.Runspaces.RunspaceStateEventArgs)">
             <summary>
             <para>
-            clean up the dictionaries if the runspace is closed or broken.
+            Clean up the dictionaries if the runspace is closed or broken.
             </para>
             </summary>
             <param name="sender">Runspace.</param>
@@ -2427,7 +2368,7 @@
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimNewSession.CimTestCimSessionContext.#ctor(Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy,Microsoft.Management.Infrastructure.CimCmdlets.CimSessionWrapper)">
             <summary>
             <para>
-            Constructor
+            The constructor.
             </para>
             </summary>
             <param name="theProxy"></param>
@@ -2435,13 +2376,13 @@
         </member>
         <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.CimNewSession.CimTestCimSessionContext.CimSessionWrapper">
             <summary>
-            <para>namespace</para>
+            <para>Namespace</para>
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimNewSession.#ctor">
             <summary>
             <para>
-            constructor
+            The constructor.
             </para>
             </summary>
         </member>
@@ -2457,7 +2398,7 @@
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimNewSession.AddSessionToCache(Microsoft.Management.Infrastructure.CimSession,Microsoft.Management.Infrastructure.CimCmdlets.XOperationContextBase,Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationBase)">
             <summary>
             <para>
-            Add session to global cache
+            Add session to global cache,
             </para>
             </summary>
             <param name="cimSession"></param>
@@ -2467,22 +2408,22 @@
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimNewSession.ProcessActions(Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationBase)">
             <summary>
             <para>
-            process all actions in the action queue
+            Process all actions in the action queue.
             </para>
             </summary>
             <param name="cmdletOperation">
-            wrapper of cmdlet, <seealso cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationBase"/> for details
+            Wrapper of cmdlet, <seealso cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationBase"/> for details.
             </param>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimNewSession.ProcessRemainActions(Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationBase)">
             <summary>
             <para>
-            process remaining actions until all operations are completed or
-            current cmdlet is terminated by user
+            Process remaining actions until all operations are completed or
+            current cmdlet is terminated by user.
             </para>
             </summary>
             <param name="cmdletOperation">
-            wrapper of cmdlet, <seealso cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationBase"/> for details
+            Wrapper of cmdlet, <seealso cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationBase"/> for details.
             </param>
         </member>
         <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimNewSession.cimTestSession">
@@ -2495,7 +2436,7 @@
         <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.CimNewSession.Disposed">
             <summary>
             <para>
-            Indicates whether this object was disposed or not
+            Indicates whether this object was disposed or not.
             </para>
             </summary>
         </member>
@@ -2525,13 +2466,13 @@
         <member name="T:Microsoft.Management.Infrastructure.CimCmdlets.CimGetSession">
             <summary>
             <para>
-            Get CimSession based on given id/instanceid/computername/name
+            Get CimSession based on given id/instanceid/computername/name.
             </para>
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimGetSession.#ctor">
             <summary>
-            Constructor.
+            The constructor.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimGetSession.GetCimSession(Microsoft.Management.Infrastructure.CimCmdlets.GetCimSessionCommand)">
@@ -2544,7 +2485,7 @@
         <member name="T:Microsoft.Management.Infrastructure.CimCmdlets.CimRemoveSession">
             <summary>
             <para>
-            Get CimSession based on given id/instanceid/computername/name
+            Get CimSession based on given id/instanceid/computername/name.
             </para>
             </summary>
         </member>
@@ -2600,14 +2541,14 @@
         <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.XOperationContextBase.Proxy">
             <summary>
             <para>
-            Session proxy
+            Session proxy.
             </para>
             </summary>
         </member>
         <member name="T:Microsoft.Management.Infrastructure.CimCmdlets.InvocationContext">
             <summary>
             Class provides all information regarding the
-            current invocation to .net api.
+            current invocation to the .NET API.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.InvocationContext.#ctor(Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy)">
@@ -3946,253 +3887,6 @@
             </para>
             </summary>
             <param name="sendToPipeline"></param>
-        </member>
-        <member name="T:Microsoft.Management.Infrastructure.CimCmdlets.Strings">
-            <summary>
-              A strongly-typed resource class, for looking up localized strings, etc.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.Strings.#ctor">
-            <summary>constructor</summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.ResourceManager">
-            <summary>
-              Returns the cached ResourceManager instance used by this class.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.Culture">
-            <summary>
-              Overrides the current threads CurrentUICulture property for all
-              resource lookups using this strongly typed resource class.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.CimOperationCompleted">
-            <summary>
-              Looks up a localized string similar to 
-               Operation '{0}' complete.
-               {0} is a placeholder for operation name. (i.e, GetCimInstance)
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.CimOperationNameCreateInstance">
-            <summary>
-              Looks up a localized string similar to 
-               Create CimInstance
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.CimOperationNameDeleteInstance">
-            <summary>
-              Looks up a localized string similar to 
-               Delete CimInstance
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.CimOperationNameEnumerateAssociatedInstances">
-            <summary>
-              Looks up a localized string similar to 
-               Enumerate Associated CimInstances
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.CimOperationNameEnumerateClasses">
-            <summary>
-              Looks up a localized string similar to 
-               Enumerate CimClasses
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.CimOperationNameEnumerateInstances">
-            <summary>
-              Looks up a localized string similar to 
-               Enumerate CimInstances
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.CimOperationNameGetClass">
-            <summary>
-              Looks up a localized string similar to 
-               Get CimClass
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.CimOperationNameGetInstance">
-            <summary>
-              Looks up a localized string similar to 
-               Get CimInstance
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.CimOperationNameInvokeMethod">
-            <summary>
-              Looks up a localized string similar to 
-               Invoke CimMethod
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.CimOperationNameModifyInstance">
-            <summary>
-              Looks up a localized string similar to 
-               Modify CimInstance
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.CimOperationNameQueryInstances">
-            <summary>
-              Looks up a localized string similar to 
-               Query CimInstances
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.CimOperationNameSubscribeIndication">
-            <summary>
-              Looks up a localized string similar to 
-               Subscribe CimIndication
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.CimOperationStart">
-            <summary>
-              Looks up a localized string similar to 
-               Perform operation '{0}' with following parameters, '{1}'.
-               {0} is a placeholder for operation name; {1} is a placeholder for parameters value
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.ConflictParameterWasSet">
-            <summary>
-              Looks up a localized string similar to 
-               Parameter '{0}' cannot be used with the parameter '{1}'.
-               {0} is a placeholder for parameter name; {1} is a placeholder for another parameter name;
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.CouldNotFindCimsessionObject">
-            <summary>
-              Looks up a localized string similar to 
-               Could not find CimSession with the given {0} = {1}
-               {0} is a placeholder for property name; {1} is a placeholder for property value.
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.CouldNotFindPropertyFromGivenClass">
-            <summary>
-              Looks up a localized string similar to 
-               Could not find the following properties from the given class {0}: {1}.
-               {0} is a placeholder for class name; {1} is a placeholder for list of property names.
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.CouldNotModifyReadonlyProperty">
-            <summary>
-              Looks up a localized string similar to 
-               Could not modify readonly property '{0}' of object '{1}'.
-               {0} is a placeholder for propertyname; {1} is a placeholder for object string.
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.DefaultStatusDescription">
-            <summary>
-              Looks up a localized string similar to 
-               Default status description.
-               N/A
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.DidNotResolveFile">
-            <summary>
-              Looks up a localized string similar to 
-               Cannot perform operation because the wildcard path {0} did not resolve to a file.
-               {0} is a placeholder for a path
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.InvalidAuthenticationTypeWithNullCredential">
-            <summary>
-              Looks up a localized string similar to 
-               Authentication type '{0}' is invalid without credential. Only following authentication type are allowed without credential, '{1}', '{2}', '{3}', or '{4}'.
-               {0} is a placeholder for authentication type. {1}-{4} are placeholders for authentication types.
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.InvalidMethod">
-            <summary>
-              Looks up a localized string similar to 
-               Can not find method '{0}' in class '{1}'.
-               {0} is a placeholder for method name. {1} is a placeholders for class name.
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.InvalidMethodParameter">
-            <summary>
-              Looks up a localized string similar to 
-               Can not find Parameter '{0}' in method '{1}' of class '{2}'.
-               {0} is a placeholder for parameter name; {1} is a placeholder for method name; {2} is a placeholder for class name.
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.InvalidOperation">
-            <summary>
-              Looks up a localized string similar to 
-               Invalid operation. Current cmdlet already have operation created.
-               N/A
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.InvalidParameterValue">
-            <summary>
-              Looks up a localized string similar to 
-               Argument '{0}' contains characters that are not allowed in parameter '{1}'. Supply an argument that is valid and then try the command again.
-               {0} stand for argument value, {1} stand for parameter name.
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.MultipleFilesNotSupported">
-            <summary>
-              Looks up a localized string similar to 
-               Cannot perform operation because the path resolved to more than one file. This command cannot operate on multiple files.
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.NullArgument">
-            <summary>
-              Looks up a localized string similar to 
-               Argument '{0}' can not be null.
-               N/A
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.OperationInProgress">
-            <summary>
-              Looks up a localized string similar to 
-               CimSession proxy object already have operation in progress.
-               N/A
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.ReadWriteFileNotFileSystemProvider">
-            <summary>
-              Looks up a localized string similar to 
-               Cannot open file because the current provider ({0}) cannot open a file.
-               {0} is a placeholder for PowerShell filesystem-like provider name (i.e. registry provider)
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.UnableToAddPropertyToInstance">
-            <summary>
-              Looks up a localized string similar to 
-               Unable to add property '{0}' to input object '{1}'. The class schema does not contain the property.
-               {0} stand for property name, {1} stand for cim instance path.
-             
-            </summary>
-        </member>
-        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.Strings.UnableToResolveParameterSetName">
-            <summary>
-              Looks up a localized string similar to 
-               Unable to resolve the parameter set name.
-               N/A
-             
-            </summary>
         </member>
         <member name="T:Microsoft.Management.Infrastructure.CimCmdlets.GetCimAssociatedInstanceCommand">
             <summary>
@@ -5987,6 +5681,253 @@
             <param name="value"></param>
             <returns></returns>
             <exception cref="T:System.ArgumentException">Throw if the given value contains any invalid name (class name or property name).</exception>
+        </member>
+        <member name="T:CimCmdletStrings">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="M:CimCmdletStrings.#ctor">
+            <summary>constructor</summary>
+        </member>
+        <member name="P:CimCmdletStrings.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.Culture">
+            <summary>
+              Overrides the current threads CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.CimOperationCompleted">
+            <summary>
+              Looks up a localized string similar to 
+               Operation '{0}' complete.
+               {0} is a placeholder for operation name. (i.e, GetCimInstance)
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.CimOperationNameCreateInstance">
+            <summary>
+              Looks up a localized string similar to 
+               Create CimInstance
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.CimOperationNameDeleteInstance">
+            <summary>
+              Looks up a localized string similar to 
+               Delete CimInstance
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.CimOperationNameEnumerateAssociatedInstances">
+            <summary>
+              Looks up a localized string similar to 
+               Enumerate Associated CimInstances
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.CimOperationNameEnumerateClasses">
+            <summary>
+              Looks up a localized string similar to 
+               Enumerate CimClasses
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.CimOperationNameEnumerateInstances">
+            <summary>
+              Looks up a localized string similar to 
+               Enumerate CimInstances
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.CimOperationNameGetClass">
+            <summary>
+              Looks up a localized string similar to 
+               Get CimClass
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.CimOperationNameGetInstance">
+            <summary>
+              Looks up a localized string similar to 
+               Get CimInstance
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.CimOperationNameInvokeMethod">
+            <summary>
+              Looks up a localized string similar to 
+               Invoke CimMethod
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.CimOperationNameModifyInstance">
+            <summary>
+              Looks up a localized string similar to 
+               Modify CimInstance
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.CimOperationNameQueryInstances">
+            <summary>
+              Looks up a localized string similar to 
+               Query CimInstances
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.CimOperationNameSubscribeIndication">
+            <summary>
+              Looks up a localized string similar to 
+               Subscribe CimIndication
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.CimOperationStart">
+            <summary>
+              Looks up a localized string similar to 
+               Perform operation '{0}' with following parameters, '{1}'.
+               {0} is a placeholder for operation name; {1} is a placeholder for parameters value
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.ConflictParameterWasSet">
+            <summary>
+              Looks up a localized string similar to 
+               Parameter '{0}' cannot be used with the parameter '{1}'.
+               {0} is a placeholder for parameter name; {1} is a placeholder for another parameter name;
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.CouldNotFindCimsessionObject">
+            <summary>
+              Looks up a localized string similar to 
+               Could not find CimSession with the given {0} = {1}
+               {0} is a placeholder for property name; {1} is a placeholder for property value.
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.CouldNotFindPropertyFromGivenClass">
+            <summary>
+              Looks up a localized string similar to 
+               Could not find the following properties from the given class {0}: {1}.
+               {0} is a placeholder for class name; {1} is a placeholder for list of property names.
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.CouldNotModifyReadonlyProperty">
+            <summary>
+              Looks up a localized string similar to 
+               Could not modify readonly property '{0}' of object '{1}'.
+               {0} is a placeholder for propertyname; {1} is a placeholder for object string.
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.DefaultStatusDescription">
+            <summary>
+              Looks up a localized string similar to 
+               Default status description.
+               N/A
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.DidNotResolveFile">
+            <summary>
+              Looks up a localized string similar to 
+               Cannot perform operation because the wildcard path {0} did not resolve to a file.
+               {0} is a placeholder for a path
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.InvalidAuthenticationTypeWithNullCredential">
+            <summary>
+              Looks up a localized string similar to 
+               Authentication type '{0}' is invalid without credential. Only following authentication type are allowed without credential, '{1}', '{2}', '{3}', or '{4}'.
+               {0} is a placeholder for authentication type. {1}-{4} are placeholders for authentication types.
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.InvalidMethod">
+            <summary>
+              Looks up a localized string similar to 
+               Can not find method '{0}' in class '{1}'.
+               {0} is a placeholder for method name. {1} is a placeholders for class name.
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.InvalidMethodParameter">
+            <summary>
+              Looks up a localized string similar to 
+               Can not find Parameter '{0}' in method '{1}' of class '{2}'.
+               {0} is a placeholder for parameter name; {1} is a placeholder for method name; {2} is a placeholder for class name.
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.InvalidOperation">
+            <summary>
+              Looks up a localized string similar to 
+               Invalid operation. Current cmdlet already have operation created.
+               N/A
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.InvalidParameterValue">
+            <summary>
+              Looks up a localized string similar to 
+               Argument '{0}' contains characters that are not allowed in parameter '{1}'. Supply an argument that is valid and then try the command again.
+               {0} stand for argument value, {1} stand for parameter name.
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.MultipleFilesNotSupported">
+            <summary>
+              Looks up a localized string similar to 
+               Cannot perform operation because the path resolved to more than one file. This command cannot operate on multiple files.
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.NullArgument">
+            <summary>
+              Looks up a localized string similar to 
+               Argument '{0}' can not be null.
+               N/A
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.OperationInProgress">
+            <summary>
+              Looks up a localized string similar to 
+               CimSession proxy object already have operation in progress.
+               N/A
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.ReadWriteFileNotFileSystemProvider">
+            <summary>
+              Looks up a localized string similar to 
+               Cannot open file because the current provider ({0}) cannot open a file.
+               {0} is a placeholder for PowerShell filesystem-like provider name (i.e. registry provider)
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.UnableToAddPropertyToInstance">
+            <summary>
+              Looks up a localized string similar to 
+               Unable to add property '{0}' to input object '{1}'. The class schema does not contain the property.
+               {0} stand for property name, {1} stand for cim instance path.
+             
+            </summary>
+        </member>
+        <member name="P:CimCmdletStrings.UnableToResolveParameterSetName">
+            <summary>
+              Looks up a localized string similar to 
+               Unable to resolve the parameter set name.
+               N/A
+             
+            </summary>
         </member>
     </members>
 </doc>

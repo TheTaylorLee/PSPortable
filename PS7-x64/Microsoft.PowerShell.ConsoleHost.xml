@@ -68,7 +68,8 @@
         <member name="P:CommandLineParameterParserStrings.MissingOutputFormatParameter">
              <summary>
                Looks up a localized string similar to 
-                The command cannot be run because no argument has been supplied for the OutputFormat parameter. Specify one of the following formats for this parameter.
+                The command cannot be run because no argument has been supplied for the OutputFormat parameter.
+            Specify one of the following formats for this parameter:
             {0}
               
              </summary>
@@ -76,7 +77,8 @@
         <member name="P:CommandLineParameterParserStrings.MissingInputFormatParameter">
              <summary>
                Looks up a localized string similar to 
-                Cannot process the command because the -InputFormat parameter requires an argument. Specify a valid format argument for this parameter.  Valid formats are:
+                Cannot process the command because the -InputFormat parameter requires an argument. Specify a valid format argument for this parameter.
+            Valid formats are:
             {0}
               
              </summary>
@@ -84,7 +86,8 @@
         <member name="P:CommandLineParameterParserStrings.BadFormatParameterValue">
              <summary>
                Looks up a localized string similar to 
-                Cannot process the command because of an incorrect parameter value. "{0}" is not a valid format.  Valid formats are:
+                Cannot process the command because of an incorrect parameter value. "{0}" is not a valid format.
+            Valid formats are:
             {1}
               
              </summary>
@@ -247,6 +250,13 @@
             <summary>
               Looks up a localized string similar to 
                Parameter -STA is not supported on this platform.
+             
+            </summary>
+        </member>
+        <member name="P:CommandLineParameterParserStrings.NullElementInArgs">
+            <summary>
+              Looks up a localized string similar to 
+               The specified arguments must not contain null elements.
              
             </summary>
         </member>
@@ -1072,7 +1082,7 @@
              <summary>
                Looks up a localized string similar to 
                 PowerShell {0}
-            Copyright (c) Microsoft Corporation. All rights reserved.
+            Copyright (c) Microsoft Corporation.
             
             https://aka.ms/powershell
             Type 'help' to get help.
@@ -1355,7 +1365,7 @@
             </summary>
             <param name="message"></param>
         </member>
-        <member name="M:Microsoft.PowerShell.CommandLineParameterParser.TryParseSettingFileHelper(System.String[],System.Int32,Microsoft.PowerShell.CommandLineParameterParser)">
+        <member name="M:Microsoft.PowerShell.CommandLineParameterParser.TryParseSettingFileHelper(System.String[],System.Int32)">
             <summary>
             Processes the -SettingFile Argument.
             </summary>
@@ -1365,23 +1375,11 @@
             <param name="settingFileArgIndex">
             The index in args to the argument following '-SettingFile'.
             </param>
-            <param name="parser">
-            Used to allow the helper to write errors to the console.  If not supplied, no errors will be written.
-            </param>
             <returns>
             Returns true if the argument was parsed successfully and false if not.
             </returns>
         </member>
-        <member name="M:Microsoft.PowerShell.CommandLineParameterParser.EarlyParse(System.String[])">
-            <summary>
-            Processes the command line parameters to ConsoleHost which must be parsed before the Host is created.
-            Success to indicate that the program should continue running.
-            </summary>
-            <param name="args">
-            The command line parameters to be processed.
-            </param>
-        </member>
-        <member name="M:Microsoft.PowerShell.CommandLineParameterParser.GetSwitchKey(System.String[],System.Int32@,Microsoft.PowerShell.CommandLineParameterParser,System.Boolean@)">
+        <member name="M:Microsoft.PowerShell.CommandLineParameterParser.GetSwitchKey(System.String[],System.Int32@,System.Boolean@)">
             <summary>
             Gets the word in a switch from the current argument or parses a file.
             For example -foo, /foo, or --foo would return 'foo'.
@@ -1392,16 +1390,13 @@
             <param name="argIndex">
             The index in args to the argument to process.
             </param>
-            <param name="parser">
-            Used to parse files in the args.  If not supplied, Files will not be parsed.
-            </param>
             <param name="noexitSeen">
             Used during parsing files.
             </param>
             <returns>
             Returns a Tuple:
-            The first value is a String called SwitchKey with the word in a switch from the current argument or null.
-            The second value is a bool called ShouldBreak, indicating if the parsing look should break.
+            The first value is a String called 'switchKey' with the word in a switch from the current argument or null.
+            The second value is a bool called 'shouldBreak', indicating if the parsing look should break.
             </returns>
         </member>
         <member name="M:Microsoft.PowerShell.CommandLineParameterParser.Parse(System.String[])">
@@ -1555,7 +1550,7 @@
             </summary>
             <param name="hWnd">The window to show...</param>
             <param name="nCmdShow">The command to do.</param>
-            <returns>True it it was successful.</returns>
+            <returns>True if it was successful.</returns>
         </member>
         <member name="T:Microsoft.PowerShell.ConsoleControl.ConsoleBreakSignal">
             <summary>
@@ -2022,7 +2017,7 @@
             Subclasses S.M.A.Host to implement a console-mode monad host.
             </summary>
         </member>
-        <member name="M:Microsoft.PowerShell.ConsoleHost.Start(System.String,System.String,System.String[])">
+        <member name="M:Microsoft.PowerShell.ConsoleHost.Start(System.String,System.String)">
              <summary>
              Internal Entry point in msh console host implementation.
              </summary>
@@ -2031,9 +2026,6 @@
              </param>
              <param name="helpText">
              Help text for minishell. This is displayed on 'minishell -?'.
-             </param>
-             <param name = "args">
-             Command line parameters to pwsh.exe
              </param>
              <returns>
              The exit code for the shell.
@@ -2763,6 +2755,11 @@
             </summary>
             <summary>
             ConsoleHostUserInterface implements console-mode user interface for powershell.
+            </summary>
+        </member>
+        <member name="F:Microsoft.PowerShell.ConsoleHostUserInterface.PrintToken">
+            <summary>
+            This is the char that is echoed to the console when the input is masked. This not localizable.
             </summary>
         </member>
         <member name="F:Microsoft.PowerShell.ConsoleHostUserInterface._commandCompletionPowerShell">
@@ -3621,6 +3618,17 @@
             <param name="consoleFilePath">
             Deprecated: Console file used to create a runspace configuration to start MSH
             </param>
+            <param name="args">
+            Command line arguments to the managed MSH
+            </param>
+            <param name="argc">
+            Length of the passed in argument array.
+            </param>
+        </member>
+        <member name="M:Microsoft.PowerShell.UnmanagedPSEntry.Start(System.String[],System.Int32)">
+            <summary>
+            Starts managed MSH.
+            </summary>
             <param name="args">
             Command line arguments to the managed MSH
             </param>

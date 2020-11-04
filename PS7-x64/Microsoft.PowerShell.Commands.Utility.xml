@@ -341,8 +341,8 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.CompareObjectCommand.BeginProcessing">
             <summary>
-            If the parameter 'ExcludeDifferent' is present, then we need to turn on the
-            'IncludeEqual' switch unless it's turned off by the user specifically.
+            If the parameter 'ExcludeDifferent' is present, then the 'IncludeEqual'
+            switch is turned on unless it's turned off by the user specifically.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.CompareObjectCommand.ProcessRecord">
@@ -1197,31 +1197,6 @@
         <member name="M:Microsoft.PowerShell.Commands.DisablePSBreakpointCommand.ProcessBreakpoint(System.Management.Automation.Breakpoint)">
             <summary>
             Disables the given breakpoint.
-            </summary>
-        </member>
-        <member name="T:Microsoft.PowerShell.Commands.PSBreakpointCommandBase">
-            <summary>
-            Base class for Enable/Disable/Remove-PSBreakpoint.
-            </summary>
-        </member>
-        <member name="P:Microsoft.PowerShell.Commands.PSBreakpointCommandBase.Breakpoint">
-            <summary>
-            The breakpoint to enable.
-            </summary>
-        </member>
-        <member name="P:Microsoft.PowerShell.Commands.PSBreakpointCommandBase.Id">
-            <summary>
-            The Id of the breakpoint to enable.
-            </summary>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.PSBreakpointCommandBase.ProcessRecord">
-            <summary>
-            Gathers the list of breakpoints to process and calls ProcessBreakpoints.
-            </summary>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.PSBreakpointCommandBase.ProcessBreakpoint(System.Management.Automation.Breakpoint)">
-            <summary>
-            Process the given breakpoint.
             </summary>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.EnablePSBreakpointCommand">
@@ -2481,6 +2456,11 @@
             Allows user to override the date/time object that will be processed.
             </summary>
         </member>
+        <member name="P:Microsoft.PowerShell.Commands.GetDateCommand.UnixTimeSeconds">
+            <summary>
+            Gets or sets whether to treat a numeric input as ticks, or unix time.
+            </summary>
+        </member>
         <member name="P:Microsoft.PowerShell.Commands.GetDateCommand.Year">
             <summary>
             Allows the user to override the year.
@@ -2528,7 +2508,12 @@
         </member>
         <member name="P:Microsoft.PowerShell.Commands.GetDateCommand.Format">
             <summary>
-            Unix format string.
+            DotNet format string.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.GetDateCommand.AsUTC">
+            <summary>
+            Gets or sets a value that converts date to UTC before formatting.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.GetDateCommand.ProcessRecord">
@@ -2651,6 +2636,14 @@
             Perform common error checks.
             Populate source code.
             </summary>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.GetFileHashCommand.ComputeFileHash(System.String,System.String@)">
+            <summary>
+            Read the file and calculate the hash.
+            </summary>
+            <param name="path">Path to file which will be hashed.</param>
+            <param name="hash">Will contain the hash of the file content.</param>
+            <returns>Boolean value indicating whether the hash calculation succeeded or failed.</returns>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.GetFileHashCommand.WriteHashResult(System.String,System.String,System.String)">
             <summary>
@@ -2839,6 +2832,11 @@
         <member name="P:Microsoft.PowerShell.Commands.GetRandomCommand.Count">
             <summary>
             Number of items to output (number of list items or of numbers).
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.GetRandomCommand.Shuffle">
+            <summary>
+            Gets or sets whether the command should return all input objects in randomized order.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.GetRandomCommand.GetRandomInt64(System.Int64,System.Int64)">
@@ -4890,44 +4888,55 @@
             This is the row of the OrderMatrix.
             </summary>
         </member>
-        <member name="T:Microsoft.PowerShell.Commands.PSBreakpointCreationBase">
+        <member name="T:Microsoft.PowerShell.Commands.PSBreakpointAccessorCommandBase">
             <summary>
-            Base class for Set/New-PSBreakpoint.
+            Base class for Get/Set-PSBreakpoint.
             </summary>
         </member>
-        <member name="P:Microsoft.PowerShell.Commands.PSBreakpointCreationBase.Action">
+        <member name="T:Microsoft.PowerShell.Commands.PSBreakpointCommandBase">
             <summary>
-            The action to take when hitting this breakpoint.
+            Base class for PSBreakpoint cmdlets.
             </summary>
         </member>
-        <member name="P:Microsoft.PowerShell.Commands.PSBreakpointCreationBase.Column">
+        <member name="P:Microsoft.PowerShell.Commands.PSBreakpointCommandBase.Runspace">
             <summary>
-            The column to set the breakpoint on.
+            Gets or sets the runspace where the breakpoints will be used.
             </summary>
         </member>
-        <member name="P:Microsoft.PowerShell.Commands.PSBreakpointCreationBase.Command">
+        <member name="M:Microsoft.PowerShell.Commands.PSBreakpointCommandBase.BeginProcessing">
             <summary>
-            The command(s) to set the breakpoint on.
+            Identifies the default runspace.
             </summary>
         </member>
-        <member name="P:Microsoft.PowerShell.Commands.PSBreakpointCreationBase.Line">
+        <member name="M:Microsoft.PowerShell.Commands.PSBreakpointCommandBase.ProcessBreakpoint(System.Management.Automation.Breakpoint)">
             <summary>
-            The line to set the breakpoint on.
+            Write the given breakpoint out to the pipeline, decorated with the runspace instance id if appropriate.
+            </summary>
+            <param name="breakpoint">The breakpoint to write to the pipeline.</param>
+        </member>
+        <member name="T:Microsoft.PowerShell.Commands.PSBreakpointUpdaterCommandBase">
+            <summary>
+            Base class for Enable/Disable/Remove-PSBreakpoint.
             </summary>
         </member>
-        <member name="P:Microsoft.PowerShell.Commands.PSBreakpointCreationBase.Script">
+        <member name="P:Microsoft.PowerShell.Commands.PSBreakpointUpdaterCommandBase.Breakpoint">
             <summary>
-            The script to set the breakpoint on.
+            Gets or sets the breakpoint to enable.
             </summary>
         </member>
-        <member name="P:Microsoft.PowerShell.Commands.PSBreakpointCreationBase.Variable">
+        <member name="P:Microsoft.PowerShell.Commands.PSBreakpointUpdaterCommandBase.Id">
             <summary>
-            The variables to set the breakpoint(s) on.
+            Gets or sets the Id of the breakpoint to enable.
             </summary>
         </member>
-        <member name="P:Microsoft.PowerShell.Commands.PSBreakpointCreationBase.Mode">
+        <member name="P:Microsoft.PowerShell.Commands.PSBreakpointUpdaterCommandBase.Runspace">
             <summary>
-            The access type for variable breakpoints to break on.
+            Gets or sets the runspace where the breakpoints will be used.
+            </summary>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.PSBreakpointUpdaterCommandBase.ProcessRecord">
+            <summary>
+            Gathers the list of breakpoints to process and calls ProcessBreakpoints.
             </summary>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.ReadHostCommand">
@@ -4947,7 +4956,12 @@
         </member>
         <member name="P:Microsoft.PowerShell.Commands.ReadHostCommand.AsSecureString">
             <summary>
-            Set to no echo the input as is is typed.
+            Gets or sets to no echo the input as is typed. If set then the cmdlet returns a secure string.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.ReadHostCommand.MaskInput">
+            <summary>
+            Gets or sets whether the console will echo the input as is typed. If set then the cmdlet returns a regular string.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ReadHostCommand.BeginProcessing">
@@ -5310,6 +5324,41 @@
         <member name="T:Microsoft.PowerShell.Commands.SetPSBreakpointCommand">
             <summary>
             This class implements Set-PSBreakpoint command.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.SetPSBreakpointCommand.Action">
+            <summary>
+            Gets or sets the action to take when hitting this breakpoint.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.SetPSBreakpointCommand.Column">
+            <summary>
+            Gets or sets the column to set the breakpoint on.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.SetPSBreakpointCommand.Command">
+            <summary>
+            Gets or sets the command(s) to set the breakpoint on.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.SetPSBreakpointCommand.Line">
+            <summary>
+            Gets or sets the line to set the breakpoint on.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.SetPSBreakpointCommand.Script">
+            <summary>
+            Gets or sets the script to set the breakpoint on.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.SetPSBreakpointCommand.Variable">
+            <summary>
+            Gets or sets the variables to set the breakpoint(s) on.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.SetPSBreakpointCommand.Mode">
+            <summary>
+            Gets or sets the access type for variable breakpoints to break on.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.SetPSBreakpointCommand.BeginProcessing">
@@ -6090,12 +6139,12 @@
         </member>
         <member name="P:Microsoft.PowerShell.Commands.TestJsonCommand.Json">
             <summary>
-            An JSON to be validated.
+            Gets or sets JSON string to be validated.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.TestJsonCommand.Schema">
             <summary>
-            A schema to validate the JSON against.
+            Gets or sets schema to validate the JSON against.
             This is optional parameter.
             If the parameter is absent the cmdlet only attempts to parse the JSON string.
             If the parameter present the cmdlet attempts to parse the JSON string and
@@ -6103,14 +6152,29 @@
             the cmdlet parses the schema doing implicitly check the schema too.
             </summary>
         </member>
+        <member name="P:Microsoft.PowerShell.Commands.TestJsonCommand.SchemaFile">
+            <summary>
+            Gets or sets path to the file containg schema to validate the JSON string against.
+            This is optional parameter.
+            </summary>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.TestJsonCommand.UnwrapException(System.Exception)">
+            <summary>
+            Process all exceptions in the AggregateException.
+            Unwrap TargetInvocationException if any and
+            rethrow inner exception without losing the stack trace.
+            </summary>
+            <param name="e">AggregateException to be unwrapped.</param>
+            <returns>Return value is unreachable since we always rethrow.</returns>
+        </member>
         <member name="M:Microsoft.PowerShell.Commands.TestJsonCommand.BeginProcessing">
             <summary>
-            Prepare an JSON schema.
+            Prepare a JSON schema.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.TestJsonCommand.ProcessRecord">
             <summary>
-            Validate an JSON.
+            Validate a JSON.
             </summary>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.MeasureCommandCommand">
@@ -6969,6 +7033,11 @@
             Big Endian Unicode encoding.
             </summary>
         </member>
+        <member name="F:Microsoft.PowerShell.Commands.TextEncodingType.BigEndianUTF32">
+            <summary>
+            Big Endian UTF32 encoding.
+            </summary>
+        </member>
         <member name="F:Microsoft.PowerShell.Commands.TextEncodingType.Utf8">
             <summary>
             UTF8 encoding.
@@ -7437,30 +7506,36 @@
         </member>
         <member name="P:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.Content">
             <summary>
-            Gets the Content property.
+            Gets the text body content of this response.
             </summary>
+            <value>
+            Content of the response body, decoded using <see cref="P:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.Encoding"/>,
+            if the <c>Content-Type</c> response header is a recognized text
+            type.  Otherwise <c>null</c>.
+            </value>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.Encoding">
             <summary>
-            Gets the Encoding that was used to decode the Content.
+            Gets the encoding of the text body content of this response.
             </summary>
             <value>
-            The Encoding used to decode the Content; otherwise, a null reference if the content is not text.
+            Encoding of the response body from the <c>Content-Type</c> header,
+            or <c>null</c> if the encoding could not be determined.
             </value>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.InputFields">
             <summary>
-            Gets the Fields property.
+            Gets the HTML input field elements parsed from <see cref="P:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.Content"/>.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.Links">
             <summary>
-            Gets the Links property.
+            Gets the HTML a link elements parsed from <see cref="P:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.Content"/>.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.Images">
             <summary>
-            Gets the Images property.
+            Gets the HTML img elements parsed from <see cref="P:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.Content"/>.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.InitializeContent">
@@ -7582,6 +7657,11 @@
         <member name="F:Microsoft.PowerShell.Commands.WebSslProtocol.Tls12">
             <summary>
             Specifies the TLS 1.2 security protocol. The TLS protocol is defined in IETF RFC 5246.
+            </summary>
+        </member>
+        <member name="F:Microsoft.PowerShell.Commands.WebSslProtocol.Tls13">
+            <summary>
+            Specifies the TLS 1.3 security protocol. The TLS protocol is defined in IETF RFC 8446.
             </summary>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.WebRequestPSCmdlet">
@@ -7949,33 +8029,36 @@
         </member>
         <member name="P:Microsoft.PowerShell.Commands.WebResponseObject.Content">
             <summary>
-            Gets or protected sets the Content property.
+            Gets or protected sets the response body content.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.WebResponseObject.StatusCode">
             <summary>
-            Gets the StatusCode property.
+            Gets the response status code.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.WebResponseObject.StatusDescription">
             <summary>
-            Gets the StatusDescription property.
+            Gets the response status description.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.WebResponseObject.RawContentStream">
             <summary>
-            Gets the RawContentStream property.
+            Gets the response body content as a <see cref="T:System.IO.MemoryStream"/>.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.WebResponseObject.RawContentLength">
             <summary>
-            Gets the RawContentLength property.
+            Gets the length (in bytes) of <see cref="P:Microsoft.PowerShell.Commands.WebResponseObject.RawContentStream"/>.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.WebResponseObject.RawContent">
             <summary>
-            Gets or protected sets the RawContent property.
+            Gets or protected sets the full response content.
             </summary>
+            <value>
+            Full response content, including the HTTP status line, headers, and body.
+            </value>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.WebResponseObject.InitializeContent">
             <summary>
@@ -8487,14 +8570,15 @@
             <summary>
             </summary>
         </member>
-        <member name="M:Microsoft.PowerShell.Commands.StreamHelper.SaveStreamToFile(System.IO.Stream,System.String,System.Management.Automation.PSCmdlet)">
+        <member name="M:Microsoft.PowerShell.Commands.StreamHelper.SaveStreamToFile(System.IO.Stream,System.String,System.Management.Automation.PSCmdlet,System.Threading.CancellationToken)">
             <summary>
             Saves content from stream into filePath.
             Caller need to ensure <paramref name="stream"/> position is properly set.
             </summary>
-            <param name="stream"></param>
-            <param name="filePath"></param>
-            <param name="cmdlet"></param>
+            <param name="stream">Input stream.</param>
+            <param name="filePath">Output file name.</param>
+            <param name="cmdlet">Current cmdlet (Invoke-WebRequest or Invoke-RestMethod).</param>
+            <param name="cancellationToken">CancellationToken to track the cmdlet cancellation.</param>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.WebCmdletElementCollection">
             <summary>
@@ -9674,6 +9758,33 @@
             Value of name attribute for dictionary value part in dictionary entry.
             </summary>
         </member>
+        <member name="T:System.Management.Automation.Runspaces.RunspaceAttribute">
+            <summary>
+            Defines the attribute used to designate a cmdlet parameter as one that
+            should accept runspaces.
+            </summary>
+        </member>
+        <member name="M:System.Management.Automation.Runspaces.RunspaceAttribute.Transform(System.Management.Automation.EngineIntrinsics,System.Object)">
+            <summary>
+            Transforms the input data to a Runspace.
+            </summary>
+            <param name="engineIntrinsics">
+            The engine APIs for the context under which the transformation is being
+            made.
+            </param>
+            <param name="inputData">
+            If a string, the transformation uses the input as the runspace name.
+            If an int, the transformation uses the input as the runspace ID.
+            If a guid, the transformation uses the input as the runspace GUID.
+            If already a Runspace, the transform does nothing.
+            </param>
+            <returns>A runspace object representing the inputData.</returns>
+        </member>
+        <member name="P:System.Management.Automation.Runspaces.RunspaceAttribute.TransformNullOptionalParameters">
+            <summary>
+            Gets a flag indicating whether or not null optional parameters are transformed.
+            </summary>
+        </member>
         <member name="T:AddMember">
             <summary>
               A strongly-typed resource class, for looking up localized strings, etc.
@@ -9912,6 +10023,13 @@
             <summary>
               Looks up a localized string similar to 
                The specified reference assembly '{0}' is unnecessary and ignored.
+             
+            </summary>
+        </member>
+        <member name="P:AddTypeStrings.AssemblyTypeNotSupported">
+            <summary>
+              Looks up a localized string similar to 
+               Both the assembly types 'ConsoleApplication' and 'WindowsApplication' are not currently supported.
              
             </summary>
         </member>
@@ -10432,6 +10550,13 @@
             <summary>
               Looks up a localized string similar to 
                Wait-Debugger called on line {0} in {1}.
+             
+            </summary>
+        </member>
+        <member name="P:Debugger.RunspaceInstanceIdNotFound">
+            <summary>
+              Looks up a localized string similar to 
+               A breakpoint associated with another runspace cannot be updated because there is no runspace with instance ID '{0}'.
              
             </summary>
         </member>
@@ -11470,6 +11595,13 @@
              
             </summary>
         </member>
+        <member name="P:TestJsonCmdletStrings.JsonSchemaFileOpenFailure">
+            <summary>
+              Looks up a localized string similar to 
+               Can not open JSON schema file: {0}
+             
+            </summary>
+        </member>
         <member name="T:TraceCommandStrings">
             <summary>
               A strongly-typed resource class, for looking up localized strings, etc.
@@ -12356,6 +12488,13 @@
             <summary>
               Looks up a localized string similar to 
                Retrying after interval of {0} seconds. Status code for previous attempt: {1}
+             
+            </summary>
+        </member>
+        <member name="P:WebCmdletStrings.JsonMaxDepthReached">
+            <summary>
+              Looks up a localized string similar to 
+               Resulting JSON is truncated as serialization has exceeded the set depth of {0}.
              
             </summary>
         </member>

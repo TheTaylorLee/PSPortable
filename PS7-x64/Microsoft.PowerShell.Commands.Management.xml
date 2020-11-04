@@ -1761,7 +1761,7 @@
         </member>
         <member name="T:Microsoft.PowerShell.Commands.GetComputerInfoCommand">
             <summary>
-            The Get=ComputerInfo cmdlet gathers and reports information
+            The Get-ComputerInfo cmdlet gathers and reports information
             about a computer.
             </summary>
         </member>
@@ -5549,7 +5549,7 @@
         </member>
         <member name="P:Microsoft.PowerShell.Commands.SetLocationCommand.LiteralPath">
             <summary>
-            Gets or sets the path path property, when bound from the pipeline.
+            Gets or sets the path property, when bound from the pipeline.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.SetLocationCommand.PassThru">
@@ -8057,7 +8057,7 @@
             <param name="waitForServiceToStop"></param>
             <returns>True iff the service was stopped.</returns>
         </member>
-        <member name="M:Microsoft.PowerShell.Commands.ServiceOperationBaseCommand.HaveAllDependentServicesStopped(System.Collections.Generic.ICollection{System.ServiceProcess.ServiceController})">
+        <member name="M:Microsoft.PowerShell.Commands.ServiceOperationBaseCommand.HaveAllDependentServicesStopped(System.ServiceProcess.ServiceController[])">
             <summary>
             Check if all dependent services are stopped.
             </summary>
@@ -8660,7 +8660,7 @@
             Gets or sets whether to continue pinging until user presses Ctrl-C (or Int.MaxValue threshold reached).
             </summary>
         </member>
-        <member name="F:Microsoft.PowerShell.Commands.TestConnectionCommand.Quiet">
+        <member name="P:Microsoft.PowerShell.Commands.TestConnectionCommand.Quiet">
             <summary>
             Gets or sets whether to enable quiet output mode, reducing output to a single simple value only.
             By default, PingStatus, PingMtuStatus, or TraceStatus objects are emitted.
@@ -10952,7 +10952,7 @@
         <member name="P:ProcessResources.InvalidStartProcess">
             <summary>
               Looks up a localized string similar to 
-               This command cannot be run due to the error: {0}.
+               This command cannot be run due to the error: {0}
              
             </summary>
         </member>

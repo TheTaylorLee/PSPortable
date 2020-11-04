@@ -926,20 +926,57 @@
             corresponding certificate.
             </summary>
         </member>
-        <member name="T:Microsoft.PowerShell.Commands.CertificateProviderCodeSigningDynamicParameters">
-             <summary>
-             Defines the Certificate Provider dynamic parameters.
-            
-             We only support one dynamic parameter for Win 7 and earlier:
-             CodeSigningCert
-             If provided, we only return certificates valid for signing code or
-             scripts.
-             </summary>
-        </member>
-        <member name="P:Microsoft.PowerShell.Commands.CertificateProviderCodeSigningDynamicParameters.CodeSigningCert">
+        <member name="T:Microsoft.PowerShell.Commands.CertificateProviderDynamicParameters">
             <summary>
-            Switch that controls whether we only return
+            Defines the Certificate Provider dynamic parameters.
+            We only support one dynamic parameter for Win 7 and earlier:
+            CodeSigningCert
+            If provided, we only return certificates valid for signing code or
+            scripts.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.CertificateProviderDynamicParameters.CodeSigningCert">
+            <summary>
+            Gets or sets a switch that controls whether we only return
             code signing certs.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.CertificateProviderDynamicParameters.DocumentEncryptionCert">
+            <summary>
+            Gets or sets a filter that controls whether we only return
+            data encipherment certs.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.CertificateProviderDynamicParameters.SSLServerAuthentication">
+            <summary>
+            Gets or sets a filter that controls whether we only return
+            server authentication certs.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.CertificateProviderDynamicParameters.DnsName">
+            <summary>
+            Gets or sets a filter by DNSName.
+            Expected content is a single DNS Name that may start and/or end
+            with '*': "contoso.com" or "*toso.c*".
+            All WildcardPattern class features supported.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.CertificateProviderDynamicParameters.Eku">
+            <summary>
+            Gets or sets a filter by EKU.
+            Expected content is one or more OID strings:
+            "1.3.6.1.5.5.7.3.1", "*Server*", etc.
+            For a cert to match, it must be valid for all listed OIDs.
+            All WildcardPattern class features supported.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.CertificateProviderDynamicParameters.ExpiringInDays">
+            <summary>
+            Gets or sets a filter by the number of valid days.
+            Expected content is a non-negative integer.
+            "0" matches all certs that have already expired.
+            "1" matches all certs that are currently valid and will expire
+            by next day (local time).
             </summary>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.DnsNameRepresentation">
@@ -1615,6 +1652,29 @@
             <param name="filter">Filter info.</param>
             <returns> Does not return a value.</returns>
         </member>
+        <member name="M:Microsoft.PowerShell.Commands.CertificateProvider.CertContainsName(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Management.Automation.WildcardPattern)">
+            <summary>
+            Check if the specified certificate has the name in DNS name list.
+            </summary>
+            <param name="cert">Certificate object.</param>
+            <param name="pattern">Wildcard pattern for DNS name to search.</param>
+            <returns>True on success, false otherwise.</returns>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.CertificateProvider.CertIsSSLServerAuthentication(System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <summary>
+            Check if the specified certificate is a server authentication certificate.
+            </summary>
+            <param name="cert">Certificate object.</param>
+            <returns>True on success, false otherwise.</returns>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.CertificateProvider.CertContainsEku(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Collections.Generic.List{System.Management.Automation.WildcardPattern})">
+            <summary>
+            Check if the specified certificate contains EKU matching all of these patterns.
+            </summary>
+            <param name="cert">Certificate object.</param>
+            <param name="ekuPatterns">EKU patterns.</param>
+            <returns>True on success, false otherwise.</returns>
+        </member>
         <member name="M:Microsoft.PowerShell.Commands.CertificateProvider.System#Management#Automation#Provider#ICmdletProviderSupportsHelp#GetHelpMaml(System.String,System.String)">
             <summary>
             Get provider-specific help.
@@ -1741,7 +1801,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.DnsNameProperty.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)">
             <summary>
-            Constructor for EkuList.
+            Constructor for DnsNameProperty.
             </summary>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.DownLevelHelper">
