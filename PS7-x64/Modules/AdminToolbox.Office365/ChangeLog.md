@@ -17,3 +17,4 @@
 * **1.0.8.1** Fixed the Enviroment variable for AzureSyncServer
 * **1.1.0.0** Updated for eventual core support
 * **1.1.1.0** Updated connect-office365 to use latest version of exchange online module
+* **1.1.2.0** Updated connect-office365 to include both exchange online versions
