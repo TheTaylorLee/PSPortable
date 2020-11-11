@@ -32,8 +32,13 @@ if ($query.Version -gt "2.1") {
         InlinePrediction = '#85C1E9'
         ListPrediction   = '#27FF00'
     }
-    Set-PSReadLineOption -PredictionSource History
     Set-PSReadLineOption -PredictionViewStyle ListView
+    try {
+        Set-PSReadLineOption -PredictionSource HistoryAndPlugin
+    }
+    catch {
+        Set-PSReadLineOption -PredictionSource History
+    }
 }
 
 Function Set-WindowSize {
