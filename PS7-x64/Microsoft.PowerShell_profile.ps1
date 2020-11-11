@@ -1,6 +1,7 @@
 ﻿$ErrorActionPreference = 'SilentlyContinue'
 
 #Powershell Customization
+#Need newer version of PSReadlin that fixes tab complete bug
 function prompt {
     $location = Get-Location
     Write-Host -NoNewline "$(HOSTNAME.EXE) "                  -ForegroundColor Green
@@ -19,9 +20,21 @@ Set-PSReadLineOption -BellStyle Audible
 Set-PSReadLineKeyHandler -Chord Tab -Function TabCompleteNext
 Set-PSReadLineKeyHandler -Chord Ctrl+Space -Function MenuComplete
 #>
+#Set-PSRepository -Name "PSGallery" -InstallationPolicy Trusted
 Set-PSReadLineOption -BellStyle None
 Set-PSReadLineKeyHandler -Chord Tab -Function MenuComplete
-#Set-PSRepository -Name "PSGallery" -InstallationPolicy Trusted
+
+#Configure PSReadline Intellisense
+
+$query = Get-Module PSReadLine
+if ($query.Version -gt "2.1") {
+    Set-PSReadLineOption -Colors @{
+        InlinePrediction = '#85C1E9'
+        ListPrediction   = '#27FF00'
+    }
+    Set-PSReadLineOption -PredictionSource History
+    Set-PSReadLineOption -PredictionViewStyle ListView
+}
 
 Function Set-WindowSize {
     #Specify Window Size, Buffer, and Histor Parameters
