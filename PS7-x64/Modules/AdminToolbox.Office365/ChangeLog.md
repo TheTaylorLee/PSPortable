@@ -18,3 +18,4 @@
 * **1.1.0.0** Updated for eventual core support
 * **1.1.1.0** Updated connect-office365 to use latest version of exchange online module
 * **1.1.2.0** Updated connect-office365 to include both exchange online versions
+* **1.2.0.0** Added multiple functions and updated get-office365 function

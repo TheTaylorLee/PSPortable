@@ -4,8 +4,7 @@ function Get-RoleMembers {
     This function will get office365 roles and their members. It outputs the content to Excel tables.
 
     .NOTES
-    Requires the MSOnline
-    Requires the ImportExcel Module
+    Requires the MSOnline module be imported
     #>
 
     begin {

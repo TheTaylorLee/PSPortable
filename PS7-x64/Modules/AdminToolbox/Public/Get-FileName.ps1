@@ -8,6 +8,9 @@ Get a gui prompt for Specifying a folder name
 $Folder = Get-Foldername
 
 Creates a prompt to select a folder and then saves the path to a variable.
+
+.Link
+Get-FolderName
 #>
 
     [System.Reflection.Assembly]::LoadWithPartialName("System.windows.forms") | Out-Null
