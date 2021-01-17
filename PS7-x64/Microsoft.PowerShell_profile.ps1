@@ -19,20 +19,32 @@ function prompt {
 Set-PSReadLineOption -BellStyle Audible
 Set-PSReadLineKeyHandler -Chord Tab -Function TabCompleteNext
 Set-PSReadLineKeyHandler -Chord Ctrl+Space -Function MenuComplete
+Set-PSReadLineOption -editmode Windows
 #>
 #Set-PSRepository -Name "PSGallery" -InstallationPolicy Trusted
-Set-PSReadLineOption -BellStyle None
+Set-PSReadLineOption -BellStyle None -EditMode Windows
 Set-PSReadLineKeyHandler -Chord Tab -Function MenuComplete
 
 #Configure PSReadline Intellisense
-
 $query = Get-Module PSReadLine
-if ($query.Version -gt "2.1") {
+if ($query.Version -le "2.2") {
+    Install-Module psreadline -AllowPrerelease -AllowClobber -Force
+}
+
+Function Set-PSReadlineIntellisenseOptions {
+    #Set colors for intellisense prediction
     Set-PSReadLineOption -Colors @{
         InlinePrediction = '#85C1E9'
         ListPrediction   = '#27FF00'
     }
-    Set-PSReadLineOption -PredictionViewStyle ListView
+    #Set viewStyle based on powershell version requirements
+    if ($psversiontable.psversion.major -ge 7 ) {
+        Set-PSReadLineOption -PredictionViewStyle ListView
+    }
+    else {
+        Set-PSReadLineOption -PredictionViewStyle InlineView
+    }
+    #Set prediction source for intellisense
     try {
         Set-PSReadLineOption -PredictionSource HistoryAndPlugin
     }
@@ -40,6 +52,7 @@ if ($query.Version -gt "2.1") {
         Set-PSReadLineOption -PredictionSource History
     }
 }
+Set-PSReadlineIntellisenseOptions
 
 Function Set-WindowSize {
     #Specify Window Size, Buffer, and Histor Parameters
@@ -98,3 +111,4 @@ if (Test-Path($ChocolateyProfile)) {
 
 $ErrorActionPreference = 'Continue'
 Import-Module AdminToolbox
+Set-Location $Down
