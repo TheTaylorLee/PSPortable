@@ -8,13 +8,16 @@ function Get-Office365 {
     Write-Host " "
 
     Write-Host "ADSync Module Functions"                                                                     -ForegroundColor green
-    Write-Host "Invoke-PowerState          ..Invokes power state changes on VMs and can get their status"    -ForegroundColor cyan
-    Write-Host "Set-Subscription           ..Sets the subscription/AZContext for subsequent functions"       -ForegroundColor cyan
+    Write-Host "Invoke-Sync365             ..Invokes an Azure sync using a Non-Verbose alias remotely"       -ForegroundColor cyan
+    Write-Host "Start-AzureSync            ..Starts an Azure AD and Local AD Sync"                           -ForegroundColor cyan
+
     Write-Host " "
 
     Write-Host "Az Module Functions"                                                                         -ForegroundColor green
     Write-Host "Get-GuestUsers             ..Gets a security report of guest users from Azure AD"            -ForegroundColor cyan
+    Write-Host "Invoke-PowerState          ..Invokes power state changes on VMs and can get their status"    -ForegroundColor cyan
     Write-Host "Set-PasswordNeverExpire    ..Sets an account password to not expire"                         -ForegroundColor cyan
+    Write-Host "Set-Subscription           ..Sets the subscription/AZContext for subsequent functions"       -ForegroundColor cyan
     Write-Host " "
 
     Write-Host "AzureAD Module Functions"                                                                    -ForegroundColor green

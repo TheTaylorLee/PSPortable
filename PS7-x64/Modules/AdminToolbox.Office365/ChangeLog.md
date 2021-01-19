@@ -20,3 +20,4 @@
 * **1.1.2.0** Updated connect-office365 to include both exchange online versions
 * **1.2.0.0** Added multiple functions and updated get-office365 function
 * **1.3.0.0** Added multiple functions and updated get-office365 function
+* **1.3.0.1** Fixed errors in the get-office365 function
