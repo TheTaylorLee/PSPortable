@@ -3,11 +3,11 @@ $FunctionPathPublic = $PSScriptRoot + "\Public\"
 $FunctionPathPrivate = $PSScriptRoot + "\Private\"
 
 try {
-    $PublicFunctions = Get-ChildItem $FunctionPathPublic -Recurse | ForEach-Object {
+    $PublicFunctions = Get-ChildItem $FunctionPathPublic | ForEach-Object {
         [System.IO.File]::ReadAllText($_.FullName, [Text.Encoding]::UTF8) + [Environment]::NewLine
     }
 
-    $PrivateFunctions = Get-ChildItem $FunctionPathPrivate -Recurse | ForEach-Object {
+    $PrivateFunctions = Get-ChildItem $FunctionPathPrivate | ForEach-Object {
         [System.IO.File]::ReadAllText($_.FullName, [Text.Encoding]::UTF8) + [Environment]::NewLine
     }
 
@@ -16,8 +16,8 @@ try {
 }
 
 catch {
-    $FunctionListPublic = Get-ChildItem $FunctionPathPublic -Recurse -Name
-    $FunctionListPrivate = Get-ChildItem $FunctionPathPrivate -Recurse -Name
+    $FunctionListPublic = Get-ChildItem $FunctionPathPublic -Name
+    $FunctionListPrivate = Get-ChildItem $FunctionPathPrivate -Name
 
     ForEach ($Function in $FunctionListPublic) {
         . ($FunctionPathPublic + $Function)
