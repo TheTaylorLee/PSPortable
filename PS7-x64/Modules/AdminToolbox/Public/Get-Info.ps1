@@ -6,20 +6,19 @@ function Get-Info {
     )
 
     Write-Host " "
-    Write-Host "To Get Functions and Command Help..."                                                       -ForegroundColor green
+    Write-Host "Admintoolbox Functions..."                                                                  -ForegroundColor green
     Write-Host "
 Get-All                           ..Gets all module Functions
-Get-Filename                      ..Gets a gui for selecting a file
-Get-Foldername                    ..Gets a gui for selecting a folder
 Get-Full                          ..Gets full help for selected functions
 Get-ModuleAliases                 ..Gets aliases for AdminToolbox modules
 Invoke-Show                       ..Invokes a grid Gui for implementing show command
 Open-AdminMMC                     ..Opens Microsoft Management Console with multiple snap-ins loaded
 Start-Application                 ..Start an application from PowerShell with ease
+Start-Cmder                       ..Start a style console drop-down. Shortcut: Ctrl + ~
           "                                                                                                 -ForegroundColor cyan
     Write-Host " "
 
-    Write-Host "To Get Functions for Specific Modules"                                                      -ForegroundColor green
+    Write-Host "To Get Functions for Required Modules"                                                      -ForegroundColor green
     Write-Host "
 Get-AdminToolbox                  ..Gets functions for this module
 Get-ActiveDirectory               ..Gets functions for Active Directory
