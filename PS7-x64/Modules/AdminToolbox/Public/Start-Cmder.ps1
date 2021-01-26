@@ -21,13 +21,21 @@ function Start-Cmder {
     )
 
     if ($Startup) {
-        "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+        $module = (Get-Module admintoolbox).ModuleBase
+        $cmder = "$module\support\cmder_mini\Cmder.exe"
+
+        # Create a Shortcut with Windows PowerShell
+        $TargetFile = $cmder
+        $ShortcutFile = "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\cmder.lnk"
+        $WScriptShell = New-Object -ComObject WScript.Shell
+        $Shortcut = $WScriptShell.CreateShortcut($ShortcutFile)
+        $Shortcut.TargetPath = $TargetFile
+        $Shortcut.Save()
     }
 
     else {
         $module = (Get-Module admintoolbox).ModuleBase
         $cmder = "$module\support\cmder_mini\Cmder.exe"
-        $cmder
         Start-Process $cmder
     }
 }
