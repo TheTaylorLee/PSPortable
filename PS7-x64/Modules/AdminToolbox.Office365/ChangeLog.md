@@ -22,3 +22,4 @@
 * **1.3.0.0** Added multiple functions and updated get-office365 function
 * **1.3.0.1** Fixed errors in the get-office365 function
 * **2.0.0.0** Updated Get-Office365 and modified the logical structure of the module
+* **2.0.0.1** Applied fix to get-vmdetails
