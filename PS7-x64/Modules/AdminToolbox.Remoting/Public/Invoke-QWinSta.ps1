@@ -16,6 +16,7 @@ function Invoke-QWinSta {
     #>
 
     [CmdletBinding()]
+    [Alias('qwin')]
     Param (
         [Parameter(Mandatory = $true)]$Server
     )

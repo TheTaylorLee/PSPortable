@@ -19,6 +19,7 @@ function Invoke-RWinSta {
     #>
 
     [CmdletBinding()]
+    [Alias('rwin')]
     Param (
         [Parameter(Position = 1, Mandatory = $true)]$ID,
         [Parameter(Position = 2, Mandatory = $true)]$Server
