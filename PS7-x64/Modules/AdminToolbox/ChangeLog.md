@@ -129,3 +129,4 @@
 * **7.1.3.0**  Updated multiple module dependencies and updated get-info function
 * **7.1.4.0**  Updated multiple module dependencies
 * **8.0.0.0**  Moved two functions to the file management module. Added cmder to the module.
+* **8.0.1.0**  Updated multiple module dependencies
