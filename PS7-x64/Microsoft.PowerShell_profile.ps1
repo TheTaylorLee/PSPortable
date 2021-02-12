@@ -99,6 +99,17 @@ Function Set-WindowSize {
 Set-WindowSize
 #-------------------------------------------------------------------------------------------------------------------------------------------------------
 
+#Imports the Exchange Online Module
+$ErrorActionPreference = 'SilentlyContinue'
+$CreateEXOPSSession = (Get-ChildItem -Path $Env:LOCALAPPDATA\Apps\2.0* -Filter CreateExoPSSession.ps1 -Recurse -ErrorAction SilentlyContinue -Force | Select-Object -Last 1).DirectoryName
+Import-Module  "$CreateEXOPSSession\CreateExoPSSession.ps1" -Force
+$ErrorActionPreference = 'Continue'
+
+#Clear EXO Script obnoxiousness
+Clear-Host
+
+#-------------------------------------------------------------------------------------------------------------------------------------------------------
+
 #Downloads folder variable
 $Down = "$env:USERPROFILE\downloads"
 
