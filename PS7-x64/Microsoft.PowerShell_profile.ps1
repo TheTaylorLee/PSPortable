@@ -38,7 +38,7 @@ Function Set-PSReadlineIntellisenseOptions {
         ListPrediction   = '#27FF00'
     }
     #Set viewStyle based on powershell version requirements
-    if ($psversiontable.perversion.major -ge 7 ) {
+    if ($psversiontable.psversion.major -ge 7 ) {
         Set-PSReadLineOption -PredictionViewStyle ListView
     }
     else {
