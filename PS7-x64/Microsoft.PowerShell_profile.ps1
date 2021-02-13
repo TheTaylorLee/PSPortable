@@ -38,7 +38,7 @@ Function Set-PSReadlineIntellisenseOptions {
         ListPrediction   = '#27FF00'
     }
     #Set viewStyle based on powershell version requirements
-    if ($psversiontable.psversion.major -ge 7 ) {
+    if ($psversiontable.perversion.major -ge 7 ) {
         Set-PSReadLineOption -PredictionViewStyle ListView
     }
     else {
@@ -97,22 +97,36 @@ Function Set-WindowSize {
     $host.UI.RawUI.WindowSize = New-Object System.Management.Automation.Host.size($Width, $Height)
 }
 Set-WindowSize
+
 #-------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#Imports the Exchange Online Module
-$ErrorActionPreference = 'SilentlyContinue'
+#Imports the Exchange Online Module if exists
 $CreateEXOPSSession = (Get-ChildItem -Path $Env:LOCALAPPDATA\Apps\2.0* -Filter CreateExoPSSession.ps1 -Recurse -ErrorAction SilentlyContinue -Force | Select-Object -Last 1).DirectoryName
 Import-Module  "$CreateEXOPSSession\CreateExoPSSession.ps1" -Force
-$ErrorActionPreference = 'Continue'
 
-#Clear EXO Script obnoxiousness
+#Clear EXO and exchange messages
 Clear-Host
 
 #-------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#Downloads folder variable
-$Down = "$env:USERPROFILE\downloads"
+#Imports the Exchange Snapins if they exists by initiating a PSSession
+$t1 = Test-Path "C:\Program Files\Microsoft\Exchange Server"
+$t2 = Test-Path "C:\Program Files (x86)\Microsoft\Exchange Server"
 
+if ($t1 -or $t2 -eq $true) {
+
+    Write-Host "Importing Exchange Module into the ps7 session" -ForegroundColor Green
+    $fqdn = [System.Net.Dns]::GetHostByName(($env:computerName)).hostname
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri http://$fqdn/PowerShell/
+    Import-PSSession $Session -DisableNameChecking
+}
+
+#-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+$ErrorActionPreference = 'Continue'
+Import-Module AdminToolbox
+Import-Module BetterCredentials
+Import-Module MyFunctions
 
 # Chocolatey profile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
@@ -120,6 +134,8 @@ if (Test-Path($ChocolateyProfile)) {
     Import-Module "$ChocolateyProfile"
 }
 
-$ErrorActionPreference = 'Continue'
-Import-Module AdminToolbox
+#Downloads folder variable
+$Down = "$env:USERPROFILE\downloads"
+
+#Set starting directory to downloads
 Set-Location $Down
