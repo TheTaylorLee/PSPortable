@@ -13,3 +13,4 @@
 * **1.2.0.2** Made fixes to commands Grant-MailboxAccessOWAOnly
 * **1.3.0.0** Added Enable-365MailboxExistingUser function
 * **1.4.0.0** Added Connect-ExchangeServer and disconnect-exchangeserver functions
+* **1.4.0.1** Updated Get-Exchange with new commands

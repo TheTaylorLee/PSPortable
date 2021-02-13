@@ -4,6 +4,8 @@ function Get-Exchange {
 
     Write-Host "Exchange Functions"                                                                            -ForegroundColor green
     Write-Host "Add-DistributionMember         ..Adds a mailbox to a Distribution Group"                       -ForegroundColor cyan
+    Write-Host "Connect-ExchangeServer         ..Connects an Exchange server PSSession"                        -ForegroundColor cyan
+    Write-Host "Disconnect-ExchangeServer      ..Disconnects an Exchange server PSSession"                     -ForegroundColor cyan
     Write-Host "Enable-365MailboxExistingUser  ..Enables office 365 Mailbox for existing local user"           -ForegroundColor cyan
     Write-Host "Get-MailboxScaleReport         ..Gets a report for diagnosing outlook limits being exceeded"   -ForegroundColor cyan
     Write-Host "Get-MailLog                    ..Gets a csv of mail logs"                                      -ForegroundColor cyan
