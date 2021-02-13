@@ -14,3 +14,4 @@
 * **1.0.3.2** Fixed Module Description
 * **1.1.0.0** Tested and marked Core compatbile
 * **1.2.0.0** Added Invoke-RWinSta and Invoke-Qwinsta wrapper functions
+* **1.2.0.1** Addressed some oversights in the help for Invoke-RWinSta

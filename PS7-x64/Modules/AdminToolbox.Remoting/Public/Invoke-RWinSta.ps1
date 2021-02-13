@@ -4,10 +4,10 @@ function Invoke-RWinSta {
     Wrapper function for rwinsta to get rdp sessions
 
     .Parameter ID
-    specify the target server to run qwinsta against
+    specify the id of the user account for the session being closed
 
     .Parameter Server
-    specify the target server to run qwinsta against
+    specify the target server to run rwinsta against
 
     .EXAMPLE
     Find remote sessions
