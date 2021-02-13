@@ -140,7 +140,7 @@ if ($t1 -or $t2 -eq $true) {
 $ErrorActionPreference = 'Continue'
 Import-Module AdminToolbox
 Import-Module BetterCredentials
-Import-Module MyFunctions
+#Import-Module MyFunctions
 
 # Chocolatey profile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
