@@ -14,3 +14,4 @@
 * **1.3.0.0** Added Enable-365MailboxExistingUser function
 * **1.4.0.0** Added Connect-ExchangeServer and disconnect-exchangeserver functions
 * **1.4.0.1** Updated Get-Exchange with new commands
+* **1.4.0.2** Updated Connect-ExchangeServer help with more accurate help
