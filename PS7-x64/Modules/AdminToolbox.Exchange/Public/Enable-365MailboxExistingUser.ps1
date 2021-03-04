@@ -26,7 +26,7 @@ Function Enable-365MailboxExistingUser {
     .EXAMPLE
     Enable an office 365 mailbox for an existing Active Directory User
 
-    Enable-365Mailbox -Identity Domain\Username -PrimarySmtpAddress email@company.com -RemoteRoutingAddres email@mail.company.onmicrosoft.com -DomainController server.domain.com
+    Enable-365Mailbox -Identity Domain\Username -PrimarySmtpAddress email@company.com -RemoteRoutingAddres email@company.onmicrosoft.com -DomainController server.domain.com
 
     .Link
     Enable-RemoteMailbox
