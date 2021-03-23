@@ -58,10 +58,10 @@ function Invoke-NetworkScan {
         #Perform port scan first and put results in a script scope variable. This will also cause the arp cache to rebuild
         if ($null -ne $ArpRefresh) {
             if ($DeepScan) {
-                $Script:SlowScan = Invoke-PSnmap -ComputerName $CIDR -Port 21, 22, 23, 25, 53, 67, 80, 139, 389, 443, 445, 902, 3389, 9100 -ScanOnPingFail -DNS -NoSummary -PortConnectTimeoutMS 500 -ThrottleLimit $Threads
+                $Script:SlowScan = Invoke-PSnmap -ComputerName $CIDR -Port 21, 22, 23, 25, 53, 67, 80, 139, 389, 443, 445, 902, 3389, 9100 -ScanOnPingFail -Dns -NoSummary -PortConnectTimeoutMs 500 -ThrottleLimit $Threads
             }
             else {
-                $Script:QuickScan = Invoke-PSnmap -ComputerName $CIDR -Port 21, 22, 23, 80, 443, 3389, 9100 -ScanOnPingFail -DNS -NoSummary -PortConnectTimeoutMS 500 -ThrottleLimit $Threads
+                $Script:QuickScan = Invoke-PSnmap -ComputerName $CIDR -Port 21, 22, 23, 80, 443, 3389, 9100 -ScanOnPingFail -Dns -NoSummary -PortConnectTimeoutMs 500 -ThrottleLimit $Threads
             }
         } #end if
 
@@ -70,7 +70,7 @@ function Invoke-NetworkScan {
         } #end else
 
         #Get path to the OUI list
-        $ModPath = get-module AdminToolbox.Networking
+        $ModPath = Get-Module AdminToolbox.Networking
         $P1 = $ModPath.path
         $P2 = $p1 -replace ("AdminToolbox.Networking.psm1", "")
         $Script:ScanOUI = "$P2" + "support\ScanOUI.txt"
@@ -88,6 +88,9 @@ function Invoke-NetworkScan {
             catch [Microsoft.PowerShell.Cmdletization.Cim.CimJobException] {
                 $Script:Neighbor = $null
             }
+            catch [System.Management.Automation.RemoteException] {
+                $Script:Neighbor = $null
+            }
 
             #Make API calls for OUI information on MAC Addresses
             $MAC = $Script:Neighbor.LinkLayerAddress
@@ -101,7 +104,13 @@ function Invoke-NetworkScan {
                     $Mac2 = $Mac.substring(0, 8)
                     #Invoke Mac Lookup
                     $OUI1 = Get-Content $Script:ScanOUI | Where-Object { $_ -like "$mac2*" }
-                    $OUI2 = $OUI1.Substring(9)
+                    #Sometimes the MAC won't be Null, but it's not an actual MAC address. This try catch was quicker to implement then troubleshooting the cause.
+                    try {
+                        $OUI2 = $OUI1.Substring(9)
+                    }
+                    catch {
+                        $OUI2 = $null
+                    }
                     ForEach-Object {
                         #Take the enumerated CIDR IP results from the API call and Port scan. Output using a PSCustomObject
                         [pscustomobject]@{
@@ -133,7 +142,13 @@ function Invoke-NetworkScan {
                     #Invoke Mac Lookup
                     $Mac2 = $Mac.substring(0, 8)
                     $OUI1 = Get-Content $Script:ScanOUI | Where-Object { $_ -like "$mac2*" }
-                    $OUI2 = $OUI1.Substring(9)
+                    #Sometimes the MAC won't be Null, but it's not an actual MAC address. This try catch was quicker to implement then troubleshooting the cause.
+                    try {
+                        $OUI2 = $OUI1.Substring(9)
+                    }
+                    catch {
+                        $OUI2 = $null
+                    }
                     ForEach-Object {
                         #Take the enumerated CIDR IP results from the API call and Port scan. Output using a PSCustomObject
                         [pscustomobject]@{

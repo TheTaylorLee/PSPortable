@@ -31,3 +31,4 @@
 * **2.4.0.0** Tested and marked Core compatbile
 * **2.4.1.0** Added the Function Invoke-Monitor
 * **2.5.0.0** Add the Function Show-IPInfo
+* **2.5.1.0** Added try catch blocks and secondary catches to handle more errors for Invoke-NetworkScan

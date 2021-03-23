@@ -13,3 +13,4 @@
 * **1.1.6.0** Added account status for Get-GroupMembers functions
 * **1.1.6.1** Updated start-replication to provide progress info
 * **1.2.0.0** Tested and marked Core compatbile
+* **1.3.0.0** Added function import-activedirectory
