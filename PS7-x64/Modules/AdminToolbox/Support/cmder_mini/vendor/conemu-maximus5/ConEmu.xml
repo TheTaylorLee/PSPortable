@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2021-03-23 23:50:12" build="191012">
+		<key name=".Vanilla" modified="2021-03-24 00:17:30" build="191012">
 			<value name="Language" type="string" data="en"/>
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data=""/>
@@ -136,7 +136,7 @@
 			<value name="Cascaded" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
 			<value name="WindowMode" type="dword" data="00000520"/>
-			<value name="ConWnd X" type="long" data="5"/>
+			<value name="ConWnd X" type="long" data="-1"/>
 			<value name="ConWnd Y" type="long" data="21"/>
 			<value name="LastMonitor" type="string" data="0,0,1920,1040"/>
 			<value name="ConWnd Width" type="dword" data="00000050"/>
@@ -202,9 +202,9 @@
 			<value name="CTS.RBtnAction" type="hex" data="03"/>
 			<value name="CTS.MBtnAction" type="hex" data="00"/>
 			<value name="CTS.ColorIndex" type="hex" data="E0"/>
-			<value name="ClipboardConfirmEnter" type="hex" data="01"/>
+			<value name="ClipboardConfirmEnter" type="hex" data="00"/>
 			<value name="AutoTrimSingleLine" type="hex" data="00"/>
-			<value name="ClipboardConfirmLonger" type="ulong" data="200"/>
+			<value name="ClipboardConfirmLonger" type="ulong" data="0"/>
 			<value name="FarGotoEditorOpt" type="hex" data="01"/>
 			<value name="FarGotoEditorPath" type="string" data='far.exe /e%1:%2 "%3"'/>
 			<value name="HighlightMouseRow" type="hex" data="00"/>
