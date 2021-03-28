@@ -131,3 +131,6 @@
 * **8.0.0.0**  Moved two functions to the file management module. Added cmder to the module.
 * **8.0.1.0**  Updated multiple module dependencies
 * **8.1.0.0**  Updated multiple module dependencies
+* **8.2.0.0**  Updated cmder settings
+* **8.2.0.0**  Updated cmder settings
+* **8.3.0.0**  Updated Start-Cmder startup to use a new icon file

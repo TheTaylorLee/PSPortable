@@ -22,14 +22,16 @@ function Start-Cmder {
 
     if ($Startup) {
         $module = (Get-Module admintoolbox).ModuleBase
-        $cmder = "$module\support\cmder_mini\Cmder.exe"
+        $exe = "$module\support\cmder_mini\vendor\conemu-maximus5\ConEmu.exe"
+        $icon = "$module\support\cmder_mini\vendor\conemu-maximus5\ConEmu.ico"
 
         # Create a Shortcut with Windows PowerShell
-        $TargetFile = $cmder
+        $TargetFile = $exe
         $ShortcutFile = "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\cmder.lnk"
         $WScriptShell = New-Object -ComObject WScript.Shell
         $Shortcut = $WScriptShell.CreateShortcut($ShortcutFile)
         $Shortcut.TargetPath = $TargetFile
+        $shortcut.IconLocation = $Icon
         $Shortcut.Save()
     }
 
