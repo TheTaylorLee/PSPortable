@@ -1,0 +1,567 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.Compute</S>
+      <Version N="Version">4.11.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell - Compute service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core.  Manages virtual machines, hosted services, and related resources in Azure Resource Manager._x000D__x000A__x000D__x000A_For more information on Virtual Machines, please visit the following: https://docs.microsoft.com/azure/virtual-machines/_x000D__x000A_For more information on Virtual Machine Scale Sets, please visit the following: https://docs.microsoft.com/azure/virtual-machine-scale-sets/</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2021-04-13T08:19:53-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2021-04-14T12:49:22.7087847-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>Compute</S>
+          <S>IAAS</S>
+          <S>VM</S>
+          <S>VirtualMachine</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Remove-AzAvailabilitySet</S>
+                <S>Get-AzAvailabilitySet</S>
+                <S>New-AzAvailabilitySet</S>
+                <S>Update-AzAvailabilitySet</S>
+                <S>Get-AzVMExtensionImageType</S>
+                <S>Get-AzVMExtensionImage</S>
+                <S>Get-AzVMADDomainExtension</S>
+                <S>Set-AzVMADDomainExtension</S>
+                <S>Get-AzVMAEMExtension</S>
+                <S>Remove-AzVMAEMExtension</S>
+                <S>Set-AzVMAEMExtension</S>
+                <S>Test-AzVMAEMExtension</S>
+                <S>Set-AzVMBginfoExtension</S>
+                <S>Get-AzVMCustomScriptExtension</S>
+                <S>Remove-AzVMCustomScriptExtension</S>
+                <S>Set-AzVMCustomScriptExtension</S>
+                <S>Get-AzVMDiagnosticsExtension</S>
+                <S>Remove-AzVMDiagnosticsExtension</S>
+                <S>Remove-AzVmssDiagnosticsExtension</S>
+                <S>Set-AzVMDiagnosticsExtension</S>
+                <S>Set-AzVMExtension</S>
+                <S>Remove-AzVMExtension</S>
+                <S>Get-AzVMExtension</S>
+                <S>Get-AzVMSqlServerExtension</S>
+                <S>New-AzVMSqlServerAutoBackupConfig</S>
+                <S>New-AzVMSqlServerAutoPatchingConfig</S>
+                <S>New-AzVMSqlServerKeyVaultCredentialConfig</S>
+                <S>Remove-AzVMSqlServerExtension</S>
+                <S>Set-AzVMSqlServerExtension</S>
+                <S>Get-AzVMImage</S>
+                <S>Get-AzVMAccessExtension</S>
+                <S>Remove-AzVMAccessExtension</S>
+                <S>Set-AzVMAccessExtension</S>
+                <S>Get-AzVMImageSku</S>
+                <S>Get-AzVMImagePublisher</S>
+                <S>Get-AzVMImageOffer</S>
+                <S>Get-AzRemoteDesktopFile</S>
+                <S>Get-AzVMUsage</S>
+                <S>Get-AzVMSize</S>
+                <S>Save-AzVMImage</S>
+                <S>Set-AzVM</S>
+                <S>Add-AzVMAdditionalUnattendContent</S>
+                <S>Add-AzVMSshPublicKey</S>
+                <S>Add-AzVMSecret</S>
+                <S>Remove-AzVMSecret</S>
+                <S>Remove-AzVMNetworkInterface</S>
+                <S>Remove-AzVMDataDisk</S>
+                <S>Set-AzVMBootDiagnostic</S>
+                <S>Set-AzVMDataDisk</S>
+                <S>Set-AzVMPlan</S>
+                <S>Set-AzVMSourceImage</S>
+                <S>Set-AzVMOSDisk</S>
+                <S>Set-AzVmSecurityProfile</S>
+                <S>Set-AzVmUefi</S>
+                <S>Get-AzVMBootDiagnosticsData</S>
+                <S>Get-AzVM</S>
+                <S>Update-AzVM</S>
+                <S>Restart-AzVM</S>
+                <S>New-AzVM</S>
+                <S>Start-AzVM</S>
+                <S>Stop-AzVM</S>
+                <S>Remove-AzVM</S>
+                <S>New-AzVMConfig</S>
+                <S>Set-AzVMOperatingSystem</S>
+                <S>Add-AzVMDataDisk</S>
+                <S>Add-AzVMNetworkInterface</S>
+                <S>Add-AzVhd</S>
+                <S>Save-AzVhd</S>
+                <S>Get-AzVmssVM</S>
+                <S>Set-AzVmssVM</S>
+                <S>Add-AzVmssAdditionalUnattendContent</S>
+                <S>Add-AzVmssExtension</S>
+                <S>Add-AzVmssDataDisk</S>
+                <S>Add-AzVmssNetworkInterfaceConfiguration</S>
+                <S>Add-AzVmssSecret</S>
+                <S>Add-AzVmssSshPublicKey</S>
+                <S>Add-AzVmssWinRMListener</S>
+                <S>New-AzVmssConfig</S>
+                <S>New-AzVmssIpConfig</S>
+                <S>New-AzVmssVaultCertificateConfig</S>
+                <S>Remove-AzVmssExtension</S>
+                <S>Remove-AzVmssDataDisk</S>
+                <S>Remove-AzVmssNetworkInterfaceConfiguration</S>
+                <S>Set-AzVmssOsProfile</S>
+                <S>Set-AzVmssSecurityProfile</S>
+                <S>Set-AzVmssUefi</S>
+                <S>Set-AzVmssStorageProfile</S>
+                <S>New-AzVmss</S>
+                <S>Update-AzVmss</S>
+                <S>Stop-AzVmss</S>
+                <S>Remove-AzVmss</S>
+                <S>Get-AzVmss</S>
+                <S>Get-AzVmssSku</S>
+                <S>Set-AzVmss</S>
+                <S>Restart-AzVmss</S>
+                <S>Start-AzVmss</S>
+                <S>Update-AzVmssInstance</S>
+                <S>Get-AzVMDscExtensionStatus</S>
+                <S>Publish-AzVMDscConfiguration</S>
+                <S>Remove-AzVMDscExtension</S>
+                <S>Set-AzVMDscExtension</S>
+                <S>Get-AzVMDscExtension</S>
+                <S>Add-AzVmssDiagnosticsExtension</S>
+                <S>Get-AzVMChefExtension</S>
+                <S>Remove-AzVMChefExtension</S>
+                <S>Set-AzVMChefExtension</S>
+                <S>Remove-AzVMBackup</S>
+                <S>Disable-AzVMDiskEncryption</S>
+                <S>Get-AzVMDiskEncryptionStatus</S>
+                <S>Remove-AzVMDiskEncryptionExtension</S>
+                <S>Set-AzVMDiskEncryptionExtension</S>
+                <S>Set-AzVMBackupExtension</S>
+                <S>New-AzDisk</S>
+                <S>Update-AzDisk</S>
+                <S>Get-AzDisk</S>
+                <S>Remove-AzDisk</S>
+                <S>Grant-AzDiskAccess</S>
+                <S>Revoke-AzDiskAccess</S>
+                <S>New-AzDiskConfig</S>
+                <S>Set-AzDiskDiskEncryptionKey</S>
+                <S>Set-AzDiskImageReference</S>
+                <S>Set-AzDiskKeyEncryptionKey</S>
+                <S>New-AzDiskUpdateConfig</S>
+                <S>Set-AzDiskUpdateDiskEncryptionKey</S>
+                <S>Set-AzDiskUpdateKeyEncryptionKey</S>
+                <S>New-AzSnapshot</S>
+                <S>Update-AzSnapshot</S>
+                <S>Get-AzSnapshot</S>
+                <S>Remove-AzSnapshot</S>
+                <S>Grant-AzSnapshotAccess</S>
+                <S>Revoke-AzSnapshotAccess</S>
+                <S>New-AzSnapshotConfig</S>
+                <S>Set-AzSnapshotDiskEncryptionKey</S>
+                <S>Set-AzSnapshotImageReference</S>
+                <S>Set-AzSnapshotKeyEncryptionKey</S>
+                <S>New-AzSnapshotUpdateConfig</S>
+                <S>Set-AzSnapshotUpdateDiskEncryptionKey</S>
+                <S>Set-AzSnapshotUpdateKeyEncryptionKey</S>
+                <S>New-AzImage</S>
+                <S>Update-AzImage</S>
+                <S>Get-AzImage</S>
+                <S>Remove-AzImage</S>
+                <S>New-AzImageConfig</S>
+                <S>Set-AzImageOsDisk</S>
+                <S>Add-AzImageDataDisk</S>
+                <S>Remove-AzImageDataDisk</S>
+                <S>ConvertTo-AzVMManagedDisk</S>
+                <S>Set-AzVmssBootDiagnostic</S>
+                <S>Get-AzComputeResourceSku</S>
+                <S>Get-AzVMRunCommandDocument</S>
+                <S>Invoke-AzVMRunCommand</S>
+                <S>Start-AzVmssRollingOSUpgrade</S>
+                <S>Stop-AzVmssRollingUpgrade</S>
+                <S>Get-AzVmssRollingUpgrade</S>
+                <S>Set-AzVmssRollingUpgradePolicy</S>
+                <S>Set-AzVmssDiskEncryptionExtension</S>
+                <S>Disable-AzVmssDiskEncryption</S>
+                <S>Get-AzVmssDiskEncryption</S>
+                <S>Get-AzVmssVMDiskEncryption</S>
+                <S>Export-AzLogAnalyticRequestRateByInterval</S>
+                <S>Export-AzLogAnalyticThrottledRequest</S>
+                <S>Repair-AzVmssServiceFabricUpdateDomain</S>
+                <S>New-AzVMDataDisk</S>
+                <S>Update-AzVmssVM</S>
+                <S>New-AzVmssIpTagConfig</S>
+                <S>Invoke-AzVmssVMRunCommand</S>
+                <S>New-AzGallery</S>
+                <S>Update-AzGallery</S>
+                <S>Get-AzGallery</S>
+                <S>Remove-AzGallery</S>
+                <S>New-AzGalleryImageDefinition</S>
+                <S>Update-AzGalleryImageDefinition</S>
+                <S>Get-AzGalleryImageDefinition</S>
+                <S>Remove-AzGalleryImageDefinition</S>
+                <S>New-AzGalleryImageVersion</S>
+                <S>Update-AzGalleryImageVersion</S>
+                <S>Get-AzGalleryImageVersion</S>
+                <S>Remove-AzGalleryImageVersion</S>
+                <S>Add-AzVmssVMDataDisk</S>
+                <S>Remove-AzVmssVMDataDisk</S>
+                <S>Invoke-AzVMReimage</S>
+                <S>New-AzProximityPlacementGroup</S>
+                <S>Get-AzProximityPlacementGroup</S>
+                <S>Remove-AzProximityPlacementGroup</S>
+                <S>New-AzHostGroup</S>
+                <S>Get-AzHostGroup</S>
+                <S>Remove-AzHostGroup</S>
+                <S>New-AzHost</S>
+                <S>Get-AzHost</S>
+                <S>Remove-AzHost</S>
+                <S>New-AzDiskEncryptionSetConfig</S>
+                <S>New-AzDiskEncryptionSet</S>
+                <S>Get-AzDiskEncryptionSet</S>
+                <S>Remove-AzDiskEncryptionSet</S>
+                <S>Update-AzDiskEncryptionSet</S>
+                <S>Set-AzVmssOrchestrationServiceState</S>
+                <S>New-AzDiskAccess</S>
+                <S>Remove-AzDiskAccess</S>
+                <S>Get-AzDiskAccess</S>
+                <S>Invoke-AzVmPatchAssessment</S>
+                <S>Get-AzDiskEncryptionSetAssociatedResource</S>
+                <S>Start-AzVmssRollingExtensionUpgrade</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Remove-AzAvailabilitySet</S>
+                <S>Get-AzAvailabilitySet</S>
+                <S>New-AzAvailabilitySet</S>
+                <S>Update-AzAvailabilitySet</S>
+                <S>Get-AzVMExtensionImageType</S>
+                <S>Get-AzVMExtensionImage</S>
+                <S>Get-AzVMADDomainExtension</S>
+                <S>Set-AzVMADDomainExtension</S>
+                <S>Get-AzVMAEMExtension</S>
+                <S>Remove-AzVMAEMExtension</S>
+                <S>Set-AzVMAEMExtension</S>
+                <S>Test-AzVMAEMExtension</S>
+                <S>Set-AzVMBginfoExtension</S>
+                <S>Get-AzVMCustomScriptExtension</S>
+                <S>Remove-AzVMCustomScriptExtension</S>
+                <S>Set-AzVMCustomScriptExtension</S>
+                <S>Get-AzVMDiagnosticsExtension</S>
+                <S>Remove-AzVMDiagnosticsExtension</S>
+                <S>Remove-AzVmssDiagnosticsExtension</S>
+                <S>Set-AzVMDiagnosticsExtension</S>
+                <S>Set-AzVMExtension</S>
+                <S>Remove-AzVMExtension</S>
+                <S>Get-AzVMExtension</S>
+                <S>Get-AzVMSqlServerExtension</S>
+                <S>New-AzVMSqlServerAutoBackupConfig</S>
+                <S>New-AzVMSqlServerAutoPatchingConfig</S>
+                <S>New-AzVMSqlServerKeyVaultCredentialConfig</S>
+                <S>Remove-AzVMSqlServerExtension</S>
+                <S>Set-AzVMSqlServerExtension</S>
+                <S>Get-AzVMImage</S>
+                <S>Get-AzVMAccessExtension</S>
+                <S>Remove-AzVMAccessExtension</S>
+                <S>Set-AzVMAccessExtension</S>
+                <S>Get-AzVMImageSku</S>
+                <S>Get-AzVMImagePublisher</S>
+                <S>Get-AzVMImageOffer</S>
+                <S>Get-AzRemoteDesktopFile</S>
+                <S>Get-AzVMUsage</S>
+                <S>Get-AzVMSize</S>
+                <S>Save-AzVMImage</S>
+                <S>Set-AzVM</S>
+                <S>Add-AzVMAdditionalUnattendContent</S>
+                <S>Add-AzVMSshPublicKey</S>
+                <S>Add-AzVMSecret</S>
+                <S>Remove-AzVMSecret</S>
+                <S>Remove-AzVMNetworkInterface</S>
+                <S>Remove-AzVMDataDisk</S>
+                <S>Set-AzVMBootDiagnostic</S>
+                <S>Set-AzVMDataDisk</S>
+                <S>Set-AzVMPlan</S>
+                <S>Set-AzVMSourceImage</S>
+                <S>Set-AzVMOSDisk</S>
+                <S>Set-AzVmSecurityProfile</S>
+                <S>Set-AzVmUefi</S>
+                <S>Get-AzVMBootDiagnosticsData</S>
+                <S>Get-AzVM</S>
+                <S>Update-AzVM</S>
+                <S>Restart-AzVM</S>
+                <S>New-AzVM</S>
+                <S>Start-AzVM</S>
+                <S>Stop-AzVM</S>
+                <S>Remove-AzVM</S>
+                <S>New-AzVMConfig</S>
+                <S>Set-AzVMOperatingSystem</S>
+                <S>Add-AzVMDataDisk</S>
+                <S>Add-AzVMNetworkInterface</S>
+                <S>Add-AzVhd</S>
+                <S>Save-AzVhd</S>
+                <S>Get-AzVmssVM</S>
+                <S>Set-AzVmssVM</S>
+                <S>Add-AzVmssAdditionalUnattendContent</S>
+                <S>Add-AzVmssExtension</S>
+                <S>Add-AzVmssDataDisk</S>
+                <S>Add-AzVmssNetworkInterfaceConfiguration</S>
+                <S>Add-AzVmssSecret</S>
+                <S>Add-AzVmssSshPublicKey</S>
+                <S>Add-AzVmssWinRMListener</S>
+                <S>New-AzVmssConfig</S>
+                <S>New-AzVmssIpConfig</S>
+                <S>New-AzVmssVaultCertificateConfig</S>
+                <S>Remove-AzVmssExtension</S>
+                <S>Remove-AzVmssDataDisk</S>
+                <S>Remove-AzVmssNetworkInterfaceConfiguration</S>
+                <S>Set-AzVmssOsProfile</S>
+                <S>Set-AzVmssSecurityProfile</S>
+                <S>Set-AzVmssUefi</S>
+                <S>Set-AzVmssStorageProfile</S>
+                <S>New-AzVmss</S>
+                <S>Update-AzVmss</S>
+                <S>Stop-AzVmss</S>
+                <S>Remove-AzVmss</S>
+                <S>Get-AzVmss</S>
+                <S>Get-AzVmssSku</S>
+                <S>Set-AzVmss</S>
+                <S>Restart-AzVmss</S>
+                <S>Start-AzVmss</S>
+                <S>Update-AzVmssInstance</S>
+                <S>Get-AzVMDscExtensionStatus</S>
+                <S>Publish-AzVMDscConfiguration</S>
+                <S>Remove-AzVMDscExtension</S>
+                <S>Set-AzVMDscExtension</S>
+                <S>Get-AzVMDscExtension</S>
+                <S>Add-AzVmssDiagnosticsExtension</S>
+                <S>Get-AzVMChefExtension</S>
+                <S>Remove-AzVMChefExtension</S>
+                <S>Set-AzVMChefExtension</S>
+                <S>Remove-AzVMBackup</S>
+                <S>Disable-AzVMDiskEncryption</S>
+                <S>Get-AzVMDiskEncryptionStatus</S>
+                <S>Remove-AzVMDiskEncryptionExtension</S>
+                <S>Set-AzVMDiskEncryptionExtension</S>
+                <S>Set-AzVMBackupExtension</S>
+                <S>New-AzDisk</S>
+                <S>Update-AzDisk</S>
+                <S>Get-AzDisk</S>
+                <S>Remove-AzDisk</S>
+                <S>Grant-AzDiskAccess</S>
+                <S>Revoke-AzDiskAccess</S>
+                <S>New-AzDiskConfig</S>
+                <S>Set-AzDiskDiskEncryptionKey</S>
+                <S>Set-AzDiskImageReference</S>
+                <S>Set-AzDiskKeyEncryptionKey</S>
+                <S>New-AzDiskUpdateConfig</S>
+                <S>Set-AzDiskUpdateDiskEncryptionKey</S>
+                <S>Set-AzDiskUpdateKeyEncryptionKey</S>
+                <S>New-AzSnapshot</S>
+                <S>Update-AzSnapshot</S>
+                <S>Get-AzSnapshot</S>
+                <S>Remove-AzSnapshot</S>
+                <S>Grant-AzSnapshotAccess</S>
+                <S>Revoke-AzSnapshotAccess</S>
+                <S>New-AzSnapshotConfig</S>
+                <S>Set-AzSnapshotDiskEncryptionKey</S>
+                <S>Set-AzSnapshotImageReference</S>
+                <S>Set-AzSnapshotKeyEncryptionKey</S>
+                <S>New-AzSnapshotUpdateConfig</S>
+                <S>Set-AzSnapshotUpdateDiskEncryptionKey</S>
+                <S>Set-AzSnapshotUpdateKeyEncryptionKey</S>
+                <S>New-AzImage</S>
+                <S>Update-AzImage</S>
+                <S>Get-AzImage</S>
+                <S>Remove-AzImage</S>
+                <S>New-AzImageConfig</S>
+                <S>Set-AzImageOsDisk</S>
+                <S>Add-AzImageDataDisk</S>
+                <S>Remove-AzImageDataDisk</S>
+                <S>ConvertTo-AzVMManagedDisk</S>
+                <S>Set-AzVmssBootDiagnostic</S>
+                <S>Get-AzComputeResourceSku</S>
+                <S>Get-AzVMRunCommandDocument</S>
+                <S>Invoke-AzVMRunCommand</S>
+                <S>Start-AzVmssRollingOSUpgrade</S>
+                <S>Stop-AzVmssRollingUpgrade</S>
+                <S>Get-AzVmssRollingUpgrade</S>
+                <S>Set-AzVmssRollingUpgradePolicy</S>
+                <S>Set-AzVmssDiskEncryptionExtension</S>
+                <S>Disable-AzVmssDiskEncryption</S>
+                <S>Get-AzVmssDiskEncryption</S>
+                <S>Get-AzVmssVMDiskEncryption</S>
+                <S>Export-AzLogAnalyticRequestRateByInterval</S>
+                <S>Export-AzLogAnalyticThrottledRequest</S>
+                <S>Repair-AzVmssServiceFabricUpdateDomain</S>
+                <S>New-AzVMDataDisk</S>
+                <S>Update-AzVmssVM</S>
+                <S>New-AzVmssIpTagConfig</S>
+                <S>Invoke-AzVmssVMRunCommand</S>
+                <S>New-AzGallery</S>
+                <S>Update-AzGallery</S>
+                <S>Get-AzGallery</S>
+                <S>Remove-AzGallery</S>
+                <S>New-AzGalleryImageDefinition</S>
+                <S>Update-AzGalleryImageDefinition</S>
+                <S>Get-AzGalleryImageDefinition</S>
+                <S>Remove-AzGalleryImageDefinition</S>
+                <S>New-AzGalleryImageVersion</S>
+                <S>Update-AzGalleryImageVersion</S>
+                <S>Get-AzGalleryImageVersion</S>
+                <S>Remove-AzGalleryImageVersion</S>
+                <S>Add-AzVmssVMDataDisk</S>
+                <S>Remove-AzVmssVMDataDisk</S>
+                <S>Invoke-AzVMReimage</S>
+                <S>New-AzProximityPlacementGroup</S>
+                <S>Get-AzProximityPlacementGroup</S>
+                <S>Remove-AzProximityPlacementGroup</S>
+                <S>New-AzHostGroup</S>
+                <S>Get-AzHostGroup</S>
+                <S>Remove-AzHostGroup</S>
+                <S>New-AzHost</S>
+                <S>Get-AzHost</S>
+                <S>Remove-AzHost</S>
+                <S>New-AzDiskEncryptionSetConfig</S>
+                <S>New-AzDiskEncryptionSet</S>
+                <S>Get-AzDiskEncryptionSet</S>
+                <S>Remove-AzDiskEncryptionSet</S>
+                <S>Update-AzDiskEncryptionSet</S>
+                <S>Set-AzVmssOrchestrationServiceState</S>
+                <S>New-AzDiskAccess</S>
+                <S>Remove-AzDiskAccess</S>
+                <S>Get-AzDiskAccess</S>
+                <S>Invoke-AzVmPatchAssessment</S>
+                <S>Get-AzDiskEncryptionSetAssociatedResource</S>
+                <S>Start-AzVmssRollingExtensionUpgrade</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Fixed a bug when 1 data disk attached to VMSS for Remove-AzVmssDataDisk [#13368]_x000D__x000A_* Added new cmdlets to support TrustedLaunch related cmdlets:_x000D__x000A_    - 'Set-AzVmSecurityProfile'_x000D__x000A_    - 'Set-AzVmUefi'_x000D__x000A_    - 'Set-AzVmssSecurityProfile'_x000D__x000A_    - 'Set-AzVmssUefi'_x000D__x000A_* Edited default value for Size parameter in New-AzVM cmdlet from Standard_DS1_v2 to Standard_D2s_v3.</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">2.2.8</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/2.2.8</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell - Compute service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core.  Manages virtual machines, hosted services, and related resources in Azure Resource Manager._x000D__x000A__x000D__x000A_For more information on Virtual Machines, please visit the following: https://docs.microsoft.com/azure/virtual-machines/_x000D__x000A_For more information on Virtual Machine Scale Sets, please visit the following: https://docs.microsoft.com/azure/virtual-machine-scale-sets/</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Fixed a bug when 1 data disk attached to VMSS for Remove-AzVmssDataDisk [#13368]_x000D__x000A_* Added new cmdlets to support TrustedLaunch related cmdlets:_x000D__x000A_    - 'Set-AzVmSecurityProfile'_x000D__x000A_    - 'Set-AzVmUefi'_x000D__x000A_    - 'Set-AzVmssSecurityProfile'_x000D__x000A_    - 'Set-AzVmssUefi'_x000D__x000A_* Edited default value for Size parameter in New-AzVM cmdlet from Standard_DS1_v2 to Standard_D2s_v3.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">34428</S>
+          <S N="downloadCount">21064510</S>
+          <S N="packageSize">1450712</S>
+          <S N="published">4/13/2021 8:19:53 AM -05:00</S>
+          <S N="created">4/13/2021 8:19:53 AM -05:00</S>
+          <S N="lastUpdated">4/14/2021 5:47:00 PM -05:00</S>
+          <S N="tags">Azure ResourceManager ARM Compute IAAS VM VirtualMachine PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_Remove-AzAvailabilitySet PSCommand_Remove-AzAvailabilitySet PSCmdlet_Get-AzAvailabilitySet PSCommand_Get-AzAvailabilitySet PSCmdlet_New-AzAvailabilitySet PSCommand_New-AzAvailabilitySet PSCmdlet_Update-AzAvailabilitySet PSCommand_Update-AzAvailabilitySet PSCmdlet_Get-AzVMExtensionImageType PSCommand_Get-AzVMExtensionImageType PSCmdlet_Get-AzVMExtensionImage PSCommand_Get-AzVMExtensionImage PSCmdlet_Get-AzVMADDomainExtension PSCommand_Get-AzVMADDomainExtension PSCmdlet_Set-AzVMADDomainExtension PSCommand_Set-AzVMADDomainExtension PSCmdlet_Get-AzVMAEMExtension PSCommand_Get-AzVMAEMExtension PSCmdlet_Remove-AzVMAEMExtension PSCommand_Remove-AzVMAEMExtension PSCmdlet_Set-AzVMAEMExtension PSCommand_Set-AzVMAEMExtension PSCmdlet_Test-AzVMAEMExtension PSCommand_Test-AzVMAEMExtension PSCmdlet_Set-AzVMBginfoExtension PSCommand_Set-AzVMBginfoExtension PSCmdlet_Get-AzVMCustomScriptExtension PSCommand_Get-AzVMCustomScriptExtension PSCmdlet_Remove-AzVMCustomScriptExtension PSCommand_Remove-AzVMCustomScriptExtension PSCmdlet_Set-AzVMCustomScriptExtension PSCommand_Set-AzVMCustomScriptExtension PSCmdlet_Get-AzVMDiagnosticsExtension PSCommand_Get-AzVMDiagnosticsExtension PSCmdlet_Remove-AzVMDiagnosticsExtension PSCommand_Remove-AzVMDiagnosticsExtension PSCmdlet_Remove-AzVmssDiagnosticsExtension PSCommand_Remove-AzVmssDiagnosticsExtension PSCmdlet_Set-AzVMDiagnosticsExtension PSCommand_Set-AzVMDiagnosticsExtension PSCmdlet_Set-AzVMExtension PSCommand_Set-AzVMExtension PSCmdlet_Remove-AzVMExtension PSCommand_Remove-AzVMExtension PSCmdlet_Get-AzVMExtension PSCommand_Get-AzVMExtension PSCmdlet_Get-AzVMSqlServerExtension PSCommand_Get-AzVMSqlServerExtension PSCmdlet_New-AzVMSqlServerAutoBackupConfig PSCommand_New-AzVMSqlServerAutoBackupConfig PSCmdlet_New-AzVMSqlServerAutoPatchingConfig PSCommand_New-AzVMSqlServerAutoPatchingConfig PSCmdlet_New-AzVMSqlServerKeyVaultCredentialConfig PSCommand_New-AzVMSqlServerKeyVaultCredentialConfig PSCmdlet_Remove-AzVMSqlServerExtension PSCommand_Remove-AzVMSqlServerExtension PSCmdlet_Set-AzVMSqlServerExtension PSCommand_Set-AzVMSqlServerExtension PSCmdlet_Get-AzVMImage PSCommand_Get-AzVMImage PSCmdlet_Get-AzVMAccessExtension PSCommand_Get-AzVMAccessExtension PSCmdlet_Remove-AzVMAccessExtension PSCommand_Remove-AzVMAccessExtension PSCmdlet_Set-AzVMAccessExtension PSCommand_Set-AzVMAccessExtension PSCmdlet_Get-AzVMImageSku PSCommand_Get-AzVMImageSku PSCmdlet_Get-AzVMImagePublisher PSCommand_Get-AzVMImagePublisher PSCmdlet_Get-AzVMImageOffer PSCommand_Get-AzVMImageOffer PSCmdlet_Get-AzRemoteDesktopFile PSCommand_Get-AzRemoteDesktopFile PSCmdlet_Get-AzVMUsage PSCommand_Get-AzVMUsage PSCmdlet_Get-AzVMSize PSCommand_Get-AzVMSize PSCmdlet_Save-AzVMImage PSCommand_Save-AzVMImage PSCmdlet_Set-AzVM PSCommand_Set-AzVM PSCmdlet_Add-AzVMAdditionalUnattendContent PSCommand_Add-AzVMAdditionalUnattendContent PSCmdlet_Add-AzVMSshPublicKey PSCommand_Add-AzVMSshPublicKey PSCmdlet_Add-AzVMSecret PSCommand_Add-AzVMSecret PSCmdlet_Remove-AzVMSecret PSCommand_Remove-AzVMSecret PSCmdlet_Remove-AzVMNetworkInterface PSCommand_Remove-AzVMNetworkInterface PSCmdlet_Remove-AzVMDataDisk PSCommand_Remove-AzVMDataDisk PSCmdlet_Set-AzVMBootDiagnostic PSCommand_Set-AzVMBootDiagnostic PSCmdlet_Set-AzVMDataDisk PSCommand_Set-AzVMDataDisk PSCmdlet_Set-AzVMPlan PSCommand_Set-AzVMPlan PSCmdlet_Set-AzVMSourceImage PSCommand_Set-AzVMSourceImage PSCmdlet_Set-AzVMOSDisk PSCommand_Set-AzVMOSDisk PSCmdlet_Set-AzVmSecurityProfile PSCommand_Set-AzVmSecurityProfile PSCmdlet_Set-AzVmUefi PSCommand_Set-AzVmUefi PSCmdlet_Get-AzVMBootDiagnosticsData PSCommand_Get-AzVMBootDiagnosticsData PSCmdlet_Get-AzVM PSCommand_Get-AzVM PSCmdlet_Update-AzVM PSCommand_Update-AzVM PSCmdlet_Restart-AzVM PSCommand_Restart-AzVM PSCmdlet_New-AzVM PSCommand_New-AzVM PSCmdlet_Start-AzVM PSCommand_Start-AzVM PSCmdlet_Stop-AzVM PSCommand_Stop-AzVM PSCmdlet_Remove-AzVM PSCommand_Remove-AzVM PSCmdlet_New-AzVMConfig PSCommand_New-AzVMConfig PSCmdlet_Set-AzVMOperatingSystem PSCommand_Set-AzVMOperatingSystem PSCmdlet_Add-AzVMDataDisk PSCommand_Add-AzVMDataDisk PSCmdlet_Add-AzVMNetworkInterface PSCommand_Add-AzVMNetworkInterface PSCmdlet_Add-AzVhd PSCommand_Add-AzVhd PSCmdlet_Save-AzVhd PSCommand_Save-AzVhd PSCmdlet_Get-AzVmssVM PSCommand_Get-AzVmssVM PSCmdlet_Set-AzVmssVM PSCommand_Set-AzVmssVM PSCmdlet_Add-AzVmssAdditionalUnattendContent PSCommand_Add-AzVmssAdditionalUnattendContent PSCmdlet_Add-AzVmssExtension PSCommand_Add-AzVmssExtension PSCmdlet_Add-AzVmssDataDisk PSCommand_Add-AzVmssDataDisk PSCmdlet_Add-AzVmssNetworkInterfaceConfiguration PSCommand_Add-AzVmssNetworkInterfaceConfiguration PSCmdlet_Add-AzVmssSecret PSCommand_Add-AzVmssSecret PSCmdlet_Add-AzVmssSshPublicKey PSCommand_Add-AzVmssSshPublicKey PSCmdlet_Add-AzVmssWinRMListener PSCommand_Add-AzVmssWinRMListener PSCmdlet_New-AzVmssConfig PSCommand_New-AzVmssConfig PSCmdlet_New-AzVmssIpConfig PSCommand_New-AzVmssIpConfig PSCmdlet_New-AzVmssVaultCertificateConfig PSCommand_New-AzVmssVaultCertificateConfig PSCmdlet_Remove-AzVmssExtension PSCommand_Remove-AzVmssExtension PSCmdlet_Remove-AzVmssDataDisk PSCommand_Remove-AzVmssDataDisk PSCmdlet_Remove-AzVmssNetworkInterfaceConfiguration PSCommand_Remove-AzVmssNetworkInterfaceConfiguration PSCmdlet_Set-AzVmssOsProfile PSCommand_Set-AzVmssOsProfile PSCmdlet_Set-AzVmssSecurityProfile PSCommand_Set-AzVmssSecurityProfile PSCmdlet_Set-AzVmssUefi PSCommand_Set-AzVmssUefi PSCmdlet_Set-AzVmssStorageProfile PSCommand_Set-AzVmssStorageProfile PSCmdlet_New-AzVmss PSCommand_New-AzVmss PSCmdlet_Update-AzVmss PSCommand_Update-AzVmss PSCmdlet_Stop-AzVmss PSCommand_Stop-AzVmss PSCmdlet_Remove-AzVmss PSCommand_Remove-AzVmss PSCmdlet_Get-AzVmss PSCommand_Get-AzVmss PSCmdlet_Get-AzVmssSku PSCommand_Get-AzVmssSku PSCmdlet_Set-AzVmss PSCommand_Set-AzVmss PSCmdlet_Restart-AzVmss PSCommand_Restart-AzVmss PSCmdlet_Start-AzVmss PSCommand_Start-AzVmss PSCmdlet_Update-AzVmssInstance PSCommand_Update-AzVmssInstance PSCmdlet_Get-AzVMDscExtensionStatus PSCommand_Get-AzVMDscExtensionStatus PSCmdlet_Publish-AzVMDscConfiguration PSCommand_Publish-AzVMDscConfiguration PSCmdlet_Remove-AzVMDscExtension PSCommand_Remove-AzVMDscExtension PSCmdlet_Set-AzVMDscExtension PSCommand_Set-AzVMDscExtension PSCmdlet_Get-AzVMDscExtension PSCommand_Get-AzVMDscExtension PSCmdlet_Add-AzVmssDiagnosticsExtension PSCommand_Add-AzVmssDiagnosticsExtension PSCmdlet_Get-AzVMChefExtension PSCommand_Get-AzVMChefExtension PSCmdlet_Remove-AzVMChefExtension PSCommand_Remove-AzVMChefExtension PSCmdlet_Set-AzVMChefExtension PSCommand_Set-AzVMChefExtension PSCmdlet_Remove-AzVMBackup PSCommand_Remove-AzVMBackup PSCmdlet_Disable-AzVMDiskEncryption PSCommand_Disable-AzVMDiskEncryption PSCmdlet_Get-AzVMDiskEncryptionStatus PSCommand_Get-AzVMDiskEncryptionStatus PSCmdlet_Remove-AzVMDiskEncryptionExtension PSCommand_Remove-AzVMDiskEncryptionExtension PSCmdlet_Set-AzVMDiskEncryptionExtension PSCommand_Set-AzVMDiskEncryptionExtension PSCmdlet_Set-AzVMBackupExtension PSCommand_Set-AzVMBackupExtension PSCmdlet_New-AzDisk PSCommand_New-AzDisk PSCmdlet_Update-AzDisk PSCommand_Update-AzDisk PSCmdlet_Get-AzDisk PSCommand_Get-AzDisk PSCmdlet_Remove-AzDisk PSCommand_Remove-AzDisk PSCmdlet_Grant-AzDiskAccess PSCommand_Grant-AzDiskAccess PSCmdlet_Revoke-AzDiskAccess PSCommand_Revoke-AzDiskAccess PSCmdlet_New-AzDiskConfig PSCommand_New-AzDiskConfig PSCmdlet_Set-AzDiskDiskEncryptionKey PSCommand_Set-AzDiskDiskEncryptionKey PSCmdlet_Set-AzDiskImageReference PSCommand_Set-AzDiskImageReference PSCmdlet_Set-AzDiskKeyEncryptionKey PSCommand_Set-AzDiskKeyEncryptionKey PSCmdlet_New-AzDiskUpdateConfig PSCommand_New-AzDiskUpdateConfig PSCmdlet_Set-AzDiskUpdateDiskEncryptionKey PSCommand_Set-AzDiskUpdateDiskEncryptionKey PSCmdlet_Set-AzDiskUpdateKeyEncryptionKey PSCommand_Set-AzDiskUpdateKeyEncryptionKey PSCmdlet_New-AzSnapshot PSCommand_New-AzSnapshot PSCmdlet_Update-AzSnapshot PSCommand_Update-AzSnapshot PSCmdlet_Get-AzSnapshot PSCommand_Get-AzSnapshot PSCmdlet_Remove-AzSnapshot PSCommand_Remove-AzSnapshot PSCmdlet_Grant-AzSnapshotAccess PSCommand_Grant-AzSnapshotAccess PSCmdlet_Revoke-AzSnapshotAccess PSCommand_Revoke-AzSnapshotAccess PSCmdlet_New-AzSnapshotConfig PSCommand_New-AzSnapshotConfig PSCmdlet_Set-AzSnapshotDiskEncryptionKey PSCommand_Set-AzSnapshotDiskEncryptionKey PSCmdlet_Set-AzSnapshotImageReference PSCommand_Set-AzSnapshotImageReference PSCmdlet_Set-AzSnapshotKeyEncryptionKey PSCommand_Set-AzSnapshotKeyEncryptionKey PSCmdlet_New-AzSnapshotUpdateConfig PSCommand_New-AzSnapshotUpdateConfig PSCmdlet_Set-AzSnapshotUpdateDiskEncryptionKey PSCommand_Set-AzSnapshotUpdateDiskEncryptionKey PSCmdlet_Set-AzSnapshotUpdateKeyEncryptionKey PSCommand_Set-AzSnapshotUpdateKeyEncryptionKey PSCmdlet_New-AzImage PSCommand_New-AzImage PSCmdlet_Update-AzImage PSCommand_Update-AzImage PSCmdlet_Get-AzImage PSCommand_Get-AzImage PSCmdlet_Remove-AzImage PSCommand_Remove-AzImage PSCmdlet_New-AzImageConfig PSCommand_New-AzImageConfig PSCmdlet_Set-AzImageOsDisk PSCommand_Set-AzImageOsDisk PSCmdlet_Add-AzImageDataDisk PSCommand_Add-AzImageDataDisk PSCmdlet_Remove-AzImageDataDisk PSCommand_Remove-AzImageDataDisk PSCmdlet_ConvertTo-AzVMManagedDisk PSCommand_ConvertTo-AzVMManagedDisk PSCmdlet_Set-AzVmssBootDiagnostic PSCommand_Set-AzVmssBootDiagnostic PSCmdlet_Get-AzComputeResourceSku PSCommand_Get-AzComputeResourceSku PSCmdlet_Get-AzVMRunCommandDocument PSCommand_Get-AzVMRunCommandDocument PSCmdlet_Invoke-AzVMRunCommand PSCommand_Invoke-AzVMRunCommand PSCmdlet_Start-AzVmssRollingOSUpgrade PSCommand_Start-AzVmssRollingOSUpgrade PSCmdlet_Stop-AzVmssRollingUpgrade PSCommand_Stop-AzVmssRollingUpgrade PSCmdlet_Get-AzVmssRollingUpgrade PSCommand_Get-AzVmssRollingUpgrade PSCmdlet_Set-AzVmssRollingUpgradePolicy PSCommand_Set-AzVmssRollingUpgradePolicy PSCmdlet_Set-AzVmssDiskEncryptionExtension PSCommand_Set-AzVmssDiskEncryptionExtension PSCmdlet_Disable-AzVmssDiskEncryption PSCommand_Disable-AzVmssDiskEncryption PSCmdlet_Get-AzVmssDiskEncryption PSCommand_Get-AzVmssDiskEncryption PSCmdlet_Get-AzVmssVMDiskEncryption PSCommand_Get-AzVmssVMDiskEncryption PSCmdlet_Export-AzLogAnalyticRequestRateByInterval PSCommand_Export-AzLogAnalyticRequestRateByInterval PSCmdlet_Export-AzLogAnalyticThrottledRequest PSCommand_Export-AzLogAnalyticThrottledRequest PSCmdlet_Repair-AzVmssServiceFabricUpdateDomain PSCommand_Repair-AzVmssServiceFabricUpdateDomain PSCmdlet_New-AzVMDataDisk PSCommand_New-AzVMDataDisk PSCmdlet_Update-AzVmssVM PSCommand_Update-AzVmssVM PSCmdlet_New-AzVmssIpTagConfig PSCommand_New-AzVmssIpTagConfig PSCmdlet_Invoke-AzVmssVMRunCommand PSCommand_Invoke-AzVmssVMRunCommand PSCmdlet_New-AzGallery PSCommand_New-AzGallery PSCmdlet_Update-AzGallery PSCommand_Update-AzGallery PSCmdlet_Get-AzGallery PSCommand_Get-AzGallery PSCmdlet_Remove-AzGallery PSCommand_Remove-AzGallery PSCmdlet_New-AzGalleryImageDefinition PSCommand_New-AzGalleryImageDefinition PSCmdlet_Update-AzGalleryImageDefinition PSCommand_Update-AzGalleryImageDefinition PSCmdlet_Get-AzGalleryImageDefinition PSCommand_Get-AzGalleryImageDefinition PSCmdlet_Remove-AzGalleryImageDefinition PSCommand_Remove-AzGalleryImageDefinition PSCmdlet_New-AzGalleryImageVersion PSCommand_New-AzGalleryImageVersion PSCmdlet_Update-AzGalleryImageVersion PSCommand_Update-AzGalleryImageVersion PSCmdlet_Get-AzGalleryImageVersion PSCommand_Get-AzGalleryImageVersion PSCmdlet_Remove-AzGalleryImageVersion PSCommand_Remove-AzGalleryImageVersion PSCmdlet_Add-AzVmssVMDataDisk PSCommand_Add-AzVmssVMDataDisk PSCmdlet_Remove-AzVmssVMDataDisk PSCommand_Remove-AzVmssVMDataDisk PSCmdlet_Invoke-AzVMReimage PSCommand_Invoke-AzVMReimage PSCmdlet_New-AzProximityPlacementGroup PSCommand_New-AzProximityPlacementGroup PSCmdlet_Get-AzProximityPlacementGroup PSCommand_Get-AzProximityPlacementGroup PSCmdlet_Remove-AzProximityPlacementGroup PSCommand_Remove-AzProximityPlacementGroup PSCmdlet_New-AzHostGroup PSCommand_New-AzHostGroup PSCmdlet_Get-AzHostGroup PSCommand_Get-AzHostGroup PSCmdlet_Remove-AzHostGroup PSCommand_Remove-AzHostGroup PSCmdlet_New-AzHost PSCommand_New-AzHost PSCmdlet_Get-AzHost PSCommand_Get-AzHost PSCmdlet_Remove-AzHost PSCommand_Remove-AzHost PSCmdlet_New-AzDiskEncryptionSetConfig PSCommand_New-AzDiskEncryptionSetConfig PSCmdlet_New-AzDiskEncryptionSet PSCommand_New-AzDiskEncryptionSet PSCmdlet_Get-AzDiskEncryptionSet PSCommand_Get-AzDiskEncryptionSet PSCmdlet_Remove-AzDiskEncryptionSet PSCommand_Remove-AzDiskEncryptionSet PSCmdlet_Update-AzDiskEncryptionSet PSCommand_Update-AzDiskEncryptionSet PSCmdlet_Set-AzVmssOrchestrationServiceState PSCommand_Set-AzVmssOrchestrationServiceState PSCmdlet_New-AzDiskAccess PSCommand_New-AzDiskAccess PSCmdlet_Remove-AzDiskAccess PSCommand_Remove-AzDiskAccess PSCmdlet_Get-AzDiskAccess PSCommand_Get-AzDiskAccess PSCmdlet_Invoke-AzVmPatchAssessment PSCommand_Invoke-AzVmPatchAssessment PSCmdlet_Get-AzDiskEncryptionSetAssociatedResource PSCommand_Get-AzDiskEncryptionSetAssociatedResource PSCmdlet_Start-AzVmssRollingExtensionUpgrade PSCommand_Start-AzVmssRollingExtensionUpgrade PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2021-04-14T17:47:00Z</S>
+          <S N="NormalizedVersion">4.11.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.Compute.nuspec|AutoMapper.dll|Az.Compute.psd1|Az.Compute.psm1|Compute.Automation.generated.format.ps1xml|Compute.format.ps1xml|Compute.generated.format.ps1xml|Microsoft.Azure.Management.Compute.dll|Microsoft.Azure.PowerShell.Cmdlets.Compute.deps.json|Microsoft.Azure.PowerShell.Cmdlets.Compute.dll|Microsoft.Azure.PowerShell.Cmdlets.Compute.dll-Help.xml|Microsoft.WindowsAzure.Storage.dll</S>
+          <S N="GUID">d4cb9989-9ed1-49c2-bacd-0f8daf758671</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\admin-taylor\Documents\PowerShell\Modules\Az.Compute\4.11.0</S>
+    </MS>
+  </Obj>
+</Objs>

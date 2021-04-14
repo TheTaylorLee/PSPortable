@@ -1,0 +1,198 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.EventGrid</S>
+      <Version N="Version">1.3.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell - Event Grid service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core._x000D__x000A__x000D__x000A_For more information on Event Grid, please visit the following: https://docs.microsoft.com/azure/event-grid/</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2020-07-14T09:53:46-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2021-04-14T12:49:39.6463295-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>EventGrid</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>New-AzEventGridTopic</S>
+                <S>Get-AzEventGridTopic</S>
+                <S>Set-AzEventGridTopic</S>
+                <S>New-AzEventGridTopicKey</S>
+                <S>Get-AzEventGridTopicKey</S>
+                <S>Remove-AzEventGridTopic</S>
+                <S>New-AzEventGridSubscription</S>
+                <S>Update-AzEventGridSubscription</S>
+                <S>Remove-AzEventGridSubscription</S>
+                <S>Get-AzEventGridSubscription</S>
+                <S>Get-AzEventGridTopicType</S>
+                <S>New-AzEventGridDomain</S>
+                <S>Get-AzEventGridDomain</S>
+                <S>Get-AzEventGridDomainTopic</S>
+                <S>Get-AzEventGridDomainKey</S>
+                <S>New-AzEventGridDomainKey</S>
+                <S>Remove-AzEventGridDomain</S>
+                <S>New-AzEventGridDomainTopic</S>
+                <S>Remove-AzEventGridDomainTopic</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>New-AzEventGridTopic</S>
+                <S>Get-AzEventGridTopic</S>
+                <S>Set-AzEventGridTopic</S>
+                <S>New-AzEventGridTopicKey</S>
+                <S>Get-AzEventGridTopicKey</S>
+                <S>Remove-AzEventGridTopic</S>
+                <S>New-AzEventGridSubscription</S>
+                <S>Update-AzEventGridSubscription</S>
+                <S>Remove-AzEventGridSubscription</S>
+                <S>Get-AzEventGridSubscription</S>
+                <S>Get-AzEventGridTopicType</S>
+                <S>New-AzEventGridDomain</S>
+                <S>Get-AzEventGridDomain</S>
+                <S>Get-AzEventGridDomainTopic</S>
+                <S>Get-AzEventGridDomainKey</S>
+                <S>New-AzEventGridDomainKey</S>
+                <S>Remove-AzEventGridDomain</S>
+                <S>New-AzEventGridDomainTopic</S>
+                <S>Remove-AzEventGridDomainTopic</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Updated to use the 2020-06-01 API version._x000D__x000A_* Added new features:_x000D__x000A_    - Input mapping_x000D__x000A_    - Event Delivery Schema_x000D__x000A_    - Private Link_x000D__x000A_    - Cloud Event V10 Schema_x000D__x000A_    - Service Bus Topic As Destination_x000D__x000A_    - Azure Function As Destination_x000D__x000A_    - WebHook Batching_x000D__x000A_    - Secure webhook (AAD support)_x000D__x000A_    - IpFiltering_x000D__x000A_* Updated cmdlets:_x000D__x000A_    - 'New-AzEventGridSubscription'/'Update-AzEventGridSubscription':_x000D__x000A_        - Add new optional parameters to support webhook batching._x000D__x000A_        - Add new optional parameters to support secured webhook using AAD._x000D__x000A_        - Add new enum for EndpointType parameter to support azure function and service bus topic as new destinations._x000D__x000A_        - Add new optional parameter for delivery schema._x000D__x000A_    - 'New-AzEventGridTopic'/'Update-AzEventGridTopic' and 'New-AzEventGridDomain'/'Update-AzEventGridDomain':_x000D__x000A_        - Add new optional parameters to support IpFiltering._x000D__x000A_    - 'New-AzEventGridTopic'/'New-AzEventGridDomain':_x000D__x000A_        - Add new optional parameters to support Input mapping.</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">1.9.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/1.9.1</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell - Event Grid service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core._x000D__x000A__x000D__x000A_For more information on Event Grid, please visit the following: https://docs.microsoft.com/azure/event-grid/</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Updated to use the 2020-06-01 API version._x000D__x000A_* Added new features:_x000D__x000A_    - Input mapping_x000D__x000A_    - Event Delivery Schema_x000D__x000A_    - Private Link_x000D__x000A_    - Cloud Event V10 Schema_x000D__x000A_    - Service Bus Topic As Destination_x000D__x000A_    - Azure Function As Destination_x000D__x000A_    - WebHook Batching_x000D__x000A_    - Secure webhook (AAD support)_x000D__x000A_    - IpFiltering_x000D__x000A_* Updated cmdlets:_x000D__x000A_    - 'New-AzEventGridSubscription'/'Update-AzEventGridSubscription':_x000D__x000A_        - Add new optional parameters to support webhook batching._x000D__x000A_        - Add new optional parameters to support secured webhook using AAD._x000D__x000A_        - Add new enum for EndpointType parameter to support azure function and service bus topic as new destinations._x000D__x000A_        - Add new optional parameter for delivery schema._x000D__x000A_    - 'New-AzEventGridTopic'/'Update-AzEventGridTopic' and 'New-AzEventGridDomain'/'Update-AzEventGridDomain':_x000D__x000A_        - Add new optional parameters to support IpFiltering._x000D__x000A_    - 'New-AzEventGridTopic'/'New-AzEventGridDomain':_x000D__x000A_        - Add new optional parameters to support Input mapping.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">13027915</S>
+          <S N="downloadCount">20328294</S>
+          <S N="packageSize">203649</S>
+          <S N="published">7/14/2020 9:53:46 AM -05:00</S>
+          <S N="created">7/14/2020 9:53:46 AM -05:00</S>
+          <S N="lastUpdated">4/14/2021 5:47:00 PM -05:00</S>
+          <S N="tags">Azure ResourceManager ARM EventGrid PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_New-AzEventGridTopic PSCommand_New-AzEventGridTopic PSCmdlet_Get-AzEventGridTopic PSCommand_Get-AzEventGridTopic PSCmdlet_Set-AzEventGridTopic PSCommand_Set-AzEventGridTopic PSCmdlet_New-AzEventGridTopicKey PSCommand_New-AzEventGridTopicKey PSCmdlet_Get-AzEventGridTopicKey PSCommand_Get-AzEventGridTopicKey PSCmdlet_Remove-AzEventGridTopic PSCommand_Remove-AzEventGridTopic PSCmdlet_New-AzEventGridSubscription PSCommand_New-AzEventGridSubscription PSCmdlet_Update-AzEventGridSubscription PSCommand_Update-AzEventGridSubscription PSCmdlet_Remove-AzEventGridSubscription PSCommand_Remove-AzEventGridSubscription PSCmdlet_Get-AzEventGridSubscription PSCommand_Get-AzEventGridSubscription PSCmdlet_Get-AzEventGridTopicType PSCommand_Get-AzEventGridTopicType PSCmdlet_New-AzEventGridDomain PSCommand_New-AzEventGridDomain PSCmdlet_Get-AzEventGridDomain PSCommand_Get-AzEventGridDomain PSCmdlet_Get-AzEventGridDomainTopic PSCommand_Get-AzEventGridDomainTopic PSCmdlet_Get-AzEventGridDomainKey PSCommand_Get-AzEventGridDomainKey PSCmdlet_New-AzEventGridDomainKey PSCommand_New-AzEventGridDomainKey PSCmdlet_Remove-AzEventGridDomain PSCommand_Remove-AzEventGridDomain PSCmdlet_New-AzEventGridDomainTopic PSCommand_New-AzEventGridDomainTopic PSCmdlet_Remove-AzEventGridDomainTopic PSCommand_Remove-AzEventGridDomainTopic PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2021-04-14T17:47:00Z</S>
+          <S N="NormalizedVersion">1.3.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.EventGrid.nuspec|Az.EventGrid.psd1|Az.EventGrid.psm1|Microsoft.Azure.Management.EventGrid.dll|Microsoft.Azure.PowerShell.Cmdlets.EventGrid.deps.json|Microsoft.Azure.PowerShell.Cmdlets.EventGrid.dll|Microsoft.Azure.PowerShell.Cmdlets.EventGrid.dll-Help.xml</S>
+          <S N="GUID">d2167b29-9406-4ec7-b089-500460b3ebbd</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\admin-taylor\Documents\PowerShell\Modules\Az.EventGrid\1.3.0</S>
+    </MS>
+  </Obj>
+</Objs>

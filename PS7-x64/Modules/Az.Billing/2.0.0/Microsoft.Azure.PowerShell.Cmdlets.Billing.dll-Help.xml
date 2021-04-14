@@ -1,0 +1,1410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-AzBillingAccount</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>AzBillingAccount</command:noun>
+      <maml:description>
+        <maml:para>Get billing accounts.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-AzBillingAccount cmdlet gets billing accounts, user has access to.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-AzBillingAccount</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+          <maml:name>DefaultProfile</maml:name>
+          <maml:Description>
+            <maml:para>The credentials, account, tenant, and subscription used for communication with azure</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>IncludeAddress</maml:name>
+          <maml:Description>
+            <maml:para>Include the address of the billing account.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ExpandBillingProfile</maml:name>
+          <maml:Description>
+            <maml:para>Include the billing profiles under the billing account.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ExpandInvoiceSection</maml:name>
+          <maml:Description>
+            <maml:para>Include the billing profiles under billing account and invoices sections under them.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Name</maml:name>
+          <maml:Description>
+            <maml:para>Name of a specific billing account.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ListEntitiesToCreateSubscription</maml:name>
+          <maml:Description>
+            <maml:para>List the billing entities under billing account which can be used as input to create subscription.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+        <maml:name>DefaultProfile</maml:name>
+        <maml:Description>
+          <maml:para>The credentials, account, tenant, and subscription used for communication with azure</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>IncludeAddress</maml:name>
+        <maml:Description>
+          <maml:para>Include the address of the billing account.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ExpandBillingProfile</maml:name>
+        <maml:Description>
+          <maml:para>Include the billing profiles under the billing account.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ExpandInvoiceSection</maml:name>
+        <maml:Description>
+          <maml:para>Include the billing profiles under billing account and invoices sections under them.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Name</maml:name>
+        <maml:Description>
+          <maml:para>Name of a specific billing account.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ListEntitiesToCreateSubscription</maml:name>
+        <maml:Description>
+          <maml:para>List the billing entities under billing account which can be used as input to create subscription.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.Billing.Models.PSBillingAccount</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingAccount</dev:code>
+        <dev:remarks>
+          <maml:para>Get all billing accounts user has access to.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingAccount -Name 00000000-0000-0000-0000-000000000000</dev:code>
+        <dev:remarks>
+          <maml:para>Get the billing account with the specified name.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingAccount -IncludeAddress</dev:code>
+        <dev:remarks>
+          <maml:para>Get all billing accounts user has access to, and include the address in the result.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 4 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingAccount -ExpandBillingProfile</dev:code>
+        <dev:remarks>
+          <maml:para>Get all billing accounts user has access to, and include the billing profiles in the result.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 5 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingAccount -ExpandInvoiceSection</dev:code>
+        <dev:remarks>
+          <maml:para>Get all billing accounts user has access to, and include the billing profiles and invoice sections under them in the result.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 6 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingAccount -ExpandInvoiceSection -ExpandAddress -Name 00000000-0000-0000-0000-000000000000</dev:code>
+        <dev:remarks>
+          <maml:para>Get the billing account with the specified name, and include the address, billing profiles and invoice sections under them in the result.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://docs.microsoft.com/en-us/powershell/module/az.billing/get-azbillingaccount</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-AzBillingInvoice</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>AzBillingInvoice</command:noun>
+      <maml:description>
+        <maml:para>Get billing invoices of the subscription. Get billing invoices of a billing account and billing profile</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-AzBillingInvoice cmdlet gets billing invoices of the subscription.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-AzBillingInvoice</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+          <maml:name>DefaultProfile</maml:name>
+          <maml:Description>
+            <maml:para>The credentials, account, tenant, and subscription used for communication with azure</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>GenerateDownloadUrl</maml:name>
+          <maml:Description>
+            <maml:para>Generate the download url of the invoices.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Latest</maml:name>
+          <maml:Description>
+            <maml:para>Get the latest invoice.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>BillingAccountName</maml:name>
+          <maml:Description>
+            <maml:para>Name of a specific billing account to get invoices for.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>BillingProfileName</maml:name>
+          <maml:Description>
+            <maml:para>Name of a specific billing profile to get invoices for.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>PeriodStartDate</maml:name>
+          <maml:Description>
+            <maml:para>Start date for invoice.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>PeriodEndDate</maml:name>
+          <maml:Description>
+            <maml:para>End date for invoice.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Get-AzBillingInvoice</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+          <maml:name>DefaultProfile</maml:name>
+          <maml:Description>
+            <maml:para>The credentials, account, tenant, and subscription used for communication with azure</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>GenerateDownloadUrl</maml:name>
+          <maml:Description>
+            <maml:para>Generate the download url of the invoices.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>MaxCount</maml:name>
+          <maml:Description>
+            <maml:para>Determines the maximum number of records to return.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.Nullable`1[System.Int32]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Nullable`1[System.Int32]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>BillingAccountName</maml:name>
+          <maml:Description>
+            <maml:para>Name of a specific billing account to get invoices for.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>BillingProfileName</maml:name>
+          <maml:Description>
+            <maml:para>Name of a specific billing profile to get invoices for.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>PeriodStartDate</maml:name>
+          <maml:Description>
+            <maml:para>Start date for invoice.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>PeriodEndDate</maml:name>
+          <maml:Description>
+            <maml:para>End date for invoice.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Get-AzBillingInvoice</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+          <maml:name>DefaultProfile</maml:name>
+          <maml:Description>
+            <maml:para>The credentials, account, tenant, and subscription used for communication with azure</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>GenerateDownloadUrl</maml:name>
+          <maml:Description>
+            <maml:para>Generate the download url of the invoices.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Name</maml:name>
+          <maml:Description>
+            <maml:para>Name of a specific invoice to get or the most recent if not specified.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>BillingAccountName</maml:name>
+          <maml:Description>
+            <maml:para>Name of a specific billing account to get invoices for.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>BillingProfileName</maml:name>
+          <maml:Description>
+            <maml:para>Name of a specific billing profile to get invoices for.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>PeriodStartDate</maml:name>
+          <maml:Description>
+            <maml:para>Start date for invoice.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>PeriodEndDate</maml:name>
+          <maml:Description>
+            <maml:para>End date for invoice.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+        <maml:name>DefaultProfile</maml:name>
+        <maml:Description>
+          <maml:para>The credentials, account, tenant, and subscription used for communication with azure</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>GenerateDownloadUrl</maml:name>
+        <maml:Description>
+          <maml:para>Generate the download url of the invoices.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Latest</maml:name>
+        <maml:Description>
+          <maml:para>Get the latest invoice.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>MaxCount</maml:name>
+        <maml:Description>
+          <maml:para>Determines the maximum number of records to return.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">System.Nullable`1[System.Int32]</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Nullable`1[System.Int32]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Name</maml:name>
+        <maml:Description>
+          <maml:para>Name of a specific invoice to get or the most recent if not specified.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>BillingAccountName</maml:name>
+        <maml:Description>
+          <maml:para>Name of a specific billing account to get invoices for.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>BillingProfileName</maml:name>
+        <maml:Description>
+          <maml:para>Name of a specific billing profile to get invoices for.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>PeriodStartDate</maml:name>
+        <maml:Description>
+          <maml:para>Start date for invoice.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>PeriodEndDate</maml:name>
+        <maml:Description>
+          <maml:para>End date for invoice.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.Billing.Models.PSInvoice</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingInvoice -Latest</dev:code>
+        <dev:remarks>
+          <maml:para>Get the latest invoice of the subscription.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingInvoice -Name 2017-02-18-432543543</dev:code>
+        <dev:remarks>
+          <maml:para>Get the invoice of the subscription with the specified name.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingInvoice</dev:code>
+        <dev:remarks>
+          <maml:para>Get all available invoices of the subscription in reverse chronological order beginning with the most recent invoice without download Url.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 4 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingInvoice -GenerateDownloadUrl -MaxCount 10</dev:code>
+        <dev:remarks>
+          <maml:para>Get most recent 10 invoices of the subscription and include the download Url in the result.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 5 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingInvoice -Name 2017-02-18-432543543 -GenerateDownloadUrl</dev:code>
+        <dev:remarks>
+          <maml:para>Get the specific invoice by name and include download url in the result.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 6 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingInvoice -BillingAccountName 00000000-0000-0000-0000-000000000000:00000000-0000-0000-0000-000000000000_0000-00-00 -GenerateDownloadUrl</dev:code>
+        <dev:remarks>
+          <maml:para>Get invoices by billing account name and include download url for each invoice in the result.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 7 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingInvoice Get-AzBillingInvoice -Name 0000000000 -BillingAccountName 00000000-0000-0000-0000-000000000000:00000000-0000-0000-0000-000000000000_0000-00-00 -GenerateDownloadUrl</dev:code>
+        <dev:remarks>
+          <maml:para>Get specific invoice by invoice name and billing account name and include download url for each invoice in the result.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 8 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingInvoice -Latest -BillingAccountName 00000000-0000-0000-0000-000000000000:00000000-0000-0000-0000-000000000000_0000-00-00 -GenerateDownloadUrl</dev:code>
+        <dev:remarks>
+          <maml:para>Get latest invoice by billing account name and include download url for invoice in the result.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 9 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingInvoice -GenerateDownloadUrl -BillingAccountName 00000000-0000-0000-0000-000000000000:00000000-0000-0000-0000-000000000000_0000-00-00 -BillingProfileName 0000-0000-000-000 -MaxCount 10</dev:code>
+        <dev:remarks>
+          <maml:para>Get most recent 10 invoices of the specific billing account and specific billing profile and include the download Url in the result.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 10 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingInvoice -Latest -GenerateDownloadUrl -BillingAccountName 00000000-0000-0000-0000-000000000000:00000000-0000-0000-0000-000000000000_0000-00-00 -BillingProfileName 0000-0000-000-000</dev:code>
+        <dev:remarks>
+          <maml:para>Get latest invoice by billing account name and billing profile name and include download url for invoice in the result.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 10 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingInvoice -BillingAccountName 00000000-0000-0000-0000-000000000000:00000000-0000-0000-0000-000000000000_0000-00-00 -BillingProfileName 0000-0000-000-000 -PeriodStartDate 0000-00-00 -PeriodEndDate 0000-00-00</dev:code>
+        <dev:remarks>
+          <maml:para>Get invoices by billing account name and billing profile name for a billing period specified by perioStart date and periodEnd date.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://docs.microsoft.com/en-us/powershell/module/az.billing/get-azbillinginvoice</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-AzBillingPeriod</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>AzBillingPeriod</command:noun>
+      <maml:description>
+        <maml:para>Get billing periods of the subscription.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-AzBillingPeriod cmdlet gets billing periods of the subscription.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-AzBillingPeriod</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+          <maml:name>DefaultProfile</maml:name>
+          <maml:Description>
+            <maml:para>The credentials, account, tenant, and subscription used for communication with azure</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>MaxCount</maml:name>
+          <maml:Description>
+            <maml:para>Determine the maximum number of records to return.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.Nullable`1[System.Int32]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Nullable`1[System.Int32]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Get-AzBillingPeriod</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+          <maml:name>DefaultProfile</maml:name>
+          <maml:Description>
+            <maml:para>The credentials, account, tenant, and subscription used for communication with azure</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Name</maml:name>
+          <maml:Description>
+            <maml:para>Name of a specific billing period to get.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+        <maml:name>DefaultProfile</maml:name>
+        <maml:Description>
+          <maml:para>The credentials, account, tenant, and subscription used for communication with azure</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>MaxCount</maml:name>
+        <maml:Description>
+          <maml:para>Determine the maximum number of records to return.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">System.Nullable`1[System.Int32]</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Nullable`1[System.Int32]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Name</maml:name>
+        <maml:Description>
+          <maml:para>Name of a specific billing period to get.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.Billing.Models.PSBillingPeriod</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingPeriod</dev:code>
+        <dev:remarks>
+          <maml:para>Get all available billing periods of the subscription.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingPeriod -Name 201704-1</dev:code>
+        <dev:remarks>
+          <maml:para>Get the billing period of the subscription with the specified name.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingPeriod -MaxCount 2</dev:code>
+        <dev:remarks>
+          <maml:para>Get at most 2 billing periods of the subscription.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://docs.microsoft.com/en-us/powershell/module/az.billing/get-azbillingperiod</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-AzBillingProfile</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>AzBillingProfile</command:noun>
+      <maml:description>
+        <maml:para>Get billing profiles.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-AzBillingProfile cmdlet gets billing profiles under the specified billing account.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-AzBillingProfile</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+          <maml:name>DefaultProfile</maml:name>
+          <maml:Description>
+            <maml:para>The credentials, account, tenant, and subscription used for communication with azure</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>BillingAccountName</maml:name>
+          <maml:Description>
+            <maml:para>Name of the specific billing account.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ExpandInvoiceSection</maml:name>
+          <maml:Description>
+            <maml:para>Include the invoices sections under billing profile.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Name</maml:name>
+          <maml:Description>
+            <maml:para>Name of a specific billing profile.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+        <maml:name>DefaultProfile</maml:name>
+        <maml:Description>
+          <maml:para>The credentials, account, tenant, and subscription used for communication with azure</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>BillingAccountName</maml:name>
+        <maml:Description>
+          <maml:para>Name of the specific billing account.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ExpandInvoiceSection</maml:name>
+        <maml:Description>
+          <maml:para>Include the invoices sections under billing profile.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Name</maml:name>
+        <maml:Description>
+          <maml:para>Name of a specific billing profile.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.Billing.Models.PSBillingProfile</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingProfile -BillingAccountName 00000000-0000-0000-0000-000000000000</dev:code>
+        <dev:remarks>
+          <maml:para>Get all billing profiles under the specified billing account.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingProfile -BillingAccountName 00000000-0000-0000-0000-000000000000 -Name AAAA-0A00-AAA-ZZZ</dev:code>
+        <dev:remarks>
+          <maml:para>Get the billing profile with the specified name.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingProfile -BillingAccountName 00000000-0000-0000-0000-000000000000 -ExpandInvoiceSection</dev:code>
+        <dev:remarks>
+          <maml:para>Get all billing profiles under specified billing account, and include the invoice sections in the result.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 4 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzBillingProfile -BillingAccountName 00000000-0000-0000-0000-000000000000 -ExpandInvoiceSection -Name &lt;System.Collections.Generic.List`1[System.String]&gt;</dev:code>
+        <dev:remarks>
+          <maml:para>Get the billing profile with the specified name, and include the invoice sections in the result.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://docs.microsoft.com/en-us/powershell/module/az.billing/get-azbillingprofile</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-AzEnrollmentAccount</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>AzEnrollmentAccount</command:noun>
+      <maml:description>
+        <maml:para>Get enrollment accounts.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-AzEnrollmentAccount cmdlet gets enrollment accounts.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-AzEnrollmentAccount</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+          <maml:name>ObjectId</maml:name>
+          <maml:Description>
+            <maml:para>ObjectId of a specific enrollment account to get.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+          <maml:name>DefaultProfile</maml:name>
+          <maml:Description>
+            <maml:para>The credentials, account, tenant, and subscription used for communication with azure</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+        <maml:name>DefaultProfile</maml:name>
+        <maml:Description>
+          <maml:para>The credentials, account, tenant, and subscription used for communication with azure</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+        <maml:name>ObjectId</maml:name>
+        <maml:Description>
+          <maml:para>ObjectId of a specific enrollment account to get.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.Billing.Models.PSBillingPeriod</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzEnrollmentAccount
+
+ObjectId                             PrincipalName
+--------                             -------------
+dbd8453d-071f-4fb4-8e01-c99f5b067649 jason@contoso.onmicrosoft.com
+7ff524ac-a0de-4402-876f-934ccee3b601 carol@contoso.onmicrosoft.com</dev:code>
+        <dev:remarks>
+          <maml:para>Get all available enrollment accounts.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzEnrollmentAccount -ObjectId dbd8453d-071f-4fb4-8e01-c99f5b067649
+
+ObjectId                             PrincipalName
+--------                             -------------
+dbd8453d-071f-4fb4-8e01-c99f5b067649 jason@contoso.onmicrosoft.com</dev:code>
+        <dev:remarks>
+          <maml:para>Get the enrollment account with the specified object id.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://docs.microsoft.com/en-us/powershell/module/az.billing/get-azenrollmentaccount</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-AzInvoiceSection</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>AzInvoiceSection</command:noun>
+      <maml:description>
+        <maml:para>Get invoice sections.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-AzInvoiceSection cmdlet gets invoice sections under the specified billing profile.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-AzInvoiceSection</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+          <maml:name>DefaultProfile</maml:name>
+          <maml:Description>
+            <maml:para>The credentials, account, tenant, and subscription used for communication with azure</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>BillingAccountName</maml:name>
+          <maml:Description>
+            <maml:para>Name of the specific billing account.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>BillingProfileName</maml:name>
+          <maml:Description>
+            <maml:para>Name of the specific billing profile.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Name</maml:name>
+          <maml:Description>
+            <maml:para>Name of a specific invoice section.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+        <maml:name>DefaultProfile</maml:name>
+        <maml:Description>
+          <maml:para>The credentials, account, tenant, and subscription used for communication with azure</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>BillingAccountName</maml:name>
+        <maml:Description>
+          <maml:para>Name of the specific billing account.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>BillingProfileName</maml:name>
+        <maml:Description>
+          <maml:para>Name of the specific billing profile.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Name</maml:name>
+        <maml:Description>
+          <maml:para>Name of a specific invoice section.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">System.Collections.Generic.List`1[System.String]</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Collections.Generic.List`1[System.String]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.Billing.Models.PSInvoiceSection</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzInvoiceSection -BillingAccountName 00000000-0000-0000-0000-000000000000 -BillingProfileName AAAA-0A00-AAA-ZZZ</dev:code>
+        <dev:remarks>
+          <maml:para>Get all invoice sections under the specified billing profile.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzInvoiceSection -BillingAccountName 00000000-0000-0000-0000-000000000000 -BillingProfileName AAAA-0A00-AAA-ZZZ -Name BBBB-0A00-BBB-ZZZ</dev:code>
+        <dev:remarks>
+          <maml:para>Get the invoice section with the specified name.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://docs.microsoft.com/en-us/powershell/module/az.billing/get-azinvoicesection</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+</helpItems>

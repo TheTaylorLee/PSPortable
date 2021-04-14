@@ -1,0 +1,687 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.Sql</S>
+      <Version N="Version">2.17.1</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell - SQL service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core._x000D__x000A__x000D__x000A_For more information on SQL, please visit the following: https://docs.microsoft.com/azure/sql-database/</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2021-04-13T08:25:12-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2021-04-14T12:50:18.8124314-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>Sql</S>
+          <S>Database</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-AzSqlDatabaseTransparentDataEncryption</S>
+                <S>Get-AzSqlDatabaseTransparentDataEncryptionActivity</S>
+                <S>Set-AzSqlDatabaseTransparentDataEncryption</S>
+                <S>Get-AzSqlDatabaseUpgradeHint</S>
+                <S>Get-AzSqlServerUpgradeHint</S>
+                <S>Get-AzSqlServerServiceObjective</S>
+                <S>Get-AzSqlServerActiveDirectoryAdministrator</S>
+                <S>Remove-AzSqlServerActiveDirectoryAdministrator</S>
+                <S>Set-AzSqlServerActiveDirectoryAdministrator</S>
+                <S>Get-AzSqlServer</S>
+                <S>New-AzSqlServer</S>
+                <S>Remove-AzSqlServer</S>
+                <S>Set-AzSqlServer</S>
+                <S>Get-AzSqlServerCommunicationLink</S>
+                <S>New-AzSqlServerCommunicationLink</S>
+                <S>Remove-AzSqlServerCommunicationLink</S>
+                <S>Get-AzSqlDatabaseReplicationLink</S>
+                <S>New-AzSqlDatabaseCopy</S>
+                <S>New-AzSqlDatabaseSecondary</S>
+                <S>Remove-AzSqlDatabaseSecondary</S>
+                <S>Set-AzSqlDatabaseSecondary</S>
+                <S>Get-AzSqlElasticPoolRecommendation</S>
+                <S>Get-AzSqlDatabaseIndexRecommendation</S>
+                <S>Start-AzSqlDatabaseExecuteIndexRecommendation</S>
+                <S>Stop-AzSqlDatabaseExecuteIndexRecommendation</S>
+                <S>Get-AzSqlServerFirewallRule</S>
+                <S>New-AzSqlServerFirewallRule</S>
+                <S>Remove-AzSqlServerFirewallRule</S>
+                <S>Set-AzSqlServerFirewallRule</S>
+                <S>Get-AzSqlElasticPool</S>
+                <S>Get-AzSqlElasticPoolActivity</S>
+                <S>Get-AzSqlElasticPoolDatabase</S>
+                <S>New-AzSqlElasticPool</S>
+                <S>Remove-AzSqlElasticPool</S>
+                <S>Set-AzSqlElasticPool</S>
+                <S>Get-AzSqlServerDisasterRecoveryConfiguration</S>
+                <S>Get-AzSqlServerDisasterRecoveryConfigurationActivity</S>
+                <S>New-AzSqlServerDisasterRecoveryConfiguration</S>
+                <S>Remove-AzSqlServerDisasterRecoveryConfiguration</S>
+                <S>Set-AzSqlServerDisasterRecoveryConfiguration</S>
+                <S>Resume-AzSqlDatabase</S>
+                <S>Suspend-AzSqlDatabase</S>
+                <S>Get-AzSqlDatabaseDataMaskingPolicy</S>
+                <S>Get-AzSqlDatabaseDataMaskingRule</S>
+                <S>New-AzSqlDatabaseDataMaskingRule</S>
+                <S>Remove-AzSqlDatabaseDataMaskingRule</S>
+                <S>Set-AzSqlDatabaseDataMaskingPolicy</S>
+                <S>Set-AzSqlDatabaseDataMaskingRule</S>
+                <S>Get-AzSqlCapability</S>
+                <S>Get-AzSqlDatabase</S>
+                <S>Get-AzSqlDatabaseActivity</S>
+                <S>Get-AzSqlDatabaseExpanded</S>
+                <S>New-AzSqlDatabase</S>
+                <S>Remove-AzSqlDatabase</S>
+                <S>Set-AzSqlDatabase</S>
+                <S>Get-AzSqlDatabaseImportExportStatus</S>
+                <S>New-AzSqlDatabaseExport</S>
+                <S>New-AzSqlDatabaseImport</S>
+                <S>Get-AzSqlDatabaseGeoBackupPolicy</S>
+                <S>Set-AzSqlDatabaseGeoBackupPolicy</S>
+                <S>Get-AzSqlDatabaseBackupShortTermRetentionPolicy</S>
+                <S>Set-AzSqlDatabaseBackupShortTermRetentionPolicy</S>
+                <S>Get-AzSqlDatabaseBackupLongTermRetentionPolicy</S>
+                <S>Set-AzSqlDatabaseBackupLongTermRetentionPolicy</S>
+                <S>Get-AzSqlDatabaseLongTermRetentionBackup</S>
+                <S>Remove-AzSqlDatabaseLongTermRetentionBackup</S>
+                <S>Get-AzSqlDeletedDatabaseBackup</S>
+                <S>Get-AzSqlDatabaseGeoBackup</S>
+                <S>Restore-AzSqlDatabase</S>
+                <S>Get-AzSqlDatabaseRestorePoint</S>
+                <S>Get-AzSqlDatabaseRecommendedAction</S>
+                <S>Get-AzSqlElasticPoolRecommendedAction</S>
+                <S>Get-AzSqlServerRecommendedAction</S>
+                <S>Set-AzSqlDatabaseRecommendedActionState</S>
+                <S>Set-AzSqlElasticPoolRecommendedActionState</S>
+                <S>Set-AzSqlServerRecommendedActionState</S>
+                <S>Get-AzSqlElasticPoolAdvisor</S>
+                <S>Get-AzSqlServerAdvisor</S>
+                <S>Set-AzSqlElasticPoolAdvisorAutoExecuteStatus</S>
+                <S>Set-AzSqlServerAdvisorAutoExecuteStatus</S>
+                <S>Get-AzSqlDatabaseAdvisor</S>
+                <S>Set-AzSqlDatabaseAdvisorAutoExecuteStatus</S>
+                <S>Get-AzSqlServerTransparentDataEncryptionProtector</S>
+                <S>Set-AzSqlServerTransparentDataEncryptionProtector</S>
+                <S>Add-AzSqlServerKeyVaultKey</S>
+                <S>Get-AzSqlServerKeyVaultKey</S>
+                <S>Remove-AzSqlServerKeyVaultKey</S>
+                <S>Get-AzSqlDatabaseFailoverGroup</S>
+                <S>New-AzSqlDatabaseFailoverGroup</S>
+                <S>Add-AzSqlDatabaseToFailoverGroup</S>
+                <S>Remove-AzSqlDatabaseFromFailoverGroup</S>
+                <S>Remove-AzSqlDatabaseFailoverGroup</S>
+                <S>Set-AzSqlDatabaseFailoverGroup</S>
+                <S>Switch-AzSqlDatabaseFailoverGroup</S>
+                <S>New-AzSqlSyncGroup</S>
+                <S>Update-AzSqlSyncGroup</S>
+                <S>Get-AzSqlSyncGroup</S>
+                <S>Get-AzSqlSyncGroupLog</S>
+                <S>Remove-AzSqlSyncGroup</S>
+                <S>Update-AzSqlSyncSchema</S>
+                <S>Get-AzSqlSyncSchema</S>
+                <S>Start-AzSqlSyncGroupSync</S>
+                <S>Stop-AzSqlSyncGroupSync</S>
+                <S>New-AzSqlSyncMember</S>
+                <S>Update-AzSqlSyncMember</S>
+                <S>Get-AzSqlSyncMember</S>
+                <S>Remove-AzSqlSyncMember</S>
+                <S>New-AzSqlSyncAgent</S>
+                <S>Get-AzSqlSyncAgent</S>
+                <S>Remove-AzSqlSyncAgent</S>
+                <S>New-AzSqlSyncAgentKey</S>
+                <S>Get-AzSqlSyncAgentLinkedDatabase</S>
+                <S>New-AzSqlServerVirtualNetworkRule</S>
+                <S>Set-AzSqlServerVirtualNetworkRule</S>
+                <S>Get-AzSqlServerVirtualNetworkRule</S>
+                <S>Remove-AzSqlServerVirtualNetworkRule</S>
+                <S>Stop-AzSqlDatabaseActivity</S>
+                <S>Get-AzSqlServerDnsAlias</S>
+                <S>Remove-AzSqlServerDnsAlias</S>
+                <S>New-AzSqlServerDnsAlias</S>
+                <S>Set-AzSqlServerDnsAlias</S>
+                <S>New-AzSqlDatabaseRestorePoint</S>
+                <S>Remove-AzSqlDatabaseRestorePoint</S>
+                <S>Stop-AzSqlElasticPoolActivity</S>
+                <S>Add-AzSqlServerTransparentDataEncryptionCertificate</S>
+                <S>Add-AzSqlManagedInstanceTransparentDataEncryptionCertificate</S>
+                <S>Update-AzSqlDatabaseVulnerabilityAssessmentSetting</S>
+                <S>Get-AzSqlDatabaseVulnerabilityAssessmentSetting</S>
+                <S>Clear-AzSqlDatabaseVulnerabilityAssessmentSetting</S>
+                <S>Set-AzSqlDatabaseVulnerabilityAssessmentRuleBaseline</S>
+                <S>Get-AzSqlDatabaseVulnerabilityAssessmentRuleBaseline</S>
+                <S>Clear-AzSqlDatabaseVulnerabilityAssessmentRuleBaseline</S>
+                <S>Convert-AzSqlDatabaseVulnerabilityAssessmentScan</S>
+                <S>Get-AzSqlDatabaseVulnerabilityAssessmentScanRecord</S>
+                <S>Start-AzSqlDatabaseVulnerabilityAssessmentScan</S>
+                <S>Get-AzSqlInstance</S>
+                <S>New-AzSqlInstance</S>
+                <S>Remove-AzSqlInstance</S>
+                <S>Get-AzSqlInstanceOperation</S>
+                <S>Stop-AzSqlInstanceOperation</S>
+                <S>Set-AzSqlInstance</S>
+                <S>Get-AzSqlInstanceDatabase</S>
+                <S>New-AzSqlInstanceDatabase</S>
+                <S>Remove-AzSqlInstanceDatabase</S>
+                <S>Restore-AzSqlInstanceDatabase</S>
+                <S>Update-AzSqlInstanceDatabaseVulnerabilityAssessmentSetting</S>
+                <S>Get-AzSqlInstanceDatabaseVulnerabilityAssessmentSetting</S>
+                <S>Clear-AzSqlInstanceDatabaseVulnerabilityAssessmentSetting</S>
+                <S>Set-AzSqlInstanceDatabaseVulnerabilityAssessmentRuleBaseline</S>
+                <S>Get-AzSqlInstanceDatabaseVulnerabilityAssessmentRuleBaseline</S>
+                <S>Clear-AzSqlInstanceDatabaseVulnerabilityAssessmentRuleBaseline</S>
+                <S>Convert-AzSqlInstanceDatabaseVulnerabilityAssessmentScan</S>
+                <S>Get-AzSqlInstanceDatabaseVulnerabilityAssessmentScanRecord</S>
+                <S>Start-AzSqlInstanceDatabaseVulnerabilityAssessmentScan</S>
+                <S>Enable-AzSqlInstanceAdvancedDataSecurity</S>
+                <S>Disable-AzSqlInstanceAdvancedDataSecurity</S>
+                <S>Get-AzSqlInstanceAdvancedDataSecurityPolicy</S>
+                <S>Get-AzSqlInstanceDatabaseGeoBackup</S>
+                <S>Get-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy</S>
+                <S>Set-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy</S>
+                <S>Get-AzSqlDeletedInstanceDatabaseBackup</S>
+                <S>Update-AzSqlInstanceVulnerabilityAssessmentSetting</S>
+                <S>Get-AzSqlInstanceVulnerabilityAssessmentSetting</S>
+                <S>Clear-AzSqlInstanceVulnerabilityAssessmentSetting</S>
+                <S>Update-AzSqlServerVulnerabilityAssessmentSetting</S>
+                <S>Get-AzSqlServerVulnerabilityAssessmentSetting</S>
+                <S>Clear-AzSqlServerVulnerabilityAssessmentSetting</S>
+                <S>Get-AzSqlDatabaseSensitivityClassification</S>
+                <S>Get-AzSqlInstanceDatabaseSensitivityClassification</S>
+                <S>Set-AzSqlDatabaseSensitivityClassification</S>
+                <S>Set-AzSqlInstanceDatabaseSensitivityClassification</S>
+                <S>Remove-AzSqlDatabaseSensitivityClassification</S>
+                <S>Remove-AzSqlInstanceDatabaseSensitivityClassification</S>
+                <S>Get-AzSqlDatabaseSensitivityRecommendation</S>
+                <S>Get-AzSqlInstanceDatabaseSensitivityRecommendation</S>
+                <S>Get-AzSqlVirtualCluster</S>
+                <S>Remove-AzSqlVirtualCluster</S>
+                <S>Enable-AzSqlServerAdvancedDataSecurity</S>
+                <S>Disable-AzSqlServerAdvancedDataSecurity</S>
+                <S>Get-AzSqlServerAdvancedDataSecurityPolicy</S>
+                <S>Get-AzSqlDatabaseInstanceFailoverGroup</S>
+                <S>New-AzSqlDatabaseInstanceFailoverGroup</S>
+                <S>Remove-AzSqlDatabaseInstanceFailoverGroup</S>
+                <S>Set-AzSqlDatabaseInstanceFailoverGroup</S>
+                <S>Switch-AzSqlDatabaseInstanceFailoverGroup</S>
+                <S>Get-AzSqlServerAdvancedThreatProtectionSetting</S>
+                <S>Clear-AzSqlServerAdvancedThreatProtectionSetting</S>
+                <S>Update-AzSqlServerAdvancedThreatProtectionSetting</S>
+                <S>Get-AzSqlDatabaseAdvancedThreatProtectionSetting</S>
+                <S>Update-AzSqlDatabaseAdvancedThreatProtectionSetting</S>
+                <S>Clear-AzSqlDatabaseAdvancedThreatProtectionSetting</S>
+                <S>Add-AzSqlInstanceKeyVaultKey</S>
+                <S>Get-AzSqlInstanceKeyVaultKey</S>
+                <S>Remove-AzSqlInstanceKeyVaultKey</S>
+                <S>Get-AzSqlInstanceTransparentDataEncryptionProtector</S>
+                <S>Set-AzSqlInstanceTransparentDataEncryptionProtector</S>
+                <S>Get-AzSqlServerAudit</S>
+                <S>Get-AzSqlDatabaseAudit</S>
+                <S>Set-AzSqlServerAudit</S>
+                <S>Set-AzSqlDatabaseAudit</S>
+                <S>Get-AzSqlServerMSSupportAudit</S>
+                <S>Set-AzSqlServerMSSupportAudit</S>
+                <S>Remove-AzSqlServerMSSupportAudit</S>
+                <S>Get-AzSqlInstanceActiveDirectoryAdministrator</S>
+                <S>Remove-AzSqlInstanceActiveDirectoryAdministrator</S>
+                <S>Set-AzSqlInstanceActiveDirectoryAdministrator</S>
+                <S>Remove-AzSqlServerAudit</S>
+                <S>Remove-AzSqlDatabaseAudit</S>
+                <S>Get-AzSqlInstancePool</S>
+                <S>Set-AzSqlInstancePool</S>
+                <S>New-AzSqlInstancePool</S>
+                <S>Remove-AzSqlInstancePool</S>
+                <S>Get-AzSqlInstancePoolUsage</S>
+                <S>Invoke-AzSqlDatabaseFailover</S>
+                <S>Invoke-AzSqlElasticPoolFailover</S>
+                <S>New-AzSqlElasticJobAgent</S>
+                <S>Remove-AzSqlElasticJobAgent</S>
+                <S>Get-AzSqlElasticJobAgent</S>
+                <S>Set-AzSqlElasticJobAgent</S>
+                <S>New-AzSqlElasticJobCredential</S>
+                <S>Get-AzSqlElasticJobCredential</S>
+                <S>Set-AzSqlElasticJobCredential</S>
+                <S>Remove-AzSqlElasticJobCredential</S>
+                <S>New-AzSqlElasticJobTargetGroup</S>
+                <S>Get-AzSqlElasticJobTargetGroup</S>
+                <S>Remove-AzSqlElasticJobTargetGroup</S>
+                <S>Add-AzSqlElasticJobTarget</S>
+                <S>Remove-AzSqlElasticJobTarget</S>
+                <S>New-AzSqlElasticJob</S>
+                <S>Get-AzSqlElasticJob</S>
+                <S>Set-AzSqlElasticJob</S>
+                <S>Remove-AzSqlElasticJob</S>
+                <S>Add-AzSqlElasticJobStep</S>
+                <S>Get-AzSqlElasticJobStep</S>
+                <S>Remove-AzSqlElasticJobStep</S>
+                <S>Set-AzSqlElasticJobStep</S>
+                <S>Start-AzSqlElasticJob</S>
+                <S>Stop-AzSqlElasticJob</S>
+                <S>Get-AzSqlElasticJobExecution</S>
+                <S>Get-AzSqlElasticJobStepExecution</S>
+                <S>Get-AzSqlElasticJobTargetExecution</S>
+                <S>Enable-AzSqlDatabaseSensitivityRecommendation</S>
+                <S>Disable-AzSqlDatabaseSensitivityRecommendation</S>
+                <S>Enable-AzSqlInstanceDatabaseSensitivityRecommendation</S>
+                <S>Disable-AzSqlInstanceDatabaseSensitivityRecommendation</S>
+                <S>Get-AzSqlInstanceDatabaseLongTermRetentionBackup</S>
+                <S>Remove-AzSqlInstanceDatabaseLongTermRetentionBackup</S>
+                <S>Get-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy</S>
+                <S>Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy</S>
+                <S>Disable-AzSqlServerActiveDirectoryOnlyAuthentication</S>
+                <S>Invoke-AzSqlInstanceFailover</S>
+                <S>Enable-AzSqlServerActiveDirectoryOnlyAuthentication</S>
+                <S>Get-AzSqlServerActiveDirectoryOnlyAuthentication</S>
+                <S>Start-AzSqlInstanceDatabaseLogReplay</S>
+                <S>Complete-AzSqlInstanceDatabaseLogReplay</S>
+                <S>Stop-AzSqlInstanceDatabaseLogReplay</S>
+                <S>Get-AzSqlInstanceDatabaseLogReplay</S>
+                <S>Disable-AzSqlInstanceActiveDirectoryOnlyAuthentication</S>
+                <S>Enable-AzSqlInstanceActiveDirectoryOnlyAuthentication</S>
+                <S>Get-AzSqlInstanceActiveDirectoryOnlyAuthentication</S>
+                <S>Get-AzSqlServerTrustGroup</S>
+                <S>New-AzSqlServerTrustGroup</S>
+                <S>Remove-AzSqlServerTrustGroup</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-AzSqlDatabaseTransparentDataEncryption</S>
+                <S>Get-AzSqlDatabaseTransparentDataEncryptionActivity</S>
+                <S>Set-AzSqlDatabaseTransparentDataEncryption</S>
+                <S>Get-AzSqlDatabaseUpgradeHint</S>
+                <S>Get-AzSqlServerUpgradeHint</S>
+                <S>Get-AzSqlServerServiceObjective</S>
+                <S>Get-AzSqlServerActiveDirectoryAdministrator</S>
+                <S>Remove-AzSqlServerActiveDirectoryAdministrator</S>
+                <S>Set-AzSqlServerActiveDirectoryAdministrator</S>
+                <S>Get-AzSqlServer</S>
+                <S>New-AzSqlServer</S>
+                <S>Remove-AzSqlServer</S>
+                <S>Set-AzSqlServer</S>
+                <S>Get-AzSqlServerCommunicationLink</S>
+                <S>New-AzSqlServerCommunicationLink</S>
+                <S>Remove-AzSqlServerCommunicationLink</S>
+                <S>Get-AzSqlDatabaseReplicationLink</S>
+                <S>New-AzSqlDatabaseCopy</S>
+                <S>New-AzSqlDatabaseSecondary</S>
+                <S>Remove-AzSqlDatabaseSecondary</S>
+                <S>Set-AzSqlDatabaseSecondary</S>
+                <S>Get-AzSqlElasticPoolRecommendation</S>
+                <S>Get-AzSqlDatabaseIndexRecommendation</S>
+                <S>Start-AzSqlDatabaseExecuteIndexRecommendation</S>
+                <S>Stop-AzSqlDatabaseExecuteIndexRecommendation</S>
+                <S>Get-AzSqlServerFirewallRule</S>
+                <S>New-AzSqlServerFirewallRule</S>
+                <S>Remove-AzSqlServerFirewallRule</S>
+                <S>Set-AzSqlServerFirewallRule</S>
+                <S>Get-AzSqlElasticPool</S>
+                <S>Get-AzSqlElasticPoolActivity</S>
+                <S>Get-AzSqlElasticPoolDatabase</S>
+                <S>New-AzSqlElasticPool</S>
+                <S>Remove-AzSqlElasticPool</S>
+                <S>Set-AzSqlElasticPool</S>
+                <S>Get-AzSqlServerDisasterRecoveryConfiguration</S>
+                <S>Get-AzSqlServerDisasterRecoveryConfigurationActivity</S>
+                <S>New-AzSqlServerDisasterRecoveryConfiguration</S>
+                <S>Remove-AzSqlServerDisasterRecoveryConfiguration</S>
+                <S>Set-AzSqlServerDisasterRecoveryConfiguration</S>
+                <S>Resume-AzSqlDatabase</S>
+                <S>Suspend-AzSqlDatabase</S>
+                <S>Get-AzSqlDatabaseDataMaskingPolicy</S>
+                <S>Get-AzSqlDatabaseDataMaskingRule</S>
+                <S>New-AzSqlDatabaseDataMaskingRule</S>
+                <S>Remove-AzSqlDatabaseDataMaskingRule</S>
+                <S>Set-AzSqlDatabaseDataMaskingPolicy</S>
+                <S>Set-AzSqlDatabaseDataMaskingRule</S>
+                <S>Get-AzSqlCapability</S>
+                <S>Get-AzSqlDatabase</S>
+                <S>Get-AzSqlDatabaseActivity</S>
+                <S>Get-AzSqlDatabaseExpanded</S>
+                <S>New-AzSqlDatabase</S>
+                <S>Remove-AzSqlDatabase</S>
+                <S>Set-AzSqlDatabase</S>
+                <S>Get-AzSqlDatabaseImportExportStatus</S>
+                <S>New-AzSqlDatabaseExport</S>
+                <S>New-AzSqlDatabaseImport</S>
+                <S>Get-AzSqlDatabaseGeoBackupPolicy</S>
+                <S>Set-AzSqlDatabaseGeoBackupPolicy</S>
+                <S>Get-AzSqlDatabaseBackupShortTermRetentionPolicy</S>
+                <S>Set-AzSqlDatabaseBackupShortTermRetentionPolicy</S>
+                <S>Get-AzSqlDatabaseBackupLongTermRetentionPolicy</S>
+                <S>Set-AzSqlDatabaseBackupLongTermRetentionPolicy</S>
+                <S>Get-AzSqlDatabaseLongTermRetentionBackup</S>
+                <S>Remove-AzSqlDatabaseLongTermRetentionBackup</S>
+                <S>Get-AzSqlDeletedDatabaseBackup</S>
+                <S>Get-AzSqlDatabaseGeoBackup</S>
+                <S>Restore-AzSqlDatabase</S>
+                <S>Get-AzSqlDatabaseRestorePoint</S>
+                <S>Get-AzSqlDatabaseRecommendedAction</S>
+                <S>Get-AzSqlElasticPoolRecommendedAction</S>
+                <S>Get-AzSqlServerRecommendedAction</S>
+                <S>Set-AzSqlDatabaseRecommendedActionState</S>
+                <S>Set-AzSqlElasticPoolRecommendedActionState</S>
+                <S>Set-AzSqlServerRecommendedActionState</S>
+                <S>Get-AzSqlElasticPoolAdvisor</S>
+                <S>Get-AzSqlServerAdvisor</S>
+                <S>Set-AzSqlElasticPoolAdvisorAutoExecuteStatus</S>
+                <S>Set-AzSqlServerAdvisorAutoExecuteStatus</S>
+                <S>Get-AzSqlDatabaseAdvisor</S>
+                <S>Set-AzSqlDatabaseAdvisorAutoExecuteStatus</S>
+                <S>Get-AzSqlServerTransparentDataEncryptionProtector</S>
+                <S>Set-AzSqlServerTransparentDataEncryptionProtector</S>
+                <S>Add-AzSqlServerKeyVaultKey</S>
+                <S>Get-AzSqlServerKeyVaultKey</S>
+                <S>Remove-AzSqlServerKeyVaultKey</S>
+                <S>Get-AzSqlDatabaseFailoverGroup</S>
+                <S>New-AzSqlDatabaseFailoverGroup</S>
+                <S>Add-AzSqlDatabaseToFailoverGroup</S>
+                <S>Remove-AzSqlDatabaseFromFailoverGroup</S>
+                <S>Remove-AzSqlDatabaseFailoverGroup</S>
+                <S>Set-AzSqlDatabaseFailoverGroup</S>
+                <S>Switch-AzSqlDatabaseFailoverGroup</S>
+                <S>New-AzSqlSyncGroup</S>
+                <S>Update-AzSqlSyncGroup</S>
+                <S>Get-AzSqlSyncGroup</S>
+                <S>Get-AzSqlSyncGroupLog</S>
+                <S>Remove-AzSqlSyncGroup</S>
+                <S>Update-AzSqlSyncSchema</S>
+                <S>Get-AzSqlSyncSchema</S>
+                <S>Start-AzSqlSyncGroupSync</S>
+                <S>Stop-AzSqlSyncGroupSync</S>
+                <S>New-AzSqlSyncMember</S>
+                <S>Update-AzSqlSyncMember</S>
+                <S>Get-AzSqlSyncMember</S>
+                <S>Remove-AzSqlSyncMember</S>
+                <S>New-AzSqlSyncAgent</S>
+                <S>Get-AzSqlSyncAgent</S>
+                <S>Remove-AzSqlSyncAgent</S>
+                <S>New-AzSqlSyncAgentKey</S>
+                <S>Get-AzSqlSyncAgentLinkedDatabase</S>
+                <S>New-AzSqlServerVirtualNetworkRule</S>
+                <S>Set-AzSqlServerVirtualNetworkRule</S>
+                <S>Get-AzSqlServerVirtualNetworkRule</S>
+                <S>Remove-AzSqlServerVirtualNetworkRule</S>
+                <S>Stop-AzSqlDatabaseActivity</S>
+                <S>Get-AzSqlServerDnsAlias</S>
+                <S>Remove-AzSqlServerDnsAlias</S>
+                <S>New-AzSqlServerDnsAlias</S>
+                <S>Set-AzSqlServerDnsAlias</S>
+                <S>New-AzSqlDatabaseRestorePoint</S>
+                <S>Remove-AzSqlDatabaseRestorePoint</S>
+                <S>Stop-AzSqlElasticPoolActivity</S>
+                <S>Add-AzSqlServerTransparentDataEncryptionCertificate</S>
+                <S>Add-AzSqlManagedInstanceTransparentDataEncryptionCertificate</S>
+                <S>Update-AzSqlDatabaseVulnerabilityAssessmentSetting</S>
+                <S>Get-AzSqlDatabaseVulnerabilityAssessmentSetting</S>
+                <S>Clear-AzSqlDatabaseVulnerabilityAssessmentSetting</S>
+                <S>Set-AzSqlDatabaseVulnerabilityAssessmentRuleBaseline</S>
+                <S>Get-AzSqlDatabaseVulnerabilityAssessmentRuleBaseline</S>
+                <S>Clear-AzSqlDatabaseVulnerabilityAssessmentRuleBaseline</S>
+                <S>Convert-AzSqlDatabaseVulnerabilityAssessmentScan</S>
+                <S>Get-AzSqlDatabaseVulnerabilityAssessmentScanRecord</S>
+                <S>Start-AzSqlDatabaseVulnerabilityAssessmentScan</S>
+                <S>Get-AzSqlInstance</S>
+                <S>New-AzSqlInstance</S>
+                <S>Remove-AzSqlInstance</S>
+                <S>Get-AzSqlInstanceOperation</S>
+                <S>Stop-AzSqlInstanceOperation</S>
+                <S>Set-AzSqlInstance</S>
+                <S>Get-AzSqlInstanceDatabase</S>
+                <S>New-AzSqlInstanceDatabase</S>
+                <S>Remove-AzSqlInstanceDatabase</S>
+                <S>Restore-AzSqlInstanceDatabase</S>
+                <S>Update-AzSqlInstanceDatabaseVulnerabilityAssessmentSetting</S>
+                <S>Get-AzSqlInstanceDatabaseVulnerabilityAssessmentSetting</S>
+                <S>Clear-AzSqlInstanceDatabaseVulnerabilityAssessmentSetting</S>
+                <S>Set-AzSqlInstanceDatabaseVulnerabilityAssessmentRuleBaseline</S>
+                <S>Get-AzSqlInstanceDatabaseVulnerabilityAssessmentRuleBaseline</S>
+                <S>Clear-AzSqlInstanceDatabaseVulnerabilityAssessmentRuleBaseline</S>
+                <S>Convert-AzSqlInstanceDatabaseVulnerabilityAssessmentScan</S>
+                <S>Get-AzSqlInstanceDatabaseVulnerabilityAssessmentScanRecord</S>
+                <S>Start-AzSqlInstanceDatabaseVulnerabilityAssessmentScan</S>
+                <S>Enable-AzSqlInstanceAdvancedDataSecurity</S>
+                <S>Disable-AzSqlInstanceAdvancedDataSecurity</S>
+                <S>Get-AzSqlInstanceAdvancedDataSecurityPolicy</S>
+                <S>Get-AzSqlInstanceDatabaseGeoBackup</S>
+                <S>Get-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy</S>
+                <S>Set-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy</S>
+                <S>Get-AzSqlDeletedInstanceDatabaseBackup</S>
+                <S>Update-AzSqlInstanceVulnerabilityAssessmentSetting</S>
+                <S>Get-AzSqlInstanceVulnerabilityAssessmentSetting</S>
+                <S>Clear-AzSqlInstanceVulnerabilityAssessmentSetting</S>
+                <S>Update-AzSqlServerVulnerabilityAssessmentSetting</S>
+                <S>Get-AzSqlServerVulnerabilityAssessmentSetting</S>
+                <S>Clear-AzSqlServerVulnerabilityAssessmentSetting</S>
+                <S>Get-AzSqlDatabaseSensitivityClassification</S>
+                <S>Get-AzSqlInstanceDatabaseSensitivityClassification</S>
+                <S>Set-AzSqlDatabaseSensitivityClassification</S>
+                <S>Set-AzSqlInstanceDatabaseSensitivityClassification</S>
+                <S>Remove-AzSqlDatabaseSensitivityClassification</S>
+                <S>Remove-AzSqlInstanceDatabaseSensitivityClassification</S>
+                <S>Get-AzSqlDatabaseSensitivityRecommendation</S>
+                <S>Get-AzSqlInstanceDatabaseSensitivityRecommendation</S>
+                <S>Get-AzSqlVirtualCluster</S>
+                <S>Remove-AzSqlVirtualCluster</S>
+                <S>Enable-AzSqlServerAdvancedDataSecurity</S>
+                <S>Disable-AzSqlServerAdvancedDataSecurity</S>
+                <S>Get-AzSqlServerAdvancedDataSecurityPolicy</S>
+                <S>Get-AzSqlDatabaseInstanceFailoverGroup</S>
+                <S>New-AzSqlDatabaseInstanceFailoverGroup</S>
+                <S>Remove-AzSqlDatabaseInstanceFailoverGroup</S>
+                <S>Set-AzSqlDatabaseInstanceFailoverGroup</S>
+                <S>Switch-AzSqlDatabaseInstanceFailoverGroup</S>
+                <S>Get-AzSqlServerAdvancedThreatProtectionSetting</S>
+                <S>Clear-AzSqlServerAdvancedThreatProtectionSetting</S>
+                <S>Update-AzSqlServerAdvancedThreatProtectionSetting</S>
+                <S>Get-AzSqlDatabaseAdvancedThreatProtectionSetting</S>
+                <S>Update-AzSqlDatabaseAdvancedThreatProtectionSetting</S>
+                <S>Clear-AzSqlDatabaseAdvancedThreatProtectionSetting</S>
+                <S>Add-AzSqlInstanceKeyVaultKey</S>
+                <S>Get-AzSqlInstanceKeyVaultKey</S>
+                <S>Remove-AzSqlInstanceKeyVaultKey</S>
+                <S>Get-AzSqlInstanceTransparentDataEncryptionProtector</S>
+                <S>Set-AzSqlInstanceTransparentDataEncryptionProtector</S>
+                <S>Get-AzSqlServerAudit</S>
+                <S>Get-AzSqlDatabaseAudit</S>
+                <S>Set-AzSqlServerAudit</S>
+                <S>Set-AzSqlDatabaseAudit</S>
+                <S>Get-AzSqlServerMSSupportAudit</S>
+                <S>Set-AzSqlServerMSSupportAudit</S>
+                <S>Remove-AzSqlServerMSSupportAudit</S>
+                <S>Get-AzSqlInstanceActiveDirectoryAdministrator</S>
+                <S>Remove-AzSqlInstanceActiveDirectoryAdministrator</S>
+                <S>Set-AzSqlInstanceActiveDirectoryAdministrator</S>
+                <S>Remove-AzSqlServerAudit</S>
+                <S>Remove-AzSqlDatabaseAudit</S>
+                <S>Get-AzSqlInstancePool</S>
+                <S>Set-AzSqlInstancePool</S>
+                <S>New-AzSqlInstancePool</S>
+                <S>Remove-AzSqlInstancePool</S>
+                <S>Get-AzSqlInstancePoolUsage</S>
+                <S>Invoke-AzSqlDatabaseFailover</S>
+                <S>Invoke-AzSqlElasticPoolFailover</S>
+                <S>New-AzSqlElasticJobAgent</S>
+                <S>Remove-AzSqlElasticJobAgent</S>
+                <S>Get-AzSqlElasticJobAgent</S>
+                <S>Set-AzSqlElasticJobAgent</S>
+                <S>New-AzSqlElasticJobCredential</S>
+                <S>Get-AzSqlElasticJobCredential</S>
+                <S>Set-AzSqlElasticJobCredential</S>
+                <S>Remove-AzSqlElasticJobCredential</S>
+                <S>New-AzSqlElasticJobTargetGroup</S>
+                <S>Get-AzSqlElasticJobTargetGroup</S>
+                <S>Remove-AzSqlElasticJobTargetGroup</S>
+                <S>Add-AzSqlElasticJobTarget</S>
+                <S>Remove-AzSqlElasticJobTarget</S>
+                <S>New-AzSqlElasticJob</S>
+                <S>Get-AzSqlElasticJob</S>
+                <S>Set-AzSqlElasticJob</S>
+                <S>Remove-AzSqlElasticJob</S>
+                <S>Add-AzSqlElasticJobStep</S>
+                <S>Get-AzSqlElasticJobStep</S>
+                <S>Remove-AzSqlElasticJobStep</S>
+                <S>Set-AzSqlElasticJobStep</S>
+                <S>Start-AzSqlElasticJob</S>
+                <S>Stop-AzSqlElasticJob</S>
+                <S>Get-AzSqlElasticJobExecution</S>
+                <S>Get-AzSqlElasticJobStepExecution</S>
+                <S>Get-AzSqlElasticJobTargetExecution</S>
+                <S>Enable-AzSqlDatabaseSensitivityRecommendation</S>
+                <S>Disable-AzSqlDatabaseSensitivityRecommendation</S>
+                <S>Enable-AzSqlInstanceDatabaseSensitivityRecommendation</S>
+                <S>Disable-AzSqlInstanceDatabaseSensitivityRecommendation</S>
+                <S>Get-AzSqlInstanceDatabaseLongTermRetentionBackup</S>
+                <S>Remove-AzSqlInstanceDatabaseLongTermRetentionBackup</S>
+                <S>Get-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy</S>
+                <S>Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy</S>
+                <S>Disable-AzSqlServerActiveDirectoryOnlyAuthentication</S>
+                <S>Invoke-AzSqlInstanceFailover</S>
+                <S>Enable-AzSqlServerActiveDirectoryOnlyAuthentication</S>
+                <S>Get-AzSqlServerActiveDirectoryOnlyAuthentication</S>
+                <S>Start-AzSqlInstanceDatabaseLogReplay</S>
+                <S>Complete-AzSqlInstanceDatabaseLogReplay</S>
+                <S>Stop-AzSqlInstanceDatabaseLogReplay</S>
+                <S>Get-AzSqlInstanceDatabaseLogReplay</S>
+                <S>Disable-AzSqlInstanceActiveDirectoryOnlyAuthentication</S>
+                <S>Enable-AzSqlInstanceActiveDirectoryOnlyAuthentication</S>
+                <S>Get-AzSqlInstanceActiveDirectoryOnlyAuthentication</S>
+                <S>Get-AzSqlServerTrustGroup</S>
+                <S>New-AzSqlServerTrustGroup</S>
+                <S>Remove-AzSqlServerTrustGroup</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Added cmdlet output breaking change warnings to the following: _x000D__x000A_    - 'New-AzSqlDatabase'_x000D__x000A_    - 'Get-AzSqlDatabase'_x000D__x000A_    - 'Set-AzSqlDatabase'_x000D__x000A_    - 'Remove-AzSqlDatabase'_x000D__x000A_    - 'New-AzSqlDatabaseSecondary'_x000D__x000A_    - 'Remove-AzSqlDatabaseSecondary'_x000D__x000A_    - 'Get-AzSqlDatabaseReplicationLink'_x000D__x000A_    - 'New-AzSqlDatabaseCopy'_x000D__x000A_    - 'Set-AzSqlDatabaseSecondary'</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">2.2.8</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/2.2.8</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell - SQL service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core._x000D__x000A__x000D__x000A_For more information on SQL, please visit the following: https://docs.microsoft.com/azure/sql-database/</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Added cmdlet output breaking change warnings to the following: _x000D__x000A_    - 'New-AzSqlDatabase'_x000D__x000A_    - 'Get-AzSqlDatabase'_x000D__x000A_    - 'Set-AzSqlDatabase'_x000D__x000A_    - 'Remove-AzSqlDatabase'_x000D__x000A_    - 'New-AzSqlDatabaseSecondary'_x000D__x000A_    - 'Remove-AzSqlDatabaseSecondary'_x000D__x000A_    - 'Get-AzSqlDatabaseReplicationLink'_x000D__x000A_    - 'New-AzSqlDatabaseCopy'_x000D__x000A_    - 'Set-AzSqlDatabaseSecondary'</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">False</S>
+          <S N="versionDownloadCount">34295</S>
+          <S N="downloadCount">20835265</S>
+          <S N="packageSize">1582153</S>
+          <S N="published">4/13/2021 8:25:12 AM -05:00</S>
+          <S N="created">4/13/2021 8:25:12 AM -05:00</S>
+          <S N="lastUpdated">4/14/2021 5:47:00 PM -05:00</S>
+          <S N="tags">Azure ResourceManager ARM Sql Database PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_Get-AzSqlDatabaseTransparentDataEncryption PSCommand_Get-AzSqlDatabaseTransparentDataEncryption PSCmdlet_Get-AzSqlDatabaseTransparentDataEncryptionActivity PSCommand_Get-AzSqlDatabaseTransparentDataEncryptionActivity PSCmdlet_Set-AzSqlDatabaseTransparentDataEncryption PSCommand_Set-AzSqlDatabaseTransparentDataEncryption PSCmdlet_Get-AzSqlDatabaseUpgradeHint PSCommand_Get-AzSqlDatabaseUpgradeHint PSCmdlet_Get-AzSqlServerUpgradeHint PSCommand_Get-AzSqlServerUpgradeHint PSCmdlet_Get-AzSqlServerServiceObjective PSCommand_Get-AzSqlServerServiceObjective PSCmdlet_Get-AzSqlServerActiveDirectoryAdministrator PSCommand_Get-AzSqlServerActiveDirectoryAdministrator PSCmdlet_Remove-AzSqlServerActiveDirectoryAdministrator PSCommand_Remove-AzSqlServerActiveDirectoryAdministrator PSCmdlet_Set-AzSqlServerActiveDirectoryAdministrator PSCommand_Set-AzSqlServerActiveDirectoryAdministrator PSCmdlet_Get-AzSqlServer PSCommand_Get-AzSqlServer PSCmdlet_New-AzSqlServer PSCommand_New-AzSqlServer PSCmdlet_Remove-AzSqlServer PSCommand_Remove-AzSqlServer PSCmdlet_Set-AzSqlServer PSCommand_Set-AzSqlServer PSCmdlet_Get-AzSqlServerCommunicationLink PSCommand_Get-AzSqlServerCommunicationLink PSCmdlet_New-AzSqlServerCommunicationLink PSCommand_New-AzSqlServerCommunicationLink PSCmdlet_Remove-AzSqlServerCommunicationLink PSCommand_Remove-AzSqlServerCommunicationLink PSCmdlet_Get-AzSqlDatabaseReplicationLink PSCommand_Get-AzSqlDatabaseReplicationLink PSCmdlet_New-AzSqlDatabaseCopy PSCommand_New-AzSqlDatabaseCopy PSCmdlet_New-AzSqlDatabaseSecondary PSCommand_New-AzSqlDatabaseSecondary PSCmdlet_Remove-AzSqlDatabaseSecondary PSCommand_Remove-AzSqlDatabaseSecondary PSCmdlet_Set-AzSqlDatabaseSecondary PSCommand_Set-AzSqlDatabaseSecondary PSCmdlet_Get-AzSqlElasticPoolRecommendation PSCommand_Get-AzSqlElasticPoolRecommendation PSCmdlet_Get-AzSqlDatabaseIndexRecommendation PSCommand_Get-AzSqlDatabaseIndexRecommendation PSCmdlet_Start-AzSqlDatabaseExecuteIndexRecommendation PSCommand_Start-AzSqlDatabaseExecuteIndexRecommendation PSCmdlet_Stop-AzSqlDatabaseExecuteIndexRecommendation PSCommand_Stop-AzSqlDatabaseExecuteIndexRecommendation PSCmdlet_Get-AzSqlServerFirewallRule PSCommand_Get-AzSqlServerFirewallRule PSCmdlet_New-AzSqlServerFirewallRule PSCommand_New-AzSqlServerFirewallRule PSCmdlet_Remove-AzSqlServerFirewallRule PSCommand_Remove-AzSqlServerFirewallRule PSCmdlet_Set-AzSqlServerFirewallRule PSCommand_Set-AzSqlServerFirewallRule PSCmdlet_Get-AzSqlElasticPool PSCommand_Get-AzSqlElasticPool PSCmdlet_Get-AzSqlElasticPoolActivity PSCommand_Get-AzSqlElasticPoolActivity PSCmdlet_Get-AzSqlElasticPoolDatabase PSCommand_Get-AzSqlElasticPoolDatabase PSCmdlet_New-AzSqlElasticPool PSCommand_New-AzSqlElasticPool PSCmdlet_Remove-AzSqlElasticPool PSCommand_Remove-AzSqlElasticPool PSCmdlet_Set-AzSqlElasticPool PSCommand_Set-AzSqlElasticPool PSCmdlet_Get-AzSqlServerDisasterRecoveryConfiguration PSCommand_Get-AzSqlServerDisasterRecoveryConfiguration PSCmdlet_Get-AzSqlServerDisasterRecoveryConfigurationActivity PSCommand_Get-AzSqlServerDisasterRecoveryConfigurationActivity PSCmdlet_New-AzSqlServerDisasterRecoveryConfiguration PSCommand_New-AzSqlServerDisasterRecoveryConfiguration PSCmdlet_Remove-AzSqlServerDisasterRecoveryConfiguration PSCommand_Remove-AzSqlServerDisasterRecoveryConfiguration PSCmdlet_Set-AzSqlServerDisasterRecoveryConfiguration PSCommand_Set-AzSqlServerDisasterRecoveryConfiguration PSCmdlet_Resume-AzSqlDatabase PSCommand_Resume-AzSqlDatabase PSCmdlet_Suspend-AzSqlDatabase PSCommand_Suspend-AzSqlDatabase PSCmdlet_Get-AzSqlDatabaseDataMaskingPolicy PSCommand_Get-AzSqlDatabaseDataMaskingPolicy PSCmdlet_Get-AzSqlDatabaseDataMaskingRule PSCommand_Get-AzSqlDatabaseDataMaskingRule PSCmdlet_New-AzSqlDatabaseDataMaskingRule PSCommand_New-AzSqlDatabaseDataMaskingRule PSCmdlet_Remove-AzSqlDatabaseDataMaskingRule PSCommand_Remove-AzSqlDatabaseDataMaskingRule PSCmdlet_Set-AzSqlDatabaseDataMaskingPolicy PSCommand_Set-AzSqlDatabaseDataMaskingPolicy PSCmdlet_Set-AzSqlDatabaseDataMaskingRule PSCommand_Set-AzSqlDatabaseDataMaskingRule PSCmdlet_Get-AzSqlCapability PSCommand_Get-AzSqlCapability PSCmdlet_Get-AzSqlDatabase PSCommand_Get-AzSqlDatabase PSCmdlet_Get-AzSqlDatabaseActivity PSCommand_Get-AzSqlDatabaseActivity PSCmdlet_Get-AzSqlDatabaseExpanded PSCommand_Get-AzSqlDatabaseExpanded PSCmdlet_New-AzSqlDatabase PSCommand_New-AzSqlDatabase PSCmdlet_Remove-AzSqlDatabase PSCommand_Remove-AzSqlDatabase PSCmdlet_Set-AzSqlDatabase PSCommand_Set-AzSqlDatabase PSCmdlet_Get-AzSqlDatabaseImportExportStatus PSCommand_Get-AzSqlDatabaseImportExportStatus PSCmdlet_New-AzSqlDatabaseExport PSCommand_New-AzSqlDatabaseExport PSCmdlet_New-AzSqlDatabaseImport PSCommand_New-AzSqlDatabaseImport PSCmdlet_Get-AzSqlDatabaseGeoBackupPolicy PSCommand_Get-AzSqlDatabaseGeoBackupPolicy PSCmdlet_Set-AzSqlDatabaseGeoBackupPolicy PSCommand_Set-AzSqlDatabaseGeoBackupPolicy PSCmdlet_Get-AzSqlDatabaseBackupShortTermRetentionPolicy PSCommand_Get-AzSqlDatabaseBackupShortTermRetentionPolicy PSCmdlet_Set-AzSqlDatabaseBackupShortTermRetentionPolicy PSCommand_Set-AzSqlDatabaseBackupShortTermRetentionPolicy PSCmdlet_Get-AzSqlDatabaseBackupLongTermRetentionPolicy PSCommand_Get-AzSqlDatabaseBackupLongTermRetentionPolicy PSCmdlet_Set-AzSqlDatabaseBackupLongTermRetentionPolicy PSCommand_Set-AzSqlDatabaseBackupLongTermRetentionPolicy PSCmdlet_Get-AzSqlDatabaseLongTermRetentionBackup PSCommand_Get-AzSqlDatabaseLongTermRetentionBackup PSCmdlet_Remove-AzSqlDatabaseLongTermRetentionBackup PSCommand_Remove-AzSqlDatabaseLongTermRetentionBackup PSCmdlet_Get-AzSqlDeletedDatabaseBackup PSCommand_Get-AzSqlDeletedDatabaseBackup PSCmdlet_Get-AzSqlDatabaseGeoBackup PSCommand_Get-AzSqlDatabaseGeoBackup PSCmdlet_Restore-AzSqlDatabase PSCommand_Restore-AzSqlDatabase PSCmdlet_Get-AzSqlDatabaseRestorePoint PSCommand_Get-AzSqlDatabaseRestorePoint PSCmdlet_Get-AzSqlDatabaseRecommendedAction PSCommand_Get-AzSqlDatabaseRecommendedAction PSCmdlet_Get-AzSqlElasticPoolRecommendedAction PSCommand_Get-AzSqlElasticPoolRecommendedAction PSCmdlet_Get-AzSqlServerRecommendedAction PSCommand_Get-AzSqlServerRecommendedAction PSCmdlet_Set-AzSqlDatabaseRecommendedActionState PSCommand_Set-AzSqlDatabaseRecommendedActionState PSCmdlet_Set-AzSqlElasticPoolRecommendedActionState PSCommand_Set-AzSqlElasticPoolRecommendedActionState PSCmdlet_Set-AzSqlServerRecommendedActionState PSCommand_Set-AzSqlServerRecommendedActionState PSCmdlet_Get-AzSqlElasticPoolAdvisor PSCommand_Get-AzSqlElasticPoolAdvisor PSCmdlet_Get-AzSqlServerAdvisor PSCommand_Get-AzSqlServerAdvisor PSCmdlet_Set-AzSqlElasticPoolAdvisorAutoExecuteStatus PSCommand_Set-AzSqlElasticPoolAdvisorAutoExecuteStatus PSCmdlet_Set-AzSqlServerAdvisorAutoExecuteStatus PSCommand_Set-AzSqlServerAdvisorAutoExecuteStatus PSCmdlet_Get-AzSqlDatabaseAdvisor PSCommand_Get-AzSqlDatabaseAdvisor PSCmdlet_Set-AzSqlDatabaseAdvisorAutoExecuteStatus PSCommand_Set-AzSqlDatabaseAdvisorAutoExecuteStatus PSCmdlet_Get-AzSqlServerTransparentDataEncryptionProtector PSCommand_Get-AzSqlServerTransparentDataEncryptionProtector PSCmdlet_Set-AzSqlServerTransparentDataEncryptionProtector PSCommand_Set-AzSqlServerTransparentDataEncryptionProtector PSCmdlet_Add-AzSqlServerKeyVaultKey PSCommand_Add-AzSqlServerKeyVaultKey PSCmdlet_Get-AzSqlServerKeyVaultKey PSCommand_Get-AzSqlServerKeyVaultKey PSCmdlet_Remove-AzSqlServerKeyVaultKey PSCommand_Remove-AzSqlServerKeyVaultKey PSCmdlet_Get-AzSqlDatabaseFailoverGroup PSCommand_Get-AzSqlDatabaseFailoverGroup PSCmdlet_New-AzSqlDatabaseFailoverGroup PSCommand_New-AzSqlDatabaseFailoverGroup PSCmdlet_Add-AzSqlDatabaseToFailoverGroup PSCommand_Add-AzSqlDatabaseToFailoverGroup PSCmdlet_Remove-AzSqlDatabaseFromFailoverGroup PSCommand_Remove-AzSqlDatabaseFromFailoverGroup PSCmdlet_Remove-AzSqlDatabaseFailoverGroup PSCommand_Remove-AzSqlDatabaseFailoverGroup PSCmdlet_Set-AzSqlDatabaseFailoverGroup PSCommand_Set-AzSqlDatabaseFailoverGroup PSCmdlet_Switch-AzSqlDatabaseFailoverGroup PSCommand_Switch-AzSqlDatabaseFailoverGroup PSCmdlet_New-AzSqlSyncGroup PSCommand_New-AzSqlSyncGroup PSCmdlet_Update-AzSqlSyncGroup PSCommand_Update-AzSqlSyncGroup PSCmdlet_Get-AzSqlSyncGroup PSCommand_Get-AzSqlSyncGroup PSCmdlet_Get-AzSqlSyncGroupLog PSCommand_Get-AzSqlSyncGroupLog PSCmdlet_Remove-AzSqlSyncGroup PSCommand_Remove-AzSqlSyncGroup PSCmdlet_Update-AzSqlSyncSchema PSCommand_Update-AzSqlSyncSchema PSCmdlet_Get-AzSqlSyncSchema PSCommand_Get-AzSqlSyncSchema PSCmdlet_Start-AzSqlSyncGroupSync PSCommand_Start-AzSqlSyncGroupSync PSCmdlet_Stop-AzSqlSyncGroupSync PSCommand_Stop-AzSqlSyncGroupSync PSCmdlet_New-AzSqlSyncMember PSCommand_New-AzSqlSyncMember PSCmdlet_Update-AzSqlSyncMember PSCommand_Update-AzSqlSyncMember PSCmdlet_Get-AzSqlSyncMember PSCommand_Get-AzSqlSyncMember PSCmdlet_Remove-AzSqlSyncMember PSCommand_Remove-AzSqlSyncMember PSCmdlet_New-AzSqlSyncAgent PSCommand_New-AzSqlSyncAgent PSCmdlet_Get-AzSqlSyncAgent PSCommand_Get-AzSqlSyncAgent PSCmdlet_Remove-AzSqlSyncAgent PSCommand_Remove-AzSqlSyncAgent PSCmdlet_New-AzSqlSyncAgentKey PSCommand_New-AzSqlSyncAgentKey PSCmdlet_Get-AzSqlSyncAgentLinkedDatabase PSCommand_Get-AzSqlSyncAgentLinkedDatabase PSCmdlet_New-AzSqlServerVirtualNetworkRule PSCommand_New-AzSqlServerVirtualNetworkRule PSCmdlet_Set-AzSqlServerVirtualNetworkRule PSCommand_Set-AzSqlServerVirtualNetworkRule PSCmdlet_Get-AzSqlServerVirtualNetworkRule PSCommand_Get-AzSqlServerVirtualNetworkRule PSCmdlet_Remove-AzSqlServerVirtualNetworkRule PSCommand_Remove-AzSqlServerVirtualNetworkRule PSCmdlet_Stop-AzSqlDatabaseActivity PSCommand_Stop-AzSqlDatabaseActivity PSCmdlet_Get-AzSqlServerDnsAlias PSCommand_Get-AzSqlServerDnsAlias PSCmdlet_Remove-AzSqlServerDnsAlias PSCommand_Remove-AzSqlServerDnsAlias PSCmdlet_New-AzSqlServerDnsAlias PSCommand_New-AzSqlServerDnsAlias PSCmdlet_Set-AzSqlServerDnsAlias PSCommand_Set-AzSqlServerDnsAlias PSCmdlet_New-AzSqlDatabaseRestorePoint PSCommand_New-AzSqlDatabaseRestorePoint PSCmdlet_Remove-AzSqlDatabaseRestorePoint PSCommand_Remove-AzSqlDatabaseRestorePoint PSCmdlet_Stop-AzSqlElasticPoolActivity PSCommand_Stop-AzSqlElasticPoolActivity PSCmdlet_Add-AzSqlServerTransparentDataEncryptionCertificate PSCommand_Add-AzSqlServerTransparentDataEncryptionCertificate PSCmdlet_Add-AzSqlManagedInstanceTransparentDataEncryptionCertificate PSCommand_Add-AzSqlManagedInstanceTransparentDataEncryptionCertificate PSCmdlet_Update-AzSqlDatabaseVulnerabilityAssessmentSetting PSCommand_Update-AzSqlDatabaseVulnerabilityAssessmentSetting PSCmdlet_Get-AzSqlDatabaseVulnerabilityAssessmentSetting PSCommand_Get-AzSqlDatabaseVulnerabilityAssessmentSetting PSCmdlet_Clear-AzSqlDatabaseVulnerabilityAssessmentSetting PSCommand_Clear-AzSqlDatabaseVulnerabilityAssessmentSetting PSCmdlet_Set-AzSqlDatabaseVulnerabilityAssessmentRuleBaseline PSCommand_Set-AzSqlDatabaseVulnerabilityAssessmentRuleBaseline PSCmdlet_Get-AzSqlDatabaseVulnerabilityAssessmentRuleBaseline PSCommand_Get-AzSqlDatabaseVulnerabilityAssessmentRuleBaseline PSCmdlet_Clear-AzSqlDatabaseVulnerabilityAssessmentRuleBaseline PSCommand_Clear-AzSqlDatabaseVulnerabilityAssessmentRuleBaseline PSCmdlet_Convert-AzSqlDatabaseVulnerabilityAssessmentScan PSCommand_Convert-AzSqlDatabaseVulnerabilityAssessmentScan PSCmdlet_Get-AzSqlDatabaseVulnerabilityAssessmentScanRecord PSCommand_Get-AzSqlDatabaseVulnerabilityAssessmentScanRecord PSCmdlet_Start-AzSqlDatabaseVulnerabilityAssessmentScan PSCommand_Start-AzSqlDatabaseVulnerabilityAssessmentScan PSCmdlet_Get-AzSqlInstance PSCommand_Get-AzSqlInstance PSCmdlet_New-AzSqlInstance PSCommand_New-AzSqlInstance PSCmdlet_Remove-AzSqlInstance PSCommand_Remove-AzSqlInstance PSCmdlet_Get-AzSqlInstanceOperation PSCommand_Get-AzSqlInstanceOperation PSCmdlet_Stop-AzSqlInstanceOperation PSCommand_Stop-AzSqlInstanceOperation PSCmdlet_Set-AzSqlInstance PSCommand_Set-AzSqlInstance PSCmdlet_Get-AzSqlInstanceDatabase PSCommand_Get-AzSqlInstanceDatabase PSCmdlet_New-AzSqlInstanceDatabase PSCommand_New-AzSqlInstanceDatabase PSCmdlet_Remove-AzSqlInstanceDatabase PSCommand_Remove-AzSqlInstanceDatabase PSCmdlet_Restore-AzSqlInstanceDatabase PSCommand_Restore-AzSqlInstanceDatabase PSCmdlet_Update-AzSqlInstanceDatabaseVulnerabilityAssessmentSetting PSCommand_Update-AzSqlInstanceDatabaseVulnerabilityAssessmentSetting PSCmdlet_Get-AzSqlInstanceDatabaseVulnerabilityAssessmentSetting PSCommand_Get-AzSqlInstanceDatabaseVulnerabilityAssessmentSetting PSCmdlet_Clear-AzSqlInstanceDatabaseVulnerabilityAssessmentSetting PSCommand_Clear-AzSqlInstanceDatabaseVulnerabilityAssessmentSetting PSCmdlet_Set-AzSqlInstanceDatabaseVulnerabilityAssessmentRuleBaseline PSCommand_Set-AzSqlInstanceDatabaseVulnerabilityAssessmentRuleBaseline PSCmdlet_Get-AzSqlInstanceDatabaseVulnerabilityAssessmentRuleBaseline PSCommand_Get-AzSqlInstanceDatabaseVulnerabilityAssessmentRuleBaseline PSCmdlet_Clear-AzSqlInstanceDatabaseVulnerabilityAssessmentRuleBaseline PSCommand_Clear-AzSqlInstanceDatabaseVulnerabilityAssessmentRuleBaseline PSCmdlet_Convert-AzSqlInstanceDatabaseVulnerabilityAssessmentScan PSCommand_Convert-AzSqlInstanceDatabaseVulnerabilityAssessmentScan PSCmdlet_Get-AzSqlInstanceDatabaseVulnerabilityAssessmentScanRecord PSCommand_Get-AzSqlInstanceDatabaseVulnerabilityAssessmentScanRecord PSCmdlet_Start-AzSqlInstanceDatabaseVulnerabilityAssessmentScan PSCommand_Start-AzSqlInstanceDatabaseVulnerabilityAssessmentScan PSCmdlet_Enable-AzSqlInstanceAdvancedDataSecurity PSCommand_Enable-AzSqlInstanceAdvancedDataSecurity PSCmdlet_Disable-AzSqlInstanceAdvancedDataSecurity PSCommand_Disable-AzSqlInstanceAdvancedDataSecurity PSCmdlet_Get-AzSqlInstanceAdvancedDataSecurityPolicy PSCommand_Get-AzSqlInstanceAdvancedDataSecurityPolicy PSCmdlet_Get-AzSqlInstanceDatabaseGeoBackup PSCommand_Get-AzSqlInstanceDatabaseGeoBackup PSCmdlet_Get-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy PSCommand_Get-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy PSCmdlet_Set-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy PSCommand_Set-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy PSCmdlet_Get-AzSqlDeletedInstanceDatabaseBackup PSCommand_Get-AzSqlDeletedInstanceDatabaseBackup PSCmdlet_Update-AzSqlInstanceVulnerabilityAssessmentSetting PSCommand_Update-AzSqlInstanceVulnerabilityAssessmentSetting PSCmdlet_Get-AzSqlInstanceVulnerabilityAssessmentSetting PSCommand_Get-AzSqlInstanceVulnerabilityAssessmentSetting PSCmdlet_Clear-AzSqlInstanceVulnerabilityAssessmentSetting PSCommand_Clear-AzSqlInstanceVulnerabilityAssessmentSetting PSCmdlet_Update-AzSqlServerVulnerabilityAssessmentSetting PSCommand_Update-AzSqlServerVulnerabilityAssessmentSetting PSCmdlet_Get-AzSqlServerVulnerabilityAssessmentSetting PSCommand_Get-AzSqlServerVulnerabilityAssessmentSetting PSCmdlet_Clear-AzSqlServerVulnerabilityAssessmentSetting PSCommand_Clear-AzSqlServerVulnerabilityAssessmentSetting PSCmdlet_Get-AzSqlDatabaseSensitivityClassification PSCommand_Get-AzSqlDatabaseSensitivityClassification PSCmdlet_Get-AzSqlInstanceDatabaseSensitivityClassification PSCommand_Get-AzSqlInstanceDatabaseSensitivityClassification PSCmdlet_Set-AzSqlDatabaseSensitivityClassification PSCommand_Set-AzSqlDatabaseSensitivityClassification PSCmdlet_Set-AzSqlInstanceDatabaseSensitivityClassification PSCommand_Set-AzSqlInstanceDatabaseSensitivityClassification PSCmdlet_Remove-AzSqlDatabaseSensitivityClassification PSCommand_Remove-AzSqlDatabaseSensitivityClassification PSCmdlet_Remove-AzSqlInstanceDatabaseSensitivityClassification PSCommand_Remove-AzSqlInstanceDatabaseSensitivityClassification PSCmdlet_Get-AzSqlDatabaseSensitivityRecommendation PSCommand_Get-AzSqlDatabaseSensitivityRecommendation PSCmdlet_Get-AzSqlInstanceDatabaseSensitivityRecommendation PSCommand_Get-AzSqlInstanceDatabaseSensitivityRecommendation PSCmdlet_Get-AzSqlVirtualCluster PSCommand_Get-AzSqlVirtualCluster PSCmdlet_Remove-AzSqlVirtualCluster PSCommand_Remove-AzSqlVirtualCluster PSCmdlet_Enable-AzSqlServerAdvancedDataSecurity PSCommand_Enable-AzSqlServerAdvancedDataSecurity PSCmdlet_Disable-AzSqlServerAdvancedDataSecurity PSCommand_Disable-AzSqlServerAdvancedDataSecurity PSCmdlet_Get-AzSqlServerAdvancedDataSecurityPolicy PSCommand_Get-AzSqlServerAdvancedDataSecurityPolicy PSCmdlet_Get-AzSqlDatabaseInstanceFailoverGroup PSCommand_Get-AzSqlDatabaseInstanceFailoverGroup PSCmdlet_New-AzSqlDatabaseInstanceFailoverGroup PSCommand_New-AzSqlDatabaseInstanceFailoverGroup PSCmdlet_Remove-AzSqlDatabaseInstanceFailoverGroup PSCommand_Remove-AzSqlDatabaseInstanceFailoverGroup PSCmdlet_Set-AzSqlDatabaseInstanceFailoverGroup PSCommand_Set-AzSqlDatabaseInstanceFailoverGroup PSCmdlet_Switch-AzSqlDatabaseInstanceFailoverGroup PSCommand_Switch-AzSqlDatabaseInstanceFailoverGroup PSCmdlet_Get-AzSqlServerAdvancedThreatProtectionSetting PSCommand_Get-AzSqlServerAdvancedThreatProtectionSetting PSCmdlet_Clear-AzSqlServerAdvancedThreatProtectionSetting PSCommand_Clear-AzSqlServerAdvancedThreatProtectionSetting PSCmdlet_Update-AzSqlServerAdvancedThreatProtectionSetting PSCommand_Update-AzSqlServerAdvancedThreatProtectionSetting PSCmdlet_Get-AzSqlDatabaseAdvancedThreatProtectionSetting PSCommand_Get-AzSqlDatabaseAdvancedThreatProtectionSetting PSCmdlet_Update-AzSqlDatabaseAdvancedThreatProtectionSetting PSCommand_Update-AzSqlDatabaseAdvancedThreatProtectionSetting PSCmdlet_Clear-AzSqlDatabaseAdvancedThreatProtectionSetting PSCommand_Clear-AzSqlDatabaseAdvancedThreatProtectionSetting PSCmdlet_Add-AzSqlInstanceKeyVaultKey PSCommand_Add-AzSqlInstanceKeyVaultKey PSCmdlet_Get-AzSqlInstanceKeyVaultKey PSCommand_Get-AzSqlInstanceKeyVaultKey PSCmdlet_Remove-AzSqlInstanceKeyVaultKey PSCommand_Remove-AzSqlInstanceKeyVaultKey PSCmdlet_Get-AzSqlInstanceTransparentDataEncryptionProtector PSCommand_Get-AzSqlInstanceTransparentDataEncryptionProtector PSCmdlet_Set-AzSqlInstanceTransparentDataEncryptionProtector PSCommand_Set-AzSqlInstanceTransparentDataEncryptionProtector PSCmdlet_Get-AzSqlServerAudit PSCommand_Get-AzSqlServerAudit PSCmdlet_Get-AzSqlDatabaseAudit PSCommand_Get-AzSqlDatabaseAudit PSCmdlet_Set-AzSqlServerAudit PSCommand_Set-AzSqlServerAudit PSCmdlet_Set-AzSqlDatabaseAudit PSCommand_Set-AzSqlDatabaseAudit PSCmdlet_Get-AzSqlServerMSSupportAudit PSCommand_Get-AzSqlServerMSSupportAudit PSCmdlet_Set-AzSqlServerMSSupportAudit PSCommand_Set-AzSqlServerMSSupportAudit PSCmdlet_Remove-AzSqlServerMSSupportAudit PSCommand_Remove-AzSqlServerMSSupportAudit PSCmdlet_Get-AzSqlInstanceActiveDirectoryAdministrator PSCommand_Get-AzSqlInstanceActiveDirectoryAdministrator PSCmdlet_Remove-AzSqlInstanceActiveDirectoryAdministrator PSCommand_Remove-AzSqlInstanceActiveDirectoryAdministrator PSCmdlet_Set-AzSqlInstanceActiveDirectoryAdministrator PSCommand_Set-AzSqlInstanceActiveDirectoryAdministrator PSCmdlet_Remove-AzSqlServerAudit PSCommand_Remove-AzSqlServerAudit PSCmdlet_Remove-AzSqlDatabaseAudit PSCommand_Remove-AzSqlDatabaseAudit PSCmdlet_Get-AzSqlInstancePool PSCommand_Get-AzSqlInstancePool PSCmdlet_Set-AzSqlInstancePool PSCommand_Set-AzSqlInstancePool PSCmdlet_New-AzSqlInstancePool PSCommand_New-AzSqlInstancePool PSCmdlet_Remove-AzSqlInstancePool PSCommand_Remove-AzSqlInstancePool PSCmdlet_Get-AzSqlInstancePoolUsage PSCommand_Get-AzSqlInstancePoolUsage PSCmdlet_Invoke-AzSqlDatabaseFailover PSCommand_Invoke-AzSqlDatabaseFailover PSCmdlet_Invoke-AzSqlElasticPoolFailover PSCommand_Invoke-AzSqlElasticPoolFailover PSCmdlet_New-AzSqlElasticJobAgent PSCommand_New-AzSqlElasticJobAgent PSCmdlet_Remove-AzSqlElasticJobAgent PSCommand_Remove-AzSqlElasticJobAgent PSCmdlet_Get-AzSqlElasticJobAgent PSCommand_Get-AzSqlElasticJobAgent PSCmdlet_Set-AzSqlElasticJobAgent PSCommand_Set-AzSqlElasticJobAgent PSCmdlet_New-AzSqlElasticJobCredential PSCommand_New-AzSqlElasticJobCredential PSCmdlet_Get-AzSqlElasticJobCredential PSCommand_Get-AzSqlElasticJobCredential PSCmdlet_Set-AzSqlElasticJobCredential PSCommand_Set-AzSqlElasticJobCredential PSCmdlet_Remove-AzSqlElasticJobCredential PSCommand_Remove-AzSqlElasticJobCredential PSCmdlet_New-AzSqlElasticJobTargetGroup PSCommand_New-AzSqlElasticJobTargetGroup PSCmdlet_Get-AzSqlElasticJobTargetGroup PSCommand_Get-AzSqlElasticJobTargetGroup PSCmdlet_Remove-AzSqlElasticJobTargetGroup PSCommand_Remove-AzSqlElasticJobTargetGroup PSCmdlet_Add-AzSqlElasticJobTarget PSCommand_Add-AzSqlElasticJobTarget PSCmdlet_Remove-AzSqlElasticJobTarget PSCommand_Remove-AzSqlElasticJobTarget PSCmdlet_New-AzSqlElasticJob PSCommand_New-AzSqlElasticJob PSCmdlet_Get-AzSqlElasticJob PSCommand_Get-AzSqlElasticJob PSCmdlet_Set-AzSqlElasticJob PSCommand_Set-AzSqlElasticJob PSCmdlet_Remove-AzSqlElasticJob PSCommand_Remove-AzSqlElasticJob PSCmdlet_Add-AzSqlElasticJobStep PSCommand_Add-AzSqlElasticJobStep PSCmdlet_Get-AzSqlElasticJobStep PSCommand_Get-AzSqlElasticJobStep PSCmdlet_Remove-AzSqlElasticJobStep PSCommand_Remove-AzSqlElasticJobStep PSCmdlet_Set-AzSqlElasticJobStep PSCommand_Set-AzSqlElasticJobStep PSCmdlet_Start-AzSqlElasticJob PSCommand_Start-AzSqlElasticJob PSCmdlet_Stop-AzSqlElasticJob PSCommand_Stop-AzSqlElasticJob PSCmdlet_Get-AzSqlElasticJobExecution PSCommand_Get-AzSqlElasticJobExecution PSCmdlet_Get-AzSqlElasticJobStepExecution PSCommand_Get-AzSqlElasticJobStepExecution PSCmdlet_Get-AzSqlElasticJobTargetExecution PSCommand_Get-AzSqlElasticJobTargetExecution PSCmdlet_Enable-AzSqlDatabaseSensitivityRecommendation PSCommand_Enable-AzSqlDatabaseSensitivityRecommendation PSCmdlet_Disable-AzSqlDatabaseSensitivityRecommendation PSCommand_Disable-AzSqlDatabaseSensitivityRecommendation PSCmdlet_Enable-AzSqlInstanceDatabaseSensitivityRecommendation PSCommand_Enable-AzSqlInstanceDatabaseSensitivityRecommendation PSCmdlet_Disable-AzSqlInstanceDatabaseSensitivityRecommendation PSCommand_Disable-AzSqlInstanceDatabaseSensitivityRecommendation PSCmdlet_Get-AzSqlInstanceDatabaseLongTermRetentionBackup PSCommand_Get-AzSqlInstanceDatabaseLongTermRetentionBackup PSCmdlet_Remove-AzSqlInstanceDatabaseLongTermRetentionBackup PSCommand_Remove-AzSqlInstanceDatabaseLongTermRetentionBackup PSCmdlet_Get-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy PSCommand_Get-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy PSCmdlet_Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy PSCommand_Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy PSCmdlet_Disable-AzSqlServerActiveDirectoryOnlyAuthentication PSCommand_Disable-AzSqlServerActiveDirectoryOnlyAuthentication PSCmdlet_Invoke-AzSqlInstanceFailover PSCommand_Invoke-AzSqlInstanceFailover PSCmdlet_Enable-AzSqlServerActiveDirectoryOnlyAuthentication PSCommand_Enable-AzSqlServerActiveDirectoryOnlyAuthentication PSCmdlet_Get-AzSqlServerActiveDirectoryOnlyAuthentication PSCommand_Get-AzSqlServerActiveDirectoryOnlyAuthentication PSCmdlet_Start-AzSqlInstanceDatabaseLogReplay PSCommand_Start-AzSqlInstanceDatabaseLogReplay PSCmdlet_Complete-AzSqlInstanceDatabaseLogReplay PSCommand_Complete-AzSqlInstanceDatabaseLogReplay PSCmdlet_Stop-AzSqlInstanceDatabaseLogReplay PSCommand_Stop-AzSqlInstanceDatabaseLogReplay PSCmdlet_Get-AzSqlInstanceDatabaseLogReplay PSCommand_Get-AzSqlInstanceDatabaseLogReplay PSCmdlet_Disable-AzSqlInstanceActiveDirectoryOnlyAuthentication PSCommand_Disable-AzSqlInstanceActiveDirectoryOnlyAuthentication PSCmdlet_Enable-AzSqlInstanceActiveDirectoryOnlyAuthentication PSCommand_Enable-AzSqlInstanceActiveDirectoryOnlyAuthentication PSCmdlet_Get-AzSqlInstanceActiveDirectoryOnlyAuthentication PSCommand_Get-AzSqlInstanceActiveDirectoryOnlyAuthentication PSCmdlet_Get-AzSqlServerTrustGroup PSCommand_Get-AzSqlServerTrustGroup PSCmdlet_New-AzSqlServerTrustGroup PSCommand_New-AzSqlServerTrustGroup PSCmdlet_Remove-AzSqlServerTrustGroup PSCommand_Remove-AzSqlServerTrustGroup PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2021-04-14T17:47:00Z</S>
+          <S N="NormalizedVersion">2.17.1</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.Sql.nuspec|Az.Sql.psd1|Az.Sql.psm1|Microsoft.Azure.Management.Sql.dll|Microsoft.Azure.PowerShell.Cmdlets.Sql.deps.json|Microsoft.Azure.PowerShell.Cmdlets.Sql.dll|Microsoft.Azure.PowerShell.Cmdlets.Sql.dll-Help.xml|Microsoft.Azure.PowerShell.Cmdlets.Sql.LegacySdk.deps.json|Microsoft.Azure.PowerShell.Cmdlets.Sql.LegacySdk.dll|Sql.format.ps1xml|Sql.types.ps1xml</S>
+          <S N="GUID">f088f4ab-1b59-4836-a6e0-4e14d15800c6</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\admin-taylor\Documents\PowerShell\Modules\Az.Sql\2.17.1</S>
+    </MS>
+  </Obj>
+</Objs>

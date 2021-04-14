@@ -1,0 +1,1504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-AzRecoveryServicesBackupProperty</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>AzRecoveryServicesBackupProperty</command:noun>
+      <maml:description>
+        <maml:para>Gets Backup properties.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-AzRecoveryServicesBackupProperty cmdlet gets backup properties for a Recovery Services vault.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-AzRecoveryServicesBackupProperty</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+          <maml:name>DefaultProfile</maml:name>
+          <maml:description>
+            <maml:para>The credentials, account, tenant, and subscription used for communication with azure.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>Vault</maml:name>
+          <maml:description>
+            <maml:para>Specifies the name of the vault. The vault must be an AzureRmRecoveryServicesVault object.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.RecoveryServices.ARSVault</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.RecoveryServices.ARSVault</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+        <maml:name>DefaultProfile</maml:name>
+        <maml:description>
+          <maml:para>The credentials, account, tenant, and subscription used for communication with azure.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>Vault</maml:name>
+        <maml:description>
+          <maml:para>Specifies the name of the vault. The vault must be an AzureRmRecoveryServicesVault object.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.RecoveryServices.ARSVault</command:parameterValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.RecoveryServices.ARSVault</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.RecoveryServices.ARSVault</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.RecoveryServices.ASRVaultBackupProperties</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzRecoveryServicesBackupProperty -Vault $vault</dev:code>
+        <dev:remarks>
+          <maml:para>Get the backup vault property for vault.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://docs.microsoft.com/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupproperty</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-AzRecoveryServicesVault</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>AzRecoveryServicesVault</command:noun>
+      <maml:description>
+        <maml:para>Gets a list of Recovery Services vaults.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-AzRecoveryServicesVault cmdlet gets a list of Recovery Services vaults in the current subscription.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-AzRecoveryServicesVault</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>ResourceGroupName</maml:name>
+          <maml:description>
+            <maml:para>Specifies the name of the Azure resource group from which to retrieve the specified Recovery Services object.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>Name</maml:name>
+          <maml:description>
+            <maml:para>Specifies the name of the vault to query for.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+          <maml:name>DefaultProfile</maml:name>
+          <maml:description>
+            <maml:para>The credentials, account, tenant, and subscription used for communication with azure.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Tag</maml:name>
+          <maml:description>
+            <maml:para>Specifies the Tags to query for</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.Collections.Hashtable</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Collections.Hashtable</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Get-AzRecoveryServicesVault</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>ResourceGroupName</maml:name>
+          <maml:description>
+            <maml:para>Specifies the name of the Azure resource group from which to retrieve the specified Recovery Services object.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>Name</maml:name>
+          <maml:description>
+            <maml:para>Specifies the name of the vault to query for.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+          <maml:name>DefaultProfile</maml:name>
+          <maml:description>
+            <maml:para>The credentials, account, tenant, and subscription used for communication with azure.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>TagName</maml:name>
+          <maml:description>
+            <maml:para>Specifies the Key of the Tag to query for</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>TagValue</maml:name>
+          <maml:description>
+            <maml:para>Specifies the Value of the Tag to query for</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+        <maml:name>DefaultProfile</maml:name>
+        <maml:description>
+          <maml:para>The credentials, account, tenant, and subscription used for communication with azure.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>Name</maml:name>
+        <maml:description>
+          <maml:para>Specifies the name of the vault to query for.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>ResourceGroupName</maml:name>
+        <maml:description>
+          <maml:para>Specifies the name of the Azure resource group from which to retrieve the specified Recovery Services object.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Tag</maml:name>
+        <maml:description>
+          <maml:para>Specifies the Tags to query for</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Collections.Hashtable</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Collections.Hashtable</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>TagName</maml:name>
+        <maml:description>
+          <maml:para>Specifies the Key of the Tag to query for</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>TagValue</maml:name>
+        <maml:description>
+          <maml:para>Specifies the Value of the Tag to query for</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.RecoveryServices.ARSVault</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>Get-AzRecoveryServicesVault in old version of Az.RecoveryServices(&lt;=2.10.0) cannot work with Az.Accounts(&gt;=1.8.1) because of incorrect assembly reference. The module Az.RecoveryServices needs to be upgraded to 2.11.0 or newer if you are using the latest Az or Az.Accounts.</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzRecoveryServicesVault</dev:code>
+        <dev:remarks>
+          <maml:para>Get the list of vault in selected subscription.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup"</dev:code>
+        <dev:remarks>
+          <maml:para>Get the list of vault in resource group in selected subscription.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
+PS C:\&gt; $vault.Identity | fl
+
+PrincipalId : XXXXXXXX-XXXX-XXXX
+TenantId    : XXXXXXXX-XXXX-XXXX
+Type        : SystemAssigned</dev:code>
+        <dev:remarks>
+          <maml:para>The first cmdlet gets the vault in resource group with given name. Then we access the MSI information from the vault.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://docs.microsoft.com/powershell/module/az.recoveryservices/get-azrecoveryservicesvault</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzRecoveryServicesVaultSettingsFile</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>New-AzRecoveryServicesVault</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzRecoveryServicesVault</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-AzRecoveryServicesVaultSettingsFile</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>AzRecoveryServicesVaultSettingsFile</command:noun>
+      <maml:description>
+        <maml:para>Gets the Azure Site Recovery vault settings file.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-AzRecoveryServicesVaultSettingsFile cmdlet gets the settings file for an Azure Site Recovery vault.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-AzRecoveryServicesVaultSettingsFile</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+          <maml:name>Vault</maml:name>
+          <maml:description>
+            <maml:para>Specifies the Azure Site Recovery vault object.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.RecoveryServices.ARSVault</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.RecoveryServices.ARSVault</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>Path</maml:name>
+          <maml:description>
+            <maml:para>Specifies the path to the Azure Site Recovery vault settings file. You can download this file from the Azure Site Recovery vault portal and store it locally.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Backup</maml:name>
+          <maml:description>
+            <maml:para>Indicates the vault credentials file is applicable to Azure Backup.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Certificate</maml:name>
+          <maml:description>
+            <maml:para>{{Fill Certificate Description}}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+          <maml:name>DefaultProfile</maml:name>
+          <maml:description>
+            <maml:para>The credentials, account, tenant, and subscription used for communication with azure.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Get-AzRecoveryServicesVaultSettingsFile</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+          <maml:name>Vault</maml:name>
+          <maml:description>
+            <maml:para>Specifies the Azure Site Recovery vault object.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.RecoveryServices.ARSVault</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.RecoveryServices.ARSVault</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>Path</maml:name>
+          <maml:description>
+            <maml:para>Specifies the path to the Azure Site Recovery vault settings file. You can download this file from the Azure Site Recovery vault portal and store it locally.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Certificate</maml:name>
+          <maml:description>
+            <maml:para>{{Fill Certificate Description}}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+          <maml:name>DefaultProfile</maml:name>
+          <maml:description>
+            <maml:para>The credentials, account, tenant, and subscription used for communication with azure.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>SiteFriendlyName</maml:name>
+          <maml:description>
+            <maml:para>Specifies the site friendly name. Use this parameter if you are downloading the vault credentials for a Hyper-V site.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>SiteIdentifier</maml:name>
+          <maml:description>
+            <maml:para>Specifies the site identifier. Use this parameter if you are downloading the vault credentials for a Hyper-V site.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>SiteRecovery</maml:name>
+          <maml:description>
+            <maml:para>Indicates the vault credentials file is applicable to Azure Site Recovery.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Get-AzRecoveryServicesVaultSettingsFile</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+          <maml:name>Vault</maml:name>
+          <maml:description>
+            <maml:para>Specifies the Azure Site Recovery vault object.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.RecoveryServices.ARSVault</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.RecoveryServices.ARSVault</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>Path</maml:name>
+          <maml:description>
+            <maml:para>Specifies the path to the Azure Site Recovery vault settings file. You can download this file from the Azure Site Recovery vault portal and store it locally.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Certificate</maml:name>
+          <maml:description>
+            <maml:para>{{Fill Certificate Description}}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+          <maml:name>DefaultProfile</maml:name>
+          <maml:description>
+            <maml:para>The credentials, account, tenant, and subscription used for communication with azure.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>SiteRecovery</maml:name>
+          <maml:description>
+            <maml:para>Indicates the vault credentials file is applicable to Azure Site Recovery.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Backup</maml:name>
+        <maml:description>
+          <maml:para>Indicates the vault credentials file is applicable to Azure Backup.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Certificate</maml:name>
+        <maml:description>
+          <maml:para>{{Fill Certificate Description}}</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+        <maml:name>DefaultProfile</maml:name>
+        <maml:description>
+          <maml:para>The credentials, account, tenant, and subscription used for communication with azure.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>Path</maml:name>
+        <maml:description>
+          <maml:para>Specifies the path to the Azure Site Recovery vault settings file. You can download this file from the Azure Site Recovery vault portal and store it locally.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>SiteFriendlyName</maml:name>
+        <maml:description>
+          <maml:para>Specifies the site friendly name. Use this parameter if you are downloading the vault credentials for a Hyper-V site.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>SiteIdentifier</maml:name>
+        <maml:description>
+          <maml:para>Specifies the site identifier. Use this parameter if you are downloading the vault credentials for a Hyper-V site.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>SiteRecovery</maml:name>
+        <maml:description>
+          <maml:para>Indicates the vault credentials file is applicable to Azure Site Recovery.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
+        <maml:name>Vault</maml:name>
+        <maml:description>
+          <maml:para>Specifies the Azure Site Recovery vault object.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.RecoveryServices.ARSVault</command:parameterValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.RecoveryServices.ARSVault</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.RecoveryServices.ARSVault</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.RecoveryServices.VaultSettingsFilePath</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>Example 1: Register a Windows Server or DPM machine for Azure Backup</maml:title>
+        <dev:code>PS C:\&gt; $Vault01 = Get-AzRecoveryServicesVault -Name "TestVault"
+PS C:\&gt; $CredsPath = "C:\Downloads"
+PS C:\&gt; $Credsfilename = Get-AzRecoveryServicesVaultSettingsFile -Backup -Vault $Vault01 -Path $CredsPath</dev:code>
+        <dev:remarks>
+          <maml:para>The first command gets the vault named TestVault, and then stores it in the $Vault01 variable. The second command sets the $CredsPath variable to C:\Downloads. The last command gets the vault credentials file for $Vault01 using the credentials in $CredsPath for Azure Backup.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; $Credsfilename = Get-AzRecoveryServicesVaultSettingsFile -SiteIdentifier -Vault $Vault01</dev:code>
+        <dev:remarks>
+          <maml:para>The command gets the vault credentials file for $Vault01 of vault type siteRecovery.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>Example 3: Register a Windows Server or DPM machine for Azure Backup</maml:title>
+        <dev:code>PS C:\&gt; $Credsfilename = Get-AzRecoveryServicesVaultSettingsFile -SiteIdentifier -Vault $Vault01</dev:code>
+        <dev:remarks>
+          <maml:para>The command gets the vault credentials file for $Vault01.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://docs.microsoft.com/powershell/module/az.recoveryservices/get-azrecoveryservicesvaultsettingsfile</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzRecoveryServicesVault</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>New-AzRecoveryServicesVault</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzRecoveryServicesVault</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-AzRecoveryServicesVault</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>AzRecoveryServicesVault</command:noun>
+      <maml:description>
+        <maml:para>Creates a new Recovery Services vault.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The New-AzRecoveryServicesVault cmdlet creates a new Recovery Services vault.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-AzRecoveryServicesVault</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+          <maml:name>DefaultProfile</maml:name>
+          <maml:description>
+            <maml:para>The credentials, account, tenant, and subscription used for communication with azure.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Location</maml:name>
+          <maml:description>
+            <maml:para>Specifies the name of the geographic location of the vault.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Name</maml:name>
+          <maml:description>
+            <maml:para>Specifies the name of the vault to create.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ResourceGroupName</maml:name>
+          <maml:description>
+            <maml:para>Specifies the name of the Azure resource group in which to create or from which to retrieve the specified Recovery Services object.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Tag</maml:name>
+          <maml:description>
+            <maml:para>Specifies the Tags to add to the Recovery Services Vault</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.Collections.Hashtable</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Collections.Hashtable</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+          <maml:name>Confirm</maml:name>
+          <maml:description>
+            <maml:para>Prompts you for confirmation before running the cmdlet.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:description>
+            <maml:para>Shows what would happen if the cmdlet runs. The cmdlet is not run.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+        <maml:name>DefaultProfile</maml:name>
+        <maml:description>
+          <maml:para>The credentials, account, tenant, and subscription used for communication with azure.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Location</maml:name>
+        <maml:description>
+          <maml:para>Specifies the name of the geographic location of the vault.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Name</maml:name>
+        <maml:description>
+          <maml:para>Specifies the name of the vault to create.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ResourceGroupName</maml:name>
+        <maml:description>
+          <maml:para>Specifies the name of the Azure resource group in which to create or from which to retrieve the specified Recovery Services object.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Tag</maml:name>
+        <maml:description>
+          <maml:para>Specifies the Tags to add to the Recovery Services Vault</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Collections.Hashtable</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Collections.Hashtable</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+        <maml:name>Confirm</maml:name>
+        <maml:description>
+          <maml:para>Prompts you for confirmation before running the cmdlet.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
+        <maml:description>
+          <maml:para>Shows what would happen if the cmdlet runs. The cmdlet is not run.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.RecoveryServices.ARSVault</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; New-AzRecoveryServicesVault -Name "vaultName" -ResourceGroupName "rg" -Location "eastasia"</dev:code>
+        <dev:remarks>
+          <maml:para>Create recovery service vault in resource group and given location.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://docs.microsoft.com/powershell/module/az.recoveryservices/new-azrecoveryservicesvault</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzRecoveryServicesVault</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzRecoveryServicesVaultSettingsFile</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-AzRecoveryServicesVault</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Remove-AzRecoveryServicesVault</command:name>
+      <command:verb>Remove</command:verb>
+      <command:noun>AzRecoveryServicesVault</command:noun>
+      <maml:description>
+        <maml:para>Deletes a Recovery Services vault.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Remove-AzRecoveryServicesVault cmdlet deletes a Recovery Services vault.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Remove-AzRecoveryServicesVault</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+          <maml:name>DefaultProfile</maml:name>
+          <maml:description>
+            <maml:para>The credentials, account, tenant, and subscription used for communication with azure.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>Vault</maml:name>
+          <maml:description>
+            <maml:para>Specifies an Azure Site Recovery vault object.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.RecoveryServices.ARSVault</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.RecoveryServices.ARSVault</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+          <maml:name>Confirm</maml:name>
+          <maml:description>
+            <maml:para>Prompts you for confirmation before running the cmdlet.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:description>
+            <maml:para>Shows what would happen if the cmdlet runs. The cmdlet is not run.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+        <maml:name>DefaultProfile</maml:name>
+        <maml:description>
+          <maml:para>The credentials, account, tenant, and subscription used for communication with azure.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>Vault</maml:name>
+        <maml:description>
+          <maml:para>Specifies an Azure Site Recovery vault object.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.RecoveryServices.ARSVault</command:parameterValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.RecoveryServices.ARSVault</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+        <maml:name>Confirm</maml:name>
+        <maml:description>
+          <maml:para>Prompts you for confirmation before running the cmdlet.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
+        <maml:description>
+          <maml:para>Shows what would happen if the cmdlet runs. The cmdlet is not run.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.RecoveryServices.ARSVault</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.RecoveryServices.VaultOperationOutput</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Remove-AzRecoveryServicesVault -Vault $vault</dev:code>
+        <dev:remarks>
+          <maml:para>Deletes a Recovery Services vault.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://docs.microsoft.com/powershell/module/az.recoveryservices/remove-azrecoveryservicesvault</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzRecoveryServicesVault</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzRecoveryServicesVaultSettingsFile</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>New-AzRecoveryServicesVault</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Set-AzRecoveryServicesBackupProperty</command:name>
+      <command:verb>Set</command:verb>
+      <command:noun>AzRecoveryServicesBackupProperty</command:noun>
+      <maml:description>
+        <maml:para>Sets the properties for backup management.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Set-AzRecoveryServicesBackupProperty cmdlet sets backup storage properties for a Recovery Services vault.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Set-AzRecoveryServicesBackupProperty</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>BackupStorageRedundancy</maml:name>
+          <maml:description>
+            <maml:para>Specifies the backup storage redundancy type.</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">GeoRedundant</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">ZoneRedundant</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">LocallyRedundant</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">System.Nullable`1[Microsoft.Azure.Commands.RecoveryServices.AzureRmRecoveryServicesBackupStorageRedundancyType]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Nullable`1[Microsoft.Azure.Commands.RecoveryServices.AzureRmRecoveryServicesBackupStorageRedundancyType]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+          <maml:name>DefaultProfile</maml:name>
+          <maml:description>
+            <maml:para>The credentials, account, tenant, and subscription used for communication with azure.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>Vault</maml:name>
+          <maml:description>
+            <maml:para>Specifies the name of the vault. The vault must be an AzureRmRecoveryServicesVault object.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.RecoveryServices.ARSVault</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.RecoveryServices.ARSVault</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+          <maml:name>Confirm</maml:name>
+          <maml:description>
+            <maml:para>Prompts you for confirmation before running the cmdlet.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:description>
+            <maml:para>Shows what would happen if the cmdlet runs.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>BackupStorageRedundancy</maml:name>
+        <maml:description>
+          <maml:para>Specifies the backup storage redundancy type.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Nullable`1[Microsoft.Azure.Commands.RecoveryServices.AzureRmRecoveryServicesBackupStorageRedundancyType]</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Nullable`1[Microsoft.Azure.Commands.RecoveryServices.AzureRmRecoveryServicesBackupStorageRedundancyType]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+        <maml:name>DefaultProfile</maml:name>
+        <maml:description>
+          <maml:para>The credentials, account, tenant, and subscription used for communication with azure.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>Vault</maml:name>
+        <maml:description>
+          <maml:para>Specifies the name of the vault. The vault must be an AzureRmRecoveryServicesVault object.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.RecoveryServices.ARSVault</command:parameterValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.RecoveryServices.ARSVault</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+        <maml:name>Confirm</maml:name>
+        <maml:description>
+          <maml:para>Prompts you for confirmation before running the cmdlet.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
+        <maml:description>
+          <maml:para>Shows what would happen if the cmdlet runs.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.RecoveryServices.ARSVault</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Void</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>------- Example 1: Set GeoRedundant storage for a vault -------</maml:title>
+        <dev:code>PS C:\&gt; $Vault01 = Get-AzRecoveryServicesVault -Name "TestVault"
+PS C:\&gt; Set-AzRecoveryServicesBackupProperty -Vault $Vault01 -BackupStorageRedundancy GeoRedundant</dev:code>
+        <dev:remarks>
+          <maml:para>The first command gets the vault named TestVault, and then stores it in the $Vault01 variable. The second command sets the backup storage redundancy for $Vault01 to GeoRedundant.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://docs.microsoft.com/powershell/module/az.recoveryservices/set-azrecoveryservicesbackupproperty</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzRecoveryServicesBackupProperty</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-AzRecoveryServicesVault</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Set-AzRecoveryServicesVaultContext</command:name>
+      <command:verb>Set</command:verb>
+      <command:noun>AzRecoveryServicesVaultContext</command:noun>
+      <maml:description>
+        <maml:para>Sets vault context.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Set-AzRecoveryServicesVaultContext cmdlet sets the vault context for Azure Site Recovery services.</maml:para>
+      <maml:para>Warning: This cmdlet is being deprecated in a future breaking change release. There will be no replacement for it. Please use the -VaultId parameter in all Recovery Services commands going forward.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Set-AzRecoveryServicesVaultContext</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+          <maml:name>DefaultProfile</maml:name>
+          <maml:description>
+            <maml:para>The credentials, account, tenant, and subscription used for communication with azure.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>Vault</maml:name>
+          <maml:description>
+            <maml:para>Specifies the name of the vault. The vault must be an AzureRmRecoveryServicesVault object.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.RecoveryServices.ARSVault</command:parameterValue>
+          <dev:type>
+            <maml:name>Microsoft.Azure.Commands.RecoveryServices.ARSVault</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="AzContext, AzureRmContext, AzureCredential">
+        <maml:name>DefaultProfile</maml:name>
+        <maml:description>
+          <maml:para>The credentials, account, tenant, and subscription used for communication with azure.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</command:parameterValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>Vault</maml:name>
+        <maml:description>
+          <maml:para>Specifies the name of the vault. The vault must be an AzureRmRecoveryServicesVault object.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Microsoft.Azure.Commands.RecoveryServices.ARSVault</command:parameterValue>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.RecoveryServices.ARSVault</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>Microsoft.Azure.Commands.RecoveryServices.ARSVault</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Void</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
+PS C:\&gt; Set-AzRecoveryServicesVaultContext -Vault $vault</dev:code>
+        <dev:remarks>
+          <maml:para>Sets vault context.</maml:para>
+<maml:para></maml:para>
+<maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://docs.microsoft.com/powershell/module/az.recoveryservices/set-azrecoveryservicesvaultcontext</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+</helpItems>
