@@ -28,6 +28,88 @@ function Convert-Size {
     }
     if ($Display) { return "$([Math]::Round($value,$Precision,[MidPointRounding]::AwayFromZero)) $To" } else { return [Math]::Round($value, $Precision, [MidPointRounding]::AwayFromZero) }
 }
+function Get-PSRegistry {
+    [cmdletbinding()]
+    param([alias('Path')][string[]] $RegistryPath,
+        [string[]] $ComputerName = $Env:COMPUTERNAME)
+    $RootKeyDictionary = @{HKEY_CLASSES_ROOT = 2147483648
+        HKCR                                 = 2147483648
+        HKEY_CURRENT_USER                    = 2147483649
+        HKCU                                 = 2147483649
+        HKEY_LOCAL_MACHINE                   = 2147483650
+        HKLM                                 = 2147483650
+        HKEY_USERS                           = 2147483651
+        HKU                                  = 2147483651
+        HKEY_CURRENT_CONFIG                  = 2147483653
+        HKCC                                 = 2147483653
+        HKEY_DYN_DATA                        = 2147483654
+        HKDD                                 = 2147483654
+    }
+    $TypesDictionary = @{'1' = 'GetStringValue'
+        '2'                  = 'GetExpandedStringValue'
+        '3'                  = 'GetBinaryValue'
+        '4'                  = 'GetDWORDValue'
+        '7'                  = 'GetMultiStringValue'
+        '11'                 = 'GetQWORDValue'
+    }
+    $Dictionary = @{'HKCR:' = 'HKEY_CLASSES_ROOT'
+        'HKCU:'             = 'HKEY_CURRENT_USER'
+        'HKLM:'             = 'HKEY_LOCAL_MACHINE'
+        'HKU:'              = 'HKEY_USERS'
+        'HKCC:'             = 'HKEY_CURRENT_CONFIG'
+        'HKDD:'             = 'HKEY_DYN_DATA'
+    }
+    [uint32] $RootKey = $null
+    [Array] $Computers = Get-ComputerSplit -ComputerName $ComputerName
+    foreach ($Registry in $RegistryPath) {
+        If ($Registry -like '*:*') {
+            foreach ($Key in $Dictionary.Keys) {
+                if ($Registry.StartsWith($Key)) {
+                    $Registry = $Registry -replace $Key, $Dictionary[$Key]
+                    break
+                }
+            }
+        }
+        for ($ComputerSplit = 0; $ComputerSplit -lt $Computers.Count; $ComputerSplit++) {
+            if ($Computers[$ComputerSplit].Count -gt 0) {
+                $Arguments = foreach ($_ in $RootKeyDictionary.Keys) {
+                    if ($Registry.StartsWith($_)) {
+                        $RootKey = [uint32] $RootKeyDictionary[$_]
+                        @{hDefKey       = [uint32] $RootKeyDictionary[$_]
+                            sSubKeyName = $Registry.substring($_.Length + 1)
+                        }
+                        break
+                    }
+                }
+                if ($ComputerSplit -eq 0) {
+                    $Output2 = Invoke-CimMethod -Namespace root\cimv2 -ClassName StdRegProv -MethodName EnumValues -Arguments $Arguments -Verbose:$false
+                    $OutputKeys = Invoke-CimMethod -Namespace root\cimv2 -ClassName StdRegProv -MethodName EnumKey -Arguments $Arguments -Verbose:$false
+                } else {
+                    $Output2 = Invoke-CimMethod -Namespace root\cimv2 -ClassName StdRegProv -MethodName EnumValues -Arguments $Arguments -ComputerName $Computers[$ComputerSplit] -Verbose:$false
+                    $OutputKeys = Invoke-CimMethod -Namespace root\cimv2 -ClassName StdRegProv -MethodName EnumKey -ComputerName $Computers[$ComputerSplit] -Arguments $Arguments -Verbose:$false
+                }
+                foreach ($Entry in $Output2) {
+                    $RegistryOutput = [ordered] @{}
+                    if ($Entry.ReturnValue -ne 0) { $RegistryOutput['PSError'] = $true } else {
+                        $RegistryOutput['PSError'] = $false
+                        $Types = $Entry.Types
+                        $Names = $Entry.sNames
+                        for ($i = 0; $i -lt $Names.Count; $i++) {
+                            $Arguments['sValueName'] = $Names[$i]
+                            $MethodName = $TypesDictionary["$($Types[$i])"]
+                            if ($ComputerSplit -eq 0) { $Values = Invoke-CimMethod -Namespace root\cimv2 -ClassName StdRegProv -MethodName $MethodName -Arguments $Arguments -Verbose:$false } else { $Values = Invoke-CimMethod -Namespace root\cimv2 -ClassName StdRegProv -MethodName $MethodName -Arguments $Arguments -ComputerName $Entry.PSComputerName -Verbose:$false }
+                            if ($null -ne $Values.sValue) { if ($Names[$i]) { $RegistryOutput[$Names[$i]] = $Values.sValue } else { $RegistryOutput['DefaultKey'] = $Values.sValue } } elseif ($null -ne $Values.uValue) { if ($Names[$i]) { $RegistryOutput[$Names[$i]] = $Values.uValue } else { $RegistryOutput['DefaultKey'] = $Values.sValue } }
+                        }
+                    }
+                    if (-not $RegistryOutput['PSComputerName']) { if ($ComputerSplit -eq 0) { $RegistryOutput['PSComputerName'] = $ENV:COMPUTERNAME } else { $RegistryOutput['PSComputerName'] = $Entry.PSComputerName } } else { if ($ComputerSplit -eq 0) { $RegistryOutput['ComputerName'] = $ENV:COMPUTERNAME } else { $RegistryOutput['ComputerName'] = $Entry.PSComputerName } }
+                    if (-not $RegistryOutput['PSSubKeys']) { $RegistryOutput['PSSubKeys'] = $OutputKeys.sNames } else { $RegistryOutput['SubKeys'] = $OutputKeys.sNames }
+                    $RegistryOutput['PSPath'] = $Registry
+                    [PSCustomObject] $RegistryOutput
+                }
+            }
+        }
+    }
+}
 function Get-WinADForestControllers {
     [alias('Get-WinADDomainControllers')]
     <#
@@ -75,7 +157,7 @@ function Get-WinADForestControllers {
     $Servers = foreach ($D in $Domain) {
         try {
             $LocalServer = Get-ADDomainController -Discover -DomainName $D -ErrorAction Stop
-            $DC = Get-ADDomainController -Server $LocalServer -Filter * -ErrorAction Stop
+            $DC = Get-ADDomainController -Server $LocalServer.HostName[0] -Filter * -ErrorAction Stop
             foreach ($S in $DC) {
                 $Server = [ordered] @{Domain = $D
                     HostName                 = $S.HostName
@@ -131,6 +213,61 @@ function New-Runspace {
     $RunspacePool = [RunspaceFactory]::CreateRunspacePool($minRunspaces, $maxRunspaces)
     $RunspacePool.Open()
     return $RunspacePool
+}
+function Set-PSRegistry {
+    [cmdletbinding()]
+    param([string[]] $ComputerName = $Env:COMPUTERNAME,
+        [Parameter(Mandatory)][string] $RegistryPath,
+        [Parameter(Mandatory)][ValidateSet('REG_SZ', 'REG_EXPAND_SZ', 'REG_BINARY', 'REG_DWORD', 'REG_MULTI_SZ', 'REG_QWORD')][string] $Type,
+        [Parameter(Mandatory)][string] $Key,
+        [Parameter(Mandatory)][object] $Value)
+    [Array] $ComputersSplit = Get-ComputerSplit -ComputerName $ComputerName
+    [uint32] $RootKey = $null
+    $RootKeyDictionary = @{HKEY_CLASSES_ROOT = 2147483648
+        HKCR                                 = 2147483648
+        HKEY_CURRENT_USER                    = 2147483649
+        HKCU                                 = 2147483649
+        HKEY_LOCAL_MACHINE                   = 2147483650
+        HKLM                                 = 2147483650
+        HKEY_USERS                           = 2147483651
+        HKU                                  = 2147483651
+        HKEY_CURRENT_CONFIG                  = 2147483653
+        HKCC                                 = 2147483653
+        HKEY_DYN_DATA                        = 2147483654
+        HKDD                                 = 2147483654
+    }
+    $TypesDictionary = @{'REG_SZ' = 'SetStringValue'
+        'REG_EXPAND_SZ'           = 'SetExpandedStringValue'
+        'REG_BINARY'              = 'SetBinaryValue'
+        'REG_DWORD'               = 'SetDWORDValue'
+        'REG_MULTI_SZ'            = 'SetMultiStringValue'
+        'REG_QWORD'               = 'SetQWORDValue'
+    }
+    $MethodName = $TypesDictionary["$($Type)"]
+    $Arguments = foreach ($_ in $RootKeyDictionary.Keys) {
+        if ($RegistryPath.StartsWith($_)) {
+            $RootKey = [uint32] $RootKeyDictionary[$_]
+            $RegistryValue = @{hDefKey = [uint32] $RootKeyDictionary[$_]
+                sSubKeyName            = $RegistryPath.substring($_.Length + 1)
+                sValueName             = $Key
+            }
+            if ($Type -in ('REG_SZ', 'REG_EXPAND_SZ', 'REG_MULTI_SZ')) { $RegistryValue['sValue'] = [string] $Value } elseif ($Type -in ('REG_DWORD', 'REG_QWORD')) { $RegistryValue['uValue'] = [uint32] $Value } elseif ($Type -in ('REG_BINARY')) { $RegistryValue['uValue'] = [uint8] $Value }
+            $RegistryValue
+            break
+        }
+    }
+    foreach ($Computer in $ComputersSplit[0]) {
+        try {
+            $ReturnValues = Invoke-CimMethod -Namespace root\cimv2 -ClassName StdRegProv -MethodName $MethodName -Arguments $Arguments -ErrorAction Stop -Verbose:$false
+            if ($ReturnValues.ReturnValue -ne 0) { Write-Warning "Set-PSRegistry - Setting registry to $RegistryPath on $Computer may have failed. Please verify." }
+        } catch { Write-Warning "Set-PSRegistry - Setting registry to $RegistryPath on $Computer have failed. Error: $($_.Exception.Message)" }
+    }
+    foreach ($Computer in $ComputersSplit[1]) {
+        try {
+            $ReturnValues = Invoke-CimMethod -Namespace root\cimv2 -ClassName StdRegProv -MethodName $MethodName -Arguments $Arguments -ComputerName $Computer -ErrorAction Stop -Verbose:$false
+            if ($ReturnValues.ReturnValue -ne 0) { Write-Warning "Set-PSRegistry - Setting registry to $RegistryPath on $Computer may have failed. Please verify." }
+        } catch { Write-Warning "Set-PSRegistry - Setting registry to $RegistryPath on $Computer have failed. Error: $($_.Exception.Message)" }
+    }
 }
 function Split-Array {
     [CmdletBinding()]
@@ -223,12 +360,24 @@ function Stop-TimeLog {
     param ([Parameter(ValueFromPipeline = $true)][System.Diagnostics.Stopwatch] $Time,
         [ValidateSet('OneLiner', 'Array')][string] $Option = 'OneLiner',
         [switch] $Continue)
-    Begin { }
+    Begin {}
     Process { if ($Option -eq 'Array') { $TimeToExecute = "$($Time.Elapsed.Days) days", "$($Time.Elapsed.Hours) hours", "$($Time.Elapsed.Minutes) minutes", "$($Time.Elapsed.Seconds) seconds", "$($Time.Elapsed.Milliseconds) milliseconds" } else { $TimeToExecute = "$($Time.Elapsed.Days) days, $($Time.Elapsed.Hours) hours, $($Time.Elapsed.Minutes) minutes, $($Time.Elapsed.Seconds) seconds, $($Time.Elapsed.Milliseconds) milliseconds" } }
     End {
         if (-not $Continue) { $Time.Stop() }
         return $TimeToExecute
     }
+}
+function Get-ComputerSplit {
+    [CmdletBinding()]
+    param([string[]] $ComputerName)
+    if ($null -eq $ComputerName) { $ComputerName = $Env:COMPUTERNAME }
+    try { $LocalComputerDNSName = [System.Net.Dns]::GetHostByName($Env:COMPUTERNAME).HostName } catch { $LocalComputerDNSName = $Env:COMPUTERNAME }
+    $ComputersLocal = $null
+    [Array] $Computers = foreach ($_ in $ComputerName) {
+        if ($_ -eq '' -or $null -eq $_) { $_ = $Env:COMPUTERNAME }
+        if ($_ -ne $Env:COMPUTERNAME -and $_ -ne $LocalComputerDNSName) { $_ } else { $ComputersLocal = $_ }
+    }
+    , @($ComputersLocal, $Computers)
 }
 Add-Type -TypeDefinition @"
 using System;
@@ -363,9 +512,6 @@ $Script:ScriptBlock = { Param ([string]$Comp,
         SubjectUserName of john.doe or a TargetUserName of jane.doe then pass
         the following
 
-        .PARAMETER XPathOnly
-        This is switch. If used only XPATH filter is returned. Otherwise full XML.
-
         (@{'SubjectUserName'='john.doe'},@{'TargetUserName'='jane.doe'})
         .EXAMPLE
         Get-EventsFilter -ID 4663 -NamedDataFilter @{'SubjectUserName'='john.doe'} -LogName 'ForwardedEvents'
@@ -461,8 +607,11 @@ $Script:ScriptBlock = { Param ([string]$Comp,
             $NamedDataExcludeFilter,
             [String[]]
             $ExcludeID,
-            [Parameter(Mandatory = $true)][String]
-            $LogName)
+            [String]
+            $LogName,
+            [String]
+            $Path,
+            [switch] $XPathOnly)
         Function Join-XPathFilter {
             Param
             ([Parameter(Mandatory = $True,
@@ -494,12 +643,15 @@ $Script:ScriptBlock = { Param ([string]$Comp,
                 $ForEachFormatString,
                 [String]
                 $FinalizeFormatString,
+                [ValidateSet("and", "or", IgnoreCase = $False)]
+                [String]
+                $Logic = 'or',
                 [switch]$NoParenthesis)
             $filter = ''
             ForEach ($item in $Items) {
                 $options = @{'NewFilter' = ($ForEachFormatString -f $item)
                     'ExistingFilter'     = $filter
-                    'Logic'              = 'or'
+                    'Logic'              = $logic
                     'NoParenthesis'      = $NoParenthesis
                 }
                 $filter = Join-XPathFilter @options
@@ -602,8 +754,8 @@ $Script:ScriptBlock = { Param ([string]$Comp,
                                     If ($item[$key]) {
                                         $options = @{'Items'       = $item[$key]
                                             'NoParenthesis'        = $true
-                                            'ForEachFormatString'  = "'{0}'"
-                                            'FinalizeFormatString' = "Data[@Name='$key'] = {0}"
+                                            'ForEachFormatString'  = "Data[@Name='$key'] = '{0}'"
+                                            'FinalizeFormatString' = "{0}"
                                         }
                                         Initialize-XPathFilter @options
                                     } Else { "Data[@Name='$key']" }
@@ -624,8 +776,9 @@ $Script:ScriptBlock = { Param ([string]$Comp,
                                     If ($item[$key]) {
                                         $options = @{'Items'       = $item[$key]
                                             'NoParenthesis'        = $true
-                                            'ForEachFormatString'  = "'{0}'"
-                                            'FinalizeFormatString' = "Data[@Name='$key'] != {0}"
+                                            'ForEachFormatString'  = "Data[@Name='$key'] != '{0}'"
+                                            'FinalizeFormatString' = "{0}"
+                                            'Logic'                = 'and'
                                         }
                                         Initialize-XPathFilter @options
                                     } Else { "Data[@Name='$key']" }
@@ -640,16 +793,30 @@ $Script:ScriptBlock = { Param ([string]$Comp,
             }
             $filter = Join-XPathFilter -ExistingFilter $filter -NewFilter (Initialize-XPathFilter @options)
         }
-        $FilterXML = @"
-        <QueryList>
-            <Query Id="0" Path="$LogName">
-                <Select Path="$LogName">
-                        $filter
-                </Select>
-            </Query>
-        </QueryList>
+        if ($XPathOnly) { return $Filter } else {
+            if ($Path -ne '') {
+                $FilterXML = @"
+                    <QueryList>
+                        <Query Id="0" Path="file://$Path">
+                            <Select>
+                                    $filter
+                            </Select>
+                        </Query>
+                    </QueryList>
 "@
-        return $FilterXML
+            } else {
+                $FilterXML = @"
+                    <QueryList>
+                        <Query Id="0" Path="$LogName">
+                            <Select Path="$LogName">
+                                    $filter
+                            </Select>
+                        </Query>
+                    </QueryList>
+"@
+            }
+            return $FilterXML
+        }
     }
     function Get-EventsInternal () {
         [CmdLetBinding()]
@@ -712,12 +879,12 @@ $Script:ScriptBlock = { Param ([string]$Comp,
             $EventTopNodes = Get-Member -InputObject $eventXML.Event -MemberType Properties | Where-Object { $_.Name -ne 'System' -and $_.Name -ne 'xmlns' }
             foreach ($EventTopNode in $EventTopNodes) {
                 $TopNode = $EventTopNode.Name
-                $EventSubsSubs = Get-Member -InputObject $eventXML.Event.$TopNode -Membertype Properties
+                $EventSubsSubs = Get-Member -InputObject $eventXML.Event.$TopNode -MemberType Properties
                 $h = 0
                 foreach ($EventSubSub in $EventSubsSubs) {
                     $SubNode = $EventSubSub.Name
                     if ($EventSubSub.Definition -like "System.Object*") {
-                        if (Get-Member -InputObject $eventXML.Event.$TopNode -name "$SubNode" -Membertype Properties) {
+                        if (Get-Member -InputObject $eventXML.Event.$TopNode -Name "$SubNode" -MemberType Properties) {
                             $SubSubNode = Get-Member -InputObject $eventXML.Event.$TopNode.$SubNode -MemberType Properties | Where-Object { $_.Name -ne 'xmlns' -and $_.Definition -like "string*" }
                             foreach ($Name in $SubSubNode.Name) {
                                 $fieldName = $Name
@@ -725,9 +892,9 @@ $Script:ScriptBlock = { Param ([string]$Comp,
                                 Add-Member -InputObject $Event -MemberType NoteProperty -Name $fieldName -Value $fieldValue -Force
                             }
                             For ($i = 0; $i -lt $eventXML.Event.$TopNode.$SubNode.Count; $i++) {
-                                if (Get-Member -InputObject $eventXML.Event.$TopNode.$SubNode[$i] -name "Name" -Membertype Properties) {
+                                if (Get-Member -InputObject $eventXML.Event.$TopNode.$SubNode[$i] -Name "Name" -MemberType Properties) {
                                     $fieldName = $eventXML.Event.$TopNode.$SubNode[$i].Name
-                                    if (Get-Member -InputObject $eventXML.Event.$TopNode.$SubNode[$i] -name "#text" -Membertype Properties) {
+                                    if (Get-Member -InputObject $eventXML.Event.$TopNode.$SubNode[$i] -Name "#text" -MemberType Properties) {
                                         $fieldValue = $eventXML.Event.$TopNode.$SubNode[$i]."#text"
                                         if ($fieldValue -eq "-".Trim()) { $fieldValue = $fieldValue -replace "-" }
                                     } else { $fieldValue = "" }
@@ -1011,7 +1178,7 @@ function Get-Events {
     $ParametersList = [System.Collections.Generic.List[Object]]::new()
     if ($ExtendedInput.Count -gt 0) {
         [Array] $Param = foreach ($EventEntry in $ExtendedInput) {
-            $EventFilter = @{ }
+            $EventFilter = @{}
             if ($EventEntry.Type -eq 'File') {
                 Write-Verbose "Get-Events - Preparing data to scan file $($EventEntry.Server)"
                 Add-ToHashTable -Hashtable $EventFilter -Key "Path" -Value $EventEntry.Server
@@ -1063,7 +1230,7 @@ function Get-Events {
         }
         if ($null -ne $Param) { $null = $ParametersList.AddRange($Param) }
     } else {
-        $EventFilter = @{ }
+        $EventFilter = @{}
         Add-ToHashTable -Hashtable $EventFilter -Key "LogName" -Value $LogName
         Add-ToHashTable -Hashtable $EventFilter -Key "ProviderName" -Value $ProviderName
         Add-ToHashTable -Hashtable $EventFilter -Key "Path" -Value $Path
@@ -1117,7 +1284,7 @@ function Get-Events {
         [Array] $AllEvents = foreach ($Parameter in $ParametersList) { Invoke-Command -ScriptBlock $Script:ScriptBlock -ArgumentList $Parameter.Comp, $Parameter.Credential, $Parameter.EventFilter, $Parameter.MaxEvents, $Parameter.Oldest, $Parameter.Verbose }
     } else {
         Write-Verbose 'Get-Events - Running query with parallel enabled...'
-        $RunspacePool = New-Runspace -MaxRunspaces $maxRunspaces -Verbose:$Verbose
+        $RunspacePool = New-Runspace -maxRunspaces $maxRunspaces -Verbose:$Verbose
         $Runspaces = foreach ($Parameter in $ParametersList) { Start-Runspace -ScriptBlock $Script:ScriptBlock -Parameters $Parameter -RunspacePool $RunspacePool -Verbose:$Verbose }
         [Array] $AllEvents = Stop-Runspace -Runspaces $Runspaces -FunctionName "Get-Events" -RunspacePool $RunspacePool -Verbose:$Verbose -ErrorAction SilentlyContinue -ErrorVariable +AllErrors -ExtendedOutput:$ExtendedOutput
     }
@@ -1281,6 +1448,33 @@ function Get-EventsFilter {
             </Select>
         </Query>
     </QueryList>
+
+    .EXAMPLE
+    Get-EventsFilter -LogName 'System' -id 7040 -NamedDataFilter @{ param4 = ('TrustedInstaller','BITS') }
+
+    Will return a XPath filter that will check the systemlog for events generated by these events
+
+    <QueryList>
+        <Query Id="0" Path="System">
+            <Select Path="System">
+                    (*[System[EventID=7040]]) and (*[EventData[Data[@Name='param4'] = 'TrustedInstaller' or Data[@Name='param4'] = 'BITS']])
+            </Select>
+        </Query>
+    </QueryList>
+
+
+    .EXAMPLE
+    Get-EventsFilter -LogName 'System' -id 7040 -NamedDataExcludeFilter  @{ param4 = ('TrustedInstaller','BITS') }
+
+    Will return a XPath filter that will check the systemlog for all events with ID 7040 (change starttype) except those two
+
+    <QueryList>
+        <Query Id="0" Path="System">
+            <Select Path="System">
+                    (*[System[EventID=7040]]) and (*[EventData[Data[@Name='param4'] != 'TrustedInstaller' and Data[@Name='param4'] != 'BITS']])
+            </Select>
+        </Query>
+    </QueryList>
     #>
     [CmdletBinding()]
     Param
@@ -1314,8 +1508,10 @@ function Get-EventsFilter {
         $NamedDataExcludeFilter,
         [String[]]
         $ExcludeID,
-        [Parameter(Mandatory = $true)][String]
+        [String]
         $LogName,
+        [String]
+        $Path,
         [switch] $XPathOnly)
     Function Join-XPathFilter {
         Param
@@ -1348,12 +1544,15 @@ function Get-EventsFilter {
             $ForEachFormatString,
             [String]
             $FinalizeFormatString,
+            [ValidateSet("and", "or", IgnoreCase = $False)]
+            [String]
+            $Logic = 'or',
             [switch]$NoParenthesis)
         $filter = ''
         ForEach ($item in $Items) {
             $options = @{'NewFilter' = ($ForEachFormatString -f $item)
                 'ExistingFilter'     = $filter
-                'Logic'              = 'or'
+                'Logic'              = $logic
                 'NoParenthesis'      = $NoParenthesis
             }
             $filter = Join-XPathFilter @options
@@ -1456,8 +1655,8 @@ function Get-EventsFilter {
                                 If ($item[$key]) {
                                     $options = @{'Items'       = $item[$key]
                                         'NoParenthesis'        = $true
-                                        'ForEachFormatString'  = "'{0}'"
-                                        'FinalizeFormatString' = "Data[@Name='$key'] = {0}"
+                                        'ForEachFormatString'  = "Data[@Name='$key'] = '{0}'"
+                                        'FinalizeFormatString' = "{0}"
                                     }
                                     Initialize-XPathFilter @options
                                 } Else { "Data[@Name='$key']" }
@@ -1478,8 +1677,9 @@ function Get-EventsFilter {
                                 If ($item[$key]) {
                                     $options = @{'Items'       = $item[$key]
                                         'NoParenthesis'        = $true
-                                        'ForEachFormatString'  = "'{0}'"
-                                        'FinalizeFormatString' = "Data[@Name='$key'] != {0}"
+                                        'ForEachFormatString'  = "Data[@Name='$key'] != '{0}'"
+                                        'FinalizeFormatString' = "{0}"
+                                        'Logic'                = 'and'
                                     }
                                     Initialize-XPathFilter @options
                                 } Else { "Data[@Name='$key']" }
@@ -1495,15 +1695,27 @@ function Get-EventsFilter {
         $filter = Join-XPathFilter -ExistingFilter $filter -NewFilter (Initialize-XPathFilter @options)
     }
     if ($XPathOnly) { return $Filter } else {
-        $FilterXML = @"
-    <QueryList>
-        <Query Id="0" Path="$LogName">
-            <Select Path="$LogName">
-                    $filter
-            </Select>
-        </Query>
-    </QueryList>
+        if ($Path -ne '') {
+            $FilterXML = @"
+                <QueryList>
+                    <Query Id="0" Path="file://$Path">
+                        <Select>
+                                $filter
+                        </Select>
+                    </Query>
+                </QueryList>
 "@
+        } else {
+            $FilterXML = @"
+                <QueryList>
+                    <Query Id="0" Path="$LogName">
+                        <Select Path="$LogName">
+                                $filter
+                        </Select>
+                    </Query>
+                </QueryList>
+"@
+        }
         return $FilterXML
     }
 }
@@ -1651,7 +1863,7 @@ function Get-EventsInformation {
     Write-Verbose "Get-EventsInformation - processing start"
     if ($PSCmdlet.MyInvocation.BoundParameters["Verbose"].IsPresent) { $Verbose = $true } else { $Verbose = $false }
     $Time = Start-TimeLog
-    $Pool = New-Runspace -MaxRunspaces $maxRunspaces -Verbose:$Verbose
+    $Pool = New-Runspace -maxRunspaces $maxRunspaces -Verbose:$Verbose
     if ($RunAgainstDC) {
         Write-Verbose 'Get-EventsInformation - scanning for domain controllers'
         $ForestInformation = Get-WinADForestControllers
@@ -1682,6 +1894,52 @@ function Get-EventsInformation {
     Write-Verbose -Message "Get-EventsInformation - processing end - $Elapsed"
     return $AllEvents
 }
+function Get-EventsSettings {
+    [cmdletBinding()]
+    param([string] $LogName,
+        [string] $ComputerName,
+        [int] $MaximumSize)
+    $Log = Get-PSRegistry -RegistryPath "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\$LogName" -ComputerName $ComputerName
+    if ($Log.PSError -eq $true) {
+        $Log = Get-PSRegistry -RegistryPath "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\$LogName" -ComputerName $ComputerName
+        $PSRegistryPath = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\$LogName"
+    } else { $PSRegistryPath = "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\$LogName" }
+    if ($Log.AutoBackupLogFiles -eq 1 -and $Log.Retention -eq 4294967295) { $EventAction = 'ArchiveTheLogWhenFullDoNotOverwrite' } elseif ($Log.AutoBackupLogFiles -eq 0 -and $Log.Retention -eq 4294967295) { $EventAction = 'DoNotOverwriteEventsClearLogManually' } else { $EventAction = 'OverwriteEventsAsNeededOldestFirst' }
+    if ($Log.RestrictGuestAccess -eq 1) { $RestrictGuestAccess = $true } else { $RestrictGuestAccess = $false }
+    $MaxSizeMB = Convert-Size -Value $Log.MaxSize -From Bytes -To MB -Precision 2
+    [PSCustomObject] @{PSError = $Log.PSError
+        PSRegistryPath         = $PSRegistryPath
+        MaxSizeMB              = $MaxSizeMB
+        EventAction            = $EventAction
+        RestrictGuestAccess    = $RestrictGuestAccess
+    }
+}
+function Set-EventsSettings {
+    [cmdletBinding()]
+    param([string] $LogName,
+        [string] $ComputerName,
+        [int] $MaximumSizeMB,
+        [ValidateSet('OverwriteEventsAsNeededOldestFirst', 'ArchiveTheLogWhenFullDoNotOverwrite', 'DoNotOverwriteEventsClearLogManually', 'None')][string] $EventAction)
+    if ($MaximumSizeMB) {
+        $MaxSize = $MaximumSizeMB * 1MB
+        $Log = Get-EventsSettings -LogName $LogName
+        if ($Log.PSError -eq $false) {
+            if ($MaximumSizeMB -ne 0) { Set-PSRegistry -RegistryPath $Log.PSRegistryPath -ComputerName $ComputerName -Key 'MaxSize' -Value $MaxSize -Type REG_DWORD }
+            if ($EventAction) {
+                if ($EventAction -eq 'ArchiveTheLogWhenFullDoNotOverwrite') {
+                    Set-PSRegistry -RegistryPath $Log.PSRegistryPath -ComputerName $ComputerName -Key 'AutoBackupLogFiles' -Value 1 -Type REG_DWORD
+                    Set-PSRegistry -RegistryPath $Log.PSRegistryPath -ComputerName $ComputerName -Key 'Retention' -Value 4294967295 -Type REG_DWORD
+                } elseif ($EventAction -eq 'DoNotOverwriteEventsClearLogManually') {
+                    Set-PSRegistry -RegistryPath $Log.PSRegistryPath -ComputerName $ComputerName -Key 'AutoBackupLogFiles' -Value 0 -Type REG_DWORD
+                    Set-PSRegistry -RegistryPath $Log.PSRegistryPath -ComputerName $ComputerName -Key 'Retention' -Value 4294967295 -Type REG_DWORD
+                } elseif ($EventAction -eq 'OverwriteEventsAsNeededOldestFirst') {
+                    Set-PSRegistry -RegistryPath $Log.PSRegistryPath -ComputerName $ComputerName -Key 'AutoBackupLogFiles' -Value 0 -Type REG_DWORD
+                    Set-PSRegistry -RegistryPath $Log.PSRegistryPath -ComputerName $ComputerName -Key 'Retention' -Value 0 -Type REG_DWORD
+                } else {}
+            }
+        }
+    }
+}
 function Write-Event {
     [alias('Write-WinEvent', 'Write-Events')]
     [cmdletBinding()]
@@ -1693,7 +1951,7 @@ function Write-Event {
         [Parameter(Mandatory)][alias('EventID')][int] $ID,
         [Parameter(Mandatory)][string] $Message,
         [Array] $AdditionalFields)
-    Begin { }
+    Begin {}
     Process {
         if (-not $Computer) {
             $SourceExists = Get-WinEvent -ListProvider $Source -ErrorAction SilentlyContinue
@@ -1717,4 +1975,4 @@ function Write-Event {
         }
     }
 }
-Export-ModuleMember -Function @('Get-Events', 'Get-EventsFilter', 'Get-EventsInformation', 'Write-Event') -Alias @('Write-Events', 'Write-WinEvent')
+Export-ModuleMember -Function @('Get-Events', 'Get-EventsFilter', 'Get-EventsInformation', 'Get-EventsSettings', 'Set-EventsSettings', 'Write-Event') -Alias @('Write-Events', 'Write-WinEvent')
