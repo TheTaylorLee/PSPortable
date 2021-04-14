@@ -27,6 +27,7 @@ function Get-Office365 {
 
     Write-Host "ExchangeOnline Module Functions"                                                             -ForegroundColor green
     Write-Host "Convert-MailboxToShared    ..Convert Disabled mailbox to a Shared Mailbox"                   -ForegroundColor cyan
+    Write-Host "Enable-MailboxAccess       ..Enables full access to a mailbox without a license"             -ForegroundColor cyan
     Write-Host "Get-AuthPolicy             ..Gets Exchange Online Auth Policy"                               -ForegroundColor cyan
     Write-Host "Get-Messagetrace           ..Gets an log of email messages"                                  -ForegroundColor cyan
     Write-Host "Get-MFAStatus              ..Gets Multifactor Settings for Msol Users"                       -ForegroundColor cyan

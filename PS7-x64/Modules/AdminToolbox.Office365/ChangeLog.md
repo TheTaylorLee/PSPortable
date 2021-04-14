@@ -24,3 +24,4 @@
 * **2.0.0.0** Updated Get-Office365 and modified the logical structure of the module
 * **2.0.0.1** Applied fix to get-vmdetails
 * **2.1.0.0** Added Functions Get-TenantDiagrams and Invoke-EXOSharedSession
+* **2.2.0.0** Added function Enable-MailboxAccess
