@@ -33,4 +33,12 @@ Get-Remoting                      ..Gets functions for Remoting
 Get-VMWareAutomate                ..Gets functions for VMWare
     "                                                                                                       -ForegroundColor cyan
     Write-Host " "
+
+    Write-Host "PSReadline"                                                      -ForegroundColor green
+Write-Host "
+F1                                ..Gets navigable help if at the end of a function
+F12                               ..Gets history in a gridview for repeating commands
+Tab                               ..Completes function or parameter
+"                                                                                                       -ForegroundColor cyan
+    Write-Host " "
 }

@@ -40,3 +40,4 @@
 * **4.0.8.0** Added function Reset-EndpointPassword
 * **4.1.0.0** Tested and marked Core compatbile
 * **4.2.0.0** Added Repair-DomainJoin, Disable-Cortana, and Get-MonitorSizes functions
+* **4.3.0.0** Added Get-RemoteDesktopLogins and Get-RebootEvents

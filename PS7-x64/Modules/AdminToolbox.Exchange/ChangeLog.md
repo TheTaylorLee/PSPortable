@@ -16,3 +16,4 @@
 * **1.4.0.1** Updated Get-Exchange with new commands
 * **1.4.0.2** Updated Connect-ExchangeServer help with more accurate help
 * **1.4.0.3** Updated help for Connect-ExchangeServer
+* **1.5.0.0** Added Function Get-MailboxDetails

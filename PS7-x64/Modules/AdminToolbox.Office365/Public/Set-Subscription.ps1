@@ -13,6 +13,7 @@ Function Set-Subscription {
 
     .LINK
     Get-AZContext
+    Set-ResourceGroup
     #>
 
     [CmdletBinding()]

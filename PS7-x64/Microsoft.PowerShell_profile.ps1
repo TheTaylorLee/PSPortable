@@ -1,18 +1,18 @@
 ﻿$ErrorActionPreference = 'SilentlyContinue'
 
 <#old prompt
-function prompt {
-    $location = Get-Location
-    Write-Host -NoNewline "$(HOSTNAME.EXE) "                  -ForegroundColor Green
-    Write-Host -NoNewline '~'                                 -ForegroundColor Yellow
-    Write-Host -NoNewline $(Get-Location).Path.Split('\')[-1] -ForegroundColor Cyan
-    Write-Host -NoNewline ">" -ForegroundColor Green
+    function prompt {
+        $location = Get-Location
+        Write-Host -NoNewline "$(HOSTNAME.EXE) "                  -ForegroundColor Green
+        Write-Host -NoNewline '~'                                 -ForegroundColor Yellow
+        Write-Host -NoNewline $(Get-Location).Path.Split('\')[-1] -ForegroundColor Cyan
+        Write-Host -NoNewline ">" -ForegroundColor Green
 
-    $Adminp = [bool](([System.Security.Principal.WindowsIdentity]::GetCurrent()).groups -match "S-1-5-32-544")
-    $host.UI.RawUI.WindowTitle = 'Admin is ' + "$Adminp" + ' - PSVersion ' + $host.version + " - $location"
+        $Adminp = [bool](([System.Security.Principal.WindowsIdentity]::GetCurrent()).groups -match "S-1-5-32-544")
+        $host.UI.RawUI.WindowTitle = 'Admin is ' + "$Adminp" + ' - PSVersion ' + $host.version + " - $location"
 
-    Return " "
-}
+        Return " "
+    }
 #>
 
 function prompt {
@@ -28,6 +28,8 @@ function prompt {
 
     Return " "
 }
+
+#-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <#Default
 Set-PSReadLineOption -BellStyle Audible
@@ -67,6 +69,53 @@ Function Set-PSReadlineIntellisenseOptions {
     }
 }
 Set-PSReadlineIntellisenseOptions
+
+Set-PSReadLineKeyHandler -Key F12 `
+    -BriefDescription History `
+    -LongDescription 'Show command history' `
+    -ScriptBlock {
+    $pattern = $null
+    [Microsoft.PowerShell.PSConsoleReadLine]::GetBufferState([ref]$pattern, [ref]$null)
+    if ($pattern) {
+        $pattern = [regex]::Escape($pattern)
+    }
+
+    $history = [System.Collections.ArrayList]@(
+        $last = ''
+        $lines = ''
+        foreach ($line in [System.IO.File]::ReadLines((Get-PSReadLineOption).HistorySavePath)) {
+            if ($line.EndsWith('`')) {
+                $line = $line.Substring(0, $line.Length - 1)
+                $lines = if ($lines) {
+                    "$lines`n$line"
+                }
+                else {
+                    $line
+                }
+                continue
+            }
+
+            if ($lines) {
+                $line = "$lines`n$line"
+                $lines = ''
+            }
+
+            if (($line -cne $last) -and (!$pattern -or ($line -match $pattern))) {
+                $last = $line
+                $line
+            }
+        }
+    )
+    $history.Reverse()
+
+    $command = $history | Out-GridView -Title 'Select a command to repeat' -PassThru
+    if ($command) {
+        [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
+        [Microsoft.PowerShell.PSConsoleReadLine]::Insert(($command -join "`n"))
+    }
+}
+
+#-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Function Set-WindowSize {
     #Specify Window Size, Buffer, and Histor Parameters
@@ -153,6 +202,5 @@ $Down = "$env:USERPROFILE\downloads"
 
 #Set starting directory to downloads
 Set-Location $Down
-
 
 $ErrorActionPreference = 'Continue'

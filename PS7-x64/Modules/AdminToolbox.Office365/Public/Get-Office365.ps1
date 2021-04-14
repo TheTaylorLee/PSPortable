@@ -5,6 +5,7 @@ function Get-Office365 {
     Write-Host "Office 365 Functions"                                                                        -ForegroundColor green
     Write-Host "Connect-Office365          ..Connects to Office 365 Module"                                  -ForegroundColor cyan
     Write-Host "Get-CRTReport              ..Gets a security report for Threat hunting. Credit: Crowdstrike" -ForegroundColor cyan
+    Write-Host "Invoke-EXOSharedSession    ..Invokes an environment to EXO and On-Prem modules same console" -ForegroundColor cyan
     Write-Host " "
 
     Write-Host "ADSync Module Functions"                                                                     -ForegroundColor green
@@ -13,6 +14,7 @@ function Get-Office365 {
     Write-Host " "
 
     Write-Host "Az Module Functions"                                                                         -ForegroundColor green
+    Write-Host "Get-TenantDiagrams         ..Gets and generates dependency Diagrams"                         -ForegroundColor cyan
     Write-Host "Get-VMDetails              ..Gets AzureVM details from multiple functions"                   -ForegroundColor cyan
     Write-Host "Invoke-PowerState          ..Invokes power state changes on VMs and can get their status"    -ForegroundColor cyan
     Write-Host "Set-Subscription           ..Sets the subscription/AZContext for subsequent functions"       -ForegroundColor cyan

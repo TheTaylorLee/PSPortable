@@ -23,23 +23,28 @@ Function Get-VMDetails {
 
     #Will produce IP info and hostname. Expand on this command to include more details
     $results = foreach ( $azVM in Get-AzVM | Select-Object * ) {
+        try {
+            $networkProfile = $azVm.NetworkProfile.NetworkInterfaces.id.Split("/") | Select-Object -Last 1
+            $IPconfig = Get-AzNetworkInterface -Name $networkProfile
+            $nsg = ($IPConfig).NetworkSecurityGroup.id
 
-        $networkProfile = $azVm.NetworkProfile.NetworkInterfaces.id.Split("/") | Select-Object -Last 1
-        $IPconfig = Get-AzNetworkInterface -Name $networkProfile
-        $nsg = ($IPConfig).NetworkSecurityGroup.id
-
-        [pscustomobject]@{
-            VMName               = $azVm.Name
-            ipaddress            = ($IPconfig).IpConfigurations.PrivateIpAddress
-            DNS                  = ($IPconfig).DnsSettings.AppliedDnsServers
-            MacAddress           = ($IPconfig).MacAddress
-            NetworkSecurityGroup = $nsg.split("/") | Select-Object -Last 1
-            ResourceGroup        = $azVM.ResourceGroupName
-            Location             = $azVM.Location
-            Tags                 = $azVM.Tags
-            Vmsize               = ($azVm | Select-Object hardwareprofile).HardwareProfile.vmsize
-            Type                 = $azVM.Type
+            [pscustomobject]@{
+                VMName               = $azVm.Name
+                ipaddress            = ($IPconfig).IpConfigurations.PrivateIpAddress
+                DNS                  = ($IPconfig).DnsSettings.AppliedDnsServers
+                MacAddress           = ($IPconfig).MacAddress
+                NetworkSecurityGroup = $nsg.split("/") | Select-Object -Last 1
+                ResourceGroup        = $azVM.ResourceGroupName
+                Location             = $azVM.Location
+                Tags                 = $azVM.Tags
+                Vmsize               = ($azVm | Select-Object hardwareprofile).HardwareProfile.vmsize
+                Type                 = $azVM.Type
+            }
         }
+        catch {
+            $_
+        }
+
     }
 
     $results

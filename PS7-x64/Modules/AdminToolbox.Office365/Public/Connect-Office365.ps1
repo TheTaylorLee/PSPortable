@@ -143,7 +143,7 @@ function Connect-Office365 {
     if ($ExchangeOnline) {
         #Exchange Online Module
         Write-Host "Connecting to Exchange Online Services" -BackgroundColor black -ForegroundColor green
-        Connect-EXOService
+        Connect-EXOPSSession
     }
 
     if ($ExchangeOnlinev2) {

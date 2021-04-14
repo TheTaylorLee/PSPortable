@@ -1,0 +1,159 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">PSGraph</S>
+      <Version N="Version">2.1.38.27</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Builds graphs using GraphViz</S>
+      <S N="Author">Kevin Marquette</S>
+      <S N="CompanyName">KevinMarquette</S>
+      <S N="Copyright">(c) 2018 Kevin Marquette. All rights reserved.</S>
+      <DT N="PublishedDate">2019-03-16T01:00:49-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2021-04-14T02:24:15.0367449-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/KevinMarquette/PSGraph/blob/master/LICENSE</URI>
+      <URI N="ProjectUri">https://github.com/KevinMarquette/PSGraph</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>graph</S>
+          <S>visualization</S>
+          <S>DSL</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Edge</S>
+                <S>Entity</S>
+                <S>Export-PSGraph</S>
+                <S>Graph</S>
+                <S>Inline</S>
+                <S>Install-GraphViz</S>
+                <S>Node</S>
+                <S>Rank</S>
+                <S>Record</S>
+                <S>Row</S>
+                <S>Set-NodeFormatScript</S>
+                <S>Show-PSGraph</S>
+                <S>SubGraph</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Edge</S>
+                <S>Entity</S>
+                <S>Export-PSGraph</S>
+                <S>Graph</S>
+                <S>Inline</S>
+                <S>Install-GraphViz</S>
+                <S>Node</S>
+                <S>Rank</S>
+                <S>Record</S>
+                <S>Row</S>
+                <S>Set-NodeFormatScript</S>
+                <S>Show-PSGraph</S>
+                <S>SubGraph</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">2.1.16 20180217_x000D__x000A_* add Record command_x000D__x000A_* add Row command_x000D__x000A_* add Entity command_x000D__x000A_* add Show-PSGraph command_x000D__x000A_* add key name case correction_x000D__x000A_* throws error when there are graphviz parse errors_x000D__x000A__x000D__x000A_1.2.0 20171022_x000D__x000A_* #53 add support for edges to and from a subgraph_x000D__x000A_* #55 subgraph name is now optional_x000D__x000A_* 56 remove extra blank lines in graph output_x000D__x000A__x000D__x000A_1.1.4 20171021_x000D__x000A_* #51 Updated build script_x000D__x000A__x000D__x000A_1.1.3 20171021_x000D__x000A_* #40 fixed positional attributes with Edge_x000D__x000A__x000D__x000A_1.1.1 20171021_x000D__x000A_* Added -ranked switch to node to auto create a rank_x000D__x000A__x000D__x000A_1.1.0 20171021_x000D__x000A_* Made graph name optional_x000D__x000A_* Added legacy layout engine names to export-psgraph</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2018 Kevin Marquette. All rights reserved.</S>
+          <S N="description">Builds graphs using GraphViz</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">2.1.16 20180217_x000D__x000A_* add Record command_x000D__x000A_* add Row command_x000D__x000A_* add Entity command_x000D__x000A_* add Show-PSGraph command_x000D__x000A_* add key name case correction_x000D__x000A_* throws error when there are graphviz parse errors_x000D__x000A__x000D__x000A_1.2.0 20171022_x000D__x000A_* #53 add support for edges to and from a subgraph_x000D__x000A_* #55 subgraph name is now optional_x000D__x000A_* 56 remove extra blank lines in graph output_x000D__x000A__x000D__x000A_1.1.4 20171021_x000D__x000A_* #51 Updated build script_x000D__x000A__x000D__x000A_1.1.3 20171021_x000D__x000A_* #40 fixed positional attributes with Edge_x000D__x000A__x000D__x000A_1.1.1 20171021_x000D__x000A_* Added -ranked switch to node to auto create a rank_x000D__x000A__x000D__x000A_1.1.0 20171021_x000D__x000A_* Made graph name optional_x000D__x000A_* Added legacy layout engine names to export-psgraph</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">7417</S>
+          <S N="downloadCount">12220</S>
+          <S N="packageSize">16063</S>
+          <S N="published">3/16/2019 1:00:49 AM -05:00</S>
+          <S N="created">3/16/2019 1:00:49 AM -05:00</S>
+          <S N="lastUpdated">4/14/2021 7:21:58 AM -05:00</S>
+          <S N="tags">graph visualization DSL PSModule PSFunction_Edge PSCommand_Edge PSFunction_Entity PSCommand_Entity PSFunction_Export-PSGraph PSCommand_Export-PSGraph PSFunction_Graph PSCommand_Graph PSFunction_Inline PSCommand_Inline PSFunction_Install-GraphViz PSCommand_Install-GraphViz PSFunction_Node PSCommand_Node PSFunction_Rank PSCommand_Rank PSFunction_Record PSCommand_Record PSFunction_Row PSCommand_Row PSFunction_Set-NodeFormatScript PSCommand_Set-NodeFormatScript PSFunction_Show-PSGraph PSCommand_Show-PSGraph PSFunction_SubGraph PSCommand_SubGraph PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2021-04-14T07:21:58Z</S>
+          <S N="NormalizedVersion">2.1.38.27</S>
+          <S N="Authors">Kevin Marquette</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">PSGraph.nuspec|LICENSE|PSGraph.psd1|PSGraph.psm1|Data\Aliases.json</S>
+          <S N="GUID">03a82298-c9af-48b5-b607-72988687759b</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\PSGraph\2.1.38.27</S>
+    </MS>
+  </Obj>
+</Objs>

@@ -134,3 +134,4 @@
 * **8.2.0.0**  Updated cmder settings
 * **8.2.0.0**  Updated cmder settings
 * **8.3.0.0**  Updated Start-Cmder startup to use a new icon file
+* **8.3.1.0**  Updated Get-info and dependencies

@@ -29,8 +29,6 @@ $computername = Get-Software
 
 .Link
 Uninstall-Application
-
-
 #>
 
     [OutputType('System.Software.Inventory')]
