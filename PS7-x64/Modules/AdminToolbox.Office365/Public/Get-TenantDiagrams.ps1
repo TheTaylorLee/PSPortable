@@ -20,6 +20,20 @@ function Get-TenantDiagrams {
         [Parameter(Mandatory = $false)][ValidateSet('left-to-right', 'top-to-bottom')][string] $Direction = 'left-to-right'
     )
 
+
+    # verify dependent modules are loaded and available
+    $DependentModules = 'PSGraph', 'az', 'AzViz'
+    $Installed = Import-Module $DependentModules -PassThru -ErrorAction SilentlyContinue | Where-Object { $_.name -In $DependentModules }
+    $Missing = $DependentModules | Where-Object { $_ -notin $Installed.name }
+    if ($Missing) {
+        Write-Verbose "[+] Module dependencies not found [$Missing]. Attempting to install."
+        $prompt = Read-Host "Do you want to install Missing Modules? (yes/no)"
+        if ($prompt) {
+            Install-Module $Missing -Force -AllowClobber -Confirm:$false -Scope CurrentUser
+            Import-Module $Missing
+        }
+    }
+
     $script:dateis = Get-Date -Format MM-dd-yyyy
 
     if ($OutputFormat -eq 'svg') {

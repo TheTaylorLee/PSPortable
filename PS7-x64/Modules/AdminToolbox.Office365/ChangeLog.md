@@ -25,3 +25,4 @@
 * **2.0.0.1** Applied fix to get-vmdetails
 * **2.1.0.0** Added Functions Get-TenantDiagrams and Invoke-EXOSharedSession
 * **2.2.0.0** Added function Enable-MailboxAccess
+* **2.2.1.0** Updated module dependencies so that the Module AzViz doesn't install Az modules.
