@@ -12,6 +12,8 @@ function Invoke-QWinSta {
     Invoke-QWinSta -Server name.domain.tld
 
     .Link
+    Get-TerminalSessions
+    Remove-TerminalSessions
     Invoke-RWinSta
     #>
 
