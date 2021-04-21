@@ -39,7 +39,11 @@ Function Deploy-PSPortableLight {
         Invoke-Unzip -zipfile "$env:ProgramData\PS7x64Light.zip" -outpath "$env:ProgramData"
         Rename-Item "$env:ProgramData\PSPortableLight-Main" "$env:ProgramData\PS7x64Light"
         Write-Host "[+] PSPortableLight Package unzipped to path $env:ProgramData\PS7x64Light" -ForegroundColor Green
-        Remove-Item "$env:ProgramData\PS7x64Light.zip" -Force
+        try {
+            Remove-Item "$env:ProgramData\PS7x64Light.zip" -Force
+        }
+        catch {
+        }
         Write-Host "[+] PSPortableLight Package zip file deleted" -ForegroundColor Green
 
         #Pin shortcut to taskbar
