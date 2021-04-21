@@ -30,8 +30,11 @@ Function Enable-MailboxAccess {
     add-mailboxpermission -Identity $MailboxIdentity -user $ReaderIdentity -AccessRights fullaccess -Confirm:$false -verbose
 
     Write-Host " "
-    Write-Warning "Allow time for the permitted access to take effect"
 
-    Write-Output "Access URL for the mailbox is https://outlook.office.com/mail/$MailboxIdentity/?offline=disabled"
+    Write-Host "Allow time for the permitted access to take effect" -ForegroundColor Yellow
+    Write-Host " "
+    Write-Host "Access URL for the mailbox listed below" -ForegroundColor Green
+    Write-Output "https://outlook.office.com/mail/$MailboxIdentity/?offline=disabled"
+    Write-Host " "
 
 }

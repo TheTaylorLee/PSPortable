@@ -14,3 +14,4 @@
 * **1.1.6.1** Updated start-replication to provide progress info
 * **1.2.0.0** Tested and marked Core compatbile
 * **1.3.0.0** Added function import-activedirectory
+* **1.3.1.0** Updates for output made to Get-UserReport

@@ -8,6 +8,8 @@ function Get-Info {
     Write-Host " "
     Write-Host "Admintoolbox Functions..."                                                                  -ForegroundColor green
     Write-Host "
+Deploy-PSPortable                 ..Deploys a Portable and Customized Powershell 7 environment
+Deploy-PSPortableLight            ..Deploys a Portable and Customized Powershell 7 environment with fewer modules
 Get-All                           ..Gets all module Functions
 Get-Full                          ..Gets full help for selected functions
 Get-ModuleAliases                 ..Gets aliases for AdminToolbox modules
@@ -35,7 +37,7 @@ Get-VMWareAutomate                ..Gets functions for VMWare
     Write-Host " "
 
     Write-Host "PSReadline"                                                      -ForegroundColor green
-Write-Host "
+    Write-Host "
 F1                                ..Gets navigable help if at the end of a function
 F12                               ..Gets history in a gridview for repeating commands
 Tab                               ..Completes function or parameter
