@@ -25,7 +25,7 @@ Function Deploy-PSPortableLight {
         }
 
         #Download new package as zip
-        Write-Host "[*] Downloading PSPortable Package" -ForegroundColor Yellow
+        Write-Host "[*] Downloading PSPortableLight Package" -ForegroundColor Yellow
         [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
         $url = "https://github.com/TheTaylorLee/PSPortableLight/archive/main.zip"
         $output = "$env:ProgramData\PS7x64Light.zip"
