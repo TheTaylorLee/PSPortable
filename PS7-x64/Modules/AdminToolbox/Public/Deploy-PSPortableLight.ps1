@@ -36,14 +36,14 @@ Function Deploy-PSPortableLight {
 
         #Unzip to path download package
         Write-Host "[*] Unzipping PSPortableLight Package" -ForegroundColor Yellow
-        Invoke-Unzip -zipfile "$env:ProgramData\PS7x64.zip" -outpath "$env:ProgramData"
-        Rename-Item "$env:ProgramData\PSPortable-master" "$env:ProgramData\PS7x64"
-        Write-Host "[+] PSPortableLight Package unzipped to path $env:ProgramData\PS7x64" -ForegroundColor Green
-        Remove-Item "$env:ProgramData\PS7x64.zip" -Force
+        Invoke-Unzip -zipfile "$env:ProgramData\PS7x64Light.zip" -outpath "$env:ProgramData"
+        Rename-Item "$env:ProgramData\PSPortableLight-Main" "$env:ProgramData\PS7x64Light"
+        Write-Host "[+] PSPortableLight Package unzipped to path $env:ProgramData\PS7x64Light" -ForegroundColor Green
+        Remove-Item "$env:ProgramData\PS7x64Light.zip" -Force
         Write-Host "[+] PSPortableLight Package zip file deleted" -ForegroundColor Green
 
         #Pin shortcut to taskbar
-        Invoke-Item "$env:ProgramData\PS7x64\PS7-x64\pwsh.exe.lnk"
+        Invoke-Item "$env:ProgramData\PS7x64Light\PS7-x64\pwsh.exe.lnk"
         Write-Host "[+] PSPortableLight Package launched" -ForegroundColor Green
         Write-Host " "
 
@@ -60,6 +60,6 @@ Function Deploy-PSPortableLight {
         }; Show-Statement
     }
     catch {
-        Write-Host $_.Exception.Message
+        $_.Exception.Message
     }
 }
