@@ -18,7 +18,7 @@ ModuleVersion = '8.4.1.0'
 CompatiblePSEditions = 'Desktop', 'Core'
 
 # ID used to uniquely identify this module
-GUID = '0c35f84f-10b0-4596-85de-003df9e754f2'
+GUID = '7e43df5d-291c-4c9e-ac24-f85e7715df65'
 
 # Author of this module
 Author = 'Taylor Lee'
@@ -83,7 +83,7 @@ RequiredModules = @(@{ModuleName = 'AdminToolbox.ActiveDirectory'; ModuleVersion
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
 FunctionsToExport = 'Get-All', 'Get-Info', 'Get-Full', 'Start-Application', 
                'Get-ModuleAliases', 'Invoke-Show', 'Open-AdminMMC', 'Start-Cmder', 
-               'Deploy-PSPortableLight', 'Deploy-PSPortable'
+               'Install-PSPortableLight', 'Install-PSPortable'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = '*'
