@@ -8,11 +8,11 @@ function Get-Info {
     Write-Host " "
     Write-Host "Admintoolbox Functions..."                                                                  -ForegroundColor green
     Write-Host "
-Deploy-PSPortable                 ..Deploys a Portable and Customized Powershell 7 environment
-Deploy-PSPortableLight            ..Deploys a Portable and Customized Powershell 7 environment with fewer modules
 Get-All                           ..Gets all module Functions
 Get-Full                          ..Gets full help for selected functions
 Get-ModuleAliases                 ..Gets aliases for AdminToolbox modules
+Install-PSPortable                ..Installs a Portable and Customized Powershell 7 environment
+Install-PSPortableLight           ..Installs a Portable and Customized Powershell 7 environment with fewer modules
 Invoke-Show                       ..Invokes a grid Gui for implementing show command
 Open-AdminMMC                     ..Opens Microsoft Management Console with multiple snap-ins loaded
 Start-Application                 ..Start an application from PowerShell with ease

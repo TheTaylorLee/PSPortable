@@ -4,6 +4,9 @@ function Invoke-Monitor {
     .DESCRIPTION
     Monitor a down service until it is reachable. Provides time elapsed for the monitor and an audible indication when the services is back online.
 
+    .Parameter Seconds
+    Specify Seconds between tests
+
     .Parameter Service
     Specify the service to monitor
 
@@ -24,12 +27,13 @@ function Invoke-Monitor {
     [CmdletBinding()]
     Param (
         [Parameter(Mandatory = $true)]$Service,
-        [Parameter(Mandatory = $true)]$Port
+        [Parameter(Mandatory = $true)]$Port,
+        [Parameter(Mandatory = $true)]$Seconds
     )
 
     #Defined variables for writing to host later
-    $Flip = Get-Emote -name DoubleFlip
-    $sunglasses = Get-Emote -name sunglasses
+    $Flip = Get-Emote -Name DoubleFlip
+    $sunglasses = Get-Emote -Name sunglasses
 
     #Start Stopwatch
     $stopwatch = [system.diagnostics.stopwatch]::StartNew()
@@ -47,8 +51,8 @@ function Invoke-Monitor {
         Write-Host " "
 
         #Test connection and Sleep
-        $condition = Test-NetConnection -ComputerName $Service -port $Port -InformationLevel Quiet -WarningAction 'SilentlyContinue'
-        Start-Sleep -Seconds 30
+        $condition = Test-NetConnection -ComputerName $Service -Port $Port -InformationLevel Quiet -WarningAction 'SilentlyContinue'
+        Start-Sleep -Seconds $seconds
     } until ($condition -like "True")
 
     #Reset the stopwatch

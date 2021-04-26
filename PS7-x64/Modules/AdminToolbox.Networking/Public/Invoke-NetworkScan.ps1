@@ -1,3 +1,5 @@
+#TODO Replace PSNmap commands with own functions. This is to remove reliance on PSNmap module
+#TODO Take Invoke-PSIPCalc and add it as a native function of the Admintoolbox.Networking module after replacing reliance on PSNmap
 function Invoke-NetworkScan {
     <#
     .Description
@@ -63,18 +65,18 @@ function Invoke-NetworkScan {
             else {
                 $Script:QuickScan = Invoke-PSnmap -ComputerName $CIDR -Port 21, 22, 23, 80, 443, 3389, 9100 -ScanOnPingFail -Dns -NoSummary -PortConnectTimeoutMs 500 -ThrottleLimit $Threads
             }
-        } #end if
+        }
 
         else {
             Return
-        } #end else
+        }
 
         #Get path to the OUI list
         $ModPath = Get-Module AdminToolbox.Networking
         $P1 = $ModPath.path
         $P2 = $p1 -replace ("AdminToolbox.Networking.psm1", "")
         $Script:ScanOUI = "$P2" + "support\ScanOUI.txt"
-    } #end of begin
+    }
 
     process {
         #Start a Foreach loop against CIDR Addresses
@@ -92,17 +94,16 @@ function Invoke-NetworkScan {
                 $Script:Neighbor = $null
             }
 
-            #Make API calls for OUI information on MAC Addresses
             $MAC = $Script:Neighbor.LinkLayerAddress
 
-            #Filter in only results that MAC API calls can or should be called on. Helps speed up the function.
+            #If block runs against scan results where Mac Addresses are present
             if ($null -ne $MAC -and $SkipMac -eq $false) {
                 #If Deepscan parameter is chosen
                 if ($DeepScan) {
-                    #Filter the port scan to return results for the currently enumerated IP from the CIDR Range foreach-object loop
+                    #Filter the port scan to return results for the currently enumerated subnet from where the network scan returned live network devices
                     $Scan = $Script:SlowScan | Where-Object { $_.Computername -eq $IP }
                     $Mac2 = $Mac.substring(0, 8)
-                    #Invoke Mac Lookup
+                    #Invoke Mac Lookup against a text file in the support folder of this module
                     $OUI1 = Get-Content $Script:ScanOUI | Where-Object { $_ -like "$mac2*" }
                     #Sometimes the MAC won't be Null, but it's not an actual MAC address. This try catch was quicker to implement then troubleshooting the cause.
                     try {
@@ -111,6 +112,7 @@ function Invoke-NetworkScan {
                     catch {
                         $OUI2 = $null
                     }
+
                     ForEach-Object {
                         #Take the enumerated CIDR IP results from the API call and Port scan. Output using a PSCustomObject
                         [pscustomobject]@{
@@ -137,7 +139,7 @@ function Invoke-NetworkScan {
                 }
                 #If Deepscan  parameter isn't chosen
                 else {
-                    #Filter the port scan to return results for the currently enumerated IP from the CIDR Range foreach-object loop
+                    #Filter the port scan to return results for the currently enumerated subnet from where the network scan returned live network devices
                     $Scan = $Script:QuickScan | Where-Object { $_.Computername -eq $IP }
                     #Invoke Mac Lookup
                     $Mac2 = $Mac.substring(0, 8)
@@ -166,11 +168,9 @@ function Invoke-NetworkScan {
                         }
                     } | Where-Object { ($null -ne $scan.'IP/DNS') -or ($null -ne $MAC) -or ($Scan.Ping -eq $true) -or ($Scan.'Port 22' -eq $true) -or ($Scan.'Port 23' -eq $true) -or ($Scan.'Port 25' -eq $true) -or ($Scan.'Port 53' -eq $true) -or ($Scan.'Port 67' -eq $true) -or ($Scan.'Port 80' -eq $true) -or ($Scan.'Port 139' -eq $true) -or ($Scan.'Port 389' -eq $true) -or ($Scan.'Port 443' -eq $true) -or ($Scan.'Port 445' -eq $true) -or ($Scan.'Port 902' -eq $true) -or ($Scan.'Port 3389' -eq $true) -or ($Scan.'Port 9100' -eq $true) }
                 }
-                #Start a short sleep to avoid exceeding the API call limit
-                #Start-Sleep -Milliseconds 1000
-            } #end of API Call if statement
+            }
 
-            #If MAC API calls aren't made this block is used to produce output
+            #If Mac is Null or Skipmac parameter is used
             else {
                 #If Deepscan  parameter is chosen
                 if ($DeepScan) {
@@ -217,7 +217,7 @@ function Invoke-NetworkScan {
                         'print(9100)' = $Scan.'Port 9100'
                     } | Where-Object { ($null -ne $scan.'IP/DNS') -or ($null -ne $MAC) -or ($Scan.Ping -eq $true) -or ($Scan.'Port 22' -eq $true) -or ($Scan.'Port 23' -eq $true) -or ($Scan.'Port 25' -eq $true) -or ($Scan.'Port 53' -eq $true) -or ($Scan.'Port 67' -eq $true) -or ($Scan.'Port 80' -eq $true) -or ($Scan.'Port 139' -eq $true) -or ($Scan.'Port 389' -eq $true) -or ($Scan.'Port 443' -eq $true) -or ($Scan.'Port 445' -eq $true) -or ($Scan.'Port 902' -eq $true) -or ($Scan.'Port 3389' -eq $true) -or ($Scan.'Port 9100' -eq $true) }
                 }
-            } #end of else for no deepscan
+            }
         }
     }
 

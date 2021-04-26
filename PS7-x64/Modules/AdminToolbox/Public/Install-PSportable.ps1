@@ -1,4 +1,4 @@
-Function Deploy-PSPortable {
+Function Install-PSPortable {
 
     <#
     .DESCRIPTION
@@ -7,10 +7,10 @@ Function Deploy-PSPortable {
     .EXAMPLE
     Downloads the PSPortable package, unzips it to programdata, and launces it.
 
-    Deploy-PSPortable
+    Install-PSPortable
 
     .LINK
-    Deploy-PSPortableLight
+    Install-PSPortableLight
     #>
 
     [CmdletBinding()]

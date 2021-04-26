@@ -137,3 +137,4 @@
 * **8.3.1.0**  Updated Get-info and dependencies
 * **8.3.2.0**  Updated module dependencies so that the Module AzViz doesn't install Az modules
 * **8.4.0.0**  Added Install-PSPortable and Install-PSPortableLight
+* **8.4.1.0**  Changed deploy-functions to use approved verbs
