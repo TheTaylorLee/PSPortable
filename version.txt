@@ -1,2 +1,2 @@
 #This file exists as a way to implement version checking when launching an outdated version of PSPortable
-1.0.0
+Version=1.0.0
