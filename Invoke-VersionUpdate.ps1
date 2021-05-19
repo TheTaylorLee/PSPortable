@@ -1,6 +1,6 @@
 #This Function is for use by the Packaged Microsoft Powershell Profile. It handles version upgrades when called.
 
-Function Deploy-PSPortable {
+Function Invoke-VersionUpdate {
 
     try {
         taskkill /im pwsh.exe /F
@@ -10,12 +10,11 @@ Function Deploy-PSPortable {
     catch {
     }
 
-    start-sleep -seconds 5
+    Start-Sleep -Seconds 5
 
     #Remove old package
-    if (Test-Path $env:ProgramData\PS7x64) {
-        Remove-Item $env:ProgramData\PS7x64 -Recurse -Force
-    }
+    #Remove this error action if having issues to potentionally find the problem
+    Remove-Item $env:ProgramData\PS7x64 -Recurse -Force -ErrorAction 'silentlycontinue'
 
     #Download new package as zip file
     Function Invoke-DLPSPortable {
@@ -58,10 +57,12 @@ Function Deploy-PSPortable {
     }
 
     Invoke-Unzip2 -zipfile "$env:ProgramData\PS7x64.zip" -outpath "$env:ProgramData"
-    Rename-Item "$env:ProgramData\PSPortable-master" "$env:ProgramData\PS7x64"
+    #Rename-Item "$env:ProgramData\PSPortable-master" "$env:ProgramData\PS7x64"
+    Robocopy.exe $env:ProgramData\PSPortable-master $env:ProgramData\PS7x64 /mir /COPY:DATSO /r:1 /w:1
     Remove-Item "$env:ProgramData\PS7x64.zip" -Force
+    Remove-Item "$env:ProgramData\PSPortable-master" -Force -Recurse
 
     #Pin shortcut to taskbar
     Invoke-Item "$env:ProgramData\PS7x64\PS7-x64\pwsh.exe.lnk"
-    exit
-}; Deploy-PSPortable
+    #exit
+}; Invoke-VersionUpdate

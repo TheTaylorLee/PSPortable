@@ -178,6 +178,30 @@ Set-WindowSize
 
 #-------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Function Invoke-VersionCheck {
+
+    $CurrentVersion = Get-Content "C:\ProgramData\PS7x64\version.txt"
+
+    $VersionCheck = (Invoke-WebRequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/version.txt -Headers @{"Cache-Control" = "no-cache" }).content | Select-String $CurrentVersion
+
+    if ($VersionCheck) {
+    }
+    else {
+        Write-Host " "
+        Write-Host "A new version of PSPortable has been detected" -ForegroundColor Green
+        Write-Warning "This will close all open sessions of ConEmu and pwsh.exe if run"
+        $query = Read-Host "Would you like to update now? (yes/no)"
+
+        if ($query -eq 'yes') {
+            Start-Process -FilePath powershell.exe -ArgumentList "-executionpolicy bypass", -noprofile, -NoLogo, "-File $env:ProgramData\PS7x64\Invoke-VersionUpdate.ps1"
+        }
+        else {
+        }
+    }
+}; Invoke-VersionCheck
+
+#-------------------------------------------------------------------------------------------------------------------------------------------------------
+
 #Imports the Exchange Online Module if exists
 $CreateEXOPSSession = (Get-ChildItem -Path $Env:LOCALAPPDATA\Apps\2.0* -Filter CreateExoPSSession.ps1 -Recurse -ErrorAction SilentlyContinue -Force | Select-Object -Last 1).DirectoryName
 Import-Module  "$CreateEXOPSSession\CreateExoPSSession.ps1" -Force
