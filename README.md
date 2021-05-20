@@ -7,6 +7,7 @@ Deploys a portable PowerShell package with often used modules.
   * Run the below function
 
 ```Powershell
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 (invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortable.ps1).content | Invoke-Expression
 ```
 
