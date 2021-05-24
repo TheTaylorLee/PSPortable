@@ -1,4 +1,4 @@
-function Get-DCLockoutEvents2 {
+function Get-DCLockoutEvents {
 
     <#
     .DESCRIPTION
@@ -8,7 +8,7 @@ function Get-DCLockoutEvents2 {
     Account that is being searched for lockout events
 
     .EXAMPLE
-    Get-DCLockoutEvents2 -identity Joe
+    Get-DCLockoutEvents -identity Joe
 
     .Notes
     Requires The Active Directory Module
@@ -31,7 +31,7 @@ function Get-DCLockoutEvents2 {
     $PDCEmulator = ($DomainControllers | Where-Object { $_.OperationMasterRoles -contains "PDCEmulator" })
 
     #Parsing Event Log 4740
-    Write-Host "Querying event id 4740 on $PDCEmulator." -Backgroundcolor Black -ForegroundColor Yellow
+    Write-Host "Querying event id 4740 on $PDCEmulator." -BackgroundColor Black -ForegroundColor Yellow
     $PDCEmulator | ForEach-Object {
         Get-WinEvent -ComputerName $_ -FilterHashtable @{LogName = 'Security'; Id = 4740 } |
         Where-Object { ($_.Properties[1].Value -notlike $null -and $_.Properties[0].Value -eq $Identity) } |
@@ -46,7 +46,7 @@ function Get-DCLockoutEvents2 {
     }#endforeach
 
     #Parsing Event Log 4776
-    Write-Host "Querying event id 4776 on $PDCEmulator; this will take awhile. Use ctrl+c to end at any time." -Backgroundcolor Black -ForegroundColor Yellow
+    Write-Host "Querying event id 4776 on $PDCEmulator; this will take awhile. Use ctrl+c to end at any time." -BackgroundColor Black -ForegroundColor Yellow
     $PDCEmulator | ForEach-Object {
         Get-WinEvent -ComputerName $_ -FilterHashtable @{LogName = 'Security'; Id = 4776 } |
         Where-Object { ($_.Properties[2].Value -notlike $null -and $_.Properties[1].Value -eq $Identity -and $_.KeywordsDisplayNames -contains "Audit Failure") } |

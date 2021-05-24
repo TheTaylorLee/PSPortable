@@ -8,7 +8,7 @@ function Unlock-AllAccounts {
     Requires the Active Directory Module.
 
     .Link
-    Get-DCLockoutEvents2
+    Get-DCLockoutEvents
     Get-LockedAccounts
     Get-PasswordExpired
     Set-Password
@@ -19,5 +19,5 @@ function Unlock-AllAccounts {
     Param (
     )
 
-    Search-ADAccount -lockedout | Unlock-ADAccount
+    Search-ADAccount -LockedOut | Unlock-ADAccount
 }

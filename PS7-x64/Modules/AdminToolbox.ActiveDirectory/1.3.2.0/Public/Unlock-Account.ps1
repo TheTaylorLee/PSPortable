@@ -17,7 +17,7 @@ function Unlock-Account {
     Unlock-ADAccount -identity JohnD
 
     .Link
-    Get-DCLockoutEvents2
+    Get-DCLockoutEvents
     Get-LockedAccounts
     Get-PasswordExpired
     Set-Password
@@ -32,6 +32,6 @@ function Unlock-Account {
 
     Import-Module ActiveDirectory
 
-    Unlock-ADAccount -identity $username
+    Unlock-ADAccount -Identity $username
 
 }

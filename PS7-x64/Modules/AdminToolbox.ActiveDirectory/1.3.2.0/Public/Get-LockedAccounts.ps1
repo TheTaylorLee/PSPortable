@@ -8,7 +8,7 @@ function Get-LockedAccounts {
     Requires the Active Directory Module
 
     .Link
-    Get-DCLockoutEvents2
+    Get-DCLockoutEvents
     Get-PasswordExpired
     Set-Password
     Unlock-Account
@@ -17,7 +17,7 @@ function Get-LockedAccounts {
 
     Import-Module ActiveDirectory
 
-    Search-ADAccount -Lockedout |
+    Search-ADAccount -LockedOut |
     Select-Object Name, SamAccountName, UserPrincipalName |
     Sort-Object Name |
     Format-Table -AutoSize
