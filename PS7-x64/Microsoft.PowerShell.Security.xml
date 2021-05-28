@@ -1705,7 +1705,7 @@
         <member name="P:Microsoft.PowerShell.Commands.X509StoreLocation.Location">
             <summary>
             Gets the location as a
-            <see cref="T:System.Security.Cryptography.X509Certificates.StoreLocation" />
+            <see cref="T:System.Security.Cryptography.X509Certificates.StoreLocation"/>
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.X509StoreLocation.StoreNames">

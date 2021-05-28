@@ -1,4 +1,18 @@
 {
+    "ExperimentalFeatures":  [
+                                 "PSAnsiProgress",
+                                 "PSAnsiRendering",
+                                 "PSCommandNotFoundSuggestion",
+                                 "PSCultureInvariantReplaceOperator",
+                                 "PSImplicitRemotingBatching",
+                                 "PSNativeCommandArgumentPassing",
+                                 "PSNativePSPathResolution",
+                                 "PSNotApplyErrorActionToStderr",
+                                 "PSSubsystemPluginModel",
+                                 "Microsoft.PowerShell.Utility.PSImportPSDataFileSkipLimitCheck",
+                                 "Microsoft.PowerShell.Utility.PSManageBreakpointsInRunspace",
+                                 "PSDesiredStateConfiguration.InvokeDscResource"
+                             ],
     "WindowsPowerShellCompatibilityModuleDenyList":  [
                                                          "PSScheduledJob",
                                                          "BestPractices",

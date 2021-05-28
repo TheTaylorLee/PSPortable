@@ -88,8 +88,8 @@
             <param name="propertyName">Property name to query on.</param>
             <param name="allowedPropertyValues">Property values to accept in the query.</param>
             <param name="wildcardsEnabled">
-              <c>true</c> if <paramref name="allowedPropertyValues"/> should be treated as a <see cref="T:System.String"/> containing a wildcard pattern;
-              <c>false otherwise</c>
+              <see langword="true"/> if <paramref name="allowedPropertyValues"/> should be treated as a <see cref="T:System.String"/> containing a wildcard pattern;
+              <see langword="false"/> otherwise.
             </param>
             <param name="behaviorOnNoMatch">
             Describes how to handle filters that didn't match any objects
@@ -102,8 +102,8 @@
             <param name="propertyName">Property name to query on.</param>
             <param name="excludedPropertyValues">Property values to reject in the query.</param>
             <param name="wildcardsEnabled">
-            <c>true</c> if <paramref name="excludedPropertyValues"/> should be treated as a <see cref="T:System.String"/> containing a wildcard pattern;
-            <c>false otherwise</c>
+            <see langword="true"/> if <paramref name="excludedPropertyValues"/> should be treated as a <see cref="T:System.String"/> containing a wildcard pattern;
+            <see langword="false"/> otherwise.
             </param>
             <param name="behaviorOnNoMatch">
             Describes how to handle filters that didn't match any objects
@@ -202,7 +202,7 @@
             <param name="session">Remote session to invoke the method in.</param>
             <param name="objectInstance">The object on which to invoke the method.</param>
             <param name="methodInvocationInfo">Method invocation details.</param>
-            <param name="passThru"><c>true</c> if successful method invocations should emit downstream the <paramref name="objectInstance"/> being operated on.</param>
+            <param name="passThru"><see langword="true"/> if successful method invocations should emit downstream the <paramref name="objectInstance"/> being operated on.</param>
             <returns></returns>
         </member>
         <member name="M:Microsoft.PowerShell.Cmdletization.Cim.CimCmdletAdapter.CreateStaticMethodInvocationJob(Microsoft.Management.Infrastructure.CimSession,Microsoft.PowerShell.Cmdletization.MethodInvocationInfo)">
@@ -326,9 +326,9 @@
             Doing so will interfere with ThrottleLimit functionality.
             </para>
             <para>
-            <see cref="M:System.Management.Automation.Job.WriteObject(System.Object)" /> (and other methods returning job results) will block to support throttling and flow-control.
+            <see cref="M:System.Management.Automation.Job.WriteObject(System.Object)"/> (and other methods returning job results) will block to support throttling and flow-control.
             Implementations of Job instance returned from this method should make sure that implementation-specific flow-control mechanism pauses further processing,
-            until calls from <see cref="M:System.Management.Automation.Job.WriteObject(System.Object)" /> (and other methods returning job results) return.
+            until calls from <see cref="M:System.Management.Automation.Job.WriteObject(System.Object)"/> (and other methods returning job results) return.
             </para>
             </remarks>
         </member>
@@ -339,16 +339,16 @@
             <param name="session">Remote session to invoke the method in.</param>
             <param name="objectInstance">The object on which to invoke the method.</param>
             <param name="methodInvocationInfo">Method invocation details.</param>
-            <param name="passThru"><c>true</c> if successful method invocations should emit downstream the <paramref name="objectInstance"/> being operated on.</param>
+            <param name="passThru"><see langword="true"/> if successful method invocations should emit downstream the <paramref name="objectInstance"/> being operated on.</param>
             <remarks>
             <para>
             This method shouldn't do any processing or interact with the remote session.
             Doing so will interfere with ThrottleLimit functionality.
             </para>
             <para>
-            <see cref="M:System.Management.Automation.Job.WriteObject(System.Object)" /> (and other methods returning job results) will block to support throttling and flow-control.
+            <see cref="M:System.Management.Automation.Job.WriteObject(System.Object)"/> (and other methods returning job results) will block to support throttling and flow-control.
             Implementations of Job instance returned from this method should make sure that implementation-specific flow-control mechanism pauses further processing,
-            until calls from <see cref="M:System.Management.Automation.Job.WriteObject(System.Object)" /> (and other methods returning job results) return.
+            until calls from <see cref="M:System.Management.Automation.Job.WriteObject(System.Object)"/> (and other methods returning job results) return.
             </para>
             </remarks>
         </member>
@@ -364,9 +364,9 @@
             Doing so will interfere with ThrottleLimit functionality.
             </para>
             <para>
-            <see cref="M:System.Management.Automation.Job.WriteObject(System.Object)" /> (and other methods returning job results) will block to support throttling and flow-control.
+            <see cref="M:System.Management.Automation.Job.WriteObject(System.Object)"/> (and other methods returning job results) will block to support throttling and flow-control.
             Implementations of Job instance returned from this method should make sure that implementation-specific flow-control mechanism pauses further processing,
-            until calls from <see cref="M:System.Management.Automation.Job.WriteObject(System.Object)" /> (and other methods returning job results) return.
+            until calls from <see cref="M:System.Management.Automation.Job.WriteObject(System.Object)"/> (and other methods returning job results) return.
             </para>
             </remarks>
         </member>
@@ -394,7 +394,7 @@
             </summary>
             <param name="query">Query parameters.</param>
             <param name="methodInvocationInfo">Method invocation details.</param>
-            <param name="passThru"><c>true</c> if successful method invocations should emit downstream the object instance being operated on.</param>
+            <param name="passThru"><see langword="true"/> if successful method invocations should emit downstream the object instance being operated on.</param>
         </member>
         <member name="M:Microsoft.PowerShell.Cmdletization.SessionBasedCmdletAdapter`2.ProcessRecord(`0,Microsoft.PowerShell.Cmdletization.MethodInvocationInfo,System.Boolean)">
             <summary>
@@ -402,7 +402,7 @@
             </summary>
             <param name="objectInstance">The object on which to invoke the method.</param>
             <param name="methodInvocationInfo">Method invocation details.</param>
-            <param name="passThru"><c>true</c> if successful method invocations should emit downstream the <paramref name="objectInstance"/> being operated on.</param>
+            <param name="passThru"><see langword="true"/> if successful method invocations should emit downstream the <paramref name="objectInstance"/> being operated on.</param>
         </member>
         <member name="M:Microsoft.PowerShell.Cmdletization.SessionBasedCmdletAdapter`2.ProcessRecord(Microsoft.PowerShell.Cmdletization.MethodInvocationInfo)">
             <summary>
@@ -1542,11 +1542,6 @@
         <member name="M:Microsoft.PowerShell.Commands.ContentCommandBase.Dispose">
             <summary>
             Dispose method in IDisposable.
-            </summary>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.ContentCommandBase.Finalize">
-            <summary>
-            Finalizer.
             </summary>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.ConvertPathCommand">
@@ -5122,7 +5117,7 @@
             Gets the content of an item at the specified path.
             </summary>
         </member>
-        <member name="M:Microsoft.PowerShell.Commands.GetContentCommand.ScanForwardsForTail(Microsoft.PowerShell.Commands.ContentCommandBase.ContentHolder,System.Management.Automation.CmdletProviderContext)">
+        <member name="M:Microsoft.PowerShell.Commands.GetContentCommand.ScanForwardsForTail(Microsoft.PowerShell.Commands.ContentCommandBase.ContentHolder@,System.Management.Automation.CmdletProviderContext)">
             <summary>
             Scan forwards to get the tail content.
             </summary>
@@ -7098,9 +7093,9 @@
         </member>
         <member name="P:Microsoft.PowerShell.Commands.ProcessBaseCommand.AllProcesses">
             <summary>
-            Retrieve the master list of all processes.
+            Gets an array of all processes.
             </summary>
-            <value></value>
+            <value>An array of <see cref="T:System.Diagnostics.Process"/> components that represents all the process resources.</value>
             <exception cref="T:System.Security.SecurityException">
             MSDN does not document the list of exceptions,
             but it is reasonable to expect that SecurityException is
@@ -7334,9 +7329,9 @@
         <member name="M:Microsoft.PowerShell.Commands.StopProcessCommand.StopProcess(System.Diagnostics.Process)">
             <summary>
             Stops the given process throws non terminating error if can't.
-            <param name="process" >Process to be stopped.</param>
-            <returns>True if process stopped successfully else false.</returns>
             </summary>
+            <param name="process">Process to be stopped.</param>
+            <returns>True if process stopped successfully else false.</returns>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.DebugProcessCommand">
             <summary>
@@ -7881,9 +7876,11 @@
         </member>
         <member name="P:Microsoft.PowerShell.Commands.MultipleServiceCommandBase.AllServices">
             <summary>
-            Retrieve the master list of all services.
+            Gets an array of all services.
             </summary>
-            <value></value>
+            <value>
+            An array of <see cref="T:System.ServiceProcess.ServiceController"/> components that represents all the service resources.
+            </value>
             <exception cref="T:System.Security.SecurityException">
             MSDN does not document the list of exceptions,
             but it is reasonable to expect that SecurityException is
@@ -8958,11 +8955,6 @@
         <member name="M:Microsoft.PowerShell.Commands.SetTimeZoneCommand.ThrowWin32Error">
             <summary>
             Get the Win32 error code from GetLastError and throw an exception.
-            </summary>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.SetTimeZoneCommand.NativeMethods.#ctor">
-            <summary>
-            Private constructor to prevent instantiation.
             </summary>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.SetTimeZoneCommand.NativeMethods.SystemTime">

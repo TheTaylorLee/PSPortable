@@ -5,14 +5,14 @@
     </assembly>
     <members>
         <member name="T:Microsoft.PowerShell.Commands.GetCounterCommand">
-            
-             Class that implements the Get-Counter cmdlet.
-            
+            <summary>
+            Class that implements the Get-Counter cmdlet.
+            </summary>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.GetWinEventCommand">
-            
-             Class that implements the Get-WinEvent cmdlet.
-            
+            <summary>
+            Class that implements the Get-WinEvent cmdlet.
+            </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.GetWinEventCommand.ListLog">
             <summary>
@@ -96,10 +96,10 @@
             </summary>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.NewWinEventCommand">
-            
-             Class that implements the New-WinEvent cmdlet.
-             This cmdlet writes a new Etw event using the provider specified in parameter.
-            
+            <summary>
+            Class that implements the New-WinEvent cmdlet.
+            This cmdlet writes a new Etw event using the provider specified in parameter.
+            </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.NewWinEventCommand.ProviderName">
             <summary>
@@ -174,8 +174,8 @@
         </member>
         <member name="T:System.Diagnostics.PerformanceCounterType">
             <summary>
-            Specifies the formula used to calculate the <see cref="M:System.Diagnostics.PerformanceCounter.NextValue" />
-            method for a <see cref="T:System.Diagnostics.PerformanceCounter" /> instance.
+            Specifies the formula used to calculate the <see cref="M:System.Diagnostics.PerformanceCounter.NextValue"/>
+            method for a <see cref="T:System.Diagnostics.PerformanceCounter"/> instance.
             </summary>
             <filterpriority>2</filterpriority>
         </member>

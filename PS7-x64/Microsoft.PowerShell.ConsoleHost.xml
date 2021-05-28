@@ -2194,14 +2194,14 @@
             Constructs a new instance.
             </summary>
         </member>
-        <member name="M:Microsoft.PowerShell.ConsoleHost.Finalize">
-            <summary>
-            Finalizes the instance.
-            </summary>
-        </member>
         <member name="M:Microsoft.PowerShell.ConsoleHost.Dispose">
             <summary>
             Disposes of this instance, per the IDisposable pattern.
+            </summary>
+        </member>
+        <member name="M:Microsoft.PowerShell.ConsoleHost.Finalize">
+            <summary>
+            Finalizes an instance of the <see cref="T:Microsoft.PowerShell.ConsoleHost"/> class.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.ConsoleHost.ShouldEndSession">
@@ -3873,7 +3873,7 @@
         </member>
         <member name="T:Microsoft.PowerShell.ProgressNode.RenderStyle">
             <summary>
-            Indicates the various layouts for rendering a particular node.  Each style is progressively less terse.
+            Indicates the various layouts for rendering a particular node.
             </summary>
         </member>
         <member name="F:Microsoft.PowerShell.ProgressNode.RenderStyle.Full">
@@ -3885,6 +3885,11 @@
         <member name="F:Microsoft.PowerShell.ProgressNode.RenderStyle.FullPlus">
             <summary>
             The node will be displayed the same as Full, plus, the whole StatusDescription and CurrentOperation will be displayed (in multiple lines if needed).
+            </summary>
+        </member>
+        <member name="F:Microsoft.PowerShell.ProgressNode.RenderStyle.Ansi">
+            <summary>
+            The node will be displayed using ANSI escape sequences.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.ProgressNode.#ctor(System.Int64,System.Management.Automation.ProgressRecord)">
@@ -3962,6 +3967,20 @@
             </param>
             <param name="rawUI">
             The PSHostRawUserInterface used to gauge string widths in the rendering.
+            </param>
+        </member>
+        <member name="M:Microsoft.PowerShell.ProgressNode.RenderAnsi(System.Collections.ArrayList,System.Int32,System.Int32)">
+            <summary>
+            Renders a node in the "ANSI" style.
+            </summary>
+            <param name="strCollection">
+            List of strings to which the node's rendering will be appended.
+            </param>
+            <param name="indentation">
+            The indentation level in chars at which the node should be rendered.
+            </param>
+            <param name="maxWidth">
+            The maximum number of chars that the rendering is allowed to consume.
             </param>
         </member>
         <member name="F:Microsoft.PowerShell.ProgressNode.Children">
@@ -4467,7 +4486,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.PropVariant.Finalize">
             <summary>
-            Finalizer.
+            Finalizes an instance of the <see cref="T:Microsoft.PowerShell.PropVariant"/> class.
             </summary>
         </member>
     </members>

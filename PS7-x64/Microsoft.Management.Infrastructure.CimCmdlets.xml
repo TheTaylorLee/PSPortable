@@ -16,7 +16,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimAsyncOperation.#ctor">
             <summary>
-            The constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimAsyncOperation"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimAsyncOperation.NewCmdletActionHandler(System.Object,Microsoft.Management.Infrastructure.CimCmdlets.CmdletActionEventArgs)">
@@ -265,7 +265,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimBaseAction.#ctor">
             <summary>
-            Constructor method.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimBaseAction"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimBaseAction.Execute(Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationBase)">
@@ -299,7 +299,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSyncAction.#ctor">
             <summary>
-            The constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSyncAction"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSyncAction.GetResponse">
@@ -379,7 +379,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.ParameterDefinitionEntry.#ctor(System.String,System.Boolean)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.ParameterDefinitionEntry"/> class.
             </summary>
             <param name="parameterSetName"></param>
             <param name="mandatory"></param>
@@ -403,19 +403,19 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.ParameterSetEntry.#ctor(System.UInt32)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.ParameterSetEntry"/> class.
             </summary>
             <param name="mandatoryParameterCount"></param>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.ParameterSetEntry.#ctor(Microsoft.Management.Infrastructure.CimCmdlets.ParameterSetEntry)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.ParameterSetEntry"/> class.
             </summary>
             <param name="toClone"></param>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.ParameterSetEntry.#ctor(System.UInt32,System.Boolean)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.ParameterSetEntry"/> class.
             </summary>
             <param name="mandatoryParameterCount"></param>
             <param name="mandatory"></param>
@@ -462,7 +462,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.ParameterBinder.#ctor(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.HashSet{Microsoft.Management.Infrastructure.CimCmdlets.ParameterDefinitionEntry}},System.Collections.Generic.Dictionary{System.String,Microsoft.Management.Infrastructure.CimCmdlets.ParameterSetEntry})">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.ParameterBinder"/> class.
             </summary>
             <param name="parameters"></param>
             <param name="sets"></param>
@@ -569,12 +569,12 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimBaseCommand.#ctor">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimBaseCommand"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimBaseCommand.#ctor(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.HashSet{Microsoft.Management.Infrastructure.CimCmdlets.ParameterDefinitionEntry}},System.Collections.Generic.Dictionary{System.String,Microsoft.Management.Infrastructure.CimCmdlets.ParameterSetEntry})">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimBaseCommand"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimBaseCommand.StopProcessing">
@@ -630,13 +630,6 @@
         <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimBaseCommand.myLock">
             <summary>
             Lock object.
-            </summary>
-        </member>
-        <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimBaseCommand.parameterSetName">
-            <summary>
-            <para>
-            parameter set name
-            </para>
             </summary>
         </member>
         <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimBaseCommand.atBeginProcess">
@@ -805,9 +798,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimGetAssociatedInstance.#ctor">
             <summary>
-            <para>
-            Constructor
-            </para>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimGetAssociatedInstance"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimGetAssociatedInstance.GetCimAssociatedInstance(Microsoft.Management.Infrastructure.CimCmdlets.GetCimAssociatedInstanceCommand)">
@@ -854,9 +845,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimGetCimClassContext.#ctor(System.String,System.String,System.String,System.String)">
             <summary>
-            <para>
-            Constructor
-            </para>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimGetCimClassContext"/> class.
             </summary>
             <param name="methodName"></param>
             <param name="propertyName"></param>
@@ -908,9 +897,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimGetCimClass.#ctor">
             <summary>
-            <para>
-            Constructor
-            </para>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimGetCimClass"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimGetCimClass.GetCimClass(Microsoft.Management.Infrastructure.CimCmdlets.GetCimClassCommand)">
@@ -977,6 +964,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimGetInstance.#ctor">
             <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimGetInstance"/> class.
             <para>
             Constructor
             </para>
@@ -1102,9 +1090,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimIndicationEventExceptionEventArgs.#ctor(System.Exception)">
             <summary>
-            <para>
-            Constructor
-            </para>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimIndicationEventExceptionEventArgs"/> class.
             </summary>
             <param name="result"></param>
         </member>
@@ -1131,9 +1117,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimIndicationEventInstanceEventArgs.#ctor(Microsoft.Management.Infrastructure.CimSubscriptionResult)">
             <summary>
-            <para>
-            Constructor
-            </para>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimIndicationEventInstanceEventArgs"/> class.
             </summary>
             <param name="result"></param>
         </member>
@@ -1167,9 +1151,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimIndicationWatcher.#ctor(System.String,System.String,System.String,System.String,System.UInt32)">
             <summary>
-            <para>
-            Constructor with given computerName, namespace, queryExpression and timeout
-            </para>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimIndicationWatcher"/> class.
             </summary>
             <param name="computerName"></param>
             <param name="nameSpace"></param>
@@ -1178,9 +1160,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimIndicationWatcher.#ctor(Microsoft.Management.Infrastructure.CimSession,System.String,System.String,System.String,System.UInt32)">
             <summary>
-            <para>
-            Constructor with given cimsession, namespace, queryExpression and timeout
-            </para>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimIndicationWatcher"/> class.
             </summary>
             <param name="cimSession"></param>
             <param name="nameSpace"></param>
@@ -1284,9 +1264,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimInvokeCimMethod.CimInvokeCimMethodContext.#ctor(System.String,System.String,Microsoft.Management.Infrastructure.CimMethodParametersCollection,Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy)">
             <summary>
-            <para>
-            Constructor
-            </para>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimInvokeCimMethod.CimInvokeCimMethodContext"/> class.
             </summary>
             <param name="theNamespace"></param>
             <param name="theCollection"></param>
@@ -1304,9 +1282,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimInvokeCimMethod.#ctor">
             <summary>
-            <para>
-            Constructor
-            </para>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimInvokeCimMethod"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimInvokeCimMethod.InvokeCimMethod(Microsoft.Management.Infrastructure.CimCmdlets.InvokeCimMethodCommand)">
@@ -1396,9 +1372,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimNewCimInstanceContext.#ctor(Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy,System.String)">
             <summary>
-            <para>
-            Constructor
-            </para>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimNewCimInstanceContext"/> class.
             </summary>
             <param name="methodName"></param>
             <param name="propertyName"></param>
@@ -1413,6 +1387,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimNewCimInstance.#ctor">
             <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimNewCimInstance"/> class.
             <para>
             Constructor
             </para>
@@ -1510,7 +1485,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimPromptUser.#ctor(System.String,Microsoft.Management.Infrastructure.Options.CimPromptType)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimPromptUser"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimPromptUser.Execute(Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationBase)">
@@ -1564,7 +1539,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSubscriptionResultEventArgs.#ctor(Microsoft.Management.Infrastructure.CimSubscriptionResult)">
             <summary>
-            <para>Constructor</para>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSubscriptionResultEventArgs"/> class.
             </summary>
             <param name="theResult"></param>
         </member>
@@ -1584,7 +1559,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSubscriptionExceptionEventArgs.#ctor(System.Exception)">
             <summary>
-            <para>Constructor</para>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSubscriptionExceptionEventArgs"/> class.
             </summary>
             <param name="theResult"></param>
         </member>
@@ -1604,9 +1579,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimRegisterCimIndication.#ctor">
             <summary>
-            <para>
-            Constructor
-            </para>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimRegisterCimIndication"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimRegisterCimIndication.RegisterCimIndication(System.String,System.String,System.String,System.String,System.UInt32)">
@@ -1699,9 +1672,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimRemoveCimInstanceContext.#ctor(System.String,Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy)">
             <summary>
-            <para>
-            Constructor
-            </para>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimRemoveCimInstanceContext"/> class.
             </summary>
             <param name="theNamespace"></param>
             <param name="theProxy"></param>
@@ -1715,9 +1686,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimRemoveCimInstance.#ctor">
             <summary>
-            <para>
-            Constructor
-            </para>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimRemoveCimInstance"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimRemoveCimInstance.RemoveCimInstance(Microsoft.Management.Infrastructure.CimCmdlets.RemoveCimInstanceCommand)">
@@ -1755,7 +1724,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimResultContext.#ctor(System.Object)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimResultContext"/> class.
             </summary>
             <param name="ErrorSource"></param>
         </member>
@@ -1773,7 +1742,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.AsyncResultEventArgsBase.#ctor(Microsoft.Management.Infrastructure.CimSession,System.IObservable{System.Object},Microsoft.Management.Infrastructure.CimCmdlets.AsyncResultType)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.AsyncResultEventArgsBase"/> class.
             </summary>
             <param name="session"></param>
             <param name="observable"></param>
@@ -1781,7 +1750,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.AsyncResultEventArgsBase.#ctor(Microsoft.Management.Infrastructure.CimSession,System.IObservable{System.Object},Microsoft.Management.Infrastructure.CimCmdlets.AsyncResultType,Microsoft.Management.Infrastructure.CimCmdlets.CimResultContext)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.AsyncResultEventArgsBase"/> class.
             </summary>
             <param name="session"></param>
             <param name="observable"></param>
@@ -1797,9 +1766,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.AsyncResultCompleteEventArgs.#ctor(Microsoft.Management.Infrastructure.CimSession,System.IObservable{System.Object})">
             <summary>
-            <para>
-            Constructor
-            </para>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.AsyncResultCompleteEventArgs"/> class.
             </summary>
             <param name="session"><see cref="T:Microsoft.Management.Infrastructure.CimSession"/> object.</param>
             <param name="cancellationDisposable"></param>
@@ -1813,7 +1780,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.AsyncResultObjectEventArgs.#ctor(Microsoft.Management.Infrastructure.CimSession,System.IObservable{System.Object},System.Object)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.AsyncResultObjectEventArgs"/> class.
             </summary>
             <param name="session"></param>
             <param name="observable"></param>
@@ -1828,7 +1795,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.AsyncResultErrorEventArgs.#ctor(Microsoft.Management.Infrastructure.CimSession,System.IObservable{System.Object},System.Exception)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.AsyncResultErrorEventArgs"/> class.
             </summary>
             <param name="session"></param>
             <param name="observable"></param>
@@ -1836,7 +1803,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.AsyncResultErrorEventArgs.#ctor(Microsoft.Management.Infrastructure.CimSession,System.IObservable{System.Object},System.Exception,Microsoft.Management.Infrastructure.CimCmdlets.CimResultContext)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.AsyncResultErrorEventArgs"/> class.
             </summary>
             <param name="session"></param>
             <param name="observable"></param>
@@ -1859,14 +1826,6 @@
             </summary>
             <typeparam name="T">object type</typeparam>
         </member>
-        <member name="T:Microsoft.Management.Infrastructure.CimCmdlets.CimResultObserver`1.ResultEventHandler">
-            <summary>
-            Define delegate that handles new cmdlet action come from
-            the operations related to the current CimSession object.
-            </summary>
-            <param name="cimSession">CimSession object, which raised the event.</param>
-            <param name="actionArgs">Event args.</param>
-        </member>
         <member name="E:Microsoft.Management.Infrastructure.CimCmdlets.CimResultObserver`1.OnNewResult">
             <summary>
             Define an Event based on the NewActionHandler.
@@ -1874,14 +1833,14 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimResultObserver`1.#ctor(Microsoft.Management.Infrastructure.CimSession,System.IObservable{System.Object})">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimResultObserver`1"/> class.
             </summary>
             <param name="session"><see cref="T:Microsoft.Management.Infrastructure.CimSession"/> object that issued the operation.</param>
             <param name="observable">Operation that can be observed.</param>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimResultObserver`1.#ctor(Microsoft.Management.Infrastructure.CimSession,System.IObservable{System.Object},Microsoft.Management.Infrastructure.CimCmdlets.CimResultContext)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimResultObserver`1"/> class.
             </summary>
             <param name="session"><see cref="T:Microsoft.Management.Infrastructure.CimSession"/> object that issued the operation.</param>
             <param name="observable">Operation that can be observed.</param>
@@ -1937,14 +1896,14 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSubscriptionResultObserver.#ctor(Microsoft.Management.Infrastructure.CimSession,System.IObservable{System.Object})">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSubscriptionResultObserver"/> class.
             </summary>
             <param name="session"></param>
             <param name="observable"></param>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSubscriptionResultObserver.#ctor(Microsoft.Management.Infrastructure.CimSession,System.IObservable{System.Object},Microsoft.Management.Infrastructure.CimCmdlets.CimResultContext)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSubscriptionResultObserver"/> class.
             </summary>
             <param name="session"></param>
             <param name="observable"></param>
@@ -1962,14 +1921,14 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimMethodResultObserver.#ctor(Microsoft.Management.Infrastructure.CimSession,System.IObservable{System.Object})">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimMethodResultObserver"/> class.
             </summary>
             <param name="session"></param>
             <param name="observable"></param>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimMethodResultObserver.#ctor(Microsoft.Management.Infrastructure.CimSession,System.IObservable{System.Object},Microsoft.Management.Infrastructure.CimCmdlets.CimResultContext)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimMethodResultObserver"/> class.
             </summary>
             <param name="session"></param>
             <param name="observable"></param>
@@ -1998,7 +1957,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.IgnoreResultObserver.#ctor(Microsoft.Management.Infrastructure.CimSession,System.IObservable{System.Object})">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.IgnoreResultObserver"/> class.
             </summary>
             <param name="session"></param>
             <param name="observable"></param>
@@ -2134,9 +2093,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionState.#ctor">
             <summary>
-            <para>
-            The constructor.
-            </para>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionState"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionState.GetSessionsCount">
@@ -2311,7 +2268,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionBase.#ctor">
             <summary>
-            The constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionBase"/> class.
             </summary>
         </member>
         <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionBase.cimSessions">
@@ -2367,9 +2324,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimNewSession.CimTestCimSessionContext.#ctor(Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy,Microsoft.Management.Infrastructure.CimCmdlets.CimSessionWrapper)">
             <summary>
-            <para>
-            The constructor.
-            </para>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimNewSession.CimTestCimSessionContext"/> class.
             </summary>
             <param name="theProxy"></param>
             <param name="wrapper"></param>
@@ -2381,9 +2336,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimNewSession.#ctor">
             <summary>
-            <para>
-            The constructor.
-            </para>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimNewSession"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimNewSession.NewCimSession(Microsoft.Management.Infrastructure.CimCmdlets.NewCimSessionCommand,Microsoft.Management.Infrastructure.Options.CimSessionOptions,Microsoft.Management.Infrastructure.Options.CimCredential)">
@@ -2472,7 +2425,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimGetSession.#ctor">
             <summary>
-            The constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimGetSession"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimGetSession.GetCimSession(Microsoft.Management.Infrastructure.CimCmdlets.GetCimSessionCommand)">
@@ -2496,7 +2449,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimRemoveSession.#ctor">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimRemoveSession"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimRemoveSession.RemoveCimSession(Microsoft.Management.Infrastructure.CimCmdlets.RemoveCimSessionCommand)">
@@ -2514,7 +2467,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimTestSession.#ctor">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimTestSession"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimTestSession.TestCimSession(System.String,Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy)">
@@ -2553,13 +2506,13 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.InvocationContext.#ctor(Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.InvocationContext"/> class.
             </summary>
             <param name="proxy"></param>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.InvocationContext.#ctor(System.String,Microsoft.Management.Infrastructure.CimInstance)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.InvocationContext"/> class.
             </summary>
             <param name="proxy"></param>
         </member>
@@ -2568,20 +2521,20 @@
             <para>
             ComputerName of the session
             </para>
+            </summary>
             <remarks>
             return value could be null
             </remarks>
-            </summary>
         </member>
         <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.InvocationContext.TargetCimInstance">
             <summary>
             <para>
             CimInstance on which the current operation against.
             </para>
+            </summary>
             <remarks>
             return value could be null
             </remarks>
-            </summary>
         </member>
         <member name="T:Microsoft.Management.Infrastructure.CimCmdlets.IObjectPreProcess">
             <summary>
@@ -2605,7 +2558,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CmdletActionEventArgs.#ctor(Microsoft.Management.Infrastructure.CimCmdlets.CimBaseAction)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CmdletActionEventArgs"/> class.
             </summary>
             <param name="action">CimBaseAction object bound to the event.</param>
         </member>
@@ -2616,7 +2569,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.OperationEventArgs.#ctor(System.IDisposable,System.IObservable{System.Object},System.Boolean)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.OperationEventArgs"/> class.
             </summary>
             <param name="operationCancellation">Object used to cancel the operation.</param>
             <param name="operation">Async observable operation.</param>
@@ -2687,26 +2640,10 @@
             </summary>
             <param name="session">CimSession to be added.</param>
         </member>
-        <member name="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.NewCmdletActionHandler">
-            <summary>
-            Define delegate that handles new cmdlet action come from
-            the operations related to the current CimSession object.
-            </summary>
-            <param name="cimSession">CimSession object, which raised the event.</param>
-            <param name="actionArgs">Event args.</param>
-        </member>
         <member name="E:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.OnNewCmdletAction">
             <summary>
             Define an Event based on the NewActionHandler.
             </summary>
-        </member>
-        <member name="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.OperationEventHandler">
-            <summary>
-            Define delegate that handles operation creation and complete
-            issued by the current CimSession object.
-            </summary>
-            <param name="cimSession">CimSession object, which raised the event.</param>
-            <param name="actionArgs">Event args.</param>
         </member>
         <member name="E:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.OnOperationCreated">
             <summary>
@@ -2721,61 +2658,85 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.#ctor(Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy)">
             <summary>
-            Then create wrapper object by given CimSessionProxy object.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy"/> class.
             </summary>
+            <remarks>
+            Then create wrapper object by given CimSessionProxy object.
+            </remarks>
             <param name="computerName"></param>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.#ctor(System.String)">
             <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy"/> class.
+            </summary>
+            <remarks>
             Create <see cref="P:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.CimSession"/> by given computer name.
             Then create wrapper object.
-            </summary>
+            </remarks>
             <param name="computerName"></param>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.#ctor(System.String,Microsoft.Management.Infrastructure.Options.CimSessionOptions)">
             <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy"/> class.
+            </summary>
+            <remarks>
             Create <see cref="P:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.CimSession"/> by given computer name
             and session options.
             Then create wrapper object.
-            </summary>
+            </remarks>
             <param name="computerName"></param>
             <param name="sessionOptions"></param>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.#ctor(System.String,Microsoft.Management.Infrastructure.CimInstance)">
             <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy"/> class.
+            </summary>
+            <remarks>
             Create <see cref="P:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.CimSession"/> by given computer name
             and cimInstance. Then create wrapper object.
-            </summary>
+            </remarks>
             <param name="computerName"></param>
             <param name="cimInstance"></param>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.#ctor(System.String,Microsoft.Management.Infrastructure.Options.CimSessionOptions,Microsoft.Management.Infrastructure.Options.CimOperationOptions)">
             <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy"/> class.
+            </summary>
+            <remarks>
             Create <see cref="P:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.CimSession"/> by given computer name,
             session options.
-            </summary>
+            </remarks>
             <param name="computerName"></param>
             <param name="sessionOptions"></param>
             <param name="operOptions">Used when create async operation.</param>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.#ctor(System.String,Microsoft.Management.Infrastructure.Options.CimOperationOptions)">
             <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy"/> class.
+            </summary>
+            <remarks>
             Create <see cref="P:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.CimSession"/> by given computer name.
             Then create wrapper object.
-            </summary>
+            </remarks>
             <param name="computerName"></param>
             <param name="operOptions">Used when create async operation.</param>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.#ctor(Microsoft.Management.Infrastructure.CimSession)">
             <summary>
-            Create wrapper object by given session object.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy"/> class.
             </summary>
+            <remarks>
+            Create wrapper object by given session object.
+            </remarks>
             <param name="session"></param>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.#ctor(Microsoft.Management.Infrastructure.CimSession,Microsoft.Management.Infrastructure.Options.CimOperationOptions)">
             <summary>
-            Create wrapper object by given session object.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy"/> class.
             </summary>
+            <remarks>
+            Create wrapper object by given session object.
+            </remarks>
             <param name="session"></param>
             <param name="operOptions">Used when create async operation.</param>
         </member>
@@ -2930,7 +2891,15 @@
             <param name="prompt"></param>
             <returns></returns>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.ResultEventHandler(System.Object,Microsoft.Management.Infrastructure.CimCmdlets.AsyncResultEventArgsBase)" -->
+        <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.ResultEventHandler(System.Object,Microsoft.Management.Infrastructure.CimCmdlets.AsyncResultEventArgsBase)">
+            <summary>
+            <para>
+            Handle async event triggered by <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimResultObserver`1"/>
+            </para>
+            </summary>
+            <param name="observer">Object triggered the event.</param>
+            <param name="resultArgs">Async result event argument.</param>
+        </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.AddShowComputerNameMarker(System.Object)">
             <summary>
             This method adds a note property to <paramref name="o"/>,
@@ -3117,11 +3086,6 @@
             current operation, it could be null.
             </summary>
         </member>
-        <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.isTemporaryCimSession">
-            <summary>
-            Flag controls whether session object should be closed or not.
-            </summary>
-        </member>
         <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.OperationOptions">
             <summary>
             The CimOperationOptions object, which specifies the options
@@ -3197,7 +3161,7 @@
         </member>
         <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.isDefaultSession">
             <summary>
-            <see cref="F:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.isDefaultSession"/> is <c>true</c> if this <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy"/> was
+            <see cref="F:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.isDefaultSession"/> is <see langword="true"/> if this <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy"/> was
             created to handle the "default" session, in cases where cmdlets are invoked without
             ComputerName and/or CimSession parameters.
             </summary>
@@ -3314,10 +3278,13 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxyTestConnection.#ctor(System.String,Microsoft.Management.Infrastructure.Options.CimSessionOptions)">
             <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxyTestConnection"/> class.
+            </summary>
+            <remarks>
             Create <see cref="T:Microsoft.Management.Infrastructure.CimSession"/> by given computer name
             and session options.
             Then create wrapper object.
-            </summary>
+            </remarks>
             <param name="computerName"></param>
             <param name="sessionOptions"></param>
         </member>
@@ -3337,17 +3304,23 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxyGetCimClass.#ctor(System.String)">
             <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxyGetCimClass"/> class.
+            </summary>
+            <remarks>
             Create <see cref="T:Microsoft.Management.Infrastructure.CimSession"/> by given computer name.
             Then create wrapper object.
-            </summary>
+            </remarks>
             <param name="computerName"></param>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxyGetCimClass.#ctor(Microsoft.Management.Infrastructure.CimSession)">
             <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxyGetCimClass"/> class.
+            </summary>
+            <remarks>
             Create <see cref="T:Microsoft.Management.Infrastructure.CimSession"/> by given computer name
             and session options.
             Then create wrapper object.
-            </summary>
+            </remarks>
             <param name="computerName"></param>
             <param name="sessionOptions"></param>
         </member>
@@ -3364,19 +3337,16 @@
             </para>
             </summary>
         </member>
-        <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxyNewCimInstance.#ctor(System.String,Microsoft.Management.Infrastructure.CimCmdlets.CimNewCimInstance)">
-            <summary>
-            Create <see cref="T:Microsoft.Management.Infrastructure.CimSession"/> by given computer name.
-            Then create wrapper object.
-            </summary>
-            <param name="computerName"></param>
-        </member>
+        <!-- Badly formed XML comment ignored for member "M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxyNewCimInstance.#ctor(System.String,Microsoft.Management.Infrastructure.CimCmdlets.CimNewCimInstance)" -->
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxyNewCimInstance.#ctor(Microsoft.Management.Infrastructure.CimSession,Microsoft.Management.Infrastructure.CimCmdlets.CimNewCimInstance)">
             <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxyNewCimInstance"/> class.
+            </summary>
+            <remarks>
             Create <see cref="T:Microsoft.Management.Infrastructure.CimSession"/> by given computer name
             and session options.
             Then create wrapper object.
-            </summary>
+            </remarks>
             <param name="computerName"></param>
             <param name="sessionOptions"></param>
         </member>
@@ -3395,27 +3365,36 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxySetCimInstance.#ctor(Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy,System.Boolean)">
             <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxySetCimInstance"/> class.
+            </summary>
+            <remarks>
             Create <see cref="T:Microsoft.Management.Infrastructure.CimSession"/> by given <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy"/> object.
             Then create wrapper object.
-            </summary>
+            </remarks>
             <param name="originalProxy"><see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy"/> object to clone.</param>
             <param name="passThru">PassThru, true means output the modified instance; otherwise does not output.</param>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxySetCimInstance.#ctor(System.String,Microsoft.Management.Infrastructure.CimInstance,System.Boolean)">
             <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxySetCimInstance"/> class.
+            </summary>
+            <remarks>
             Create <see cref="T:Microsoft.Management.Infrastructure.CimSession"/> by given computer name.
             Then create wrapper object.
-            </summary>
+            </remarks>
             <param name="computerName"></param>
             <param name="cimInstance"></param>
             <param name="passThru"></param>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxySetCimInstance.#ctor(Microsoft.Management.Infrastructure.CimSession,System.Boolean)">
             <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxySetCimInstance"/> class.
+            </summary>
+            <remarks>
             Create <see cref="T:Microsoft.Management.Infrastructure.CimSession"/> by given computer name
             and session options.
             Then create wrapper object.
-            </summary>
+            </remarks>
             <param name="computerName"></param>
             <param name="sessionOptions"></param>
         </member>
@@ -3438,9 +3417,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSetCimInstanceContext.#ctor(System.String,System.Collections.IDictionary,Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy,System.String,System.Boolean)">
             <summary>
-            <para>
-            Constructor
-            </para>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSetCimInstanceContext"/> class.
             </summary>
             <param name="theNamespace"></param>
             <param name="theCollection"></param>
@@ -3470,9 +3447,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSetCimInstance.#ctor">
             <summary>
-            <para>
-            Constructor
-            </para>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSetCimInstance"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSetCimInstance.SetCimInstance(Microsoft.Management.Infrastructure.CimCmdlets.SetCimInstanceCommand)">
@@ -3597,13 +3572,15 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteError.#ctor(Microsoft.Management.Infrastructure.CimInstance,Microsoft.Management.Infrastructure.CimCmdlets.InvocationContext)">
             <summary>
-            Constructor with an <see cref="T:Microsoft.Management.Infrastructure.CimInstance"/> error.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteError"/> class
+            with the specified <see cref="T:Microsoft.Management.Infrastructure.CimInstance"/>.
             </summary>
             <param name="error"></param>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteError.#ctor(System.Exception,Microsoft.Management.Infrastructure.CimCmdlets.InvocationContext,Microsoft.Management.Infrastructure.CimCmdlets.CimResultContext)">
             <summary>
-            Construct with an exception object.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteError"/> class
+            with the specified <see cref="P:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteError.Exception"/>.
             </summary>
             <param name="exception"></param>
         </member>
@@ -3615,7 +3592,7 @@
             </summary>
             <param name="cmdlet"></param>
         </member>
-        <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteError.error">
+        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteError.Error">
             <summary>
             <para>
             Error instance
@@ -3629,19 +3606,6 @@
             </para>
             </summary>
         </member>
-        <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteError.invocationContext">
-            <summary>
-            <para>
-            <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.InvocationContext"/> object that contains
-            the information while issuing the current operation
-            </para>
-            </summary>
-        </member>
-        <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteError.cimResultContext">
-            <summary>
-            <see cref="!:CimResultConte"/>
-            </summary>
-        </member>
         <member name="T:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteMessage">
             <summary>
             <para>
@@ -3649,19 +3613,14 @@
             </para>
             </summary>
         </member>
-        <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteMessage.channel">
+        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteMessage.Channel">
             <summary>
             Channel id.
             </summary>
         </member>
-        <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteMessage.message">
-            <summary>
-            Message to write to the channel.
-            </summary>
-        </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteMessage.#ctor(System.UInt32,System.String)">
             <summary>
-            Constructor method.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteMessage"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteMessage.Execute(Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationBase)">
@@ -3681,7 +3640,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteProgress.#ctor(System.String,System.Int32,System.String,System.String,System.UInt32,System.UInt32)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteProgress"/> class.
             </summary>
             <param name="activity">
              Activity identifier of the given activity
@@ -3707,34 +3666,34 @@
             </summary>
             <param name="cmdlet"></param>
         </member>
-        <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteProgress.activity">
+        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteProgress.Activity">
             <summary>
-            Activity of the given activity.
+            Gets the activity of the given activity.
             </summary>
         </member>
-        <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteProgress.activityID">
+        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteProgress.ActivityID">
             <summary>
-            Activity identifier of the given activity.
+            Gets the activity identifier of the given activity.
             </summary>
         </member>
-        <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteProgress.currentOperation">
+        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteProgress.CurrentOperation">
             <summary>
-            Current operation text of the given activity.
+            Gets the current operation text of the given activity.
             </summary>
         </member>
-        <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteProgress.statusDescription">
+        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteProgress.StatusDescription">
             <summary>
-            Status description of the given activity.
+            Gets the status description of the given activity.
             </summary>
         </member>
-        <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteProgress.percentageCompleted">
+        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteProgress.PercentageCompleted">
             <summary>
-            Percentage completed of the given activity.
+            Gets the percentage completed of the given activity.
             </summary>
         </member>
-        <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteProgress.secondsRemaining">
+        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteProgress.SecondsRemaining">
             <summary>
-            How many seconds remained for the given activity.
+            Gets the number of seconds remaining for the given activity.
             </summary>
         </member>
         <member name="T:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteResultObject">
@@ -3746,7 +3705,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteResultObject.#ctor(System.Object,Microsoft.Management.Infrastructure.CimCmdlets.XOperationContextBase)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteResultObject"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimWriteResultObject.Execute(Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationBase)">
@@ -3797,7 +3756,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationBase.#ctor(System.Management.Automation.Cmdlet)">
             <summary>
-            Constructor method.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationBase"/> class.
             </summary>
         </member>
         <member name="T:Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationRemoveCimInstance">
@@ -3810,7 +3769,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationRemoveCimInstance.#ctor(System.Management.Automation.Cmdlet,Microsoft.Management.Infrastructure.CimCmdlets.CimRemoveCimInstance)">
             <summary>
-            Constructor method.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationRemoveCimInstance"/> class.
             </summary>
             <param name="cmdlet"></param>
         </member>
@@ -3832,7 +3791,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationSetCimInstance.#ctor(System.Management.Automation.Cmdlet,Microsoft.Management.Infrastructure.CimCmdlets.CimSetCimInstance)">
             <summary>
-            Constructor method.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationSetCimInstance"/> class.
             </summary>
             <param name="cmdlet"></param>
         </member>
@@ -3854,7 +3813,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationInvokeCimMethod.#ctor(System.Management.Automation.Cmdlet,Microsoft.Management.Infrastructure.CimCmdlets.CimInvokeCimMethod)">
             <summary>
-            Constructor method.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationInvokeCimMethod"/> class.
             </summary>
             <param name="cmdlet"></param>
         </member>
@@ -3876,7 +3835,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationTestCimSession.#ctor(System.Management.Automation.Cmdlet,Microsoft.Management.Infrastructure.CimCmdlets.CimNewSession)">
             <summary>
-            Constructor method.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CmdletOperationTestCimSession"/> class.
             </summary>
             <param name="cmdlet"></param>
         </member>
@@ -3902,7 +3861,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.GetCimAssociatedInstanceCommand.#ctor">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.GetCimAssociatedInstanceCommand"/> class.
             </summary>
         </member>
         <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.GetCimAssociatedInstanceCommand.Association">
@@ -4046,7 +4005,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.GetCimClassCommand.#ctor">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.GetCimClassCommand"/> class.
             </summary>
         </member>
         <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.GetCimClassCommand.ClassName">
@@ -4178,6 +4137,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.GetCimInstanceCommand.#ctor">
             <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.GetCimInstanceCommand"/> class.
             Constructor.
             </summary>
         </member>
@@ -4374,7 +4334,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.GetCimSessionCommand.#ctor">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.GetCimSessionCommand"/> class.
             </summary>
         </member>
         <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.GetCimSessionCommand.ComputerName">
@@ -4448,7 +4408,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.InvokeCimMethodCommand.#ctor">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.InvokeCimMethodCommand"/> class.
             </summary>
         </member>
         <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.InvokeCimMethodCommand.ClassName">
@@ -4605,7 +4565,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.NewCimInstanceCommand.#ctor">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.NewCimInstanceCommand"/> class.
             </summary>
         </member>
         <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.NewCimInstanceCommand.ClassName">
@@ -4773,7 +4733,18 @@
             </summary>
         </member>
         <!-- Badly formed XML comment ignored for member "P:Microsoft.Management.Infrastructure.CimCmdlets.NewCimSessionCommand.Name" -->
-        <!-- Badly formed XML comment ignored for member "P:Microsoft.Management.Infrastructure.CimCmdlets.NewCimSessionCommand.OperationTimeoutSec" -->
+        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.NewCimSessionCommand.OperationTimeoutSec">
+            <summary>
+            <para>
+            The following is the definition of the input parameter "OperationTimeoutSec".
+            Specifies the operation timeout for all operations in session. Individual
+            operations can override this timeout.
+            </para>
+            <para>
+            The unit is Second.
+            </para>
+            </summary>
+        </member>
         <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.NewCimSessionCommand.SkipTestConnection">
             <summary>
             <para>
@@ -4799,9 +4770,11 @@
             If the argument is not given, a default SessionOption will be created for
             the session in .NET API layer.
             </para>
+            <para>
             If a <see cref="!:DCOMSessionOption"/> object is passed, then
             connection is made using DCOM. If a <see cref="!:WsManSessionOption"/>
             object is passed, then connection is made using WsMan.
+            </para>
             </summary>
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.NewCimSessionCommand.BeginProcessing">
@@ -4857,7 +4830,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.NewCimSessionOptionCommand.#ctor">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.NewCimSessionOptionCommand"/> class.
             </summary>
         </member>
         <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.NewCimSessionOptionCommand.NoEncryption">
@@ -5136,7 +5109,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.RemoveCimInstanceCommand.#ctor">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.RemoveCimInstanceCommand"/> class.
             </summary>
         </member>
         <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.RemoveCimInstanceCommand.CimSession">
@@ -5243,7 +5216,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.RemoveCimSessionCommand.#ctor">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.RemoveCimSessionCommand"/> class.
             </summary>
         </member>
         <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.RemoveCimSessionCommand.CimSession">
@@ -5319,7 +5292,7 @@
         </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.SetCimInstanceCommand.#ctor">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.SetCimInstanceCommand"/> class.
             </summary>
         </member>
         <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.SetCimInstanceCommand.CimSession">
@@ -5391,8 +5364,10 @@
         </member>
         <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.SetCimInstanceCommand.PassThru">
             <summary>
+            <para>
             The following is the definition of the input parameter "PassThru",
             indicate whether Set-CimInstance should output modified result instance or not.
+            </para>
             <para>
             True indicates output the result instance, otherwise output nothing as by default
             behavior.
@@ -5545,7 +5520,7 @@
             </para>
             </summary>
         </member>
-        <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.DebugHelper.generateLog">
+        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.DebugHelper.GenerateLog">
             <summary>
             Flag used to control generating log message into file.
             </summary>
@@ -5553,11 +5528,6 @@
         <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.DebugHelper.logInitialized">
             <summary>
             Whether the log been initialized.
-            </summary>
-        </member>
-        <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.DebugHelper.generateVerboseMessage">
-            <summary>
-            Flag used to control generating message into powershell.
             </summary>
         </member>
         <member name="F:Microsoft.Management.Infrastructure.CimCmdlets.DebugHelper.logFile">

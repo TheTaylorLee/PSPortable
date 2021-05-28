@@ -360,7 +360,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ConsoleColorCmdlet.#ctor">
             <summary>
-            Default ctor.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.ConsoleColorCmdlet"/> class.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.ConsoleColorCmdlet.ForegroundColor">
@@ -988,7 +988,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ExportCsvHelper.#ctor(System.Char,Microsoft.PowerShell.Commands.BaseCsvWritingCommand.QuoteKind,System.String[])">
             <summary>
-            Create ExportCsvHelper instance.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.ExportCsvHelper"/> class.
             </summary>
             <param name="delimiter">Delimiter char.</param>
             <param name="quoteKind">Kind of quoting.</param>
@@ -1248,7 +1248,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.PSRunspaceDebug.#ctor(System.Boolean,System.Boolean,System.String,System.Int32)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.PSRunspaceDebug"/> class.
             </summary>
             <param name="enabled">Enable debugger option.</param>
             <param name="breakAll">BreakAll option.</param>
@@ -1689,7 +1689,8 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.FormatListCommand.#ctor">
             <summary>
-            Constructor to set the inner command.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.FormatListCommand"/> class
+            and sets the inner command.
             </summary>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.FormatCustomCommand">
@@ -1699,7 +1700,8 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.FormatCustomCommand.#ctor">
             <summary>
-            Constructor to se the inner command.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.FormatCustomCommand"/> class
+            and sets the inner command.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.FormatCustomCommand.Property">
@@ -1722,7 +1724,8 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.FormatTableCommand.#ctor">
             <summary>
-            Constructor to set the inner command.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.FormatTableCommand"/> class
+            and sets the inner command.
             </summary>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.FormatWideCommand">
@@ -1732,7 +1735,8 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.FormatWideCommand.#ctor">
             <summary>
-            Constructor to se the inner command.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.FormatWideCommand"/> class
+            and sets the inner command.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.FormatWideCommand.Property">
@@ -1760,7 +1764,8 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.OutFileCommand.#ctor">
             <summary>
-            Set inner command.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.OutFileCommand"/> class
+            and sets the inner command.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.OutFileCommand.FilePath">
@@ -1865,7 +1870,8 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.OutPrinterCommand.#ctor">
             <summary>
-            Set inner command.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.OutPrinterCommand"/> class
+            and sets the inner command.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.OutPrinterCommand.Name">
@@ -1919,12 +1925,13 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.Internal.Format.PrinterLineOutput.#cctor">
             <summary>
+            Initializes static members of the <see cref="T:Microsoft.PowerShell.Commands.Internal.Format.PrinterLineOutput"/> class.
             Used for static initializations like DefaultPrintFontName.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.Internal.Format.PrinterLineOutput.#ctor(System.String)">
             <summary>
-            Constructor for the class.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.Internal.Format.PrinterLineOutput"/> class.
             </summary>
             <param name="printerName">Name of printer, if null use default printer.</param>
         </member>
@@ -2049,7 +2056,8 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.OutStringCommand.#ctor">
             <summary>
-            Set inner command.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.OutStringCommand"/> class
+            and sets the inner command.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.OutStringCommand.BeginProcessing">
@@ -2125,7 +2133,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.OutGridViewCommand.#ctor">
             <summary>
-            Constructor for OutGridView.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.OutGridViewCommand"/> class.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.OutGridViewCommand.InputObject">
@@ -2198,17 +2206,12 @@
             Dispose method in IDisposable.
             </summary>
         </member>
-        <member name="M:Microsoft.PowerShell.Commands.OutGridViewCommand.Finalize">
-            <summary>
-            Finalizer.
-            </summary>
-        </member>
         <member name="F:Microsoft.PowerShell.Commands.OutWindowProxy._headerInfo">
             <summary> Columns definition of the underlying Management List</summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.OutWindowProxy.#ctor(System.String,Microsoft.PowerShell.Commands.OutputModeOption,Microsoft.PowerShell.Commands.OutGridViewCommand)">
             <summary>
-            Initializes a new instance of the OutWindowProxy class.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.OutWindowProxy"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.OutWindowProxy.AddColumns(System.String[],System.String[],System.Type[])">
@@ -2724,7 +2727,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.MemberDefinition.#ctor(System.String,System.String,System.Management.Automation.PSMemberTypes,System.String)">
             <summary>
-            Initializes a new instance of this class.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.MemberDefinition"/> class.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.MemberDefinition.TypeName">
@@ -2872,7 +2875,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.PolymorphicRandomNumberGenerator.#ctor">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.PolymorphicRandomNumberGenerator"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.PolymorphicRandomNumberGenerator.NextDouble">
@@ -3271,7 +3274,7 @@
             (i.e. it can't be used for code injection attacks).
             </summary>
             <param name="name">Name to validate.</param>
-            <returns><c>true</c> if the name is safe; <c>false</c> otherwise.</returns>
+            <returns><see langword="true"/> if the name is safe; <see langword="false"/> otherwise.</returns>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ImplicitRemotingCommandBase.IsSafeParameterName(System.String)">
             <summary>
@@ -3279,7 +3282,7 @@
             (i.e. it can't be used for code injection attacks).
             </summary>
             <param name="parameterName">Parameter name to validate.</param>
-            <returns><c>true</c> if the name is safe; <c>false</c> otherwise.</returns>
+            <returns><see langword="true"/> if the name is safe; <see langword="false"/> otherwise.</returns>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ImplicitRemotingCommandBase.IsSafeTypeConstraint(System.Type)">
             <summary>
@@ -3287,7 +3290,7 @@
             (i.e. it doesn't introduce any side effects on the client).
             </summary>
             <param name="type">Type to validate.</param>
-            <returns><c>true</c> if the type is safe; <c>false</c> otherwise.</returns>
+            <returns><see langword="true"/> if the type is safe; <see langword="false"/> otherwise.</returns>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ImplicitRemotingCommandBase.IsSafeCommandMetadata(System.Management.Automation.CommandMetadata)">
             <summary>
@@ -3295,7 +3298,7 @@
             Writes error messages if necessary.  Modifies command metadata to make it safe if necessary.
             </summary>
             <param name="commandMetadata">Command metadata to verify.</param>
-            <returns><c>true</c> if the command metadata is safe; <c>false</c> otherwise.</returns>
+            <returns><see langword="true"/> if the command metadata is safe; <see langword="false"/> otherwise.</returns>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ImplicitRemotingCommandBase.AddRemoteCommandMetadata(System.Collections.Generic.Dictionary{System.String,System.Management.Automation.CommandMetadata},System.Collections.Generic.Dictionary{System.String,System.String},System.Management.Automation.PSObject)">
             <summary>
@@ -3454,6 +3457,11 @@
             Specifies a path to one or more locations, without globbing.
             </summary>
         </member>
+        <member name="P:Microsoft.PowerShell.Commands.ImportPowerShellDataFileCommand.SkipLimitCheck">
+            <summary>
+            Gets or sets switch that determines if built-in limits are applied to the data.
+            </summary>
+        </member>
         <member name="M:Microsoft.PowerShell.Commands.ImportPowerShellDataFileCommand.ProcessRecord">
             <summary>
             For each path, resolve it, parse it and write all hashtables to the output stream.
@@ -3528,13 +3536,13 @@
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.Utility.JoinStringCommand.BeginProcessing">
-            <inheritdoc />
+            <inheritdoc/>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.Utility.JoinStringCommand.ProcessRecord">
-            <inheritdoc />
+            <inheritdoc/>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.Utility.JoinStringCommand.EndProcessing">
-            <inheritdoc />
+            <inheritdoc/>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.SetMarkdownOptionCommand">
             <summary>
@@ -3845,7 +3853,7 @@
             Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.SelectStringCommand.CircularBuffer`1"/> class.
             </summary>
             <param name="capacity">The maximum capacity of the buffer.</param>
-            <exception cref="T:System.ArgumentOutOfRangeException">If <paramref name="capacity" /> is negative.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">If <paramref name="capacity"/> is negative.</exception>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.SelectStringCommand.CircularBuffer`1.Capacity">
             <summary>
@@ -3866,9 +3874,9 @@
             has been properly offset and wrapped.
             </summary>
             <param name="zeroBasedIndex">The index to wrap.</param>
-            <exception cref="T:System.ArgumentOutOfRangeException">If <paramref name="zeroBasedIndex" /> is out of range.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">If <paramref name="zeroBasedIndex"/> is out of range.</exception>
             <returns>
-            The actual index that <param ref="zeroBasedIndex" />
+            The actual index that <paramref name="zeroBasedIndex"/>
             maps to.
             </returns>
         </member>
@@ -4235,7 +4243,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.GenericMeasureInfo.#ctor">
             <summary>
-            Default ctor.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.GenericMeasureInfo"/> class.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.GenericMeasureInfo.Count">
@@ -4281,6 +4289,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.GenericObjectMeasureInfo.#ctor">
             <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.GenericObjectMeasureInfo"/> class.
             Default ctor.
             </summary>
         </member>
@@ -4321,6 +4330,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.TextMeasureInfo.#ctor">
             <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.TextMeasureInfo"/> class.
             Default ctor.
             </summary>
         </member>
@@ -4349,10 +4359,11 @@
             Dictionary to be used by Measure-Object implementation.
             Keys are strings. Keys are compared with OrdinalIgnoreCase.
             </summary>
-            <typeparam name="V">Value type.</typeparam>
+            <typeparam name="TValue">Value type.</typeparam>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.MeasureObjectCommand.MeasureObjectDictionary`1.#ctor">
             <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.MeasureObjectCommand.MeasureObjectDictionary`1"/> class.
             Default ctor.
             </summary>
         </member>
@@ -4377,6 +4388,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.MeasureObjectCommand.#ctor">
             <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.MeasureObjectCommand"/> class.
             Default constructor.
             </summary>
         </member>
@@ -4468,16 +4480,16 @@
             Analyze an object on a property-by-property basis instead
             of as a simple value.
             Side effects: Updates statistics.
-            <param name="inObj">The object to analyze.</param>
             </summary>
+            <param name="inObj">The object to analyze.</param>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.MeasureObjectCommand.AnalyzeValue(System.String,System.Object)">
             <summary>
             Analyze a value for generic/text statistics.
             Side effects: Updates statistics. May set nonNumericError.
+            </summary>
             <param name="propertyName">The property this value corresponds to.</param>
             <param name="objValue">The value to analyze.</param>
-            </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.MeasureObjectCommand.Compare(System.Object,System.Object,System.Boolean)">
             <summary>
@@ -4525,16 +4537,16 @@
         <member name="M:Microsoft.PowerShell.Commands.MeasureObjectCommand.AnalyzeString(System.String,Microsoft.PowerShell.Commands.MeasureObjectCommand.Statistics)">
             <summary>
             Update text statistics.
+            </summary>
             <param name="strValue">The text to analyze.</param>
             <param name="stat">The Statistics object to update.</param>
-            </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.MeasureObjectCommand.AnalyzeNumber(System.Double,Microsoft.PowerShell.Commands.MeasureObjectCommand.Statistics)">
             <summary>
             Update number statistics.
+            </summary>
             <param name="numValue">The number to analyze.</param>
             <param name="stat">The Statistics object to update.</param>
-            </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.MeasureObjectCommand.WritePropertyNotFoundError(System.String,System.String)">
             <summary>
@@ -4552,17 +4564,17 @@
         <member name="M:Microsoft.PowerShell.Commands.MeasureObjectCommand.CreateGenericMeasureInfo(Microsoft.PowerShell.Commands.MeasureObjectCommand.Statistics,System.Boolean)">
             <summary>
             Create a MeasureInfo object for generic stats.
-            <param name="stat">The statistics to use.</param>
-            <returns>A new GenericMeasureInfo object.</returns>
             </summary>
+            <param name="stat">The statistics to use.</param>
             <param name="shouldUseGenericMeasureInfo"></param>
+            <returns>A new GenericMeasureInfo object.</returns>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.MeasureObjectCommand.CreateTextMeasureInfo(Microsoft.PowerShell.Commands.MeasureObjectCommand.Statistics)">
             <summary>
             Create a MeasureInfo object for text stats.
+            </summary>
             <param name="stat">The statistics to use.</param>
             <returns>A new TextMeasureInfo object.</returns>
-            </summary>
         </member>
         <member name="F:Microsoft.PowerShell.Commands.MeasureObjectCommand._statistics">
             <summary>
@@ -4746,7 +4758,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ObjectCommandPropertyValue.#ctor(System.Object,System.Boolean,System.Globalization.CultureInfo)">
             <summary>
-            ObjectCommandPropertyValue constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.ObjectCommandPropertyValue"/> class.
             </summary>
             <param name="propVal">Property Value.</param>
             <param name="isCaseSensitive">Indicates if the Property value comparison has to be case sensitive or not.</param>
@@ -4782,6 +4794,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ObjectCommandComparer.#ctor(System.Boolean,System.Globalization.CultureInfo,System.Boolean)">
             <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.ObjectCommandComparer"/> class.
             Constructor that doesn't set any private field.
             Necessary because compareTo can compare two objects by calling
             ((ICompare)obj1).CompareTo(obj2) without using a key.
@@ -4870,7 +4883,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.OrderByProperty.#ctor">
             <summary>
-            OrderByProperty constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.OrderByProperty"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.OrderByProperty.CreateOrderByPropertyEntry(System.Management.Automation.PSCmdlet,System.Management.Automation.PSObject,System.Boolean,System.Globalization.CultureInfo)">
@@ -4946,7 +4959,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ReadHostCommand.#ctor">
             <summary>
-            Constructs a new instance.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.ReadHostCommand"/> class.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.ReadHostCommand.Prompt">
@@ -5077,7 +5090,8 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.PSPropertyExpressionFilter.#ctor(System.String[])">
             <summary>
-            Construct the class, using an array of patterns.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.PSPropertyExpressionFilter"/> class
+            with the specified array of patterns.
             </summary>
             <param name="wildcardPatternsStrings">Array of pattern strings to use.</param>
         </member>
@@ -5451,11 +5465,6 @@
             Object used for ShowCommand with a command name that holds the view model created for the command.
             </summary>
         </member>
-        <member name="M:Microsoft.PowerShell.Commands.ShowCommandCommand.Finalize">
-            <summary>
-            Finalizes an instance of the ShowCommandCommand class.
-            </summary>
-        </member>
         <member name="P:Microsoft.PowerShell.Commands.ShowCommandCommand.Name">
             <summary>
             Gets or sets the command name.
@@ -5683,7 +5692,8 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ShowCommandExtension.ShowCommandCommandInfo.#ctor(System.Management.Automation.CommandInfo)">
             <summary>
-            Creates an instance of the ShowCommandCommandInfo class based on a CommandInfo object.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.ShowCommandExtension.ShowCommandCommandInfo"/> class
+            with the specified <see cref="T:System.Management.Automation.CommandInfo"/>.
             </summary>
             <param name="other">
             The object to wrap.
@@ -5691,7 +5701,8 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ShowCommandExtension.ShowCommandCommandInfo.#ctor(System.Management.Automation.PSObject)">
             <summary>
-            Creates an instance of the ShowCommandCommandInfo class based on a PSObject object.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.ShowCommandExtension.ShowCommandCommandInfo"/> class
+            with the specified <see cref="T:System.Management.Automation.PSObject"/>.
             </summary>
             <param name="other">
             The object to wrap.
@@ -5742,7 +5753,8 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ShowCommandExtension.ShowCommandModuleInfo.#ctor(System.Management.Automation.PSModuleInfo)">
             <summary>
-            Creates an instance of the ShowCommandModuleInfo class based on a CommandInfo object.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.ShowCommandExtension.ShowCommandModuleInfo"/> class
+            with the specified <see cref="T:System.Management.Automation.CommandInfo"/>.
             </summary>
             <param name="other">
             The object to wrap.
@@ -5750,7 +5762,8 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ShowCommandExtension.ShowCommandModuleInfo.#ctor(System.Management.Automation.PSObject)">
             <summary>
-            Creates an instance of the ShowCommandModuleInfo class based on a PSObject object.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.ShowCommandExtension.ShowCommandModuleInfo"/> class
+            with the specified <see cref="T:System.Management.Automation.PSObject"/>.
             </summary>
             <param name="other">
             The object to wrap.
@@ -5768,7 +5781,8 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ShowCommandExtension.ShowCommandParameterInfo.#ctor(System.Management.Automation.CommandParameterInfo)">
             <summary>
-            Creates an instance of the ShowCommandParameterInfo class based on a CommandParameterInfo object.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.ShowCommandExtension.ShowCommandParameterInfo"/> class
+            with the specified <see cref="T:System.Management.Automation.CommandParameterInfo"/>.
             </summary>
             <param name="other">
             The object to wrap.
@@ -5776,6 +5790,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ShowCommandExtension.ShowCommandParameterInfo.#ctor(System.Management.Automation.PSObject)">
             <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.ShowCommandExtension.ShowCommandParameterInfo"/> class.
             Creates an instance of the ShowCommandParameterInfo class based on a PSObject object.
             </summary>
             <param name="other">
@@ -5825,7 +5840,8 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ShowCommandExtension.ShowCommandParameterSetInfo.#ctor(System.Management.Automation.CommandParameterSetInfo)">
             <summary>
-            Creates an instance of the ShowCommandParameterSetInfo class based on a CommandParameterSetInfo object.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.ShowCommandExtension.ShowCommandParameterSetInfo"/> class
+            with the specified <see cref="T:System.Management.Automation.CommandParameterSetInfo"/>.
             </summary>
             <param name="other">
             The object to wrap.
@@ -5833,7 +5849,8 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ShowCommandExtension.ShowCommandParameterSetInfo.#ctor(System.Management.Automation.PSObject)">
             <summary>
-            Creates an instance of the ShowCommandParameterSetInfo class based on a PSObject object.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.ShowCommandExtension.ShowCommandParameterSetInfo"/> class
+            with the specified <see cref="T:System.Management.Automation.PSObject"/>.
             </summary>
             <param name="other">
             The object to wrap.
@@ -5861,7 +5878,8 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ShowCommandExtension.ShowCommandParameterType.#ctor(System.Type)">
             <summary>
-            Creates an instance of the ShowCommandParameterType class based on a Type object.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.ShowCommandExtension.ShowCommandParameterType"/> class
+            with the specified <see cref="T:System.Type"/>.
             </summary>
             <param name="other">
             The object to wrap.
@@ -5869,7 +5887,8 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ShowCommandExtension.ShowCommandParameterType.#ctor(System.Management.Automation.PSObject)">
             <summary>
-            Creates an instance of the ShowCommandParameterType class based on a Type object.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.ShowCommandExtension.ShowCommandParameterType"/> class
+            with the specified <see cref="T:System.Type"/>.
             </summary>
             <param name="other">
             The object to wrap.
@@ -6127,11 +6146,6 @@
             Dispose method in IDisposable.
             </summary>
         </member>
-        <member name="M:Microsoft.PowerShell.Commands.TeeObjectCommand.Finalize">
-            <summary>
-            Finalizer.
-            </summary>
-        </member>
         <member name="T:Microsoft.PowerShell.Commands.TestJsonCommand">
             <summary>
             This class implements Test-Json command.
@@ -6232,7 +6246,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.PSHostTraceListener.#ctor(System.Management.Automation.PSCmdlet)">
             <summary>
-            Default constructor used if no.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.PSHostTraceListener"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.PSHostTraceListener.Dispose(System.Boolean)">
@@ -7493,13 +7507,14 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.#ctor(System.Net.Http.HttpResponseMessage)">
             <summary>
-            Constructor for BasicHtmlWebResponseObject.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject"/> class.
             </summary>
             <param name="response"></param>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.#ctor(System.Net.Http.HttpResponseMessage,System.IO.Stream)">
             <summary>
-            Constructor for HtmlWebResponseObject with memory stream.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject"/> class
+            with the specified <paramref name="contentStream"/>.
             </summary>
             <param name="response"></param>
             <param name="contentStream"></param>
@@ -7511,7 +7526,7 @@
             <value>
             Content of the response body, decoded using <see cref="P:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.Encoding"/>,
             if the <c>Content-Type</c> response header is a recognized text
-            type.  Otherwise <c>null</c>.
+            type.  Otherwise <see langword="null"/>.
             </value>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.Encoding">
@@ -7520,7 +7535,7 @@
             </summary>
             <value>
             Encoding of the response body from the <c>Content-Type</c> header,
-            or <c>null</c> if the encoding could not be determined.
+            or <see langword="null"/> if the encoding could not be determined.
             </value>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.InputFields">
@@ -7986,21 +8001,33 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.AddMultipartContent(System.Object,System.Object,System.Net.Http.MultipartFormDataContent,System.Boolean)">
             <summary>
-            Adds content to a <see cref="T:System.Net.Http.MultipartFormDataContent" />. Object type detection is used to determine if the value is string, File, or Collection.
+            Adds content to a <see cref="T:System.Net.Http.MultipartFormDataContent"/>. Object type detection is used to determine if the value is string, File, or Collection.
             </summary>
             <param name="fieldName">The Field Name to use.</param>
             <param name="fieldValue">The Field Value to use.</param>
-            <param name="formData">The <see cref="T:System.Net.Http.MultipartFormDataContent" />> to update.</param>
-            <param name="enumerate">If true, collection types in <paramref name="fieldValue" /> will be enumerated. If false, collections will be treated as single value.</param>
+            <param name="formData">The <see cref="T:System.Net.Http.MultipartFormDataContent"/>> to update.</param>
+            <param name="enumerate">If true, collection types in <paramref name="fieldValue"/> will be enumerated. If false, collections will be treated as single value.</param>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.GetMultipartStringContent(System.Object,System.Object)" -->
-        <!-- Badly formed XML comment ignored for member "M:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.GetMultipartStreamContent(System.Object,System.IO.Stream)" -->
+        <member name="M:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.GetMultipartStringContent(System.Object,System.Object)">
+            <summary>
+            Gets a <see cref="T:System.Net.Http.StringContent"/> from the supplied field name and field value. Uses <see cref="M:System.Management.Automation.LanguagePrimitives.ConvertTo``1(System.Object)"/> to convert the objects to strings.
+            </summary>
+            <param name="fieldName">The Field Name to use for the <see cref="T:System.Net.Http.StringContent"/></param>
+            <param name="fieldValue">The Field Value to use for the <see cref="T:System.Net.Http.StringContent"/></param>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.GetMultipartStreamContent(System.Object,System.IO.Stream)">
+            <summary>
+            Gets a <see cref="T:System.Net.Http.StreamContent"/> from the supplied field name and <see cref="T:System.IO.Stream"/>. Uses <see cref="M:System.Management.Automation.LanguagePrimitives.ConvertTo``1(System.Object)"/> to convert the fieldname to a string.
+            </summary>
+            <param name="fieldName">The Field Name to use for the <see cref="T:System.Net.Http.StreamContent"/></param>
+            <param name="stream">The <see cref="T:System.IO.Stream"/> to use for the <see cref="T:System.Net.Http.StreamContent"/></param>
+        </member>
         <member name="M:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.GetMultipartFileContent(System.Object,System.IO.FileInfo)">
             <summary>
-            Gets a <see cref="T:System.Net.Http.StreamContent" /> from the supplied field name and file. Calls <see cref="M:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.GetMultipartStreamContent(System.Object,System.IO.Stream)" /> to create the <see cref="T:System.Net.Http.StreamContent" /> and then sets the file name.
+            Gets a <see cref="T:System.Net.Http.StreamContent"/> from the supplied field name and file. Calls <see cref="M:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.GetMultipartStreamContent(System.Object,System.IO.Stream)"/> to create the <see cref="T:System.Net.Http.StreamContent"/> and then sets the file name.
             </summary>
-            <param name="fieldName">The Field Name to use for the <see cref="T:System.Net.Http.StreamContent" /></param>
-            <param name="file">The file to use for the <see cref="T:System.Net.Http.StreamContent" /></param>
+            <param name="fieldName">The Field Name to use for the <see cref="T:System.Net.Http.StreamContent"/></param>
+            <param name="file">The file to use for the <see cref="T:System.Net.Http.StreamContent"/></param>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.HttpResponseException">
             <summary>
@@ -8009,7 +8036,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.HttpResponseException.#ctor(System.String,System.Net.Http.HttpResponseMessage)">
             <summary>
-            Constructor for HttpResponseException.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.HttpResponseException"/> class.
             </summary>
             <param name="message">Message for the exception.</param>
             <param name="response">Response from the HTTP server.</param>
@@ -8088,13 +8115,14 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.WebResponseObject.#ctor(System.Net.Http.HttpResponseMessage)">
             <summary>
-            Constructor for WebResponseObject.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.WebResponseObject"/> class.
             </summary>
             <param name="response"></param>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.WebResponseObject.#ctor(System.Net.Http.HttpResponseMessage,System.IO.Stream)">
             <summary>
-            Constructor for WebResponseObject with contentStream.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.WebResponseObject"/> class
+            with the specified <paramref name="contentStream"/>.
             </summary>
             <param name="response"></param>
             <param name="contentStream"></param>
@@ -8188,7 +8216,13 @@
             the array symbols will occur only if there is more than one input object.
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "P:Microsoft.PowerShell.Commands.ConvertToJsonCommand.EscapeHandling" -->
+        <member name="P:Microsoft.PowerShell.Commands.ConvertToJsonCommand.EscapeHandling">
+            <summary>
+            Specifies how strings are escaped when writing JSON text.
+            If the EscapeHandling property is set to EscapeHtml, the result JSON string will
+            be returned with HTML (&lt;, &gt;, &amp;, ', ") and control characters (e.g. newline) are escaped.
+            </summary>
+        </member>
         <member name="M:Microsoft.PowerShell.Commands.ConvertToJsonCommand.BeginProcessing">
             <summary>
             Prerequisite checks.
@@ -8217,7 +8251,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.InvokeWebRequestCommand.#ctor">
             <summary>
-            Default constructor for InvokeWebRequestCommand.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.InvokeWebRequestCommand"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.InvokeWebRequestCommand.ProcessResponse(System.Net.Http.HttpResponseMessage)">
@@ -8253,7 +8287,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.FormObject.#ctor(System.String,System.String,System.String)">
             <summary>
-            Constructor for FormObject.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.FormObject"/> class.
             </summary>
             <param name="id"></param>
             <param name="method"></param>
@@ -8319,16 +8353,16 @@
             <param name="enumsAsStrings">Indicates whether to use enum names for the JSON conversion.</param>
             <param name="compressOutput">Indicates whether to get the compressed output.</param>
         </member>
-        <member name="M:Microsoft.PowerShell.Commands.JsonObject.ConvertToJsonContext.#ctor(System.Int32,System.Boolean,System.Boolean,System.Threading.CancellationToken,Newtonsoft.Json.StringEscapeHandling,System.Management.Automation.PSCmdlet)">
+        <member name="M:Microsoft.PowerShell.Commands.JsonObject.ConvertToJsonContext.#ctor(System.Int32,System.Boolean,System.Boolean,Newtonsoft.Json.StringEscapeHandling,System.Management.Automation.PSCmdlet,System.Threading.CancellationToken)">
             <summary>
             Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.JsonObject.ConvertToJsonContext"/> struct.
             </summary>
             <param name="maxDepth">The maximum depth to visit the object.</param>
             <param name="enumsAsStrings">Indicates whether to use enum names for the JSON conversion.</param>
             <param name="compressOutput">Indicates whether to get the compressed output.</param>
-            <param name="cancellationToken">Specifies the cancellation token for cancelling the operation.</param>
             <param name="stringEscapeHandling">Specifies how strings are escaped when writing JSON text.</param>
             <param name="targetCmdlet">Specifies the cmdlet that is calling this method.</param>
+            <param name="cancellationToken">Specifies the cancellation token for cancelling the operation.</param>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.JsonObject.ConvertFromJson(System.String,System.Management.Automation.ErrorRecord@)">
             <summary>
@@ -8471,6 +8505,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.WebResponseContentMemoryStream.#ctor(System.IO.Stream,System.Int32,System.Management.Automation.Cmdlet)">
             <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.WebResponseContentMemoryStream"/> class.
             </summary>
             <param name="stream"></param>
             <param name="initialCapacity"></param>
@@ -8723,7 +8758,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.WebRequestSession.#ctor">
             <summary>
-            Construct a new instance of a WebRequestSession object.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.WebRequestSession"/> class.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.WebRequestSession.AddCertificate(System.Security.Cryptography.X509Certificates.X509Certificate)">
@@ -8896,7 +8931,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.WriteErrorCommand.#ctor">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.WriteErrorCommand"/> class.
             </summary>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.WriteErrorException">
@@ -8908,20 +8943,20 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.WriteErrorException.#ctor">
             <summary>
-            Constructor for class WriteErrorException.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.WriteErrorException"/> class.
             </summary>
             <returns>Constructed object.</returns>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.WriteErrorException.#ctor(System.String)">
             <summary>
-            Constructor for class WriteErrorException.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.WriteErrorException"/> class.
             </summary>
             <param name="message"></param>
             <returns>Constructed object.</returns>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.WriteErrorException.#ctor(System.String,System.Exception)">
             <summary>
-            Constructor for class WriteErrorException.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.WriteErrorException"/> class.
             </summary>
             <param name="message"></param>
             <param name="innerException"></param>
@@ -8929,7 +8964,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.WriteErrorException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
             <summary>
-            Serialization constructor for class WriteErrorException.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.WriteErrorException"/> class for serialization.
             </summary>
             <param name="info">Serialization information.</param>
             <param name="context">Streaming context.</param>
@@ -9420,7 +9455,7 @@
         </member>
         <member name="M:System.Management.Automation.CustomSerialization.#ctor(System.Xml.XmlWriter,System.Boolean,System.Int32)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:System.Management.Automation.CustomSerialization"/> class.
             </summary>
             <param name="writer">
             writer to be used for serialization.
@@ -9440,7 +9475,7 @@
         </member>
         <member name="M:System.Management.Automation.CustomSerialization.#ctor(System.Xml.XmlWriter,System.Boolean)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:System.Management.Automation.CustomSerialization"/> class.
             </summary>
             <param name="writer">
             writer to be used for serialization.
@@ -9507,7 +9542,7 @@
         </member>
         <member name="M:System.Management.Automation.CustomInternalSerializer.#ctor(System.Xml.XmlWriter,System.Boolean,System.Boolean)">
             <summary>
-            Constructor.
+            Initializes a new instance of the <see cref="T:System.Management.Automation.CustomInternalSerializer"/> class.
             </summary>
             <param name="writer">
             Xml writer to be used.
@@ -11415,6 +11450,13 @@
              
             </summary>
         </member>
+        <member name="P:NewObjectStrings.CannotCreateTypeLanguageMode">
+            <summary>
+              Looks up a localized string similar to 
+               Cannot create type. Only core types are supported in {0} language mode on a policy locked down machine.
+             
+            </summary>
+        </member>
         <member name="P:NewObjectStrings.ApartmentNotSupported">
             <summary>
               Looks up a localized string similar to 
@@ -12340,7 +12382,7 @@
         <member name="P:WebCmdletStrings.ProxyUriNotSupplied">
             <summary>
               Looks up a localized string similar to 
-               The cmdlet cannot run because the following parameter is missing: Proxy. Provide a valid proxy URI for the Proxy parameter when using the ProxyCredential or UseDefaultProxyCredentials parameters, then retry.
+               The cmdlet cannot run because the following parameter is missing: Proxy. Provide a valid proxy URI for the Proxy parameter when using the ProxyCredential or ProxyUseDefaultCredentials parameters, then retry.
              
             </summary>
         </member>
@@ -12466,7 +12508,7 @@
         <member name="P:WebCmdletStrings.WebMethodInvocationVerboseMsg">
             <summary>
               Looks up a localized string similar to 
-               {0} {1} with {2}-byte payload
+               {0} with {1}-byte payload
              
             </summary>
         </member>

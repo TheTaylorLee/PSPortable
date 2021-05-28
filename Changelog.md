@@ -6,3 +6,4 @@
      - 1.3.0 Updated Admintoolbox.ActiveDirectory module version and the Invoke-VersionUpdate function
      - 1.4.0 Added Conemu color schemes
      - 1.5.0 Updated PSReadline Version
+     - 1.6.0 Upgraded to powershell v7.2.0-preview.5
