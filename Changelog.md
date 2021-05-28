@@ -4,3 +4,4 @@
      - 1.1.0 Updated the readme with a getting started function
      - 1.2.0 Updated the readme with a changelog
      - 1.3.0 Updated Admintoolbox.ActiveDirectory module version and the Invoke-VersionUpdate function
+     - 1.4.0 Added Conemu color schemes
