@@ -7,3 +7,4 @@
      - 1.4.0 Added Conemu color schemes
      - 1.5.0 Updated PSReadline Version
      - 1.6.0 Upgraded to powershell v7.2.0-preview.5
+     - 1.7.0 Upgraded Admintoolbox.Remoting Module
