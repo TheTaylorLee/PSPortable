@@ -16,3 +16,4 @@
 * **1.3.0.0** Added function import-activedirectory
 * **1.3.1.0** Updates for output made to Get-UserReport
 * **1.3.2.0** Renamed function get-dclockoutevents2 to just be Get-DCLockoutEvents
+* **1.3.2.1** Fix for Renamed function not being exported
