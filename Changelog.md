@@ -9,3 +9,4 @@
      - 1.6.0 Upgraded to powershell v7.2.0-preview.5
      - 1.7.0 Upgraded Admintoolbox.Remoting Module
      - 1.7.1 Upgraded Admintoolbox.Remoting Module to a fix function not being exported
+     - 1.8.0 Upgraded Admintoolbox.Remoting Module with new functions
