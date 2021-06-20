@@ -1,11 +1,11 @@
-#TODO Monitor for changes made to the AzViz module that can be expanded into this function or new functions.
+#DOIT Monitor for changes made to the AzViz module that can be expanded into this function or new functions.
 function Get-TenantDiagrams {
     <#
     .DESCRIPTION
     This funcion expands on the AZViz module by PrateekSingh. That module can export Azure resourcegroups to create dependency diagrams. This function will loop through all resource groups to create a diagram for all in a tenant and export them into a logical folder structure.
 
     .EXAMPLE
-    Get-TenantDiagrams -theme light -OutPutFilePath c:\basefolder
+    Get-TenantDiagrams -theme light -OutputFilePath (Get-FolderName) -Direction left-to-right -CategoryDepth 3 -LabelVerbosity 1
 
     .NOTES
     Tested and compatible with AZViz version 1.0.9 and PSGraph version 2.1.38.27. If not working in the future look for changes in those modules versions
@@ -45,10 +45,10 @@ function Get-TenantDiagrams {
     }
 
 
-    $Subscriptions = Get-AzSubscription
+    $Subscriptions = Get-AzSubscription | Out-GridView -PassThru -Title 'Select the Subscriptions you wish to generate graphs of'
 
     foreach ($sub in $Subscriptions) {
-        Get-AzSubscription -SubscriptionName $sub.Name | Set-AzContext
+        Get-AzSubscription -SubscriptionName $sub.Name | Set-AzContext | Out-Null
         $script:name = $sub.name
         New-Item -Path $OutputFilePath\$dateis\$name -ItemType Directory | Out-Null
         $AZResourcegroups = Get-AzResourceGroup

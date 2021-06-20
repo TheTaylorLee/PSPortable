@@ -36,7 +36,6 @@ Function get-mailboxreport {
             IsArchiveMailbox   = $stats.IsArchiveMailbox
             MailboxTypeDetail  = $stats.MailboxTypeDetail
         } | Export-Excel -Path $env:USERPROFILE\downloads\mailboxdetails.xlsx -WorksheetName $mailbox.database -FreezeTopRow -AutoSize -Append
-
-        Write-Host "Report can be found here $env:USERPROFILE\downloads\mailboxdetails.xlsx"
     }
+    Write-Host "Report can be found here $env:USERPROFILE\downloads\mailboxdetails.xlsx"
 }

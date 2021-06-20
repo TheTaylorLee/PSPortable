@@ -19,7 +19,6 @@ Function Invoke-EXOSharedSession {
     #>
 
     [CmdletBinding()]
-    [Alias('Connect-Exchange')]
     param (
         [Parameter(Mandatory = $true)]$FQDN
     )
@@ -37,4 +36,4 @@ Function Invoke-EXOSharedSession {
 
     Write-Host "Use no Prefix when working with Exchange Online" -ForegroundColor Green
     Write-Host "Use the Prefix OP when working with On-Premise Exchange" -ForegroundColor Yellow
-    }
+}

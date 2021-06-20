@@ -21,7 +21,7 @@ Function Get-MFAStatus {
     }
 
     #Get all accounts for filtering
-    $MSOLUsers = Get-MsolUser
+    $MSOLUsers = Get-MsolUser -all | Where-Object { $_.IsLicensed -eq 'True' }
 
     #Process results into a PSCustom Object with relevant info
     ForEach ($User in $MSOLUsers) {
