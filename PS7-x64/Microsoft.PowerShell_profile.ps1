@@ -1,4 +1,6 @@
-﻿$ErrorActionPreference = 'SilentlyContinue'
+﻿#BKPSPROFILE
+
+$ErrorActionPreference = 'SilentlyContinue'
 
 <#old prompt
     function prompt {
