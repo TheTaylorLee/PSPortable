@@ -211,6 +211,25 @@ if ($t1 -or $t2 -eq $true) {
 
 #-------------------------------------------------------------------------------------------------------------------------------------------------------
 
+#Handling Bugged experimental features of psreadline
+#This is a work around to this issue. https://github.com/PowerShell/PowerShell/issues/14506
+#When upgrading powershell 7 versions and psreadline check to see if this has been addressed.
+reset-colors {
+    [Console]::ResetColor()
+}
+reset-colors
+
+$Suggestions = Get-ExperimentalFeature -Name PSCommandNotFoundSuggestion | Where-Object { $_.enabled -like "true" }
+$AnsiRendering = Get-ExperimentalFeature -Name PSAnsiRendering | Where-Object { $_.enabled -like "true" }
+
+if ($Suggestions) {
+    Disable-ExperimentalFeature  –Name PSCommandNotFoundSuggestion | Out-Null
+}
+if ($AnsiRendering) {
+    Disable-ExperimentalFeature  –Name PSAnsiRendering | Out-Null
+}
+
+#-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Import-Module AdminToolbox
 Import-Module BetterCredentials
@@ -227,12 +246,5 @@ $Down = "$env:USERPROFILE\downloads"
 
 #Set starting directory to downloads
 Set-Location $Down
-
-#This is a work around to this issue. https://github.com/PowerShell/PowerShell/issues/14506
-#When upgrading powershell 7 versions and psreadline check to see if this has been addressed.
-reset-colors {
-    [Console]::ResetColor()
-}
-reset-colors
 
 $ErrorActionPreference = 'Continue'
