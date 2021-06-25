@@ -212,9 +212,9 @@ if ($t1 -or $t2 -eq $true) {
 #-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #Handling Bugged experimental features of psreadline
-#This is a work around to this issue. https://github.com/PowerShell/PowerShell/issues/14506
-#When upgrading powershell 7 versions and psreadline check to see if this has been addressed.
+#When upgrading powershell 7 versions and psreadline check to see if these has been addressed.
 reset-colors {
+    #This is a work around to this issue. https://github.com/PowerShell/PowerShell/issues/14506
     [Console]::ResetColor()
 }
 reset-colors
@@ -223,12 +223,13 @@ $Suggestions = Get-ExperimentalFeature -Name PSCommandNotFoundSuggestion | Where
 $AnsiRendering = Get-ExperimentalFeature -Name PSAnsiRendering | Where-Object { $_.enabled -like "true" }
 
 if ($Suggestions) {
+    #Getting rid of annoying suggestion
     Disable-ExperimentalFeature  –Name PSCommandNotFoundSuggestion | Out-Null
 }
 if ($AnsiRendering) {
+    #Hopefully eliminates hardcoded console color changes when using write-verbose, write-warning, etc.
     Disable-ExperimentalFeature  –Name PSAnsiRendering | Out-Null
 }
-
 #-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Import-Module AdminToolbox
