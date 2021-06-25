@@ -13,3 +13,4 @@
      - 1.9.0 Upgrades to Admintoolbox Modules
      - 1.10.0 Updated the powershell profile and Version checking process
      - 1.11.0 Removed reliance on Internet explorer web engine by updating invoke-webrequest functions to use basic parsing
+     - 1.11.1 Added work around reset-colors function for this issue. https://github.com/PowerShell/PowerShell/issues/14506
