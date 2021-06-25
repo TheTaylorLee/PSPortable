@@ -213,11 +213,9 @@ if ($t1 -or $t2 -eq $true) {
 
 #Handling Bugged experimental features of psreadline
 #When upgrading powershell 7 versions and psreadline check to see if these has been addressed.
-reset-colors {
-    #This is a work around to this issue. https://github.com/PowerShell/PowerShell/issues/14506
-    [Console]::ResetColor()
-}
-reset-colors
+
+#This is a work around to this issue. https://github.com/PowerShell/PowerShell/issues/14506
+[Console]::ResetColor()
 
 $Suggestions = Get-ExperimentalFeature -Name PSCommandNotFoundSuggestion | Where-Object { $_.enabled -like "true" }
 $AnsiRendering = Get-ExperimentalFeature -Name PSAnsiRendering | Where-Object { $_.enabled -like "true" }
