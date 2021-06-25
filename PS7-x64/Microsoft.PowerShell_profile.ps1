@@ -230,7 +230,7 @@ Set-Location $Down
 
 #This is a work around to this issue. https://github.com/PowerShell/PowerShell/issues/14506
 #When upgrading powershell 7 versions and psreadline check to see if this has been addressed.
-reset-color {
+reset-colors {
     [Console]::ResetColor()
 }
 reset-colors
