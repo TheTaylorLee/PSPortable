@@ -12,3 +12,4 @@
      - 1.8.0 Upgraded Admintoolbox.Remoting Module with new functions
      - 1.9.0 Upgrades to Admintoolbox Modules
      - 1.10.0 Updated the powershell profile and Version checking process
+     - 1.11.0 Removed reliance on Internet explorer web engine by updating invoke-webrequest functions to use basic parsing

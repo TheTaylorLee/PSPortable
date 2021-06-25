@@ -8,7 +8,7 @@ Deploys a portable PowerShell package with often used modules.
 
 ```Powershell
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-(invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortable.ps1).content | Invoke-Expression
+(invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortable.ps1 -usebasicparsing).content | Invoke-Expression
 ```
 
 * *__To Upgrade__*
@@ -17,5 +17,5 @@ Deploys a portable PowerShell package with often used modules.
 
 ```Powershell
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-(invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Invoke-VersionUpdate.ps1).content | Invoke-Expression
+(invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Invoke-VersionUpdate.ps1 -usebasicparsing).content | Invoke-Expression
 ```
