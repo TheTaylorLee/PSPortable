@@ -1,5 +1,5 @@
-#DOIT Replace PSNmap commands with own functions. This is to remove reliance on PSNmap module
-#DOIT Take Invoke-PSIPCalc and add it as a native function of the Admintoolbox.Networking module after replacing reliance on PSNmap
+#FUTURECONSIDERATIONS Replace PSNmap commands with own functions. This is to remove reliance on PSNmap module
+#FUTURECONSIDERATIONS Take Invoke-PSIPCalc and add it as a native function of the Admintoolbox.Networking module after replacing reliance on PSNmap
 function Invoke-NetworkScan {
     <#
     .Description
@@ -30,8 +30,7 @@ function Invoke-NetworkScan {
     Does not work in Powershell Core
 
     .Link
-    Invoke-PSipcalc https://www.powershellgallery.com/packages/PSnmap
-    Invoke-PSNmap https://www.powershellgallery.com/packages/PSnmap
+    https://github.com/TheTaylorLee/AdminToolbox
     #>
     [CmdletBinding()]
     [Alias('scan')]
