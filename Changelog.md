@@ -16,3 +16,4 @@
      - 1.11.1 Added work around reset-colors function for this issue. https://github.com/PowerShell/PowerShell/issues/14506
      - 1.11.2 Added a reset-colors function
      - 1.12.0 Updated Admintoolbox Modules
+     - 1.13.0 Added FortiWizard Module
