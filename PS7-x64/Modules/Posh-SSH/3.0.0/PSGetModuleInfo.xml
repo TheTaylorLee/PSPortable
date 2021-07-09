@@ -1,0 +1,227 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Posh-SSH</S>
+      <S N="Version">3.0.0-beta5</S>
+      <S N="Type">Module</S>
+      <S N="Description">Provide SSH and SCP functionality for executing commands against remote hosts.</S>
+      <S N="Author">Carlos Perez</S>
+      <S N="CompanyName">cperez</S>
+      <S N="Copyright">(c) 2021 Carlos Perez. All rights reserved.</S>
+      <DT N="PublishedDate">2021-06-04T12:41:17-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2021-06-28T08:31:00.9247896-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://github.com/darkoperator/Posh-SSH</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-PoshSSHModVersion</S>
+                <S>Get-SFTPChildItem</S>
+                <S>Get-SFTPContent</S>
+                <S>Get-SFTPLocation</S>
+                <S>Get-SFTPPathAttribute</S>
+                <S>Get-SFTPSession</S>
+                <S>Get-SSHPortForward</S>
+                <S>Get-SSHSession</S>
+                <S>Get-SSHTrustedHost</S>
+                <S>Invoke-SSHCommand</S>
+                <S>Invoke-SSHCommandStream</S>
+                <S>Invoke-SSHStreamExpectAction</S>
+                <S>Invoke-SSHStreamExpectSecureAction</S>
+                <S>Invoke-SSHStreamShellCommand</S>
+                <S>Move-SFTPItem</S>
+                <S>New-SFTPFileStream</S>
+                <S>New-SFTPItem</S>
+                <S>New-SFTPSymlink</S>
+                <S>New-SSHDynamicPortForward</S>
+                <S>New-SSHLocalPortForward</S>
+                <S>New-SSHRemotePortForward</S>
+                <S>New-SSHShellStream</S>
+                <S>New-SSHTrustedHost</S>
+                <S>Remove-SFTPItem</S>
+                <S>Remove-SFTPSession</S>
+                <S>Remove-SSHSession</S>
+                <S>Remove-SSHTrustedHost</S>
+                <S>Rename-SFTPFile</S>
+                <S>Set-SFTPContent</S>
+                <S>Set-SFTPLocation</S>
+                <S>Set-SFTPPathAttribute</S>
+                <S>Start-SSHPortForward</S>
+                <S>Stop-SSHPortForward</S>
+                <S>Test-SFTPPath</S>
+                <S>Convert-SSHRegistryToJsonKnownHost</S>
+                <S>Get-SSHRegistryKnownHost</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-SCPItem</S>
+                <S>Get-SFTPItem</S>
+                <S>New-SFTPSession</S>
+                <S>New-SSHSession</S>
+                <S>Set-SCPItem</S>
+                <S>Set-SFTPItem</S>
+                <S>New-SSHMemoryKnownHost</S>
+                <S>Get-SSHJsonKnowHost</S>
+                <S>Get-SSHOpenSSHKnownHost</S>
+                <S>Get-PoshSSHModVersion</S>
+                <S>Get-SFTPChildItem</S>
+                <S>Get-SFTPContent</S>
+                <S>Get-SFTPLocation</S>
+                <S>Get-SFTPPathAttribute</S>
+                <S>Get-SFTPSession</S>
+                <S>Get-SSHPortForward</S>
+                <S>Get-SSHSession</S>
+                <S>Get-SSHTrustedHost</S>
+                <S>Invoke-SSHCommand</S>
+                <S>Invoke-SSHCommandStream</S>
+                <S>Invoke-SSHStreamExpectAction</S>
+                <S>Invoke-SSHStreamExpectSecureAction</S>
+                <S>Invoke-SSHStreamShellCommand</S>
+                <S>Move-SFTPItem</S>
+                <S>New-SFTPFileStream</S>
+                <S>New-SFTPItem</S>
+                <S>New-SFTPSymlink</S>
+                <S>New-SSHDynamicPortForward</S>
+                <S>New-SSHLocalPortForward</S>
+                <S>New-SSHRemotePortForward</S>
+                <S>New-SSHShellStream</S>
+                <S>New-SSHTrustedHost</S>
+                <S>Remove-SFTPItem</S>
+                <S>Remove-SFTPSession</S>
+                <S>Remove-SSHSession</S>
+                <S>Remove-SSHTrustedHost</S>
+                <S>Rename-SFTPFile</S>
+                <S>Set-SFTPContent</S>
+                <S>Set-SFTPLocation</S>
+                <S>Set-SFTPPathAttribute</S>
+                <S>Start-SSHPortForward</S>
+                <S>Stop-SSHPortForward</S>
+                <S>Test-SFTPPath</S>
+                <S>Convert-SSHRegistryToJsonKnownHost</S>
+                <S>Get-SSHRegistryKnownHost</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="8">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-SCPItem</S>
+                <S>Get-SFTPItem</S>
+                <S>New-SFTPSession</S>
+                <S>New-SSHSession</S>
+                <S>Set-SCPItem</S>
+                <S>Set-SFTPItem</S>
+                <S>New-SSHMemoryKnownHost</S>
+                <S>Get-SSHJsonKnowHost</S>
+                <S>Get-SSHOpenSSHKnownHost</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="9">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2021 Carlos Perez. All rights reserved.</S>
+          <S N="description">Provide SSH and SCP functionality for executing commands against remote hosts.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">False</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">281</S>
+          <S N="downloadCount">5347902</S>
+          <S N="packageSize">686168</S>
+          <S N="published">6/4/2021 12:41:17 PM -05:00</S>
+          <S N="created">6/4/2021 12:41:17 PM -05:00</S>
+          <S N="lastUpdated">6/28/2021 1:19:00 PM -05:00</S>
+          <S N="tags">PSModule</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2021-06-28T13:19:00Z</S>
+          <S N="NormalizedVersion">3.0.0-beta5</S>
+          <S N="Authors">Carlos Perez</S>
+          <S N="IsPrerelease">true</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Posh-SSH.nuspec|Posh-SSH.psd1|Posh-SSH.psm1|PoshSSH.dll|Assembly\Newtonsoft.Json.dll|Assembly\Renci.SshNet.dll|Assembly\SshNet.Security.Cryptography.dll|en-US\Posh-SSH-help.xml|en-US\Posh-SSH.psm1-Help.xml|en-US\PoshSSH.dll-help.xml|Format\Renci.SshNet.Sftp.SftpFile.Format.ps1xml|Format\Renci.SshNet.SshCommand.Format.ps1xml|Format\SFTPSession.Format.ps1xml|Format\SSHSession.Format.ps1xml</S>
+          <S N="Cmdlets">Get-SCPItem Get-SFTPItem New-SFTPSession New-SSHSession Set-SCPItem Set-SFTPItem New-SSHMemoryKnownHost Get-SSHJsonKnowHost Get-SSHOpenSSHKnownHost</S>
+          <S N="Functions">Get-PoshSSHModVersion Get-SFTPChildItem Get-SFTPContent Get-SFTPLocation Get-SFTPPathAttribute Get-SFTPSession Get-SSHPortForward Get-SSHSession Get-SSHTrustedHost Invoke-SSHCommand Invoke-SSHCommandStream Invoke-SSHStreamExpectAction Invoke-SSHStreamExpectSecureAction Invoke-SSHStreamShellCommand Move-SFTPItem New-SFTPFileStream New-SFTPItem New-SFTPSymlink New-SSHDynamicPortForward New-SSHLocalPortForward New-SSHRemotePortForward New-SSHShellStream New-SSHTrustedHost Remove-SFTPItem Remove-SFTPSession Remove-SSHSession Remove-SSHTrustedHost Rename-SFTPFile Set-SFTPContent Set-SFTPLocation Set-SFTPPathAttribute Start-SSHPortForward Stop-SSHPortForward Test-SFTPPath Convert-SSHRegistryToJsonKnownHost Get-SSHRegistryKnownHost</S>
+          <S N="GUID">f5c99306-7b5a-4fca-a052-f79ad1e48fbf</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">www.darkoperator.com</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\Posh-SSH\3.0.0</S>
+    </MS>
+  </Obj>
+</Objs>

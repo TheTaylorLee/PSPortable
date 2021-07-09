@@ -17,3 +17,4 @@
      - 1.11.2 Added a reset-colors function
      - 1.12.0 Updated Admintoolbox Modules
      - 1.13.0 Added FortiWizard Module
+     - 1.14.0 Added Admintoolbox.Fortiwizard Module and remove FortiWizard Module
