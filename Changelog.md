@@ -1,16 +1,16 @@
 **Changelog**
 
-     - 1.0.0 Added Version Control
-     - 1.1.0 Updated the readme with a getting started function
-     - 1.2.0 Updated the readme with a changelog
-     - 1.3.0 Updated Admintoolbox.ActiveDirectory module version and the Invoke-VersionUpdate function
-     - 1.4.0 Added Conemu color schemes
-     - 1.5.0 Updated PSReadline Version
-     - 1.6.0 Upgraded to powershell v7.2.0-preview.5
-     - 1.7.0 Upgraded Admintoolbox.Remoting Module
-     - 1.7.1 Upgraded Admintoolbox.Remoting Module to a fix function not being exported
-     - 1.8.0 Upgraded Admintoolbox.Remoting Module with new functions
-     - 1.9.0 Upgrades to Admintoolbox Modules
+     - 1.0.0  Added Version Control
+     - 1.1.0  Updated the readme with a getting started function
+     - 1.2.0  Updated the readme with a changelog
+     - 1.3.0  Updated Admintoolbox.ActiveDirectory module version and the Invoke-VersionUpdate function
+     - 1.4.0  Added Conemu color schemes
+     - 1.5.0  Updated PSReadline Version
+     - 1.6.0  Upgraded to powershell v7.2.0-preview.5
+     - 1.7.0  Upgraded Admintoolbox.Remoting Module
+     - 1.7.1  Upgraded Admintoolbox.Remoting Module to fix a function not being exported
+     - 1.8.0  Upgraded Admintoolbox.Remoting Module with new functions
+     - 1.9.0  Upgrades to Admintoolbox Modules
      - 1.10.0 Updated the powershell profile and Version checking process
      - 1.11.0 Removed reliance on Internet explorer web engine by updating invoke-webrequest functions to use basic parsing
      - 1.11.1 Added work around reset-colors function for this issue. https://github.com/PowerShell/PowerShell/issues/14506
@@ -18,3 +18,4 @@
      - 1.12.0 Updated Admintoolbox Modules
      - 1.13.0 Added FortiWizard Module
      - 1.14.0 Added Admintoolbox.Fortiwizard Module and remove FortiWizard Module
+     - 1.15.0 Updated Admintoolbox.FortiWizard and Admintoolbox Module
