@@ -19,3 +19,4 @@
      - 1.13.0 Added FortiWizard Module
      - 1.14.0 Added Admintoolbox.Fortiwizard Module and remove FortiWizard Module
      - 1.15.0 Updated Admintoolbox.FortiWizard and Admintoolbox Module
+     - 1.16.0 Updated Admintoolbox.VMWareAutomate and Admintoolbox Module
