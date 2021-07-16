@@ -22,3 +22,4 @@
      - 1.16.0 Updated Admintoolbox.VMWareAutomate and Admintoolbox Modules
      - 1.17.0 Added PSWindowsUpdate Module
      - 1.18.0 Updated Admintoolbox.FortiWizard and Admintoolbox Modules
+     - 1.19.0 Updated Admintoolbox.FortiWizard and Admintoolbox Modules
