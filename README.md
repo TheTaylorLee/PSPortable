@@ -4,7 +4,7 @@ Deploys a portable PowerShell package with often used modules.
 
 * *__To get started__*
   * Open an admin PowerShell prompt
-  * Run the below function
+  * Run the below script
 
 ```Powershell
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
@@ -13,7 +13,7 @@ Deploys a portable PowerShell package with often used modules.
 
 * *__To Upgrade__*
   * Open an admin PowerShell prompt
-  * Run the below function
+  * Run the below script
 
 ```Powershell
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
