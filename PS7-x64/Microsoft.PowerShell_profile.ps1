@@ -245,6 +245,7 @@ if ($Suggestions) {
     #Getting rid of annoying suggestion
     Disable-ExperimentalFeature  –Name PSCommandNotFoundSuggestion | Out-Null
 }
+#BKPSPROFILE PSAnsiRendering causing console color issues supposedly fixed in newest powershell and psreadline versions
 if ($AnsiRendering) {
     #Hopefully eliminates hardcoded console color changes when using write-verbose, write-warning, etc.
     Disable-ExperimentalFeature  –Name PSAnsiRendering | Out-Null
