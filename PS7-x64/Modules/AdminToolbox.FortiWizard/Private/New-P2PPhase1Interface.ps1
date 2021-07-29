@@ -9,12 +9,13 @@ Function New-P2PPhase1Interface {
 
     [CmdletBinding()]
     Param (
-    )
-
-    $TunnelName = Read-Host "Provide a VPN Tunnel Name with a maximum 15 AlphaNumeric characters  (TunnelName)"
-    $Interface = Read-Host "Provide the name of the public interface for this tunnel. (Public Interface)"
-    $TTL = Read-Host "Provide the Phase 1 Time to Live (TTL)"
-    $Proposal = Read-Host "
+        [Parameter(Mandatory = $true, HelpMessage = "Provide a VPN Tunnel Name with a maximum 15 AlphaNumeric characters.")]
+        $TunnelName,
+        [Parameter(Mandatory = $true, HelpMessage = "Provide the name of the public interface for this tunnel.")]
+        $Interface,
+        [Parameter(Mandatory = $true, HelpMessage = "Provide the Phase 1 Time to Live.")]
+        $TTL,
+        [Parameter(Mandatory = $true, HelpMessage = "
 des-md5          des-md5
 des-sha1         des-sha1
 des-sha256       des-sha256
@@ -41,11 +42,16 @@ aes256-sha256    aes256-sha256
 aes256-sha384    aes256-sha384
 aes256-sha512    aes256-sha512
 
-Type in the encryption selection to use for the Phase 1 Proposal in a space delimited format. (Encryption Proposal)
-"
-    $dhgroups = Read-Host "Provide the DH Group or Group in space delimeted format. (DH Group/s)"
-    $PeerAddress = Read-Host "Specify the Peer address for the Tunnel Peer (Peer Address)"
-    $PSK = Read-Host "Specify the PSK for the Tunnel"
+Type in the encryption selection to use for the Phase 1 Proposal in a space delimited format.
+")]
+        $Proposal,
+        [Parameter(Mandatory = $true, HelpMessage = "Provide the DH Group or Groups in space delimeted format.")]
+        $dhgroups,
+        [Parameter(Mandatory = $true, HelpMessage = "Specify the Peer address for the Tunnel Peer")]
+        $PeerAddress,
+        [Parameter(Mandatory = $true, HelpMessage = "Specify the PSK for the Tunnel")]
+        $PSK
+    )
 
     Write-Output "
 config vpn ipsec phase1-interface
@@ -58,6 +64,5 @@ config vpn ipsec phase1-interface
         set remote-gw $PeerAddress
         set psksecret $PSK
     next
-end
-"
+end"
 }

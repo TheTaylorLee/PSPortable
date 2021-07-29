@@ -11,11 +11,11 @@ Function New-P2PPhase2Interface {
 
     [CmdletBinding()]
     Param (
-    )
-
-    $PhaseName = Read-Host "Provide a Phase 2 Name in the format of <TunnelName P2 #> (Phase 2 Name)"
-    $TunnelName = Read-Host "Provide the tunnel name that was provided when creating the phase 1 interface. This is case sensitive (TunnelName)"
-    $Proposal = Read-Host "
+        [Parameter(Mandatory = $true, HelpMessage = "Provide a Phase 2 Name in the format of <TunnelName P2 #>")]
+        $PhaseName,
+        [Parameter(Mandatory = $true, HelpMessage = "Provide a VPN Tunnel Name with a maximum 15 AlphaNumeric characters.")]
+        $TunnelName,
+        [Parameter(Mandatory = $true, HelpMessage = "
 des-md5          des-md5
 des-sha1         des-sha1
 des-sha256       des-sha256
@@ -42,21 +42,24 @@ aes256-sha256    aes256-sha256
 aes256-sha384    aes256-sha384
 aes256-sha512    aes256-sha512
 
-Type in the encryption selection to use for the Phase 2 Proposal in a space delimited format. (Encryption Proposal)
-"
-    $TTL = Read-Host "Provide the Phase 2 Time to Live (TTL)"
-    $dhgroups = Read-Host "Provide the DH Group or Group in space delimeted format. (DH Group/s)"
-    $PFS = Read-Host "Specify PFS enable/disable. (PFS)"
-    $SourceAddressName = Read-Host "Specify the Source Address Object or Group Name (Source Address/Group)"
-    $DestinationAddressName = Read-Host "Specify the Destination Address Object or Group Name (Destination Address/Group)"
-
+Type in the encryption selection to use for the Phase 1 Proposal in a space delimited format.
+")]
+        $Proposal,
+        [Parameter(Mandatory = $true, HelpMessage = "Provide the Phase 2 Time to Live.")]
+        $TTL,
+        [Parameter(Mandatory = $true, HelpMessage = "Specify the Peer address for the Tunnel Peer.")]
+        $dhgroups,
+        [Parameter(Mandatory = $true, HelpMessage = "Specify the Source Address Object or Group Name.")]
+        $SourceAddressName,
+        [Parameter(Mandatory = $true, HelpMessage = "Specify the Destination Address Object or Group Name.")]
+        $DestinationAddressName
+    )
 
     Write-Output "
 config vpn ipsec phase2-interface
     edit ""$PhaseName""
         set phase1name ""$TunnelName""
         set proposal $Proposal
-        set pfs $PFS
         set dhgrp $dhgroups
         set replay disable
         set keylifeseconds $TTL
@@ -65,6 +68,5 @@ config vpn ipsec phase2-interface
         set src-name ""$SourceAddressName""
         set dst-name ""$DestinationAddressName""
     next
-end
-"
+end"
 }

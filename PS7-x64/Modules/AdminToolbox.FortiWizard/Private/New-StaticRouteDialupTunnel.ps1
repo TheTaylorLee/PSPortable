@@ -9,9 +9,9 @@ Function New-StaticRouteDialupTunnel {
 
     [CmdletBinding()]
     Param (
+        [Parameter(Mandatory = $true, HelpMessage = "Specify the Destination Address Object or Group Name.")]
+        $DestinationAddressName
     )
-
-    $DestinationAddressName = Read-Host "Specify the Destination Address Object or Group Name (Destination Address/Group)"
 
     Write-Output "
 config router static
@@ -20,6 +20,5 @@ config router static
         set blackhole enable
         set dstaddr ""$DestinationAddressName""
     next
-end
-"
+end"
 }
