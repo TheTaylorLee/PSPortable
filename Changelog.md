@@ -25,3 +25,4 @@
      - 1.19.0 Updated Admintoolbox.FortiWizard and Admintoolbox Modules
      - 1.20.0 Updated Admintoolbox.FortiWizard and Admintoolbox Modules
      - 1.21.0 Update all Admintoolbox Modules
+     - 1.22.0 Updated Admintoolbox.FortiWizard and Admintoolbox Modules
