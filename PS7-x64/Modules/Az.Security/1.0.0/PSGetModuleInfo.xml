@@ -1,0 +1,304 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.Security</S>
+      <Version N="Version">1.0.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell - Azure Security Center cmdlets in Windows PowerShell and PowerShell Core. Allows managing and monitoring the security posture of your resources._x000D__x000A__x000D__x000A_For more information on Security Center, please visit the following: https://docs.microsoft.com/azure/security-center</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2021-07-06T03:28:11-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2021-08-01T19:03:17.5658157-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>Provider</S>
+          <S>Security</S>
+          <S>ASC</S>
+          <S>SecurityCenter</S>
+          <S>AzureSecurityCenter</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-AzSecurityAlert</S>
+                <S>Set-AzSecurityAlert</S>
+                <S>Get-AzSecurityAutoProvisioningSetting</S>
+                <S>Set-AzSecurityAutoProvisioningSetting</S>
+                <S>Get-AzSecurityCompliance</S>
+                <S>Get-AzDiscoveredSecuritySolution</S>
+                <S>Get-AzExternalSecuritySolution</S>
+                <S>Get-AzJitNetworkAccessPolicy</S>
+                <S>Set-AzJitNetworkAccessPolicy</S>
+                <S>Remove-AzJitNetworkAccessPolicy</S>
+                <S>Start-AzJitNetworkAccessPolicy</S>
+                <S>Get-AzSecurityLocation</S>
+                <S>Get-AzSecurityPricing</S>
+                <S>Set-AzSecurityPricing</S>
+                <S>Get-AzSecurityContact</S>
+                <S>Set-AzSecurityContact</S>
+                <S>Remove-AzSecurityContact</S>
+                <S>Get-AzSecurityTask</S>
+                <S>Get-AzSecurityWorkspaceSetting</S>
+                <S>Set-AzSecurityWorkspaceSetting</S>
+                <S>Remove-AzSecurityWorkspaceSetting</S>
+                <S>Get-AzSecurityAdvancedThreatProtection</S>
+                <S>Enable-AzSecurityAdvancedThreatProtection</S>
+                <S>Disable-AzSecurityAdvancedThreatProtection</S>
+                <S>Get-AzSecuritySqlVulnerabilityAssessmentScanRecord</S>
+                <S>Get-AzSecuritySqlVulnerabilityAssessmentScanResult</S>
+                <S>Add-AzSecuritySqlVulnerabilityAssessmentBaseline</S>
+                <S>Remove-AzSecuritySqlVulnerabilityAssessmentBaseline</S>
+                <S>Get-AzSecuritySqlVulnerabilityAssessmentBaseline</S>
+                <S>Set-AzSecuritySqlVulnerabilityAssessmentBaseline</S>
+                <S>Get-AzIotSecuritySolution</S>
+                <S>Set-AzIotSecuritySolution</S>
+                <S>Remove-AzIotSecuritySolution</S>
+                <S>Update-AzIotSecuritySolution</S>
+                <S>New-AzIotSecuritySolutionRecommendationConfigurationObject</S>
+                <S>New-AzIotSecuritySolutionUserDefinedResourcesObject</S>
+                <S>Get-AzDeviceSecurityGroup</S>
+                <S>Set-AzDeviceSecurityGroup</S>
+                <S>Remove-AzDeviceSecurityGroup</S>
+                <S>New-AzDeviceSecurityGroupAllowlistCustomAlertRuleObject</S>
+                <S>New-AzDeviceSecurityGroupDenylistCustomAlertRuleObject</S>
+                <S>New-AzDeviceSecurityGroupThresholdCustomAlertRuleObject</S>
+                <S>New-AzDeviceSecurityGroupTimeWindowRuleObject</S>
+                <S>Get-AzIotSecurityAnalyticsAggregatedAlert</S>
+                <S>Get-AzIotSecurityAnalyticsAggregatedRecommendation</S>
+                <S>Get-AzIotSecurityAnalytics</S>
+                <S>Disable-AzIotSecurityAnalyticsAggregatedAlert</S>
+                <S>Set-AzSqlInformationProtectionPolicy</S>
+                <S>Get-AzSqlInformationProtectionPolicy</S>
+                <S>Get-AzRegulatoryComplianceStandard</S>
+                <S>Get-AzRegulatoryComplianceControl</S>
+                <S>Get-AzRegulatoryComplianceAssessment</S>
+                <S>Get-AzSecuritySetting</S>
+                <S>Set-AzSecuritySetting</S>
+                <S>Get-AzSecurityAssessment</S>
+                <S>Set-AzSecurityAssessment</S>
+                <S>Remove-AzSecurityAssessment</S>
+                <S>Get-AzSecurityAssessmentMetadata</S>
+                <S>Set-AzSecurityAssessmentMetadata</S>
+                <S>Remove-AzSecurityAssessmentMetadata</S>
+                <S>Get-AzSecuritySubAssessment</S>
+                <S>Get-AzSecurityTopology</S>
+                <S>Get-AzSecurityAdaptiveNetworkHardening</S>
+                <S>Add-AzSecurityAdaptiveNetworkHardening</S>
+                <S>Get-AzAllowedConnection</S>
+                <S>Get-AzSecurityAdaptiveApplicationControlGroup</S>
+                <S>Get-AzSecurityAdaptiveApplicationControl</S>
+                <S>Get-AzSecuritySecureScore</S>
+                <S>Get-AzSecuritySecureScoreControl</S>
+                <S>Get-AzSecuritySecureScoreControlDefinition</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-AzSecurityAlert</S>
+                <S>Set-AzSecurityAlert</S>
+                <S>Get-AzSecurityAutoProvisioningSetting</S>
+                <S>Set-AzSecurityAutoProvisioningSetting</S>
+                <S>Get-AzSecurityCompliance</S>
+                <S>Get-AzDiscoveredSecuritySolution</S>
+                <S>Get-AzExternalSecuritySolution</S>
+                <S>Get-AzJitNetworkAccessPolicy</S>
+                <S>Set-AzJitNetworkAccessPolicy</S>
+                <S>Remove-AzJitNetworkAccessPolicy</S>
+                <S>Start-AzJitNetworkAccessPolicy</S>
+                <S>Get-AzSecurityLocation</S>
+                <S>Get-AzSecurityPricing</S>
+                <S>Set-AzSecurityPricing</S>
+                <S>Get-AzSecurityContact</S>
+                <S>Set-AzSecurityContact</S>
+                <S>Remove-AzSecurityContact</S>
+                <S>Get-AzSecurityTask</S>
+                <S>Get-AzSecurityWorkspaceSetting</S>
+                <S>Set-AzSecurityWorkspaceSetting</S>
+                <S>Remove-AzSecurityWorkspaceSetting</S>
+                <S>Get-AzSecurityAdvancedThreatProtection</S>
+                <S>Enable-AzSecurityAdvancedThreatProtection</S>
+                <S>Disable-AzSecurityAdvancedThreatProtection</S>
+                <S>Get-AzSecuritySqlVulnerabilityAssessmentScanRecord</S>
+                <S>Get-AzSecuritySqlVulnerabilityAssessmentScanResult</S>
+                <S>Add-AzSecuritySqlVulnerabilityAssessmentBaseline</S>
+                <S>Remove-AzSecuritySqlVulnerabilityAssessmentBaseline</S>
+                <S>Get-AzSecuritySqlVulnerabilityAssessmentBaseline</S>
+                <S>Set-AzSecuritySqlVulnerabilityAssessmentBaseline</S>
+                <S>Get-AzIotSecuritySolution</S>
+                <S>Set-AzIotSecuritySolution</S>
+                <S>Remove-AzIotSecuritySolution</S>
+                <S>Update-AzIotSecuritySolution</S>
+                <S>New-AzIotSecuritySolutionRecommendationConfigurationObject</S>
+                <S>New-AzIotSecuritySolutionUserDefinedResourcesObject</S>
+                <S>Get-AzDeviceSecurityGroup</S>
+                <S>Set-AzDeviceSecurityGroup</S>
+                <S>Remove-AzDeviceSecurityGroup</S>
+                <S>New-AzDeviceSecurityGroupAllowlistCustomAlertRuleObject</S>
+                <S>New-AzDeviceSecurityGroupDenylistCustomAlertRuleObject</S>
+                <S>New-AzDeviceSecurityGroupThresholdCustomAlertRuleObject</S>
+                <S>New-AzDeviceSecurityGroupTimeWindowRuleObject</S>
+                <S>Get-AzIotSecurityAnalyticsAggregatedAlert</S>
+                <S>Get-AzIotSecurityAnalyticsAggregatedRecommendation</S>
+                <S>Get-AzIotSecurityAnalytics</S>
+                <S>Disable-AzIotSecurityAnalyticsAggregatedAlert</S>
+                <S>Set-AzSqlInformationProtectionPolicy</S>
+                <S>Get-AzSqlInformationProtectionPolicy</S>
+                <S>Get-AzRegulatoryComplianceStandard</S>
+                <S>Get-AzRegulatoryComplianceControl</S>
+                <S>Get-AzRegulatoryComplianceAssessment</S>
+                <S>Get-AzSecuritySetting</S>
+                <S>Set-AzSecuritySetting</S>
+                <S>Get-AzSecurityAssessment</S>
+                <S>Set-AzSecurityAssessment</S>
+                <S>Remove-AzSecurityAssessment</S>
+                <S>Get-AzSecurityAssessmentMetadata</S>
+                <S>Set-AzSecurityAssessmentMetadata</S>
+                <S>Remove-AzSecurityAssessmentMetadata</S>
+                <S>Get-AzSecuritySubAssessment</S>
+                <S>Get-AzSecurityTopology</S>
+                <S>Get-AzSecurityAdaptiveNetworkHardening</S>
+                <S>Add-AzSecurityAdaptiveNetworkHardening</S>
+                <S>Get-AzAllowedConnection</S>
+                <S>Get-AzSecurityAdaptiveApplicationControlGroup</S>
+                <S>Get-AzSecurityAdaptiveApplicationControl</S>
+                <S>Get-AzSecuritySecureScore</S>
+                <S>Get-AzSecuritySecureScoreControl</S>
+                <S>Get-AzSecuritySecureScoreControlDefinition</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* General availability of 'Az.Security' module_x000D__x000A_* Changed the name of 'Get-AzRegulatoryComplainceAssessment' to 'Get-AzRegulatoryComplianceAssessment' to fix typo</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">2.4.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/2.4.0</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell - Azure Security Center cmdlets in Windows PowerShell and PowerShell Core. Allows managing and monitoring the security posture of your resources._x000D__x000A__x000D__x000A_For more information on Security Center, please visit the following: https://docs.microsoft.com/azure/security-center</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* General availability of 'Az.Security' module_x000D__x000A_* Changed the name of 'Get-AzRegulatoryComplainceAssessment' to 'Get-AzRegulatoryComplianceAssessment' to fix typo</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">414145</S>
+          <S N="downloadCount">1112634</S>
+          <S N="packageSize">501563</S>
+          <S N="published">7/6/2021 3:28:11 AM -05:00</S>
+          <S N="created">7/6/2021 3:28:11 AM -05:00</S>
+          <S N="lastUpdated">8/1/2021 11:59:33 PM -05:00</S>
+          <S N="tags">Azure ResourceManager ARM Provider Security ASC SecurityCenter AzureSecurityCenter PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_Get-AzSecurityAlert PSCommand_Get-AzSecurityAlert PSCmdlet_Set-AzSecurityAlert PSCommand_Set-AzSecurityAlert PSCmdlet_Get-AzSecurityAutoProvisioningSetting PSCommand_Get-AzSecurityAutoProvisioningSetting PSCmdlet_Set-AzSecurityAutoProvisioningSetting PSCommand_Set-AzSecurityAutoProvisioningSetting PSCmdlet_Get-AzSecurityCompliance PSCommand_Get-AzSecurityCompliance PSCmdlet_Get-AzDiscoveredSecuritySolution PSCommand_Get-AzDiscoveredSecuritySolution PSCmdlet_Get-AzExternalSecuritySolution PSCommand_Get-AzExternalSecuritySolution PSCmdlet_Get-AzJitNetworkAccessPolicy PSCommand_Get-AzJitNetworkAccessPolicy PSCmdlet_Set-AzJitNetworkAccessPolicy PSCommand_Set-AzJitNetworkAccessPolicy PSCmdlet_Remove-AzJitNetworkAccessPolicy PSCommand_Remove-AzJitNetworkAccessPolicy PSCmdlet_Start-AzJitNetworkAccessPolicy PSCommand_Start-AzJitNetworkAccessPolicy PSCmdlet_Get-AzSecurityLocation PSCommand_Get-AzSecurityLocation PSCmdlet_Get-AzSecurityPricing PSCommand_Get-AzSecurityPricing PSCmdlet_Set-AzSecurityPricing PSCommand_Set-AzSecurityPricing PSCmdlet_Get-AzSecurityContact PSCommand_Get-AzSecurityContact PSCmdlet_Set-AzSecurityContact PSCommand_Set-AzSecurityContact PSCmdlet_Remove-AzSecurityContact PSCommand_Remove-AzSecurityContact PSCmdlet_Get-AzSecurityTask PSCommand_Get-AzSecurityTask PSCmdlet_Get-AzSecurityWorkspaceSetting PSCommand_Get-AzSecurityWorkspaceSetting PSCmdlet_Set-AzSecurityWorkspaceSetting PSCommand_Set-AzSecurityWorkspaceSetting PSCmdlet_Remove-AzSecurityWorkspaceSetting PSCommand_Remove-AzSecurityWorkspaceSetting PSCmdlet_Get-AzSecurityAdvancedThreatProtection PSCommand_Get-AzSecurityAdvancedThreatProtection PSCmdlet_Enable-AzSecurityAdvancedThreatProtection PSCommand_Enable-AzSecurityAdvancedThreatProtection PSCmdlet_Disable-AzSecurityAdvancedThreatProtection PSCommand_Disable-AzSecurityAdvancedThreatProtection PSCmdlet_Get-AzSecuritySqlVulnerabilityAssessmentScanRecord PSCommand_Get-AzSecuritySqlVulnerabilityAssessmentScanRecord PSCmdlet_Get-AzSecuritySqlVulnerabilityAssessmentScanResult PSCommand_Get-AzSecuritySqlVulnerabilityAssessmentScanResult PSCmdlet_Add-AzSecuritySqlVulnerabilityAssessmentBaseline PSCommand_Add-AzSecuritySqlVulnerabilityAssessmentBaseline PSCmdlet_Remove-AzSecuritySqlVulnerabilityAssessmentBaseline PSCommand_Remove-AzSecuritySqlVulnerabilityAssessmentBaseline PSCmdlet_Get-AzSecuritySqlVulnerabilityAssessmentBaseline PSCommand_Get-AzSecuritySqlVulnerabilityAssessmentBaseline PSCmdlet_Set-AzSecuritySqlVulnerabilityAssessmentBaseline PSCommand_Set-AzSecuritySqlVulnerabilityAssessmentBaseline PSCmdlet_Get-AzIotSecuritySolution PSCommand_Get-AzIotSecuritySolution PSCmdlet_Set-AzIotSecuritySolution PSCommand_Set-AzIotSecuritySolution PSCmdlet_Remove-AzIotSecuritySolution PSCommand_Remove-AzIotSecuritySolution PSCmdlet_Update-AzIotSecuritySolution PSCommand_Update-AzIotSecuritySolution PSCmdlet_New-AzIotSecuritySolutionRecommendationConfigurationObject PSCommand_New-AzIotSecuritySolutionRecommendationConfigurationObject PSCmdlet_New-AzIotSecuritySolutionUserDefinedResourcesObject PSCommand_New-AzIotSecuritySolutionUserDefinedResourcesObject PSCmdlet_Get-AzDeviceSecurityGroup PSCommand_Get-AzDeviceSecurityGroup PSCmdlet_Set-AzDeviceSecurityGroup PSCommand_Set-AzDeviceSecurityGroup PSCmdlet_Remove-AzDeviceSecurityGroup PSCommand_Remove-AzDeviceSecurityGroup PSCmdlet_New-AzDeviceSecurityGroupAllowlistCustomAlertRuleObject PSCommand_New-AzDeviceSecurityGroupAllowlistCustomAlertRuleObject PSCmdlet_New-AzDeviceSecurityGroupDenylistCustomAlertRuleObject PSCommand_New-AzDeviceSecurityGroupDenylistCustomAlertRuleObject PSCmdlet_New-AzDeviceSecurityGroupThresholdCustomAlertRuleObject PSCommand_New-AzDeviceSecurityGroupThresholdCustomAlertRuleObject PSCmdlet_New-AzDeviceSecurityGroupTimeWindowRuleObject PSCommand_New-AzDeviceSecurityGroupTimeWindowRuleObject PSCmdlet_Get-AzIotSecurityAnalyticsAggregatedAlert PSCommand_Get-AzIotSecurityAnalyticsAggregatedAlert PSCmdlet_Get-AzIotSecurityAnalyticsAggregatedRecommendation PSCommand_Get-AzIotSecurityAnalyticsAggregatedRecommendation PSCmdlet_Get-AzIotSecurityAnalytics PSCommand_Get-AzIotSecurityAnalytics PSCmdlet_Disable-AzIotSecurityAnalyticsAggregatedAlert PSCommand_Disable-AzIotSecurityAnalyticsAggregatedAlert PSCmdlet_Set-AzSqlInformationProtectionPolicy PSCommand_Set-AzSqlInformationProtectionPolicy PSCmdlet_Get-AzSqlInformationProtectionPolicy PSCommand_Get-AzSqlInformationProtectionPolicy PSCmdlet_Get-AzRegulatoryComplianceStandard PSCommand_Get-AzRegulatoryComplianceStandard PSCmdlet_Get-AzRegulatoryComplianceControl PSCommand_Get-AzRegulatoryComplianceControl PSCmdlet_Get-AzRegulatoryComplianceAssessment PSCommand_Get-AzRegulatoryComplianceAssessment PSCmdlet_Get-AzSecuritySetting PSCommand_Get-AzSecuritySetting PSCmdlet_Set-AzSecuritySetting PSCommand_Set-AzSecuritySetting PSCmdlet_Get-AzSecurityAssessment PSCommand_Get-AzSecurityAssessment PSCmdlet_Set-AzSecurityAssessment PSCommand_Set-AzSecurityAssessment PSCmdlet_Remove-AzSecurityAssessment PSCommand_Remove-AzSecurityAssessment PSCmdlet_Get-AzSecurityAssessmentMetadata PSCommand_Get-AzSecurityAssessmentMetadata PSCmdlet_Set-AzSecurityAssessmentMetadata PSCommand_Set-AzSecurityAssessmentMetadata PSCmdlet_Remove-AzSecurityAssessmentMetadata PSCommand_Remove-AzSecurityAssessmentMetadata PSCmdlet_Get-AzSecuritySubAssessment PSCommand_Get-AzSecuritySubAssessment PSCmdlet_Get-AzSecurityTopology PSCommand_Get-AzSecurityTopology PSCmdlet_Get-AzSecurityAdaptiveNetworkHardening PSCommand_Get-AzSecurityAdaptiveNetworkHardening PSCmdlet_Add-AzSecurityAdaptiveNetworkHardening PSCommand_Add-AzSecurityAdaptiveNetworkHardening PSCmdlet_Get-AzAllowedConnection PSCommand_Get-AzAllowedConnection PSCmdlet_Get-AzSecurityAdaptiveApplicationControlGroup PSCommand_Get-AzSecurityAdaptiveApplicationControlGroup PSCmdlet_Get-AzSecurityAdaptiveApplicationControl PSCommand_Get-AzSecurityAdaptiveApplicationControl PSCmdlet_Get-AzSecuritySecureScore PSCommand_Get-AzSecuritySecureScore PSCmdlet_Get-AzSecuritySecureScoreControl PSCommand_Get-AzSecuritySecureScoreControl PSCmdlet_Get-AzSecuritySecureScoreControlDefinition PSCommand_Get-AzSecuritySecureScoreControlDefinition PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2021-08-01T23:59:33Z</S>
+          <S N="NormalizedVersion">1.0.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.Security.nuspec|Az.Security.psd1|Az.Security.psm1|Microsoft.Azure.Management.SecurityCenter.dll|Microsoft.Azure.PowerShell.Cmdlets.Security.deps.json|Microsoft.Azure.PowerShell.Cmdlets.Security.dll|Microsoft.Azure.PowerShell.Cmdlets.Security.dll-Help.xml</S>
+          <S N="GUID">2b6bac56-a03a-4606-8b05-c1a1f36248db</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\Az.Security\1.0.0</S>
+    </MS>
+  </Obj>
+</Objs>

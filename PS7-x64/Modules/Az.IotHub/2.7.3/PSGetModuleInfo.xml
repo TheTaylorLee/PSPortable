@@ -15,7 +15,7 @@
       <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
       <DT N="PublishedDate">2021-03-23T08:07:19-05:00</DT>
       <Obj N="InstalledDate" RefId="1">
-        <DT>2021-04-14T12:49:46.9955076-05:00</DT>
+        <DT>2021-08-01T19:02:59.5260855-05:00</DT>
         <MS>
           <Obj N="DisplayHint" RefId="2">
             <TN RefId="1">
@@ -57,101 +57,8 @@
         </TN>
         <DCT>
           <En>
-            <S N="Key">RoleCapability</S>
-            <Obj N="Value" RefId="5">
-              <TNRef RefId="2" />
-              <LST />
-            </Obj>
-          </En>
-          <En>
-            <S N="Key">Command</S>
-            <Obj N="Value" RefId="6">
-              <TNRef RefId="2" />
-              <LST>
-                <S>Add-AzIotHubKey</S>
-                <S>Get-AzIotHubEventHubConsumerGroup</S>
-                <S>Get-AzIotHubConnectionString</S>
-                <S>Get-AzIotHubJob</S>
-                <S>Get-AzIotHubKey</S>
-                <S>Get-AzIotHubQuotaMetric</S>
-                <S>Get-AzIotHub</S>
-                <S>Get-AzIotHubRegistryStatistic</S>
-                <S>Get-AzIotHubValidSku</S>
-                <S>Add-AzIotHubEventHubConsumerGroup</S>
-                <S>New-AzIotHub</S>
-                <S>New-AzIotHubExportDevice</S>
-                <S>New-AzIotHubImportDevice</S>
-                <S>Remove-AzIotHub</S>
-                <S>Remove-AzIotHubEventHubConsumerGroup</S>
-                <S>Remove-AzIotHubKey</S>
-                <S>Set-AzIotHub</S>
-                <S>Update-AzIotHub</S>
-                <S>Add-AzIotHubCertificate</S>
-                <S>Get-AzIotHubCertificate</S>
-                <S>Get-AzIotHubCertificateVerificationCode</S>
-                <S>Set-AzIotHubVerifiedCertificate</S>
-                <S>Remove-AzIotHubCertificate</S>
-                <S>Get-AzIotHubRoutingEndpoint</S>
-                <S>Add-AzIotHubRoutingEndpoint</S>
-                <S>Remove-AzIotHubRoutingEndpoint</S>
-                <S>Get-AzIotHubRoute</S>
-                <S>Add-AzIotHubRoute</S>
-                <S>Remove-AzIotHubRoute</S>
-                <S>Set-AzIotHubRoute</S>
-                <S>Test-AzIotHubRoute</S>
-                <S>New-AzIotHubKey</S>
-                <S>Invoke-AzIotHubManualFailover</S>
-                <S>Add-AzIotHubMessageEnrichment</S>
-                <S>Get-AzIotHubMessageEnrichment</S>
-                <S>Remove-AzIotHubMessageEnrichment</S>
-                <S>Set-AzIotHubMessageEnrichment</S>
-                <S>Add-AzIotHubDevice</S>
-                <S>Get-AzIotHubDevice</S>
-                <S>Remove-AzIotHubDevice</S>
-                <S>Set-AzIotHubDevice</S>
-                <S>Add-AzIotHubModule</S>
-                <S>Get-AzIotHubModule</S>
-                <S>Remove-AzIotHubModule</S>
-                <S>Set-AzIotHubModule</S>
-                <S>Get-AzIotHubDeviceConnectionString</S>
-                <S>Get-AzIotHubModuleConnectionString</S>
-                <S>Get-AzIotHubDeviceParent</S>
-                <S>Set-AzIotHubDeviceParent</S>
-                <S>Add-AzIotHubDeviceChildren</S>
-                <S>Remove-AzIotHubDeviceChildren</S>
-                <S>Get-AzIotHubDeviceChildren</S>
-                <S>Get-AzIotHubDistributedTracing</S>
-                <S>Set-AzIotHubDistributedTracing</S>
-                <S>Get-AzIotHubDeviceTwin</S>
-                <S>Update-AzIotHubDeviceTwin</S>
-                <S>Invoke-AzIotHubDeviceMethod</S>
-                <S>Get-AzIotHubModuleTwin</S>
-                <S>Update-AzIotHubModuleTwin</S>
-                <S>Add-AzIotHubConfiguration</S>
-                <S>Get-AzIotHubConfiguration</S>
-                <S>Remove-AzIotHubConfiguration</S>
-                <S>Set-AzIotHubConfiguration</S>
-                <S>Invoke-AzIotHubModuleMethod</S>
-                <S>Invoke-AzIotHubQuery</S>
-                <S>New-AzIotHubSasToken</S>
-                <S>Invoke-AzIotHubConfigurationMetricsQuery</S>
-                <S>Add-AzIotHubDeployment</S>
-                <S>Get-AzIotHubDeployment</S>
-                <S>Remove-AzIotHubDeployment</S>
-                <S>Set-AzIotHubDeployment</S>
-                <S>Invoke-AzIotHubDeploymentMetricsQuery</S>
-                <S>Set-AzIotHubEdgeModule</S>
-                <S>Send-AzIotHubDevice2CloudMessage</S>
-              </LST>
-            </Obj>
-          </En>
-          <En>
-            <S N="Key">Workflow</S>
-            <Ref N="Value" RefId="5" />
-          </En>
-          <En>
             <S N="Key">Cmdlet</S>
-            <Obj N="Value" RefId="7">
+            <Obj N="Value" RefId="5">
               <TNRef RefId="2" />
               <LST>
                 <S>Add-AzIotHubKey</S>
@@ -233,11 +140,104 @@
           </En>
           <En>
             <S N="Key">Function</S>
-            <Ref N="Value" RefId="5" />
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
           </En>
           <En>
             <S N="Key">DscResource</S>
-            <Ref N="Value" RefId="5" />
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-AzIotHubKey</S>
+                <S>Get-AzIotHubEventHubConsumerGroup</S>
+                <S>Get-AzIotHubConnectionString</S>
+                <S>Get-AzIotHubJob</S>
+                <S>Get-AzIotHubKey</S>
+                <S>Get-AzIotHubQuotaMetric</S>
+                <S>Get-AzIotHub</S>
+                <S>Get-AzIotHubRegistryStatistic</S>
+                <S>Get-AzIotHubValidSku</S>
+                <S>Add-AzIotHubEventHubConsumerGroup</S>
+                <S>New-AzIotHub</S>
+                <S>New-AzIotHubExportDevice</S>
+                <S>New-AzIotHubImportDevice</S>
+                <S>Remove-AzIotHub</S>
+                <S>Remove-AzIotHubEventHubConsumerGroup</S>
+                <S>Remove-AzIotHubKey</S>
+                <S>Set-AzIotHub</S>
+                <S>Update-AzIotHub</S>
+                <S>Add-AzIotHubCertificate</S>
+                <S>Get-AzIotHubCertificate</S>
+                <S>Get-AzIotHubCertificateVerificationCode</S>
+                <S>Set-AzIotHubVerifiedCertificate</S>
+                <S>Remove-AzIotHubCertificate</S>
+                <S>Get-AzIotHubRoutingEndpoint</S>
+                <S>Add-AzIotHubRoutingEndpoint</S>
+                <S>Remove-AzIotHubRoutingEndpoint</S>
+                <S>Get-AzIotHubRoute</S>
+                <S>Add-AzIotHubRoute</S>
+                <S>Remove-AzIotHubRoute</S>
+                <S>Set-AzIotHubRoute</S>
+                <S>Test-AzIotHubRoute</S>
+                <S>New-AzIotHubKey</S>
+                <S>Invoke-AzIotHubManualFailover</S>
+                <S>Add-AzIotHubMessageEnrichment</S>
+                <S>Get-AzIotHubMessageEnrichment</S>
+                <S>Remove-AzIotHubMessageEnrichment</S>
+                <S>Set-AzIotHubMessageEnrichment</S>
+                <S>Add-AzIotHubDevice</S>
+                <S>Get-AzIotHubDevice</S>
+                <S>Remove-AzIotHubDevice</S>
+                <S>Set-AzIotHubDevice</S>
+                <S>Add-AzIotHubModule</S>
+                <S>Get-AzIotHubModule</S>
+                <S>Remove-AzIotHubModule</S>
+                <S>Set-AzIotHubModule</S>
+                <S>Get-AzIotHubDeviceConnectionString</S>
+                <S>Get-AzIotHubModuleConnectionString</S>
+                <S>Get-AzIotHubDeviceParent</S>
+                <S>Set-AzIotHubDeviceParent</S>
+                <S>Add-AzIotHubDeviceChildren</S>
+                <S>Remove-AzIotHubDeviceChildren</S>
+                <S>Get-AzIotHubDeviceChildren</S>
+                <S>Get-AzIotHubDistributedTracing</S>
+                <S>Set-AzIotHubDistributedTracing</S>
+                <S>Get-AzIotHubDeviceTwin</S>
+                <S>Update-AzIotHubDeviceTwin</S>
+                <S>Invoke-AzIotHubDeviceMethod</S>
+                <S>Get-AzIotHubModuleTwin</S>
+                <S>Update-AzIotHubModuleTwin</S>
+                <S>Add-AzIotHubConfiguration</S>
+                <S>Get-AzIotHubConfiguration</S>
+                <S>Remove-AzIotHubConfiguration</S>
+                <S>Set-AzIotHubConfiguration</S>
+                <S>Invoke-AzIotHubModuleMethod</S>
+                <S>Invoke-AzIotHubQuery</S>
+                <S>New-AzIotHubSasToken</S>
+                <S>Invoke-AzIotHubConfigurationMetricsQuery</S>
+                <S>Add-AzIotHubDeployment</S>
+                <S>Get-AzIotHubDeployment</S>
+                <S>Remove-AzIotHubDeployment</S>
+                <S>Set-AzIotHubDeployment</S>
+                <S>Invoke-AzIotHubDeploymentMetricsQuery</S>
+                <S>Set-AzIotHubEdgeModule</S>
+                <S>Send-AzIotHubDevice2CloudMessage</S>
+              </LST>
+            </Obj>
           </En>
         </DCT>
       </Obj>
@@ -283,15 +283,15 @@
           <S N="releaseNotes">* Updated IoT Hub Management SDK and models to version 3.0.0 (api-version 2020-03-01)</S>
           <S N="isLatestVersion">True</S>
           <S N="isAbsoluteLatestVersion">True</S>
-          <S N="versionDownloadCount">430428</S>
-          <S N="downloadCount">20347737</S>
+          <S N="versionDownloadCount">2519752</S>
+          <S N="downloadCount">23048054</S>
           <S N="packageSize">1226920</S>
           <S N="published">3/23/2021 8:07:19 AM -05:00</S>
           <S N="created">3/23/2021 8:07:19 AM -05:00</S>
-          <S N="lastUpdated">4/14/2021 5:47:00 PM -05:00</S>
+          <S N="lastUpdated">8/1/2021 11:59:33 PM -05:00</S>
           <S N="tags">Azure ResourceManager ARM IoT IoTHub PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_Add-AzIotHubKey PSCommand_Add-AzIotHubKey PSCmdlet_Get-AzIotHubEventHubConsumerGroup PSCommand_Get-AzIotHubEventHubConsumerGroup PSCmdlet_Get-AzIotHubConnectionString PSCommand_Get-AzIotHubConnectionString PSCmdlet_Get-AzIotHubJob PSCommand_Get-AzIotHubJob PSCmdlet_Get-AzIotHubKey PSCommand_Get-AzIotHubKey PSCmdlet_Get-AzIotHubQuotaMetric PSCommand_Get-AzIotHubQuotaMetric PSCmdlet_Get-AzIotHub PSCommand_Get-AzIotHub PSCmdlet_Get-AzIotHubRegistryStatistic PSCommand_Get-AzIotHubRegistryStatistic PSCmdlet_Get-AzIotHubValidSku PSCommand_Get-AzIotHubValidSku PSCmdlet_Add-AzIotHubEventHubConsumerGroup PSCommand_Add-AzIotHubEventHubConsumerGroup PSCmdlet_New-AzIotHub PSCommand_New-AzIotHub PSCmdlet_New-AzIotHubExportDevice PSCommand_New-AzIotHubExportDevice PSCmdlet_New-AzIotHubImportDevice PSCommand_New-AzIotHubImportDevice PSCmdlet_Remove-AzIotHub PSCommand_Remove-AzIotHub PSCmdlet_Remove-AzIotHubEventHubConsumerGroup PSCommand_Remove-AzIotHubEventHubConsumerGroup PSCmdlet_Remove-AzIotHubKey PSCommand_Remove-AzIotHubKey PSCmdlet_Set-AzIotHub PSCommand_Set-AzIotHub PSCmdlet_Update-AzIotHub PSCommand_Update-AzIotHub PSCmdlet_Add-AzIotHubCertificate PSCommand_Add-AzIotHubCertificate PSCmdlet_Get-AzIotHubCertificate PSCommand_Get-AzIotHubCertificate PSCmdlet_Get-AzIotHubCertificateVerificationCode PSCommand_Get-AzIotHubCertificateVerificationCode PSCmdlet_Set-AzIotHubVerifiedCertificate PSCommand_Set-AzIotHubVerifiedCertificate PSCmdlet_Remove-AzIotHubCertificate PSCommand_Remove-AzIotHubCertificate PSCmdlet_Get-AzIotHubRoutingEndpoint PSCommand_Get-AzIotHubRoutingEndpoint PSCmdlet_Add-AzIotHubRoutingEndpoint PSCommand_Add-AzIotHubRoutingEndpoint PSCmdlet_Remove-AzIotHubRoutingEndpoint PSCommand_Remove-AzIotHubRoutingEndpoint PSCmdlet_Get-AzIotHubRoute PSCommand_Get-AzIotHubRoute PSCmdlet_Add-AzIotHubRoute PSCommand_Add-AzIotHubRoute PSCmdlet_Remove-AzIotHubRoute PSCommand_Remove-AzIotHubRoute PSCmdlet_Set-AzIotHubRoute PSCommand_Set-AzIotHubRoute PSCmdlet_Test-AzIotHubRoute PSCommand_Test-AzIotHubRoute PSCmdlet_New-AzIotHubKey PSCommand_New-AzIotHubKey PSCmdlet_Invoke-AzIotHubManualFailover PSCommand_Invoke-AzIotHubManualFailover PSCmdlet_Add-AzIotHubMessageEnrichment PSCommand_Add-AzIotHubMessageEnrichment PSCmdlet_Get-AzIotHubMessageEnrichment PSCommand_Get-AzIotHubMessageEnrichment PSCmdlet_Remove-AzIotHubMessageEnrichment PSCommand_Remove-AzIotHubMessageEnrichment PSCmdlet_Set-AzIotHubMessageEnrichment PSCommand_Set-AzIotHubMessageEnrichment PSCmdlet_Add-AzIotHubDevice PSCommand_Add-AzIotHubDevice PSCmdlet_Get-AzIotHubDevice PSCommand_Get-AzIotHubDevice PSCmdlet_Remove-AzIotHubDevice PSCommand_Remove-AzIotHubDevice PSCmdlet_Set-AzIotHubDevice PSCommand_Set-AzIotHubDevice PSCmdlet_Add-AzIotHubModule PSCommand_Add-AzIotHubModule PSCmdlet_Get-AzIotHubModule PSCommand_Get-AzIotHubModule PSCmdlet_Remove-AzIotHubModule PSCommand_Remove-AzIotHubModule PSCmdlet_Set-AzIotHubModule PSCommand_Set-AzIotHubModule PSCmdlet_Get-AzIotHubDeviceConnectionString PSCommand_Get-AzIotHubDeviceConnectionString PSCmdlet_Get-AzIotHubModuleConnectionString PSCommand_Get-AzIotHubModuleConnectionString PSCmdlet_Get-AzIotHubDeviceParent PSCommand_Get-AzIotHubDeviceParent PSCmdlet_Set-AzIotHubDeviceParent PSCommand_Set-AzIotHubDeviceParent PSCmdlet_Add-AzIotHubDeviceChildren PSCommand_Add-AzIotHubDeviceChildren PSCmdlet_Remove-AzIotHubDeviceChildren PSCommand_Remove-AzIotHubDeviceChildren PSCmdlet_Get-AzIotHubDeviceChildren PSCommand_Get-AzIotHubDeviceChildren PSCmdlet_Get-AzIotHubDistributedTracing PSCommand_Get-AzIotHubDistributedTracing PSCmdlet_Set-AzIotHubDistributedTracing PSCommand_Set-AzIotHubDistributedTracing PSCmdlet_Get-AzIotHubDeviceTwin PSCommand_Get-AzIotHubDeviceTwin PSCmdlet_Update-AzIotHubDeviceTwin PSCommand_Update-AzIotHubDeviceTwin PSCmdlet_Invoke-AzIotHubDeviceMethod PSCommand_Invoke-AzIotHubDeviceMethod PSCmdlet_Get-AzIotHubModuleTwin PSCommand_Get-AzIotHubModuleTwin PSCmdlet_Update-AzIotHubModuleTwin PSCommand_Update-AzIotHubModuleTwin PSCmdlet_Add-AzIotHubConfiguration PSCommand_Add-AzIotHubConfiguration PSCmdlet_Get-AzIotHubConfiguration PSCommand_Get-AzIotHubConfiguration PSCmdlet_Remove-AzIotHubConfiguration PSCommand_Remove-AzIotHubConfiguration PSCmdlet_Set-AzIotHubConfiguration PSCommand_Set-AzIotHubConfiguration PSCmdlet_Invoke-AzIotHubModuleMethod PSCommand_Invoke-AzIotHubModuleMethod PSCmdlet_Invoke-AzIotHubQuery PSCommand_Invoke-AzIotHubQuery PSCmdlet_New-AzIotHubSasToken PSCommand_New-AzIotHubSasToken PSCmdlet_Invoke-AzIotHubConfigurationMetricsQuery PSCommand_Invoke-AzIotHubConfigurationMetricsQuery PSCmdlet_Add-AzIotHubDeployment PSCommand_Add-AzIotHubDeployment PSCmdlet_Get-AzIotHubDeployment PSCommand_Get-AzIotHubDeployment PSCmdlet_Remove-AzIotHubDeployment PSCommand_Remove-AzIotHubDeployment PSCmdlet_Set-AzIotHubDeployment PSCommand_Set-AzIotHubDeployment PSCmdlet_Invoke-AzIotHubDeploymentMetricsQuery PSCommand_Invoke-AzIotHubDeploymentMetricsQuery PSCmdlet_Set-AzIotHubEdgeModule PSCommand_Set-AzIotHubEdgeModule PSCmdlet_Send-AzIotHubDevice2CloudMessage PSCommand_Send-AzIotHubDevice2CloudMessage PSIncludes_Cmdlet</S>
           <S N="developmentDependency">False</S>
-          <S N="updated">2021-04-14T17:47:00Z</S>
+          <S N="updated">2021-08-01T23:59:33Z</S>
           <S N="NormalizedVersion">2.7.3</S>
           <S N="Authors">Microsoft Corporation</S>
           <S N="IsPrerelease">false</S>
@@ -303,7 +303,7 @@
           <S N="CompanyName">Microsoft Corporation</S>
         </MS>
       </Obj>
-      <S N="InstalledLocation">C:\Users\admin-taylor\Documents\PowerShell\Modules\Az.IotHub\2.7.3</S>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\Az.IotHub\2.7.3</S>
     </MS>
   </Obj>
 </Objs>

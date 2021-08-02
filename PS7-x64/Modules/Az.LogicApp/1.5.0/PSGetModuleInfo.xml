@@ -15,7 +15,7 @@
       <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
       <DT N="PublishedDate">2021-01-19T05:54:08-06:00</DT>
       <Obj N="InstalledDate" RefId="1">
-        <DT>2021-04-14T12:49:50.5553177-05:00</DT>
+        <DT>2021-08-01T19:03:01.7137465-05:00</DT>
         <MS>
           <Obj N="DisplayHint" RefId="2">
             <TN RefId="1">
@@ -56,78 +56,8 @@
         </TN>
         <DCT>
           <En>
-            <S N="Key">RoleCapability</S>
-            <Obj N="Value" RefId="5">
-              <TNRef RefId="2" />
-              <LST />
-            </Obj>
-          </En>
-          <En>
-            <S N="Key">Command</S>
-            <Obj N="Value" RefId="6">
-              <TNRef RefId="2" />
-              <LST>
-                <S>Get-AzIntegrationAccountAgreement</S>
-                <S>Get-AzIntegrationAccountAssembly</S>
-                <S>Get-AzIntegrationAccountBatchConfiguration</S>
-                <S>Get-AzIntegrationAccountCallbackUrl</S>
-                <S>Get-AzIntegrationAccountCertificate</S>
-                <S>Get-AzIntegrationAccount</S>
-                <S>Get-AzIntegrationAccountMap</S>
-                <S>Get-AzIntegrationAccountPartner</S>
-                <S>Get-AzIntegrationAccountSchema</S>
-                <S>Get-AzIntegrationAccountGeneratedIcn</S>
-                <S>Get-AzIntegrationAccountReceivedIcn</S>
-                <S>New-AzIntegrationAccountAgreement</S>
-                <S>New-AzIntegrationAccountAssembly</S>
-                <S>New-AzIntegrationAccountBatchConfiguration</S>
-                <S>New-AzIntegrationAccountCertificate</S>
-                <S>New-AzIntegrationAccount</S>
-                <S>New-AzIntegrationAccountMap</S>
-                <S>New-AzIntegrationAccountPartner</S>
-                <S>New-AzIntegrationAccountSchema</S>
-                <S>Remove-AzIntegrationAccountAgreement</S>
-                <S>Remove-AzIntegrationAccountAssembly</S>
-                <S>Remove-AzIntegrationAccountBatchConfiguration</S>
-                <S>Remove-AzIntegrationAccountCertificate</S>
-                <S>Remove-AzIntegrationAccount</S>
-                <S>Remove-AzIntegrationAccountMap</S>
-                <S>Remove-AzIntegrationAccountPartner</S>
-                <S>Remove-AzIntegrationAccountSchema</S>
-                <S>Remove-AzIntegrationAccountReceivedIcn</S>
-                <S>Set-AzIntegrationAccountAgreement</S>
-                <S>Set-AzIntegrationAccountAssembly</S>
-                <S>Set-AzIntegrationAccountBatchConfiguration</S>
-                <S>Set-AzIntegrationAccountCertificate</S>
-                <S>Set-AzIntegrationAccount</S>
-                <S>Set-AzIntegrationAccountMap</S>
-                <S>Set-AzIntegrationAccountPartner</S>
-                <S>Set-AzIntegrationAccountSchema</S>
-                <S>Stop-AzLogicAppRun</S>
-                <S>Set-AzIntegrationAccountGeneratedIcn</S>
-                <S>Set-AzIntegrationAccountReceivedIcn</S>
-                <S>Get-AzLogicApp</S>
-                <S>Get-AzLogicAppRunAction</S>
-                <S>Get-AzLogicAppRunHistory</S>
-                <S>Get-AzLogicAppTriggerCallbackUrl</S>
-                <S>Get-AzLogicAppTrigger</S>
-                <S>Get-AzLogicAppTriggerHistory</S>
-                <S>Get-AzLogicAppUpgradedDefinition</S>
-                <S>New-AzLogicApp</S>
-                <S>Remove-AzLogicApp</S>
-                <S>Start-AzLogicApp</S>
-                <S>Set-AzLogicApp</S>
-                <S>Test-AzLogicApp</S>
-              </LST>
-            </Obj>
-          </En>
-          <En>
-            <S N="Key">Workflow</S>
-            <Ref N="Value" RefId="5" />
-          </En>
-          <En>
             <S N="Key">Cmdlet</S>
-            <Obj N="Value" RefId="7">
+            <Obj N="Value" RefId="5">
               <TNRef RefId="2" />
               <LST>
                 <S>Get-AzIntegrationAccountAgreement</S>
@@ -186,11 +116,81 @@
           </En>
           <En>
             <S N="Key">Function</S>
-            <Ref N="Value" RefId="5" />
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
           </En>
           <En>
             <S N="Key">DscResource</S>
-            <Ref N="Value" RefId="5" />
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-AzIntegrationAccountAgreement</S>
+                <S>Get-AzIntegrationAccountAssembly</S>
+                <S>Get-AzIntegrationAccountBatchConfiguration</S>
+                <S>Get-AzIntegrationAccountCallbackUrl</S>
+                <S>Get-AzIntegrationAccountCertificate</S>
+                <S>Get-AzIntegrationAccount</S>
+                <S>Get-AzIntegrationAccountMap</S>
+                <S>Get-AzIntegrationAccountPartner</S>
+                <S>Get-AzIntegrationAccountSchema</S>
+                <S>Get-AzIntegrationAccountGeneratedIcn</S>
+                <S>Get-AzIntegrationAccountReceivedIcn</S>
+                <S>New-AzIntegrationAccountAgreement</S>
+                <S>New-AzIntegrationAccountAssembly</S>
+                <S>New-AzIntegrationAccountBatchConfiguration</S>
+                <S>New-AzIntegrationAccountCertificate</S>
+                <S>New-AzIntegrationAccount</S>
+                <S>New-AzIntegrationAccountMap</S>
+                <S>New-AzIntegrationAccountPartner</S>
+                <S>New-AzIntegrationAccountSchema</S>
+                <S>Remove-AzIntegrationAccountAgreement</S>
+                <S>Remove-AzIntegrationAccountAssembly</S>
+                <S>Remove-AzIntegrationAccountBatchConfiguration</S>
+                <S>Remove-AzIntegrationAccountCertificate</S>
+                <S>Remove-AzIntegrationAccount</S>
+                <S>Remove-AzIntegrationAccountMap</S>
+                <S>Remove-AzIntegrationAccountPartner</S>
+                <S>Remove-AzIntegrationAccountSchema</S>
+                <S>Remove-AzIntegrationAccountReceivedIcn</S>
+                <S>Set-AzIntegrationAccountAgreement</S>
+                <S>Set-AzIntegrationAccountAssembly</S>
+                <S>Set-AzIntegrationAccountBatchConfiguration</S>
+                <S>Set-AzIntegrationAccountCertificate</S>
+                <S>Set-AzIntegrationAccount</S>
+                <S>Set-AzIntegrationAccountMap</S>
+                <S>Set-AzIntegrationAccountPartner</S>
+                <S>Set-AzIntegrationAccountSchema</S>
+                <S>Stop-AzLogicAppRun</S>
+                <S>Set-AzIntegrationAccountGeneratedIcn</S>
+                <S>Set-AzIntegrationAccountReceivedIcn</S>
+                <S>Get-AzLogicApp</S>
+                <S>Get-AzLogicAppRunAction</S>
+                <S>Get-AzLogicAppRunHistory</S>
+                <S>Get-AzLogicAppTriggerCallbackUrl</S>
+                <S>Get-AzLogicAppTrigger</S>
+                <S>Get-AzLogicAppTriggerHistory</S>
+                <S>Get-AzLogicAppUpgradedDefinition</S>
+                <S>New-AzLogicApp</S>
+                <S>Remove-AzLogicApp</S>
+                <S>Start-AzLogicApp</S>
+                <S>Set-AzLogicApp</S>
+                <S>Test-AzLogicApp</S>
+              </LST>
+            </Obj>
           </En>
         </DCT>
       </Obj>
@@ -236,15 +236,15 @@
           <S N="releaseNotes">* Fixed issue that 'Get-AzLogicAppTriggerHistory' and 'Get-AzLogicAppRunAction' only retrieving the first page of results [#9141]</S>
           <S N="isLatestVersion">True</S>
           <S N="isAbsoluteLatestVersion">True</S>
-          <S N="versionDownloadCount">3322657</S>
-          <S N="downloadCount">20642068</S>
+          <S N="versionDownloadCount">5431978</S>
+          <S N="downloadCount">23380169</S>
           <S N="packageSize">319067</S>
           <S N="published">1/19/2021 5:54:08 AM -06:00</S>
           <S N="created">1/19/2021 5:54:08 AM -06:00</S>
-          <S N="lastUpdated">4/14/2021 5:47:00 PM -05:00</S>
+          <S N="lastUpdated">8/1/2021 11:59:33 PM -05:00</S>
           <S N="tags">Azure ResourceManager ARM LogicApp PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_Get-AzIntegrationAccountAgreement PSCommand_Get-AzIntegrationAccountAgreement PSCmdlet_Get-AzIntegrationAccountAssembly PSCommand_Get-AzIntegrationAccountAssembly PSCmdlet_Get-AzIntegrationAccountBatchConfiguration PSCommand_Get-AzIntegrationAccountBatchConfiguration PSCmdlet_Get-AzIntegrationAccountCallbackUrl PSCommand_Get-AzIntegrationAccountCallbackUrl PSCmdlet_Get-AzIntegrationAccountCertificate PSCommand_Get-AzIntegrationAccountCertificate PSCmdlet_Get-AzIntegrationAccount PSCommand_Get-AzIntegrationAccount PSCmdlet_Get-AzIntegrationAccountMap PSCommand_Get-AzIntegrationAccountMap PSCmdlet_Get-AzIntegrationAccountPartner PSCommand_Get-AzIntegrationAccountPartner PSCmdlet_Get-AzIntegrationAccountSchema PSCommand_Get-AzIntegrationAccountSchema PSCmdlet_Get-AzIntegrationAccountGeneratedIcn PSCommand_Get-AzIntegrationAccountGeneratedIcn PSCmdlet_Get-AzIntegrationAccountReceivedIcn PSCommand_Get-AzIntegrationAccountReceivedIcn PSCmdlet_New-AzIntegrationAccountAgreement PSCommand_New-AzIntegrationAccountAgreement PSCmdlet_New-AzIntegrationAccountAssembly PSCommand_New-AzIntegrationAccountAssembly PSCmdlet_New-AzIntegrationAccountBatchConfiguration PSCommand_New-AzIntegrationAccountBatchConfiguration PSCmdlet_New-AzIntegrationAccountCertificate PSCommand_New-AzIntegrationAccountCertificate PSCmdlet_New-AzIntegrationAccount PSCommand_New-AzIntegrationAccount PSCmdlet_New-AzIntegrationAccountMap PSCommand_New-AzIntegrationAccountMap PSCmdlet_New-AzIntegrationAccountPartner PSCommand_New-AzIntegrationAccountPartner PSCmdlet_New-AzIntegrationAccountSchema PSCommand_New-AzIntegrationAccountSchema PSCmdlet_Remove-AzIntegrationAccountAgreement PSCommand_Remove-AzIntegrationAccountAgreement PSCmdlet_Remove-AzIntegrationAccountAssembly PSCommand_Remove-AzIntegrationAccountAssembly PSCmdlet_Remove-AzIntegrationAccountBatchConfiguration PSCommand_Remove-AzIntegrationAccountBatchConfiguration PSCmdlet_Remove-AzIntegrationAccountCertificate PSCommand_Remove-AzIntegrationAccountCertificate PSCmdlet_Remove-AzIntegrationAccount PSCommand_Remove-AzIntegrationAccount PSCmdlet_Remove-AzIntegrationAccountMap PSCommand_Remove-AzIntegrationAccountMap PSCmdlet_Remove-AzIntegrationAccountPartner PSCommand_Remove-AzIntegrationAccountPartner PSCmdlet_Remove-AzIntegrationAccountSchema PSCommand_Remove-AzIntegrationAccountSchema PSCmdlet_Remove-AzIntegrationAccountReceivedIcn PSCommand_Remove-AzIntegrationAccountReceivedIcn PSCmdlet_Set-AzIntegrationAccountAgreement PSCommand_Set-AzIntegrationAccountAgreement PSCmdlet_Set-AzIntegrationAccountAssembly PSCommand_Set-AzIntegrationAccountAssembly PSCmdlet_Set-AzIntegrationAccountBatchConfiguration PSCommand_Set-AzIntegrationAccountBatchConfiguration PSCmdlet_Set-AzIntegrationAccountCertificate PSCommand_Set-AzIntegrationAccountCertificate PSCmdlet_Set-AzIntegrationAccount PSCommand_Set-AzIntegrationAccount PSCmdlet_Set-AzIntegrationAccountMap PSCommand_Set-AzIntegrationAccountMap PSCmdlet_Set-AzIntegrationAccountPartner PSCommand_Set-AzIntegrationAccountPartner PSCmdlet_Set-AzIntegrationAccountSchema PSCommand_Set-AzIntegrationAccountSchema PSCmdlet_Stop-AzLogicAppRun PSCommand_Stop-AzLogicAppRun PSCmdlet_Set-AzIntegrationAccountGeneratedIcn PSCommand_Set-AzIntegrationAccountGeneratedIcn PSCmdlet_Set-AzIntegrationAccountReceivedIcn PSCommand_Set-AzIntegrationAccountReceivedIcn PSCmdlet_Get-AzLogicApp PSCommand_Get-AzLogicApp PSCmdlet_Get-AzLogicAppRunAction PSCommand_Get-AzLogicAppRunAction PSCmdlet_Get-AzLogicAppRunHistory PSCommand_Get-AzLogicAppRunHistory PSCmdlet_Get-AzLogicAppTriggerCallbackUrl PSCommand_Get-AzLogicAppTriggerCallbackUrl PSCmdlet_Get-AzLogicAppTrigger PSCommand_Get-AzLogicAppTrigger PSCmdlet_Get-AzLogicAppTriggerHistory PSCommand_Get-AzLogicAppTriggerHistory PSCmdlet_Get-AzLogicAppUpgradedDefinition PSCommand_Get-AzLogicAppUpgradedDefinition PSCmdlet_New-AzLogicApp PSCommand_New-AzLogicApp PSCmdlet_Remove-AzLogicApp PSCommand_Remove-AzLogicApp PSCmdlet_Start-AzLogicApp PSCommand_Start-AzLogicApp PSCmdlet_Set-AzLogicApp PSCommand_Set-AzLogicApp PSCmdlet_Test-AzLogicApp PSCommand_Test-AzLogicApp PSIncludes_Cmdlet</S>
           <S N="developmentDependency">False</S>
-          <S N="updated">2021-04-14T17:47:00Z</S>
+          <S N="updated">2021-08-01T23:59:33Z</S>
           <S N="NormalizedVersion">1.5.0</S>
           <S N="Authors">Microsoft Corporation</S>
           <S N="IsPrerelease">false</S>
@@ -256,7 +256,7 @@
           <S N="CompanyName">Microsoft Corporation</S>
         </MS>
       </Obj>
-      <S N="InstalledLocation">C:\Users\admin-taylor\Documents\PowerShell\Modules\Az.LogicApp\1.5.0</S>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\Az.LogicApp\1.5.0</S>
     </MS>
   </Obj>
 </Objs>

@@ -1,0 +1,336 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.Automation</S>
+      <Version N="Version">1.7.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell - Automation service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core._x000D__x000A__x000D__x000A_For more information on Automation, please visit the following: https://docs.microsoft.com/azure/automation/</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2021-05-04T08:09:47-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2021-08-01T19:02:42.0357438-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>Automation</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-AzAutomationHybridWorkerGroup</S>
+                <S>Remove-AzAutomationHybridWorkerGroup</S>
+                <S>Get-AzAutomationJobOutputRecord</S>
+                <S>Import-AzAutomationDscNodeConfiguration</S>
+                <S>Export-AzAutomationDscConfiguration</S>
+                <S>Export-AzAutomationDscNodeReportContent</S>
+                <S>Get-AzAutomationCertificate</S>
+                <S>Get-AzAutomationConnection</S>
+                <S>Get-AzAutomationCredential</S>
+                <S>Get-AzAutomationDscCompilationJob</S>
+                <S>Get-AzAutomationDscCompilationJobOutput</S>
+                <S>Get-AzAutomationDscNodeConfiguration</S>
+                <S>Get-AzAutomationDscNodeReport</S>
+                <S>Get-AzAutomationJob</S>
+                <S>Get-AzAutomationJobOutput</S>
+                <S>Get-AzAutomationModule</S>
+                <S>Get-AzAutomationRunbook</S>
+                <S>Export-AzAutomationRunbook</S>
+                <S>Get-AzAutomationSchedule</S>
+                <S>Get-AzAutomationScheduledRunbook</S>
+                <S>Get-AzAutomationVariable</S>
+                <S>Get-AzAutomationWebhook</S>
+                <S>New-AzAutomationCertificate</S>
+                <S>New-AzAutomationConnection</S>
+                <S>New-AzAutomationCredential</S>
+                <S>New-AzAutomationModule</S>
+                <S>New-AzAutomationRunbook</S>
+                <S>New-AzAutomationSchedule</S>
+                <S>New-AzAutomationVariable</S>
+                <S>New-AzAutomationWebhook</S>
+                <S>Publish-AzAutomationRunbook</S>
+                <S>Register-AzAutomationDscNode</S>
+                <S>Register-AzAutomationScheduledRunbook</S>
+                <S>Remove-AzAutomationCertificate</S>
+                <S>Remove-AzAutomationConnectionType</S>
+                <S>Remove-AzAutomationConnection</S>
+                <S>Remove-AzAutomationCredential</S>
+                <S>Remove-AzAutomationDscNodeConfiguration</S>
+                <S>Remove-AzAutomationModule</S>
+                <S>Remove-AzAutomationRunbook</S>
+                <S>Remove-AzAutomationSchedule</S>
+                <S>Remove-AzAutomationVariable</S>
+                <S>Remove-AzAutomationDscConfiguration</S>
+                <S>Remove-AzAutomationWebhook</S>
+                <S>Resume-AzAutomationJob</S>
+                <S>Set-AzAutomationCertificate</S>
+                <S>Set-AzAutomationConnectionFieldValue</S>
+                <S>Set-AzAutomationCredential</S>
+                <S>Set-AzAutomationModule</S>
+                <S>Set-AzAutomationRunbook</S>
+                <S>Import-AzAutomationRunbook</S>
+                <S>Set-AzAutomationSchedule</S>
+                <S>Set-AzAutomationVariable</S>
+                <S>Set-AzAutomationWebhook</S>
+                <S>Start-AzAutomationDscCompilationJob</S>
+                <S>Get-AzAutomationRegistrationInfo</S>
+                <S>Get-AzAutomationDscConfiguration</S>
+                <S>Get-AzAutomationDscNode</S>
+                <S>Get-AzAutomationDscOnboardingMetaconfig</S>
+                <S>Import-AzAutomationDscConfiguration</S>
+                <S>New-AzAutomationKey</S>
+                <S>Start-AzAutomationRunbook</S>
+                <S>Stop-AzAutomationJob</S>
+                <S>Suspend-AzAutomationJob</S>
+                <S>Unregister-AzAutomationDscNode</S>
+                <S>Set-AzAutomationAccount</S>
+                <S>Remove-AzAutomationAccount</S>
+                <S>New-AzAutomationAccount</S>
+                <S>Get-AzAutomationAccount</S>
+                <S>Set-AzAutomationDscNode</S>
+                <S>Unregister-AzAutomationScheduledRunbook</S>
+                <S>Start-AzAutomationDscNodeConfigurationDeployment</S>
+                <S>Stop-AzAutomationDscNodeConfigurationDeployment</S>
+                <S>Get-AzAutomationDscNodeConfigurationDeploymentSchedule</S>
+                <S>Get-AzAutomationDscNodeConfigurationDeployment</S>
+                <S>New-AzAutomationSoftwareUpdateConfiguration</S>
+                <S>New-AzAutomationUpdateManagementAzureQuery</S>
+                <S>Get-AzAutomationSoftwareUpdateConfiguration</S>
+                <S>Remove-AzAutomationSoftwareUpdateConfiguration</S>
+                <S>Get-AzAutomationSoftwareUpdateRun</S>
+                <S>Get-AzAutomationSoftwareUpdateMachineRun</S>
+                <S>New-AzAutomationSourceControl</S>
+                <S>Get-AzAutomationSourceControl</S>
+                <S>Remove-AzAutomationSourceControl</S>
+                <S>Update-AzAutomationSourceControl</S>
+                <S>Start-AzAutomationSourceControlSyncJob</S>
+                <S>Get-AzAutomationSourceControlSyncJob</S>
+                <S>Get-AzAutomationSourceControlSyncJobOutput</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-AzAutomationHybridWorkerGroup</S>
+                <S>Remove-AzAutomationHybridWorkerGroup</S>
+                <S>Get-AzAutomationJobOutputRecord</S>
+                <S>Import-AzAutomationDscNodeConfiguration</S>
+                <S>Export-AzAutomationDscConfiguration</S>
+                <S>Export-AzAutomationDscNodeReportContent</S>
+                <S>Get-AzAutomationCertificate</S>
+                <S>Get-AzAutomationConnection</S>
+                <S>Get-AzAutomationCredential</S>
+                <S>Get-AzAutomationDscCompilationJob</S>
+                <S>Get-AzAutomationDscCompilationJobOutput</S>
+                <S>Get-AzAutomationDscNodeConfiguration</S>
+                <S>Get-AzAutomationDscNodeReport</S>
+                <S>Get-AzAutomationJob</S>
+                <S>Get-AzAutomationJobOutput</S>
+                <S>Get-AzAutomationModule</S>
+                <S>Get-AzAutomationRunbook</S>
+                <S>Export-AzAutomationRunbook</S>
+                <S>Get-AzAutomationSchedule</S>
+                <S>Get-AzAutomationScheduledRunbook</S>
+                <S>Get-AzAutomationVariable</S>
+                <S>Get-AzAutomationWebhook</S>
+                <S>New-AzAutomationCertificate</S>
+                <S>New-AzAutomationConnection</S>
+                <S>New-AzAutomationCredential</S>
+                <S>New-AzAutomationModule</S>
+                <S>New-AzAutomationRunbook</S>
+                <S>New-AzAutomationSchedule</S>
+                <S>New-AzAutomationVariable</S>
+                <S>New-AzAutomationWebhook</S>
+                <S>Publish-AzAutomationRunbook</S>
+                <S>Register-AzAutomationDscNode</S>
+                <S>Register-AzAutomationScheduledRunbook</S>
+                <S>Remove-AzAutomationCertificate</S>
+                <S>Remove-AzAutomationConnectionType</S>
+                <S>Remove-AzAutomationConnection</S>
+                <S>Remove-AzAutomationCredential</S>
+                <S>Remove-AzAutomationDscNodeConfiguration</S>
+                <S>Remove-AzAutomationModule</S>
+                <S>Remove-AzAutomationRunbook</S>
+                <S>Remove-AzAutomationSchedule</S>
+                <S>Remove-AzAutomationVariable</S>
+                <S>Remove-AzAutomationDscConfiguration</S>
+                <S>Remove-AzAutomationWebhook</S>
+                <S>Resume-AzAutomationJob</S>
+                <S>Set-AzAutomationCertificate</S>
+                <S>Set-AzAutomationConnectionFieldValue</S>
+                <S>Set-AzAutomationCredential</S>
+                <S>Set-AzAutomationModule</S>
+                <S>Set-AzAutomationRunbook</S>
+                <S>Import-AzAutomationRunbook</S>
+                <S>Set-AzAutomationSchedule</S>
+                <S>Set-AzAutomationVariable</S>
+                <S>Set-AzAutomationWebhook</S>
+                <S>Start-AzAutomationDscCompilationJob</S>
+                <S>Get-AzAutomationRegistrationInfo</S>
+                <S>Get-AzAutomationDscConfiguration</S>
+                <S>Get-AzAutomationDscNode</S>
+                <S>Get-AzAutomationDscOnboardingMetaconfig</S>
+                <S>Import-AzAutomationDscConfiguration</S>
+                <S>New-AzAutomationKey</S>
+                <S>Start-AzAutomationRunbook</S>
+                <S>Stop-AzAutomationJob</S>
+                <S>Suspend-AzAutomationJob</S>
+                <S>Unregister-AzAutomationDscNode</S>
+                <S>Set-AzAutomationAccount</S>
+                <S>Remove-AzAutomationAccount</S>
+                <S>New-AzAutomationAccount</S>
+                <S>Get-AzAutomationAccount</S>
+                <S>Set-AzAutomationDscNode</S>
+                <S>Unregister-AzAutomationScheduledRunbook</S>
+                <S>Start-AzAutomationDscNodeConfigurationDeployment</S>
+                <S>Stop-AzAutomationDscNodeConfigurationDeployment</S>
+                <S>Get-AzAutomationDscNodeConfigurationDeploymentSchedule</S>
+                <S>Get-AzAutomationDscNodeConfigurationDeployment</S>
+                <S>New-AzAutomationSoftwareUpdateConfiguration</S>
+                <S>New-AzAutomationUpdateManagementAzureQuery</S>
+                <S>Get-AzAutomationSoftwareUpdateConfiguration</S>
+                <S>Remove-AzAutomationSoftwareUpdateConfiguration</S>
+                <S>Get-AzAutomationSoftwareUpdateRun</S>
+                <S>Get-AzAutomationSoftwareUpdateMachineRun</S>
+                <S>New-AzAutomationSourceControl</S>
+                <S>Get-AzAutomationSourceControl</S>
+                <S>Remove-AzAutomationSourceControl</S>
+                <S>Update-AzAutomationSourceControl</S>
+                <S>Start-AzAutomationSourceControlSyncJob</S>
+                <S>Get-AzAutomationSourceControlSyncJob</S>
+                <S>Get-AzAutomationSourceControlSyncJobOutput</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Added support for User Assigned Identities and PublicNetworkAccess flag</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">2.2.8</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/2.2.8</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell - Automation service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core._x000D__x000A__x000D__x000A_For more information on Automation, please visit the following: https://docs.microsoft.com/azure/automation/</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Added support for User Assigned Identities and PublicNetworkAccess flag</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">1824165</S>
+          <S N="downloadCount">24266905</S>
+          <S N="packageSize">482282</S>
+          <S N="published">5/4/2021 8:09:47 AM -05:00</S>
+          <S N="created">5/4/2021 8:09:47 AM -05:00</S>
+          <S N="lastUpdated">8/1/2021 11:59:33 PM -05:00</S>
+          <S N="tags">Azure ResourceManager ARM Automation PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_Get-AzAutomationHybridWorkerGroup PSCommand_Get-AzAutomationHybridWorkerGroup PSCmdlet_Remove-AzAutomationHybridWorkerGroup PSCommand_Remove-AzAutomationHybridWorkerGroup PSCmdlet_Get-AzAutomationJobOutputRecord PSCommand_Get-AzAutomationJobOutputRecord PSCmdlet_Import-AzAutomationDscNodeConfiguration PSCommand_Import-AzAutomationDscNodeConfiguration PSCmdlet_Export-AzAutomationDscConfiguration PSCommand_Export-AzAutomationDscConfiguration PSCmdlet_Export-AzAutomationDscNodeReportContent PSCommand_Export-AzAutomationDscNodeReportContent PSCmdlet_Get-AzAutomationCertificate PSCommand_Get-AzAutomationCertificate PSCmdlet_Get-AzAutomationConnection PSCommand_Get-AzAutomationConnection PSCmdlet_Get-AzAutomationCredential PSCommand_Get-AzAutomationCredential PSCmdlet_Get-AzAutomationDscCompilationJob PSCommand_Get-AzAutomationDscCompilationJob PSCmdlet_Get-AzAutomationDscCompilationJobOutput PSCommand_Get-AzAutomationDscCompilationJobOutput PSCmdlet_Get-AzAutomationDscNodeConfiguration PSCommand_Get-AzAutomationDscNodeConfiguration PSCmdlet_Get-AzAutomationDscNodeReport PSCommand_Get-AzAutomationDscNodeReport PSCmdlet_Get-AzAutomationJob PSCommand_Get-AzAutomationJob PSCmdlet_Get-AzAutomationJobOutput PSCommand_Get-AzAutomationJobOutput PSCmdlet_Get-AzAutomationModule PSCommand_Get-AzAutomationModule PSCmdlet_Get-AzAutomationRunbook PSCommand_Get-AzAutomationRunbook PSCmdlet_Export-AzAutomationRunbook PSCommand_Export-AzAutomationRunbook PSCmdlet_Get-AzAutomationSchedule PSCommand_Get-AzAutomationSchedule PSCmdlet_Get-AzAutomationScheduledRunbook PSCommand_Get-AzAutomationScheduledRunbook PSCmdlet_Get-AzAutomationVariable PSCommand_Get-AzAutomationVariable PSCmdlet_Get-AzAutomationWebhook PSCommand_Get-AzAutomationWebhook PSCmdlet_New-AzAutomationCertificate PSCommand_New-AzAutomationCertificate PSCmdlet_New-AzAutomationConnection PSCommand_New-AzAutomationConnection PSCmdlet_New-AzAutomationCredential PSCommand_New-AzAutomationCredential PSCmdlet_New-AzAutomationModule PSCommand_New-AzAutomationModule PSCmdlet_New-AzAutomationRunbook PSCommand_New-AzAutomationRunbook PSCmdlet_New-AzAutomationSchedule PSCommand_New-AzAutomationSchedule PSCmdlet_New-AzAutomationVariable PSCommand_New-AzAutomationVariable PSCmdlet_New-AzAutomationWebhook PSCommand_New-AzAutomationWebhook PSCmdlet_Publish-AzAutomationRunbook PSCommand_Publish-AzAutomationRunbook PSCmdlet_Register-AzAutomationDscNode PSCommand_Register-AzAutomationDscNode PSCmdlet_Register-AzAutomationScheduledRunbook PSCommand_Register-AzAutomationScheduledRunbook PSCmdlet_Remove-AzAutomationCertificate PSCommand_Remove-AzAutomationCertificate PSCmdlet_Remove-AzAutomationConnectionType PSCommand_Remove-AzAutomationConnectionType PSCmdlet_Remove-AzAutomationConnection PSCommand_Remove-AzAutomationConnection PSCmdlet_Remove-AzAutomationCredential PSCommand_Remove-AzAutomationCredential PSCmdlet_Remove-AzAutomationDscNodeConfiguration PSCommand_Remove-AzAutomationDscNodeConfiguration PSCmdlet_Remove-AzAutomationModule PSCommand_Remove-AzAutomationModule PSCmdlet_Remove-AzAutomationRunbook PSCommand_Remove-AzAutomationRunbook PSCmdlet_Remove-AzAutomationSchedule PSCommand_Remove-AzAutomationSchedule PSCmdlet_Remove-AzAutomationVariable PSCommand_Remove-AzAutomationVariable PSCmdlet_Remove-AzAutomationDscConfiguration PSCommand_Remove-AzAutomationDscConfiguration PSCmdlet_Remove-AzAutomationWebhook PSCommand_Remove-AzAutomationWebhook PSCmdlet_Resume-AzAutomationJob PSCommand_Resume-AzAutomationJob PSCmdlet_Set-AzAutomationCertificate PSCommand_Set-AzAutomationCertificate PSCmdlet_Set-AzAutomationConnectionFieldValue PSCommand_Set-AzAutomationConnectionFieldValue PSCmdlet_Set-AzAutomationCredential PSCommand_Set-AzAutomationCredential PSCmdlet_Set-AzAutomationModule PSCommand_Set-AzAutomationModule PSCmdlet_Set-AzAutomationRunbook PSCommand_Set-AzAutomationRunbook PSCmdlet_Import-AzAutomationRunbook PSCommand_Import-AzAutomationRunbook PSCmdlet_Set-AzAutomationSchedule PSCommand_Set-AzAutomationSchedule PSCmdlet_Set-AzAutomationVariable PSCommand_Set-AzAutomationVariable PSCmdlet_Set-AzAutomationWebhook PSCommand_Set-AzAutomationWebhook PSCmdlet_Start-AzAutomationDscCompilationJob PSCommand_Start-AzAutomationDscCompilationJob PSCmdlet_Get-AzAutomationRegistrationInfo PSCommand_Get-AzAutomationRegistrationInfo PSCmdlet_Get-AzAutomationDscConfiguration PSCommand_Get-AzAutomationDscConfiguration PSCmdlet_Get-AzAutomationDscNode PSCommand_Get-AzAutomationDscNode PSCmdlet_Get-AzAutomationDscOnboardingMetaconfig PSCommand_Get-AzAutomationDscOnboardingMetaconfig PSCmdlet_Import-AzAutomationDscConfiguration PSCommand_Import-AzAutomationDscConfiguration PSCmdlet_New-AzAutomationKey PSCommand_New-AzAutomationKey PSCmdlet_Start-AzAutomationRunbook PSCommand_Start-AzAutomationRunbook PSCmdlet_Stop-AzAutomationJob PSCommand_Stop-AzAutomationJob PSCmdlet_Suspend-AzAutomationJob PSCommand_Suspend-AzAutomationJob PSCmdlet_Unregister-AzAutomationDscNode PSCommand_Unregister-AzAutomationDscNode PSCmdlet_Set-AzAutomationAccount PSCommand_Set-AzAutomationAccount PSCmdlet_Remove-AzAutomationAccount PSCommand_Remove-AzAutomationAccount PSCmdlet_New-AzAutomationAccount PSCommand_New-AzAutomationAccount PSCmdlet_Get-AzAutomationAccount PSCommand_Get-AzAutomationAccount PSCmdlet_Set-AzAutomationDscNode PSCommand_Set-AzAutomationDscNode PSCmdlet_Unregister-AzAutomationScheduledRunbook PSCommand_Unregister-AzAutomationScheduledRunbook PSCmdlet_Start-AzAutomationDscNodeConfigurationDeployment PSCommand_Start-AzAutomationDscNodeConfigurationDeployment PSCmdlet_Stop-AzAutomationDscNodeConfigurationDeployment PSCommand_Stop-AzAutomationDscNodeConfigurationDeployment PSCmdlet_Get-AzAutomationDscNodeConfigurationDeploymentSchedule PSCommand_Get-AzAutomationDscNodeConfigurationDeploymentSchedule PSCmdlet_Get-AzAutomationDscNodeConfigurationDeployment PSCommand_Get-AzAutomationDscNodeConfigurationDeployment PSCmdlet_New-AzAutomationSoftwareUpdateConfiguration PSCommand_New-AzAutomationSoftwareUpdateConfiguration PSCmdlet_New-AzAutomationUpdateManagementAzureQuery PSCommand_New-AzAutomationUpdateManagementAzureQuery PSCmdlet_Get-AzAutomationSoftwareUpdateConfiguration PSCommand_Get-AzAutomationSoftwareUpdateConfiguration PSCmdlet_Remove-AzAutomationSoftwareUpdateConfiguration PSCommand_Remove-AzAutomationSoftwareUpdateConfiguration PSCmdlet_Get-AzAutomationSoftwareUpdateRun PSCommand_Get-AzAutomationSoftwareUpdateRun PSCmdlet_Get-AzAutomationSoftwareUpdateMachineRun PSCommand_Get-AzAutomationSoftwareUpdateMachineRun PSCmdlet_New-AzAutomationSourceControl PSCommand_New-AzAutomationSourceControl PSCmdlet_Get-AzAutomationSourceControl PSCommand_Get-AzAutomationSourceControl PSCmdlet_Remove-AzAutomationSourceControl PSCommand_Remove-AzAutomationSourceControl PSCmdlet_Update-AzAutomationSourceControl PSCommand_Update-AzAutomationSourceControl PSCmdlet_Start-AzAutomationSourceControlSyncJob PSCommand_Start-AzAutomationSourceControlSyncJob PSCmdlet_Get-AzAutomationSourceControlSyncJob PSCommand_Get-AzAutomationSourceControlSyncJob PSCmdlet_Get-AzAutomationSourceControlSyncJobOutput PSCommand_Get-AzAutomationSourceControlSyncJobOutput PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2021-08-01T23:59:33Z</S>
+          <S N="NormalizedVersion">1.7.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.Automation.nuspec|Automation.format.ps1xml|Az.Automation.psd1|Az.Automation.psm1|Microsoft.Azure.Management.Automation.dll|Microsoft.Azure.PowerShell.Cmdlets.Automation.deps.json|Microsoft.Azure.PowerShell.Cmdlets.Automation.dll|Microsoft.Azure.PowerShell.Cmdlets.Automation.dll-Help.xml</S>
+          <S N="GUID">ef36c942-4a71-4e19-9450-05a35843deb6</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\Az.Automation\1.7.0</S>
+    </MS>
+  </Obj>
+</Objs>

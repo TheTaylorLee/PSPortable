@@ -15,7 +15,7 @@
       <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
       <DT N="PublishedDate">2021-02-09T07:08:18-06:00</DT>
       <Obj N="InstalledDate" RefId="1">
-        <DT>2021-04-14T12:50:03.6088833-05:00</DT>
+        <DT>2021-08-01T19:03:10.5154211-05:00</DT>
         <MS>
           <Obj N="DisplayHint" RefId="2">
             <TN RefId="1">
@@ -62,36 +62,8 @@
         </TN>
         <DCT>
           <En>
-            <S N="Key">RoleCapability</S>
-            <Obj N="Value" RefId="5">
-              <TNRef RefId="2" />
-              <LST />
-            </Obj>
-          </En>
-          <En>
-            <S N="Key">Command</S>
-            <Obj N="Value" RefId="6">
-              <TNRef RefId="2" />
-              <LST>
-                <S>Get-AzPolicyEvent</S>
-                <S>Get-AzPolicyState</S>
-                <S>Get-AzPolicyStateSummary</S>
-                <S>Get-AzPolicyRemediation</S>
-                <S>Remove-AzPolicyRemediation</S>
-                <S>Start-AzPolicyRemediation</S>
-                <S>Stop-AzPolicyRemediation</S>
-                <S>Get-AzPolicyMetadata</S>
-                <S>Start-AzPolicyComplianceScan</S>
-              </LST>
-            </Obj>
-          </En>
-          <En>
-            <S N="Key">Workflow</S>
-            <Ref N="Value" RefId="5" />
-          </En>
-          <En>
             <S N="Key">Cmdlet</S>
-            <Obj N="Value" RefId="7">
+            <Obj N="Value" RefId="5">
               <TNRef RefId="2" />
               <LST>
                 <S>Get-AzPolicyEvent</S>
@@ -108,11 +80,39 @@
           </En>
           <En>
             <S N="Key">Function</S>
-            <Ref N="Value" RefId="5" />
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
           </En>
           <En>
             <S N="Key">DscResource</S>
-            <Ref N="Value" RefId="5" />
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-AzPolicyEvent</S>
+                <S>Get-AzPolicyState</S>
+                <S>Get-AzPolicyStateSummary</S>
+                <S>Get-AzPolicyRemediation</S>
+                <S>Remove-AzPolicyRemediation</S>
+                <S>Start-AzPolicyRemediation</S>
+                <S>Stop-AzPolicyRemediation</S>
+                <S>Get-AzPolicyMetadata</S>
+                <S>Start-AzPolicyComplianceScan</S>
+              </LST>
+            </Obj>
           </En>
         </DCT>
       </Obj>
@@ -158,15 +158,15 @@
           <S N="releaseNotes">* Retracted changes made in powershell that increased request row limit. Removed incorrect statement of supporting paging</S>
           <S N="isLatestVersion">True</S>
           <S N="isAbsoluteLatestVersion">True</S>
-          <S N="versionDownloadCount">1654722</S>
-          <S N="downloadCount">20612511</S>
+          <S N="versionDownloadCount">3754403</S>
+          <S N="downloadCount">23330306</S>
           <S N="packageSize">216329</S>
           <S N="published">2/9/2021 7:08:18 AM -06:00</S>
           <S N="created">2/9/2021 7:08:18 AM -06:00</S>
-          <S N="lastUpdated">4/14/2021 5:47:00 PM -05:00</S>
+          <S N="lastUpdated">8/1/2021 11:59:33 PM -05:00</S>
           <S N="tags">Azure ResourceManager ARM Provider Policy PolicyInsights PolicyEvent PolicyState Remediation PolicyMetadata PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_Get-AzPolicyEvent PSCommand_Get-AzPolicyEvent PSCmdlet_Get-AzPolicyState PSCommand_Get-AzPolicyState PSCmdlet_Get-AzPolicyStateSummary PSCommand_Get-AzPolicyStateSummary PSCmdlet_Get-AzPolicyRemediation PSCommand_Get-AzPolicyRemediation PSCmdlet_Remove-AzPolicyRemediation PSCommand_Remove-AzPolicyRemediation PSCmdlet_Start-AzPolicyRemediation PSCommand_Start-AzPolicyRemediation PSCmdlet_Stop-AzPolicyRemediation PSCommand_Stop-AzPolicyRemediation PSCmdlet_Get-AzPolicyMetadata PSCommand_Get-AzPolicyMetadata PSCmdlet_Start-AzPolicyComplianceScan PSCommand_Start-AzPolicyComplianceScan PSIncludes_Cmdlet</S>
           <S N="developmentDependency">False</S>
-          <S N="updated">2021-04-14T17:47:00Z</S>
+          <S N="updated">2021-08-01T23:59:33Z</S>
           <S N="NormalizedVersion">1.4.1</S>
           <S N="Authors">Microsoft Corporation</S>
           <S N="IsPrerelease">false</S>
@@ -178,7 +178,7 @@
           <S N="CompanyName">Microsoft Corporation</S>
         </MS>
       </Obj>
-      <S N="InstalledLocation">C:\Users\admin-taylor\Documents\PowerShell\Modules\Az.PolicyInsights\1.4.1</S>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\Az.PolicyInsights\1.4.1</S>
     </MS>
   </Obj>
 </Objs>

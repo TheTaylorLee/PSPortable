@@ -15,7 +15,7 @@
       <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
       <DT N="PublishedDate">2020-10-27T08:42:36-05:00</DT>
       <Obj N="InstalledDate" RefId="1">
-        <DT>2021-04-14T12:49:18.6951493-05:00</DT>
+        <DT>2021-08-01T19:02:43.7117697-05:00</DT>
         <MS>
           <Obj N="DisplayHint" RefId="2">
             <TN RefId="1">
@@ -58,43 +58,8 @@
         </TN>
         <DCT>
           <En>
-            <S N="Key">RoleCapability</S>
-            <Obj N="Value" RefId="5">
-              <TNRef RefId="2" />
-              <LST />
-            </Obj>
-          </En>
-          <En>
-            <S N="Key">Command</S>
-            <Obj N="Value" RefId="6">
-              <TNRef RefId="2" />
-              <LST>
-                <S>Get-AzBillingInvoice</S>
-                <S>Get-AzBillingPeriod</S>
-                <S>Get-AzEnrollmentAccount</S>
-                <S>Get-AzConsumptionBudget</S>
-                <S>Get-AzConsumptionMarketplace</S>
-                <S>Get-AzConsumptionPriceSheet</S>
-                <S>Get-AzConsumptionReservationDetail</S>
-                <S>Get-AzConsumptionReservationSummary</S>
-                <S>Get-AzConsumptionUsageDetail</S>
-                <S>New-AzConsumptionBudget</S>
-                <S>Remove-AzConsumptionBudget</S>
-                <S>Set-AzConsumptionBudget</S>
-                <S>Get-UsageAggregates</S>
-                <S>Get-AzBillingAccount</S>
-                <S>Get-AzBillingProfile</S>
-                <S>Get-AzInvoiceSection</S>
-              </LST>
-            </Obj>
-          </En>
-          <En>
-            <S N="Key">Workflow</S>
-            <Ref N="Value" RefId="5" />
-          </En>
-          <En>
             <S N="Key">Cmdlet</S>
-            <Obj N="Value" RefId="7">
+            <Obj N="Value" RefId="5">
               <TNRef RefId="2" />
               <LST>
                 <S>Get-AzBillingInvoice</S>
@@ -118,11 +83,46 @@
           </En>
           <En>
             <S N="Key">Function</S>
-            <Ref N="Value" RefId="5" />
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
           </En>
           <En>
             <S N="Key">DscResource</S>
-            <Ref N="Value" RefId="5" />
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-AzBillingInvoice</S>
+                <S>Get-AzBillingPeriod</S>
+                <S>Get-AzEnrollmentAccount</S>
+                <S>Get-AzConsumptionBudget</S>
+                <S>Get-AzConsumptionMarketplace</S>
+                <S>Get-AzConsumptionPriceSheet</S>
+                <S>Get-AzConsumptionReservationDetail</S>
+                <S>Get-AzConsumptionReservationSummary</S>
+                <S>Get-AzConsumptionUsageDetail</S>
+                <S>New-AzConsumptionBudget</S>
+                <S>Remove-AzConsumptionBudget</S>
+                <S>Set-AzConsumptionBudget</S>
+                <S>Get-UsageAggregates</S>
+                <S>Get-AzBillingAccount</S>
+                <S>Get-AzBillingProfile</S>
+                <S>Get-AzInvoiceSection</S>
+              </LST>
+            </Obj>
           </En>
         </DCT>
       </Obj>
@@ -167,16 +167,16 @@
           <S N="requireLicenseAcceptance">True</S>
           <S N="releaseNotes">* Added 'Get-AzBillingAccount' cmdlet_x000D__x000A_* Added 'Get-AzBillingProfile' cmdlet_x000D__x000A_* Added 'Get-AzInvoiceSection' cmdlet_x000D__x000A_* Added new parameters in 'Get-AzBillingInvoice' cmdlet_x000D__x000A_* Removed properties DownloadUrlExpiry, Type, BillingPeriodNames from the response of Get-AzBillingInvoice cmdlet</S>
           <S N="isLatestVersion">True</S>
-          <S N="isAbsoluteLatestVersion">False</S>
-          <S N="versionDownloadCount">9408807</S>
-          <S N="downloadCount">20451218</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">11697140</S>
+          <S N="downloadCount">23355083</S>
           <S N="packageSize">370338</S>
           <S N="published">10/27/2020 8:42:36 AM -05:00</S>
           <S N="created">10/27/2020 8:42:36 AM -05:00</S>
-          <S N="lastUpdated">4/14/2021 5:47:00 PM -05:00</S>
+          <S N="lastUpdated">8/1/2021 11:59:33 PM -05:00</S>
           <S N="tags">Azure ResourceManager ARM Billing Consumption UsageAggregates PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_Get-AzBillingInvoice PSCommand_Get-AzBillingInvoice PSCmdlet_Get-AzBillingPeriod PSCommand_Get-AzBillingPeriod PSCmdlet_Get-AzEnrollmentAccount PSCommand_Get-AzEnrollmentAccount PSCmdlet_Get-AzConsumptionBudget PSCommand_Get-AzConsumptionBudget PSCmdlet_Get-AzConsumptionMarketplace PSCommand_Get-AzConsumptionMarketplace PSCmdlet_Get-AzConsumptionPriceSheet PSCommand_Get-AzConsumptionPriceSheet PSCmdlet_Get-AzConsumptionReservationDetail PSCommand_Get-AzConsumptionReservationDetail PSCmdlet_Get-AzConsumptionReservationSummary PSCommand_Get-AzConsumptionReservationSummary PSCmdlet_Get-AzConsumptionUsageDetail PSCommand_Get-AzConsumptionUsageDetail PSCmdlet_New-AzConsumptionBudget PSCommand_New-AzConsumptionBudget PSCmdlet_Remove-AzConsumptionBudget PSCommand_Remove-AzConsumptionBudget PSCmdlet_Set-AzConsumptionBudget PSCommand_Set-AzConsumptionBudget PSCmdlet_Get-UsageAggregates PSCommand_Get-UsageAggregates PSCmdlet_Get-AzBillingAccount PSCommand_Get-AzBillingAccount PSCmdlet_Get-AzBillingProfile PSCommand_Get-AzBillingProfile PSCmdlet_Get-AzInvoiceSection PSCommand_Get-AzInvoiceSection PSIncludes_Cmdlet</S>
           <S N="developmentDependency">False</S>
-          <S N="updated">2021-04-14T17:47:00Z</S>
+          <S N="updated">2021-08-01T23:59:33Z</S>
           <S N="NormalizedVersion">2.0.0</S>
           <S N="Authors">Microsoft Corporation</S>
           <S N="IsPrerelease">false</S>
@@ -188,7 +188,7 @@
           <S N="CompanyName">Microsoft Corporation</S>
         </MS>
       </Obj>
-      <S N="InstalledLocation">C:\Users\admin-taylor\Documents\PowerShell\Modules\Az.Billing\2.0.0</S>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\Az.Billing\2.0.0</S>
     </MS>
   </Obj>
 </Objs>

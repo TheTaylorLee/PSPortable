@@ -15,7 +15,7 @@
       <S N="Copyright">2018</S>
       <DT N="PublishedDate">2019-07-12T19:07:52-05:00</DT>
       <Obj N="InstalledDate" RefId="1">
-        <DT>2020-01-25T23:49:26.472877-06:00</DT>
+        <DT>2021-08-01T19:09:27.0456961-05:00</DT>
         <MS>
           <Obj N="DisplayHint" RefId="2">
             <TN RefId="1">
@@ -59,15 +59,8 @@
         </TN>
         <DCT>
           <En>
-            <S N="Key">Function</S>
+            <S N="Key">Cmdlet</S>
             <Obj N="Value" RefId="5">
-              <TNRef RefId="2" />
-              <LST />
-            </Obj>
-          </En>
-          <En>
-            <S N="Key">Command</S>
-            <Obj N="Value" RefId="6">
               <TNRef RefId="2" />
               <LST>
                 <S>Add-NTFSAccess</S>
@@ -111,11 +104,26 @@
             </Obj>
           </En>
           <En>
-            <S N="Key">RoleCapability</S>
-            <Ref N="Value" RefId="5" />
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
           </En>
           <En>
-            <S N="Key">Cmdlet</S>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
             <Obj N="Value" RefId="7">
               <TNRef RefId="2" />
               <LST>
@@ -159,14 +167,6 @@
               </LST>
             </Obj>
           </En>
-          <En>
-            <S N="Key">DscResource</S>
-            <Ref N="Value" RefId="5" />
-          </En>
-          <En>
-            <S N="Key">Workflow</S>
-            <Ref N="Value" RefId="5" />
-          </En>
         </DCT>
       </Obj>
       <Nil N="PowerShellGetFormatVersion" />
@@ -189,15 +189,15 @@
           <S N="requireLicenseAcceptance">False</S>
           <S N="isLatestVersion">True</S>
           <S N="isAbsoluteLatestVersion">True</S>
-          <S N="versionDownloadCount">78886</S>
-          <S N="downloadCount">202190</S>
+          <S N="versionDownloadCount">368180</S>
+          <S N="downloadCount">501077</S>
           <S N="packageSize">3008688</S>
           <S N="published">7/12/2019 7:07:52 PM -05:00</S>
           <S N="created">7/12/2019 7:07:52 PM -05:00</S>
-          <S N="lastUpdated">1/26/2020 5:46:58 AM -06:00</S>
+          <S N="lastUpdated">8/2/2021 12:04:33 AM -05:00</S>
           <S N="tags">AccessControl ACL DirectorySecurity FileSecurity FileSystem FileSystemSecurity NTFS Module AccessRights PSModule PSCmdlet_Add-NTFSAccess PSCommand_Add-NTFSAccess PSCmdlet_Clear-NTFSAccess PSCommand_Clear-NTFSAccess PSCmdlet_Disable-NTFSAccessInheritance PSCommand_Disable-NTFSAccessInheritance PSCmdlet_Enable-NTFSAccessInheritance PSCommand_Enable-NTFSAccessInheritance PSCmdlet_Get-NTFSAccess PSCommand_Get-NTFSAccess PSCmdlet_Get-NTFSEffectiveAccess PSCommand_Get-NTFSEffectiveAccess PSCmdlet_Get-NTFSOrphanedAccess PSCommand_Get-NTFSOrphanedAccess PSCmdlet_Get-NTFSSimpleAccess PSCommand_Get-NTFSSimpleAccess PSCmdlet_Remove-NTFSAccess PSCommand_Remove-NTFSAccess PSCmdlet_Show-NTFSSimpleAccess PSCommand_Show-NTFSSimpleAccess PSCmdlet_Add-NTFSAudit PSCommand_Add-NTFSAudit PSCmdlet_Clear-NTFSAudit PSCommand_Clear-NTFSAudit PSCmdlet_Disable-NTFSAuditInheritance PSCommand_Disable-NTFSAuditInheritance PSCmdlet_Enable-NTFSAuditInheritance PSCommand_Enable-NTFSAuditInheritance PSCmdlet_Get-NTFSAudit PSCommand_Get-NTFSAudit PSCmdlet_Get-NTFSOrphanedAudit PSCommand_Get-NTFSOrphanedAudit PSCmdlet_Remove-NTFSAudit PSCommand_Remove-NTFSAudit PSCmdlet_Get-NTFSInheritance PSCommand_Get-NTFSInheritance PSCmdlet_Set-NTFSInheritance PSCommand_Set-NTFSInheritance PSCmdlet_Get-NTFSOwner PSCommand_Get-NTFSOwner PSCmdlet_Set-NTFSOwner PSCommand_Set-NTFSOwner PSCmdlet_Get-NTFSSecurityDescriptor PSCommand_Get-NTFSSecurityDescriptor PSCmdlet_Set-NTFSSecurityDescriptor PSCommand_Set-NTFSSecurityDescriptor PSCmdlet_Disable-Privileges PSCommand_Disable-Privileges PSCmdlet_Enable-Privileges PSCommand_Enable-Privileges PSCmdlet_Get-Privileges PSCommand_Get-Privileges PSCmdlet_Copy-Item2 PSCommand_Copy-Item2 PSCmdlet_Get-ChildItem2 PSCommand_Get-ChildItem2 PSCmdlet_Get-Item2 PSCommand_Get-Item2 PSCmdlet_Move-Item2 PSCommand_Move-Item2 PSCmdlet_Remove-Item2 PSCommand_Remove-Item2 PSCmdlet_Test-Path2 PSCommand_Test-Path2 PSCmdlet_Get-NTFSHardLink PSCommand_Get-NTFSHardLink PSCmdlet_New-NTFSHardLink PSCommand_New-NTFSHardLink PSCmdlet_New-NTFSSymbolicLink PSCommand_New-NTFSSymbolicLink PSCmdlet_Get-DiskSpace PSCommand_Get-DiskSpace PSCmdlet_Get-FileHash2 PSCommand_Get-FileHash2 PSIncludes_Cmdlet</S>
           <S N="developmentDependency">False</S>
-          <S N="updated">2020-01-26T05:46:58Z</S>
+          <S N="updated">2021-08-02T00:04:33Z</S>
           <S N="NormalizedVersion">4.2.6</S>
           <S N="Authors">Raimund Andree</S>
           <S N="IsPrerelease">false</S>

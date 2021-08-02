@@ -15,7 +15,7 @@
       <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
       <DT N="PublishedDate">2021-02-09T06:58:57-06:00</DT>
       <Obj N="InstalledDate" RefId="1">
-        <DT>2021-04-14T12:49:28.9784185-05:00</DT>
+        <DT>2021-08-01T19:02:48.82807-05:00</DT>
         <MS>
           <Obj N="DisplayHint" RefId="2">
             <TN RefId="1">
@@ -56,14 +56,14 @@
         </TN>
         <DCT>
           <En>
-            <S N="Key">RoleCapability</S>
+            <S N="Key">Cmdlet</S>
             <Obj N="Value" RefId="5">
               <TNRef RefId="2" />
               <LST />
             </Obj>
           </En>
           <En>
-            <S N="Key">Command</S>
+            <S N="Key">Function</S>
             <Obj N="Value" RefId="6">
               <TNRef RefId="2" />
               <LST>
@@ -79,15 +79,19 @@
             </Obj>
           </En>
           <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
             <S N="Key">Workflow</S>
             <Ref N="Value" RefId="5" />
           </En>
           <En>
-            <S N="Key">Cmdlet</S>
-            <Ref N="Value" RefId="5" />
-          </En>
-          <En>
-            <S N="Key">Function</S>
+            <S N="Key">Command</S>
             <Obj N="Value" RefId="7">
               <TNRef RefId="2" />
               <LST>
@@ -101,10 +105,6 @@
                 <S>Update-AzDatabricksWorkspace</S>
               </LST>
             </Obj>
-          </En>
-          <En>
-            <S N="Key">DscResource</S>
-            <Ref N="Value" RefId="5" />
           </En>
         </DCT>
       </Obj>
@@ -150,15 +150,15 @@
           <S N="releaseNotes">Supported -EnableNoPublicIP when creating a Databricks workspace</S>
           <S N="isLatestVersion">True</S>
           <S N="isAbsoluteLatestVersion">True</S>
-          <S N="versionDownloadCount">1673273</S>
-          <S N="downloadCount">10274100</S>
+          <S N="versionDownloadCount">3823267</S>
+          <S N="downloadCount">12737647</S>
           <S N="packageSize">379784</S>
           <S N="published">2/9/2021 6:58:57 AM -06:00</S>
           <S N="created">2/9/2021 6:58:57 AM -06:00</S>
-          <S N="lastUpdated">4/14/2021 5:47:00 PM -05:00</S>
+          <S N="lastUpdated">8/1/2021 11:59:33 PM -05:00</S>
           <S N="tags">Azure ResourceManager ARM PSModule Databricks PSEdition_Core PSEdition_Desktop PSFunction_Get-AzDatabricksVNetPeering PSCommand_Get-AzDatabricksVNetPeering PSFunction_Get-AzDatabricksWorkspace PSCommand_Get-AzDatabricksWorkspace PSFunction_New-AzDatabricksVNetPeering PSCommand_New-AzDatabricksVNetPeering PSFunction_New-AzDatabricksWorkspace PSCommand_New-AzDatabricksWorkspace PSFunction_Remove-AzDatabricksVNetPeering PSCommand_Remove-AzDatabricksVNetPeering PSFunction_Remove-AzDatabricksWorkspace PSCommand_Remove-AzDatabricksWorkspace PSFunction_Update-AzDatabricksVNetPeering PSCommand_Update-AzDatabricksVNetPeering PSFunction_Update-AzDatabricksWorkspace PSCommand_Update-AzDatabricksWorkspace PSIncludes_Function</S>
           <S N="developmentDependency">False</S>
-          <S N="updated">2021-04-14T17:47:00Z</S>
+          <S N="updated">2021-08-01T23:59:33Z</S>
           <S N="NormalizedVersion">1.1.0</S>
           <S N="Authors">Microsoft Corporation</S>
           <S N="IsPrerelease">false</S>
@@ -170,7 +170,7 @@
           <S N="CompanyName">Microsoft Corporation</S>
         </MS>
       </Obj>
-      <S N="InstalledLocation">C:\Users\admin-taylor\Documents\PowerShell\Modules\Az.Databricks\1.1.0</S>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\Az.Databricks\1.1.0</S>
     </MS>
   </Obj>
 </Objs>

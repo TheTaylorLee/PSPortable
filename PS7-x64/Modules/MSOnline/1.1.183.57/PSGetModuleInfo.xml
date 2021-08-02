@@ -15,7 +15,7 @@
       <S N="Copyright">c Microsoft Corporation. All rights reserved.</S>
       <DT N="PublishedDate">2019-11-08T22:32:00-06:00</DT>
       <Obj N="InstalledDate" RefId="1">
-        <DT>2020-01-25T23:41:22.919099-06:00</DT>
+        <DT>2021-08-01T19:08:56.4865713-05:00</DT>
         <MS>
           <Obj N="DisplayHint" RefId="2">
             <TN RefId="1">
@@ -50,15 +50,8 @@
         </TN>
         <DCT>
           <En>
-            <S N="Key">Function</S>
+            <S N="Key">Cmdlet</S>
             <Obj N="Value" RefId="5">
-              <TNRef RefId="2" />
-              <LST />
-            </Obj>
-          </En>
-          <En>
-            <S N="Key">Command</S>
-            <Obj N="Value" RefId="6">
               <TNRef RefId="2" />
               <LST>
                 <S>Get-MsolDevice</S>
@@ -161,11 +154,26 @@
             </Obj>
           </En>
           <En>
-            <S N="Key">RoleCapability</S>
-            <Ref N="Value" RefId="5" />
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
           </En>
           <En>
-            <S N="Key">Cmdlet</S>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
             <Obj N="Value" RefId="7">
               <TNRef RefId="2" />
               <LST>
@@ -268,14 +276,6 @@
               </LST>
             </Obj>
           </En>
-          <En>
-            <S N="Key">DscResource</S>
-            <Ref N="Value" RefId="5" />
-          </En>
-          <En>
-            <S N="Key">Workflow</S>
-            <Ref N="Value" RefId="5" />
-          </En>
         </DCT>
       </Obj>
       <Nil N="PowerShellGetFormatVersion" />
@@ -298,15 +298,15 @@
           <S N="requireLicenseAcceptance">False</S>
           <S N="isLatestVersion">True</S>
           <S N="isAbsoluteLatestVersion">True</S>
-          <S N="versionDownloadCount">233720</S>
-          <S N="downloadCount">1681009</S>
+          <S N="versionDownloadCount">3646792</S>
+          <S N="downloadCount">5380428</S>
           <S N="packageSize">8000864</S>
           <S N="published">11/8/2019 10:32:00 PM -06:00</S>
           <S N="created">11/8/2019 10:32:00 PM -06:00</S>
-          <S N="lastUpdated">1/26/2020 5:37:30 AM -06:00</S>
+          <S N="lastUpdated">8/2/2021 12:04:33 AM -05:00</S>
           <S N="tags">PSModule PSCmdlet_Get-MsolDevice PSCommand_Get-MsolDevice PSCmdlet_Remove-MsolDevice PSCommand_Remove-MsolDevice PSCmdlet_Enable-MsolDevice PSCommand_Enable-MsolDevice PSCmdlet_Disable-MsolDevice PSCommand_Disable-MsolDevice PSCmdlet_Get-MsolDeviceRegistrationServicePolicy PSCommand_Get-MsolDeviceRegistrationServicePolicy PSCmdlet_Set-MsolDeviceRegistrationServicePolicy PSCommand_Set-MsolDeviceRegistrationServicePolicy PSCmdlet_New-MsolServicePrincipalAddresses PSCommand_New-MsolServicePrincipalAddresses PSCmdlet_New-MsolLicenseOptions PSCommand_New-MsolLicenseOptions PSCmdlet_Connect-MsolService PSCommand_Connect-MsolService PSCmdlet_New-MsolAdministrativeUnit PSCommand_New-MsolAdministrativeUnit PSCmdlet_Get-MsolAdministrativeUnit PSCommand_Get-MsolAdministrativeUnit PSCmdlet_Set-MsolAdministrativeUnit PSCommand_Set-MsolAdministrativeUnit PSCmdlet_Remove-MsolAdministrativeUnit PSCommand_Remove-MsolAdministrativeUnit PSCmdlet_Add-MsolAdministrativeUnitMember PSCommand_Add-MsolAdministrativeUnitMember PSCmdlet_Remove-MsolAdministrativeUnitMember PSCommand_Remove-MsolAdministrativeUnitMember PSCmdlet_Get-MsolAdministrativeUnitMember PSCommand_Get-MsolAdministrativeUnitMember PSCmdlet_Get-MsolCompanyInformation PSCommand_Get-MsolCompanyInformation PSCmdlet_Get-MsolSubscription PSCommand_Get-MsolSubscription PSCmdlet_Get-MsolAccountSku PSCommand_Get-MsolAccountSku PSCmdlet_Get-MsolPartnerInformation PSCommand_Get-MsolPartnerInformation PSCmdlet_Set-MsolPartnerInformation PSCommand_Set-MsolPartnerInformation PSCmdlet_Set-MsolCompanyContactInformation PSCommand_Set-MsolCompanyContactInformation PSCmdlet_Set-MsolCompanySecurityComplianceContactInformation PSCommand_Set-MsolCompanySecurityComplianceContactInformation PSCmdlet_Set-MsolDirSyncEnabled PSCommand_Set-MsolDirSyncEnabled PSCmdlet_Set-MsolDirSyncConfiguration PSCommand_Set-MsolDirSyncConfiguration PSCmdlet_Get-MsolDirSyncConfiguration PSCommand_Get-MsolDirSyncConfiguration PSCmdlet_Set-MsolDirSyncFeature PSCommand_Set-MsolDirSyncFeature PSCmdlet_Get-MsolDirSyncFeatures PSCommand_Get-MsolDirSyncFeatures PSCmdlet_Set-MsolCompanySettings PSCommand_Set-MsolCompanySettings PSCmdlet_Get-MsolPartnerContract PSCommand_Get-MsolPartnerContract PSCmdlet_Get-MsolPasswordPolicy PSCommand_Get-MsolPasswordPolicy PSCmdlet_Set-MsolPasswordPolicy PSCommand_Set-MsolPasswordPolicy PSCmdlet_Get-MsolDirSyncProvisioningError PSCommand_Get-MsolDirSyncProvisioningError PSCmdlet_Get-MsolHasObjectsWithDirSyncProvisioningErrors PSCommand_Get-MsolHasObjectsWithDirSyncProvisioningErrors PSCmdlet_Set-MsolCompanyMultiNationalEnabled PSCommand_Set-MsolCompanyMultiNationalEnabled PSCmdlet_Set-MsolCompanyAllowedDataLocation PSCommand_Set-MsolCompanyAllowedDataLocation PSCmdlet_Get-MsolCompanyAllowedDataLocation PSCommand_Get-MsolCompanyAllowedDataLocation PSCmdlet_Remove-MsolContact PSCommand_Remove-MsolContact PSCmdlet_Get-MsolContact PSCommand_Get-MsolContact PSCmdlet_Redo-MsolProvisionContact PSCommand_Redo-MsolProvisionContact PSCmdlet_New-MsolDomain PSCommand_New-MsolDomain PSCmdlet_Confirm-MsolDomain PSCommand_Confirm-MsolDomain PSCmdlet_Confirm-MsolEmailVerifiedDomain PSCommand_Confirm-MsolEmailVerifiedDomain PSCmdlet_Remove-MsolDomain PSCommand_Remove-MsolDomain PSCmdlet_Set-MsolDomain PSCommand_Set-MsolDomain PSCmdlet_Set-MsolDomainAuthentication PSCommand_Set-MsolDomainAuthentication PSCmdlet_Get-MsolDomainFederationSettings PSCommand_Get-MsolDomainFederationSettings PSCmdlet_Set-MsolDomainFederationSettings PSCommand_Set-MsolDomainFederationSettings PSCmdlet_Get-MsolDomain PSCommand_Get-MsolDomain PSCmdlet_Get-MsolDomainVerificationDns PSCommand_Get-MsolDomainVerificationDns PSCmdlet_New-MsolGroup PSCommand_New-MsolGroup PSCmdlet_New-MsolWellKnownGroup PSCommand_New-MsolWellKnownGroup PSCmdlet_Remove-MsolGroup PSCommand_Remove-MsolGroup PSCmdlet_Set-MsolGroup PSCommand_Set-MsolGroup PSCmdlet_Get-MsolGroup PSCommand_Get-MsolGroup PSCmdlet_Add-MsolGroupMember PSCommand_Add-MsolGroupMember PSCmdlet_Remove-MsolGroupMember PSCommand_Remove-MsolGroupMember PSCmdlet_Get-MsolGroupMember PSCommand_Get-MsolGroupMember PSCmdlet_Redo-MsolProvisionGroup PSCommand_Redo-MsolProvisionGroup PSCmdlet_Get-MsolRole PSCommand_Get-MsolRole PSCmdlet_Get-MsolUserRole PSCommand_Get-MsolUserRole PSCmdlet_Add-MsolRoleMember PSCommand_Add-MsolRoleMember PSCmdlet_Remove-MsolRoleMember PSCommand_Remove-MsolRoleMember PSCmdlet_Get-MsolRoleMember PSCommand_Get-MsolRoleMember PSCmdlet_Add-MsolForeignGroupToRole PSCommand_Add-MsolForeignGroupToRole PSCmdlet_Remove-MsolForeignGroupFromRole PSCommand_Remove-MsolForeignGroupFromRole PSCmdlet_Add-MsolScopedRoleMember PSCommand_Add-MsolScopedRoleMember PSCmdlet_Remove-MsolScopedRoleMember PSCommand_Remove-MsolScopedRoleMember PSCmdlet_Get-MsolScopedRoleMember PSCommand_Get-MsolScopedRoleMember PSCmdlet_New-MsolServicePrincipal PSCommand_New-MsolServicePrincipal PSCmdlet_New-MsolServicePrincipalCredential PSCommand_New-MsolServicePrincipalCredential PSCmdlet_Remove-MsolServicePrincipal PSCommand_Remove-MsolServicePrincipal PSCmdlet_Get-MsolServicePrincipal PSCommand_Get-MsolServicePrincipal PSCmdlet_Remove-MsolServicePrincipalCredential PSCommand_Remove-MsolServicePrincipalCredential PSCmdlet_Set-MsolServicePrincipal PSCommand_Set-MsolServicePrincipal PSCmdlet_Get-MsolServicePrincipalCredential PSCommand_Get-MsolServicePrincipalCredential PSCmdlet_New-MsolUser PSCommand_New-MsolUser PSCmdlet_Remove-MsolUser PSCommand_Remove-MsolUser PSCmdlet_Set-MsolUser PSCommand_Set-MsolUser PSCmdlet_Set-MsolUserPrincipalName PSCommand_Set-MsolUserPrincipalName PSCmdlet_Set-MsolUserPassword PSCommand_Set-MsolUserPassword PSCmdlet_Get-MsolUser PSCommand_Get-MsolUser PSCmdlet_Get-MsolUserByStrongAuthentication PSCommand_Get-MsolUserByStrongAuthentication PSCmdlet_Set-MsolUserLicense PSCommand_Set-MsolUserLicense PSCmdlet_Redo-MsolProvisionUser PSCommand_Redo-MsolProvisionUser PSCmdlet_Convert-MsolFederatedUser PSCommand_Convert-MsolFederatedUser PSCmdlet_Restore-MsolUser PSCommand_Restore-MsolUser PSCmdlet_Reset-MsolStrongAuthenticationMethodByUpn PSCommand_Reset-MsolStrongAuthenticationMethodByUpn PSCmdlet_Remove-MsolApplicationPassword PSCommand_Remove-MsolApplicationPassword PSCmdlet_Set-MsolADFSContext PSCommand_Set-MsolADFSContext PSCmdlet_Get-MsolFederationProperty PSCommand_Get-MsolFederationProperty PSCmdlet_Convert-MsolDomainToStandard PSCommand_Convert-MsolDomainToStandard PSCmdlet_Convert-MsolDomainToFederated PSCommand_Convert-MsolDomainToFederated PSCmdlet_New-MsolFederatedDomain PSCommand_New-MsolFederatedDomain PSCmdlet_Update-MsolFederatedDomain PSCommand_Update-MsolFederatedDomain PSCmdlet_Remove-MsolFederatedDomain PSCommand_Remove-MsolFederatedDomain PSIncludes_Cmdlet</S>
           <S N="developmentDependency">False</S>
-          <S N="updated">2020-01-26T05:37:30Z</S>
+          <S N="updated">2021-08-02T00:04:33Z</S>
           <S N="NormalizedVersion">1.1.183.57</S>
           <S N="Authors">Microsoft Corporation</S>
           <S N="IsPrerelease">false</S>

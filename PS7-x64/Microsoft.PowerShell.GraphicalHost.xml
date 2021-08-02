@@ -99,7 +99,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ShowCommandInternal.ShowCommandHelper.Finalize">
             <summary>
-            Finalizes an instance of the ShowCommandHelper class.
+            Finalizes an instance of the <see cref="T:Microsoft.PowerShell.Commands.ShowCommandInternal.ShowCommandHelper"/> class.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.ShowCommandInternal.ShowCommandHelper.ScreenWidth">
