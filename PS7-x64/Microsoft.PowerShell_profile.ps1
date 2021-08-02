@@ -235,12 +235,13 @@ $AnsiRendering = Get-ExperimentalFeature -Name PSAnsiRendering | Where-Object { 
 
 if ($Suggestions) {
     #Getting rid of annoying suggestion
-    Disable-ExperimentalFeature  –Name PSCommandNotFoundSuggestion | Out-Null
+    Disable-ExperimentalFeature  –Name PSCommandNotFoundSuggestion -WarningAction 'silent' | Out-Null
 }
 #BKPSPROFILE PSAnsiRendering and beta versions of psreadline causing console color issues. Disabling this feature provides some relief
 if ($AnsiRendering) {
     #Hopefully eliminates hardcoded console color changes when using write-verbose, write-warning, etc.
-    Disable-ExperimentalFeature  –Name PSAnsiRendering | Out-Null
+    Disable-ExperimentalFeature  –Name PSAnsiRendering -WarningAction 'silent' | Out-Null
+    Disable-ExperimentalFeature  –Name PSAnsiprogress -WarningAction 'silent' | Out-Null
 }
 #-------------------------------------------------------------------------------------------------------------------------------------------------------
 
