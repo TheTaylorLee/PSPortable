@@ -15,7 +15,7 @@
       <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
       <DT N="PublishedDate">2020-03-31T07:40:32-05:00</DT>
       <Obj N="InstalledDate" RefId="1">
-        <DT>2021-04-27T08:58:47.3272751-05:00</DT>
+        <DT>2021-08-01T19:03:23.0472958-05:00</DT>
         <MS>
           <Obj N="DisplayHint" RefId="2">
             <TN RefId="1">
@@ -56,19 +56,8 @@
         </TN>
         <DCT>
           <En>
-            <S N="Key">Workflow</S>
-            <Obj N="Value" RefId="5">
-              <TNRef RefId="2" />
-              <LST />
-            </Obj>
-          </En>
-          <En>
-            <S N="Key">RoleCapability</S>
-            <Ref N="Value" RefId="5" />
-          </En>
-          <En>
             <S N="Key">Cmdlet</S>
-            <Obj N="Value" RefId="6">
+            <Obj N="Value" RefId="5">
               <TNRef RefId="2" />
               <LST>
                 <S>Get-AzSupportService</S>
@@ -81,6 +70,25 @@
                 <S>Update-AzSupportTicket</S>
               </LST>
             </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
           </En>
           <En>
             <S N="Key">Command</S>
@@ -97,14 +105,6 @@
                 <S>Update-AzSupportTicket</S>
               </LST>
             </Obj>
-          </En>
-          <En>
-            <S N="Key">Function</S>
-            <Ref N="Value" RefId="5" />
-          </En>
-          <En>
-            <S N="Key">DscResource</S>
-            <Ref N="Value" RefId="5" />
           </En>
         </DCT>
       </Obj>
@@ -150,15 +150,15 @@
           <S N="releaseNotes">* General availability of 'Az.Support' module</S>
           <S N="isLatestVersion">True</S>
           <S N="isAbsoluteLatestVersion">True</S>
-          <S N="versionDownloadCount">15342216</S>
-          <S N="downloadCount">15342347</S>
+          <S N="versionDownloadCount">17561932</S>
+          <S N="downloadCount">17562064</S>
           <S N="packageSize">133723</S>
           <S N="published">3/31/2020 7:40:32 AM -05:00</S>
           <S N="created">3/31/2020 7:40:32 AM -05:00</S>
-          <S N="lastUpdated">4/27/2021 1:54:50 PM -05:00</S>
+          <S N="lastUpdated">8/1/2021 11:59:33 PM -05:00</S>
           <S N="tags">Azure ResourceManager ARM Support PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_Get-AzSupportService PSCommand_Get-AzSupportService PSCmdlet_Get-AzSupportProblemClassification PSCommand_Get-AzSupportProblemClassification PSCmdlet_Get-AzSupportTicket PSCommand_Get-AzSupportTicket PSCmdlet_Get-AzSupportTicketCommunication PSCommand_Get-AzSupportTicketCommunication PSCmdlet_New-AzSupportTicketCommunication PSCommand_New-AzSupportTicketCommunication PSCmdlet_New-AzSupportTicket PSCommand_New-AzSupportTicket PSCmdlet_New-AzSupportContactProfileObject PSCommand_New-AzSupportContactProfileObject PSCmdlet_Update-AzSupportTicket PSCommand_Update-AzSupportTicket PSIncludes_Cmdlet</S>
           <S N="developmentDependency">False</S>
-          <S N="updated">2021-04-27T13:54:50Z</S>
+          <S N="updated">2021-08-01T23:59:33Z</S>
           <S N="NormalizedVersion">1.0.0</S>
           <S N="Authors">Microsoft Corporation</S>
           <S N="IsPrerelease">false</S>
@@ -170,7 +170,7 @@
           <S N="CompanyName">Microsoft Corporation</S>
         </MS>
       </Obj>
-      <S N="InstalledLocation">C:\Users\admin-taylor\Documents\PowerShell\Modules\Az.Support\1.0.0</S>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\Az.Support\1.0.0</S>
     </MS>
   </Obj>
 </Objs>

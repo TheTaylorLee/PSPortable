@@ -15,7 +15,7 @@
       <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
       <DT N="PublishedDate">2020-07-14T09:51:07-05:00</DT>
       <Obj N="InstalledDate" RefId="1">
-        <DT>2021-04-14T12:49:10.7960193-05:00</DT>
+        <DT>2021-08-01T19:02:38.5734515-05:00</DT>
         <MS>
           <Obj N="DisplayHint" RefId="2">
             <TN RefId="1">
@@ -57,40 +57,8 @@
         </TN>
         <DCT>
           <En>
-            <S N="Key">RoleCapability</S>
-            <Obj N="Value" RefId="5">
-              <TNRef RefId="2" />
-              <LST />
-            </Obj>
-          </En>
-          <En>
-            <S N="Key">Command</S>
-            <Obj N="Value" RefId="6">
-              <TNRef RefId="2" />
-              <LST>
-                <S>Resume-AzAnalysisServicesServer</S>
-                <S>Suspend-AzAnalysisServicesServer</S>
-                <S>Get-AzAnalysisServicesServer</S>
-                <S>Remove-AzAnalysisServicesServer</S>
-                <S>Set-AzAnalysisServicesServer</S>
-                <S>Test-AzAnalysisServicesServer</S>
-                <S>New-AzAnalysisServicesServer</S>
-                <S>New-AzAnalysisServicesFirewallRule</S>
-                <S>New-AzAnalysisServicesFirewallConfig</S>
-                <S>Add-AzAnalysisServicesAccount</S>
-                <S>Restart-AzAnalysisServicesInstance</S>
-                <S>Export-AzAnalysisServicesInstanceLog</S>
-                <S>Sync-AzAnalysisServicesInstance</S>
-              </LST>
-            </Obj>
-          </En>
-          <En>
-            <S N="Key">Workflow</S>
-            <Ref N="Value" RefId="5" />
-          </En>
-          <En>
             <S N="Key">Cmdlet</S>
-            <Obj N="Value" RefId="7">
+            <Obj N="Value" RefId="5">
               <TNRef RefId="2" />
               <LST>
                 <S>Resume-AzAnalysisServicesServer</S>
@@ -111,11 +79,43 @@
           </En>
           <En>
             <S N="Key">Function</S>
-            <Ref N="Value" RefId="5" />
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
           </En>
           <En>
             <S N="Key">DscResource</S>
-            <Ref N="Value" RefId="5" />
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Resume-AzAnalysisServicesServer</S>
+                <S>Suspend-AzAnalysisServicesServer</S>
+                <S>Get-AzAnalysisServicesServer</S>
+                <S>Remove-AzAnalysisServicesServer</S>
+                <S>Set-AzAnalysisServicesServer</S>
+                <S>Test-AzAnalysisServicesServer</S>
+                <S>New-AzAnalysisServicesServer</S>
+                <S>New-AzAnalysisServicesFirewallRule</S>
+                <S>New-AzAnalysisServicesFirewallConfig</S>
+                <S>Add-AzAnalysisServicesAccount</S>
+                <S>Restart-AzAnalysisServicesInstance</S>
+                <S>Export-AzAnalysisServicesInstanceLog</S>
+                <S>Sync-AzAnalysisServicesInstance</S>
+              </LST>
+            </Obj>
           </En>
         </DCT>
       </Obj>
@@ -161,15 +161,15 @@
           <S N="releaseNotes">* Removed project reference to Authentication</S>
           <S N="isLatestVersion">True</S>
           <S N="isAbsoluteLatestVersion">True</S>
-          <S N="versionDownloadCount">13210400</S>
-          <S N="downloadCount">21222569</S>
+          <S N="versionDownloadCount">15803082</S>
+          <S N="downloadCount">24174528</S>
           <S N="packageSize">140667</S>
           <S N="published">7/14/2020 9:51:07 AM -05:00</S>
           <S N="created">7/14/2020 9:51:07 AM -05:00</S>
-          <S N="lastUpdated">4/14/2021 5:47:00 PM -05:00</S>
+          <S N="lastUpdated">8/1/2021 11:59:33 PM -05:00</S>
           <S N="tags">Azure ResourceManager ARM AzureAS AS PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_Resume-AzAnalysisServicesServer PSCommand_Resume-AzAnalysisServicesServer PSCmdlet_Suspend-AzAnalysisServicesServer PSCommand_Suspend-AzAnalysisServicesServer PSCmdlet_Get-AzAnalysisServicesServer PSCommand_Get-AzAnalysisServicesServer PSCmdlet_Remove-AzAnalysisServicesServer PSCommand_Remove-AzAnalysisServicesServer PSCmdlet_Set-AzAnalysisServicesServer PSCommand_Set-AzAnalysisServicesServer PSCmdlet_Test-AzAnalysisServicesServer PSCommand_Test-AzAnalysisServicesServer PSCmdlet_New-AzAnalysisServicesServer PSCommand_New-AzAnalysisServicesServer PSCmdlet_New-AzAnalysisServicesFirewallRule PSCommand_New-AzAnalysisServicesFirewallRule PSCmdlet_New-AzAnalysisServicesFirewallConfig PSCommand_New-AzAnalysisServicesFirewallConfig PSCmdlet_Add-AzAnalysisServicesAccount PSCommand_Add-AzAnalysisServicesAccount PSCmdlet_Restart-AzAnalysisServicesInstance PSCommand_Restart-AzAnalysisServicesInstance PSCmdlet_Export-AzAnalysisServicesInstanceLog PSCommand_Export-AzAnalysisServicesInstanceLog PSCmdlet_Sync-AzAnalysisServicesInstance PSCommand_Sync-AzAnalysisServicesInstance PSIncludes_Cmdlet</S>
           <S N="developmentDependency">False</S>
-          <S N="updated">2021-04-14T17:47:00Z</S>
+          <S N="updated">2021-08-01T23:59:33Z</S>
           <S N="NormalizedVersion">1.1.4</S>
           <S N="Authors">Microsoft Corporation</S>
           <S N="IsPrerelease">false</S>
@@ -181,7 +181,7 @@
           <S N="CompanyName">Microsoft Corporation</S>
         </MS>
       </Obj>
-      <S N="InstalledLocation">C:\Users\admin-taylor\Documents\PowerShell\Modules\Az.AnalysisServices\1.1.4</S>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\Az.AnalysisServices\1.1.4</S>
     </MS>
   </Obj>
 </Objs>

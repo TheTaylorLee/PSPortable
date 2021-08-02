@@ -15,7 +15,7 @@
       <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
       <DT N="PublishedDate">2021-04-13T08:22:02-05:00</DT>
       <Obj N="InstalledDate" RefId="1">
-        <DT>2021-04-14T12:49:45.8855952-05:00</DT>
+        <DT>2021-08-01T19:02:58.7100841-05:00</DT>
         <MS>
           <Obj N="DisplayHint" RefId="2">
             <TN RefId="1">
@@ -58,31 +58,8 @@
         </TN>
         <DCT>
           <En>
-            <S N="Key">RoleCapability</S>
-            <Obj N="Value" RefId="5">
-              <TNRef RefId="2" />
-              <LST />
-            </Obj>
-          </En>
-          <En>
-            <S N="Key">Command</S>
-            <Obj N="Value" RefId="6">
-              <TNRef RefId="2" />
-              <LST>
-                <S>New-AzHealthcareApisService</S>
-                <S>Remove-AzHealthcareApisService</S>
-                <S>Set-AzHealthcareApisService</S>
-                <S>Get-AzHealthcareApisService</S>
-              </LST>
-            </Obj>
-          </En>
-          <En>
-            <S N="Key">Workflow</S>
-            <Ref N="Value" RefId="5" />
-          </En>
-          <En>
             <S N="Key">Cmdlet</S>
-            <Obj N="Value" RefId="7">
+            <Obj N="Value" RefId="5">
               <TNRef RefId="2" />
               <LST>
                 <S>New-AzHealthcareApisService</S>
@@ -94,11 +71,34 @@
           </En>
           <En>
             <S N="Key">Function</S>
-            <Ref N="Value" RefId="5" />
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
           </En>
           <En>
             <S N="Key">DscResource</S>
-            <Ref N="Value" RefId="5" />
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>New-AzHealthcareApisService</S>
+                <S>Remove-AzHealthcareApisService</S>
+                <S>Set-AzHealthcareApisService</S>
+                <S>Get-AzHealthcareApisService</S>
+              </LST>
+            </Obj>
           </En>
         </DCT>
       </Obj>
@@ -144,15 +144,15 @@
           <S N="releaseNotes">* Added support for Acr LoginServers</S>
           <S N="isLatestVersion">True</S>
           <S N="isAbsoluteLatestVersion">True</S>
-          <S N="versionDownloadCount">33171</S>
-          <S N="downloadCount">18166099</S>
+          <S N="versionDownloadCount">2109691</S>
+          <S N="downloadCount">20835589</S>
           <S N="packageSize">111796</S>
           <S N="published">4/13/2021 8:22:02 AM -05:00</S>
           <S N="created">4/13/2021 8:22:02 AM -05:00</S>
-          <S N="lastUpdated">4/14/2021 5:47:00 PM -05:00</S>
+          <S N="lastUpdated">8/1/2021 11:59:33 PM -05:00</S>
           <S N="tags">Azure ResourceManager ARM HealthCare HealthcareApis FhirService PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_New-AzHealthcareApisService PSCommand_New-AzHealthcareApisService PSCmdlet_Remove-AzHealthcareApisService PSCommand_Remove-AzHealthcareApisService PSCmdlet_Set-AzHealthcareApisService PSCommand_Set-AzHealthcareApisService PSCmdlet_Get-AzHealthcareApisService PSCommand_Get-AzHealthcareApisService PSIncludes_Cmdlet</S>
           <S N="developmentDependency">False</S>
-          <S N="updated">2021-04-14T17:47:00Z</S>
+          <S N="updated">2021-08-01T23:59:33Z</S>
           <S N="NormalizedVersion">1.3.1</S>
           <S N="Authors">Microsoft Corporation</S>
           <S N="IsPrerelease">false</S>
@@ -164,7 +164,7 @@
           <S N="CompanyName">Microsoft Corporation</S>
         </MS>
       </Obj>
-      <S N="InstalledLocation">C:\Users\admin-taylor\Documents\PowerShell\Modules\Az.HealthcareApis\1.3.1</S>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\Az.HealthcareApis\1.3.1</S>
     </MS>
   </Obj>
 </Objs>

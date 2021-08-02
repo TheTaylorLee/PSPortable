@@ -1,0 +1,2925 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-HelpPreview</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>HelpPreview</command:noun>
+      <maml:description>
+        <maml:para>Displays your generated external help as Get-Help output.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-HelpPreview cmdlet displays your generated external help as Get-Help output. Specify one or more files in Microsoft Assistance Markup Language (MAML) format.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-HelpPreview</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="true" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>Path</maml:name>
+          <maml:description>
+            <maml:para>Specifies an array of paths of MAML external help files.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ConvertNotesToList</maml:name>
+          <maml:description>
+            <maml:para>Indicates that this cmldet formats multiple paragraph items in the NOTES section as single list items. This output follows TechNet formatting.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ConvertDoubleDashLists</maml:name>
+          <maml:description>
+            <maml:para>Indicates that this cmldet converts double-hyphen list bullets into single-hyphen bullets. Double-hyphen lists are common in Windows PowerShell documentation. Markdown accepts single-hyphens for lists.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="true" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>Path</maml:name>
+        <maml:description>
+          <maml:para>Specifies an array of paths of MAML external help files.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ConvertNotesToList</maml:name>
+        <maml:description>
+          <maml:para>Indicates that this cmldet formats multiple paragraph items in the NOTES section as single list items. This output follows TechNet formatting.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ConvertDoubleDashLists</maml:name>
+        <maml:description>
+          <maml:para>Indicates that this cmldet converts double-hyphen list bullets into single-hyphen bullets. Double-hyphen lists are common in Windows PowerShell documentation. Markdown accepts single-hyphens for lists.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>You can pipe an array of paths to this cmdlet.</maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>Help Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>This cmdlet returns a Help object, which is the same output as Get-Help .</maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>------------- Example 1: Preview the PlatyPS help -------------</maml:title>
+        <dev:code>PS C:\&gt; $Help = Get-HelpPreview -Path ".\out\platyPS\en-US\PlatyPS-help.xml"
+
+PS C:\&gt; $Help.Name
+
+Get-HelpPreview
+Get-MarkdownMetadata
+New-ExternalHelp
+New-ExternalHelpCab
+New-MarkdownHelp
+Update-MarkdownHelp
+Update-MarkdownHelpModule
+Update-MarkdownHelpSchema</dev:code>
+        <dev:remarks>
+          <maml:para>The first command creates a Help object for the the specified MAML file. The command stores it in the $Help variable.</maml:para>
+          <maml:para>The second command displays the Name property for each of the objects in $Help.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/PowerShell/platyPS/blob/master/docs/Get-HelpPreview.md</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-MarkdownMetadata</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>MarkdownMetadata</command:noun>
+      <maml:description>
+        <maml:para>Gets metadata from the header of a markdown file.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-MarkdownMetadata cmdlet gets the metadata from the header of a markdown file that is supported by PlatyPS. The command returns the metadata as a hash table.</maml:para>
+      <maml:para>PlatyPS stores metadata in the header block of a markdown file as key-value pairs of strings. By default, PlatyPS stores help file name and markdown schema version.</maml:para>
+      <maml:para>Metadata section can contain user-provided values for use with external tools. The New-ExternalHelp (New-ExternalHelp.md)cmdlet ignores this metadata.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-MarkdownMetadata</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="true" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>Path</maml:name>
+          <maml:description>
+            <maml:para>Specifies an array of paths of markdown files or folders.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Get-MarkdownMetadata</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Markdown</maml:name>
+          <maml:description>
+            <maml:para>Specifies a string that contains markdown formatted text.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="true" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>Path</maml:name>
+        <maml:description>
+          <maml:para>Specifies an array of paths of markdown files or folders.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Markdown</maml:name>
+        <maml:description>
+          <maml:para>Specifies a string that contains markdown formatted text.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>You can pipe an array of paths to this cmdlet.</maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>Dictionary[String, String]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>The cmdlet returns a Dictionary[String, String] object. The dictionary contains key-value pairs found in the markdown metadata block.</maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>------------- Example 1: Get metadata from a file -------------</maml:title>
+        <dev:code>PS C:\&gt; Get-MarkdownMetadata -Path ".\docs\Get-MarkdownMetadata.md"
+
+Key                Value
+---                -----
+external help file platyPS-help.xml
+schema             2.0.0</dev:code>
+        <dev:remarks>
+          <maml:para>This command retrieves metadata from a markdown file.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------- Example 2: Get metadata from a markdown string --------</maml:title>
+        <dev:code>PS C:\&gt; $Markdown = Get-Content -Path ".\docs\Get-MarkdownMetadata.md" -Raw
+PS C:\&gt; Get-MarkdownMetadata -Markdown $Markdown
+
+Key                Value
+---                -----
+external help file platyPS-help.xml
+schema             2.0.0</dev:code>
+        <dev:remarks>
+          <maml:para>The first command gets the contents of a file, and stores them in the $Markdown variable.</maml:para>
+          <maml:para>The second command retrieves metadata from the string in $Metadata.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>------ Example 3: Get metadata from all files in a folder ------</maml:title>
+        <dev:code>PS C:\&gt; Get-MarkdownMetadata -Path ".\docs"
+
+Key                Value
+---                -----
+external help file platyPS-help.xml
+schema             2.0.0
+external help file platyPS-help.xml
+schema             2.0.0
+external help file platyPS-help.xml
+schema             2.0.0
+external help file platyPS-help.xml
+schema             2.0.0
+external help file platyPS-help.xml
+schema             2.0.0
+external help file platyPS-help.xml
+schema             2.0.0
+external help file platyPS-help.xml
+schema             2.0.0
+external help file platyPS-help.xml
+schema             2.0.0</dev:code>
+        <dev:remarks>
+          <maml:para>This command gets metadata from each of the markdown files in the .\docs folder.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/PowerShell/platyPS/blob/master/docs/Get-MarkdownMetadata.md</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Merge-MarkdownHelp</command:name>
+      <command:verb>Merge</command:verb>
+      <command:noun>MarkdownHelp</command:noun>
+      <maml:description>
+        <maml:para>Merge multiple markdown versions of the same cmdlet into a single markdown file.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Similar modules, or different versions of the same module, often contain duplicate content.</maml:para>
+      <maml:para>Merge-MarkdownHelp merges the multiple markdown files into a single markdown file. It uses the `applicable:` yaml metadata field to identify what versions or tags are applicable. It acts on two levels: for the whole cmdlet and for individual parameters.</maml:para>
+      <maml:para>The resulting markdown contains the `applicable:` tags as well as all of the content of the original markdown files. Duplicate content is simply ignored. Content that is unique to each file is merged using merge markers , followed by a comma-separated list of applicable tags. A merge marker is a string of text that acts as a marker to describe the content that was merged. The default merge marker text consists of three exclamation points !!! however this can be changed to any relevant text using the -MergeMarker flag.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Merge-MarkdownHelp</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="true" pipelineInput="True (ByValue)" position="0" aliases="none">
+          <maml:name>Path</maml:name>
+          <maml:description>
+            <maml:para>Specifies an array of paths of markdown files or folders. This cmdlet creates combined markdown help based on these files and folders.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>OutputPath</maml:name>
+          <maml:description>
+            <maml:para>Specifies the path of the folder where this cmdlet creates the combined markdown help files.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+          <maml:name>MergeMarker</maml:name>
+          <maml:description>
+            <maml:para>String to be used as a merge text indicator. Applicable tag list would be included after the marker</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>'!!! '</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Encoding</maml:name>
+          <maml:description>
+            <maml:para>Specifies the character encoding for your external help file. Specify a System.Text.Encoding object. For more information, see Character Encoding in the .NET Framework (https://msdn.microsoft.com/en-us/library/ms404377.aspx)in the Microsoft Developer Network. For example, you can control Byte Order Mark (BOM) preferences. For more information, see Using PowerShell to write a file in UTF-8 without the BOM (http://stackoverflow.com/questions/5596982/using-powershell-to-write-a-file-in-utf-8-without-the-bom)at the Stack Overflow community.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Encoding</command:parameterValue>
+          <dev:type>
+            <maml:name>Encoding</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>UTF8 without BOM</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ExplicitApplicableIfAll</maml:name>
+          <maml:description>
+            <maml:para>Always write out full list of applicable tags. By default cmdlets and parameters that are present in all variations don't get an application tag.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Force</maml:name>
+          <maml:description>
+            <maml:para>Indicates that this cmdlet overwrites an existing file that has the same name.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Encoding</maml:name>
+        <maml:description>
+          <maml:para>Specifies the character encoding for your external help file. Specify a System.Text.Encoding object. For more information, see Character Encoding in the .NET Framework (https://msdn.microsoft.com/en-us/library/ms404377.aspx)in the Microsoft Developer Network. For example, you can control Byte Order Mark (BOM) preferences. For more information, see Using PowerShell to write a file in UTF-8 without the BOM (http://stackoverflow.com/questions/5596982/using-powershell-to-write-a-file-in-utf-8-without-the-bom)at the Stack Overflow community.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Encoding</command:parameterValue>
+        <dev:type>
+          <maml:name>Encoding</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>UTF8 without BOM</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ExplicitApplicableIfAll</maml:name>
+        <maml:description>
+          <maml:para>Always write out full list of applicable tags. By default cmdlets and parameters that are present in all variations don't get an application tag.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Force</maml:name>
+        <maml:description>
+          <maml:para>Indicates that this cmdlet overwrites an existing file that has the same name.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+        <maml:name>MergeMarker</maml:name>
+        <maml:description>
+          <maml:para>String to be used as a merge text indicator. Applicable tag list would be included after the marker</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>'!!! '</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>OutputPath</maml:name>
+        <maml:description>
+          <maml:para>Specifies the path of the folder where this cmdlet creates the combined markdown help files.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="true" pipelineInput="True (ByValue)" position="0" aliases="none">
+        <maml:name>Path</maml:name>
+        <maml:description>
+          <maml:para>Specifies an array of paths of markdown files or folders. This cmdlet creates combined markdown help based on these files and folders.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.String[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.IO.FileInfo[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Merge-MarkdownHelp -Path @('Lync Server 2010\Test-CsPhoneBootstrap.md', 'Lync Server 2013\Test-CsPhoneBootstrap.md') -OutputPath lync</dev:code>
+        <dev:remarks>
+          <maml:para>The resulting file will be located at lync\Test-CsPhoneBootstrap.md</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-ExternalHelp</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>ExternalHelp</command:noun>
+      <maml:description>
+        <maml:para>Creates external help file based on markdown supported by PlatyPS.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The New-ExternalHelp cmdlet creates an external help file based on markdown help files supported by PlatyPS. You can ship this with a module to provide help by using the Get-Help cmdlet.</maml:para>
+      <maml:para>If the markdown files that you specify do not follow the PlatyPS Schema (https://github.com/PowerShell/platyPS/blob/master/platyPS.schema.md), this cmdlet returns error messages.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-ExternalHelp</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>OutputPath</maml:name>
+          <maml:description>
+            <maml:para>Specifies the path of a folder where this cmdlet saves your external help file. The folder name should end with a locale folder, as in the following example: `.\out\PlatyPS\en-US`.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Encoding</maml:name>
+          <maml:description>
+            <maml:para>Specifies the character encoding for your external help file. Specify a System.Text.Encoding object. For more information, see Character Encoding in the .NET Framework (https://msdn.microsoft.com/en-us/library/ms404377.aspx)in the Microsoft Developer Network. For example, you can control Byte Order Mark (BOM) preferences. For more information, see Using PowerShell to write a file in UTF-8 without the BOM (http://stackoverflow.com/questions/5596982/using-powershell-to-write-a-file-in-utf-8-without-the-bom)at the Stack Overflow community.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Encoding</command:parameterValue>
+          <dev:type>
+            <maml:name>Encoding</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>UTF8 without BOM</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Force</maml:name>
+          <maml:description>
+            <maml:para>Indicates that this cmdlet overwrites an existing file that has the same name.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="true" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+          <maml:name>Path</maml:name>
+          <maml:description>
+            <maml:para>Specifies an array of paths of markdown files or folders. This cmdlet creates external help based on these files and folders.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ApplicableTag</maml:name>
+          <maml:description>
+            <maml:para>Specify array of tags to use as a filter. If cmdlet has `applicable` in the yaml metadata and none of the passed tags is mentioned there, cmdlet would be ignored in the generated help. Same applies to the Parameter level `applicable` yaml metadata. If `applicable` is ommited, cmdlet or parameter would be always present. See design issue (https://github.com/PowerShell/platyPS/issues/273)for more details.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>MaxAboutWidth</maml:name>
+          <maml:description>
+            <maml:para>Specifies the maximimum line length when generating "about" help text files. (See New-MarkdownAboutHelp.) Other help file types are not affected by this parameter.</maml:para>
+            <maml:para>Lines inside code blocks are not wrapped at all and are not affected by the MaxAboutWidth parameter.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>80</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ErrorLogFile</maml:name>
+          <maml:description>
+            <maml:para>The path where this cmdlet will save formatted results log file.</maml:para>
+            <maml:para>The path must include the location and name of the folder and file name with the json extension. The JSON object contains three properties, Message, FilePath, and Severity (Warning or Error).</maml:para>
+            <maml:para>If this path is not provided, no log will be generated.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ShowProgress</maml:name>
+          <maml:description>
+            <maml:para>Display progress bars under parsing existing markdown files.</maml:para>
+            <maml:para>If this is used generating of help is much slower.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>OutputPath</maml:name>
+        <maml:description>
+          <maml:para>Specifies the path of a folder where this cmdlet saves your external help file. The folder name should end with a locale folder, as in the following example: `.\out\PlatyPS\en-US`.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Encoding</maml:name>
+        <maml:description>
+          <maml:para>Specifies the character encoding for your external help file. Specify a System.Text.Encoding object. For more information, see Character Encoding in the .NET Framework (https://msdn.microsoft.com/en-us/library/ms404377.aspx)in the Microsoft Developer Network. For example, you can control Byte Order Mark (BOM) preferences. For more information, see Using PowerShell to write a file in UTF-8 without the BOM (http://stackoverflow.com/questions/5596982/using-powershell-to-write-a-file-in-utf-8-without-the-bom)at the Stack Overflow community.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Encoding</command:parameterValue>
+        <dev:type>
+          <maml:name>Encoding</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>UTF8 without BOM</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Force</maml:name>
+        <maml:description>
+          <maml:para>Indicates that this cmdlet overwrites an existing file that has the same name.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="true" pipelineInput="True (ByPropertyName, ByValue)" position="named" aliases="none">
+        <maml:name>Path</maml:name>
+        <maml:description>
+          <maml:para>Specifies an array of paths of markdown files or folders. This cmdlet creates external help based on these files and folders.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ApplicableTag</maml:name>
+        <maml:description>
+          <maml:para>Specify array of tags to use as a filter. If cmdlet has `applicable` in the yaml metadata and none of the passed tags is mentioned there, cmdlet would be ignored in the generated help. Same applies to the Parameter level `applicable` yaml metadata. If `applicable` is ommited, cmdlet or parameter would be always present. See design issue (https://github.com/PowerShell/platyPS/issues/273)for more details.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>MaxAboutWidth</maml:name>
+        <maml:description>
+          <maml:para>Specifies the maximimum line length when generating "about" help text files. (See New-MarkdownAboutHelp.) Other help file types are not affected by this parameter.</maml:para>
+          <maml:para>Lines inside code blocks are not wrapped at all and are not affected by the MaxAboutWidth parameter.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>80</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ErrorLogFile</maml:name>
+        <maml:description>
+          <maml:para>The path where this cmdlet will save formatted results log file.</maml:para>
+          <maml:para>The path must include the location and name of the folder and file name with the json extension. The JSON object contains three properties, Message, FilePath, and Severity (Warning or Error).</maml:para>
+          <maml:para>If this path is not provided, no log will be generated.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ShowProgress</maml:name>
+        <maml:description>
+          <maml:para>Display progress bars under parsing existing markdown files.</maml:para>
+          <maml:para>If this is used generating of help is much slower.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>You can pipe an array of paths to this cmdlet.</maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.IO.FileInfo[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>This cmdlet returns a FileInfo[] object for created files.</maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>Example 1: Create external help based on the contents of a folder</maml:title>
+        <dev:code>PS C:\&gt; New-ExternalHelp -Path ".\docs" -OutputPath "out\platyPS\en-US"
+
+    Directory: D:\Working\PlatyPS\out\platyPS\en-US
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        5/19/2016  12:32 PM          46776 platyPS-help.xml</dev:code>
+        <dev:remarks>
+          <maml:para>This command creates an external help file in the specified location. This command uses the best practice that the folder name includes the locale.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>------- Example 2: Create help that uses custom encoding -------</maml:title>
+        <dev:code>PS C:\&gt; New-ExternalHelp -Path ".\docs" -OutputPath "out\PlatyPS\en-US" -Force -Encoding ([System.Text.Encoding]::Unicode)
+
+
+    Directory: D:\Working\PlatyPS\out\PlatyPS\en-US
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        5/22/2016   6:34 PM         132942 platyPS-help.xml</dev:code>
+        <dev:remarks>
+          <maml:para>This command creates an external help file in the specified location. This command specifies the Force parameter, therefore, it overwrites an existing file. The command specifies Unicode encoding for the created file.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>--------- Example 3: Write warnings and errors to file ---------</maml:title>
+        <dev:code>PS C:\&gt; New-ExternalHelp -Path ".\docs" -OutputPath "out\platyPS\en-US" -ErrorLogFile ".\WarningsAndErrors.json"
+
+    Directory: D:\Working\PlatyPS\out\platyPS\en-US
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        5/19/2016  12:32 PM          46776 platyPS-help.xml</dev:code>
+        <dev:remarks>
+          <maml:para>This command creates an external help file in the specified location. This command uses the best practice that the folder name includes the locale. This command writes the warnings and errors to the WarningsAndErrors.json file.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/PowerShell/platyPS/blob/master/docs/New-ExternalHelp.md</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>PowerShell V2 External MAML Help</maml:linkText>
+        <maml:uri>https://blogs.msdn.microsoft.com/powershell/2008/12/24/powershell-v2-external-maml-help/</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Schema</maml:linkText>
+        <maml:uri>https://github.com/PowerShell/platyPS/blob/master/platyPS.schema.md</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-ExternalHelpCab</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>ExternalHelpCab</command:noun>
+      <maml:description>
+        <maml:para>Generates a .cab file.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The New-ExternalHelpCab cmdlet generates a .cab file that contains all the non-recursive content in a folder. This cmdlet compresses the provided files.</maml:para>
+      <maml:para>We recommend that you provide as content only about_ topics and the output from the New-ExternalHelp (New-ExternalHelp.md)cmdlet to this cmdlet.</maml:para>
+      <maml:para>This cmdlet uses metadata stored in the module markdown file to name your .cab file. This naming matches the pattern that the Windows PowerShell help system requires for use as updatable help. This metadata is part of the module file created by using the New-MarkdownHelp (New-MarkdownHelp.md)cmdlet with the WithModulePage parameter.</maml:para>
+      <maml:para>This cmdlet also generates or updates an existing helpinfo.xml file. That file provides versioning and locale details to the Windows PowerShell help system.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-ExternalHelpCab</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>CabFilesFolder</maml:name>
+          <maml:description>
+            <maml:para>Specifies the folder that contains the help content that this cmdlet packages into a .cab file.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>LandingPagePath</maml:name>
+          <maml:description>
+            <maml:para>Specifies the full path of the Module Markdown file that contains all the metadata required to name the .cab file. For the required metadata, run New-MarkdownHelp with the WithLandingPage parameter.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>OutputFolder</maml:name>
+          <maml:description>
+            <maml:para>Specifies the location of the .cab file and helpinfo.xml file that this cmdlet creates.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>IncrementHelpVersion</maml:name>
+          <maml:description>
+            <maml:para>Automatically increment the help version in the module markdown file.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>CabFilesFolder</maml:name>
+        <maml:description>
+          <maml:para>Specifies the folder that contains the help content that this cmdlet packages into a .cab file.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>LandingPagePath</maml:name>
+        <maml:description>
+          <maml:para>Specifies the full path of the Module Markdown file that contains all the metadata required to name the .cab file. For the required metadata, run New-MarkdownHelp with the WithLandingPage parameter.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>OutputFolder</maml:name>
+        <maml:description>
+          <maml:para>Specifies the location of the .cab file and helpinfo.xml file that this cmdlet creates.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>IncrementHelpVersion</maml:name>
+        <maml:description>
+          <maml:para>Automatically increment the help version in the module markdown file.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>You cannot pipe values to this cmdlet.</maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>This cmdlet does not generate output. The cmldet saves its results in the output folder that the OutputPath parameter specifies.</maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>----------------- Example 1: Create a CAB file -----------------</maml:title>
+        <dev:code>PS C:\&gt; New-ExternalHelpCab -CabFilesFolder 'C:\Module\ExternalHelpContent' -LandingPagePath 'C:\Module\ModuleName.md' -OutputPath 'C:\Module\Cab\'</dev:code>
+        <dev:remarks>
+          <maml:para>This commmand creates a .cab file that contains the content folder files. The .cab file is named for updatable help based on metadata. The command places the .cab file in the output folder.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/PowerShell/platyPS/blob/master/docs/New-ExternalHelpCab.md</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>New-ExternalHelp</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>New-MarkdownAboutHelp</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-MarkdownAboutHelp</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>MarkdownAboutHelp</command:noun>
+      <maml:description>
+        <maml:para>Generates a new About Topic MD file from template.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The New-MarkdownAboutHelp cmdlet generates a Markdown file that is prepopulated with the standard elements of an About Topic. The cmdlet copies the template MD, renames headers and file name according to the AboutName parameter, and deposits the file in the directory designated by the OutputFoler parameter.</maml:para>
+      <maml:para>The About Topic can be converted to Txt format. About topics must be in txt format or the PowerShell Help engine will not be able to parse the document. Use the New-ExternalHelp (New-ExternalHelp.md)cmdlet to convert About Topic markdown files into About Topic txt files.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-MarkdownAboutHelp</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+          <maml:name>OutputFolder</maml:name>
+          <maml:description>
+            <maml:para>The directory to create the about topic in.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>AboutName</maml:name>
+          <maml:description>
+            <maml:para>The name of the about topic.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>AboutName</maml:name>
+        <maml:description>
+          <maml:para>The name of the about topic.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+        <maml:name>OutputFolder</maml:name>
+        <maml:description>
+          <maml:para>The directory to create the about topic in.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>This cmdlet returns a object for created files.</maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>The about topics will need to be added to a cab file to leverage updatable help.</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; New-MarkdownAboutHelp -OutputFolder C:\Test -AboutName
+PS C:\&gt; Get-ChildItem C:\Test
+
+    Directory: C:\Test
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        7/13/2016   2:12 PM           1491 TestAboutTopic.md</dev:code>
+        <dev:remarks>
+          <maml:para>Create and display file info for PowerShell About Topic Markdown File.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; New-ExternalHelp -Path C:\Test\ -OutputPath C:\Test
+
+
+    Directory: C:\Test
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        7/13/2016   2:15 PM           1550 TestAboutTopic.txt</dev:code>
+        <dev:remarks>
+          <maml:para>Create PowerShell About Topic Txt file from existing Markdown About file.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/PowerShell/platyPS/blob/master/docs/New-MarkdownAboutHelp.md</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>New-ExternalHelp</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>New-ExternalHelpCab</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-MarkdownHelp</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>MarkdownHelp</command:noun>
+      <maml:description>
+        <maml:para>Creates help in markdown format.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The New-MarkdownHelp cmdlet creates help in markdown format based on a module, a command, or a file in Microsoft Assistance Markup Language (MAML) format.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-MarkdownHelp</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Command</maml:name>
+          <maml:description>
+            <maml:para>Specifies the name of a command in your current session. This can be any command supported by Windows PowerShell help, such as a cmdlet or a function.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Encoding</maml:name>
+          <maml:description>
+            <maml:para>Specifies the character encoding for your markdown help files. Specify a System.Text.Encoding object. For more information, see Character Encoding in the .NET Framework (https://msdn.microsoft.com/en-us/library/ms404377.aspx)in the Microsoft Developer Network. For example, you can control Byte Order Mark (BOM) preferences. For more information, see Using PowerShell to write a file in UTF-8 without the BOM (http://stackoverflow.com/questions/5596982/using-powershell-to-write-a-file-in-utf-8-without-the-bom)at the Stack Overflow community.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Encoding</command:parameterValue>
+          <dev:type>
+            <maml:name>Encoding</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>UTF8 without BOM</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Force</maml:name>
+          <maml:description>
+            <maml:para>Indicates that this cmdlet overwrites existing files that have the same names.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Metadata</maml:name>
+          <maml:description>
+            <maml:para>Specifies metadata that this cmdlet includes in the help markdown files as a hash table of string-to-sting key-value pairs. This cmdlet writes the metadata in the header of each markdown help file.</maml:para>
+            <maml:para>The New-ExternalHelp cmdlet does not use this metadata. External tools can use this metadata.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Hashtable</command:parameterValue>
+          <dev:type>
+            <maml:name>Hashtable</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoMetadata</maml:name>
+          <maml:description>
+            <maml:para>Indicates that this cmdlet does not write any metadata in the generated markdown.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>OnlineVersionUrl</maml:name>
+          <maml:description>
+            <maml:para>Specifies the URL where the updatable help function downloads updated help. If you do not specify a value, the cmdlet uses an empty string.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>OutputFolder</maml:name>
+          <maml:description>
+            <maml:para>Specifies the path of the folder where this cmdlet creates the markdown help files.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>AlphabeticParamsOrder</maml:name>
+          <maml:description>
+            <maml:para>Order parameters alphabetically by name in PARAMETERS section. There are 5 exceptions: -Confirm, -WhatIf, -IncludeTotalCount, -Skip, and -First parameters will be the last. These parameters are common and hence have well-defined behavior.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>UseFullTypeName</maml:name>
+          <maml:description>
+            <maml:para>Indicates that the target document will use a full type name instead of a short name for parameters.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Session</maml:name>
+          <maml:description>
+            <maml:para>Provides support for remote commands. Pass the session that you used to create the commands with `Import-PSSession`. This is required to get accurate parameters metadata from the remote session.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">PSSession</command:parameterValue>
+          <dev:type>
+            <maml:name>PSSession</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ExcludeDontShow</maml:name>
+          <maml:description>
+            <maml:para>Exclude the parameters marked with `DontShow` in the parameter attribute from the help content.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>New-MarkdownHelp</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Encoding</maml:name>
+          <maml:description>
+            <maml:para>Specifies the character encoding for your markdown help files. Specify a System.Text.Encoding object. For more information, see Character Encoding in the .NET Framework (https://msdn.microsoft.com/en-us/library/ms404377.aspx)in the Microsoft Developer Network. For example, you can control Byte Order Mark (BOM) preferences. For more information, see Using PowerShell to write a file in UTF-8 without the BOM (http://stackoverflow.com/questions/5596982/using-powershell-to-write-a-file-in-utf-8-without-the-bom)at the Stack Overflow community.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Encoding</command:parameterValue>
+          <dev:type>
+            <maml:name>Encoding</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>UTF8 without BOM</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Force</maml:name>
+          <maml:description>
+            <maml:para>Indicates that this cmdlet overwrites existing files that have the same names.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>FwLink</maml:name>
+          <maml:description>
+            <maml:para>Specifies the forward link for the module page. This value is required for .cab file creation. This value is used as markdown header metadata in the module page.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>HelpVersion</maml:name>
+          <maml:description>
+            <maml:para>Specifies the version of your help. This value is required for .cab file creation. This value is used as markdown header metadata in the module page.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Locale</maml:name>
+          <maml:description>
+            <maml:para>Specifies the locale of your help. This value is required for .cab file creation. This value is used as markdown header metadata in the module page.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Metadata</maml:name>
+          <maml:description>
+            <maml:para>Specifies metadata that this cmdlet includes in the help markdown files as a hash table of string-to-sting key-value pairs. This cmdlet writes the metadata in the header of each markdown help file.</maml:para>
+            <maml:para>The New-ExternalHelp cmdlet does not use this metadata. External tools can use this metadata.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Hashtable</command:parameterValue>
+          <dev:type>
+            <maml:name>Hashtable</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+          <maml:name>Module</maml:name>
+          <maml:description>
+            <maml:para>Specifies an array of names of modules for which this cmdlet creates help in markdown format.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoMetadata</maml:name>
+          <maml:description>
+            <maml:para>Indicates that this cmdlet does not write any metadata in the generated markdown.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>OutputFolder</maml:name>
+          <maml:description>
+            <maml:para>Specifies the path of the folder where this cmdlet creates the markdown help files.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>WithModulePage</maml:name>
+          <maml:description>
+            <maml:para>Indicates that this cmdlet creates a module page in the output folder. This file has the name that the ModuleName parameter specifies. If you did not specify that parameter, the cmdlet supplies the default name MamlModule. You can overwrite this setting by using ModulePagePath which allows you to define different path for module page</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>AlphabeticParamsOrder</maml:name>
+          <maml:description>
+            <maml:para>Order parameters alphabetically by name in PARAMETERS section. There are 5 exceptions: -Confirm, -WhatIf, -IncludeTotalCount, -Skip, and -First parameters will be the last. These parameters are common and hence have well-defined behavior.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>UseFullTypeName</maml:name>
+          <maml:description>
+            <maml:para>Indicates that the target document will use a full type name instead of a short name for parameters.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Session</maml:name>
+          <maml:description>
+            <maml:para>Provides support for remote commands. Pass the session that you used to create the commands with `Import-PSSession`. This is required to get accurate parameters metadata from the remote session.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">PSSession</command:parameterValue>
+          <dev:type>
+            <maml:name>PSSession</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ModulePagePath</maml:name>
+          <maml:description>
+            <maml:para>When WithModule parameter is used by default it puts .md file in same location as all other docs. With this parameter you can specify new name/location providing better placement options.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ExcludeDontShow</maml:name>
+          <maml:description>
+            <maml:para>Exclude the parameters marked with `DontShow` in the parameter attribute from the help content.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>New-MarkdownHelp</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Encoding</maml:name>
+          <maml:description>
+            <maml:para>Specifies the character encoding for your markdown help files. Specify a System.Text.Encoding object. For more information, see Character Encoding in the .NET Framework (https://msdn.microsoft.com/en-us/library/ms404377.aspx)in the Microsoft Developer Network. For example, you can control Byte Order Mark (BOM) preferences. For more information, see Using PowerShell to write a file in UTF-8 without the BOM (http://stackoverflow.com/questions/5596982/using-powershell-to-write-a-file-in-utf-8-without-the-bom)at the Stack Overflow community.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Encoding</command:parameterValue>
+          <dev:type>
+            <maml:name>Encoding</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>UTF8 without BOM</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Force</maml:name>
+          <maml:description>
+            <maml:para>Indicates that this cmdlet overwrites existing files that have the same names.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>FwLink</maml:name>
+          <maml:description>
+            <maml:para>Specifies the forward link for the module page. This value is required for .cab file creation. This value is used as markdown header metadata in the module page.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>HelpVersion</maml:name>
+          <maml:description>
+            <maml:para>Specifies the version of your help. This value is required for .cab file creation. This value is used as markdown header metadata in the module page.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Locale</maml:name>
+          <maml:description>
+            <maml:para>Specifies the locale of your help. This value is required for .cab file creation. This value is used as markdown header metadata in the module page.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>MamlFile</maml:name>
+          <maml:description>
+            <maml:para>Specifies an array of paths path of MAML .xml help files.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Metadata</maml:name>
+          <maml:description>
+            <maml:para>Specifies metadata that this cmdlet includes in the help markdown files as a hash table of string-to-sting key-value pairs. This cmdlet writes the metadata in the header of each markdown help file.</maml:para>
+            <maml:para>The New-ExternalHelp cmdlet does not use this metadata. External tools can use this metadata.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Hashtable</command:parameterValue>
+          <dev:type>
+            <maml:name>Hashtable</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ModuleGuid</maml:name>
+          <maml:description>
+            <maml:para>Specifies the GUID of the module of your help. This value is required for .cab file creation. This value is used as markdown header metadata in the module page.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ModuleName</maml:name>
+          <maml:description>
+            <maml:para>Specifies the name of the module of your help. This value is required for .cab file creation. This value is used as markdown header metadata in the module page.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoMetadata</maml:name>
+          <maml:description>
+            <maml:para>Indicates that this cmdlet does not write any metadata in the generated markdown.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>OutputFolder</maml:name>
+          <maml:description>
+            <maml:para>Specifies the path of the folder where this cmdlet creates the markdown help files.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>WithModulePage</maml:name>
+          <maml:description>
+            <maml:para>Indicates that this cmdlet creates a module page in the output folder. This file has the name that the ModuleName parameter specifies. If you did not specify that parameter, the cmdlet supplies the default name MamlModule. You can overwrite this setting by using ModulePagePath which allows you to define different path for module page</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ConvertNotesToList</maml:name>
+          <maml:description>
+            <maml:para>Indicates that this cmldet formats multiple paragraph items in the NOTES section as single list items. This output follows TechNet formatting.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ConvertDoubleDashLists</maml:name>
+          <maml:description>
+            <maml:para>Indicates that this cmldet converts double-hyphen list bullets into single-hyphen bullets. Double-hyphen lists are common in Windows PowerShell documentation. Markdown accepts single-hyphens for lists.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>AlphabeticParamsOrder</maml:name>
+          <maml:description>
+            <maml:para>Order parameters alphabetically by name in PARAMETERS section. There are 5 exceptions: -Confirm, -WhatIf, -IncludeTotalCount, -Skip, and -First parameters will be the last. These parameters are common and hence have well-defined behavior.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>UseFullTypeName</maml:name>
+          <maml:description>
+            <maml:para>Indicates that the target document will use a full type name instead of a short name for parameters.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ModulePagePath</maml:name>
+          <maml:description>
+            <maml:para>When WithModule parameter is used by default it puts .md file in same location as all other docs. With this parameter you can specify new name/location providing better placement options.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ExcludeDontShow</maml:name>
+          <maml:description>
+            <maml:para>Exclude the parameters marked with `DontShow` in the parameter attribute from the help content.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Command</maml:name>
+        <maml:description>
+          <maml:para>Specifies the name of a command in your current session. This can be any command supported by Windows PowerShell help, such as a cmdlet or a function.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Encoding</maml:name>
+        <maml:description>
+          <maml:para>Specifies the character encoding for your markdown help files. Specify a System.Text.Encoding object. For more information, see Character Encoding in the .NET Framework (https://msdn.microsoft.com/en-us/library/ms404377.aspx)in the Microsoft Developer Network. For example, you can control Byte Order Mark (BOM) preferences. For more information, see Using PowerShell to write a file in UTF-8 without the BOM (http://stackoverflow.com/questions/5596982/using-powershell-to-write-a-file-in-utf-8-without-the-bom)at the Stack Overflow community.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Encoding</command:parameterValue>
+        <dev:type>
+          <maml:name>Encoding</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>UTF8 without BOM</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Force</maml:name>
+        <maml:description>
+          <maml:para>Indicates that this cmdlet overwrites existing files that have the same names.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>FwLink</maml:name>
+        <maml:description>
+          <maml:para>Specifies the forward link for the module page. This value is required for .cab file creation. This value is used as markdown header metadata in the module page.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>HelpVersion</maml:name>
+        <maml:description>
+          <maml:para>Specifies the version of your help. This value is required for .cab file creation. This value is used as markdown header metadata in the module page.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Locale</maml:name>
+        <maml:description>
+          <maml:para>Specifies the locale of your help. This value is required for .cab file creation. This value is used as markdown header metadata in the module page.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>MamlFile</maml:name>
+        <maml:description>
+          <maml:para>Specifies an array of paths path of MAML .xml help files.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Metadata</maml:name>
+        <maml:description>
+          <maml:para>Specifies metadata that this cmdlet includes in the help markdown files as a hash table of string-to-sting key-value pairs. This cmdlet writes the metadata in the header of each markdown help file.</maml:para>
+          <maml:para>The New-ExternalHelp cmdlet does not use this metadata. External tools can use this metadata.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Hashtable</command:parameterValue>
+        <dev:type>
+          <maml:name>Hashtable</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
+        <maml:name>Module</maml:name>
+        <maml:description>
+          <maml:para>Specifies an array of names of modules for which this cmdlet creates help in markdown format.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ModuleGuid</maml:name>
+        <maml:description>
+          <maml:para>Specifies the GUID of the module of your help. This value is required for .cab file creation. This value is used as markdown header metadata in the module page.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ModuleName</maml:name>
+        <maml:description>
+          <maml:para>Specifies the name of the module of your help. This value is required for .cab file creation. This value is used as markdown header metadata in the module page.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NoMetadata</maml:name>
+        <maml:description>
+          <maml:para>Indicates that this cmdlet does not write any metadata in the generated markdown.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>OnlineVersionUrl</maml:name>
+        <maml:description>
+          <maml:para>Specifies the URL where the updatable help function downloads updated help. If you do not specify a value, the cmdlet uses an empty string.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>OutputFolder</maml:name>
+        <maml:description>
+          <maml:para>Specifies the path of the folder where this cmdlet creates the markdown help files.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>WithModulePage</maml:name>
+        <maml:description>
+          <maml:para>Indicates that this cmdlet creates a module page in the output folder. This file has the name that the ModuleName parameter specifies. If you did not specify that parameter, the cmdlet supplies the default name MamlModule. You can overwrite this setting by using ModulePagePath which allows you to define different path for module page</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ConvertNotesToList</maml:name>
+        <maml:description>
+          <maml:para>Indicates that this cmldet formats multiple paragraph items in the NOTES section as single list items. This output follows TechNet formatting.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ConvertDoubleDashLists</maml:name>
+        <maml:description>
+          <maml:para>Indicates that this cmldet converts double-hyphen list bullets into single-hyphen bullets. Double-hyphen lists are common in Windows PowerShell documentation. Markdown accepts single-hyphens for lists.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>AlphabeticParamsOrder</maml:name>
+        <maml:description>
+          <maml:para>Order parameters alphabetically by name in PARAMETERS section. There are 5 exceptions: -Confirm, -WhatIf, -IncludeTotalCount, -Skip, and -First parameters will be the last. These parameters are common and hence have well-defined behavior.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>UseFullTypeName</maml:name>
+        <maml:description>
+          <maml:para>Indicates that the target document will use a full type name instead of a short name for parameters.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Session</maml:name>
+        <maml:description>
+          <maml:para>Provides support for remote commands. Pass the session that you used to create the commands with `Import-PSSession`. This is required to get accurate parameters metadata from the remote session.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">PSSession</command:parameterValue>
+        <dev:type>
+          <maml:name>PSSession</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ModulePagePath</maml:name>
+        <maml:description>
+          <maml:para>When WithModule parameter is used by default it puts .md file in same location as all other docs. With this parameter you can specify new name/location providing better placement options.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ExcludeDontShow</maml:name>
+        <maml:description>
+          <maml:para>Exclude the parameters marked with `DontShow` in the parameter attribute from the help content.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>You can pipe module names to this cmdlet. These are the modules from which this cmdlet creates help markdown.</maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.IO.FileInfo[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>This cmdlet returns a FileInfo[] object for created files.</maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>------------ Example 1: Create help from a command ------------</maml:title>
+        <dev:code>PS C:\&gt; function Command03 {param([string]$Value)}
+PS C:\&gt; New-MarkdownHelp -Command "Command03" -OutputFolder ".\docs"
+
+
+    Directory: D:\Working\docs
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        5/22/2016   6:53 PM            664 Command03.md</dev:code>
+        <dev:remarks>
+          <maml:para>The first command creates a function named Command03 by using standard Windows PowerShell syntax.</maml:para>
+          <maml:para>The second command creates help for that stub function in the .\docs folder.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>------------- Example 2: Create help from a module -------------</maml:title>
+        <dev:code>PS C:\&gt; Import-Module -Module "PlatyPS"
+PS C:\&gt; New-MarkdownHelp -Module "PlatyPS" -OutputFolder ".\docs" -Force
+
+
+    Directory: D:\Working\PlatyPS\docs
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        5/22/2016   6:54 PM           1496 Get-HelpPreview.md
+-a----        5/22/2016   6:54 PM           3208 Get-MarkdownMetadata.md
+-a----        5/22/2016   6:54 PM           3059 New-ExternalHelp.md
+-a----        5/22/2016   6:54 PM           2702 New-ExternalHelpCab.md
+-a----        5/22/2016   6:54 PM           6234 New-MarkdownHelp.md
+-a----        5/22/2016   6:54 PM           2346 Update-MarkdownHelp.md
+-a----        5/22/2016   6:54 PM           1633 Update-MarkdownHelpModule.md
+-a----        5/22/2016   6:54 PM           1630 Update-MarkdownHelpSchema.md</dev:code>
+        <dev:remarks>
+          <maml:para>The first command loads the PlatyPS module into the current session by using the Import-Module cmdlet.</maml:para>
+          <maml:para>The second command creates help for all the cmdlets in the PlatyPS module. It stores them in the .\docs folder. This command specifies the Force parameter. Therefore, it overwrites existing help markdown files that have the same name.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>------ Example 3: Create help from an existing MAML file ------</maml:title>
+        <dev:code>PS C:\&gt; New-MarkdownHelp -OutputFolder "D:\PSReadline\docs" -MamlFile 'C:\Program Files\WindowsPowerShell\Modules\PSReadline\1.1\en-US\Microsoft.PowerShell.PSReadline.dll-help.xml'
+
+    Directory: D:\PSReadline\docs
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        5/22/2016   6:56 PM           7443 Get-PSReadlineKeyHandler.md
+-a----        5/22/2016   6:56 PM           3586 Get-PSReadlineOption.md
+-a----        5/22/2016   6:56 PM           1549 Remove-PSReadlineKeyHandler.md
+-a----        5/22/2016   6:56 PM           5947 Set-PSReadlineKeyHandler.md
+-a----        5/22/2016   6:56 PM          15320 Set-PSReadlineOption.md</dev:code>
+        <dev:remarks>
+          <maml:para>This command creates help in markdown format for the specified help MAML file. You do not have to load the module, as in the previous example. If the module is already loaded, this command creates help based on the MAML file, not on the currently installed module.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>Example 4: Create help from an existing MAML file for use in a CAB file</maml:title>
+        <dev:code>PS C:\&gt; New-MarkdownHelp -OutputFolder "D:\PSReadline\docs" -MamlFile 'C:\Program Files\WindowsPowerShell\Modules\PSReadline\1.1\en-US\Microsoft.PowerShell.PSReadline.dll-help.xml' -WithModulePage  -Force -ModuleName "PSReadLine"
+
+
+    Directory: D:\PSReadline\docs
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        5/22/2016   6:59 PM           7443 Get-PSReadlineKeyHandler.md
+-a----        5/22/2016   6:59 PM           3586 Get-PSReadlineOption.md
+-a----        5/22/2016   6:59 PM           1549 Remove-PSReadlineKeyHandler.md
+-a----        5/22/2016   6:59 PM           5947 Set-PSReadlineKeyHandler.md
+-a----        5/22/2016   6:59 PM          15320 Set-PSReadlineOption.md
+-a----        5/22/2016   6:59 PM            942 PSReadLine.md</dev:code>
+        <dev:remarks>
+          <maml:para>This command creates help in markdown format for the specified help MAML file, as in the previous example. This command also specifies the WithModulePage parameter and the ModuleName parameter. The command creates a file named PSReadLine.md that contains links to the other markdown files in this module and metadata that can be used to create .cab files.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/PowerShell/platyPS/blob/master/docs/New-MarkdownHelp.md</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Character Encoding in the .NET Framework</maml:linkText>
+        <maml:uri>https://msdn.microsoft.com/en-us/library/ms404377.aspx</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Using PowerShell to write a file in UTF-8 without the BOM</maml:linkText>
+        <maml:uri>http://stackoverflow.com/questions/5596982/using-powershell-to-write-a-file-in-utf-8-without-the-bom</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-YamlHelp</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>YamlHelp</command:noun>
+      <maml:description>
+        <maml:para>Converts Markdown help into YAML to be read easily by external tools</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The New-YamlHelp cmdlet works similarly to the New-ExternalHelp cmdlet but rather than creating a MAML file to support Get-Help , it creates a set of YAML files that can be read by external tools to provide custom rendering of help pages.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-YamlHelp</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="1" aliases="none">
+          <maml:name>Path</maml:name>
+          <maml:description>
+            <maml:para>Specifies an array of paths of markdown files or folders. This cmdlet creates external help based on these files and folders.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Encoding</maml:name>
+          <maml:description>
+            <maml:para>Specifies the character encoding for your external help file. Specify a System.Text.Encoding object. For more information, see Character Encoding in the .NET Framework (https://msdn.microsoft.com/en-us/library/ms404377.aspx)in the Microsoft Developer Network. For example, you can control Byte Order Mark (BOM) preferences. For more information, see Using PowerShell to write a file in UTF-8 without the BOM (http://stackoverflow.com/questions/5596982/using-powershell-to-write-a-file-in-utf-8-without-the-bom)at the Stack Overflow community.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Encoding</command:parameterValue>
+          <dev:type>
+            <maml:name>Encoding</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Force</maml:name>
+          <maml:description>
+            <maml:para>Indicates that this cmdlet overwrites an existing file that has the same name.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>OutputFolder</maml:name>
+          <maml:description>
+            <maml:para>Specifies the folder to create the YAML files in</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Encoding</maml:name>
+        <maml:description>
+          <maml:para>Specifies the character encoding for your external help file. Specify a System.Text.Encoding object. For more information, see Character Encoding in the .NET Framework (https://msdn.microsoft.com/en-us/library/ms404377.aspx)in the Microsoft Developer Network. For example, you can control Byte Order Mark (BOM) preferences. For more information, see Using PowerShell to write a file in UTF-8 without the BOM (http://stackoverflow.com/questions/5596982/using-powershell-to-write-a-file-in-utf-8-without-the-bom)at the Stack Overflow community.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Encoding</command:parameterValue>
+        <dev:type>
+          <maml:name>Encoding</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Force</maml:name>
+        <maml:description>
+          <maml:para>Indicates that this cmdlet overwrites an existing file that has the same name.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="1" aliases="none">
+        <maml:name>Path</maml:name>
+        <maml:description>
+          <maml:para>Specifies an array of paths of markdown files or folders. This cmdlet creates external help based on these files and folders.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>OutputFolder</maml:name>
+        <maml:description>
+          <maml:para>Specifies the folder to create the YAML files in</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.String[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>You can pipe an array of paths to this cmdlet.</maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.IO.FileInfo[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>This cmdlet returns a FileInfo[] object for created files.</maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>----------------- Example 1: Create YAML files -----------------</maml:title>
+        <dev:code>PS C:\&gt; New-YamlHelp -Path .\docs -OutputFolder .\out\yaml
+
+    Directory: D:\Working\PlatyPS\out\yaml
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        6/15/2017  11:13 AM           2337 Get-HelpPreview.yml
+-a----        6/15/2017  11:13 AM           3502 Get-MarkdownMetadata.yml
+-a----        6/15/2017  11:13 AM           4143 New-ExternalHelp.yml
+-a----        6/15/2017  11:13 AM           3082 New-ExternalHelpCab.yml
+-a----        6/15/2017  11:13 AM           2581 New-MarkdownAboutHelp.yml
+-a----        6/15/2017  11:13 AM          12356 New-MarkdownHelp.yml
+-a----        6/15/2017  11:13 AM           1681 New-YamlHelp.yml
+-a----        6/15/2017  11:13 AM           5053 Update-MarkdownHelp.yml
+-a----        6/15/2017  11:13 AM           4661 Update-MarkdownHelpModule.yml
+-a----        6/15/2017  11:13 AM           3350 Update-MarkdownHelpSchema.yml</dev:code>
+        <dev:remarks>
+          <maml:para>This creates one YAML file for each cmdlet so external tools can read the structured data for each cmdlet.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>----- Example 2: Create YAML files with specific encoding -----</maml:title>
+        <dev:code>PS C:\&gt; New-YamlHelp -Path .\docs -OutputFolder .\out\yaml -Force -Encoding ([System.Text.Encoding]::Unicode)
+
+    Directory: D:\Working\PlatyPS\out\yaml
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        6/15/2017  11:13 AM           2337 Get-HelpPreview.yml
+-a----        6/15/2017  11:13 AM           3502 Get-MarkdownMetadata.yml
+-a----        6/15/2017  11:13 AM           4143 New-ExternalHelp.yml
+-a----        6/15/2017  11:13 AM           3082 New-ExternalHelpCab.yml
+-a----        6/15/2017  11:13 AM           2581 New-MarkdownAboutHelp.yml
+-a----        6/15/2017  11:13 AM          12356 New-MarkdownHelp.yml
+-a----        6/15/2017  11:13 AM           1681 New-YamlHelp.yml
+-a----        6/15/2017  11:13 AM           5053 Update-MarkdownHelp.yml
+-a----        6/15/2017  11:13 AM           4661 Update-MarkdownHelpModule.yml
+-a----        6/15/2017  11:13 AM           3350 Update-MarkdownHelpSchema.yml</dev:code>
+        <dev:remarks>
+          <maml:para>This will both read and write the files in the specified -Encoding. The -Force parameter will overwrite files that already exist.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/PowerShell/platyPS/blob/master/docs/New-YamlHelp.md</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Update-MarkdownHelp</command:name>
+      <command:verb>Update</command:verb>
+      <command:noun>MarkdownHelp</command:noun>
+      <maml:description>
+        <maml:para>Update PlatyPS markdown help files.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Update-MarkdownHelp cmdlet updates PlatyPS markdown help files without completely replacing the content of the files.</maml:para>
+      <maml:para>Some parameter attributes change over time. For instance, parameter sets, types, default value, and required. This cmdlet updates markdown help to reflect those changes. It also adds placeholder text to the markdown file for any new parameter.</maml:para>
+      <maml:para>To propagate changes to your markdown help files, do the following:</maml:para>
+      <maml:para>- Load the new version of the module into your Windows PowerShell session.</maml:para>
+      <maml:para>- Run the Update-MarkdownHelp cmdlet to update the files. - Check new parameters metadata in the markdown files.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Update-MarkdownHelp</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="true" pipelineInput="True (ByValue)" position="0" aliases="none">
+          <maml:name>Path</maml:name>
+          <maml:description>
+            <maml:para>Specifies an array of paths of markdown files and folders to update.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>Encoding</maml:name>
+          <maml:description>
+            <maml:para>Specifies the character encoding for your markdown help files. Specify a System.Text.Encoding object. For more information, see Character Encoding in the .NET Framework (https://msdn.microsoft.com/en-us/library/ms404377.aspx)in the Microsoft Developer Network. For example, you can control Byte Order Mark (BOM) preferences. For more information, see Using PowerShell to write a file in UTF-8 without the BOM (http://stackoverflow.com/questions/5596982/using-powershell-to-write-a-file-in-utf-8-without-the-bom)at the Stack Overflow community.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Encoding</command:parameterValue>
+          <dev:type>
+            <maml:name>Encoding</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>UTF8 without BOM</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>LogPath</maml:name>
+          <maml:description>
+            <maml:para>Specifies a file path for log information. The cmdlet writes the VERBOSE stream to the log. If you specify the Verbose parameter, this cmdlet also writes that information to the console.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>LogAppend</maml:name>
+          <maml:description>
+            <maml:para>Indicates that this cmdlet appends information to the log instead overwriting it.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>AlphabeticParamsOrder</maml:name>
+          <maml:description>
+            <maml:para>Order parameters alphabetically by name in PARAMETERS section. There are 5 exceptions: -Confirm, -WhatIf, -IncludeTotalCount, -Skip, and -First parameters will be the last. These parameters are common and hence have well-defined behavior.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>UseFullTypeName</maml:name>
+          <maml:description>
+            <maml:para>Indicates that the target document will use a full type name instead of a short name for parameters.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Session</maml:name>
+          <maml:description>
+            <maml:para>Provides support for remote commands. Pass the session that you used to create the commands with `Import-PSSession`. This is required to get accurate parameters metadata from the remote session.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">PSSession</command:parameterValue>
+          <dev:type>
+            <maml:name>PSSession</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>UpdateInputOutput</maml:name>
+          <maml:description>
+            <maml:para>Refreshes the Input and Output section to reflect the current state of the cmdlet.  WARNING: this parameter will remove any manual additions to these sections.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Force</maml:name>
+          <maml:description>
+            <maml:para>Remove help files that no longer exists within sessions (for example if function was deleted)</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ExcludeDontShow</maml:name>
+          <maml:description>
+            <maml:para>Exclude the parameters marked with `DontShow` in the parameter attribute from the help content.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>Encoding</maml:name>
+        <maml:description>
+          <maml:para>Specifies the character encoding for your markdown help files. Specify a System.Text.Encoding object. For more information, see Character Encoding in the .NET Framework (https://msdn.microsoft.com/en-us/library/ms404377.aspx)in the Microsoft Developer Network. For example, you can control Byte Order Mark (BOM) preferences. For more information, see Using PowerShell to write a file in UTF-8 without the BOM (http://stackoverflow.com/questions/5596982/using-powershell-to-write-a-file-in-utf-8-without-the-bom)at the Stack Overflow community.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Encoding</command:parameterValue>
+        <dev:type>
+          <maml:name>Encoding</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>UTF8 without BOM</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>LogAppend</maml:name>
+        <maml:description>
+          <maml:para>Indicates that this cmdlet appends information to the log instead overwriting it.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>LogPath</maml:name>
+        <maml:description>
+          <maml:para>Specifies a file path for log information. The cmdlet writes the VERBOSE stream to the log. If you specify the Verbose parameter, this cmdlet also writes that information to the console.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="true" pipelineInput="True (ByValue)" position="0" aliases="none">
+        <maml:name>Path</maml:name>
+        <maml:description>
+          <maml:para>Specifies an array of paths of markdown files and folders to update.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>AlphabeticParamsOrder</maml:name>
+        <maml:description>
+          <maml:para>Order parameters alphabetically by name in PARAMETERS section. There are 5 exceptions: -Confirm, -WhatIf, -IncludeTotalCount, -Skip, and -First parameters will be the last. These parameters are common and hence have well-defined behavior.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>UseFullTypeName</maml:name>
+        <maml:description>
+          <maml:para>Indicates that the target document will use a full type name instead of a short name for parameters.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Session</maml:name>
+        <maml:description>
+          <maml:para>Provides support for remote commands. Pass the session that you used to create the commands with `Import-PSSession`. This is required to get accurate parameters metadata from the remote session.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">PSSession</command:parameterValue>
+        <dev:type>
+          <maml:name>PSSession</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>UpdateInputOutput</maml:name>
+        <maml:description>
+          <maml:para>Refreshes the Input and Output section to reflect the current state of the cmdlet.  WARNING: this parameter will remove any manual additions to these sections.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Force</maml:name>
+        <maml:description>
+          <maml:para>Remove help files that no longer exists within sessions (for example if function was deleted)</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ExcludeDontShow</maml:name>
+        <maml:description>
+          <maml:para>Exclude the parameters marked with `DontShow` in the parameter attribute from the help content.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>You can pipe an array of paths to this cmdlet.</maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.IO.FileInfo[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>This cmdlet returns a FileInfo[] object for updated files.</maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>The module for which you want to update the help should first be imported from the location containing the previous version of the help. If this condition is not met, the parameter order will be alphabetical in the updated help, even if the parameter AlphabeticParamsOrder has not been used.</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>----------- Example 1: Update all files in a folder -----------</maml:title>
+        <dev:code>PS C:\&gt; Update-MarkdownHelp -Path ".\docs"
+
+    Directory: D:\working\PlatyPS\docs
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        5/22/2016   6:54 PM           1496 Get-HelpPreview.md
+-a----        5/22/2016   6:54 PM           3208 Get-MarkdownMetadata.md
+-a----        5/22/2016   6:54 PM           3059 New-ExternalHelp.md
+-a----        5/22/2016   6:54 PM           2702 New-ExternalHelpCab.md
+-a----        5/22/2016   6:54 PM           6234 New-MarkdownHelp.md
+-a----        5/22/2016   6:54 PM           2346 Update-MarkdownHelp.md
+-a----        5/22/2016   6:54 PM           1633 Update-MarkdownHelpModule.md
+-a----        5/22/2016   6:54 PM           1630 Update-MarkdownHelpSchema.md</dev:code>
+        <dev:remarks>
+          <maml:para>This command updates all markdown help files in the specified path to match the current cmdlets.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>---------- Example 2: Update one file and capture log ----------</maml:title>
+        <dev:code>PS C:\&gt; Update-MarkdownHelp -Path ".\docs\Update-MarkdownHelp.md" -LogPath ".\markdown.log"
+
+    Directory: D:\Working\PlatyPS\docs
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        5/22/2016   8:20 PM           9993 New-MarkdownHelp.md</dev:code>
+        <dev:remarks>
+          <maml:para>This command updates a markdown help file. It writes log information to the markdown.log file.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/PowerShell/platyPS/blob/master/docs/Update-MarkdownHelp.md</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Character Encoding in the .NET Framework</maml:linkText>
+        <maml:uri>https://msdn.microsoft.com/en-us/library/ms404377.aspx</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Using PowerShell to write a file in UTF-8 without the BOM</maml:linkText>
+        <maml:uri>http://stackoverflow.com/questions/5596982/using-powershell-to-write-a-file-in-utf-8-without-the-bom</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Update-MarkdownHelpModule</command:name>
+      <command:verb>Update</command:verb>
+      <command:noun>MarkdownHelpModule</command:noun>
+      <maml:description>
+        <maml:para>Update all files in a markdown help module folder.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Update-MarkdownHelpModule cmdlet updates existing help markdown files and creates markdown files for new cmdlets in a module. This cmdlet combines functionality of the Update-MarkdownHelp (Update-MarkdownHelp.md) and [New-MarkdownHelp](New-MarkdownHelp.md)cmdlets to perform a bulk update.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Update-MarkdownHelpModule</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="true" pipelineInput="True (ByValue)" position="0" aliases="none">
+          <maml:name>Path</maml:name>
+          <maml:description>
+            <maml:para>Specifies an array of paths of markdown folders to update. The folder must contain a module page from which this cmdlet can get the module name.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>Encoding</maml:name>
+          <maml:description>
+            <maml:para>Specifies the character encoding for your markdown help files. Specify a System.Text.Encoding object. For more information, see Character Encoding in the .NET Framework (https://msdn.microsoft.com/en-us/library/ms404377.aspx)in the Microsoft Developer Network. For example, you can control Byte Order Mark (BOM) preferences. For more information, see Using PowerShell to write a file in UTF-8 without the BOM (http://stackoverflow.com/questions/5596982/using-powershell-to-write-a-file-in-utf-8-without-the-bom)at the Stack Overflow community.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Encoding</command:parameterValue>
+          <dev:type>
+            <maml:name>Encoding</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>UTF8 without BOM</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>LogPath</maml:name>
+          <maml:description>
+            <maml:para>Specifies a file path for log information. The cmdlet writes the VERBOSE stream to the log. If you specify the Verbose parameter, this cmdlet also writes that information to the console.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>LogAppend</maml:name>
+          <maml:description>
+            <maml:para>Indicates that this cmdlet appends information to the log instead overwriting it.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>RefreshModulePage</maml:name>
+          <maml:description>
+            <maml:para>Update module page when updating the help module.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>AlphabeticParamsOrder</maml:name>
+          <maml:description>
+            <maml:para>Order parameters alphabetically by name in PARAMETERS section. There are 5 exceptions: -Confirm, -WhatIf, -IncludeTotalCount, -Skip, and -First parameters will be the last. These parameters are common and hence have well-defined behavior.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Session</maml:name>
+          <maml:description>
+            <maml:para>Provides support for remote commands. Pass the session that you used to create the commands with `Import-PSSession`. This is required to get accurate parameters metadata from the remote session.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">PSSession</command:parameterValue>
+          <dev:type>
+            <maml:name>PSSession</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>UseFullTypeName</maml:name>
+          <maml:description>
+            <maml:para>Indicates that the target document will use a full type name instead of a short name for parameters.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>UpdateInputOutput</maml:name>
+          <maml:description>
+            <maml:para>Refreshes the Input and Output sections to reflect the current state of the cmdlet.  WARNING: this parameter will remove any manual additions to these sections.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ModulePagePath</maml:name>
+          <maml:description>
+            <maml:para>When -RefreshModulePage is used by default it puts .md file in same location as all other docs. With this parameter you can specify new name/location providing better placement options.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Force</maml:name>
+          <maml:description>
+            <maml:para>Remove help files that no longer exists within sessions (for example if function was deleted)</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ExcludeDontShow</maml:name>
+          <maml:description>
+            <maml:para>Exclude the parameters marked with `DontShow` in the parameter attribute from the help content.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>Encoding</maml:name>
+        <maml:description>
+          <maml:para>Specifies the character encoding for your markdown help files. Specify a System.Text.Encoding object. For more information, see Character Encoding in the .NET Framework (https://msdn.microsoft.com/en-us/library/ms404377.aspx)in the Microsoft Developer Network. For example, you can control Byte Order Mark (BOM) preferences. For more information, see Using PowerShell to write a file in UTF-8 without the BOM (http://stackoverflow.com/questions/5596982/using-powershell-to-write-a-file-in-utf-8-without-the-bom)at the Stack Overflow community.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Encoding</command:parameterValue>
+        <dev:type>
+          <maml:name>Encoding</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>UTF8 without BOM</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>LogAppend</maml:name>
+        <maml:description>
+          <maml:para>Indicates that this cmdlet appends information to the log instead overwriting it.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>LogPath</maml:name>
+        <maml:description>
+          <maml:para>Specifies a file path for log information. The cmdlet writes the VERBOSE stream to the log. If you specify the Verbose parameter, this cmdlet also writes that information to the console.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="true" pipelineInput="True (ByValue)" position="0" aliases="none">
+        <maml:name>Path</maml:name>
+        <maml:description>
+          <maml:para>Specifies an array of paths of markdown folders to update. The folder must contain a module page from which this cmdlet can get the module name.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>RefreshModulePage</maml:name>
+        <maml:description>
+          <maml:para>Update module page when updating the help module.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>AlphabeticParamsOrder</maml:name>
+        <maml:description>
+          <maml:para>Order parameters alphabetically by name in PARAMETERS section. There are 5 exceptions: -Confirm, -WhatIf, -IncludeTotalCount, -Skip, and -First parameters will be the last. These parameters are common and hence have well-defined behavior.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Session</maml:name>
+        <maml:description>
+          <maml:para>Provides support for remote commands. Pass the session that you used to create the commands with `Import-PSSession`. This is required to get accurate parameters metadata from the remote session.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">PSSession</command:parameterValue>
+        <dev:type>
+          <maml:name>PSSession</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>UseFullTypeName</maml:name>
+        <maml:description>
+          <maml:para>Indicates that the target document will use a full type name instead of a short name for parameters.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>UpdateInputOutput</maml:name>
+        <maml:description>
+          <maml:para>Refreshes the Input and Output sections to reflect the current state of the cmdlet.  WARNING: this parameter will remove any manual additions to these sections.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ModulePagePath</maml:name>
+        <maml:description>
+          <maml:para>When -RefreshModulePage is used by default it puts .md file in same location as all other docs. With this parameter you can specify new name/location providing better placement options.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Force</maml:name>
+        <maml:description>
+          <maml:para>Remove help files that no longer exists within sessions (for example if function was deleted)</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ExcludeDontShow</maml:name>
+        <maml:description>
+          <maml:para>Exclude the parameters marked with `DontShow` in the parameter attribute from the help content.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.String[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>You can pipe an array of paths to this cmdlet.</maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.IO.FileInfo[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>This cmdlet returns a FileInfo[] object for updated and new files.</maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>The module for which you want to update the help should first be imported from the location containing the previous version of the help.  If this condition is not met, the parameter order will be alphabetical in the updated help, even if the parameter AlphabeticParamsOrder has not been used.</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>----------- Example 1: Update a markdown help module -----------</maml:title>
+        <dev:code>PS C:\&gt; Update-MarkdownHelpModule -Path ".\docs"
+
+    Directory: D:\Working\PlatyPS\docs
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        5/22/2016   6:54 PM           1496 Get-HelpPreview.md
+-a----        5/22/2016   6:54 PM           3208 Get-MarkdownMetadata.md
+-a----        5/22/2016   6:54 PM           3059 New-ExternalHelp.md
+-a----        5/22/2016   6:54 PM           2702 New-ExternalHelpCab.md
+-a----        5/22/2016   6:54 PM           6234 New-MarkdownHelp.md
+-a----        5/22/2016   6:54 PM           2346 Update-MarkdownHelp.md
+-a----        5/22/2016   6:54 PM           1633 Update-MarkdownHelpModule.md
+-a----        5/22/2016   6:54 PM           1630 Update-MarkdownHelpSchema.md</dev:code>
+        <dev:remarks>
+          <maml:para>This command updates all the files in the specified folder based on the cmdlets as loaded into your current session. The command creates markdown help topics for any cmdlets that are not already included in the .\docs folder.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://github.com/PowerShell/platyPS/blob/master/docs/Update-MarkdownHelpModule.md</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Character Encoding in the .NET Framework</maml:linkText>
+        <maml:uri>https://msdn.microsoft.com/en-us/library/ms404377.aspx</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Using PowerShell to write a file in UTF-8 without the BOM</maml:linkText>
+        <maml:uri>http://stackoverflow.com/questions/5596982/using-powershell-to-write-a-file-in-utf-8-without-the-bom</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+</helpItems>

@@ -15,7 +15,7 @@
       <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
       <DT N="PublishedDate">2021-03-23T08:09:49-05:00</DT>
       <Obj N="InstalledDate" RefId="1">
-        <DT>2021-04-14T12:50:14.7680895-05:00</DT>
+        <DT>2021-08-01T19:03:18.3891636-05:00</DT>
         <MS>
           <Obj N="DisplayHint" RefId="2">
             <TN RefId="1">
@@ -56,74 +56,8 @@
         </TN>
         <DCT>
           <En>
-            <S N="Key">RoleCapability</S>
-            <Obj N="Value" RefId="5">
-              <TNRef RefId="2" />
-              <LST />
-            </Obj>
-          </En>
-          <En>
-            <S N="Key">Command</S>
-            <Obj N="Value" RefId="6">
-              <TNRef RefId="2" />
-              <LST>
-                <S>New-AzServiceBusNamespace</S>
-                <S>Get-AzServiceBusNamespace</S>
-                <S>Set-AzServiceBusNamespace</S>
-                <S>Remove-AzServiceBusNamespace</S>
-                <S>New-AzServiceBusQueue</S>
-                <S>Get-AzServiceBusQueue</S>
-                <S>Set-AzServiceBusQueue</S>
-                <S>Remove-AzServiceBusQueue</S>
-                <S>New-AzServiceBusTopic</S>
-                <S>Get-AzServiceBusTopic</S>
-                <S>Set-AzServiceBusTopic</S>
-                <S>Remove-AzServiceBusTopic</S>
-                <S>New-AzServiceBusSubscription</S>
-                <S>Get-AzServiceBusSubscription</S>
-                <S>Set-AzServiceBusSubscription</S>
-                <S>Remove-AzServiceBusSubscription</S>
-                <S>New-AzServiceBusAuthorizationRule</S>
-                <S>Get-AzServiceBusAuthorizationRule</S>
-                <S>Set-AzServiceBusAuthorizationRule</S>
-                <S>Remove-AzServiceBusAuthorizationRule</S>
-                <S>New-AzServiceBusKey</S>
-                <S>Get-AzServiceBusKey</S>
-                <S>Get-AzServiceBusOperation</S>
-                <S>New-AzServiceBusRule</S>
-                <S>Get-AzServiceBusRule</S>
-                <S>Set-AzServiceBusRule</S>
-                <S>Remove-AzServiceBusRule</S>
-                <S>New-AzServiceBusGeoDRConfiguration</S>
-                <S>Get-AzServiceBusGeoDRConfiguration</S>
-                <S>Remove-AzServiceBusGeoDRConfiguration</S>
-                <S>Set-AzServiceBusGeoDRConfigurationBreakPair</S>
-                <S>Set-AzServiceBusGeoDRConfigurationFailOver</S>
-                <S>Test-AzServiceBusName</S>
-                <S>Get-AzServiceBusMigration</S>
-                <S>Stop-AzServiceBusMigration</S>
-                <S>Start-AzServiceBusMigration</S>
-                <S>Complete-AzServiceBusMigration</S>
-                <S>Remove-AzServiceBusMigration</S>
-                <S>Remove-AzServiceBusIPRule</S>
-                <S>Add-AzServiceBusIPRule</S>
-                <S>Remove-AzServiceBusVirtualNetworkRule</S>
-                <S>Add-AzServiceBusVirtualNetworkRule</S>
-                <S>Get-AzServiceBusNetworkRuleSet</S>
-                <S>Remove-AzServiceBusNetworkRuleSet</S>
-                <S>Set-AzServiceBusNetworkRuleSet</S>
-                <S>New-AzServiceBusAuthorizationRuleSASToken</S>
-                <S>Test-AzServiceBusNameAvailability</S>
-              </LST>
-            </Obj>
-          </En>
-          <En>
-            <S N="Key">Workflow</S>
-            <Ref N="Value" RefId="5" />
-          </En>
-          <En>
             <S N="Key">Cmdlet</S>
-            <Obj N="Value" RefId="7">
+            <Obj N="Value" RefId="5">
               <TNRef RefId="2" />
               <LST>
                 <S>New-AzServiceBusNamespace</S>
@@ -178,11 +112,77 @@
           </En>
           <En>
             <S N="Key">Function</S>
-            <Ref N="Value" RefId="5" />
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
           </En>
           <En>
             <S N="Key">DscResource</S>
-            <Ref N="Value" RefId="5" />
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>New-AzServiceBusNamespace</S>
+                <S>Get-AzServiceBusNamespace</S>
+                <S>Set-AzServiceBusNamespace</S>
+                <S>Remove-AzServiceBusNamespace</S>
+                <S>New-AzServiceBusQueue</S>
+                <S>Get-AzServiceBusQueue</S>
+                <S>Set-AzServiceBusQueue</S>
+                <S>Remove-AzServiceBusQueue</S>
+                <S>New-AzServiceBusTopic</S>
+                <S>Get-AzServiceBusTopic</S>
+                <S>Set-AzServiceBusTopic</S>
+                <S>Remove-AzServiceBusTopic</S>
+                <S>New-AzServiceBusSubscription</S>
+                <S>Get-AzServiceBusSubscription</S>
+                <S>Set-AzServiceBusSubscription</S>
+                <S>Remove-AzServiceBusSubscription</S>
+                <S>New-AzServiceBusAuthorizationRule</S>
+                <S>Get-AzServiceBusAuthorizationRule</S>
+                <S>Set-AzServiceBusAuthorizationRule</S>
+                <S>Remove-AzServiceBusAuthorizationRule</S>
+                <S>New-AzServiceBusKey</S>
+                <S>Get-AzServiceBusKey</S>
+                <S>Get-AzServiceBusOperation</S>
+                <S>New-AzServiceBusRule</S>
+                <S>Get-AzServiceBusRule</S>
+                <S>Set-AzServiceBusRule</S>
+                <S>Remove-AzServiceBusRule</S>
+                <S>New-AzServiceBusGeoDRConfiguration</S>
+                <S>Get-AzServiceBusGeoDRConfiguration</S>
+                <S>Remove-AzServiceBusGeoDRConfiguration</S>
+                <S>Set-AzServiceBusGeoDRConfigurationBreakPair</S>
+                <S>Set-AzServiceBusGeoDRConfigurationFailOver</S>
+                <S>Test-AzServiceBusName</S>
+                <S>Get-AzServiceBusMigration</S>
+                <S>Stop-AzServiceBusMigration</S>
+                <S>Start-AzServiceBusMigration</S>
+                <S>Complete-AzServiceBusMigration</S>
+                <S>Remove-AzServiceBusMigration</S>
+                <S>Remove-AzServiceBusIPRule</S>
+                <S>Add-AzServiceBusIPRule</S>
+                <S>Remove-AzServiceBusVirtualNetworkRule</S>
+                <S>Add-AzServiceBusVirtualNetworkRule</S>
+                <S>Get-AzServiceBusNetworkRuleSet</S>
+                <S>Remove-AzServiceBusNetworkRuleSet</S>
+                <S>Set-AzServiceBusNetworkRuleSet</S>
+                <S>New-AzServiceBusAuthorizationRuleSASToken</S>
+                <S>Test-AzServiceBusNameAvailability</S>
+              </LST>
+            </Obj>
           </En>
         </DCT>
       </Obj>
@@ -228,15 +228,15 @@
           <S N="releaseNotes">* Fixed that 'New-AzServiceBusAuthorizationRuleSASToken' returns invalid token. [#12975]</S>
           <S N="isLatestVersion">True</S>
           <S N="isAbsoluteLatestVersion">True</S>
-          <S N="versionDownloadCount">437892</S>
-          <S N="downloadCount">20708702</S>
+          <S N="versionDownloadCount">2559050</S>
+          <S N="downloadCount">23462854</S>
           <S N="packageSize">254497</S>
           <S N="published">3/23/2021 8:09:49 AM -05:00</S>
           <S N="created">3/23/2021 8:09:49 AM -05:00</S>
-          <S N="lastUpdated">4/14/2021 5:47:00 PM -05:00</S>
+          <S N="lastUpdated">8/1/2021 11:59:33 PM -05:00</S>
           <S N="tags">Azure ResourceManager ARM ServiceBus PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_New-AzServiceBusNamespace PSCommand_New-AzServiceBusNamespace PSCmdlet_Get-AzServiceBusNamespace PSCommand_Get-AzServiceBusNamespace PSCmdlet_Set-AzServiceBusNamespace PSCommand_Set-AzServiceBusNamespace PSCmdlet_Remove-AzServiceBusNamespace PSCommand_Remove-AzServiceBusNamespace PSCmdlet_New-AzServiceBusQueue PSCommand_New-AzServiceBusQueue PSCmdlet_Get-AzServiceBusQueue PSCommand_Get-AzServiceBusQueue PSCmdlet_Set-AzServiceBusQueue PSCommand_Set-AzServiceBusQueue PSCmdlet_Remove-AzServiceBusQueue PSCommand_Remove-AzServiceBusQueue PSCmdlet_New-AzServiceBusTopic PSCommand_New-AzServiceBusTopic PSCmdlet_Get-AzServiceBusTopic PSCommand_Get-AzServiceBusTopic PSCmdlet_Set-AzServiceBusTopic PSCommand_Set-AzServiceBusTopic PSCmdlet_Remove-AzServiceBusTopic PSCommand_Remove-AzServiceBusTopic PSCmdlet_New-AzServiceBusSubscription PSCommand_New-AzServiceBusSubscription PSCmdlet_Get-AzServiceBusSubscription PSCommand_Get-AzServiceBusSubscription PSCmdlet_Set-AzServiceBusSubscription PSCommand_Set-AzServiceBusSubscription PSCmdlet_Remove-AzServiceBusSubscription PSCommand_Remove-AzServiceBusSubscription PSCmdlet_New-AzServiceBusAuthorizationRule PSCommand_New-AzServiceBusAuthorizationRule PSCmdlet_Get-AzServiceBusAuthorizationRule PSCommand_Get-AzServiceBusAuthorizationRule PSCmdlet_Set-AzServiceBusAuthorizationRule PSCommand_Set-AzServiceBusAuthorizationRule PSCmdlet_Remove-AzServiceBusAuthorizationRule PSCommand_Remove-AzServiceBusAuthorizationRule PSCmdlet_New-AzServiceBusKey PSCommand_New-AzServiceBusKey PSCmdlet_Get-AzServiceBusKey PSCommand_Get-AzServiceBusKey PSCmdlet_Get-AzServiceBusOperation PSCommand_Get-AzServiceBusOperation PSCmdlet_New-AzServiceBusRule PSCommand_New-AzServiceBusRule PSCmdlet_Get-AzServiceBusRule PSCommand_Get-AzServiceBusRule PSCmdlet_Set-AzServiceBusRule PSCommand_Set-AzServiceBusRule PSCmdlet_Remove-AzServiceBusRule PSCommand_Remove-AzServiceBusRule PSCmdlet_New-AzServiceBusGeoDRConfiguration PSCommand_New-AzServiceBusGeoDRConfiguration PSCmdlet_Get-AzServiceBusGeoDRConfiguration PSCommand_Get-AzServiceBusGeoDRConfiguration PSCmdlet_Remove-AzServiceBusGeoDRConfiguration PSCommand_Remove-AzServiceBusGeoDRConfiguration PSCmdlet_Set-AzServiceBusGeoDRConfigurationBreakPair PSCommand_Set-AzServiceBusGeoDRConfigurationBreakPair PSCmdlet_Set-AzServiceBusGeoDRConfigurationFailOver PSCommand_Set-AzServiceBusGeoDRConfigurationFailOver PSCmdlet_Test-AzServiceBusName PSCommand_Test-AzServiceBusName PSCmdlet_Get-AzServiceBusMigration PSCommand_Get-AzServiceBusMigration PSCmdlet_Stop-AzServiceBusMigration PSCommand_Stop-AzServiceBusMigration PSCmdlet_Start-AzServiceBusMigration PSCommand_Start-AzServiceBusMigration PSCmdlet_Complete-AzServiceBusMigration PSCommand_Complete-AzServiceBusMigration PSCmdlet_Remove-AzServiceBusMigration PSCommand_Remove-AzServiceBusMigration PSCmdlet_Remove-AzServiceBusIPRule PSCommand_Remove-AzServiceBusIPRule PSCmdlet_Add-AzServiceBusIPRule PSCommand_Add-AzServiceBusIPRule PSCmdlet_Remove-AzServiceBusVirtualNetworkRule PSCommand_Remove-AzServiceBusVirtualNetworkRule PSCmdlet_Add-AzServiceBusVirtualNetworkRule PSCommand_Add-AzServiceBusVirtualNetworkRule PSCmdlet_Get-AzServiceBusNetworkRuleSet PSCommand_Get-AzServiceBusNetworkRuleSet PSCmdlet_Remove-AzServiceBusNetworkRuleSet PSCommand_Remove-AzServiceBusNetworkRuleSet PSCmdlet_Set-AzServiceBusNetworkRuleSet PSCommand_Set-AzServiceBusNetworkRuleSet PSCmdlet_New-AzServiceBusAuthorizationRuleSASToken PSCommand_New-AzServiceBusAuthorizationRuleSASToken PSCmdlet_Test-AzServiceBusNameAvailability PSCommand_Test-AzServiceBusNameAvailability PSIncludes_Cmdlet</S>
           <S N="developmentDependency">False</S>
-          <S N="updated">2021-04-14T17:47:00Z</S>
+          <S N="updated">2021-08-01T23:59:33Z</S>
           <S N="NormalizedVersion">1.5.0</S>
           <S N="Authors">Microsoft Corporation</S>
           <S N="IsPrerelease">false</S>
@@ -248,7 +248,7 @@
           <S N="CompanyName">Microsoft Corporation</S>
         </MS>
       </Obj>
-      <S N="InstalledLocation">C:\Users\admin-taylor\Documents\PowerShell\Modules\Az.ServiceBus\1.5.0</S>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\Az.ServiceBus\1.5.0</S>
     </MS>
   </Obj>
 </Objs>

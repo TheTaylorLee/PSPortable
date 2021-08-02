@@ -26,3 +26,4 @@
      - 1.20.0 Updated Admintoolbox.FortiWizard and Admintoolbox Modules
      - 1.21.0 Update all Admintoolbox Modules
      - 1.22.0 Updated Admintoolbox.FortiWizard and Admintoolbox Modules
+     - 2.0.0  Updated modules versions, and Pwsh to version 7.2.0-preview.8

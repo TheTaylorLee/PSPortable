@@ -1955,20 +1955,6 @@
             <param name="codePage"></param>
             <returns></returns>
         </member>
-        <member name="M:Microsoft.PowerShell.ConsoleControl.SetConsoleCursorPosition(Microsoft.Win32.SafeHandles.SafeFileHandle,System.Management.Automation.Host.Coordinates)">
-            <summary>
-            Wraps Win32 SetConsoleCursorPosition.
-            </summary>
-            <param name="consoleHandle">
-            handle for the console where cursor position is set
-            </param>
-            <param name="cursorPosition">
-            location to which the cursor will be set
-            </param>
-            <exception cref="T:System.Management.Automation.Host.HostException">
-            If Win32's SetConsoleCursorPosition fails
-            </exception>
-        </member>
         <member name="M:Microsoft.PowerShell.ConsoleControl.GetConsoleCursorInfo(Microsoft.Win32.SafeHandles.SafeFileHandle)">
             <summary>
             Wraps Win32 GetConsoleCursorInfo.
@@ -4168,7 +4154,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.StopTranscriptCommand.BeginProcessing">
             <summary>
-            Starts the transcription.
+            Stops the transcription.
             </summary>
         </member>
         <member name="T:Microsoft.PowerShell.UpdatesNotification">

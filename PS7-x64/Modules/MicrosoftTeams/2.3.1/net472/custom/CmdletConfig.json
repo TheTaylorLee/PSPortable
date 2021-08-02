@@ -1,0 +1,2174 @@
+{
+  "InternalFunctionsToExport": [
+    "Grant-CsBatchPolicy"
+  ],
+  "InternalCmdletsToExport": [
+    "Connect-CsConfigAPI",
+    "Disconnect-CsConfigAPI",
+    "Get-CsTenantObou",
+    "Get-CsUser",
+    "Get-CsInternalConfigApiModuleVersion"
+  ],
+  "FunctionsToExport": [
+    "Get-CsBatchPolicyAssignmentOperation",
+    "New-CsBatchPolicyAssignmentOperation",
+    "New-CsBatchPolicyPackageAssignmentOperation",
+    "New-CsCustomPolicyPackage",
+    "Remove-CsCustomPolicyPackage",
+    "Update-CsCustomPolicyPackage",
+    "Get-CsGroupPolicyAssignment",
+    "New-CsGroupPolicyAssignment",
+    "Remove-CsGroupPolicyAssignment",
+    "Grant-CsGroupPolicyPackageAssignment",
+    "Get-CsPolicyPackage",
+    "Get-CsUserPolicyAssignment",
+    "Get-CsUserPolicyPackage",
+    "Get-CsTeamTemplateList",
+    "Get-CsTeamTemplate",
+    "Update-CsTeamTemplate",
+    "Remove-CsTeamTemplate",
+    "New-CsTeamTemplate",
+    "Get-CsUserPolicyPackageRecommendation",
+    "Grant-CsUserPolicyPackage"
+  ],
+  "CmdletsToExport": [
+    "Get-CsOnlinePowerShellEndpoint",
+    "Move-CsInternalHelper",
+    "Set-CsInternalOnlinePowerShellEndpoint",
+    "Invoke-CsInternalPSTelemetry"
+  ],
+  "TrpsCmdletConfiguration": {
+    "Clear-CsOnlineTelephoneNumberReservation": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "ConvertTo-JsonForPSWS": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Disable-CsMeetingRoom": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Disable-CsOnlineDialInConferencingUser": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Disable-CsOnlineSipDomain": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Enable-CsMeetingRoom": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Enable-CsOnlineDialInConferencingUser": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Enable-CsOnlineSipDomain": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Export-CsAutoAttendantHolidays": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Export-CsOrganizationalAutoAttendantHolidays": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Find-CsGroup": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Find-CsOnlineApplicationInstance": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsApplicationAccessPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsApplicationMeetingConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsAudioConferencingProvider": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsAutoAttendant": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsAutoAttendantHolidays": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsAutoAttendantStatus": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsAutoAttendantSupportedLanguage": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsAutoAttendantSupportedTimeZone": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsAutoAttendantTenantInformation": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsBroadcastMeetingConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsBroadcastMeetingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsCallingLineIdentity": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsCallQueue": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsClientPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsCloudCallDataConnection": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsCloudMeetingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsConferencingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsDefaultCatalogApp": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsDialPlan": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsEffectiveTenantDialPlan": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsExternalAccessPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsExternalUserCommunicationPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsGlobalCatalogApp": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsGraphPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsHostedVoicemailPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsHostingProvider": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsHuntGroup": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsHuntGroupTenantInformation": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsHybridMediationServer": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsHybridPSTNAppliance": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsHybridPSTNSite": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsImFilterConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsInboundBlockedNumberPattern": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsInboundExemptNumberPattern": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsIPPhonePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsMeetingConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsMeetingMigrationStatus": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsMeetingRoom": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsMobilityPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsNetworkConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOAuthConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineApplicationEndpoint": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineApplicationInstance": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineApplicationInstanceAssociation": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineApplicationInstanceAssociationStatus": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineAudioConferencingRoutingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineDialInConferencingBridge": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineDialInConferencingLanguagesSupported": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineDialinConferencingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineDialInConferencingServiceNumber": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineDialinConferencingTenantConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineDialInConferencingTenantSettings": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineDialInConferencingUser": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineDialInConferencingUserInfo": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineDialInConferencingUserState": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineDialOutPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineDirectoryTenant": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineDirectoryTenantNumberCities": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineEnhancedEmergencyServiceDisclaimer": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineLisCivicAddress": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineLisLocation": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineLisPort": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineLisSubnet": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineLisSwitch": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineLisWirelessAccessPoint": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineNumberPortInOrder": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineNumberPortOutOrderPin": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlinePSTNGateway": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlinePstnUsage": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineSchedule": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineSipDomain": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineTelephoneNumber": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineTelephoneNumberAvailableCount": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineTelephoneNumberInventoryAreas": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineTelephoneNumberInventoryCities": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineTelephoneNumberInventoryCountries": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineTelephoneNumberInventoryRegions": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineTelephoneNumberInventoryTypes": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineTelephoneNumberReservationsInformation": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineUser": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineVoicemailPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineVoicemailUserSettings": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineVoiceRoute": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineVoiceRoutingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOnlineVoiceUser": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOrganizationalAutoAttendant": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOrganizationalAutoAttendantHolidays": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOrganizationalAutoAttendantStatus": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOrganizationalAutoAttendantSupportedLanguage": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOrganizationalAutoAttendantSupportedTimeZone": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsOrganizationalAutoAttendantTenantInformation": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsPresencePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsPrivacyConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsPushNotificationConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsAcsFederationConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsAppPermissionPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsAppPreset": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsAppSetupPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsCallHoldPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsCallingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsCallParkPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsChannelsPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsClientConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsComplianceRecordingApplication": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsComplianceRecordingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsCortanaPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsEducationAssignmentsAppPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsEmergencyCallingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsEmergencyCallRoutingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsFeedbackPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsGuestCallingConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsGuestMeetingConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsGuestMessagingConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsIPPhonePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsMeetingBroadcastConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsMeetingBroadcastPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsMeetingConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsMeetingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsMessagingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsMigrationConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsMobilityPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsNetworkRoamingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsNotificationAndFeedsPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsPinnedApp": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsShiftsAppPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsShiftsPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsSurvivableBranchAppliance": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsSurvivableBranchAppliancePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsTargetingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsTranslationRule": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsUpdateManagementPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsUpgradeConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsUpgradePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsUpgradeStatus": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsVdiPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsVerticalPackagePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsVideoInteropServicePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTeamsWorkLoadPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTenant": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTenantBlockedCallingNumbers": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTenantBlockedNumberExceptionPattern": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTenantCatalogApp": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTenantDialPlan": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTenantFederationConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTenantHybridConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTenantLicensingConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTenantMigrationConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTenantNetworkConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTenantNetworkPostalCode": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTenantNetworkRegion": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTenantNetworkSite": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTenantNetworkSubnet": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTenantPublicProvider": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTenantTrustedIPAddress": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsTenantUpdateTimeWindow": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsUCPhoneConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsUserAcp": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsUserLocationStatus": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsUserPstnSettings": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsUserServicesPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsVideoInteropServiceProvider": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsVoiceNormalizationRule": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Get-CsVoiceRoutingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsApplicationAccessPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsBroadcastMeetingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsCallingLineIdentity": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsClientPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsCloudMeetingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsConferencingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsDialoutPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsExternalAccessPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsExternalUserCommunicationPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsGraphPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsHostedVoicemailPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsIPPhonePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsMobilityPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsOnlineAudioConferencingRoutingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsOnlineVoicemailPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsOnlineVoiceRoutingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsAppPermissionPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsAppSetupPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsCallHoldPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsCallingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsCallParkPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsChannelsPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsComplianceRecordingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsCortanaPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsEmergencyCallingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsEmergencyCallRoutingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsFeedbackPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsIPPhonePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsMeetingBroadcastPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsMeetingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsMessagingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsMobilityPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsShiftsPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsSurvivableBranchAppliancePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsUpdateManagementPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsUpgradePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsVdiPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsVerticalPackagePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsVideoInteropServicePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTeamsWorkLoadPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsTenantDialPlan": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Grant-CsVoiceRoutingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Import-CsAutoAttendantHolidays": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Import-CsOnlineAudioFile": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Import-CsOrganizationalAutoAttendantHolidays": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Invoke-CsUcsRollback": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Invoke-CsUserPreferredDataLocationSync": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsApplicationAccessPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsAutoAttendant": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsAutoAttendantCallableEntity": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsAutoAttendantCallFlow": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsAutoAttendantCallHandlingAssociation": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsAutoAttendantDialScope": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsAutoAttendantMenu": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsAutoAttendantMenuOption": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsAutoAttendantPrompt": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsCallingLineIdentity": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsCallQueue": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsClientPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsCloudCallDataConnection": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsConferencingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsDefaultCatalogApp": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsEdgeAllowAllKnownDomains": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsEdgeAllowList": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsEdgeDomainPattern": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsExternalAccessPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsExternalUserCommunicationPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsGlobalCatalogApp": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsHuntGroup": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsHybridPSTNSite": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsHybridTelephoneNumber": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsInboundBlockedNumberPattern": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsInboundExemptNumberPattern": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsMobilityPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsNetworkMediaBypassConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOnlineApplicationEndpoint": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOnlineApplicationInstance": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOnlineApplicationInstanceAssociation": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOnlineAudioConferencingRoutingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOnlineAudioFile": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOnlineBulkAssignmentInput": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOnlineDateTimeRange": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOnlineLisCivicAddress": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOnlineLisLocation": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOnlineNumberPortInOrder": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOnlinePSTNGateway": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOnlineSchedule": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOnlineTimeRange": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOnlineVoicemailPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOnlineVoiceRoute": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOnlineVoiceRoutingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOrganizationalAutoAttendant": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOrganizationalAutoAttendantCallableEntity": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOrganizationalAutoAttendantCallFlow": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOrganizationalAutoAttendantCallHandlingAssociation": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOrganizationalAutoAttendantDialScope": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOrganizationalAutoAttendantMenu": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOrganizationalAutoAttendantMenuOption": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsOrganizationalAutoAttendantPrompt": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsAppPermissionPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsAppPreset": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsAppSetupPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsCallHoldPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsCallingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsCallParkPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsChannelsPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsComplianceRecordingApplication": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsComplianceRecordingPairedApplication": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsComplianceRecordingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsCortanaPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsEmergencyCallingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsEmergencyCallRoutingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsEmergencyNumber": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsFeedbackPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsIPPhonePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsMeetingBroadcastPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsMeetingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsMessagingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsMobilityPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsNetworkRoamingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsPinnedApp": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsShiftsPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsSurvivableBranchAppliance": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsSurvivableBranchAppliancePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsTranslationRule": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsUpdateManagementPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsVdiPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsVerticalPackagePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTeamsWorkLoadPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTenantBlockedNumberExceptionPattern": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTenantCatalogApp": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTenantDialPlan": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTenantNetworkPostalCode": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTenantNetworkRegion": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTenantNetworkSite": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTenantNetworkSubnet": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTenantTrustedIPAddress": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsTenantUpdateTimeWindow": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsVideoInteropServiceProvider": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "New-CsVoiceNormalizationRule": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Register-CsHybridPSTNAppliance": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Register-CsOnlineDialInConferencingServiceNumber": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsApplicationAccessPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsAutoAttendant": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsCallingLineIdentity": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsCallQueue": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsClientPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsConferencingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsDefaultCatalogApp": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsExternalAccessPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsExternalUserCommunicationPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsGlobalCatalogApp": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsHuntGroup": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsHybridPSTNSite": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsHybridTelephoneNumber": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsInboundBlockedNumberPattern": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsInboundExemptNumberPattern": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsMobilityPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsOnlineApplicationEndpoint": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsOnlineApplicationInstanceAssociation": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsOnlineAudioConferencingRoutingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsOnlineDialInConferencingTenantSettings": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsOnlineLisCivicAddress": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsOnlineLisLocation": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsOnlineLisPort": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsOnlineLisSubnet": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsOnlineLisSwitch": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsOnlineLisWirelessAccessPoint": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsOnlineNumberPortInOrder": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsOnlinePSTNGateway": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsOnlineSchedule": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsOnlineTelephoneNumber": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsOnlineVoicemailPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsOnlineVoiceRoute": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsOnlineVoiceRoutingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsOrganizationalAutoAttendant": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsAppPermissionPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsAppPreset": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsAppSetupPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsCallHoldPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsCallingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsCallParkPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsChannelsPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsComplianceRecordingApplication": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsComplianceRecordingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsCortanaPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsEmergencyCallingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsEmergencyCallRoutingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsFeedbackPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsIPPhonePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsMeetingBroadcastPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsMeetingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsMessagingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsMobilityPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsNetworkRoamingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsNotificationAndFeedsPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsPinnedApp": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsShiftsPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsSurvivableBranchAppliance": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsSurvivableBranchAppliancePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsTargetingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsTranslationRule": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsUpdateManagementPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsVdiPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsVerticalPackagePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTeamsWorkLoadPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTenantBlockedNumberExceptionPattern": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTenantCatalogApp": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTenantDialPlan": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTenantNetworkConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTenantNetworkPostalCode": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTenantNetworkRegion": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTenantNetworkSite": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTenantNetworkSubnet": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTenantTrustedIPAddress": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsTenantUpdateTimeWindow": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsUserAcp": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsVideoInteropServiceProvider": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Remove-CsVoiceNormalizationRule": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Search-CsOnlineTelephoneNumberInventory": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Select-CsOnlineTelephoneNumberInventory": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsApplicationAccessPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsApplicationMeetingConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsAutoAttendant": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsBroadcastMeetingConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsCallingLineIdentity": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsCallQueue": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsCceApplianceConfigurationReplicationStatus": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsCceApplianceDeploymentStatus": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsCceApplianceStatus": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsClientPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsConferencingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsDefaultCatalogApp": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsExternalAccessPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsExternalUserCommunicationPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsGlobalCatalogApp": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsHuntGroup": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsHybridMediationServer": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsHybridPSTNAppliance": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsHybridPSTNSite": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsInboundBlockedNumberPattern": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsInboundExemptNumberPattern": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsIPPhonePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsMeetingConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsMeetingRoom": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsMobilityPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsNetworkConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOAuthConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineApplicationEndpoint": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineApplicationInstance": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineAudioConferencingRoutingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineDialInConferencingBridge": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineDialInConferencingServiceNumber": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineDialInConferencingTenantSettings": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineDialInConferencingUser": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineDialInConferencingUserDefaultNumber": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineDirectoryUser": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineEnhancedEmergencyServiceDisclaimer": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineLisCivicAddress": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineLisLocation": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineLisPort": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineLisSubnet": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineLisSwitch": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineLisWirelessAccessPoint": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineNumberPortInOrder": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineNumberPortOutOrderPin": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlinePSTNGateway": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlinePstnUsage": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineSchedule": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineVoiceApplicationInstance": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineVoicemailPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineVoicemailUserSettings": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineVoiceRoute": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineVoiceRoutingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineVoiceUser": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOnlineVoiceUserBulk": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsOrganizationalAutoAttendant": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsPrivacyConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsPushNotificationConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsAcsFederationConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsAppPermissionPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsAppPreset": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsAppSetupPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsCallHoldPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsCallingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsCallParkPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsChannelsPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsClientConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsComplianceRecordingApplication": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsComplianceRecordingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsCortanaPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsEducationAssignmentsAppPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsEmergencyCallingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsEmergencyCallRoutingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsFeedbackPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsGuestCallingConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsGuestMeetingConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsGuestMessagingConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsIPPhonePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsMeetingBroadcastConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsMeetingBroadcastPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsMeetingConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsMeetingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsMessagingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsMigrationConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsMobilityPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsNetworkRoamingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsNotificationAndFeedsPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsPinnedApp": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsShiftsAppPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsShiftsPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsSurvivableBranchAppliance": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsSurvivableBranchAppliancePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsTargetingPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsTranslationRule": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsUpdateManagementPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsUpgradeConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsUpgradeStatus": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsVdiPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsVerticalPackagePolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTeamsWorkLoadPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTenantBlockedCallingNumbers": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTenantBlockedNumberExceptionPattern": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTenantCatalogApp": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTenantDialPlan": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTenantFederationConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTenantHybridConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTenantMigrationConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTenantNetworkConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTenantNetworkPostalCode": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTenantNetworkRegion": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTenantNetworkSite": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTenantNetworkSubnet": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTenantPublicProvider": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTenantTrustedIPAddress": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsTenantUpdateTimeWindow": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsUCPhoneConfiguration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsUser": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsUserAcp": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsUserPstnSettings": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsUserServicesPolicy": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsVideoInteropServiceProvider": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Set-CsVoiceNormalizationRule": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Start-CsExMeetingMigration": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Switch-CsOnlineApplicationEndpoint": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Sync-CsOnlineApplicationInstance": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Test-CsEffectiveTenantDialPlan": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Test-CsInboundBlockedNumberPattern": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Test-CsOnlineCarrierPortabilityIn": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Test-CsOnlineLisCivicAddress": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Test-CsOnlinePortabilityIn": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Test-CsVoiceNormalizationRule": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Unregister-CsHybridPSTNAppliance": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Unregister-CsOnlineDialInConferencingServiceNumber": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Update-CsAutoAttendant": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Update-CsOrganizationalAutoAttendant": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    },
+    "Update-CsTenantMeetingUrl": {
+      "HideInRemoteSession": true,
+      "NewCmdlet": ""
+    }
+  }
+}

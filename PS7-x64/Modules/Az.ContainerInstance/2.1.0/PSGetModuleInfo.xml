@@ -1,0 +1,200 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.ContainerInstance</S>
+      <Version N="Version">2.1.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell: ContainerInstance cmdlets</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2021-06-15T05:10:29-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2021-08-01T19:02:46.4897223-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>PSModule</S>
+          <S>ContainerInstance</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-AzContainerInstanceOutput</S>
+                <S>Get-AzContainerGroup</S>
+                <S>Get-AzContainerInstanceCachedImage</S>
+                <S>Get-AzContainerInstanceCapability</S>
+                <S>Get-AzContainerInstanceLog</S>
+                <S>Get-AzContainerInstanceUsage</S>
+                <S>Invoke-AzContainerInstanceCommand</S>
+                <S>New-AzContainerGroup</S>
+                <S>New-AzContainerGroupImageRegistryCredentialObject</S>
+                <S>New-AzContainerGroupPortObject</S>
+                <S>New-AzContainerGroupVolumeObject</S>
+                <S>New-AzContainerInstanceEnvironmentVariableObject</S>
+                <S>New-AzContainerInstanceInitDefinitionObject</S>
+                <S>New-AzContainerInstanceObject</S>
+                <S>New-AzContainerInstancePortObject</S>
+                <S>New-AzContainerInstanceVolumeMountObject</S>
+                <S>Remove-AzContainerGroup</S>
+                <S>Start-AzContainerGroup</S>
+                <S>Stop-AzContainerGroup</S>
+                <S>Update-AzContainerGroup</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-AzContainerInstanceOutput</S>
+                <S>Get-AzContainerGroup</S>
+                <S>Get-AzContainerInstanceCachedImage</S>
+                <S>Get-AzContainerInstanceCapability</S>
+                <S>Get-AzContainerInstanceLog</S>
+                <S>Get-AzContainerInstanceUsage</S>
+                <S>Invoke-AzContainerInstanceCommand</S>
+                <S>New-AzContainerGroup</S>
+                <S>New-AzContainerGroupImageRegistryCredentialObject</S>
+                <S>New-AzContainerGroupPortObject</S>
+                <S>New-AzContainerGroupVolumeObject</S>
+                <S>New-AzContainerInstanceEnvironmentVariableObject</S>
+                <S>New-AzContainerInstanceInitDefinitionObject</S>
+                <S>New-AzContainerInstanceObject</S>
+                <S>New-AzContainerInstancePortObject</S>
+                <S>New-AzContainerInstanceVolumeMountObject</S>
+                <S>Remove-AzContainerGroup</S>
+                <S>Start-AzContainerGroup</S>
+                <S>Stop-AzContainerGroup</S>
+                <S>Update-AzContainerGroup</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Removed the display of file share credential [#15224]</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">2.4.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/2.4.0</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell: ContainerInstance cmdlets</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Removed the display of file share credential [#15224]</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">756263</S>
+          <S N="downloadCount">23464939</S>
+          <S N="packageSize">532345</S>
+          <S N="published">6/15/2021 5:10:29 AM -05:00</S>
+          <S N="created">6/15/2021 5:10:29 AM -05:00</S>
+          <S N="lastUpdated">8/1/2021 11:59:33 PM -05:00</S>
+          <S N="tags">Azure ResourceManager ARM PSModule ContainerInstance PSEdition_Core PSEdition_Desktop PSFunction_Add-AzContainerInstanceOutput PSCommand_Add-AzContainerInstanceOutput PSFunction_Get-AzContainerGroup PSCommand_Get-AzContainerGroup PSFunction_Get-AzContainerInstanceCachedImage PSCommand_Get-AzContainerInstanceCachedImage PSFunction_Get-AzContainerInstanceCapability PSCommand_Get-AzContainerInstanceCapability PSFunction_Get-AzContainerInstanceLog PSCommand_Get-AzContainerInstanceLog PSFunction_Get-AzContainerInstanceUsage PSCommand_Get-AzContainerInstanceUsage PSFunction_Invoke-AzContainerInstanceCommand PSCommand_Invoke-AzContainerInstanceCommand PSFunction_New-AzContainerGroup PSCommand_New-AzContainerGroup PSFunction_New-AzContainerGroupImageRegistryCredentialObject PSCommand_New-AzContainerGroupImageRegistryCredentialObject PSFunction_New-AzContainerGroupPortObject PSCommand_New-AzContainerGroupPortObject PSFunction_New-AzContainerGroupVolumeObject PSCommand_New-AzContainerGroupVolumeObject PSFunction_New-AzContainerInstanceEnvironmentVariableObject PSCommand_New-AzContainerInstanceEnvironmentVariableObject PSFunction_New-AzContainerInstanceInitDefinitionObject PSCommand_New-AzContainerInstanceInitDefinitionObject PSFunction_New-AzContainerInstanceObject PSCommand_New-AzContainerInstanceObject PSFunction_New-AzContainerInstancePortObject PSCommand_New-AzContainerInstancePortObject PSFunction_New-AzContainerInstanceVolumeMountObject PSCommand_New-AzContainerInstanceVolumeMountObject PSFunction_Remove-AzContainerGroup PSCommand_Remove-AzContainerGroup PSFunction_Start-AzContainerGroup PSCommand_Start-AzContainerGroup PSFunction_Stop-AzContainerGroup PSCommand_Stop-AzContainerGroup PSFunction_Update-AzContainerGroup PSCommand_Update-AzContainerGroup PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2021-08-01T23:59:33Z</S>
+          <S N="NormalizedVersion">2.1.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.ContainerInstance.nuspec|Az.ContainerInstance.format.ps1xml|Az.ContainerInstance.psd1|Az.ContainerInstance.psm1|bin\Az.ContainerInstance.private.deps.json|bin\Az.ContainerInstance.private.dll|custom\Az.ContainerInstance.custom.psm1|custom\Invoke-AzContainerInstanceCommand.ps1|custom\New-AzContainerGroup.ps1|custom\New-AzContainerGroupImageRegistryCredentialObject.ps1|custom\New-AzContainerGroupPortObject.ps1|custom\New-AzContainerGroupVolumeObject.ps1|custom\New-AzContainerInstanceEnvironmentVariableObject.ps1|custom\New-AzContainerInstanceInitDefinitionObject.ps1|custom\New-AzContainerInstanceObject.ps1|custom\New-AzContainerInstancePortObject.ps1|custom\New-AzContainerInstanceVolumeMountObject.ps1|custom\SpecialHandlerToRemoveDefaultValue.cs|exports\ProxyCmdletDefinitions.ps1|internal\Az.ContainerInstance.internal.psm1|internal\ProxyCmdletDefinitions.ps1|utils\Unprotect-SecureString.ps1</S>
+          <S N="GUID">ddf74844-4a25-4263-8a5c-f27979292e4e</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\Az.ContainerInstance\2.1.0</S>
+    </MS>
+  </Obj>
+</Objs>

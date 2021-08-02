@@ -1,0 +1,262 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">ImportExcel</S>
+      <Version N="Version">7.2.2</Version>
+      <S N="Type">Module</S>
+      <S N="Description">PowerShell module to import/export Excel spreadsheets, without Excel._x000D__x000A_Check out the How To Videos https://www.youtube.com/watch?v=U3Ne_yX4tYo&amp;list=PL5uoqS92stXioZw-u-ze_NtvSo0k0K0kq</S>
+      <S N="Author">Douglas Finke</S>
+      <S N="CompanyName">DougFinke</S>
+      <S N="Copyright">c 2020 All rights reserved.</S>
+      <DT N="PublishedDate">2021-07-30T23:29:18-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2021-08-01T19:07:58.1392475-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/dfinke/ImportExcel/blob/master/LICENSE.txt</URI>
+      <URI N="ProjectUri">https://github.com/dfinke/ImportExcel</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Excel</S>
+          <S>EPPlus</S>
+          <S>Export</S>
+          <S>Import</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-ConditionalFormatting</S>
+                <S>Add-ExcelChart</S>
+                <S>Add-ExcelDataValidationRule</S>
+                <S>Add-ExcelName</S>
+                <S>Add-ExcelTable</S>
+                <S>Add-PivotTable</S>
+                <S>Add-Worksheet</S>
+                <S>BarChart</S>
+                <S>Close-ExcelPackage</S>
+                <S>ColumnChart</S>
+                <S>Compare-Worksheet</S>
+                <S>Convert-ExcelRangeToImage</S>
+                <S>ConvertFrom-ExcelData</S>
+                <S>ConvertFrom-ExcelSheet</S>
+                <S>ConvertFrom-ExcelToSQLInsert</S>
+                <S>ConvertTo-ExcelXlsx</S>
+                <S>Copy-ExcelWorksheet</S>
+                <S>DoChart</S>
+                <S>Expand-NumberFormat</S>
+                <S>Export-Excel</S>
+                <S>Export-ExcelSheet</S>
+                <S>Get-ExcelColumnName</S>
+                <S>Get-ExcelFileSummary</S>
+                <S>Get-ExcelSheetInfo</S>
+                <S>Get-ExcelWorkbookInfo</S>
+                <S>Get-HtmlTable</S>
+                <S>Get-Range</S>
+                <S>Get-XYRange</S>
+                <S>Import-Excel</S>
+                <S>Import-Html</S>
+                <S>Import-UPS</S>
+                <S>Import-USPS</S>
+                <S>Invoke-AllTests</S>
+                <S>Invoke-Sum</S>
+                <S>Join-Worksheet</S>
+                <S>LineChart</S>
+                <S>Merge-MultipleSheets</S>
+                <S>Merge-Worksheet</S>
+                <S>New-ConditionalFormattingIconSet</S>
+                <S>New-ConditionalText</S>
+                <S>New-ExcelChartDefinition</S>
+                <S>New-ExcelStyle</S>
+                <S>New-PivotTableDefinition</S>
+                <S>New-Plot</S>
+                <S>New-PSItem</S>
+                <S>Open-ExcelPackage</S>
+                <S>PieChart</S>
+                <S>Pivot</S>
+                <S>Read-Clipboard</S>
+                <S>ReadClipboardImpl</S>
+                <S>Remove-Worksheet</S>
+                <S>Select-Worksheet</S>
+                <S>Send-SQLDataToExcel</S>
+                <S>Set-CellStyle</S>
+                <S>Set-ExcelColumn</S>
+                <S>Set-ExcelRange</S>
+                <S>Set-ExcelRow</S>
+                <S>Set-WorksheetProtection</S>
+                <S>Test-Boolean</S>
+                <S>Test-Date</S>
+                <S>Test-Integer</S>
+                <S>Test-Number</S>
+                <S>Test-String</S>
+                <S>Update-FirstObjectProperties</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-ConditionalFormatting</S>
+                <S>Add-ExcelChart</S>
+                <S>Add-ExcelDataValidationRule</S>
+                <S>Add-ExcelName</S>
+                <S>Add-ExcelTable</S>
+                <S>Add-PivotTable</S>
+                <S>Add-Worksheet</S>
+                <S>BarChart</S>
+                <S>Close-ExcelPackage</S>
+                <S>ColumnChart</S>
+                <S>Compare-Worksheet</S>
+                <S>Convert-ExcelRangeToImage</S>
+                <S>ConvertFrom-ExcelData</S>
+                <S>ConvertFrom-ExcelSheet</S>
+                <S>ConvertFrom-ExcelToSQLInsert</S>
+                <S>ConvertTo-ExcelXlsx</S>
+                <S>Copy-ExcelWorksheet</S>
+                <S>DoChart</S>
+                <S>Expand-NumberFormat</S>
+                <S>Export-Excel</S>
+                <S>Export-ExcelSheet</S>
+                <S>Get-ExcelColumnName</S>
+                <S>Get-ExcelFileSummary</S>
+                <S>Get-ExcelSheetInfo</S>
+                <S>Get-ExcelWorkbookInfo</S>
+                <S>Get-HtmlTable</S>
+                <S>Get-Range</S>
+                <S>Get-XYRange</S>
+                <S>Import-Excel</S>
+                <S>Import-Html</S>
+                <S>Import-UPS</S>
+                <S>Import-USPS</S>
+                <S>Invoke-AllTests</S>
+                <S>Invoke-Sum</S>
+                <S>Join-Worksheet</S>
+                <S>LineChart</S>
+                <S>Merge-MultipleSheets</S>
+                <S>Merge-Worksheet</S>
+                <S>New-ConditionalFormattingIconSet</S>
+                <S>New-ConditionalText</S>
+                <S>New-ExcelChartDefinition</S>
+                <S>New-ExcelStyle</S>
+                <S>New-PivotTableDefinition</S>
+                <S>New-Plot</S>
+                <S>New-PSItem</S>
+                <S>Open-ExcelPackage</S>
+                <S>PieChart</S>
+                <S>Pivot</S>
+                <S>Read-Clipboard</S>
+                <S>ReadClipboardImpl</S>
+                <S>Remove-Worksheet</S>
+                <S>Select-Worksheet</S>
+                <S>Send-SQLDataToExcel</S>
+                <S>Set-CellStyle</S>
+                <S>Set-ExcelColumn</S>
+                <S>Set-ExcelRange</S>
+                <S>Set-ExcelRow</S>
+                <S>Set-WorksheetProtection</S>
+                <S>Test-Boolean</S>
+                <S>Test-Date</S>
+                <S>Test-Integer</S>
+                <S>Test-Number</S>
+                <S>Test-String</S>
+                <S>Update-FirstObjectProperties</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">c 2020 All rights reserved.</S>
+          <S N="description">PowerShell module to import/export Excel spreadsheets, without Excel._x000D__x000A_Check out the How To Videos https://www.youtube.com/watch?v=U3Ne_yX4tYo&amp;list=PL5uoqS92stXioZw-u-ze_NtvSo0k0K0kq</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">1245</S>
+          <S N="downloadCount">957626</S>
+          <S N="packageSize">23963623</S>
+          <S N="published">7/30/2021 11:29:18 PM -05:00</S>
+          <S N="created">7/30/2021 11:29:18 PM -05:00</S>
+          <S N="lastUpdated">8/2/2021 12:04:33 AM -05:00</S>
+          <S N="tags">Excel EPPlus Export Import PSModule PSFunction_Add-ConditionalFormatting PSCommand_Add-ConditionalFormatting PSFunction_Add-ExcelChart PSCommand_Add-ExcelChart PSFunction_Add-ExcelDataValidationRule PSCommand_Add-ExcelDataValidationRule PSFunction_Add-ExcelName PSCommand_Add-ExcelName PSFunction_Add-ExcelTable PSCommand_Add-ExcelTable PSFunction_Add-PivotTable PSCommand_Add-PivotTable PSFunction_Add-Worksheet PSCommand_Add-Worksheet PSFunction_BarChart PSCommand_BarChart PSFunction_Close-ExcelPackage PSCommand_Close-ExcelPackage PSFunction_ColumnChart PSCommand_ColumnChart PSFunction_Compare-Worksheet PSCommand_Compare-Worksheet PSFunction_Convert-ExcelRangeToImage PSCommand_Convert-ExcelRangeToImage PSFunction_ConvertFrom-ExcelData PSCommand_ConvertFrom-ExcelData PSFunction_ConvertFrom-ExcelSheet PSCommand_ConvertFrom-ExcelSheet PSFunction_ConvertFrom-ExcelToSQLInsert PSCommand_ConvertFrom-ExcelToSQLInsert PSFunction_ConvertTo-ExcelXlsx PSCommand_ConvertTo-ExcelXlsx PSFunction_Copy-ExcelWorksheet PSCommand_Copy-ExcelWorksheet PSFunction_DoChart PSCommand_DoChart PSFunction_Expand-NumberFormat PSCommand_Expand-NumberFormat PSFunction_Export-Excel PSCommand_Export-Excel PSFunction_Export-ExcelSheet PSCommand_Export-ExcelSheet PSFunction_Get-ExcelColumnName PSCommand_Get-ExcelColumnName PSFunction_Get-ExcelFileSummary PSCommand_Get-ExcelFileSummary PSFunction_Get-ExcelSheetInfo PSCommand_Get-ExcelSheetInfo PSFunction_Get-ExcelWorkbookInfo PSCommand_Get-ExcelWorkbookInfo PSFunction_Get-HtmlTable PSCommand_Get-HtmlTable PSFunction_Get-Range PSCommand_Get-Range PSFunction_Get-XYRange PSCommand_Get-XYRange PSFunction_Import-Excel PSCommand_Import-Excel PSFunction_Import-Html PSCommand_Import-Html PSFunction_Import-UPS PSCommand_Import-UPS PSFunction_Import-USPS PSCommand_Import-USPS PSFunction_Invoke-AllTests PSCommand_Invoke-AllTests PSFunction_Invoke-Sum PSCommand_Invoke-Sum PSFunction_Join-Worksheet PSCommand_Join-Worksheet PSFunction_LineChart PSCommand_LineChart PSFunction_Merge-MultipleSheets PSCommand_Merge-MultipleSheets PSFunction_Merge-Worksheet PSCommand_Merge-Worksheet PSFunction_New-ConditionalFormattingIconSet PSCommand_New-ConditionalFormattingIconSet PSFunction_New-ConditionalText PSCommand_New-ConditionalText PSFunction_New-ExcelChartDefinition PSCommand_New-ExcelChartDefinition PSFunction_New-ExcelStyle PSCommand_New-ExcelStyle PSFunction_New-PivotTableDefinition PSCommand_New-PivotTableDefinition PSFunction_New-Plot PSCommand_New-Plot PSFunction_New-PSItem PSCommand_New-PSItem PSFunction_Open-ExcelPackage PSCommand_Open-ExcelPackage PSFunction_PieChart PSCommand_PieChart PSFunction_Pivot PSCommand_Pivot PSFunction_Read-Clipboard PSCommand_Read-Clipboard PSFunction_ReadClipboardImpl PSCommand_ReadClipboardImpl PSFunction_Remove-Worksheet PSCommand_Remove-Worksheet PSFunction_Select-Worksheet PSCommand_Select-Worksheet PSFunction_Send-SQLDataToExcel PSCommand_Send-SQLDataToExcel PSFunction_Set-CellStyle PSCommand_Set-CellStyle PSFunction_Set-ExcelColumn PSCommand_Set-ExcelColumn PSFunction_Set-ExcelRange PSCommand_Set-ExcelRange PSFunction_Set-ExcelRow PSCommand_Set-ExcelRow PSFunction_Set-WorksheetProtection PSCommand_Set-WorksheetProtection PSFunction_Test-Boolean PSCommand_Test-Boolean PSFunction_Test-Date PSCommand_Test-Date PSFunction_Test-Integer PSCommand_Test-Integer PSFunction_Test-Number PSCommand_Test-Number PSFunction_Test-String PSCommand_Test-String PSFunction_Update-FirstObjectProperties PSCommand_Update-FirstObjectProperties PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2021-08-02T00:04:33Z</S>
+          <S N="NormalizedVersion">7.2.2</S>
+          <S N="Authors">Douglas Finke</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">ImportExcel.nuspec|changelog.md|EPPlus.dll|Export-charts.ps1|Export-StocksToExcel.ps1|GetExcelTable.ps1|ImportExcel.psd1|ImportExcel.psm1|LICENSE.txt|Plot.ps1|PublishToGallery.ps1|README.md|SUMMARY.md|.github\stale.yml|Charting\barchart.md|Charting\Charting.ps1|Charting\columnchart.md|Charting\dochart.md|Charting\linechart.md|Charting\piechart.md|Charting\README.md|en\ImportExcel-help.xml|en\Strings.psd1|Examples\import-by-columns.ps1|Examples\Index - Music.ps1|Examples\New-PSItem.ps1|Examples\Pester-To-XLSx.ps1|Examples\PsGallery.ps1|Examples\README.md|Examples\Subtotals.ps1|Examples\TryMultiplePivotTables.ps1|Examples\TryMultiplePivotTablesFromOneSheet.ps1|Examples\untitled.md|images\CellFormatting.png|images\ConditionalDates.gif|images\ConditionalText.gif|images\ConditionalText2.gif|images\CustomReport.png|images\ExportMultiple.gif|images\exportstockinfo.gif|images\FilterFreezeBold.gif|images\fluent.gif|images\Formatting.png|images\GetExcelSheetInfo.png|images\GroupingNumeric.png|images\GTConditional.png|images\ImportHtml.gif|images\ImportHtmlSecretaryOfState.gif|images\MonthlyTemperaturesWithDatabar.png|images\MultiplePivotTables.png|images\MultiplePivotTablesInAWorkbook.png|images\MultiSeries.gif|images\MultiSeries.png|images\NewExcelStyle.png|images\PassThru.png|images\PivotAsColumns.png|images\PivotAsRows.png|images\PivotTableFilter.png|images\PivotTablesAndCharts.png|images\plot.gif|images\plotNew.gif|images\PSPlot.gif|images\SalesDataWithDatabar.png|images\testimonial.png|images\Title.png|images\Tracking.gif|images\TryImportExcel.gif|images\XLToPesterForRestAPI.gif|images\XLToPesterForRestAPIAndOutput.gif|InferData\InferData.ps1|InferData\invoke-alltests.md|InferData\README.md|InferData\test-boolean.md|InferData\test-date.md|InferData\test-integer.md|InferData\test-number.md|InferData\test-string.md|Pivot\pivot.md|Pivot\Pivot.ps1|Pivot\README.md|Private\ArgumentCompletion.ps1|Public\Add-ConditionalFormatting.ps1|Public\Add-ExcelChart.ps1|Public\Add-ExcelDataValidationRule.ps1|Public\Add-ExcelName.ps1|Public\Add-ExcelTable.ps1|Public\Add-PivotTable.ps1|Public\Add-Worksheet.ps1|Public\Close-ExcelPackage.ps1|Public\Compare-Worksheet.ps1|Public\Convert-ExcelRangeToImage.ps1|Public\convertfrom-exceldata.md|Public\ConvertFrom-ExcelData.ps1|Public\ConvertFrom-ExcelSheet.ps1|Public\ConvertFrom-ExcelToSQLInsert.ps1|Public\convertto-excelxlsx.md|Public\ConvertTo-ExcelXlsx.ps1|Public\Copy-ExcelWorksheet.ps1|Public\Expand-NumberFormat.ps1|Public\Export-Excel.ps1|Public\get-excelcolumnname.md|Public\Get-ExcelColumnName.ps1|Public\Get-ExcelFileSummary.ps1|Public\Get-ExcelSheetInfo.ps1|Public\Get-ExcelWorkbookInfo.ps1|Public\get-htmltable.md|Public\Get-HtmlTable.ps1|Public\get-range.md|Public\Get-Range.ps1|Public\get-xyrange.md|Public\Get-XYRange.ps1|Public\Import-Excel.ps1|Public\import-html.md|Public\Import-Html.ps1|Public\import-ups.md|Public\Import-UPS.ps1|Public\import-usps.md|Public\Import-USPS.ps1|Public\invoke-sum.md|Public\Invoke-Sum.ps1|Public\Join-Worksheet.ps1|Public\Merge-MultipleSheets.ps1|Public\Merge-Worksheet.ps1|Public\New-ConditionalFormattingIconSet.ps1|Public\New-ConditionalText.ps1|Public\New-ExcelChartDefinition.ps1|Public\new-excelstyle.md|Public\New-ExcelStyle.ps1|Public\New-PivotTableDefinition.ps1|Public\new-plot.md|Public\new-psitem.md|Public\New-PSItem.ps1|Public\Open-ExcelPackage.ps1|Public\Read-Clipboard.ps1|Public\README.md|Public\Remove-Worksheet.ps1|Public\Select-Worksheet.ps1|Public\Send-SQLDataToExcel.ps1|Public\set-cellstyle.md|Public\Set-CellStyle.ps1|Public\Set-ExcelColumn.ps1|Public\Set-ExcelRange.ps1|Public\Set-ExcelRow.ps1|Public\set-worksheetprotection.md|Public\Set-WorksheetProtection.ps1|Public\Update-FirstObjectProperties.ps1|spikes\ConvertFrom-ExcelColumnName.ps1|Testimonials\t1.png|Examples\AddWorkSheet\AddMultiWorkSheet.ps1|Examples\AddWorkSheet\AddWorkSheet.ps1|Examples\Charts\ChartAndTrendlines.ps1|Examples\Charts\multiplecharts.md|Examples\Charts\Multiplecharts.png|Examples\Charts\MultipleCharts.ps1|Examples\Charts\MultiSeries.ps1|Examples\Charts\MultiSeries1.ps1|Examples\Charts\NumberOfVisitors.ps1|Examples\Charts\plot.ps1|Examples\Charts\README.md|Examples\CommunityContributions\MultipleWorksheets.ps1|Examples\ConditionalFormatting\CodeGenExamples.ps1|Examples\ConditionalFormatting\ConditionalText.ps1|Examples\ConditionalFormatting\ContainsBlanks.ps1|Examples\ConditionalFormatting\Databar.ps1|Examples\ConditionalFormatting\FormatCalculations.ps1|Examples\ConditionalFormatting\GenDates.ps1|Examples\ConditionalFormatting\GetProcess.ps1|Examples\ConditionalFormatting\Highlight-Last7Days.ps1|Examples\ConditionalFormatting\Highlight-LastMonth.ps1|Examples\ConditionalFormatting\Highlight-LastWeek.ps1|Examples\ConditionalFormatting\Highlight-NextMonth.ps1|Examples\ConditionalFormatting\Highlight-NextWeek.ps1|Examples\ConditionalFormatting\Highlight-ThisMonth.ps1|Examples\ConditionalFormatting\Highlight-ThisWeek.ps1|Examples\ConditionalFormatting\Highlight-Today.ps1|Examples\ConditionalFormatting\Highlight-Tomorrow.ps1|Examples\ConditionalFormatting\Highlight-Yesterday.ps1|Examples\ConditionalFormatting\HighlightDuplicates.ps1|Examples\ConditionalFormatting\MonthlyTemperatuesDatabar.ps1|Examples\ConditionalFormatting\RangeFormatting.ps1|Examples\ConditionalFormatting\SalesReportWithDatabar.ps1|Examples\ConditionalFormatting\TextComparisons.ps1|Examples\ConditionalFormatting\Top10-DataBar-TwoColorScale.ps1|Examples\ConvertFrom\ConvertFrom.ps1|Examples\ConvertFrom\testSQLGen.xlsx|Examples\CustomizeExportExcel\Out-Excel.ps1|Examples\CustomReporting\CustomReport.ps1|Examples\ExcelBuiltIns\DSUM.png|Examples\ExcelBuiltIns\DSUM.ps1|Examples\ExcelBuiltIns\VLookUp.png|Examples\ExcelBuiltIns\VLOOKUP.ps1|Examples\ExcelDataValidation\MutipleValidations.ps1|Examples\ExcelToSQLInsert\DemoSQLInsert.ps1|Examples\ExcelToSQLInsert\Movies.xlsx|Examples\Experimental\Export-MultipleExcelSheets.ps1|Examples\Experimental\testExport.xlsx|Examples\Experimental\tryExportMultipleExcelSheets.ps1|Examples\Extra\Get-ModuleStats.ps1|Examples\Fibonacci\ShowFibonacci.ps1|Examples\FormatCellStyles\ApplyFormatInScriptBlock.ps1|Examples\FormatCellStyles\ApplyStyle.ps1|Examples\FormatCellStyles\PassInScriptBlock.ps1|Examples\GenerateData\GenDataForCustomReport.ps1|Examples\Grouping\First10Races.csv|Examples\Grouping\GroupDate.ps1|Examples\Grouping\GroupNumeric.ps1|Examples\Grouping\TimestampBucket.ps1|Examples\HyperLinks\First10Races.csv|Examples\HyperLinks\Hyperlinks.ps1|Examples\HyperLinks\Races.ps1|Examples\ImportHtml\DemoGraphics.ps1|Examples\ImportHtml\PeriodicElements.ps1|Examples\ImportHtml\StarTrek.ps1|Examples\JoinWorksheet\EastSales.csv|Examples\JoinWorksheet\Join-worksheet-blocks.sample.ps1|Examples\JoinWorksheet\Join-Worksheet.sample.ps1|Examples\JoinWorksheet\JoinSalesData.ps1|Examples\JoinWorksheet\NorthSales.csv|Examples\JoinWorksheet\SouthSales.csv|Examples\JoinWorksheet\WestSales.csv|Examples\JustCharts\CentralLimitTheorem.ps1|Examples\JustCharts\PieChartHandles.ps1|Examples\JustCharts\PieChartPM.ps1|Examples\JustCharts\TargetData.csv|Examples\JustCharts\TargetData.ps1|Examples\JustCharts\TryBarChart.ps1|Examples\JustCharts\TryColumnChart.ps1|Examples\JustCharts\TryPieChart.ps1|Examples\MergeWorkSheet\MergeCSV.ps1|Examples\MergeWorkSheet\Merge_2_Servers_Services.ps1|Examples\MergeWorkSheet\Merge_3_Servers_Services.ps1|Examples\MortgageCalculator\MortgageCalculator.ps1|Examples\MoveSheets\MoveSheets.ps1|Examples\MultiplierTable\MultiplierTable.xlsx|Examples\Nasa\FireBalls.ps1|Examples\NumberFormat\ColorizeNumbers.ps1|Examples\NumberFormat\CurrencyFormat.ps1|Examples\NumberFormat\PercentagFormat.ps1|Examples\NumberFormat\PosNegNumbers.ps1|Examples\NumberFormat\Win32LogicalDisk.ps1|Examples\NumberFormat\Win32LogicalDiskFormatted.ps1|Examples\OutTabulator\demo.txt|Examples\OutTabulator\start-demo.ps1|Examples\OutTabulator\targetout.html|Examples\OutTabulator\tryConvertFromExcel.ps1|Examples\PassThru\sales.csv|Examples\PassThru\TryPassThru.ps1|Examples\PesterTestReport\Pester test report.ps1|Examples\PesterTestReport\PesterConfiguration.json|Examples\PivotTable\MultiplePivotTables.ps1|Examples\PivotTable\PivotTableWithName.ps1|Examples\PivotTable\TableAndPivotTable.ps1|Examples\PivotTableFilters\testPivotFilter.ps1|Examples\Plot\PlotCos.ps1|Examples\ReadAllSheets\GenerateXlsx.ps1|Examples\ReadAllSheets\Get-ExcelSheets.ps1|Examples\ReadAllSheets\ReadAllSheets.ps1|Examples\SetColumnBackgroundColor\SetColumnBackgroundColor.ps1|Examples\Sparklines\SalesByQuarter.ps1|Examples\Sparklines\Sparklines.ps1|Examples\SpreadsheetCells\CalculatedFields.ps1|Examples\SpreadsheetCells\ExcelFormulasUsingAddMember.ps1|Examples\SpreadsheetCells\ExcelFunctions.ps1|Examples\SpreadsheetCells\HyperLink.ps1|Examples\SQL+FillColumns+Pivot\Example.ps1|Examples\SQL+FillColumns+Pivot\Example2.ps1|Examples\Stocks\Get-StockInfo.ps1|Examples\Stocks\GetStocksAvgTotVol.ps1|Examples\Styles\MultipleStyles.ps1|Examples\Styles\NewExcelStyle.ps1|Examples\Tables\MultipleTables.ps1|Examples\TestRestAPI\PSExcelPester.psm1|Examples\TestRestAPI\RunAndShowUnitTests.ps1|Examples\TestRestAPI\ShowPesterResults.ps1|Examples\TestRestAPI\TestAPIReadXls.ps1|Examples\TestRestAPI\testlist.xlsx|Examples\TestRestAPI\TryIt.ps1|Examples\VBA\HelloWorldVBA.ps1|Examples\XlRangeToImage\XlRangeToImage.ps1|Examples\InteractWithOtherModules\Pester\Analyze_that.ps1|Examples\InteractWithOtherModules\ScriptAnalyzer\Analyze_this.ps1</S>
+          <S N="GUID">60dd4136-feff-401a-ba27-a84458c57ede</S>
+          <S N="CompanyName">Doug Finke</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\ImportExcel\7.2.2</S>
+    </MS>
+  </Obj>
+</Objs>

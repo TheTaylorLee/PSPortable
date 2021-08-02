@@ -15,7 +15,7 @@
       <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
       <DT N="PublishedDate">2020-07-14T09:53:46-05:00</DT>
       <Obj N="InstalledDate" RefId="1">
-        <DT>2021-04-14T12:49:39.6463295-05:00</DT>
+        <DT>2021-08-01T19:02:55.6612883-05:00</DT>
         <MS>
           <Obj N="DisplayHint" RefId="2">
             <TN RefId="1">
@@ -56,46 +56,8 @@
         </TN>
         <DCT>
           <En>
-            <S N="Key">RoleCapability</S>
-            <Obj N="Value" RefId="5">
-              <TNRef RefId="2" />
-              <LST />
-            </Obj>
-          </En>
-          <En>
-            <S N="Key">Command</S>
-            <Obj N="Value" RefId="6">
-              <TNRef RefId="2" />
-              <LST>
-                <S>New-AzEventGridTopic</S>
-                <S>Get-AzEventGridTopic</S>
-                <S>Set-AzEventGridTopic</S>
-                <S>New-AzEventGridTopicKey</S>
-                <S>Get-AzEventGridTopicKey</S>
-                <S>Remove-AzEventGridTopic</S>
-                <S>New-AzEventGridSubscription</S>
-                <S>Update-AzEventGridSubscription</S>
-                <S>Remove-AzEventGridSubscription</S>
-                <S>Get-AzEventGridSubscription</S>
-                <S>Get-AzEventGridTopicType</S>
-                <S>New-AzEventGridDomain</S>
-                <S>Get-AzEventGridDomain</S>
-                <S>Get-AzEventGridDomainTopic</S>
-                <S>Get-AzEventGridDomainKey</S>
-                <S>New-AzEventGridDomainKey</S>
-                <S>Remove-AzEventGridDomain</S>
-                <S>New-AzEventGridDomainTopic</S>
-                <S>Remove-AzEventGridDomainTopic</S>
-              </LST>
-            </Obj>
-          </En>
-          <En>
-            <S N="Key">Workflow</S>
-            <Ref N="Value" RefId="5" />
-          </En>
-          <En>
             <S N="Key">Cmdlet</S>
-            <Obj N="Value" RefId="7">
+            <Obj N="Value" RefId="5">
               <TNRef RefId="2" />
               <LST>
                 <S>New-AzEventGridTopic</S>
@@ -122,11 +84,49 @@
           </En>
           <En>
             <S N="Key">Function</S>
-            <Ref N="Value" RefId="5" />
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
           </En>
           <En>
             <S N="Key">DscResource</S>
-            <Ref N="Value" RefId="5" />
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>New-AzEventGridTopic</S>
+                <S>Get-AzEventGridTopic</S>
+                <S>Set-AzEventGridTopic</S>
+                <S>New-AzEventGridTopicKey</S>
+                <S>Get-AzEventGridTopicKey</S>
+                <S>Remove-AzEventGridTopic</S>
+                <S>New-AzEventGridSubscription</S>
+                <S>Update-AzEventGridSubscription</S>
+                <S>Remove-AzEventGridSubscription</S>
+                <S>Get-AzEventGridSubscription</S>
+                <S>Get-AzEventGridTopicType</S>
+                <S>New-AzEventGridDomain</S>
+                <S>Get-AzEventGridDomain</S>
+                <S>Get-AzEventGridDomainTopic</S>
+                <S>Get-AzEventGridDomainKey</S>
+                <S>New-AzEventGridDomainKey</S>
+                <S>Remove-AzEventGridDomain</S>
+                <S>New-AzEventGridDomainTopic</S>
+                <S>Remove-AzEventGridDomainTopic</S>
+              </LST>
+            </Obj>
           </En>
         </DCT>
       </Obj>
@@ -172,15 +172,15 @@
           <S N="releaseNotes">* Updated to use the 2020-06-01 API version._x000D__x000A_* Added new features:_x000D__x000A_    - Input mapping_x000D__x000A_    - Event Delivery Schema_x000D__x000A_    - Private Link_x000D__x000A_    - Cloud Event V10 Schema_x000D__x000A_    - Service Bus Topic As Destination_x000D__x000A_    - Azure Function As Destination_x000D__x000A_    - WebHook Batching_x000D__x000A_    - Secure webhook (AAD support)_x000D__x000A_    - IpFiltering_x000D__x000A_* Updated cmdlets:_x000D__x000A_    - 'New-AzEventGridSubscription'/'Update-AzEventGridSubscription':_x000D__x000A_        - Add new optional parameters to support webhook batching._x000D__x000A_        - Add new optional parameters to support secured webhook using AAD._x000D__x000A_        - Add new enum for EndpointType parameter to support azure function and service bus topic as new destinations._x000D__x000A_        - Add new optional parameter for delivery schema._x000D__x000A_    - 'New-AzEventGridTopic'/'Update-AzEventGridTopic' and 'New-AzEventGridDomain'/'Update-AzEventGridDomain':_x000D__x000A_        - Add new optional parameters to support IpFiltering._x000D__x000A_    - 'New-AzEventGridTopic'/'New-AzEventGridDomain':_x000D__x000A_        - Add new optional parameters to support Input mapping.</S>
           <S N="isLatestVersion">True</S>
           <S N="isAbsoluteLatestVersion">True</S>
-          <S N="versionDownloadCount">13027915</S>
-          <S N="downloadCount">20328294</S>
+          <S N="versionDownloadCount">15440677</S>
+          <S N="downloadCount">23018809</S>
           <S N="packageSize">203649</S>
           <S N="published">7/14/2020 9:53:46 AM -05:00</S>
           <S N="created">7/14/2020 9:53:46 AM -05:00</S>
-          <S N="lastUpdated">4/14/2021 5:47:00 PM -05:00</S>
+          <S N="lastUpdated">8/1/2021 11:59:33 PM -05:00</S>
           <S N="tags">Azure ResourceManager ARM EventGrid PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_New-AzEventGridTopic PSCommand_New-AzEventGridTopic PSCmdlet_Get-AzEventGridTopic PSCommand_Get-AzEventGridTopic PSCmdlet_Set-AzEventGridTopic PSCommand_Set-AzEventGridTopic PSCmdlet_New-AzEventGridTopicKey PSCommand_New-AzEventGridTopicKey PSCmdlet_Get-AzEventGridTopicKey PSCommand_Get-AzEventGridTopicKey PSCmdlet_Remove-AzEventGridTopic PSCommand_Remove-AzEventGridTopic PSCmdlet_New-AzEventGridSubscription PSCommand_New-AzEventGridSubscription PSCmdlet_Update-AzEventGridSubscription PSCommand_Update-AzEventGridSubscription PSCmdlet_Remove-AzEventGridSubscription PSCommand_Remove-AzEventGridSubscription PSCmdlet_Get-AzEventGridSubscription PSCommand_Get-AzEventGridSubscription PSCmdlet_Get-AzEventGridTopicType PSCommand_Get-AzEventGridTopicType PSCmdlet_New-AzEventGridDomain PSCommand_New-AzEventGridDomain PSCmdlet_Get-AzEventGridDomain PSCommand_Get-AzEventGridDomain PSCmdlet_Get-AzEventGridDomainTopic PSCommand_Get-AzEventGridDomainTopic PSCmdlet_Get-AzEventGridDomainKey PSCommand_Get-AzEventGridDomainKey PSCmdlet_New-AzEventGridDomainKey PSCommand_New-AzEventGridDomainKey PSCmdlet_Remove-AzEventGridDomain PSCommand_Remove-AzEventGridDomain PSCmdlet_New-AzEventGridDomainTopic PSCommand_New-AzEventGridDomainTopic PSCmdlet_Remove-AzEventGridDomainTopic PSCommand_Remove-AzEventGridDomainTopic PSIncludes_Cmdlet</S>
           <S N="developmentDependency">False</S>
-          <S N="updated">2021-04-14T17:47:00Z</S>
+          <S N="updated">2021-08-01T23:59:33Z</S>
           <S N="NormalizedVersion">1.3.0</S>
           <S N="Authors">Microsoft Corporation</S>
           <S N="IsPrerelease">false</S>
@@ -192,7 +192,7 @@
           <S N="CompanyName">Microsoft Corporation</S>
         </MS>
       </Obj>
-      <S N="InstalledLocation">C:\Users\admin-taylor\Documents\PowerShell\Modules\Az.EventGrid\1.3.0</S>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\Az.EventGrid\1.3.0</S>
     </MS>
   </Obj>
 </Objs>

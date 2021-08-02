@@ -15,7 +15,7 @@
       <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
       <DT N="PublishedDate">2020-10-13T06:27:53-05:00</DT>
       <Obj N="InstalledDate" RefId="1">
-        <DT>2021-04-14T12:50:09.2078881-05:00</DT>
+        <DT>2021-08-01T19:03:13.8055582-05:00</DT>
         <MS>
           <Obj N="DisplayHint" RefId="2">
             <TN RefId="1">
@@ -57,48 +57,8 @@
         </TN>
         <DCT>
           <En>
-            <S N="Key">RoleCapability</S>
-            <Obj N="Value" RefId="5">
-              <TNRef RefId="2" />
-              <LST />
-            </Obj>
-          </En>
-          <En>
-            <S N="Key">Command</S>
-            <Obj N="Value" RefId="6">
-              <TNRef RefId="2" />
-              <LST>
-                <S>Remove-AzRedisCachePatchSchedule</S>
-                <S>New-AzRedisCacheScheduleEntry</S>
-                <S>Get-AzRedisCachePatchSchedule</S>
-                <S>New-AzRedisCachePatchSchedule</S>
-                <S>Reset-AzRedisCache</S>
-                <S>Export-AzRedisCache</S>
-                <S>Import-AzRedisCache</S>
-                <S>Remove-AzRedisCacheDiagnostic</S>
-                <S>Set-AzRedisCacheDiagnostic</S>
-                <S>Set-AzRedisCache</S>
-                <S>New-AzRedisCacheKey</S>
-                <S>Get-AzRedisCacheKey</S>
-                <S>Get-AzRedisCache</S>
-                <S>Remove-AzRedisCache</S>
-                <S>New-AzRedisCache</S>
-                <S>New-AzRedisCacheLink</S>
-                <S>Remove-AzRedisCacheLink</S>
-                <S>Get-AzRedisCacheLink</S>
-                <S>New-AzRedisCacheFirewallRule</S>
-                <S>Remove-AzRedisCacheFirewallRule</S>
-                <S>Get-AzRedisCacheFirewallRule</S>
-              </LST>
-            </Obj>
-          </En>
-          <En>
-            <S N="Key">Workflow</S>
-            <Ref N="Value" RefId="5" />
-          </En>
-          <En>
             <S N="Key">Cmdlet</S>
-            <Obj N="Value" RefId="7">
+            <Obj N="Value" RefId="5">
               <TNRef RefId="2" />
               <LST>
                 <S>Remove-AzRedisCachePatchSchedule</S>
@@ -127,11 +87,51 @@
           </En>
           <En>
             <S N="Key">Function</S>
-            <Ref N="Value" RefId="5" />
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
           </En>
           <En>
             <S N="Key">DscResource</S>
-            <Ref N="Value" RefId="5" />
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Remove-AzRedisCachePatchSchedule</S>
+                <S>New-AzRedisCacheScheduleEntry</S>
+                <S>Get-AzRedisCachePatchSchedule</S>
+                <S>New-AzRedisCachePatchSchedule</S>
+                <S>Reset-AzRedisCache</S>
+                <S>Export-AzRedisCache</S>
+                <S>Import-AzRedisCache</S>
+                <S>Remove-AzRedisCacheDiagnostic</S>
+                <S>Set-AzRedisCacheDiagnostic</S>
+                <S>Set-AzRedisCache</S>
+                <S>New-AzRedisCacheKey</S>
+                <S>Get-AzRedisCacheKey</S>
+                <S>Get-AzRedisCache</S>
+                <S>Remove-AzRedisCache</S>
+                <S>New-AzRedisCache</S>
+                <S>New-AzRedisCacheLink</S>
+                <S>Remove-AzRedisCacheLink</S>
+                <S>Get-AzRedisCacheLink</S>
+                <S>New-AzRedisCacheFirewallRule</S>
+                <S>Remove-AzRedisCacheFirewallRule</S>
+                <S>Get-AzRedisCacheFirewallRule</S>
+              </LST>
+            </Obj>
           </En>
         </DCT>
       </Obj>
@@ -177,15 +177,15 @@
           <S N="releaseNotes">* Made 'New-AzRedisCache' and 'Set-AzRedisCache' cmdlets not fail because of permission issue related to registering Microsoft.Cache RP</S>
           <S N="isLatestVersion">True</S>
           <S N="isAbsoluteLatestVersion">True</S>
-          <S N="versionDownloadCount">10172466</S>
-          <S N="downloadCount">20550632</S>
+          <S N="versionDownloadCount">12540669</S>
+          <S N="downloadCount">23256783</S>
           <S N="packageSize">216727</S>
           <S N="published">10/13/2020 6:27:53 AM -05:00</S>
           <S N="created">10/13/2020 6:27:53 AM -05:00</S>
-          <S N="lastUpdated">4/14/2021 5:47:00 PM -05:00</S>
+          <S N="lastUpdated">8/1/2021 11:59:33 PM -05:00</S>
           <S N="tags">Azure ResourceManager ARM Redis Cache PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_Remove-AzRedisCachePatchSchedule PSCommand_Remove-AzRedisCachePatchSchedule PSCmdlet_New-AzRedisCacheScheduleEntry PSCommand_New-AzRedisCacheScheduleEntry PSCmdlet_Get-AzRedisCachePatchSchedule PSCommand_Get-AzRedisCachePatchSchedule PSCmdlet_New-AzRedisCachePatchSchedule PSCommand_New-AzRedisCachePatchSchedule PSCmdlet_Reset-AzRedisCache PSCommand_Reset-AzRedisCache PSCmdlet_Export-AzRedisCache PSCommand_Export-AzRedisCache PSCmdlet_Import-AzRedisCache PSCommand_Import-AzRedisCache PSCmdlet_Remove-AzRedisCacheDiagnostic PSCommand_Remove-AzRedisCacheDiagnostic PSCmdlet_Set-AzRedisCacheDiagnostic PSCommand_Set-AzRedisCacheDiagnostic PSCmdlet_Set-AzRedisCache PSCommand_Set-AzRedisCache PSCmdlet_New-AzRedisCacheKey PSCommand_New-AzRedisCacheKey PSCmdlet_Get-AzRedisCacheKey PSCommand_Get-AzRedisCacheKey PSCmdlet_Get-AzRedisCache PSCommand_Get-AzRedisCache PSCmdlet_Remove-AzRedisCache PSCommand_Remove-AzRedisCache PSCmdlet_New-AzRedisCache PSCommand_New-AzRedisCache PSCmdlet_New-AzRedisCacheLink PSCommand_New-AzRedisCacheLink PSCmdlet_Remove-AzRedisCacheLink PSCommand_Remove-AzRedisCacheLink PSCmdlet_Get-AzRedisCacheLink PSCommand_Get-AzRedisCacheLink PSCmdlet_New-AzRedisCacheFirewallRule PSCommand_New-AzRedisCacheFirewallRule PSCmdlet_Remove-AzRedisCacheFirewallRule PSCommand_Remove-AzRedisCacheFirewallRule PSCmdlet_Get-AzRedisCacheFirewallRule PSCommand_Get-AzRedisCacheFirewallRule PSIncludes_Cmdlet</S>
           <S N="developmentDependency">False</S>
-          <S N="updated">2021-04-14T17:47:00Z</S>
+          <S N="updated">2021-08-01T23:59:33Z</S>
           <S N="NormalizedVersion">1.4.0</S>
           <S N="Authors">Microsoft Corporation</S>
           <S N="IsPrerelease">false</S>
@@ -197,7 +197,7 @@
           <S N="CompanyName">Microsoft Corporation</S>
         </MS>
       </Obj>
-      <S N="InstalledLocation">C:\Users\admin-taylor\Documents\PowerShell\Modules\Az.RedisCache\1.4.0</S>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\Az.RedisCache\1.4.0</S>
     </MS>
   </Obj>
 </Objs>
