@@ -30,3 +30,4 @@
      - 2.0.1  Updated the profile to implement the temporary workaround to ansireadline experimental bugs
      - 2.1.0  Updated Admintoolbox.Networking with Invoke-Ethr
      - 2.2.0  Updated Admintoolbox.Networking with Invoke-Iperf
+     - 2.3.0  Updated Admintoolbox.Filemanagement and Admintoolbox
