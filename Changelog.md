@@ -31,3 +31,4 @@
      - 2.1.0  Updated Admintoolbox.Networking with Invoke-Ethr
      - 2.2.0  Updated Admintoolbox.Networking with Invoke-Iperf
      - 2.3.0  Updated Admintoolbox.Filemanagement and Admintoolbox
+     - 2.4.0  Fixes for Admintoolbox.Fortiwizard
