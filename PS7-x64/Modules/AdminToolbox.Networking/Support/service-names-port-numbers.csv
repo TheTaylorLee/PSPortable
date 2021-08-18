@@ -10898,7 +10898,7 @@ iwg1,7071,tcp,IWGADTS Aircraft Housekeeping Message,[Don_Sullivan],[Don_Sullivan
 iwg1,7071,udp,IWGADTS Aircraft Housekeeping Message,[Don_Sullivan],[Don_Sullivan],2010-02-16,,,,,
 iba-cfg,7072,tcp,iba Device Configuration Protocol,[iba_AG],[Alexander_Melamed],2018-02-12,,,,,
 iba-cfg-disc,7072,udp,iba Device Configuration Protocol,[iba_AG],[Alexander_Melamed],2018-02-12,,,,,
-martalk,7073,tcp,MarTalk protocol,[Mahr_GmbH_Göttingen],[Kevin_Bube],2013-09-02,,,,,
+martalk,7073,tcp,MarTalk protocol,[Mahr_GmbH_GÃ¶ttingen],[Kevin_Bube],2013-09-02,,,,,
 ,7073,udp,Reserved,,,,,,,,
 ,7074-7079,,Unassigned,,,,,,,,
 empowerid,7080,tcp,EmpowerID Communication,[Matthew_Whited],[Matthew_Whited],2008-01-16,,,,,
@@ -11022,7 +11022,7 @@ itactionserver2,7281,tcp,ITACTIONSERVER 2,[Brian_Taylor],[Brian_Taylor],,,,,,
 itactionserver2,7281,udp,ITACTIONSERVER 2,[Brian_Taylor],[Brian_Taylor],,,,,,
 mzca-action,7282,tcp,eventACTION/ussACTION (MZCA) server,[Gord_Tomlin],[Gord_Tomlin],2009-01-30,,,,,
 mzca-alert,7282,udp,eventACTION/ussACTION (MZCA) alert,[Gord_Tomlin],[Gord_Tomlin],2010-01-21,,,,,
-genstat,7283,tcp,General Statistics Rendezvous Protocol,[VSN_International_Ltd],[Sean_D_Sollé],2011-09-28,,,,,
+genstat,7283,tcp,General Statistics Rendezvous Protocol,[VSN_International_Ltd],[Sean_D_SollÃ©],2011-09-28,,,,,
 ,7283,udp,Reserved,,,,,,,,
 ,7284-7299,,Unassigned,,,,,,,,
 swx,7300-7359,,The Swiss Exchange,[Edgar_Blum],[Edgar_Blum],,,,,,
@@ -11932,8 +11932,8 @@ bacula-sd,9103,tcp,Bacula Storage Daemon,[Kern_Sibbald],[Kern_Sibbald],2002-01,,
 bacula-sd,9103,udp,Bacula Storage Daemon,[Kern_Sibbald],[Kern_Sibbald],2002-01,,,,,
 peerwire,9104,tcp,PeerWire,[Steven_Gerhardt],[Steven_Gerhardt],2004-02,,,,,
 peerwire,9104,udp,PeerWire,[Steven_Gerhardt],[Steven_Gerhardt],2004-02,,,,,
-xadmin,9105,tcp,Xadmin Control Service,,,,,[Ari√´n Huisken <xadmin&huisken-systems.nl> 15 June 2009],,,
-xadmin,9105,udp,Xadmin Control Service,,,,,[Ari√´n Huisken <xadmin&huisken-systems.nl> 15 June 2009],,,
+xadmin,9105,tcp,Xadmin Control Service,,,,,[AriâˆšÂ´n Huisken <xadmin&huisken-systems.nl> 15 June 2009],,,
+xadmin,9105,udp,Xadmin Control Service,,,,,[AriâˆšÂ´n Huisken <xadmin&huisken-systems.nl> 15 June 2009],,,
 astergate,9106,tcp,Astergate Control Service,[Ari_Huisken],[Ari_Huisken],2010-01-04,,,,,
 astergate-disc,9106,udp,Astergate Discovery Service,[Ari_Huisken],[Ari_Huisken],2010-01-04,,,,,
 astergatefax,9107,tcp,AstergateFax Control Service,[Gijs_Middelkamp],[Gijs_Middelkamp],2010-02-03,,,,,
@@ -12321,7 +12321,7 @@ swdtp-sv,10009,udp,Systemwalker Desktop Patrol,[Akira_Ide],[Akira_Ide],2006-03,,
 rxapi,10010,tcp,ooRexx rxapi services,[David_Ashley],[David_Ashley],2009-07-24,,,,,
 ,10010,udp,Reserved,,,,,,,,
 ,10011-10019,,Unassigned,,,,,,,,
-abb-hw,10020,tcp,Hardware configuration and maintenance,[ABB],[Adam_Norén],2017-03-28,,,,,
+abb-hw,10020,tcp,Hardware configuration and maintenance,[ABB],[Adam_NorÃ©n],2017-03-28,,,,,
 ,10020,udp,Reserved,,,,,,,,
 ,10021-10049,,Unassigned,,,,,,,,
 zabbix-agent,10050,tcp,Zabbix Agent,[Alexei_Vladishev],[Alexei_Vladishev],2006-02,,,,,
@@ -12938,8 +12938,8 @@ opsec-uaa,19191,udp,OPSEC UAA,[Reuven_Harrison],[Reuven_Harrison],,,,,,
 ua-secureagent,19194,tcp,UserAuthority SecureAgent,[Reuven_Harrison_2],[Reuven_Harrison_2],2003-01,,,,,
 ua-secureagent,19194,udp,UserAuthority SecureAgent,[Reuven_Harrison_2],[Reuven_Harrison_2],2003-01,,,,,
 ,19195-19219,,Unassigned,,,,,,,,
-cora,19220,tcp,Client Connection Management and Data Exchange Service,[Softvise_GmbH],[Ronny_Krüger],2016-11-10,,,,,
-cora-disc,19220,udp,Discovery for Client Connection Management and Data Exchange Service,[Softvise_GmbH],[Ronny_Krüger],2016-11-10,,,,,
+cora,19220,tcp,Client Connection Management and Data Exchange Service,[Softvise_GmbH],[Ronny_KrÃ¼ger],2016-11-10,,,,,
+cora-disc,19220,udp,Discovery for Client Connection Management and Data Exchange Service,[Softvise_GmbH],[Ronny_KrÃ¼ger],2016-11-10,,,,,
 ,19221-19282,,Unassigned,,,,,,,,
 keysrvr,19283,tcp,Key Server for SASSAFRAS,[Mark_Valence],[Mark_Valence],,,,,,
 keysrvr,19283,udp,Key Server for SASSAFRAS,[Mark_Valence],[Mark_Valence],,,,,,
@@ -13103,7 +13103,7 @@ wibukey,22347,udp,WibuKey Standard WkLan,[Wolfgang_Voelker],[Wolfgang_Voelker],2
 ,22348-22349,,Unassigned,,,,,,,,
 codemeter,22350,tcp,CodeMeter Standard,[Wolfgang_Voelker],[Wolfgang_Voelker],2007-06,,,,,
 codemeter,22350,udp,CodeMeter Standard,[Wolfgang_Voelker],[Wolfgang_Voelker],2007-06,,,,,
-codemeter-cmwan,22351,tcp,TPC/IP requests of copy protection software to a server,[WIBU-SYSTEMS_AG],[Wolfgang_Völker_2],2013-06-25,,,,,
+codemeter-cmwan,22351,tcp,TPC/IP requests of copy protection software to a server,[WIBU-SYSTEMS_AG],[Wolfgang_VÃ¶lker_2],2013-06-25,,,,,
 ,22351,udp,Reserved,,,,,,,,
 ,22352-22536,,Unassigned,,,,,,,,
 caldsoft-backup,22537,tcp,CaldSoft Backup server file transfer,[CaldSoft],[Mark_Caldwell],2011-08-12,,,,,
@@ -13158,7 +13158,7 @@ aequus,23456,tcp,Aequus Service,[James_Anson],[James_Anson],2009-02-12,,,,,
 aequus-alt,23457,tcp,Aequus Service Mgmt,[James_Anson],[James_Anson],2009-02-12,,,,,
 ,23457,udp,Reserved,,,,,,,,
 ,23458-23545,,Unassigned,,,,,,,,
-areaguard-neo,23546,tcp,AreaGuard Neo - WebServer,[SODATSW_spol],[Roman_Štěpánek],2012-05-31,,,,,
+areaguard-neo,23546,tcp,AreaGuard Neo - WebServer,[SODATSW_spol],[Roman_Å tÄ›pÃ¡nek],2012-05-31,,,,,
 ,23546,udp,Reserved,,,,,,,,
 ,23547-23999,,Unassigned,,,,,,,,
 med-ltp,24000,tcp,med-ltp,[Juergen_Fischbach],[Juergen_Fischbach],,,,,,
@@ -14048,7 +14048,7 @@ blackbook,,,Little Black Book Information Exchange Protocol,[David_HM_Spector][P
   protovers=<version of protocol in use by by this application>"
 bluevertise,,udp,BlueVertise Network Protocol (BNP),[Fabrizio_Guglielmino],[Fabrizio_Guglielmino],,,,,,Defined TXT keys: role=<master or slave>
 boardplus,,tcp,board plus application transfer protocol,[CX5_SOFTWARE],[Yohei_Yoshihara],2013-02-04,,,,,Defined TXT keys: None
-booked-sync,,tcp,Booked communication protocol - Sharing And Sync Service,[Sören_Havemester],[Sören_Havemester],2013-02-18,,,,,"Defined TXT keys: Edition, Version, Public Shares, Machine ID, Machine Name"
+booked-sync,,tcp,Booked communication protocol - Sharing And Sync Service,[SÃ¶ren_Havemester],[SÃ¶ren_Havemester],2013-02-18,,,,,"Defined TXT keys: Edition, Version, Public Shares, Machine ID, Machine Name"
 bookworm,,,Bookworm Client Discovery,[Arne_Dirks],[Arne_Dirks],,,,,,Defined TXT keys: flavors
 boundaryscan,,udp,Proprietary,[Uwe_Ziegler],[Uwe_Ziegler],,,,,,"Defined TXT keys: blocked=<name of the device>, version=<firmware/instrument controller version>"
 bousg,,,Bag Of Unusual Strategy Games,,,,,,,,Defined TXT keys: None
@@ -14342,7 +14342,7 @@ irelay,,,iRelay application discovery service,[Marc_Diamante],[Marc_Diamante],,,
 irmc,,,Intego Remote Management Console,[Olivier_Delecluse],[Olivier_Delecluse],,,,,,"Defined TXT keys: RMC Client Version=<version>, MAC Address=<address>"
 irobotmcs,,tcp,iRobot Monitor and Control Service,[iRobot_Corporation],[Tim_Farlow],2013-11-07,,,,,Defined TXT keys: None
 irobotmcs,,udp,iRobot Monitor and Control Service,[iRobot_Corporation],[Tim_Farlow],2013-11-07,,,,,Defined TXT keys: None
-iroid-sd,,tcp,Iroid Data Service Discovery,[iroïd],[Tom_Wagner],2016-04-22,,,,,Defined TXT keys: none
+iroid-sd,,tcp,Iroid Data Service Discovery,[iroÃ¯d],[Tom_Wagner],2016-04-22,,,,,Defined TXT keys: none
 irradiatd-iclip,,tcp,iClip clipboard transfer,[Irradiated_Software],[Thomas_Tempelmann],2012-06-19,,,,,Defined TXT keys: none
 irt-sharing,,tcp,Image Resizer Toolbox preview sharing service,[fnxsoftware.com],[Juan_Guerrero],2015-06-30,,,,,Defined TXT keys: irtshrng
 isparx,,,iSparx,[Philipp_Dreiss],[Philipp_Dreiss],,,,,,Defined TXT keys: None
@@ -14443,7 +14443,7 @@ mbserver,,,MediaBroker++ Server,[Nate_Rivard],[Nate_Rivard],,,,,,Defined TXT key
 mconnect,,,ClairMail Connect,[Sachin_Desai],[Sachin_Desai],,,,,,Defined TXT keys: None
 mcrcp,,,MediaCentral,[equinux],[equinux],,,,,,Defined TXT keys: None
 mediaboard1,,,MediaBoardONE Asset and Information Manager data sharing and synchronization protocol,[Thomas_K_Fischer],[Thomas_K_Fischer],,,,,,Defined TXT keys: None
-mediatap,,tcp,Mediatap streaming protocol,[Mediatap_GbR],[Mario_Pörner],2011-10-11,,,,,Defined TXT keys: Proprietary
+mediatap,,tcp,Mediatap streaming protocol,[Mediatap_GbR],[Mario_PÃ¶rner],2011-10-11,,,,,Defined TXT keys: Proprietary
 mercurydock,,tcp,Mercury Dock Assistant,[Spider_Electronics],[Kenny_Millar],2014-03-10,,,,,"Defined TXT keys:  status, signature, ver"
 mesamis,,,Mes Amis,[David_Priest],[David_Priest],,,,,,Defined TXT keys: None
 mi-raysat,,,Mental Ray for Maya,[Autodesk],[Autodesk],,,,,,Defined TXT keys: None
@@ -14622,8 +14622,8 @@ rdp,,,Windows Remote Desktop Protocol,[Jugaari],[Jugaari],,,,,,Defined TXT keys:
 realplayfavs,,,RealPlayer Shared Favorites,[RealNetworks],[RealNetworks],,,,,,Defined TXT keys: None
 recipe-box,,tcp,The Recipe Box Exchange,[Corpus_Collusion],[Kathy_Tafel],2011-08-23,,,,,Defined TXT keys: txtvers
 recipe-sharing,,tcp,Recipe Sharing Protocol,[Daniel_G_Taylor],[Daniel_G_Taylor],2007-11,,,,,Defined TXT keys: [http://www.recipemanager.org/rsp/rsp10draft.html#dnssd]
-recolive-cc,,tcp,Remote Camera Control,[RecoLive_Sàrl],[Gabriele_Mondada],2012-08-29,,,,,"Defined TXT keys:  txtvers, cid, nbd, cap"
-recolive-cc,,udp,Remote Camera Control,[RecoLive_Sàrl],[Gabriele_Mondada],2012-08-29,,,,,"Defined TXT keys:  txtvers, cid, nbd, cap"
+recolive-cc,,tcp,Remote Camera Control,[RecoLive_SÃ rl],[Gabriele_Mondada],2012-08-29,,,,,"Defined TXT keys:  txtvers, cid, nbd, cap"
+recolive-cc,,udp,Remote Camera Control,[RecoLive_SÃ rl],[Gabriele_Mondada],2012-08-29,,,,,"Defined TXT keys:  txtvers, cid, nbd, cap"
 recordit-itp,,tcp,Recordit Image Transport Protocol,[Freshout],[Ruben_Beltran_del_Rio_2],2014-04-14,,,,,Defined TXT keys: None
 remote,,,Remote Device Control Protocol,[Gregory_Dudek],[Gregory_Dudek],,,,,,"Defined TXT keys:   txtvers=<TXT record version tag>
   protovers=<protocol vesion number>
@@ -14782,7 +14782,7 @@ swcards,,,Signwave Card Sharing Protocol,[Signwave_Networking],[Signwave_Network
 switcher,,,Wireless home control remote control protocol,[Steve_Splonskowski],[Steve_Splonskowski],,,,,,Defined TXT keys: None
 swordfish,,,Swordfish Protocol for Input/Output,[Jim_Wallace],[Jim_Wallace],,,,,,Defined TXT keys: None
 swyp,,,"Framework for transferring any file from any app, to
-      any app on any device: simply with a swÿp.",[ExoMachina],[Alexander_List],2011-12-06,,,,,Defined TXT keys: NONE
+      any app on any device: simply with a swÃ¿p.",[ExoMachina],[Alexander_List],2011-12-06,,,,,Defined TXT keys: NONE
 sxqdea,,,Synchronize! Pro X,[Qdea],[Qdea],,,,,,Defined TXT keys: None
 sybase-tds,,,Sybase Server,,,,,,,,Defined TXT keys: None
 synclavier,,tcp,"Remote control of Synclavier Digital Audio Workstation 
