@@ -33,3 +33,4 @@
      - 2.3.0  Updated Admintoolbox.Filemanagement and Admintoolbox
      - 2.4.0  Fixes for Admintoolbox.Fortiwizard
      - 2.5.0  Updated Admintoolbox and Admintoolbox.Networking Modules
+     - 2.6.0  Updated Admintoolbox, Admintoolbox.fortiwizard, and Admintoolbox.Networking Modules
