@@ -1,8 +1,8 @@
 # **AdminToolbox**
 
-![AdminToolbox](https://github.com/TheTaylorLee/AdminToolbox/blob/master/Images/AdminToolbox.png)
+![AdminToolbox](https://github.com/TheTaylorLee/AdminToolbox/blob/master/images/AdminToolbox.png)
 
-![AdminToolbox get-info](https://github.com/TheTaylorLee/AdminToolbox/blob/master/Images/Admintoolbox%20info.png)
+![AdminToolbox get-info](https://github.com/TheTaylorLee/AdminToolbox/blob/master/images/Admintoolbox%20info.png)
 
 * **1.0.0** Created the Module
 * **1.0.1** Updated Get-Intro
@@ -157,6 +157,8 @@
 * **9.7.0** Update required modules
 * **9.8.0** Update required modules
 * **9.9.0** Update required modules
+* **9.10.0** Update required modules
+* **9.11.0** Update required modules
 
 #The line below this one is used strictly by a github action. That action is responsible for publishing new versions of this module to Powershell Gallery, upon pushing an iterative version to Github.
-9.9.0
+9.11.0
