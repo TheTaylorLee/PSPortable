@@ -37,3 +37,4 @@
      - 2.7.0  Updated Admintoolbox and Admintoolbox.Office365
      - 2.8.0  Updated Admintoolbox and Admintoolbox.FileManagement with changes to Remove-All
      - 2.9.0  Updated Admintoolbox and Admintoolbox.FortiWizard with changes for tunnel functions
+     - 2.10.0 Updated Admintoolbox and Admintoolbox.FortiWizard with changes for tunnel functions
