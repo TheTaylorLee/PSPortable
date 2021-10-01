@@ -1,5 +1,4 @@
-function Invoke-NetworkScan {
-    <#
+<#
     .Description
     Get Hostnames, IPAddresses, Open Ports, Mac Addresses, and Mac Vendors.
 
@@ -24,12 +23,12 @@ function Invoke-NetworkScan {
 
     Perform a more thorough port scan and output to gridview
 
-    .Notes
-    Does not work in Powershell Core
-
     .Link
     https://github.com/TheTaylorLee/AdminToolbox
-    #>
+#>
+
+function Invoke-NetworkScan {
+
     [CmdletBinding()]
     [Alias('scan')]
     param(
