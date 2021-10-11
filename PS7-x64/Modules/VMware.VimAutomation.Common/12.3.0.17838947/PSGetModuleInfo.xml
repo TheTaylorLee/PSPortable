@@ -1,0 +1,164 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.VimAutomation.Common</S>
+      <Version N="Version">12.3.0.17838947</Version>
+      <S N="Type">Module</S>
+      <S N="Description">This Windows PowerShell module contains functionality required by multiple PowerCLI modules.</S>
+      <S N="Author">VMware</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) VMware, Inc. All rights reserved.</S>
+      <DT N="PublishedDate">2021-04-07T07:46:12-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2021-05-04T10:55:05.8711754-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <Nil N="ProjectUri" />
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-PowerCLIContext</S>
+                <S>Get-Task</S>
+                <S>New-OAuthSecurityContext</S>
+                <S>Stop-Task</S>
+                <S>Use-PowerCLIContext</S>
+                <S>Wait-Task</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-PowerCLIContext</S>
+                <S>Get-Task</S>
+                <S>New-OAuthSecurityContext</S>
+                <S>Stop-Task</S>
+                <S>Use-PowerCLIContext</S>
+                <S>Wait-Task</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.VimAutomation.Sdk</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">12.2.0.17531155</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.VimAutomation.Sdk/12.2.0.17531155</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) VMware, Inc. All rights reserved.</S>
+          <S N="description">This Windows PowerShell module contains functionality required by multiple PowerCLI modules.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">121028</S>
+          <S N="downloadCount">4537297</S>
+          <S N="packageSize">1921410</S>
+          <S N="published">4/7/2021 7:46:12 AM -05:00</S>
+          <S N="created">4/7/2021 7:46:12 AM -05:00</S>
+          <S N="lastEdited">4/8/2021 11:33:07 AM -05:00</S>
+          <S N="lastUpdated">5/4/2021 3:52:04 PM -05:00</S>
+          <S N="tags">PSModule PSCmdlet_Get-PowerCLIContext PSCommand_Get-PowerCLIContext PSCmdlet_Get-Task PSCommand_Get-Task PSCmdlet_New-OAuthSecurityContext PSCommand_New-OAuthSecurityContext PSCmdlet_Stop-Task PSCommand_Stop-Task PSCmdlet_Use-PowerCLIContext PSCommand_Use-PowerCLIContext PSCmdlet_Wait-Task PSCommand_Wait-Task PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2021-05-04T15:52:04Z</S>
+          <S N="NormalizedVersion">12.3.0.17838947</S>
+          <S N="Authors">VMware</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.VimAutomation.Common.nuspec|EULA.rtf|open_source_licenses.txt|VMware.VimAutomation.Common.cat|VMware.VimAutomation.Common.psd1|VMware.VimAutomation.Common.psm1|net45\Common.Logging.dll|net45\ComponentDescriptor-VMware.VimAutomation.Common.Commands.xml|net45\ComponentDescriptor-VMware.VimAutomation.Common.xml|net45\EULA.rtf|net45\ICSharpCode.SharpZipLib.dll|net45\Newtonsoft.Json.dll|net45\open_source_licenses.txt|net45\PackageManifest.xml|net45\Spring.Rest.dll|net45\VMware.Binding.Ls2.dll|net45\VMware.Binding.Sts.dll|net45\VMware.Binding.WsTrust.dll|net45\VMware.Http.Handlers.dll|net45\VMware.Util.OAuth2.dll|net45\VMware.Util.Sspi.dll|net45\VMware.VimAutomation.Common.Commands.dll|net45\VMware.VimAutomation.Common.Commands.dll-Help.xml|net45\VMware.VimAutomation.Common.Format.ps1xml|net45\VMware.VimAutomation.Common.Impl.dll|net45\VMware.VimAutomation.Common.Interop.dll|net45\VMware.VimAutomation.Common.ps1|net45\VMware.VimAutomation.Common.psd1|net45\VMware.VimAutomation.Common.Types.dll|net45\VMware.VimAutomation.Common.Util10.dll|net45\VMware.VimAutomation.Common.Util10Ps.dll|net45\VMware.VimAutomation.SsoAuthentication.dll|netcoreapp2.0\ComponentDescriptor-VMware.VimAutomation.Common.Commands.xml|netcoreapp2.0\ComponentDescriptor-VMware.VimAutomation.Common.xml|netcoreapp2.0\EULA.rtf|netcoreapp2.0\ICSharpCode.SharpZipLib.dll|netcoreapp2.0\open_source_licenses.txt|netcoreapp2.0\PackageManifest.xml|netcoreapp2.0\System.Security.Cryptography.Xml.dll|netcoreapp2.0\VMware.Binding.Ls2.dll|netcoreapp2.0\VMware.Binding.Sts.dll|netcoreapp2.0\VMware.Binding.WsTrust.dll|netcoreapp2.0\VMware.Http.Handlers.dll|netcoreapp2.0\VMware.System.Private.ServiceModel.dll|netcoreapp2.0\VMware.Util.OAuth2.dll|netcoreapp2.0\VMware.Util.Sspi.dll|netcoreapp2.0\VMware.VimAutomation.Common.Commands.dll|netcoreapp2.0\VMware.VimAutomation.Common.Commands.dll-Help.xml|netcoreapp2.0\VMware.VimAutomation.Common.Format.ps1xml|netcoreapp2.0\VMware.VimAutomation.Common.Impl.dll|netcoreapp2.0\VMware.VimAutomation.Common.Interop.dll|netcoreapp2.0\VMware.VimAutomation.Common.ps1|netcoreapp2.0\VMware.VimAutomation.Common.psd1|netcoreapp2.0\VMware.VimAutomation.Common.Types.dll|netcoreapp2.0\VMware.VimAutomation.Common.Util10.dll|netcoreapp2.0\VMware.VimAutomation.Common.Util10Ps.dll|netcoreapp2.0\VMware.VimAutomation.SsoAuthentication.dll</S>
+          <S N="GUID">f57f12da-509b-4c5e-897a-f5943ad3cede</S>
+          <S N="CompanyName">VMware, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\VMware.VimAutomation.Common\12.3.0.17838947</S>
+    </MS>
+  </Obj>
+</Objs>

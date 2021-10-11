@@ -1,0 +1,133 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.VimAutomation.Sdk</S>
+      <Version N="Version">12.2.0.17531155</Version>
+      <S N="Type">Module</S>
+      <S N="Description">This Windows PowerShell module contains PowerCLI Sdk.</S>
+      <S N="Author">VMware</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) VMware, Inc. All rights reserved.</S>
+      <DT N="PublishedDate">2021-02-03T13:12:41-06:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2021-05-04T10:55:03.611222-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <Nil N="ProjectUri" />
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-ErrorReport</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-ErrorReport</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) VMware, Inc. All rights reserved.</S>
+          <S N="description">This Windows PowerShell module contains PowerCLI Sdk.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">417670</S>
+          <S N="downloadCount">4650632</S>
+          <S N="packageSize">1023660</S>
+          <S N="published">2/3/2021 1:12:41 PM -06:00</S>
+          <S N="created">2/3/2021 1:12:41 PM -06:00</S>
+          <S N="lastEdited">2/4/2021 12:40:11 PM -06:00</S>
+          <S N="lastUpdated">5/4/2021 3:52:04 PM -05:00</S>
+          <S N="tags">PSModule PSCmdlet_Get-ErrorReport PSCommand_Get-ErrorReport PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2021-05-04T15:52:04Z</S>
+          <S N="NormalizedVersion">12.2.0.17531155</S>
+          <S N="Authors">VMware</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.VimAutomation.Sdk.nuspec|about_ceip.help.txt|about_invalid_certificates.help.txt|about_obn.help.txt|about_powercli_objects.help.txt|about_runasync.help.txt|about_security_context.help.txt|about_uid.help.txt|EULA.rtf|open_source_licenses.txt|VMware.VimAutomation.Sdk.cat|VMware.VimAutomation.Sdk.psd1|VMware.VimAutomation.Sdk.psm1|net45\EnterpriseLibrary.config|net45\EULA.rtf|net45\log4net.dll|net45\Microsoft.Practices.EnterpriseLibrary.Common.dll|net45\Microsoft.Practices.EnterpriseLibrary.Logging.dll|net45\open_source_licenses.txt|net45\PackageManifest.xml|net45\ParameterCompleter.ps1|net45\phclient.dll|net45\ProductInfo.xml|net45\System.Runtime.InteropServices.RuntimeInformation.dll|net45\VMware.Security.CredentialStore.dll|net45\VMware.VimAutomation.Ceip.dll|net45\VMware.VimAutomation.Sdk.Impl.dll|net45\VMware.VimAutomation.Sdk.Interop.dll|net45\VMware.VimAutomation.Sdk.ps1|net45\VMware.VimAutomation.Sdk.psd1|net45\VMware.VimAutomation.Sdk.Types.dll|net45\VMware.VimAutomation.Sdk.Util10.dll|net45\VMware.VimAutomation.Sdk.Util10Ps.dll|net45\VMware.VimAutomation.Sdk.Util10Ps.dll-Help.xml|netcoreapp2.0\EnterpriseLibrary.config|netcoreapp2.0\EULA.rtf|netcoreapp2.0\log4net.dll|netcoreapp2.0\open_source_licenses.txt|netcoreapp2.0\PackageManifest.xml|netcoreapp2.0\ParameterCompleter.ps1|netcoreapp2.0\phclient.dll|netcoreapp2.0\ProductInfo.xml|netcoreapp2.0\VMware.VimAutomation.Ceip.dll|netcoreapp2.0\VMware.VimAutomation.Sdk.Impl.dll|netcoreapp2.0\VMware.VimAutomation.Sdk.Interop.dll|netcoreapp2.0\VMware.VimAutomation.Sdk.ps1|netcoreapp2.0\VMware.VimAutomation.Sdk.psd1|netcoreapp2.0\VMware.VimAutomation.Sdk.Types.dll|netcoreapp2.0\VMware.VimAutomation.Sdk.Util10.dll|netcoreapp2.0\VMware.VimAutomation.Sdk.Util10Ps.dll|netcoreapp2.0\VMware.VimAutomation.Sdk.Util10Ps.dll-Help.xml|net45\fr-FR\VMware.VimAutomation.Sdk.Impl.resources.dll|net45\fr-FR\VMware.VimAutomation.Sdk.Interop.resources.dll|net45\fr-FR\VMware.VimAutomation.Sdk.Types.resources.dll|net45\fr-FR\VMware.VimAutomation.Sdk.Util10Ps.resources.dll|netcoreapp2.0\fr-FR\VMware.VimAutomation.Sdk.Impl.resources.dll|netcoreapp2.0\fr-FR\VMware.VimAutomation.Sdk.Interop.resources.dll|netcoreapp2.0\fr-FR\VMware.VimAutomation.Sdk.Types.resources.dll|netcoreapp2.0\fr-FR\VMware.VimAutomation.Sdk.Util10Ps.resources.dll</S>
+          <S N="GUID">b6ed108a-22bc-4888-afc8-6ee6c13513a7</S>
+          <S N="CompanyName">VMware, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\VMware.VimAutomation.Sdk\12.2.0.17531155</S>
+    </MS>
+  </Obj>
+</Objs>

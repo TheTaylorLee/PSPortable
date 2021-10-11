@@ -1,0 +1,144 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">VMware.Vim</S>
+      <Version N="Version">7.0.2.17839075</Version>
+      <S N="Type">Module</S>
+      <S N="Description">This Windows PowerShell module contains PowerCLI Vim.</S>
+      <S N="Author">VMware</S>
+      <S N="CompanyName">VMware</S>
+      <S N="Copyright">Copyright (c) VMware, Inc. All rights reserved.</S>
+      <DT N="PublishedDate">2021-04-07T07:46:33-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2021-05-04T10:55:09.015452-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <Nil N="ProjectUri" />
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">VMware.VimAutomation.Common</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">12.3.0.17838947</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:VMware.VimAutomation.Common/12.3.0.17838947</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) VMware, Inc. All rights reserved.</S>
+          <S N="description">This Windows PowerShell module contains PowerCLI Vim.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">120353</S>
+          <S N="downloadCount">4307937</S>
+          <S N="packageSize">15879938</S>
+          <S N="published">4/7/2021 7:46:33 AM -05:00</S>
+          <S N="created">4/7/2021 7:46:33 AM -05:00</S>
+          <S N="lastEdited">4/8/2021 11:33:18 AM -05:00</S>
+          <S N="lastUpdated">5/4/2021 3:52:04 PM -05:00</S>
+          <S N="tags">PSModule</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2021-05-04T15:52:04Z</S>
+          <S N="NormalizedVersion">7.0.2.17839075</S>
+          <S N="Authors">VMware</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">VMware.Vim.nuspec|EULA.rtf|VMware.Vim.cat|VMware.Vim.psd1|VMware.Vim.psm1|net45\InternalVimService50.Wcf.dll|net45\InternalVimService70.Wcf.dll|net45\InventoryService55.Wcf.dll|net45\PackageManifest.xml|net45\VimService.dll|net45\VMware.Binding.Wcf.dll|net45\VMware.Vim.dll|net45\VMware.Vim.psd1|netcoreapp2.0\InternalVimService50.Wcf.dll|netcoreapp2.0\InternalVimService70.Wcf.dll|netcoreapp2.0\InventoryService55.Wcf.dll|netcoreapp2.0\PackageManifest.xml|netcoreapp2.0\VimService.dll|netcoreapp2.0\VMware.Binding.Wcf.dll|netcoreapp2.0\VMware.Vim.dll|netcoreapp2.0\VMware.Vim.psd1</S>
+          <S N="GUID">a8eeec2b-0bd9-4a5f-9d61-8a03b6fad3c3</S>
+          <S N="CompanyName">VMware, Inc.</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\taylo\Documents\PowerShell\Modules\VMware.Vim\7.0.2.17839075</S>
+    </MS>
+  </Obj>
+</Objs>
