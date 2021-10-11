@@ -40,3 +40,4 @@
      - 2.10.0 Updated Admintoolbox and Admintoolbox.FortiWizard with changes for tunnel functions
      - 2.11.0 Updated Admintoolbox and Admintoolbox.Networking and Conemu settings
      - 2.12.0 Updated Admintoolbox and Admintoolbox.FortiWizard
+     - 2.13.0 Updated Admintoolbox and Admintoolbox.VMwareAutomate
