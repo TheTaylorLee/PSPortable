@@ -17,23 +17,23 @@ Function Deploy-PSPortable {
     #Unzip to path download package
     function Invoke-Unzip {
         <#
-    .DESCRIPTION
-    Provides robust zip file extraction by attempting 3 possible methods.
+        .DESCRIPTION
+        Provides robust zip file extraction by attempting 3 possible methods.
 
-    .Parameter zipfile
-    Specify the zipfile location and name
+        .Parameter zipfile
+        Specify the zipfile location and name
 
-    .Parameter outpath
-    Specify the extract path for extracted files
+        .Parameter outpath
+        Specify the extract path for extracted files
 
-    .EXAMPLE
-    Extracts folder.zip to c:\folder
+        .EXAMPLE
+        Extracts folder.zip to c:\folder
 
-    Invoke-Unzip -zipfile c:\folder.zip -outpath c:\folder
+        Invoke-Unzip -zipfile c:\folder.zip -outpath c:\folder
 
-    .Link
-    https://github.com/TheTaylorLee/AdminToolbox
-    #>
+        .Link
+        https://github.com/TheTaylorLee/AdminToolbox
+        #>
 
         [cmdletbinding()]
         param(
