@@ -41,3 +41,4 @@
      - 2.11.0 Updated Admintoolbox and Admintoolbox.Networking and Conemu settings
      - 2.12.0 Updated Admintoolbox and Admintoolbox.FortiWizard
      - 2.13.0 Updated Admintoolbox and Admintoolbox.VMwareAutomate
+     - 2.14.0 Updated PSReadline to 2.2.0-beta4
