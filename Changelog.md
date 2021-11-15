@@ -44,3 +44,4 @@
      - 2.14.0 Updated PSReadline to 2.2.0-beta4
      - 2.15.0 Bugfix Admintoolbox.Networking Modules
      - 2.16.0 Bugfix for Admintoolbox.Office365
+     - 2.17.0 Add functions for Admintoolbox.office365
