@@ -45,3 +45,4 @@
      - 2.15.0 Bugfix Admintoolbox.Networking Modules
      - 2.16.0 Bugfix for Admintoolbox.Office365
      - 2.17.0 Add functions for Admintoolbox.office365
+     - 2.18.0 Update all Admintoolbox module manifest to remove broken helpinfouri
