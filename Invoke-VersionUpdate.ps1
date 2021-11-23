@@ -4,6 +4,7 @@ Function Invoke-VersionUpdate {
 
     try {
         taskkill /im pwsh.exe /F
+        taskkill /im windowsterminal.exe /F
         taskkill /im ConEMU.exe /F
         taskkill /im ConEMUC64.exe /F
     }
@@ -14,7 +15,7 @@ Function Invoke-VersionUpdate {
 
     #Remove old package
     #Remove this error action if having issues to potentionally find the problem
-    get-childitem $env:ProgramData\PS7x64 | Remove-Item -Recurse -Force -ErrorAction 'silentlycontinue'
+    Get-ChildItem $env:ProgramData\PS7x64 | Remove-Item -Recurse -Force -ErrorAction 'silentlycontinue'
 
     #Download new package as zip file
     Function Invoke-DLPSPortable {
