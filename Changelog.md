@@ -49,3 +49,4 @@
      - 2.19.0 admintoolbox.office365 2.18.0
      - 2.20.0 admintoolbox.fortiwizard 2.12.0
      - 2.21.0 admintoolbox 10.0.0
+     - 2.22.0 admintoolbox.fortiwizard 2.12.1
