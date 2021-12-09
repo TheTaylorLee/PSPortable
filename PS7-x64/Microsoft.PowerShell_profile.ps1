@@ -27,7 +27,7 @@ function reset-colors {
 function prompt {
     $(
         #Force Reinstalls Terminal-Icons should it fail to import with errors
-        if ((Get-Module oh-my-posh) -and (Get-Module terminal-icons) -and (Get-Module posh-git)) {
+        if ((Get-Module oh-my-posh) -and (Get-Module posh-git)) {
             try { Set-PoshPrompt Grandpa-Style } catch { Set-PoshPrompt blue-owl }
         }
         else {
@@ -239,15 +239,11 @@ if ($AnsiRendering) {
 }
 #-------------------------------------------------------------------------------------------------------------------------------------------------------
 
-try {
-    Import-Module terminal-icons
-    Import-Module posh-git
-    Import-Module oh-my-posh
-}
-catch {}
 Import-Module AdminToolbox
 Import-Module BetterCredentials
 Import-Module MyFunctions
+Import-Module posh-git
+Import-Module oh-my-posh
 
 # Chocolatey profile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"

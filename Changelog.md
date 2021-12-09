@@ -51,3 +51,4 @@
      - 2.21.0 admintoolbox 10.0.0
      - 2.22.0 admintoolbox.fortiwizard 2.12.1
      - 2.23.0 Added Custom themes
+     - 2.24.0 Updated Powershell Profile
