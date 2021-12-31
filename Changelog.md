@@ -56,3 +56,4 @@
      - 2.26.0 Restructured PSProfile to use snippets for easy management
      - 2.27.0 Updated profile and added nerdfonts install function
      - 2.27.1 Fix Get-tips
+     - 2.27.2 Fix Get-tips
