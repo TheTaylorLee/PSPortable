@@ -55,3 +55,4 @@
      - 2.25.0 Updated Fortiwizard 2.13.1
      - 2.26.0 Restructured PSProfile to use snippets for easy management
      - 2.27.0 Updated profile and added nerdfonts install function
+     - 2.27.1 Fix Get-tips
