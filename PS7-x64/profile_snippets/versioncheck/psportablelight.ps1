@@ -1,13 +1,13 @@
 Function Invoke-VersionCheck {
 
-    $CurrentVersion = Get-Content "C:\ProgramData\PS7x64\version.txt"
+    $CurrentVersion = Get-Content "C:\ProgramData\PS7x64Light\version.txt"
 
-    $VersionCheck = (Invoke-WebRequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/version.txt -Headers @{"Cache-Control" = "no-cache" } -UseBasicParsing).content | Select-String $CurrentVersion
+    $VersionCheck = (Invoke-WebRequest https://raw.githubusercontent.com/TheTaylorLee/PSPortableLight/main/version.txt -Headers @{"Cache-Control" = "no-cache" } -UseBasicParsing).content | Select-String $CurrentVersion
 
     if ($VersionCheck) {
     }
     else {
-        (Invoke-WebRequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Changelog.md -Headers @{"Cache-Control" = "no-cache" } -UseBasicParsing).content
+        (Invoke-WebRequest https://raw.githubusercontent.com/TheTaylorLee/PSPortableLight/main/Changelog.md -Headers @{"Cache-Control" = "no-cache" } -UseBasicParsing).content
         Write-Host " "
 
         Write-Host "Current $CurrentVersion" -ForegroundColor Green
@@ -21,6 +21,6 @@ Function Invoke-VersionCheck {
 
 Function Update-Console {
 
-    Start-Process -FilePath powershell.exe -ArgumentList "-executionpolicy bypass", -noprofile, -NoLogo, "-File $env:ProgramData\PS7x64\Invoke-VersionUpdate.ps1"
+    Start-Process -FilePath powershell.exe -ArgumentList "-executionpolicy bypass", -noprofile, -NoLogo, "-File $env:ProgramData\PS7x64Light\Invoke-VersionUpdate.ps1"
 
 }

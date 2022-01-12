@@ -57,3 +57,4 @@
      - 2.27.0 Updated profile and added nerdfonts install function
      - 2.27.1 Fix Get-tips
      - 2.27.2 Fix Get-tips
+     - 2.28.0 Update profile with new custom Oh-My-Posh theme -> SonicBoom
