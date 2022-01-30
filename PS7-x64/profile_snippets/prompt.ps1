@@ -1,7 +1,10 @@
+$promptosInfo = Get-CimInstance -ClassName Win32_OperatingSystem
+$Global:sow = $promptosInfo.ProductType
+
 function prompt {
     $(
         #Force Reinstalls Terminal-Icons should it fail to import with errors
-        if ((Get-Module oh-my-posh) -and (Get-Module posh-git)) {
+        if ((Get-Module oh-my-posh) -and (Get-Module posh-git) -and $Global:sow -eq '1') {
             try { Set-PoshPrompt sonicboom_light } catch { Set-PoshPrompt blue-owl }
         }
         else {
