@@ -1,5 +1,6 @@
 ﻿$ErrorActionPreference = 'SilentlyContinue'
 
+. $PSScriptRoot\profile_snippets\variables.ps1
 #. $PSScriptRoot\profile_snippets\resetcolors.ps1
 . $PSScriptRoot\profile_snippets\prompt.ps1
 . $PSScriptRoot\profile_snippets\psreadline.ps1
@@ -11,6 +12,5 @@
 . $PSScriptRoot\profile_snippets\experimentalfeatures.ps1
 . $PSScriptRoot\profile_snippets\installfont.ps1
 . $PSScriptRoot\profile_snippets\importmodule.ps1
-. $PSScriptRoot\profile_snippets\variables.ps1
 
 $ErrorActionPreference = 'Continue'

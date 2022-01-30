@@ -1,6 +1,3 @@
-$promptosInfo = Get-CimInstance -ClassName Win32_OperatingSystem
-$Global:sow = $promptosInfo.ProductType
-
 function prompt {
     $(
         #Force Reinstalls Terminal-Icons should it fail to import with errors
