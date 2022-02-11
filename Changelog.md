@@ -58,3 +58,4 @@
      - 2.27.1 Fix Get-tips
      - 2.27.2 Fix Get-tips
      - 2.28.0 Update profile with new custom Oh-My-Posh theme -> SonicBoom
+     - 2.29.0 Admintoolbox.ActiveDirectory 1.6.3
