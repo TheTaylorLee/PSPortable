@@ -8483,6 +8483,11 @@
             Property that sets append parameter. This will allow to append clipboard without clear it.
             </summary>
         </member>
+        <member name="P:Microsoft.PowerShell.Commands.SetClipboardCommand.PassThru">
+            <summary>
+            Gets or sets if the values sent down the pipeline.
+            </summary>
+        </member>
         <member name="M:Microsoft.PowerShell.Commands.SetClipboardCommand.BeginProcessing">
             <summary>
             This method implements the BeginProcessing method for Set-Clipboard command.

@@ -1370,7 +1370,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ShowCommandInternal.CommandViewModel.IsSharedParameterSetName(System.String)">
             <summary>
-            Determins whether current command name and a specifed ParameterSetName have same name.
+            Determines whether current command name and a specified ParameterSetName have same name.
             </summary>
             <param name="name">The name of ShareParameterSet.</param>
             <returns>Return true is ShareParameterSet. Else return false.</returns>
@@ -1646,7 +1646,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ShowCommandInternal.ModuleViewModel.OnRunSelectedCommand">
             <summary>
-            Callled in response to a GUI event that requires the command to be run.
+            Called in response to a GUI event that requires the command to be run.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ShowCommandInternal.ModuleViewModel.OnSelectedCommandNeedsHelp(Microsoft.PowerShell.Commands.ShowCommandInternal.HelpNeededEventArgs)">
@@ -1744,7 +1744,7 @@
             Initializes a new instance of the ParameterSetViewModel class.
             </summary>
             <param name="name">The name of the parameterSet.</param>
-            <param name="parameters">The array parametes of the parameterSet.</param>
+            <param name="parameters">The array parameters of the parameterSet.</param>
         </member>
         <member name="E:Microsoft.PowerShell.Commands.ShowCommandInternal.ParameterSetViewModel.PropertyChanged">
             <summary>
@@ -2664,7 +2664,7 @@
         </member>
         <member name="M:Microsoft.Management.UI.Internal.ParagraphBuilder.HighlightAllInstancesOf(System.String,System.Boolean,System.Boolean)">
             <summary>
-            Highlights all ocurrences of <paramref name="search"/>.
+            Highlights all occurrences of <paramref name="search"/>.
             This is called after all calls to AddText have been made.
             </summary>
             <param name="search">Search string.</param>
@@ -2704,7 +2704,7 @@
             </summary>
             <param name="currentSpanIndex">Current index within <paramref name="allSpans"/>.</param>
             <param name="currentSpan">Current span within <paramref name="allSpans"/>.</param>
-            <param name="caracterPosition">Caracter position. This comes from a position within this.textBuilder.</param>
+            <param name="caracterPosition">Character position. This comes from a position within this.textBuilder.</param>
             <param name="allSpans">The collection of spans. This is either this.boldSpans or this.highlightedSpans.</param>
         </member>
         <member name="M:Microsoft.Management.UI.Internal.ParagraphBuilder.AddHighlight(System.Int32,System.Int32)">
@@ -5146,7 +5146,7 @@
         </member>
         <member name="T:Microsoft.Management.UI.Internal.FilterEvaluator">
             <summary>
-            The FilterEvaluator class is responsible for allowing the registeration of
+            The FilterEvaluator class is responsible for allowing the registration of
             the FilterExpressionProviders and producing a FilterExpression composed of
             the FilterExpression returned from the providers.
             </summary>
@@ -6147,7 +6147,7 @@
         <member name="M:Microsoft.Management.UI.Internal.IEvaluate.Evaluate(System.Object)">
             <summary>
             Gets a values indicating whether the supplied item has meet the
-            criteria rule specificed by the rule.
+            criteria rule specified by the rule.
             </summary>
             <param name="item">
             The item to evaluate.
@@ -6884,7 +6884,7 @@
         </member>
         <member name="P:Microsoft.Management.UI.Internal.FilterRulePanelItem.GroupId">
             <summary>
-            Gets a string that indentifies which group this
+            Gets a string that identifies which group this
             item belongs to.
             </summary>
         </member>

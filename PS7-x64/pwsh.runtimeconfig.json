@@ -4,15 +4,16 @@
     "includedFrameworks": [
       {
         "name": "Microsoft.NETCore.App",
-        "version": "6.0.0-preview.6.21352.12"
+        "version": "6.0.0"
       },
       {
         "name": "Microsoft.WindowsDesktop.App",
-        "version": "6.0.0-preview.6.21353.1"
+        "version": "6.0.0"
       }
     ],
     "rollForwardOnNoCandidateFx": 2,
     "configProperties": {
+      "System.Reflection.Metadata.MetadataUpdater.IsSupported": false,
       "System.Runtime.TieredCompilation": true,
       "System.Runtime.TieredCompilation.QuickJit": true,
       "System.Runtime.TieredCompilation.QuickJitForLoops": true

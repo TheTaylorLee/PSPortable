@@ -9,7 +9,7 @@
 . $PSScriptRoot\profile_snippets\versioncheck\psportable.ps1
 #. $PSScriptRoot\profile_snippets\versioncheck\psportablelight.ps1
 . $PSScriptRoot\profile_snippets\exchangesnapin.ps1
-. $PSScriptRoot\profile_snippets\experimentalfeatures.ps1
+#. $PSScriptRoot\profile_snippets\experimentalfeatures.ps1
 . $PSScriptRoot\profile_snippets\installfont.ps1
 . $PSScriptRoot\profile_snippets\importmodule.ps1
 

@@ -1,23 +1,8 @@
 {
-    "ExperimentalFeatures":  [
-                                 "PSAnsiProgress",
-                                 "PSAnsiRendering",
-                                 "PSAnsiRenderingFileInfo",
-                                 "PSCommandNotFoundSuggestion",
-                                 "PSCultureInvariantReplaceOperator",
-                                 "PSImplicitRemotingBatching",
-                                 "PSLoadAssemblyFromNativeCode",
-                                 "PSNativeCommandArgumentPassing",
-                                 "PSNativePSPathResolution",
-                                 "PSNotApplyErrorActionToStderr",
-                                 "PSSubsystemPluginModel",
-                                 "Microsoft.PowerShell.Utility.PSImportPSDataFileSkipLimitCheck",
-                                 "Microsoft.PowerShell.Utility.PSManageBreakpointsInRunspace"
-                             ],
-    "WindowsPowerShellCompatibilityModuleDenyList":  [
-                                                         "PSScheduledJob",
-                                                         "BestPractices",
-                                                         "UpdateServices"
-                                                     ],
-    "Microsoft.PowerShell:ExecutionPolicy":  "RemoteSigned"
+  "WindowsPowerShellCompatibilityModuleDenyList": [
+    "PSScheduledJob",
+    "BestPractices",
+    "UpdateServices"
+  ],
+  "Microsoft.PowerShell:ExecutionPolicy": "RemoteSigned"
 }

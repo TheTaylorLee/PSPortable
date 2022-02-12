@@ -4242,7 +4242,7 @@
         </member>
         <member name="F:Microsoft.PowerShell.UpdatesNotification.NotificationType.Off">
             <summary>
-            Turn off the udpate notification.
+            Turn off the update notification.
             </summary>
         </member>
         <member name="F:Microsoft.PowerShell.UpdatesNotification.NotificationType.Default">
