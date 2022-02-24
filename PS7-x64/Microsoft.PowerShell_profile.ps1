@@ -1,11 +1,5 @@
 ﻿$ErrorActionPreference = 'SilentlyContinue'
 
-if ($env:WT_SESSION) {
-    # Windows Terminal Session don't run
-}
-else {
-    . $PSScriptRoot\profile_snippets\windowsize.ps1
-}
 . $PSScriptRoot\profile_snippets\variables.ps1
 #. $PSScriptRoot\profile_snippets\resetcolors.ps1
 . $PSScriptRoot\profile_snippets\prompt.ps1
@@ -17,5 +11,11 @@ else {
 #. $PSScriptRoot\profile_snippets\experimentalfeatures.ps1
 . $PSScriptRoot\profile_snippets\installfont.ps1
 . $PSScriptRoot\profile_snippets\importmodule.ps1
+if ($env:WT_SESSION) {
+    # Windows Terminal Session don't run
+}
+else {
+    . $PSScriptRoot\profile_snippets\windowsize.ps1
+}
 
 $ErrorActionPreference = 'Continue'
