@@ -60,3 +60,4 @@
      - 2.28.0 Update profile with new custom Oh-My-Posh theme -> SonicBoom
      - 2.29.0 Admintoolbox.ActiveDirectory 1.6.3
      - 3.0.0 Updated to PowerShell 7.2.1 and PSReadline to version 2.2.1-rc1
+     - 3.1.0 Updated psreadline to 2.2.2 and fixed redraw issue in Microsoft Terminal
