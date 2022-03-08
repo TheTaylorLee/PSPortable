@@ -9,36 +9,35 @@ Deploys a portable PowerShell package with often used modules. If you use this p
 * *__To get started__*
   * Open an admin PowerShell prompt
   * Run the below script
-
-```Powershell
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-(invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortable.ps1 -usebasicparsing).content | Invoke-Expression
-```
+  
+  ```Powershell
+  [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+  (invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortable.ps1 -usebasicparsing).content | Invoke-Expression
+  ```
 
 * *__To Upgrade__*
   * Open an admin PowerShell prompt
   * Run the below script
+  
+  ```Powershell
+  [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+  (invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Invoke-VersionUpdate.ps1 -usebasicparsing).content | Invoke-Expression
+  ```
 
-```Powershell
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-(invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Invoke-VersionUpdate.ps1 -usebasicparsing).content | Invoke-Expression
-```
+* *__Using PSPortable or PSPortableLight in Terminal__* \
 
-* *__To install fonts__* \
-  This portable Powershell Package uses Oh-My-Posh. This means you will require a nerd font to not see question marks where symbols would be seen. Follow the below steps to install "Meslo LG M Regular Nerd Font Complete Mono". If you do not like that font you can get your own from https://www.nerdfonts.com/.
+    These steps offer a guide to use PSPortable or PSPortableLight in Windows Terminal as intended. These steps will install a Nerdfont and Git, so the Oh-My-Posh theme is     properly presented.
+    
+  * Install Nerd Font, Git, and sign into Git account
+  
+  ```Powershell
+  Install-Font
+  Install-chocolatey
+  choco install git
+  git config --global user.name "account"
+  git config --global user.email "email@site.com"
+  ```
+  
+  * Terminal settings should be configured to your preference, [Example Settings](https://github.com/TheTaylorLee/PwshProfile/blob/main/WindowsTerminal/CustomSettings.json) 
+    * Nerd Font must be specified in the PSPortable or PSPortableLight profile.
 
-  * Open PSPortable or PSPortablelight
-  * Run the function Install-Font
-  * A window will pop-up. Click install in that window.
-  * Close the pop-up window
-  * Right click the title bar of the open PWSH window and select properties
-  * Click the font tab
-  * Select "MesloLGM Nerd Font Mono" and hit ok
-  * You are now done. If you are using windows terminal or another terminal, you will need to modify the default font there as well.
-
-* *__To install git__*
-  * Open PSPortable and paste the below script
-```Powershell
-Install-chocolatey
-choco install git
-```
