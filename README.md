@@ -24,7 +24,7 @@ Deploys a portable PowerShell package with often used modules. If you use this p
   (invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Invoke-VersionUpdate.ps1 -usebasicparsing).content | Invoke-Expression
   ```
 
-* *__Using PSPortable or PSPortableLight in Terminal__* \
+* *__Using PSPortable or PSPortableLight in Terminal__*
 
     These steps offer a guide to use PSPortable or PSPortableLight in Windows Terminal as intended. These steps will install a Nerdfont and Git, so the Oh-My-Posh theme is     properly presented.
     
