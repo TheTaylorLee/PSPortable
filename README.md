@@ -2,10 +2,6 @@
 
 Deploys a portable PowerShell package with often used modules. If you use this package, you will need to pay attention to the instructions under the fonts section.
 
-<p align="Left">
-<a href="https://open.vscode.dev/TheTaylorLee/PSPortable"><img src="https://open.vscode.dev/badges/open-in-vscode.svg"></a>
-</p>
-
 * *__To get started__*
   * Open an admin PowerShell prompt
   * Run the below script
