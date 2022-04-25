@@ -62,3 +62,4 @@
      - 3.0.0 Updated to PowerShell 7.2.1 and PSReadline to version 2.2.1-rc1
      - 3.1.0 Updated psreadline to 2.2.2 and fixed redraw issue in Microsoft Terminal
      - 3.2.0 Multiple Admintoolbox Module and function upgrades
+     - 3.3.0 Admintoolbox.Filemanagement 1.10.0
