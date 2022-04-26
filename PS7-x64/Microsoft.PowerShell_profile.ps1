@@ -11,11 +11,14 @@
 #. $PSScriptRoot\profile_snippets\experimentalfeatures.ps1
 . $PSScriptRoot\profile_snippets\installfont.ps1
 . $PSScriptRoot\profile_snippets\importmodule.ps1
-if ($env:WT_SESSION) {
-    # Windows Terminal Session don't run
-}
-else {
+
+# Wanring: Don't refactor this section. This cannot be dot sourced and work, so it is run in the profile and not a seperate script.
+if ($null -eq $env:WT_SESSION -and $env:TERM_PROGRAM -eq 'vscode') {
     . $PSScriptRoot\profile_snippets\windowsize.ps1
+}
+
+if ($env:TERM_PROGRAM -eq 'vscode') {
+    Set-PSReadLineOption -PredictionViewStyle InlineView
 }
 
 $ErrorActionPreference = 'Continue'
