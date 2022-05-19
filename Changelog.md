@@ -64,3 +64,4 @@
      - 3.2.0 Multiple Admintoolbox Module and function upgrades
      - 3.3.0 Admintoolbox.Filemanagement 1.10.0
      - 3.4.0 Admintoolbox.FFtools 4.10.0
+     - 3.5.0 Admintoolbox.Filemanagement 1.12.0 use-wslnano
