@@ -67,3 +67,4 @@
      - 3.5.0 Admintoolbox.Filemanagement 1.12.0 use-wslnano
      - 3.6.0 Admintoolbox.FFtools 4.11.0
      - 4.0.0 Admintoolbox 11.0.0 & Admintoolbox.msgraph 1.0.0
+     - 4.1.0 Admintoolbox 11.0.1 & Admintoolbox.msgraph 1.2.0
