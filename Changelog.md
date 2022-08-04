@@ -69,3 +69,4 @@
      - 4.0.0 Admintoolbox 11.0.0 & Admintoolbox.msgraph 1.0.0
      - 4.1.0 Admintoolbox 11.0.1 & Admintoolbox.msgraph 1.2.0
      - 4.2.0 Admintoolbox 11.0.3 & Admintoolbox.msgraph 1.3.0
+     - 4.3.0 Admintoolbox.FortiWizard 2.16.0 and other modules version bump
