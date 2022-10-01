@@ -72,3 +72,4 @@
      - 4.3.0 Admintoolbox.FortiWizard 2.16.0 and other modules version bump
      - 4.4.0 Admintoolbox.FileManagement 1.14.0
      - 4.5.0 Admintoolbox.FFtools 4.13.1
+     - 4.6.0 Admintoolbox.FFtools 4.13.3
