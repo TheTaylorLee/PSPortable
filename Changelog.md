@@ -73,3 +73,4 @@
      - 4.4.0 Admintoolbox.FileManagement 1.14.0
      - 4.5.0 Admintoolbox.FFtools 4.13.1
      - 4.6.0 Admintoolbox.FFtools 4.13.3
+     - 4.7.0 Admintoolbox.FFtools 4.14.0
