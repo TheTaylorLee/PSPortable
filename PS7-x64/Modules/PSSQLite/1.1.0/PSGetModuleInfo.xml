@@ -1,0 +1,143 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">PSSQLite</S>
+      <Version N="Version">1.1.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Query SQLite databases</S>
+      <S N="Author">Warren Frame</S>
+      <S N="CompanyName">ramblingcookiemonster</S>
+      <Nil N="Copyright" />
+      <DT N="PublishedDate">2020-05-18T13:38:10-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2022-10-31T10:57:50.7096316-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/RamblingCookieMonster/PSSQLite/blob/master/LICENSE</URI>
+      <URI N="ProjectUri">https://github.com/RamblingCookieMonster/PSSQLite</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>sql</S>
+          <S>sqlite</S>
+          <S>Query</S>
+          <S>Database</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Invoke-SqliteBulkCopy</S>
+                <S>Invoke-SqliteQuery</S>
+                <S>New-SqliteConnection</S>
+                <S>Out-DataTable</S>
+                <S>Update-Sqlite</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Invoke-SqliteBulkCopy</S>
+                <S>Invoke-SqliteQuery</S>
+                <S>New-SqliteConnection</S>
+                <S>Out-DataTable</S>
+                <S>Update-Sqlite</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="description">Query SQLite databases</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">1005613</S>
+          <S N="downloadCount">1091483</S>
+          <S N="packageSize">5014416</S>
+          <S N="published">5/18/2020 1:38:10 PM -05:00</S>
+          <S N="created">5/18/2020 1:38:10 PM -05:00</S>
+          <S N="lastUpdated">10/31/2022 3:53:09 PM -05:00</S>
+          <S N="tags">sql sqlite Query Database PSModule PSFunction_Invoke-SqliteBulkCopy PSCommand_Invoke-SqliteBulkCopy PSFunction_Invoke-SqliteQuery PSCommand_Invoke-SqliteQuery PSFunction_New-SqliteConnection PSCommand_New-SqliteConnection PSFunction_Out-DataTable PSCommand_Out-DataTable PSFunction_Update-Sqlite PSCommand_Update-Sqlite PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-10-31T15:53:09Z</S>
+          <S N="NormalizedVersion">1.1.0</S>
+          <S N="Authors">Warren Frame</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">PSSQLite.nuspec|Invoke-SqliteBulkCopy.ps1|Invoke-SqliteQuery.ps1|New-SqliteConnection.ps1|Out-DataTable.ps1|PSSQLite.psd1|PSSQLite.psm1|Update-Sqlite.ps1|core\linux-x64\SQLite.Interop.dll|core\linux-x64\System.Data.SQLite.dll|core\osx-x64\SQLite.Interop.dll|core\osx-x64\System.Data.SQLite.dll|core\win-x64\SQLite.Interop.dll|core\win-x64\System.Data.SQLite.dll|core\win-x86\SQLite.Interop.dll|core\win-x86\System.Data.SQLite.dll|x64\SQLite.Interop.dll|x64\System.Data.SQLite.dll|x86\SQLite.Interop.dll|x86\System.Data.SQLite.dll</S>
+          <S N="GUID">381f3394-9b8a-492e-94b4-b3aa9e775761</S>
+          <S N="PowerShellVersion">2.0</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\taylor\Documents\PowerShell\Modules\PSSQLite\1.1.0</S>
+    </MS>
+  </Obj>
+</Objs>
