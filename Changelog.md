@@ -75,3 +75,4 @@
      - 4.6.0 Admintoolbox.FFtools 4.13.3
      - 4.7.0 Admintoolbox.FFtools 4.14.0
      - 4.8.0 Update all admintoolbox modules
+     - 4.9.0 Update version check to look for host path. Both PSPortables now support same profile without differences.
