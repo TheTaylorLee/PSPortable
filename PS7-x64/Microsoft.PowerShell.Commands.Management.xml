@@ -3677,6 +3677,21 @@
             Secure Memory Overwrite.
             </summary>
         </member>
+        <member name="F:Microsoft.PowerShell.Commands.DeviceGuardHardwareSecure.UEFICodeReadonly">
+            <summary>
+            UEFI Code Readonly.
+            </summary>
+        </member>
+        <member name="F:Microsoft.PowerShell.Commands.DeviceGuardHardwareSecure.SMMSecurityMitigations">
+            <summary>
+            SMM Security Mitigations 1.0.
+            </summary>
+        </member>
+        <member name="F:Microsoft.PowerShell.Commands.DeviceGuardHardwareSecure.ModeBasedExecutionControl">
+            <summary>
+            Mode Based Execution Control.
+            </summary>
+        </member>
         <member name="T:Microsoft.PowerShell.Commands.DeviceGuardSoftwareSecure">
             <summary>
             Device Guard software security properties.
@@ -5124,7 +5139,7 @@
             <param name="holder"></param>
             <param name="currentContext"></param>
             <returns>
-            true if no error occured
+            true if no error occurred
             false if there was an error
             </returns>
         </member>
@@ -8943,7 +8958,7 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.SetTimeZoneCommand.ProcessRecord">
             <summary>
-            Implementation of the ProcessRecord method for Get-TimeZone.
+            Implementation of the ProcessRecord method for Set-TimeZone.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.SetTimeZoneCommand.HasAccess">

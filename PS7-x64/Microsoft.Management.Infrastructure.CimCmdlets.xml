@@ -2749,6 +2749,11 @@
             <param name="sessionOptions"></param>
             <param name="options"></param>
         </member>
+        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.Amended">
+            <summary>
+            Gets or sets a value indicating whether to retrieve localized information for the CIM class.
+            </summary>
+        </member>
         <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.OperationTimeout">
             <summary>
             Set timeout value (seconds) of the operation.
@@ -4006,6 +4011,11 @@
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.GetCimClassCommand.#ctor">
             <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.GetCimClassCommand"/> class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.GetCimClassCommand.Amended">
+            <summary>
+            Gets or sets flag to retrieve a localized data for WMI class.
             </summary>
         </member>
         <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.GetCimClassCommand.ClassName">

@@ -179,7 +179,14 @@
         <member name="P:CommandLineParameterParserStrings.MissingConfigurationNameArgument">
             <summary>
               Looks up a localized string similar to 
-               Cannot process the command because -Configuration requires an argument that is a remote endpoint configuration name. Specify this argument and try again.
+               Cannot process the command because -ConfigurationName requires an argument that is a remote endpoint configuration name. Specify this argument and try again.
+             
+            </summary>
+        </member>
+        <member name="P:CommandLineParameterParserStrings.MissingConfigurationFileArgument">
+            <summary>
+              Looks up a localized string similar to 
+               Cannot process the command because -ConfigurationFile requires an argument that is a session configuration (.pssc) file path. Specify this argument and try again.
              
             </summary>
         </member>
@@ -716,6 +723,13 @@
              
             </summary>
         </member>
+        <member name="P:ConsoleHostStrings.ShellCannotBeStartedWithConfigConflict">
+            <summary>
+              Looks up a localized string similar to 
+               The shell cannot be started. An InitialSessionState object has been provided along with a -ConfigurationFile argument. Both configuration directives cannot be used at the same time.
+             
+            </summary>
+        </member>
         <member name="P:ConsoleHostStrings.UnhandledExceptionShutdownMessage">
             <summary>
               Looks up a localized string similar to 
@@ -1079,15 +1093,11 @@
             </summary>
         </member>
         <member name="P:ManagedEntranceStrings.ShellBannerNonWindowsPowerShell">
-             <summary>
-               Looks up a localized string similar to 
-                PowerShell {0}
-            Copyright (c) Microsoft Corporation.
-            
-            https://aka.ms/powershell
-            Type 'help' to get help.
-              
-             </summary>
+            <summary>
+              Looks up a localized string similar to 
+               PowerShell {0}
+             
+            </summary>
         </member>
         <member name="P:ManagedEntranceStrings.PSReadLineDisabledWhenScreenReaderIsActive">
             <summary>
@@ -1365,6 +1375,12 @@
             </summary>
             <param name="message"></param>
         </member>
+        <member name="T:Microsoft.PowerShell.CommandLineParameterParser.ParameterBitmap">
+            <summary>
+            These represent the parameters that are used when starting pwsh.
+            We can query in our telemetry to determine how pwsh was invoked.
+            </summary>
+        </member>
         <member name="M:Microsoft.PowerShell.CommandLineParameterParser.TryParseSettingFileHelper(System.String[],System.Int32)">
             <summary>
             Processes the -SettingFile Argument.
@@ -1398,6 +1414,14 @@
             The first value is a String called 'switchKey' with the word in a switch from the current argument or null.
             The second value is a bool called 'shouldBreak', indicating if the parsing look should break.
             </returns>
+        </member>
+        <member name="M:Microsoft.PowerShell.CommandLineParameterParser.GetExecutionPolicy(System.String)">
+            <summary>
+            Determine the execution policy based on the supplied string.
+            If the string doesn't match to any known execution policy, set it to incorrect.
+            </summary>
+            <param name="_executionPolicy">The value provided on the command line.</param>
+            <returns>The execution policy.</returns>
         </member>
         <member name="M:Microsoft.PowerShell.CommandLineParameterParser.Parse(System.String[])">
             <summary>
@@ -2003,7 +2027,7 @@
             Subclasses S.M.A.Host to implement a console-mode monad host.
             </summary>
         </member>
-        <member name="M:Microsoft.PowerShell.ConsoleHost.Start(System.String,System.String)">
+        <member name="M:Microsoft.PowerShell.ConsoleHost.Start(System.String,System.String,System.Boolean)">
              <summary>
              Internal Entry point in msh console host implementation.
              </summary>
@@ -2012,6 +2036,9 @@
              </param>
              <param name="helpText">
              Help text for minishell. This is displayed on 'minishell -?'.
+             </param>
+             <param name="issProvidedExternally">
+             True when an external caller provides an InitialSessionState object, which can conflict with '-ConfigurationFile' argument.
              </param>
              <returns>
              The exit code for the shell.
@@ -2221,7 +2248,7 @@
             The process exit code to be returned by Main.
             </returns>
         </member>
-        <member name="M:Microsoft.PowerShell.ConsoleHost.DoRunspaceLoop(System.String,System.Boolean,System.Collections.ObjectModel.Collection{System.Management.Automation.Runspaces.CommandParameter},System.Boolean,System.String)">
+        <member name="M:Microsoft.PowerShell.ConsoleHost.DoRunspaceLoop(System.String,System.Boolean,System.Collections.ObjectModel.Collection{System.Management.Automation.Runspaces.CommandParameter},System.Boolean,System.String,System.String)">
             <summary>
             Loops over the Host's sole Runspace; opens the runspace, initializes it, then recycles it if the Runspace fails.
             </summary>
@@ -2233,14 +2260,15 @@
             <summary>
             Check if a screen reviewer utility is running.
             When a screen reader is running, we don't auto-load the PSReadLine module at startup,
-            since PSReadLine is not accessibility-firendly enough as of today.
+            since PSReadLine is not accessibility-friendly enough as of today.
             </summary>
         </member>
-        <member name="M:Microsoft.PowerShell.ConsoleHost.DoCreateRunspace(System.String,System.Boolean,System.Boolean,System.String,System.Collections.ObjectModel.Collection{System.Management.Automation.Runspaces.CommandParameter})">
+        <member name="M:Microsoft.PowerShell.ConsoleHost.DoCreateRunspace(Microsoft.PowerShell.RunspaceCreationEventArgs)">
             <summary>
             Opens and Initializes the Host's sole Runspace.  Processes the startup scripts and runs any command passed on the
             command line.
             </summary>
+            <param name="args">Runspace creation event arguments.</param>
         </member>
         <member name="M:Microsoft.PowerShell.ConsoleHost.EscapeSingleQuotes(System.String)">
             <summary>
@@ -2355,7 +2383,7 @@
             Defines arguments passed to ConsoleHost.CreateRunspace.
             </summary>
         </member>
-        <member name="M:Microsoft.PowerShell.RunspaceCreationEventArgs.#ctor(System.String,System.Boolean,System.Boolean,System.String,System.Collections.ObjectModel.Collection{System.Management.Automation.Runspaces.CommandParameter})">
+        <member name="M:Microsoft.PowerShell.RunspaceCreationEventArgs.#ctor(System.String,System.Boolean,System.Boolean,System.String,System.String,System.Collections.ObjectModel.Collection{System.Management.Automation.Runspaces.CommandParameter})">
             <summary>
             Constructs RunspaceCreationEventArgs.
             </summary>
@@ -3411,6 +3439,18 @@
             <param name="bannerText">Banner text to be displayed by ConsoleHost.</param>
             <param name="helpText">Help text for the shell.</param>
             <param name="args">Commandline parameters specified by user.</param>
+            <returns>An integer value which should be used as exit code for the process.</returns>
+        </member>
+        <member name="M:Microsoft.PowerShell.ConsoleShell.StartImpl(System.Management.Automation.Runspaces.InitialSessionState,System.String,System.String,System.String[],System.Boolean)">
+            <summary>
+            Implementation of entry point to ConsoleShell.
+            Used to create a custom Powershell console application.
+            </summary>
+            <param name="initialSessionState">InitialSessionState to be used by the ConsoleHost.</param>
+            <param name="bannerText">Banner text to be displayed by ConsoleHost.</param>
+            <param name="helpText">Help text for the shell.</param>
+            <param name="args">Commandline parameters specified by user.</param>
+            <param name="issProvided">True when the InitialSessionState object is provided by caller.</param>
             <returns>An integer value which should be used as exit code for the process.</returns>
         </member>
         <member name="T:Microsoft.PowerShell.Executor">

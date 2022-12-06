@@ -4744,6 +4744,11 @@
             Allows the user to override the second.
             </summary>
         </member>
+        <member name="P:Microsoft.PowerShell.Commands.NewTimeSpanCommand.Milliseconds">
+            <summary>
+            Allows the user to override the millisecond.
+            </summary>
+        </member>
         <member name="M:Microsoft.PowerShell.Commands.NewTimeSpanCommand.ProcessRecord">
             <summary>
             Calculate and write out the appropriate timespan.
@@ -6082,6 +6087,11 @@
         <member name="P:Microsoft.PowerShell.Commands.StartSleepCommand.Milliseconds">
             <summary>
             Allows sleep time to be specified in milliseconds.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.StartSleepCommand.Duration">
+            <summary>
+            Allows sleep time to be specified as a TimeSpan.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.StartSleepCommand.Sleep(System.Int32)">
@@ -7563,6 +7573,14 @@
             Reads the response content from the web response.
             </summary>
         </member>
+        <member name="T:Microsoft.PowerShell.Commands.HttpVersionCompletionsAttribute">
+            <summary>
+            A completer for HTTP version names.
+            </summary>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.HttpVersionCompletionsAttribute.#ctor">
+            <inheritdoc/>
+        </member>
         <member name="T:Microsoft.PowerShell.Commands.InvokeRestMethodCommand">
             <summary>
             The Invoke-RestMethod command
@@ -7666,12 +7684,12 @@
         </member>
         <member name="F:Microsoft.PowerShell.Commands.WebSslProtocol.Tls">
             <summary>
-            Specifies the TLS 1.0 security protocol. The TLS protocol is defined in IETF RFC 2246.
+            Specifies the TLS 1.0 is obsolete. Using this value now defaults to TLS 1.2.
             </summary>
         </member>
         <member name="F:Microsoft.PowerShell.Commands.WebSslProtocol.Tls11">
             <summary>
-            Specifies the TLS 1.1 security protocol. The TLS protocol is defined in IETF RFC 4346.
+            Specifies the TLS 1.1 is obsolete. Using this value now defaults to TLS 1.2.
             </summary>
         </member>
         <member name="F:Microsoft.PowerShell.Commands.WebSslProtocol.Tls12">
@@ -7700,6 +7718,11 @@
         <member name="P:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.Uri">
             <summary>
             Gets or sets the Uri property.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.HttpVersion">
+            <summary>
+            Gets or sets the HTTP Version property.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.WebSession">
@@ -8240,11 +8263,6 @@
             <param name="disposing">
             Specified as true when Dispose() was called, false if this is called from the finalizer.
             </param>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.ConvertToJsonCommand.BeginProcessing">
-            <summary>
-            Prerequisite checks.
-            </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ConvertToJsonCommand.ProcessRecord">
             <summary>
@@ -11615,6 +11633,32 @@
              
             </summary>
         </member>
+        <member name="T:StartSleepStrings">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="M:StartSleepStrings.#ctor">
+            <summary>constructor</summary>
+        </member>
+        <member name="P:StartSleepStrings.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:StartSleepStrings.Culture">
+            <summary>
+              Overrides the current threads CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:StartSleepStrings.MaximumDurationExceeded">
+            <summary>
+              Looks up a localized string similar to 
+               The '-Duration' parameter value must not exceed '{0}', provided value was '{1}'.
+             
+            </summary>
+        </member>
         <member name="T:TestJsonCmdletStrings">
             <summary>
               A strongly-typed resource class, for looking up localized strings, etc.
@@ -12495,13 +12539,6 @@
              
             </summary>
         </member>
-        <member name="P:WebCmdletStrings.ReachedMaximumDepthAllowed">
-            <summary>
-              Looks up a localized string similar to 
-               The maximum depth allowed for serialization is {0}.
-             
-            </summary>
-        </member>
         <member name="P:WebCmdletStrings.JsonDeserializationFailed">
             <summary>
               Looks up a localized string similar to 
@@ -12526,7 +12563,7 @@
         <member name="P:WebCmdletStrings.WebMethodInvocationVerboseMsg">
             <summary>
               Looks up a localized string similar to 
-               {0} with {1}-byte payload
+               HTTP/{0} {1} with {2}-byte payload
              
             </summary>
         </member>
