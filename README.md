@@ -1,22 +1,34 @@
+_**Due to the very customized nature of this package I don't recommend using it. I do keep this repository public as an example for how someone might consider setting up a similar solution and for sharing with colleagues.**_
+
 # PSPortable
 
 Deploys a portable PowerShell package with often used modules. If you use this package, you will need to pay attention to the instructions under the fonts section. When updates are released, launching PSPortable will present a changelog and prompt to use update-console to update if desired.
+
+* *__Remove old version of Oh-My-Posh__* *
+  * Only needs to be run if PSPortable was previously used or if haven't upgraded to the latest Oh-My-Posh package format
+  * Skip if this is a server environment since oh-my-posh will not be used
+  * Run from an admin pwsh prompt and not PowerShell
+
+  ```powershell
+  Remove-Item $env:POSH_PATH -Force -Recurse -erroraction silentlycontinue
+  Uninstall-Module oh-my-posh -AllVersions -erroraction silentlycontinue
+  ```
 
 * *__To get started__*
   * Open an admin PowerShell prompt
   * Run the below script to include all modules and update existing module that will be included
 
-```Powershell
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-(invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortable.ps1 -usebasicparsing).content | Invoke-Expression
-```
+  ```Powershell
+  [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+  (invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortable.ps1 -usebasicparsing).content | Invoke-Expression
+  ```
 
 * Or run the below script to include less modules
 
-```Powershell
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-(invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortableLight.ps1 -usebasicparsing).content | Invoke-Expression
-```
+  ```Powershell
+  [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+  (invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortableLight.ps1 -usebasicparsing).content | Invoke-Expression
+  ```
 
 * *__Using PSPortable or PSPortableLight in Terminal__*
 
