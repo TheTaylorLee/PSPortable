@@ -72,19 +72,19 @@ Function Deploy-PSPortable {
     Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
     Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Confirm:$false
 
-    Install-Module Az -Force -Scope AllUsers -Confirm:$false
-    Install-Module AzureAD -Force -Scope AllUsers -Confirm:$false
-    Install-Module AzViz -Force -Scope AllUsers -Confirm:$false
-    Install-Module BetterCredentials -Force -Scope AllUsers -Confirm:$false
-    Install-Module ExchangeOnlineManagement -Force -Scope AllUsers -Confirm:$false
-    Install-Module Microsoft.Graph -Force -Scope AllUsers -Confirm:$false
-    Install-Module MicrosoftTeams -Force -Scope AllUsers -Confirm:$false
-    Install-Module MSOnline -Force -Scope AllUsers -Confirm:$false
-    Install-Module PlatyPS -Force -Scope AllUsers -Confirm:$false
-    Install-Module PSGraph -Force -Scope AllUsers -Confirm:$false
-    Install-Module PSTeams -Force -Scope AllUsers -Confirm:$false
-    Install-Module ReportHTML -Force -Scope AllUsers -Confirm:$false
-    Install-Module VMWare.Powercli -Force -Scope AllUsers -Confirm:$false
+    Install-Module Az -Force -Scope AllUsers -Confirm:$false -allowclobber
+    Install-Module AzureAD -Force -Scope AllUsers -Confirm:$false -allowclobber
+    Install-Module AzViz -Force -Scope AllUsers -Confirm:$false -allowclobber
+    Install-Module BetterCredentials -Force -Scope AllUsers -Confirm:$false -allowclobber
+    Install-Module ExchangeOnlineManagement -Force -Scope AllUsers -Confirm:$false -allowclobber
+    Install-Module Microsoft.Graph -Force -Scope AllUsers -Confirm:$false -allowclobber
+    Install-Module MicrosoftTeams -Force -Scope AllUsers -Confirm:$false -allowclobber
+    Install-Module MSOnline -Force -Scope AllUsers -Confirm:$false -allowclobber
+    Install-Module PlatyPS -Force -Scope AllUsers -Confirm:$false -allowclobber
+    Install-Module PSGraph -Force -Scope AllUsers -Confirm:$false -allowclobber
+    Install-Module PSTeams -Force -Scope AllUsers -Confirm:$false -allowclobber
+    Install-Module ReportHTML -Force -Scope AllUsers -Confirm:$false -allowclobber
+    Install-Module VMWare.Powercli -Force -Scope AllUsers -Confirm:$false -allowclobber
 
     Invoke-Unzip -zipfile "$env:ProgramData\PS7x64.zip" -outpath "$env:ProgramData"
     Rename-Item "$env:ProgramData\PSPortable-master" "$env:ProgramData\PS7x64"
