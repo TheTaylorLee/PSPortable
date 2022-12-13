@@ -10,8 +10,10 @@ Deploys a portable PowerShell package with often used modules. If you use this p
   * Run from an admin pwsh prompt and not PowerShell
 
   ```powershell
-  Remove-Item $env:POSH_PATH -Force -Recurse -erroraction silentlycontinue
-  Uninstall-Module oh-my-posh -AllVersions -erroraction silentlycontinue
+  try{
+  Remove-Item $env:POSH_PATH -Force -Recurse
+  Uninstall-Module oh-my-posh -AllVersions
+  } catch { }
   ```
 
 * *__To get started__*
