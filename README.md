@@ -14,6 +14,7 @@ Deploys a portable PowerShell package with often used modules. If you use this p
   Remove-Item $env:POSH_PATH -Force -Recurse
   Uninstall-Module oh-my-posh -AllVersions
   } catch { }
+  winget install JanDeDobbeleer.OhMyPosh -s winget
   ```
 
 * *__To get started__*
