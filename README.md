@@ -22,7 +22,7 @@ Deploys a portable PowerShell package with often used modules. If you use this p
   * Run the below script to include all modules and update existing module that will be included
 
   ```Powershell
-  Set-ExecutionPolicy Unrestricted -confirm:$false
+  Set-ExecutionPolicy Unrestricted -confirm:$false -Force
   [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
   (invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortable.ps1 -usebasicparsing).content | Invoke-Expression
   ```
@@ -30,7 +30,7 @@ Deploys a portable PowerShell package with often used modules. If you use this p
 * Or run the below script to include less modules
 
   ```Powershell
-  Set-ExecutionPolicy Unrestricted -confirm:$false
+  Set-ExecutionPolicy Unrestricted -confirm:$false -Force
   [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
   (invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortableLight.ps1 -usebasicparsing).content | Invoke-Expression
   ```
