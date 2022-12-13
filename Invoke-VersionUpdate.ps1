@@ -55,23 +55,6 @@ Function Invoke-VersionUpdate {
         }
     }
 
-    Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
-    Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Confirm:$false
-
-    Install-Module Az -Force -Scope AllUsers -Confirm:$false -allowclobber
-    Install-Module AzureAD -Force -Scope AllUsers -Confirm:$false -allowclobber
-    Install-Module AzViz -Force -Scope AllUsers -Confirm:$false -allowclobber
-    Install-Module BetterCredentials -Force -Scope AllUsers -Confirm:$false -allowclobber
-    Install-Module ExchangeOnlineManagement -Force -Scope AllUsers -Confirm:$false -allowclobber
-    Install-Module Microsoft.Graph -Force -Scope AllUsers -Confirm:$false -allowclobber
-    Install-Module MicrosoftTeams -Force -Scope AllUsers -Confirm:$false -allowclobber
-    Install-Module MSOnline -Force -Scope AllUsers -Confirm:$false -allowclobber
-    Install-Module PlatyPS -Force -Scope AllUsers -Confirm:$false -allowclobber
-    Install-Module PSGraph -Force -Scope AllUsers -Confirm:$false -allowclobber
-    Install-Module PSTeams -Force -Scope AllUsers -Confirm:$false -allowclobber
-    Install-Module ReportHTML -Force -Scope AllUsers -Confirm:$false -allowclobber
-    Install-Module VMWare.Powercli -Force -Scope AllUsers -Confirm:$false -allowclobber
-
     Invoke-Unzip2 -zipfile "$env:ProgramData\PS7x64.zip" -outpath "$env:ProgramData"
     #Rename-Item "$env:ProgramData\PSPortable-master" "$env:ProgramData\PS7x64"
     Robocopy.exe $env:ProgramData\PSPortable-master $env:ProgramData\PS7x64 /mir /COPY:DATSO /r:1 /w:1
@@ -80,5 +63,24 @@ Function Invoke-VersionUpdate {
 
     #Pin shortcut to taskbar
     Invoke-Item "$env:ProgramData\PS7x64\PS7-x64\pwsh.exe.lnk"
+
+    #Install Modules
+    Write-Warning "Installing Modules will take time. When completed consider restarting pwsh or windows terminal. When completed this window will close"
+    Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+    Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Confirm:$false
+
+    Install-Module Az -Force -Scope AllUsers -Confirm:$false -AllowClobber
+    Install-Module AzureAD -Force -Scope AllUsers -Confirm:$false -AllowClobber
+    Install-Module AzViz -Force -Scope AllUsers -Confirm:$false -AllowClobber
+    Install-Module BetterCredentials -Force -Scope AllUsers -Confirm:$false -AllowClobber
+    Install-Module ExchangeOnlineManagement -Force -Scope AllUsers -Confirm:$false -AllowClobber
+    Install-Module Microsoft.Graph -Force -Scope AllUsers -Confirm:$false -AllowClobber
+    Install-Module MicrosoftTeams -Force -Scope AllUsers -Confirm:$false -AllowClobber
+    Install-Module MSOnline -Force -Scope AllUsers -Confirm:$false -AllowClobber
+    Install-Module PlatyPS -Force -Scope AllUsers -Confirm:$false -AllowClobber
+    Install-Module PSGraph -Force -Scope AllUsers -Confirm:$false -AllowClobber
+    Install-Module PSTeams -Force -Scope AllUsers -Confirm:$false -AllowClobber
+    Install-Module ReportHTML -Force -Scope AllUsers -Confirm:$false -AllowClobber
+    Install-Module VMWare.Powercli -Force -Scope AllUsers -Confirm:$false -AllowClobber
     exit
 }; Invoke-VersionUpdate
