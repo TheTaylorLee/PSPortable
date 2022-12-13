@@ -1,4 +1,4 @@
-_**Due to the very customized nature of this package I don't recommend using it. I do keep this repository public as an example for how someone might consider setting up a similar solution and for sharing with colleagues.**_
+_**Due to the customized nature of this package I don't recommend using it. I do keep this repository public as an example for how someone might consider setting up a similar solution and for sharing with colleagues.**_
 
 # PSPortable
 
