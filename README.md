@@ -20,6 +20,7 @@ Deploys a portable PowerShell package with often used modules. If you use this p
 * *__To get started__*
   * Open an admin PowerShell prompt
   * Run the below script to include all modules and update existing module that will be included
+  * A full deploy is slow. It should be run rarely such as on a primary workstation. The Light Version should be used more commonly.
 
   ```Powershell
   Set-ExecutionPolicy Unrestricted -confirm:$false
@@ -27,7 +28,7 @@ Deploys a portable PowerShell package with often used modules. If you use this p
   (invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortable.ps1 -usebasicparsing).content | Invoke-Expression
   ```
 
-* Or run the below script to include less modules
+* Or run the below script to include less modules (Light Version)
 
   ```Powershell
   Set-ExecutionPolicy Unrestricted -confirm:$false
