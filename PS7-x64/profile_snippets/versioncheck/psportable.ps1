@@ -28,7 +28,7 @@ Function Update-Console {
     )
 
     if ($installextra) {
-        Start-Process -FilePath powershell.exe -ArgumentList "-executionpolicy bypass", -noprofile, -NoLogo, "-File $env:ProgramData\PS7x64\Invoke-VersionUpdate.ps1"
+        Start-Process -FilePath powershell.exe -ArgumentList "-executionpolicy unrestricted", -noprofile, -NoLogo, "-File $env:ProgramData\PS7x64\Invoke-VersionUpdate.ps1"
     }
     else {
         Start-Process -FilePath powershell.exe -ArgumentList "-executionpolicy bypass", -noprofile, -NoLogo, "-File $env:ProgramData\PS7x64\Invoke-VersionUpdateLight.ps1"
