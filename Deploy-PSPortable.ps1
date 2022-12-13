@@ -71,7 +71,6 @@ Function Deploy-PSPortable {
 
     Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
     Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Confirm:$false
-    set-executionpolicy bypass -Force -confirm:$false
 
     Install-Module Az -Force -Scope AllUsers -Confirm:$false
     Install-Module AzureAD -Force -Scope AllUsers -Confirm:$false
