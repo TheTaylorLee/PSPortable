@@ -4,19 +4,26 @@ Deploys a portable PowerShell package with often used modules. If you use this p
 
 * *__To get started__*
   * Open an admin PowerShell prompt
-  * Run the below script
-  
-  ```Powershell
-  [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-  (invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortable.ps1 -usebasicparsing).content | Invoke-Expression
-  ```
+  * Run the below script to include all modules and update existing module that will be included
+
+```Powershell
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+(invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortable.ps1 -usebasicparsing).content | Invoke-Expression
+```
+
+* Or run the below script to include less modules
+
+```Powershell
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+(invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortableLight.ps1 -usebasicparsing).content | Invoke-Expression
+```
 
 * *__Using PSPortable or PSPortableLight in Terminal__*
 
     These steps offer a guide to use PSPortable or PSPortableLight in Windows Terminal as intended. These steps will install a Nerdfont and Git, so the Oh-My-Posh theme is     properly presented.
-    
+
   * Install Nerd Font, Git, and sign into Git account
-  
+
   ```Powershell
   Install-Font
   Install-chocolatey
@@ -24,7 +31,6 @@ Deploys a portable PowerShell package with often used modules. If you use this p
   git config --global user.name "account"
   git config --global user.email "email@site.com"
   ```
-  
-  * Terminal settings should be configured to your preference, [Example Settings](https://github.com/TheTaylorLee/PwshProfile/blob/main/WindowsTerminal/CustomSettings.json) 
-    * Nerd Font must be specified in the PSPortable or PSPortableLight profile.
 
+  * Terminal settings should be configured to your preference, [Example Settings](https://github.com/TheTaylorLee/PwshProfile/blob/main/WindowsTerminal/CustomSettings.json)
+    * Nerd Font must be specified in the PSPortable or PSPortableLight profile.

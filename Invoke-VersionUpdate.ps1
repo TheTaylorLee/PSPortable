@@ -2,11 +2,14 @@
 
 Function Invoke-VersionUpdate {
 
+    [CmdletBinding()]
+    Param (
+        [Parameter(Mandatory = $false)][switch]$installextra
+    )
+
     try {
         taskkill /im pwsh.exe /F
         taskkill /im windowsterminal.exe /F
-        taskkill /im ConEMU.exe /F
-        taskkill /im ConEMUC64.exe /F
     }
     catch {
     }
@@ -55,6 +58,23 @@ Function Invoke-VersionUpdate {
                 $Shell.Namespace($outpath).copyhere($Shell.NameSpace($zipfile).Items(), 4)
             }
         }
+    }
+
+
+    if ($installextra) {
+        Install-Module Az -Force -Scope AllUsers
+        Install-Module AzureAD -Force -Scope AllUsers
+        Install-Module AzViz -Force -Scope AllUsers
+        Install-Module BetterCredentials -Force -Scope AllUsers
+        Install-Module ExchangeOnlineManagement -Force -Scope AllUsers
+        Install-Module Microsoft.Graph -Force -Scope AllUsers
+        Install-Module MicrosoftTeams -Force -Scope AllUsers
+        Install-Module MSOnline -Force -Scope AllUsers
+        Install-Module PlatyPS -Force -Scope AllUsers
+        Install-Module PSGraph -Force -Scope AllUsers
+        Install-Module PSTeams -Force -Scope AllUsers
+        Install-Module ReportHTML -Force -Scope AllUsers
+        Install-Module VMWare.Powercli -Force -Scope AllUsers
     }
 
     Invoke-Unzip2 -zipfile "$env:ProgramData\PS7x64.zip" -outpath "$env:ProgramData"

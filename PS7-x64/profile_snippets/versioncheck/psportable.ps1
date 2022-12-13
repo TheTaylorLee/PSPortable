@@ -15,12 +15,22 @@ Function Invoke-VersionCheck {
         Write-Host " "
         Write-Host "A new version of PSPortable has been detected" -ForegroundColor Green
         Write-Host "If you wish to update your console now, run the function Update-Console" -ForegroundColor Cyan
-        Write-Warning "This will close all open sessions of ConEmu and pwsh.exe if run"
+        Write-Host "Include the parameter -installextra to include various 365, Azure, and miscellaneous modules" -ForegroundColor Cyan
+        Write-Warning "This will close all open sessions pwsh.exe and Windows Terminal if run"
     }
 }; Invoke-VersionCheck
 
 Function Update-Console {
 
-    Start-Process -FilePath powershell.exe -ArgumentList "-executionpolicy bypass", -noprofile, -NoLogo, "-File $env:ProgramData\PS7x64\Invoke-VersionUpdate.ps1"
+    [CmdletBinding()]
+    Param (
+        [Parameter(Mandatory = $false)][switch]$installextra
+    )
 
+    if ($installextra) {
+        Start-Process -FilePath powershell.exe -ArgumentList "-executionpolicy bypass -installextra", -noprofile, -NoLogo, "-File $env:ProgramData\PS7x64\Invoke-VersionUpdate.ps1"
+    }
+    else {
+        Start-Process -FilePath powershell.exe -ArgumentList "-executionpolicy bypass", -noprofile, -NoLogo, "-File $env:ProgramData\PS7x64\Invoke-VersionUpdate.ps1"
+    }
 }
