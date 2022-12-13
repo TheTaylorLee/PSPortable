@@ -23,7 +23,7 @@ Deploys a portable PowerShell package with often used modules. If you use this p
   * A full deploy is slow. It should be run rarely such as on a primary workstation. The Light Version should be used more commonly.
 
   ```Powershell
-  Set-ExecutionPolicy Unrestricted -confirm:$false
+  Set-ExecutionPolicy Unrestricted -confirm:$false -Force
   [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
   (invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortable.ps1 -usebasicparsing).content | Invoke-Expression
   ```
@@ -31,7 +31,7 @@ Deploys a portable PowerShell package with often used modules. If you use this p
 * Or run the below script to include less modules (Light Version)
 
   ```Powershell
-  Set-ExecutionPolicy Unrestricted -confirm:$false
+  Set-ExecutionPolicy Unrestricted -confirm:$false -Force
   [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
   (invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortableLight.ps1 -usebasicparsing).content | Invoke-Expression
   ```
