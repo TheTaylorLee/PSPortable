@@ -79,3 +79,4 @@
      - 5.0.0 Updated PowerShell to 7.3.0
      - 6.0.0 Updated modules and reworked install/update functions. Now this downloads minimal modules unless specified otherwise.
      - 6.1.0 Upgraded oh-my-posh package
+     - 6.2.0 Admintoolbox.networking 2.14.0
