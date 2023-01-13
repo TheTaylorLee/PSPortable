@@ -195,3 +195,7 @@
 * **11.0.7** Update required modules
 * **11.0.8** Update required modules
 * **11.0.9** Update required modules
+* **11.0.10** Update required modules
+* **11.0.11** Update required modules
+* **11.0.12** Update required modules
+* **11.0.13** Update required modules

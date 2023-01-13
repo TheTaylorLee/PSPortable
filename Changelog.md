@@ -81,3 +81,4 @@
      - 6.1.0 Upgraded oh-my-posh package
      - 6.2.0 Admintoolbox.networking 2.14.0
      - 6.3.0 Admintoolbox.fftools 4.15.0
+     - 6.4.0 Admintoolbox.Networking 2.15.0

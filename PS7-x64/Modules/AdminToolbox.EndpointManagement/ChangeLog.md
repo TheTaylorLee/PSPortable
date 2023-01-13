@@ -51,3 +51,5 @@
 * **4.8.1** Push any small changes
 * **4.8.2** Push any small changes
 * **4.8.3** Version bump
+* **4.8.4** Version bump
+* **4.8.5** Version bump
