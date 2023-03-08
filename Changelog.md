@@ -83,3 +83,4 @@
      - 6.3.0 Admintoolbox.fftools 4.15.0
      - 6.4.0 Admintoolbox.Networking 2.15.0
      - 6.5.0 Admintoolbox.Networking 2.15.3
+     - 6.6.0 Update admintoolbox modules

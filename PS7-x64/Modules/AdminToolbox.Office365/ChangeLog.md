@@ -47,3 +47,5 @@
 * **2.10.4** Version Bump
 * **2.10.5** Version Bump
 * **2.10.6** fix: missing manifest from workflow writeback
+* **2.11.0** Add get-distributiongroupmembers
+* **2.11.1** Version Bump
