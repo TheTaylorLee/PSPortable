@@ -50,15 +50,28 @@
 * **2.13.0** Push any small changes
 * **2.13.1** Push any small changes
 * **2.13.2** Push any small changes
-* **2.13.3** Version Bump
+* **2.13.3** Maintenance Release
 * **2.13.4** Fix invoke-iperf client not permitting host ip entry
-* **2.13.5** Version Bump
-* **2.13.6** Version Bump
+* **2.13.5** Maintenance Release
+* **2.13.6** Maintenance Release
 * **2.14.0** Upgrade OUI list with IEEE MA-L list date 20221213
 * **2.15.0** Added Function Get-NICConfig
 * **2.15.1** Updated Get-NICConfig comment help spacing, so the help is actually presented when using help get-nicconfig
 * **2.15.2** fix: missing manifest from workflow writeback
 * **2.15.3** Add parameter help for invoke-networkscan, and update substring for vendor custom object to eliminate whitespace.
 * **2.15.4** Add notes to invoke-networkscan help.
-* **2.15.5** Version Bump
-* **2.15.6** Version Bump
+* **2.15.5** Maintenance Release
+* **2.15.6** Maintenance Release
+* **2.15.7** Maintenance Release
+* **2.15.8** Workflow Fix
+* **2.15.9** Workflow Fix
+* **2.15.10** Workflow Fix
+* **2.15.11** CI Maintenance Release
+* **2.15.12** CI Maintenance Release
+* **2.15.13** CI Maintenance Release
+* **2.15.14** CI Maintenance Release
+* **2.16.00** Remove start-traceng
+* **2.16.1** CI Maintenance Release
+* **2.16.2** CI Maintenance Release
+* **2.16.3** CI Maintenance Release
+* **2.16.4** CI Maintenance Release

@@ -43,9 +43,22 @@
 * **2.10.0** Remove start-Azuresync
 * **2.10.1** Push any small changes
 * **2.10.2** Push any small changes
-* **2.10.3** Version Bump
-* **2.10.4** Version Bump
-* **2.10.5** Version Bump
+* **2.10.3** Maintenance Release
+* **2.10.4** Maintenance Release
+* **2.10.5** Maintenance Release
 * **2.10.6** fix: missing manifest from workflow writeback
 * **2.11.0** Add get-distributiongroupmembers
-* **2.11.1** Version Bump
+* **2.11.1** Maintenance Release
+* **2.11.2** Maintenance Release
+* **2.11.3** Workflow Fix
+* **2.11.4** Workflow Fix
+* **2.11.5** Workflow Fix
+* **2.11.6** CI Maintenance Release
+* **2.11.7** CI Maintenance Release
+* **2.11.8** CI Maintenance Release
+* **2.11.9** CI Maintenance Release
+* **2.11.10** CI Maintenance Release
+* **2.11.11** CI Maintenance Release
+* **2.11.12** CI Maintenance Release
+* **2.11.13** CI Maintenance Release
+* **3.0.0** Removing functions that require MSOnline and Azure AD in preperation of of those modules being deprecated.

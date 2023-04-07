@@ -37,10 +37,22 @@
 * **2.16.0** Add 3 SAML functions
 * **2.16.1** Correct function name Add-SSLVPNSAMLUsersSelection
 * **2.16.2** Fix Test-SAMLFunctionRequirements function logic. Was copied from similar function and untested.
-* **2.16.3** Version Bump
-* **2.16.4** Version Bump
-* **2.16.5** Version Bump
-* **2.16.6** Version Bump
+* **2.16.3** Maintenance Release
+* **2.16.4** Maintenance Release
+* **2.16.5** Maintenance Release
+* **2.16.6** Maintenance Release
 * **2.16.7** fix: missing manifest from workflow writeback
-* **2.16.8** Version Bump
-* **2.16.9** Version Bump
+* **2.16.8** Maintenance Release
+* **2.16.9** Maintenance Release
+* **2.16.10** Maintenance Release
+* **2.16.11** Workflow Fix
+* **2.16.12** Workflow Fix
+* **2.16.13** Workflow Fix
+* **2.16.14** CI Maintenance Release
+* **2.16.15** CI Maintenance Release
+* **2.16.16** CI Maintenance Release
+* **2.16.17** CI Maintenance Release
+* **2.16.18** CI Maintenance Release
+* **2.16.19** CI Maintenance Release
+* **2.16.20** CI Maintenance Release
+* **2.16.21** CI Maintenance Release

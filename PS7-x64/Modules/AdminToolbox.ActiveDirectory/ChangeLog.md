@@ -25,13 +25,26 @@
 * **1.7.0** Added searchbase parameter to get-groupmembers and fixed group not found for that function.
 * **1.7.1** Increment Manifest to resolve missing manifest version in github timeline
 * **1.8.0** Push any small changes
-* **1.8.1** Version Bump
-* **1.8.2** Version Bump
-* **1.8.3** Version Bump
+* **1.8.1** Maintenance Release
+* **1.8.2** Maintenance Release
+* **1.8.3** Maintenance Release
 * **1.8.4** Modified Get-Groupmemberships to fix conncurrent pipeline error
 * **1.9.0** Added Get-MailEnabledMembers
-* **1.9.1** Version Bump
-* **1.9.2** Version Bump
+* **1.9.1** Maintenance Release
+* **1.9.2** Maintenance Release
 * **1.9.3** fix: missing manifest from workflow writeback
-* **1.9.4** Version Bump
-* **1.9.5** Version Bump
+* **1.9.4** Maintenance Release
+* **1.9.5** Maintenance Release
+* **1.9.6** Maintenance Release
+* **1.9.7** Workflow Fix
+* **1.9.8** Workflow Fix
+* **1.9.9** Workflow Fix
+* **1.9.10** Workflow Fix
+* **1.9.11** CI Maintenance Release
+* **1.9.12** CI Maintenance Release
+* **1.9.13** CI Maintenance Release
+* **1.9.14** CI Maintenance Release
+* **1.9.15** CI Maintenance Release
+* **1.9.16** CI Maintenance Release
+* **1.9.17** CI Maintenance Release
+* **1.9.18** CI Maintenance Release

@@ -54,6 +54,18 @@
 * **4.8.0** Push any small changes
 * **4.8.1** Push any small changes
 * **4.8.2** Push any small changes
-* **4.8.3** Version Bump
+* **4.8.3** Maintenance Release
 * **4.8.4** fix: missing manifest from workflow writeback
-* **4.8.5** Version Bump
+* **4.8.5** Maintenance Release
+* **4.8.6** Maintenance Release
+* **4.8.7** Workflow Fix
+* **4.8.8** Workflow Fix
+* **4.8.9** Workflow Fix
+* **4.8.10** CI Maintenance Release
+* **4.8.11** CI Maintenance Release
+* **4.8.12** CI Maintenance Release
+* **4.8.13** CI Maintenance Release
+* **4.8.14** CI Maintenance Release
+* **4.8.15** CI Maintenance Release
+* **4.8.16** CI Maintenance Release
+* **4.8.17** CI Maintenance Release
