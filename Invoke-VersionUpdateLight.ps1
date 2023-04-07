@@ -1,6 +1,6 @@
 #This Function is for use by the Packaged Microsoft Powershell Profile. It handles version upgrades when called.
 
-Function Invoke-VersionUpdate {
+Function Invoke-VersionUpdateLight {
 
     try {
         taskkill /im pwsh.exe /F
@@ -64,4 +64,4 @@ Function Invoke-VersionUpdate {
     #Pin shortcut to taskbar
     Invoke-Item "$env:ProgramData\PS7x64\PS7-x64\pwsh.exe.lnk"
     exit
-}; Invoke-VersionUpdate
+}; Invoke-VersionUpdateLight

@@ -70,13 +70,11 @@ Function Invoke-VersionUpdate {
     Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Confirm:$false
 
     Install-Module Az -Force -Scope AllUsers -Confirm:$false -AllowClobber
-    Install-Module AzureAD -Force -Scope AllUsers -Confirm:$false -AllowClobber
     Install-Module AzViz -Force -Scope AllUsers -Confirm:$false -AllowClobber
     Install-Module BetterCredentials -Force -Scope AllUsers -Confirm:$false -AllowClobber
     Install-Module ExchangeOnlineManagement -Force -Scope AllUsers -Confirm:$false -AllowClobber
     Install-Module Microsoft.Graph -Force -Scope AllUsers -Confirm:$false -AllowClobber
     Install-Module MicrosoftTeams -Force -Scope AllUsers -Confirm:$false -AllowClobber
-    Install-Module MSOnline -Force -Scope AllUsers -Confirm:$false -AllowClobber
     Install-Module PlatyPS -Force -Scope AllUsers -Confirm:$false -AllowClobber
     Install-Module PSGraph -Force -Scope AllUsers -Confirm:$false -AllowClobber
     Install-Module PSTeams -Force -Scope AllUsers -Confirm:$false -AllowClobber
