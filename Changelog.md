@@ -85,3 +85,4 @@
      - 6.5.0 Admintoolbox.Networking 2.15.3
      - 6.6.0 Update admintoolbox modules
      - 6.7.0 Update admintoolbox modules
+     - 6.8.0 Update admintoolbox modules
