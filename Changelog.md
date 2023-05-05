@@ -86,3 +86,4 @@
      - 6.6.0 Update admintoolbox modules
      - 6.7.0 Update admintoolbox modules
      - 6.8.0 Update admintoolbox modules
+     - 6.9.0 Admintoolbox.Fun 1.6.49
