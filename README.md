@@ -6,6 +6,7 @@ Deploys a portable PowerShell package with often used modules. If you use this p
 
 * *__Remove old version of Oh-My-Posh & Install the new Package__*
   * Only needs to be run if PSPortable was previously used or if haven't upgraded to the latest Oh-My-Posh package format
+  * Only run on workstations and not on servers
   * Skip if this is a server environment since oh-my-posh will not be used
   * Run from an admin pwsh prompt and not PowerShell
 
