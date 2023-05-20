@@ -2,8 +2,8 @@
 
 Function Invoke-VersionUpdate {
 
-    Get-Process pwsh | Stop-Process -Force -ErrorAction SilentlyContinue
-    Get-Process windowsterminal | Stop-Process -Force -ErrorAction SilentlyContinue
+    Get-Process pwsh -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
+    Get-Process windowsterminal -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
 
     Start-Sleep -Seconds 5
 
