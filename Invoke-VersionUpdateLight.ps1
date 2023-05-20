@@ -2,12 +2,8 @@
 
 Function Invoke-VersionUpdateLight {
 
-    try {
-        taskkill /im pwsh.exe /F
-        taskkill /im windowsterminal.exe /F
-    }
-    catch {
-    }
+    Get-Process pwsh | Stop-Process -Force -ErrorAction SilentlyContinue
+    Get-Process windowsterminal | Stop-Process -Force -ErrorAction SilentlyContinue
 
     Start-Sleep -Seconds 5
 
