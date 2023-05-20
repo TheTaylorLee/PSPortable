@@ -66,7 +66,7 @@ Function Invoke-VersionUpdate {
 
     #Install Modules
     Write-Warning "Installing Modules will take time. When completed consider restarting pwsh or windows terminal. When completed this window will close"
-    Import-Module PowerShellGet -Force -AllowClobber
+    Import-Module PowerShellGet
     Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
     Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Confirm:$false
 
