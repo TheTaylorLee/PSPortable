@@ -6,7 +6,7 @@ $ErrorActionPreference = 'SilentlyContinue'
 #. $PSScriptRoot\profile_snippets\resetcolors.ps1
 . $PSScriptRoot\profile_snippets\prompt.ps1
 . $PSScriptRoot\profile_snippets\psreadline.ps1
-. $PSScriptRoot\profile_snippets\exchangeonline.ps1
+#. $PSScriptRoot\profile_snippets\exchangeonline.ps1
 . $PSScriptRoot\profile_snippets\versioncheck\versioncheck.ps1
 . $PSScriptRoot\profile_snippets\exchangesnapin.ps1
 #. $PSScriptRoot\profile_snippets\experimentalfeatures.ps1
