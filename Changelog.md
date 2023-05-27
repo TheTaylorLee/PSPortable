@@ -89,3 +89,4 @@
      - 6.9.0 Admintoolbox.Fun 1.6.49
      - 6.10.0 Admintoolbox.Fortiwizard 2.17.0
      - 6.10.1 Admintoolbox.Fortiwizard 2.17.1
+     - 6.11.0 Admintoolbox.Networking 2.17.0
