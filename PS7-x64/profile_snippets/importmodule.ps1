@@ -1,5 +1,6 @@
 Import-Module AdminToolbox
 Import-Module BetterCredentials
+Import-Module completionpredictor
 Import-Module MyFunctions
 
 if ($Global:sow -eq '1') {
