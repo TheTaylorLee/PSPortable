@@ -91,3 +91,4 @@
      - 6.10.1 Admintoolbox.Fortiwizard 2.17.1
      - 6.11.0 Admintoolbox.Networking 2.17.0
      - 6.12.0 Add completionpredictor module 0.1.1
+     - 6.13.0 Add asset icon
