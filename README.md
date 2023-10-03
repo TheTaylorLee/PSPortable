@@ -17,24 +17,12 @@ Deploys a portable PowerShell package with often used modules. When updates are 
 * *__Install PSPortable Full or Light__*
   * Open an admin PowerShell prompt
   * Run the below script to include all modules and update existing module that will be included
-  * A full deploy is slow. It should be run rarely, such as on a primary workstation. The Light Version should be used more commonly.
 
   ```Powershell
   Set-ExecutionPolicy Unrestricted -confirm:$false -Force
   [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-  (invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortable.ps1 -usebasicparsing).content | Invoke-Expression
+  (invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-Prompter.ps1 -usebasicparsing).content | Invoke-Expression
   ```
-
-  * Or run the below script to include less modules (Light Version)
-  <br><br/>
-  > **Warning**
-  > Do not run this script block if you ran the above script block.
-
-   ```Powershell
-   Set-ExecutionPolicy Unrestricted -confirm:$false -Force
-   [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-   (invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortableLight.ps1 -usebasicparsing).content | Invoke-Expression
-   ```
 
 * *__Using PSPortable or PSPortableLight in Terminal__*
 
