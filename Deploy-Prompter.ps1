@@ -10,12 +10,12 @@ It is recommended to install the full version on a primary workstation and the l
 $Prompt = Read-Host "Type one of the options to choose which version to install. (Full\Light)"
 switch ($prompt) {
     full {
-        Set-ExecutionPolicy Unrestricted -Confirm:$false -Force
+        Set-ExecutionPolicy Unrestricted -Confirm:$false -Force -Scope CurrentUser
         [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
         (Invoke-WebRequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortable.ps1 -UseBasicParsing).content | Invoke-Expression
     }
     light {
-        Set-ExecutionPolicy Unrestricted -Confirm:$false -Force
+        Set-ExecutionPolicy Unrestricted -Confirm:$false -Force -Scope CurrentUser
         [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
         (Invoke-WebRequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortableLight.ps1 -UseBasicParsing).content | Invoke-Expression
     }
