@@ -92,3 +92,4 @@
      - 6.11.0 Admintoolbox.Networking 2.17.0
      - 6.12.0 Add completionpredictor module 0.1.1
      - 6.13.0 Add asset icon
+     - 6.14.0 Update all admintoolbox modules
