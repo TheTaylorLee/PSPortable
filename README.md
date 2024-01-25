@@ -1,12 +1,13 @@
 # PSPortable
 
-**If you are coming here because update-console fails. The branch name was changed January 2024. Delete the psportable folder and then run below scripts. If you however are navigating to this readme for the first time, skip the first code block.**
+Deploys a portable PowerShell package with often used modules. When updates are released, launching PSPortable will present a changelog and prompt to use update-console to update if desired.
+
+* *__Post Januarary 2024 Branch Fix__*
+  * If you are coming here because update-console fails. The branch name was changed January 2024. Delete the psportable folder and then run below scripts. If you however are navigating to this readme for the first time, skip the first code block.
 
 ```powershell
 remove-item C:\ProgramData\PS7x64 -Recurse -force
 ```
-
-Deploys a portable PowerShell package with often used modules. When updates are released, launching PSPortable will present a changelog and prompt to use update-console to update if desired.
 
 * *__Install Oh-MyPosh__*
   * Skip if this is a server environment since oh-my-posh will not be used
