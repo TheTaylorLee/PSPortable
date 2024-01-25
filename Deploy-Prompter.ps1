@@ -12,12 +12,12 @@ switch ($prompt) {
     full {
         Set-ExecutionPolicy Unrestricted -Confirm:$false -Force -Scope CurrentUser
         [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-        (Invoke-WebRequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortable.ps1 -UseBasicParsing).content | Invoke-Expression
+        (Invoke-WebRequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/main/Deploy-PSPortable.ps1 -UseBasicParsing).content | Invoke-Expression
     }
     light {
         Set-ExecutionPolicy Unrestricted -Confirm:$false -Force -Scope CurrentUser
         [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-        (Invoke-WebRequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-PSPortableLight.ps1 -UseBasicParsing).content | Invoke-Expression
+        (Invoke-WebRequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/main/Deploy-PSPortableLight.ps1 -UseBasicParsing).content | Invoke-Expression
     }
     default {
         Write-Warning "You didn't type Light or Full. Try again."
