@@ -8,7 +8,7 @@ Function Deploy-PSPortableLight {
     #Download new package as zip file
     Function Invoke-DLPSPortable {
         [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-        $url = "https://github.com/thetaylorlee/psportable/archive/master.zip"
+        $url = "https://github.com/thetaylorlee/psportable/archive/main.zip"
         $output = "$env:ProgramData\PS7x64.zip"
         $wc = New-Object System.Net.WebClient
         $wc.DownloadFile($url, $output)
@@ -65,7 +65,7 @@ Function Deploy-PSPortableLight {
     }
 
     Invoke-Unzip -zipfile "$env:ProgramData\PS7x64.zip" -outpath "$env:ProgramData"
-    Rename-Item "$env:ProgramData\PSPortable-master" "$env:ProgramData\PS7x64"
+    Rename-Item "$env:ProgramData\PSPortable-main" "$env:ProgramData\PS7x64"
     Remove-Item "$env:ProgramData\PS7x64.zip" -Force
 
     #Pin shortcut to taskbar

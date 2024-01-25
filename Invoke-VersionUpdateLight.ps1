@@ -14,7 +14,7 @@ Function Invoke-VersionUpdateLight {
     #Download new package as zip file
     Function Invoke-DLPSPortable {
         [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-        $url = "https://github.com/thetaylorlee/psportable/archive/master.zip"
+        $url = "https://github.com/thetaylorlee/psportable/archive/main.zip"
         $output = "$env:ProgramData\PS7x64.zip"
         $wc = New-Object System.Net.WebClient
         $wc.DownloadFile($url, $output)
@@ -52,10 +52,10 @@ Function Invoke-VersionUpdateLight {
     }
 
     Invoke-Unzip2 -zipfile "$env:ProgramData\PS7x64.zip" -outpath "$env:ProgramData"
-    #Rename-Item "$env:ProgramData\PSPortable-master" "$env:ProgramData\PS7x64"
-    Robocopy.exe $env:ProgramData\PSPortable-master $env:ProgramData\PS7x64 /mir /COPY:DATSO /r:1 /w:1
+    #Rename-Item "$env:ProgramData\PSPortable-main" "$env:ProgramData\PS7x64"
+    Robocopy.exe $env:ProgramData\PSPortable-main $env:ProgramData\PS7x64 /mir /COPY:DATSO /r:1 /w:1
     Remove-Item "$env:ProgramData\PS7x64.zip" -Force
-    Remove-Item "$env:ProgramData\PSPortable-master" -Force -Recurse
+    Remove-Item "$env:ProgramData\PSPortable-main" -Force -Recurse
 
     #Pin shortcut to taskbar
     Invoke-Item "$env:ProgramData\PS7x64\PS7-x64\pwsh.exe.lnk"

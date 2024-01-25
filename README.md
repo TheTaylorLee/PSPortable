@@ -1,5 +1,11 @@
 # PSPortable
 
+**If you are coming here because update-console fails. The branch name was changed January 2024. Delete the psportable folder and then run below scripts.**
+
+```powershell
+remove-item C:\ProgramData\PS7x64 -Recurse -force
+```
+
 Deploys a portable PowerShell package with often used modules. When updates are released, launching PSPortable will present a changelog and prompt to use update-console to update if desired.
 
 * *__Install Oh-MyPosh__*
@@ -21,7 +27,7 @@ Deploys a portable PowerShell package with often used modules. When updates are 
   ```Powershell
   Set-ExecutionPolicy Unrestricted -confirm:$false -Force -Scope CurrentUser
   [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-  (invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/master/Deploy-Prompter.ps1 -usebasicparsing).content | Invoke-Expression
+  (invoke-webrequest https://raw.githubusercontent.com/TheTaylorLee/PSPortable/main/Deploy-Prompter.ps1 -usebasicparsing).content | Invoke-Expression
   ```
 
 * *__Using PSPortable or PSPortableLight in Terminal__*
