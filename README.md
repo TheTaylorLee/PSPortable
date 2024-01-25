@@ -1,6 +1,6 @@
 # PSPortable
 
-**If you are coming here because update-console fails. The branch name was changed January 2024. Delete the psportable folder and then run below scripts.**
+**If you are coming here because update-console fails. The branch name was changed January 2024. Delete the psportable folder and then run below scripts. If you however are navigating to this readme for the first time, skip the first code block.**
 
 ```powershell
 remove-item C:\ProgramData\PS7x64 -Recurse -force
