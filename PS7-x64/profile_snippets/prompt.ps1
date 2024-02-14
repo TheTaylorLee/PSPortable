@@ -1,10 +1,13 @@
 function prompt {
     $(
-        if ((Test-Path $env:userprofile\appdata\local\Programs\oh-my-posh\bin\oh-my-posh.exe) -and (Get-Module posh-git) -and $Global:sow -eq '1') {
-            try {
-                oh-my-posh.exe init pwsh --config $env:POSH_THEMES_PATH\sonicboom_light.omp.json | Invoke-Expression
+        if ((Get-Module posh-git) -and $Global:sow -eq '1') {
+            if (Test-Path $env:userprofile\appdata\local\Programs\oh-my-posh\bin\oh-my-posh.exe) {
+                . $env:userprofile\appdata\local\Programs\oh-my-posh\bin\oh-my-posh.exe init pwsh --config $env:POSH_THEMES_PATH\sonicboom_light.omp.json | Invoke-Expression
             }
-            catch {
+            elseif (Test-Path "C:\Program Files (x86)\oh-my-posh\bin\oh-my-posh.exe") {
+                . "C:\Program Files (x86)\oh-my-posh\bin\oh-my-posh.exe" init pwsh --config $env:POSH_THEMES_PATH\sonicboom_light.omp.json | Invoke-Expression
+            }
+            else {
                 $location = Get-Location
                 Write-Host -NoNewline "$(HOSTNAME.EXE) "                  -ForegroundColor Green
                 Write-Host -NoNewline '~'                                 -ForegroundColor Yellow
