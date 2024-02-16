@@ -1,11 +1,11 @@
 function prompt {
     $(
         if ((Get-Module posh-git) -and $Global:sow -eq '1') {
-            if (Test-Path $env:userprofile\appdata\local\Programs\oh-my-posh\bin\oh-my-posh.exe) {
-                . $env:userprofile\appdata\local\Programs\oh-my-posh\bin\oh-my-posh.exe init pwsh --config $env:POSH_THEMES_PATH\sonicboom_light.omp.json | Invoke-Expression
-            }
-            elseif (Test-Path "C:\Program Files (x86)\oh-my-posh\bin\oh-my-posh.exe") {
+            if (Test-Path "C:\Program Files (x86)\oh-my-posh\bin\oh-my-posh.exe") {
                 . "C:\Program Files (x86)\oh-my-posh\bin\oh-my-posh.exe" init pwsh --config $env:POSH_THEMES_PATH\sonicboom_light.omp.json | Invoke-Expression
+            }
+            elseif (Test-Path $env:userprofile\appdata\local\Programs\oh-my-posh\bin\oh-my-posh.exe) {
+                . $env:userprofile\appdata\local\Programs\oh-my-posh\bin\oh-my-posh.exe init pwsh --config $env:POSH_THEMES_PATH\sonicboom_light.omp.json | Invoke-Expression
             }
             else {
                 $location = Get-Location
