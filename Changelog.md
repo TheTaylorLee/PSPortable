@@ -94,3 +94,4 @@
      - 6.13.0 Add asset icon
      - 6.14.0 Update all admintoolbox modules
      - 6.15.0 Update Nerd font Version & Update prompt for newer oh-my-posh versions fix.
+     - 6.16.0 Admintoolbox.Activedirectory 1.10.0
