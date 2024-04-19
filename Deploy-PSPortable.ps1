@@ -97,9 +97,11 @@ Function Deploy-PSPortable {
     Install-Module AzViz -Force -Scope AllUsers -Confirm:$false -AllowClobber
     Install-Module BetterCredentials -Force -Scope AllUsers -Confirm:$false -AllowClobber
     Install-Module ExchangeOnlineManagement -Force -Scope AllUsers -Confirm:$false -AllowClobber
+    Install-Module Microsoft.Online.SharePoint.PowerShell -Force -Scope AllUsers -Confirm:$false -AllowClobber
     Install-Module Microsoft.Graph -Force -Scope AllUsers -Confirm:$false -AllowClobber
     Install-Module MicrosoftTeams -Force -Scope AllUsers -Confirm:$false -AllowClobber
     Install-Module PlatyPS -Force -Scope AllUsers -Confirm:$false -AllowClobber
+    Install-Module pnp.PowerShell -Force -Scope AllUsers -Confirm:$false -AllowClobber
     Install-Module PSGraph -Force -Scope AllUsers -Confirm:$false -AllowClobber
     Install-Module PSTeams -Force -Scope AllUsers -Confirm:$false -AllowClobber
     Install-Module ReportHTML -Force -Scope AllUsers -Confirm:$false -AllowClobber
