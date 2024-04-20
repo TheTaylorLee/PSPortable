@@ -187,3 +187,6 @@
 * **3.1.92** CI Maintenance Release
 * **4.0.0** Added four Sharepoint functions to help with managing storage quotas. The purpose is to get a better control on existing file versions and free up space.
 * **4.0.1** CI Maintenance Release
+* **4.0.2** Update get-versionhistoryreport parameters to be consistent with other sharepoint functions.
+* **4.0.3** Fix Set-SharepointVersionLimits variable
+* **4.0.4** CI Maintenance Release

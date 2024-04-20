@@ -97,3 +97,4 @@
      - 6.16.0 Admintoolbox.Activedirectory 1.10.0
      - 6.17.0 Update all admintoolbox modules
      - 6.18.0 admintoolbox.office365 4.0.1
+     - 6.19.0 Update all admintoolbox modules
