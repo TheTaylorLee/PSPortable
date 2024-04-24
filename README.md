@@ -33,7 +33,7 @@ Deploys a portable PowerShell package with often used modules. When updates are 
 
 * *__Using PSPortable or PSPortableLight in Terminal__*
 
-    These steps offer a guide to use PSPortable or PSPortableLight in Windows Terminal as intended. These steps will install a Nerdfont and Git, so the Oh-My-Posh theme is properly presented.
+    These steps offer a guide to use PSPortable or PSPortableLight in Windows Terminal as intended. These steps will install a Nerdfont and Git, so the Oh-My-Posh theme is properly presented. Only perform these steps if you also install oh-my-posh
 
   * Install Nerd Font, Git, and sign into Git account
 
