@@ -98,3 +98,4 @@
      - 6.17.0 Update all admintoolbox modules
      - 6.18.0 admintoolbox.office365 4.0.1
      - 6.19.0 Update all admintoolbox modules
+     - 6.20.0 Update admintoolbox.fortiwizard. Add Wildcard p2 selectors
