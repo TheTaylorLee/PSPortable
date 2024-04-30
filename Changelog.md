@@ -99,3 +99,4 @@
      - 6.18.0 admintoolbox.office365 4.0.1
      - 6.19.0 Update all admintoolbox modules
      - 6.20.0 Update admintoolbox.fortiwizard. Add Wildcard p2 selectors
+     - 6.21.0 Update admintoolbox.msgraph. Add the Disable--UserServicePlan function
