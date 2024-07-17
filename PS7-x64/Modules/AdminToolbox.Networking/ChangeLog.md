@@ -209,3 +209,15 @@
 * **2.19.0** Update get-publicip to add an alias and provide the output as a pscustomobject.
 * **2.19.1** CI Maintenance Release
 * **2.19.2** Update get-publicip. Add ability to provide ips in a string arrayand added a api rate limit parameter.
+* **2.19.3** CI Maintenance Release
+* **2.19.4** CI Maintenance Release
+* **2.19.5** CI Maintenance Release
+* **2.19.6** Fix get-publicip to not require providing an ip.
+* **2.19.7** CI Maintenance Release
+* **2.19.8** CI Maintenance Release
+* **2.19.9** CI Maintenance Release
+* **2.19.10** CI Maintenance Release
+* **2.19.11** CI Maintenance Release
+* **2.19.12** CI Maintenance Release
+* **2.20.00** Add token parameter to get-publicip to allow exceeding free api limit
+* **2.20.1** CI Maintenance Release
