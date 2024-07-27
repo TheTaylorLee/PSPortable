@@ -102,3 +102,4 @@
      - 6.21.0 Update admintoolbox.msgraph. Add the Disable--UserServicePlan function
      - 6.22.0 Update get-publicip to accept a string array, add a rate limit, and provide custompsobject outputs.
      - 6.23.0 Update all admintoolbox modules
+     - 6.24.0 Update all admintoolbox modules

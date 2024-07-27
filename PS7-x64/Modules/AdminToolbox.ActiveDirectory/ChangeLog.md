@@ -189,3 +189,5 @@
 * **1.10.20** CI Maintenance Release
 * **1.10.21** CI Maintenance Release
 * **1.10.22** CI Maintenance Release
+* **1.10.23** CI Maintenance Release
+* **1.10.24** CI Maintenance Release
