@@ -103,3 +103,4 @@
      - 6.22.0 Update get-publicip to accept a string array, add a rate limit, and provide custompsobject outputs.
      - 6.23.0 Update all admintoolbox modules
      - 6.24.0 Update all admintoolbox modules
+     - 6.25.0 Update all admintoolbox modules

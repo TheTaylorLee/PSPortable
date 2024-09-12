@@ -191,3 +191,15 @@
 * **1.10.22** CI Maintenance Release
 * **1.10.23** CI Maintenance Release
 * **1.10.24** CI Maintenance Release
+* **1.10.25** CI Maintenance Release
+* **1.10.26** CI Maintenance Release
+* **1.10.27** CI Maintenance Release
+* **1.10.28** CI Maintenance Release
+* **1.10.29** CI Maintenance Release
+* **1.10.30** CI Maintenance Release
+* **1.10.31** CI Maintenance Release
+* **1.10.32** CI Maintenance Release
+* **1.10.33** CI Maintenance Release
+* **1.10.34** CI Maintenance Release
+* **1.10.35** Fix get-userreport proxyaddresses join result
+* **1.10.36** CI Maintenance Release
