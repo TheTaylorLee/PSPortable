@@ -104,3 +104,4 @@
      - 6.23.0 Update all admintoolbox modules
      - 6.24.0 Update all admintoolbox modules
      - 6.25.0 Update all admintoolbox modules
+     - 6.26.0 Update all admintoolbox modules for update pnp.powershell login method
