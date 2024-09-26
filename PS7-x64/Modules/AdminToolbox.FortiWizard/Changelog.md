@@ -216,3 +216,9 @@
 * **2.19.28** CI Maintenance Release
 * **2.19.29** CI Maintenance Release
 * **2.19.30** CI Maintenance Release
+* **2.20.0.0** Add workflow versioning
+* **2.20.0.1** CI Maintenance Release
+* **2.20.0.2** CI Maintenance Release
+* **2.20.0.3** CI Maintenance Release
+* **2.20.0.4** CI Maintenance Release
+* **2.20.0.5** CI Maintenance Release

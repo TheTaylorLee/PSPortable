@@ -368,3 +368,9 @@
 * **11.0.180** CI Update required modules
 * **11.0.181** CI Update required modules
 * **11.0.182** CI Update required modules
+* **11.1.0.0** Add workflow versioning
+* **11.1.0.1** CI Maintenance Release
+* **11.1.0.2** CI Maintenance Release
+* **11.1.0.3** CI Maintenance Release
+* **11.1.0.4** CI Maintenance Release
+* **11.1.0.5** CI Maintenance Release

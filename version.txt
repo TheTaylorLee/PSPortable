@@ -1,1 +1,1 @@
-Version=6.26.0
+Version=6.27.0

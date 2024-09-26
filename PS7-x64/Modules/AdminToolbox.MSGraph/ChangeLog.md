@@ -180,3 +180,10 @@
 * **1.3.26** CI Maintenance Release
 * **1.3.27** CI Maintenance Release
 * **1.3.28** CI Maintenance Release
+* **1.4.0.0** Add workflow versioning
+* **1.4.0.1** CI Maintenance Release
+* **1.4.0.2** CI Maintenance Release
+* **1.4.0.3** CI Maintenance Release
+* **1.5.0.0** Change get-msgMFAStatus method of reporting to provide additional and easier to interpret detail.
+* **1.5.0.1** CI Maintenance Release
+* **1.5.0.2** CI Maintenance Release

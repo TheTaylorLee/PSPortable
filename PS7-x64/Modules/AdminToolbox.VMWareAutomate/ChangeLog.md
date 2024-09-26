@@ -223,3 +223,9 @@
 * **4.8.169** CI Maintenance Release
 * **4.8.170** CI Maintenance Release
 * **4.8.171** CI Maintenance Release
+* **4.9.0.0** Add workflow versioning
+* **4.9.0.1** CI Maintenance Release
+* **4.9.0.2** CI Maintenance Release
+* **4.9.0.3** CI Maintenance Release
+* **4.9.0.4** CI Maintenance Release
+* **4.9.0.5** CI Maintenance Release
