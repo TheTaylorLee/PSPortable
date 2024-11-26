@@ -12,13 +12,13 @@
 RootModule = 'AdminToolbox.FortiWizardManifest.psm1'
 
 # Version number of this module.
-ModuleVersion = '2.21.0.1'
+ModuleVersion = '2.21.2.1'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Desktop', 'Core'
 
 # ID used to uniquely identify this module
-GUID = '38f3f460-d7ce-4aa4-93b2-3589fd22af63'
+GUID = '2eacb6c3-ce33-4b50-a2c7-112c6582061c'
 
 # Author of this module
 Author = 'Taylor Lee'
@@ -51,7 +51,7 @@ PowerShellVersion = '5.1'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-RequiredModules = @(@{ModuleName = 'AdminToolbox.Networking'; ModuleVersion = '2.21.0.16'; }, 
+RequiredModules = @(@{ModuleName = 'AdminToolbox.Networking'; ModuleVersion = '2.21.0.18'; }, 
                @{ModuleName = 'ImportExcel'; ModuleVersion = '7.0.1'; }, 
                @{ModuleName = 'posh-ssh'; ModuleVersion = '2.3.0'; })
 
@@ -80,7 +80,8 @@ FunctionsToExport = 'Disable-SipALG', 'Enable-Management', 'Enable-PushNotificat
                'New-FormTunnel', 'New-LocalInPolicy', 
                'Add-SSLVPNSAMLUsersMFAEnforced', 
                'Add-SSLVPNSAMLUsersAzureDefaultSecurity', 
-               'Add-SSLVPNSAMLUsersSelection'
+               'Add-SSLVPNSAMLUsersSelection', 'Convert-FAZLogToCSV', 
+               'Expand-andConvertFAZLogArchive'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = '*'

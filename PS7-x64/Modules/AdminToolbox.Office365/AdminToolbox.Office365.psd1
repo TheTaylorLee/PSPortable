@@ -12,13 +12,13 @@
 RootModule = 'AdminToolbox.Office365Manifest.psm1'
 
 # Version number of this module.
-ModuleVersion = '4.3.0.15'
+ModuleVersion = '4.3.0.17'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Desktop', 'Core'
 
 # ID used to uniquely identify this module
-GUID = 'aa01f1a3-a9f0-40f9-a40e-635ce4b8d2ec'
+GUID = '4b0b7a1c-45f1-42d7-9cfc-8047531e1af7'
 
 # Author of this module
 Author = 'Taylor Lee'
