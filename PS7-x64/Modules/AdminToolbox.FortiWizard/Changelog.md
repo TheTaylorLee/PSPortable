@@ -238,3 +238,16 @@
 * **2.21.1.0** Update get-fortiwizard
 * **2.21.2.0** Export the new faz log functions in the manifest.
 * **2.21.2.1** CI Maintenance Release
+* **2.21.2.2** CI Maintenance Release
+* **2.21.2.3** CI Maintenance Release
+* **2.21.2.4** CI Maintenance Release
+* **2.21.2.5** CI Maintenance Release
+* **2.21.2.6** CI Maintenance Release
+* **2.21.2.7** CI Maintenance Release
+* **2.21.2.8** CI Maintenance Release
+* **2.21.2.9** CI Maintenance Release
+* **2.21.2.10** CI Maintenance Release
+* **2.21.2.11** CI Maintenance Release
+* **2.21.2.12** CI Maintenance Release
+* **2.22.0.0** Update SAML functions to bring them inline with deprecating modules and updated MFA standards, before Microsoft deprecates old methods.
+* **2.22.0.1** CI Maintenance Release

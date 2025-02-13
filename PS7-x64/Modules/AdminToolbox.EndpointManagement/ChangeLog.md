@@ -246,3 +246,16 @@
 * **4.11.0.16** CI Maintenance Release
 * **4.11.0.17** CI Maintenance Release
 * **4.11.0.18** CI Maintenance Release
+* **4.11.0.19** CI Maintenance Release
+* **4.11.0.20** CI Maintenance Release
+* **4.12.0.0** Reworked Remove-Storeapps to be more flexible.
+* **4.12.0.1** CI Maintenance Release
+* **4.12.0.2** CI Maintenance Release
+* **4.12.0.3** CI Maintenance Release
+* **4.12.0.4** CI Maintenance Release
+* **4.12.0.5** CI Maintenance Release
+* **4.12.0.6** CI Maintenance Release
+* **4.12.0.7** CI Maintenance Release
+* **4.12.0.8** CI Maintenance Release
+* **4.12.0.9** CI Maintenance Release
+* **4.12.0.10** CI Maintenance Release

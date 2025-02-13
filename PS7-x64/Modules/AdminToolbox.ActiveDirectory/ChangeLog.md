@@ -224,3 +224,16 @@
 * **1.11.1.6** CI Maintenance Release
 * **1.11.1.7** CI Maintenance Release
 * **1.11.1.8** CI Maintenance Release
+* **1.11.1.9** CI Maintenance Release
+* **1.11.1.10** CI Maintenance Release
+* **1.11.1.11** CI Maintenance Release
+* **1.11.1.12** CI Maintenance Release
+* **1.11.1.13** CI Maintenance Release
+* **1.11.1.14** CI Maintenance Release
+* **1.11.1.15** CI Maintenance Release
+* **1.11.1.16** CI Maintenance Release
+* **1.11.1.17** CI Maintenance Release
+* **1.11.1.18** CI Maintenance Release
+* **1.11.1.19** CI Maintenance Release
+* **1.11.2.0** Add string array to searchbase parameter get-groupmembers
+* **1.11.2.1** CI Maintenance Release
