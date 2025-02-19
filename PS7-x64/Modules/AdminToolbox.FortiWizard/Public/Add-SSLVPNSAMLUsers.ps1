@@ -43,6 +43,9 @@ function Add-SSLVPNSAMLUsers {
     # Test that required modules are install, install if not, and then connect to them.
     Test-SAMLFunctionRequirements -Scopes "Directory.ReadWrite.All", "User.Read.All", “UserAuthenticationMethod.Read.All”, "GroupMember.ReadWrite.All", "AppRoleAssignment.ReadWrite.All", "Application.ReadWrite.All"
 
+    # Import module
+    Import-Module Microsoft.Graph.Users
+
     #SHARED VARIABLES
     ##Get user list with mfa properties for selection to add to the Enterprise App and Security Group
     ##Get all Azure users
