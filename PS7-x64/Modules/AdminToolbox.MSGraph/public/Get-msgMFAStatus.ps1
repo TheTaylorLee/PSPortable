@@ -36,9 +36,6 @@ function Get-msgMFAStatus {
     #Confirm pre-requisites are met.
     Test-MSGraphRequirements -scopes "User.Read.All", “UserAuthenticationMethod.Read.All” | Out-Null
 
-    # Import module
-    Import-Module Microsoft.Graph.Users
-
     #Get all Azure users
     $users = get-mguser -filter $filter -All -ConsistencyLevel eventual -CountVariable Records
 
