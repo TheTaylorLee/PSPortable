@@ -255,3 +255,14 @@
 * **4.3.0.28** CI Maintenance Release
 * **4.3.0.29** CI Maintenance Release
 * **4.3.0.30** CI Maintenance Release
+* **5.0.0.0** Migrating away from deprecated msonline and azuread modules, and other cleanup tasks
+     - Remove clear-teamscache function for classic teams
+     - Remove outdated connect-365
+     - Remove get-tenantdiagrams
+     - Add connection handling for get-vmdetails and Invoke-Powerstate
+* **5.0.1.0** Resolve ci/cd workflow
+* **5.0.1.1** CI Maintenance Release
+* **5.0.1.2** CI Maintenance Release
+* **5.0.1.3** CI Maintenance Release
+* **5.0.1.4** CI Maintenance Release
+* **5.0.1.5** CI Maintenance Release
