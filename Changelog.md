@@ -110,3 +110,4 @@
      - 6.29.0 Update all admintoolbox modules
      - 6.30.0 Update all admintoolbox modules
      - 6.31.0 Remove outdated profile snippets
+     - 6.31.1 Fix admintoolbox.msgraph test-requirements connect function.

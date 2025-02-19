@@ -44,7 +44,7 @@ function Test-MSGraphRequirements {
     $importedscopes = (Get-MgContext).scopes
     foreach ($scope in $scopes) {
         if ($importedscopes -notcontains $scope) {
-            Connect-MgGraph -Scopes $scopes -NoWelcome
+            Connect-MgGraph -Scopes $scopes
         }
     }
 }
