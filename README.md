@@ -40,3 +40,9 @@ Deploys a portable PowerShell package with often used modules. When updates are 
 
   * Terminal settings should be configured to your preference, [Example Settings](https://github.com/TheTaylorLee/PwshProfile/blob/main/WindowsTerminal/CustomSettings.json)
     * Nerd Font must be specified in the PSPortable or PSPortableLight profile.
+
+- Troubleshooting
+  - If installing a module is blocked when running as administrator with the reason the command was not run as an administrator, first run this function to add a windows defender path exception.
+  ```pwsh
+  Add-MpPreference -ControlledFolderAccessAllowedApplications 'C:\ProgramData\PS7x64\PS7-x64\pwsh.exe'
+  ```
