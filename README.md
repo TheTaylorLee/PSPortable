@@ -46,3 +46,8 @@ Deploys a portable PowerShell package with often used modules. When updates are 
   ```pwsh
   Add-MpPreference -ControlledFolderAccessAllowedApplications 'C:\ProgramData\PS7x64\PS7-x64\pwsh.exe'
   ```
+  - 3rd party Anti-Virus can block installing psportable with above methods with a reason like `Heur.BZC.ZFV.Boxter` detected. If adding anti-virus exclusions isn't an option, getting around this can be done by copying the contents of different scripts and pasting them directly into an admin Powershell 5.1 prompt. The Set-ExecutionPolicy and securityprofile commands from earlier in the readme may still be required to be run first.
+    - For initial deploy of the full version [run this](https://raw.githubusercontent.com/TheTaylorLee/PSPortable/refs/heads/main/Deploy-PSPortable.ps1)
+    - For initial deploy of the light version [run this](https://raw.githubusercontent.com/TheTaylorLee/PSPortable/refs/heads/main/Deploy-PSPortableLight.ps1)
+    - For updating the full version [run this](https://raw.githubusercontent.com/TheTaylorLee/PSPortable/refs/heads/main/Invoke-VersionUpdate.ps1)
+    - For updating the light version [run this](https://raw.githubusercontent.com/TheTaylorLee/PSPortable/refs/heads/main/Invoke-VersionUpdateLight.ps1)
