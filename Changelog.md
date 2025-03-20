@@ -113,3 +113,4 @@
      - 6.31.1 Fix admintoolbox.msgraph test-requirements connect function.
      - 6.32.0 Update all admintoolbox modules
      - 6.33.0 Update all admintoolbox modules
+     - 7.0.0 Introducing AdminToolbox.SecOps Module
