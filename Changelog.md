@@ -114,3 +114,4 @@
      - 6.32.0 Update all admintoolbox modules
      - 6.33.0 Update all admintoolbox modules
      - 7.0.0 Introducing AdminToolbox.SecOps Module
+     - 7.1.0 Update all admintoolbox modules
