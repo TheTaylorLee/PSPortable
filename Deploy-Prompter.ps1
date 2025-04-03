@@ -27,4 +27,5 @@ function Deploy-Prompter {
         }
     }
 }
+clear
 Deploy-Prompter
