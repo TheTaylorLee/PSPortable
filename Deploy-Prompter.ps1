@@ -27,4 +27,4 @@ function Deploy-Prompter {
         }
     }
 }
-clear; Deploy-Prompter
+clear-host; Deploy-Prompter
