@@ -1,22 +1,24 @@
 {
   "runtimeOptions": {
-    "tfm": "net7.0",
+    "tfm": "net8.0",
     "includedFrameworks": [
       {
         "name": "Microsoft.NETCore.App",
-        "version": "7.0.0"
+        "version": "8.0.12"
       },
       {
         "name": "Microsoft.WindowsDesktop.App",
-        "version": "7.0.0"
+        "version": "8.0.12"
       }
     ],
-    "rollForwardOnNoCandidateFx": 2,
+    "rollForwardOnNoCandidateFx": 1,
     "configProperties": {
       "System.Reflection.Metadata.MetadataUpdater.IsSupported": false,
+      "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
       "System.Runtime.TieredCompilation": true,
       "System.Runtime.TieredCompilation.QuickJit": true,
-      "System.Runtime.TieredCompilation.QuickJitForLoops": true
+      "System.Runtime.TieredCompilation.QuickJitForLoops": true,
+      "System.Runtime.Loader.UseRidGraph": true
     }
   }
 }

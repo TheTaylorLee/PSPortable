@@ -473,20 +473,20 @@
             <returns></returns>
         </member>
         <member name="M:Microsoft.WSMan.Management.WSManConfigProvider.ConstructPluginXml(System.Management.Automation.PSObject,System.String,System.String,System.String,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList)">
-             <summary>
-             This method constructs the Configuration XML from the PSObject.
-             For RunAsPassword, if the value is not of type SecureString or the value is not present
-             then an Empty string is added as value. The caller of this method MUST make sure that
-             the RunAsPassword (if updated) is of type SecureString.
-             </summary>
-             <param name="objinputparam">PSObject, from which XML will be produced.</param>
-             <param name="ResourceURI">Resource URI for the XML.</param>
-             <param name="host">Name of the Host.</param>
-             <param name="Operation">Type of Operation.</param>
+            <summary>
+            This method constructs the Configuration XML from the PSObject.
+            For RunAsPassword, if the value is not of type SecureString or the value is not present
+            then an Empty string is added as value. The caller of this method MUST make sure that
+            the RunAsPassword (if updated) is of type SecureString.
+            </summary>
+            <param name="objinputparam">PSObject, from which XML will be produced.</param>
+            <param name="ResourceURI">Resource URI for the XML.</param>
+            <param name="host">Name of the Host.</param>
+            <param name="Operation">Type of Operation.</param>
             <param name="resources">List of Resources.</param>
             <param name="securities">List of Securities</param>
             <param name="initParams">List of initialization parameters.</param>
-             <returns>An Configuration XML, ready to send to server.</returns>
+            <returns>An Configuration XML, ready to send to server.</returns>
         </member>
         <member name="M:Microsoft.WSMan.Management.WSManConfigProvider.ValidateAndGetUserObject(System.String,System.Object)">
             <summary>
@@ -2862,7 +2862,7 @@
              
             </summary>
         </member>
-        <member name="P:WsManResources.AmbiguosAuthentication">
+        <member name="P:WsManResources.AmbiguousAuthentication">
             <summary>
               Looks up a localized string similar to 
                A {0} cannot be specified when {1} is specified.

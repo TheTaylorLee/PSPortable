@@ -3082,7 +3082,7 @@
             The CimSession object managed by this proxy object,
             which is either created by constructor OR passed in by caller.
             The session will be closed while disposing this proxy object
-            if it is created by constuctor.
+            if it is created by constructor.
             </summary>
         </member>
         <member name="P:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxy.TargetCimInstance">
@@ -3342,11 +3342,20 @@
             </para>
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxyNewCimInstance.#ctor(System.String,Microsoft.Management.Infrastructure.CimCmdlets.CimNewCimInstance)" -->
+        <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxyNewCimInstance.#ctor(System.String,Microsoft.Management.Infrastructure.CimCmdlets.CimNewCimInstance)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxyNewCimInstance"/> class.
+            </summary>
+            <remarks>
+            Create <see cref="T:Microsoft.Management.Infrastructure.CimSession"/> by given computer name.
+            Then create wrapper object.
+            </remarks>
+        </member>
         <member name="M:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxyNewCimInstance.#ctor(Microsoft.Management.Infrastructure.CimSession,Microsoft.Management.Infrastructure.CimCmdlets.CimNewCimInstance)">
             <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Management.Infrastructure.CimCmdlets.CimSessionProxyNewCimInstance"/> class.
             </summary>
+            <param name="computerName"></param>
             <remarks>
             Create <see cref="T:Microsoft.Management.Infrastructure.CimSession"/> by given computer name
             and session options.

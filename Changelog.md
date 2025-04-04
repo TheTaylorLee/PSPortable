@@ -115,3 +115,4 @@
      - 6.33.0 Update all admintoolbox modules
      - 7.0.0 Introducing AdminToolbox.SecOps Module
      - 7.1.0 Update all admintoolbox modules
+     - 8.0.0 Updating to powershell version 7.4.7. Refraining from 7.5 until out-gridview binaryformatter problems are resolved. This will fix exchangeonlinemanagement import failures on version 3.7

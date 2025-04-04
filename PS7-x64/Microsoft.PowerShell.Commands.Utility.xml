@@ -740,6 +740,11 @@
             Gets or sets option to use or suppress quotes in output.
             </summary>
         </member>
+        <member name="P:Microsoft.PowerShell.Commands.BaseCsvWritingCommand.NoHeader">
+            <summary>
+            Gets or sets property that writes csv file with no headers.
+            </summary>
+        </member>
         <member name="T:Microsoft.PowerShell.Commands.BaseCsvWritingCommand.QuoteKind">
             <summary>
             Kind of output quoting.
@@ -883,7 +888,7 @@
         </member>
         <member name="P:Microsoft.PowerShell.Commands.ImportCsvCommand.Header">
             <summary>
-             Gets or sets header property to customize the names.
+            Gets or sets header property to customize the names.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.ImportCsvCommand.Encoding">
@@ -963,7 +968,7 @@
         </member>
         <member name="P:Microsoft.PowerShell.Commands.ConvertFromCsvCommand.Header">
             <summary>
-             Gets or sets header property to customize the names.
+            Gets or sets header property to customize the names.
             </summary>
         </member>
         <member name="F:Microsoft.PowerShell.Commands.ConvertFromCsvCommand._alreadyWarnedUnspecifiedNames">
@@ -1397,7 +1402,7 @@
         </member>
         <member name="F:Microsoft.PowerShell.Commands.ExportAliasFormat.Script">
             <summary>
-            Aliases will be exported as an MSH script.
+            Aliases will be exported as a script.
             </summary>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.ExportAliasCommand">
@@ -1564,7 +1569,7 @@
         </member>
         <member name="F:Microsoft.PowerShell.Commands.FormatHex._inputBuffer">
             <summary>
-            For cases where a homogenous collection of bytes or other items are directly piped in, we collect all the
+            For cases where a homogeneous collection of bytes or other items are directly piped in, we collect all the
             bytes in a List&lt;byte&gt; and then output the formatted result all at once in EndProcessing().
             </summary>
         </member>
@@ -1577,7 +1582,7 @@
         </member>
         <member name="F:Microsoft.PowerShell.Commands.FormatHex._lastInputType">
             <summary>
-            Keep track of prior input types to determine if we're given a heterogenous collection.
+            Keep track of prior input types to determine if we're given a heterogeneous collection.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.FormatHex.Path">
@@ -1684,7 +1689,7 @@
         </member>
         <member name="T:Microsoft.PowerShell.Commands.FormatListCommand">
             <summary>
-            Implementation for the format-table command.
+            Implementation for the Format-List command.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.FormatListCommand.#ctor">
@@ -1695,7 +1700,7 @@
         </member>
         <member name="T:Microsoft.PowerShell.Commands.FormatCustomCommand">
             <summary>
-            Implementation for the format-custom command. It just calls the formatting engine on complex shape.
+            Implementation for the Format-Custom command. It just calls the formatting engine on complex shape.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.FormatCustomCommand.#ctor">
@@ -1719,7 +1724,7 @@
         </member>
         <member name="T:Microsoft.PowerShell.Commands.FormatTableCommand">
             <summary>
-            Implementation for the format-table command.
+            Implementation for the Format-Table command.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.FormatTableCommand.#ctor">
@@ -1730,7 +1735,7 @@
         </member>
         <member name="T:Microsoft.PowerShell.Commands.FormatWideCommand">
             <summary>
-            Implementation for the format-table command.
+            Implementation for the Format-Wide command.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.FormatWideCommand.#ctor">
@@ -1922,6 +1927,13 @@
             Write a line to the output device.
             </summary>
             <param name="s">Line to write.</param>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.Internal.Format.PrinterLineOutput.WriteRawText(System.String)">
+            <summary>
+            Write a raw text by delegating to the writer underneath, with no change to the text.
+            For example, keeping VT escape sequences intact in it.
+            </summary>
+            <param name="s">The raw text to be written to the device.</param>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.Internal.Format.PrinterLineOutput.#cctor">
             <summary>
@@ -2318,8 +2330,7 @@
             <summary>Breakpoint on a line within a script</summary>
         </member>
         <member name="F:Microsoft.PowerShell.Commands.BreakpointType.Variable">
-            <summary>
-            Breakpoint on a variable</summary>
+            <summary>Breakpoint on a variable</summary>
         </member>
         <member name="F:Microsoft.PowerShell.Commands.BreakpointType.Command">
             <summary>Breakpoint on a command</summary>
@@ -2622,12 +2633,6 @@
             </summary>
             <value></value>
         </member>
-        <member name="M:Microsoft.PowerShell.Commands.GetFileHashCommand.BeginProcessing">
-            <summary>
-            BeginProcessing() override.
-            This is for hash function init.
-            </summary>
-        </member>
         <member name="M:Microsoft.PowerShell.Commands.GetFileHashCommand.ProcessRecord">
             <summary>
             ProcessRecord() override.
@@ -2670,19 +2675,9 @@
             </summary>
             <value></value>
         </member>
-        <member name="F:Microsoft.PowerShell.Commands.HashCmdletBase.hasher">
-            <summary>
-            Hash algorithm is used.
-            </summary>
-        </member>
         <member name="T:Microsoft.PowerShell.Commands.HashCmdletBase.HashAlgorithmNames">
             <summary>
             Hash algorithm names.
-            </summary>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.HashCmdletBase.InitHasher(System.String)">
-            <summary>
-            Init a hash algorithm.
             </summary>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.FileHashInfo">
@@ -2803,13 +2798,7 @@
         </member>
         <member name="T:Microsoft.PowerShell.Commands.GetRandomCommand">
             <summary>
-            This class implements get-random cmdlet.
-            </summary>
-            <!-- author: LukaszA -->
-        </member>
-        <member name="P:Microsoft.PowerShell.Commands.GetRandomCommand.Generator">
-            <summary>
-            Gets and sets generator associated with the current runspace.
+            This class implements `Get-Random` cmdlet.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.GetRandomCommand.SetSeed">
@@ -2817,52 +2806,67 @@
             Seed used to reinitialize random numbers generator.
             </summary>
         </member>
-        <member name="P:Microsoft.PowerShell.Commands.GetRandomCommand.Maximum">
-            <summary>
-            Maximum number to generate.
-            </summary>
-        </member>
-        <member name="P:Microsoft.PowerShell.Commands.GetRandomCommand.Minimum">
-            <summary>
-            Minimum number to generate.
-            </summary>
-        </member>
-        <member name="P:Microsoft.PowerShell.Commands.GetRandomCommand.InputObject">
-            <summary>
-            List from which random elements are chosen.
-            </summary>
-        </member>
-        <member name="P:Microsoft.PowerShell.Commands.GetRandomCommand.Count">
-            <summary>
-            Number of items to output (number of list items or of numbers).
-            </summary>
-        </member>
-        <member name="P:Microsoft.PowerShell.Commands.GetRandomCommand.Shuffle">
-            <summary>
-            Gets or sets whether the command should return all input objects in randomized order.
-            </summary>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.GetRandomCommand.GetRandomInt64(System.Int64,System.Int64)">
-            <summary>
-            Get a random Int64 type number.
-            </summary>
-            <param name="minValue"></param>
-            <param name="maxValue"></param>
-            <returns></returns>
-        </member>
         <member name="M:Microsoft.PowerShell.Commands.GetRandomCommand.BeginProcessing">
             <summary>
             This method implements the BeginProcessing method for get-random command.
             </summary>
         </member>
-        <member name="M:Microsoft.PowerShell.Commands.GetRandomCommand.ProcessRecord">
+        <member name="T:Microsoft.PowerShell.Commands.GetRandomCommandBase">
             <summary>
-            This method implements the ProcessRecord method for get-random command.
+            This class implements base class for `Get-Random` and `Get-SecureRandom` cmdlets.
             </summary>
         </member>
-        <member name="M:Microsoft.PowerShell.Commands.GetRandomCommand.EndProcessing">
+        <member name="P:Microsoft.PowerShell.Commands.GetRandomCommandBase.Generator">
             <summary>
-            This method implements the EndProcessing method for get-random command.
+            Gets and sets generator associated with the current cmdlet and runspace.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.GetRandomCommandBase.Maximum">
+            <summary>
+            Gets or sets the maximum number to generate.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.GetRandomCommandBase.Minimum">
+            <summary>
+            Gets or sets the minimum number to generate.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.GetRandomCommandBase.InputObject">
+            <summary>
+            Gets or sets the list from which random elements are chosen.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.GetRandomCommandBase.Count">
+            <summary>
+            Gets or sets the number of items to output (number of list items or of numbers).
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.GetRandomCommandBase.Shuffle">
+            <summary>
+            Gets or sets whether the command should return all input objects in randomized order.
+            </summary>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.GetRandomCommandBase.GetRandomInt64(System.Int64,System.Int64)">
+            <summary>
+            Get a random Int64 type number.
+            </summary>
+            <param name="minValue">Minimum value.</param>
+            <param name="maxValue">Maximum value.</param>
+            <returns>Rnadom long.</returns>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.GetRandomCommandBase.BeginProcessing">
+            <summary>
+            This method implements the BeginProcessing method for derived cmdlets.
+            </summary>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.GetRandomCommandBase.ProcessRecord">
+            <summary>
+            This method implements the ProcessRecord method for derived cmdlets.
+            </summary>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.GetRandomCommandBase.EndProcessing">
+            <summary>
+            This method implements the EndProcessing method for derived cmdlets.
             </summary>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.PolymorphicRandomNumberGenerator">
@@ -2877,6 +2881,12 @@
             <summary>
             Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.PolymorphicRandomNumberGenerator"/> class.
             </summary>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.PolymorphicRandomNumberGenerator.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.PolymorphicRandomNumberGenerator"/> using pseudorandom generator instead of the cryptographic one.
+            </summary>
+            <param name="seed">The seed value.</param>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.PolymorphicRandomNumberGenerator.NextDouble">
             <summary>
@@ -2895,7 +2905,7 @@
             Returns a random integer that is within a specified range.
             </summary>
             <param name="maxValue">The exclusive upper bound of the random number returned.</param>
-            <returns></returns>
+            <returns>Next random integer.</returns>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.PolymorphicRandomNumberGenerator.Next(System.Int32,System.Int32)">
             <summary>
@@ -2903,7 +2913,7 @@
             </summary>
             <param name="minValue">The inclusive lower bound of the random number returned.</param>
             <param name="maxValue">The exclusive upper bound of the random number returned. maxValue must be greater than or equal to minValue.</param>
-            <returns></returns>
+            <returns>Next random integer.</returns>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.PolymorphicRandomNumberGenerator.NextBytes(System.Byte[])">
             <summary>
@@ -2923,7 +2933,7 @@
             not need to be in the range of -Double.MaxValue .. Double.MaxValue,
             just 0.. (2 * Int32.MaxValue) - 1 .
             </summary>
-            <returns></returns>
+            <returns>A random double.</returns>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.GetRunspaceCommand">
             <summary>
@@ -2948,6 +2958,11 @@
         <member name="M:Microsoft.PowerShell.Commands.GetRunspaceCommand.ProcessRecord">
             <summary>
             Process record.
+            </summary>
+        </member>
+        <member name="T:Microsoft.PowerShell.Commands.GetSecureRandomCommand">
+            <summary>
+            This class implements `Get-SecureRandom` cmdlet.
             </summary>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.GetUICultureCommand">
@@ -2982,6 +2997,11 @@
             should be compared.
             </summary>
             <value></value>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.GetUniqueCommand.CaseInsensitive">
+            <summary>
+            Gets or sets case insensitive switch for string comparison.
+            </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.GetUniqueCommand.ProcessRecord">
             <summary>
@@ -3544,6 +3564,21 @@
         <member name="M:Microsoft.PowerShell.Commands.Utility.JoinStringCommand.EndProcessing">
             <inheritdoc/>
         </member>
+        <member name="T:Microsoft.PowerShell.Commands.JsonSchemaReferenceResolutionException">
+            <summary>
+            Thrown during evaluation of <see cref="T:Microsoft.PowerShell.Commands.TestJsonCommand"/> when an attempt
+            to resolve a <code>$ref</code> or <code>$dynamicRef</code> fails.
+            </summary>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.JsonSchemaReferenceResolutionException.#ctor(System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.JsonSchemaReferenceResolutionException"/> class.
+            </summary>
+            <param name="innerException">
+            The exception that is the cause of the current exception, or a null reference
+            (<code>Nothing</code> in Visual Basic) if no inner exception is specified.
+            </param>
+        </member>
         <member name="T:Microsoft.PowerShell.Commands.SetMarkdownOptionCommand">
             <summary>
             Class for implementing Set-MarkdownOption cmdlet.
@@ -3734,20 +3769,20 @@
         <member name="P:Microsoft.PowerShell.Commands.MatchInfo.Filename">
             <summary>
             Gets the base name of the file containing the matching line.
+            </summary>
             <remarks>
             It will be the string "InputStream" if the object came from the input stream.
             This is a readonly property calculated from the path <see cref="P:Microsoft.PowerShell.Commands.MatchInfo.Path"/>.
             </remarks>
-            </summary>
             <value>The file name.</value>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.MatchInfo.Path">
             <summary>
             Gets or sets the full path of the file containing the matching line.
+            </summary>
             <remarks>
             It will be "InputStream" if the object came from the input stream.
             </remarks>
-            </summary>
             <value>The path name.</value>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.MatchInfo.Pattern">
@@ -3764,11 +3799,11 @@
         <member name="M:Microsoft.PowerShell.Commands.MatchInfo.RelativePath(System.String)">
             <summary>
             Returns the path of the matching file truncated relative to the <paramref name="directory"/> parameter.
+            </summary>
             <remarks>
             For example, if the matching path was c:\foo\bar\baz.c and the directory argument was c:\foo
             the routine would return bar\baz.c .
             </remarks>
-            </summary>
             <param name="directory">The directory base the truncation on.</param>
             <returns>The relative path that was produced.</returns>
         </member>
@@ -3776,12 +3811,12 @@
             <summary>
             Returns the string representation of this object. The format
             depends on whether a path has been set for this object or not.
+            </summary>
             <remarks>
             If the path component is set, as would be the case when matching
             in a file, ToString() would return the path, line number and line text.
             If path is not set, then just the line text is presented.
             </remarks>
-            </summary>
             <returns>The string representation of the match object.</returns>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.MatchInfo.ToString(System.String)">
@@ -4806,17 +4841,17 @@
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.ObjectCommandComparer.Compare(System.Object,System.Object)">
-             <summary>
-             Main method that will compare first and second by their keys considering case and order.
-             </summary>
-             <param name="first">
-             First object to extract value.
-             </param>
-             <param name="second">
-             Second object to extract value.
-             </param>
-             <returns>
-             0 if they are the same, less than 0 if first is smaller, more than 0 if first is greater.
+            <summary>
+            Main method that will compare first and second by their keys considering case and order.
+            </summary>
+            <param name="first">
+            First object to extract value.
+            </param>
+            <param name="second">
+            Second object to extract value.
+            </param>
+            <returns>
+            0 if they are the same, less than 0 if first is smaller, more than 0 if first is greater.
             </returns>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.SortObjectParameterDefinitionKeys">
@@ -5137,6 +5172,12 @@
             </summary>
             <value></value>
         </member>
+        <member name="P:Microsoft.PowerShell.Commands.SelectObjectCommand.CaseInsensitive">
+            <summary>
+            Gets or sets case insensitive switch for string comparison.
+            Used in combination with Unique switch parameter.
+            </summary>
+        </member>
         <member name="P:Microsoft.PowerShell.Commands.SelectObjectCommand.Last">
             <summary>
             </summary>
@@ -5149,7 +5190,7 @@
         </member>
         <member name="P:Microsoft.PowerShell.Commands.SelectObjectCommand.Skip">
             <summary>
-            Skips the specified number of items from top when used with First, from end when used with Last.
+            Skips the specified number of items from top when used with First, from end when used with Last or SkipLast.
             </summary>
             <value></value>
         </member>
@@ -6171,6 +6212,16 @@
             Gets or sets JSON string to be validated.
             </summary>
         </member>
+        <member name="P:Microsoft.PowerShell.Commands.TestJsonCommand.Path">
+            <summary>
+            Gets or sets JSON file path to be validated.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.TestJsonCommand.LiteralPath">
+            <summary>
+            Gets or sets JSON literal file path to be validated.
+            </summary>
+        </member>
         <member name="P:Microsoft.PowerShell.Commands.TestJsonCommand.Schema">
             <summary>
             Gets or sets schema to validate the JSON against.
@@ -6186,15 +6237,6 @@
             Gets or sets path to the file containing schema to validate the JSON string against.
             This is optional parameter.
             </summary>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.TestJsonCommand.UnwrapException(System.Exception)">
-            <summary>
-            Process all exceptions in the AggregateException.
-            Unwrap TargetInvocationException if any and
-            rethrow inner exception without losing the stack trace.
-            </summary>
-            <param name="e">AggregateException to be unwrapped.</param>
-            <returns>Return value is unreachable since we always rethrow.</returns>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.TestJsonCommand.BeginProcessing">
             <summary>
@@ -6333,7 +6375,7 @@
         </member>
         <member name="P:Microsoft.PowerShell.Commands.SetTraceSourceCommand.PSHost">
             <summary>
-            If this parameter is specified the Msh Host trace listener will be added.
+            If this parameter is specified the PSHost trace listener will be added.
             </summary>
             <value></value>
         </member>
@@ -7100,11 +7142,6 @@
             The resource string used to indicate 'PATH:' in the formatting header.
             </summary>
         </member>
-        <member name="P:Microsoft.PowerShell.Commands.UtilityResources.AlgorithmTypeNotSupported">
-            <summary>
-            Error message to indicate that requested algorithm is not supported on the target platform.
-            </summary>
-        </member>
         <member name="P:Microsoft.PowerShell.Commands.UtilityResources.CouldNotParseAsPowerShellDataFile">
             <summary>
             The file '{0}' could not be parsed as a PowerShell Data File.
@@ -7520,19 +7557,23 @@
             Response object for html content without DOM parsing.
             </summary>
         </member>
-        <member name="M:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.#ctor(System.Net.Http.HttpResponseMessage)">
+        <member name="M:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.#ctor(System.Net.Http.HttpResponseMessage,System.TimeSpan,System.Threading.CancellationToken)">
             <summary>
             Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject"/> class.
             </summary>
-            <param name="response"></param>
+            <param name="response">The response.</param>
+            <param name="perReadTimeout">Time permitted between reads or Timeout.InfiniteTimeSpan for no timeout.</param>
+            <param name="cancellationToken">Cancellation token.</param>
         </member>
-        <member name="M:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.#ctor(System.Net.Http.HttpResponseMessage,System.IO.Stream)">
+        <member name="M:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.#ctor(System.Net.Http.HttpResponseMessage,System.IO.Stream,System.TimeSpan,System.Threading.CancellationToken)">
             <summary>
             Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject"/> class
             with the specified <paramref name="contentStream"/>.
             </summary>
-            <param name="response"></param>
-            <param name="contentStream"></param>
+            <param name="response">The response.</param>
+            <param name="contentStream">The content stream associated with the response.</param>
+            <param name="perReadTimeout">Time permitted between reads or Timeout.InfiniteTimeSpan for no timeout.</param>
+            <param name="cancellationToken">Cancellation token.</param>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.Content">
             <summary>
@@ -7568,10 +7609,11 @@
             Gets the HTML img elements parsed from <see cref="P:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.Content"/>.
             </summary>
         </member>
-        <member name="M:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.InitializeContent">
+        <member name="M:Microsoft.PowerShell.Commands.BasicHtmlWebResponseObject.InitializeContent(System.Threading.CancellationToken)">
             <summary>
             Reads the response content from the web response.
             </summary>
+            <param name="cancellationToken">The cancellation token.</param>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.HttpVersionCompletionsAttribute">
             <summary>
@@ -7588,16 +7630,6 @@
             and returns the response in an appropriate way.
             Intended to work against the wide spectrum of "RESTful" web services
             currently deployed across the web.
-            </summary>
-        </member>
-        <member name="P:Microsoft.PowerShell.Commands.InvokeRestMethodCommand.Method">
-            <summary>
-            Gets or sets the parameter Method.
-            </summary>
-        </member>
-        <member name="P:Microsoft.PowerShell.Commands.InvokeRestMethodCommand.CustomMethod">
-            <summary>
-            Gets or sets the parameter CustomMethod.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.InvokeRestMethodCommand.FollowRelLink">
@@ -7620,6 +7652,12 @@
             Gets or sets the variable name to use for storing the status code from the response.
             </summary>
         </member>
+        <member name="M:Microsoft.PowerShell.Commands.InvokeRestMethodCommand.ProcessResponse(System.Net.Http.HttpResponseMessage)">
+            <summary>
+            Process the web response and output corresponding objects.
+            </summary>
+            <param name="response"></param>
+        </member>
         <member name="T:Microsoft.PowerShell.Commands.InvokeRestMethodCommand.RestReturnType">
             <summary>
             Enum for rest return type.
@@ -7640,12 +7678,6 @@
             <summary>
             Xml return type.
             </summary>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.InvokeRestMethodCommand.ProcessResponse(System.Net.Http.HttpResponseMessage)">
-            <summary>
-            Process the web response and output corresponding objects.
-            </summary>
-            <param name="response"></param>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.WebAuthenticationType">
             <summary>
@@ -7706,8 +7738,50 @@
             <summary>
             Base class for Invoke-RestMethod and Invoke-WebRequest commands.
             </summary>
+        </member>
+        <member name="F:Microsoft.PowerShell.Commands.WebRequestPSCmdlet._cancelToken">
             <summary>
-            Base class for Invoke-RestMethod and Invoke-WebRequest commands.
+            Cancellation token source.
+            </summary>
+        </member>
+        <member name="F:Microsoft.PowerShell.Commands.WebRequestPSCmdlet._followRelLink">
+            <summary>
+            Automatically follow Rel Links.
+            </summary>
+        </member>
+        <member name="F:Microsoft.PowerShell.Commands.WebRequestPSCmdlet._maximumFollowRelLink">
+            <summary>
+            Maximum number of Rel Links to follow.
+            </summary>
+        </member>
+        <member name="F:Microsoft.PowerShell.Commands.WebRequestPSCmdlet._maximumRedirection">
+            <summary>
+            Maximum number of Redirects to follow.
+            </summary>
+        </member>
+        <member name="F:Microsoft.PowerShell.Commands.WebRequestPSCmdlet._parseRelLink">
+            <summary>
+            Parse Rel Links.
+            </summary>
+        </member>
+        <member name="F:Microsoft.PowerShell.Commands.WebRequestPSCmdlet._relationLink">
+            <summary>
+            Automatically follow Rel Links.
+            </summary>
+        </member>
+        <member name="F:Microsoft.PowerShell.Commands.WebRequestPSCmdlet._resumeFileSize">
+            <summary>
+            The current size of the local file being resumed.
+            </summary>
+        </member>
+        <member name="F:Microsoft.PowerShell.Commands.WebRequestPSCmdlet._resumeSuccess">
+            <summary>
+            The remote endpoint returned a 206 status code indicating successful resume.
+            </summary>
+        </member>
+        <member name="F:Microsoft.PowerShell.Commands.WebRequestPSCmdlet._disposed">
+            <summary>
+            True if the Dispose() method has already been called to cleanup Disposable fields.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.UseBasicParsing">
@@ -7794,14 +7868,38 @@
             Gets or sets the DisableKeepAlive property.
             </summary>
         </member>
-        <member name="P:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.TimeoutSec">
+        <member name="P:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.ConnectionTimeoutSeconds">
             <summary>
-            Gets or sets the TimeOut property.
+            Gets or sets the ConnectionTimeoutSeconds property.
             </summary>
+            <remarks>
+            This property applies to sending the request and receiving the response headers only.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.OperationTimeoutSeconds">
+            <summary>
+            Gets or sets the OperationTimeoutSeconds property.
+            </summary>
+            <remarks>
+            This property applies to each read operation when receiving the response body.
+            </remarks>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.Headers">
             <summary>
             Gets or sets the Headers property.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.SkipHeaderValidation">
+            <summary>
+            Gets or sets the SkipHeaderValidation property.
+            </summary>
+            <remarks>
+            This property adds headers to the request's header collection without validation.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.AllowInsecureRedirect">
+            <summary>
+            Gets or sets the AllowInsecureRedirect property used to follow HTTP redirects from HTTPS.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.MaximumRedirection">
@@ -7813,6 +7911,20 @@
             <summary>
             Gets or sets the MaximumRetryCount property, which determines the number of retries of a failed web request.
             </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.PreserveAuthorizationOnRedirect">
+            <summary>
+            Gets or sets the PreserveAuthorizationOnRedirect property.
+            </summary>
+            <remarks>
+            This property overrides compatibility with web requests on Windows.
+            On FullCLR (WebRequest), authorization headers are stripped during redirect.
+            CoreCLR (HTTPClient) does not have this behavior so web requests that work on
+            PowerShell/FullCLR can fail with PowerShell/CoreCLR. To provide compatibility,
+            we'll detect requests with an Authorization header and automatically strip
+            the header when the first redirect occurs. This switch turns off this logic for
+            edge cases where the authorization header needs to be preserved across redirects.
+            </remarks>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.RetryIntervalSec">
             <summary>
@@ -7827,6 +7939,16 @@
         <member name="P:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.CustomMethod">
             <summary>
             Gets or sets the CustomMethod property.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.PreserveHttpMethodOnRedirect">
+            <summary>
+            Gets or sets the PreserveHttpMethodOnRedirect property.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.UnixSocket">
+            <summary>
+            Gets or sets the UnixSocket property.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.NoProxy">
@@ -7906,68 +8028,11 @@
             Determines whether writing to a file should Resume and append rather than overwrite.
             </summary>
         </member>
-        <member name="P:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.PreserveAuthorizationOnRedirect">
-            <summary>
-            Gets or sets the PreserveAuthorizationOnRedirect property.
-            </summary>
-            <remarks>
-            This property overrides compatibility with web requests on Windows.
-            On FullCLR (WebRequest), authorization headers are stripped during redirect.
-            CoreCLR (HTTPClient) does not have this behavior so web requests that work on
-            PowerShell/FullCLR can fail with PowerShell/CoreCLR.  To provide compatibility,
-            we'll detect requests with an Authorization header and automatically strip
-            the header when the first redirect occurs. This switch turns off this logic for
-            edge cases where the authorization header needs to be preserved across redirects.
-            </remarks>
-        </member>
-        <member name="P:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.SkipHeaderValidation">
-            <summary>
-            Gets or sets the SkipHeaderValidation property.
-            </summary>
-            <remarks>
-            This property adds headers to the request's header collection without validation.
-            </remarks>
-        </member>
         <member name="M:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.ProcessResponse(System.Net.Http.HttpResponseMessage)">
             <summary>
             Read the supplied WebResponse object and push the resulting output into the pipeline.
             </summary>
             <param name="response">Instance of a WebResponse object to be processed.</param>
-        </member>
-        <member name="F:Microsoft.PowerShell.Commands.WebRequestPSCmdlet._cancelToken">
-            <summary>
-            Cancellation token source.
-            </summary>
-        </member>
-        <member name="F:Microsoft.PowerShell.Commands.WebRequestPSCmdlet._parseRelLink">
-            <summary>
-            Parse Rel Links.
-            </summary>
-        </member>
-        <member name="F:Microsoft.PowerShell.Commands.WebRequestPSCmdlet._followRelLink">
-            <summary>
-            Automatically follow Rel Links.
-            </summary>
-        </member>
-        <member name="F:Microsoft.PowerShell.Commands.WebRequestPSCmdlet._relationLink">
-            <summary>
-            Automatically follow Rel Links.
-            </summary>
-        </member>
-        <member name="F:Microsoft.PowerShell.Commands.WebRequestPSCmdlet._maximumFollowRelLink">
-            <summary>
-            Maximum number of Rel Links to follow.
-            </summary>
-        </member>
-        <member name="F:Microsoft.PowerShell.Commands.WebRequestPSCmdlet._resumeSuccess">
-            <summary>
-            The remote endpoint returned a 206 status code indicating successful resume.
-            </summary>
-        </member>
-        <member name="F:Microsoft.PowerShell.Commands.WebRequestPSCmdlet._resumeFileSize">
-            <summary>
-            The current size of the local file being resumed.
-            </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.ProcessRecord">
             <summary>
@@ -7976,7 +8041,18 @@
         </member>
         <member name="M:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.StopProcessing">
             <summary>
-            Implementing ^C, after start the BeginGetResponse.
+            To implement ^C.
+            </summary>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.Dispose(System.Boolean)">
+            <summary>
+            Disposes the associated WebSession if it is not being used as part of a persistent session.
+            </summary>
+            <param name="disposing">True when called from Dispose() and false when called from finalizer.</param>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.Dispose">
+            <summary>
+            Disposes the associated WebSession if it is not being used as part of a persistent session.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.SetRequestContent(System.Net.Http.HttpRequestMessage,System.Byte[])">
@@ -7985,9 +8061,8 @@
             </summary>
             <param name="request">The WebRequest who's content is to be set.</param>
             <param name="content">A byte array containing the content data.</param>
-            <returns>The number of bytes written to the requests RequestStream (and the new value of the request's ContentLength property.</returns>
             <remarks>
-            Because this function sets the request's ContentLength property and writes content data into the requests's stream,
+            Because this function sets the request's ContentLength property and writes content data into the request's stream,
             it should be called one time maximum on a given request.
             </remarks>
         </member>
@@ -7997,9 +8072,8 @@
             </summary>
             <param name="request">The WebRequest who's content is to be set.</param>
             <param name="content">A String object containing the content data.</param>
-            <returns>The number of bytes written to the requests RequestStream (and the new value of the request's ContentLength property.</returns>
             <remarks>
-            Because this function sets the request's ContentLength property and writes content data into the requests's stream,
+            Because this function sets the request's ContentLength property and writes content data into the request's stream,
             it should be called one time maximum on a given request.
             </remarks>
         </member>
@@ -8009,21 +8083,19 @@
             </summary>
             <param name="request">The WebRequest who's content is to be set.</param>
             <param name="contentStream">A Stream object containing the content data.</param>
-            <returns>The number of bytes written to the requests RequestStream (and the new value of the request's ContentLength property.</returns>
             <remarks>
-            Because this function sets the request's ContentLength property and writes content data into the requests's stream,
+            Because this function sets the request's ContentLength property and writes content data into the request's stream,
             it should be called one time maximum on a given request.
             </remarks>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.SetRequestContent(System.Net.Http.HttpRequestMessage,System.Net.Http.MultipartFormDataContent)">
             <summary>
-            Sets the ContentLength property of the request and writes the specified content to the request's RequestStream.
+            Sets the ContentLength property of the request and writes the ContentLength property of the request and writes the specified content to the request's RequestStream.
             </summary>
             <param name="request">The WebRequest who's content is to be set.</param>
             <param name="multipartContent">A MultipartFormDataContent object containing multipart/form-data content.</param>
-            <returns>The number of bytes written to the requests RequestStream (and the new value of the request's ContentLength property.</returns>
             <remarks>
-            Because this function sets the request's ContentLength property and writes content data into the requests's stream,
+            Because this function sets the request's ContentLength property and writes content data into the request's stream,
             it should be called one time maximum on a given request.
             </remarks>
         </member>
@@ -8033,7 +8105,7 @@
             </summary>
             <param name="fieldName">The Field Name to use.</param>
             <param name="fieldValue">The Field Value to use.</param>
-            <param name="formData">The <see cref="T:System.Net.Http.MultipartFormDataContent"/>> to update.</param>
+            <param name="formData">The <see cref="T:System.Net.Http.MultipartFormDataContent"/> to update.</param>
             <param name="enumerate">If true, collection types in <paramref name="fieldValue"/> will be enumerated. If false, collections will be treated as single value.</param>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.WebRequestPSCmdlet.GetMultipartStringContent(System.Object,System.Object)">
@@ -8078,13 +8150,43 @@
             <summary>
             WebResponseObject.
             </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.WebResponseObject.BaseResponse">
             <summary>
-            WebResponseObject.
+            Gets or sets the BaseResponse property.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.WebResponseObject.Content">
             <summary>
             Gets or protected sets the response body content.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.WebResponseObject.Headers">
+            <summary>
+            Gets the Headers property.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.WebResponseObject.RawContent">
+            <summary>
+            Gets or protected sets the full response content.
+            </summary>
+            <value>
+            Full response content, including the HTTP status line, headers, and body.
+            </value>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.WebResponseObject.RawContentLength">
+            <summary>
+            Gets the length (in bytes) of <see cref="P:Microsoft.PowerShell.Commands.WebResponseObject.RawContentStream"/>.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.WebResponseObject.RawContentStream">
+            <summary>
+            Gets or protected sets the response body content as a <see cref="T:System.IO.MemoryStream"/>.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.WebResponseObject.RelationLink">
+            <summary>
+            Gets the RelationLink property.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.WebResponseObject.StatusCode">
@@ -8097,23 +8199,28 @@
             Gets the response status description.
             </summary>
         </member>
-        <member name="P:Microsoft.PowerShell.Commands.WebResponseObject.RawContentStream">
+        <member name="F:Microsoft.PowerShell.Commands.WebResponseObject.perReadTimeout">
             <summary>
-            Gets the response body content as a <see cref="T:System.IO.MemoryStream"/>.
+            Time permitted between reads or Timeout.InfiniteTimeSpan for no timeout.
             </summary>
         </member>
-        <member name="P:Microsoft.PowerShell.Commands.WebResponseObject.RawContentLength">
+        <member name="M:Microsoft.PowerShell.Commands.WebResponseObject.#ctor(System.Net.Http.HttpResponseMessage,System.TimeSpan,System.Threading.CancellationToken)">
             <summary>
-            Gets the length (in bytes) of <see cref="P:Microsoft.PowerShell.Commands.WebResponseObject.RawContentStream"/>.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.WebResponseObject"/> class.
             </summary>
+            <param name="response">The Http response.</param>
+            <param name="perReadTimeout">Time permitted between reads or Timeout.InfiniteTimeSpan for no timeout.</param>
+            <param name="cancellationToken">The cancellation token.</param>
         </member>
-        <member name="P:Microsoft.PowerShell.Commands.WebResponseObject.RawContent">
+        <member name="M:Microsoft.PowerShell.Commands.WebResponseObject.#ctor(System.Net.Http.HttpResponseMessage,System.IO.Stream,System.TimeSpan,System.Threading.CancellationToken)">
             <summary>
-            Gets or protected sets the full response content.
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.WebResponseObject"/> class
+            with the specified <paramref name="contentStream"/>.
             </summary>
-            <value>
-            Full response content, including the HTTP status line, headers, and body.
-            </value>
+            <param name="response">Http response.</param>
+            <param name="contentStream">The http content stream.</param>
+            <param name="perReadTimeout">Time permitted between reads or Timeout.InfiniteTimeSpan for no timeout.</param>
+            <param name="cancellationToken">The cancellation token.</param>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.WebResponseObject.InitializeContent">
             <summary>
@@ -8125,35 +8232,6 @@
             Returns the string representation of this web response.
             </summary>
             <returns>The string representation of this web response.</returns>
-        </member>
-        <member name="P:Microsoft.PowerShell.Commands.WebResponseObject.BaseResponse">
-            <summary>
-            Gets or sets the BaseResponse property.
-            </summary>
-        </member>
-        <member name="P:Microsoft.PowerShell.Commands.WebResponseObject.Headers">
-            <summary>
-            Gets the Headers property.
-            </summary>
-        </member>
-        <member name="P:Microsoft.PowerShell.Commands.WebResponseObject.RelationLink">
-            <summary>
-            Gets the RelationLink property.
-            </summary>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.WebResponseObject.#ctor(System.Net.Http.HttpResponseMessage)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.WebResponseObject"/> class.
-            </summary>
-            <param name="response"></param>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.WebResponseObject.#ctor(System.Net.Http.HttpResponseMessage,System.IO.Stream)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.WebResponseObject"/> class
-            with the specified <paramref name="contentStream"/>.
-            </summary>
-            <param name="response"></param>
-            <param name="contentStream"></param>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.ConvertFromJsonCommand">
             <summary>
@@ -8303,22 +8381,22 @@
         </member>
         <member name="P:Microsoft.PowerShell.Commands.FormObject.Id">
             <summary>
-            Gets or private sets the Id property.
+            Gets the Id property.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.FormObject.Method">
             <summary>
-            Gets or private sets the Method property.
+            Gets the Method property.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.FormObject.Action">
             <summary>
-            Gets or private sets the Action property.
+            Gets the Action property.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.FormObject.Fields">
             <summary>
-            Gets or private sets the Fields property.
+            Gets the Fields property.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.FormObject.#ctor(System.String,System.String,System.String)">
@@ -8539,23 +8617,22 @@
             content will unnecessarily be read even if there are no consumers for it.
             </summary>
         </member>
-        <member name="M:Microsoft.PowerShell.Commands.WebResponseContentMemoryStream.#ctor(System.IO.Stream,System.Int32,System.Management.Automation.Cmdlet)">
+        <member name="M:Microsoft.PowerShell.Commands.WebResponseContentMemoryStream.#ctor(System.IO.Stream,System.Int32,System.Management.Automation.Cmdlet,System.Nullable{System.Int64},System.TimeSpan,System.Threading.CancellationToken)">
             <summary>
             Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.WebResponseContentMemoryStream"/> class.
             </summary>
-            <param name="stream"></param>
-            <param name="initialCapacity"></param>
+            <param name="stream">Response stream.</param>
+            <param name="initialCapacity">Presize the memory stream.</param>
             <param name="cmdlet">Owner cmdlet if any.</param>
+            <param name="contentLength">Expected download size in Bytes.</param>
+            <param name="perReadTimeout">Time permitted between reads or Timeout.InfiniteTimeSpan for no timeout.</param>
+            <param name="cancellationToken">Cancellation token.</param>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.WebResponseContentMemoryStream.CanRead">
             <summary>
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.WebResponseContentMemoryStream.CanSeek">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Microsoft.PowerShell.Commands.WebResponseContentMemoryStream.CanTimeout">
             <summary>
             </summary>
         </member>
@@ -8637,11 +8714,7 @@
             <summary>
             </summary>
         </member>
-        <member name="M:Microsoft.PowerShell.Commands.WebResponseContentMemoryStream.Initialize">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.StreamHelper.SaveStreamToFile(System.IO.Stream,System.String,System.Management.Automation.PSCmdlet,System.Threading.CancellationToken)">
+        <member name="M:Microsoft.PowerShell.Commands.StreamHelper.SaveStreamToFile(System.IO.Stream,System.String,System.Management.Automation.PSCmdlet,System.Nullable{System.Int64},System.TimeSpan,System.Threading.CancellationToken)">
             <summary>
             Saves content from stream into filePath.
             Caller need to ensure <paramref name="stream"/> position is properly set.
@@ -8649,6 +8722,8 @@
             <param name="stream">Input stream.</param>
             <param name="filePath">Output file name.</param>
             <param name="cmdlet">Current cmdlet (Invoke-WebRequest or Invoke-RestMethod).</param>
+            <param name="contentLength">Expected download size in Bytes.</param>
+            <param name="perReadTimeout">Time permitted between reads or Timeout.InfiniteTimeSpan for no timeout.</param>
             <param name="cancellationToken">CancellationToken to track the cmdlet cancellation.</param>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.WebCmdletElementCollection">
@@ -8737,6 +8812,11 @@
             WebRequestSession for holding session infos.
             </summary>
         </member>
+        <member name="F:Microsoft.PowerShell.Commands.WebRequestSession._disposedClient">
+            <summary>
+            Contains true if an existing HttpClient had to be disposed and recreated since the WebSession was last used.
+            </summary>
+        </member>
         <member name="P:Microsoft.PowerShell.Commands.WebRequestSession.Headers">
             <summary>
             Gets or sets the Header property.
@@ -8779,7 +8859,7 @@
         </member>
         <member name="P:Microsoft.PowerShell.Commands.WebRequestSession.MaximumRedirection">
             <summary>
-            Gets or sets the RedirectMax property.
+            Gets or sets the MaximumRedirection property.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.WebRequestSession.MaximumRetryCount">
@@ -8802,6 +8882,26 @@
             Add a X509Certificate to the Certificates collection.
             </summary>
             <param name="certificate">The certificate to be added.</param>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.WebRequestSession.GetHttpClient(System.Boolean,System.Boolean@)">
+            <summary>
+            Gets an existing or creates a new HttpClient for this WebRequest session if none currently exists (either because it was never
+            created, or because changes to the WebSession properties required the existing HttpClient to be disposed).
+            </summary>
+            <param name="suppressHttpClientRedirects">True if the caller does not want the HttpClient to ever handle redirections automatically.</param>
+            <param name="clientWasReset">Contains true if an existing HttpClient had to be disposed and recreated since the WebSession was last used.</param>
+            <returns>The HttpClient cached in the WebSession, based on all current settings.</returns>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.WebRequestSession.Dispose(System.Boolean)">
+            <summary>
+            Dispose the WebRequestSession.
+            </summary>
+            <param name="disposing">True when called from Dispose() and false when called from finalizer.</param>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.WebRequestSession.Dispose">
+            <summary>
+            Dispose the WebRequestSession.
+            </summary>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.WriteOutputCommand">
             <summary>
@@ -9992,27 +10092,6 @@
              
             </summary>
         </member>
-        <member name="P:AddTypeStrings.MethodDefinitionNotPublic">
-            <summary>
-              Looks up a localized string similar to 
-               The generated type defines no public methods or properties.
-             
-            </summary>
-        </member>
-        <member name="P:AddTypeStrings.TypeDefinitionNotPublic">
-            <summary>
-              Looks up a localized string similar to 
-               The generated type is not public.
-             
-            </summary>
-        </member>
-        <member name="P:AddTypeStrings.FromMemberNotSupported">
-            <summary>
-              Looks up a localized string similar to 
-               Cannot add type. The -MemberDefinition parameter is not supported for this language.
-             
-            </summary>
-        </member>
         <member name="P:AddTypeStrings.FileExtensionNotSupported">
             <summary>
               Looks up a localized string similar to 
@@ -10024,20 +10103,6 @@
             <summary>
               Looks up a localized string similar to 
                Cannot add type. Input files must all have the same file extension.
-             
-            </summary>
-        </member>
-        <member name="P:AddTypeStrings.LanguageAndProviderSpecified">
-            <summary>
-              Looks up a localized string similar to 
-               Cannot add type. Specify only the Language or CodeDomProvider parameters.
-             
-            </summary>
-        </member>
-        <member name="P:AddTypeStrings.AmbiguousAssemblyName">
-            <summary>
-              Looks up a localized string similar to 
-               Cannot add type. The assembly name {0} matches both {1} and {2}.
              
             </summary>
         </member>
@@ -10069,13 +10134,6 @@
              
             </summary>
         </member>
-        <member name="P:AddTypeStrings.AssemblyLoadErrors">
-            <summary>
-              Looks up a localized string similar to 
-               Cannot add type. One or more required assemblies are missing.
-             
-            </summary>
-        </member>
         <member name="P:AddTypeStrings.OutputTypeRequiresOutputAssembly">
             <summary>
               Looks up a localized string similar to 
@@ -10101,6 +10159,20 @@
             <summary>
               Looks up a localized string similar to 
                Both the assembly types 'ConsoleApplication' and 'WindowsApplication' are not currently supported.
+             
+            </summary>
+        </member>
+        <member name="P:AddTypeStrings.AddTypeLogTitle">
+            <summary>
+              Looks up a localized string similar to 
+               Add-Type Cmdlet
+             
+            </summary>
+        </member>
+        <member name="P:AddTypeStrings.AddTypeLogMessage">
+            <summary>
+              Looks up a localized string similar to 
+               Add-Type cmdlet will not be allowed in ConstrainedLanguage mode.
              
             </summary>
         </member>
@@ -10162,20 +10234,6 @@
             <summary>
               Looks up a localized string similar to 
                Name: {0} Value: {1}
-             
-            </summary>
-        </member>
-        <member name="P:AliasCommandStrings.ExportAliasToFileSystemOnly">
-            <summary>
-              Looks up a localized string similar to 
-               Cannot export the aliases because path '{0}' referred to a '{1}' provider path. Change the Path parameter to a file system path.
-             
-            </summary>
-        </member>
-        <member name="P:AliasCommandStrings.ExportAliasPathResolvedToMultiple">
-            <summary>
-              Looks up a localized string similar to 
-               Cannot export the aliases because path '{0}' contains wildcard characters that resolved to multiple paths. Aliases can be exported to only one file. Change the value of the Path parameter to a path that resolves to a single file.
              
             </summary>
         </member>
@@ -10338,13 +10396,6 @@
             <summary>
               Looks up a localized string similar to 
                The type of the input object '{0}' is invalid.
-             
-            </summary>
-        </member>
-        <member name="P:ConvertMarkdownStrings.InputFileNotFound">
-            <summary>
-              Looks up a localized string similar to 
-               The file is not found: '{0}'.
              
             </summary>
         </member>
@@ -10915,13 +10966,6 @@
              
             </summary>
         </member>
-        <member name="P:HostStrings.NoStringToEvalulateError">
-            <summary>
-              Looks up a localized string similar to 
-               Cannot evaluate the error because a string is not specified.
-             
-            </summary>
-        </member>
         <member name="T:HttpCommandStrings">
             <summary>
               A strongly-typed resource class, for looking up localized strings, etc.
@@ -10939,13 +10983,6 @@
             <summary>
               Overrides the current threads CurrentUICulture property for all
               resource lookups using this strongly typed resource class.
-            </summary>
-        </member>
-        <member name="P:HttpCommandStrings.EmptyUri">
-            <summary>
-              Looks up a localized string similar to 
-               The command cannot run because "{0}" is empty or blank. Specify a value, and then run the command again.
-             
             </summary>
         </member>
         <member name="P:HttpCommandStrings.Error">
@@ -11002,13 +11039,6 @@
              
             </summary>
         </member>
-        <member name="P:ImplicitRemotingStrings.ErrorCannotCreateTemporaryFile">
-            <summary>
-              Looks up a localized string similar to 
-               Cannot create temporary file for implicit remoting module.
-             
-            </summary>
-        </member>
         <member name="P:ImplicitRemotingStrings.ErrorNoRunspaceForThisModule">
             <summary>
               Looks up a localized string similar to 
@@ -11041,27 +11071,6 @@
             <summary>
               Looks up a localized string similar to 
                Proxy creation has been skipped for the '{0}' command, because PowerShell could not verify the safety of the command name.
-             
-            </summary>
-        </member>
-        <member name="P:ImplicitRemotingStrings.ErrorSkippedUnsafeParameterName">
-            <summary>
-              Looks up a localized string similar to 
-               Proxy creation has been skipped for the '{0}' command, because PowerShell could not verify the safety of a parameter name: '{1}'.
-             
-            </summary>
-        </member>
-        <member name="P:ImplicitRemotingStrings.ErrorSkippedUnsafeParameterSetName">
-            <summary>
-              Looks up a localized string similar to 
-               Proxy creation has been skipped for the '{0}' command, because PowerShell could not verify the safety of a parameter set name: '{1}'.
-             
-            </summary>
-        </member>
-        <member name="P:ImplicitRemotingStrings.ErrorSkippedUnsafeAliasName">
-            <summary>
-              Looks up a localized string similar to 
-               Proxy creation has been skipped for the '{0}' command, because PowerShell could not verify the safety of a parameter alias name: '{1}'.
              
             </summary>
         </member>
@@ -11174,13 +11183,6 @@
             <summary>
               Looks up a localized string similar to 
                Getting formatting and output information from remote session ... {0} objects received
-             
-            </summary>
-        </member>
-        <member name="P:ImplicitRemotingStrings.ProgressStatusProxyGeneration">
-            <summary>
-              Looks up a localized string similar to 
-               Generating a proxy command for '{0}' ...
              
             </summary>
         </member>
@@ -11310,6 +11312,20 @@
              
             </summary>
         </member>
+        <member name="P:ImportLocalizedDataStrings.WDACLogTitle">
+            <summary>
+              Looks up a localized string similar to 
+               Import-LocalizedData Cmdlet
+             
+            </summary>
+        </member>
+        <member name="P:ImportLocalizedDataStrings.WDACLogMessage">
+            <summary>
+              Looks up a localized string similar to 
+               Additional supported commands (via SupportedCommand parameter) will not be allowed in ConstrainedLanguage mode.
+             
+            </summary>
+        </member>
         <member name="T:MatchStringStrings">
             <summary>
               A strongly-typed resource class, for looking up localized strings, etc.
@@ -11387,13 +11403,6 @@
             <summary>
               Looks up a localized string similar to 
                The property "{0}" cannot be found in the input for any objects.
-             
-            </summary>
-        </member>
-        <member name="P:MeasureObjectStrings.NonNumericProperty">
-            <summary>
-              Looks up a localized string similar to 
-               Property "{0}" is not numeric.
              
             </summary>
         </member>
@@ -11493,10 +11502,31 @@
              
             </summary>
         </member>
-        <member name="P:NewObjectStrings.ApartmentNotSupported">
+        <member name="P:NewObjectStrings.TypeWDACLogTitle">
             <summary>
               Looks up a localized string similar to 
-               {0} Please note that Single-Threaded Apartment is not supported in PowerShell.
+               New-Object Cmdlet Type Creation
+             
+            </summary>
+        </member>
+        <member name="P:NewObjectStrings.TypeWDACLogMessage">
+            <summary>
+              Looks up a localized string similar to 
+               The type '{0}' will not be created in ConstrainedLanguage mode.
+             
+            </summary>
+        </member>
+        <member name="P:NewObjectStrings.ComWDACLogTitle">
+            <summary>
+              Looks up a localized string similar to 
+               New-Object Cmdlet COM Object Creation
+             
+            </summary>
+        </member>
+        <member name="P:NewObjectStrings.ComWDACLogMessage">
+            <summary>
+              Looks up a localized string similar to 
+               The COM object '{0}' will not be created in ConstrainedLanguage mode.
              
             </summary>
         </member>
@@ -11692,10 +11722,10 @@
              
             </summary>
         </member>
-        <member name="P:TestJsonCmdletStrings.InvalidJsonAgainstSchema">
+        <member name="P:TestJsonCmdletStrings.InvalidJsonAgainstSchemaDetailed">
             <summary>
               Looks up a localized string similar to 
-               The JSON is not valid with the schema.
+               The JSON is not valid with the schema: {0} at '{1}'
              
             </summary>
         </member>
@@ -11703,6 +11733,13 @@
             <summary>
               Looks up a localized string similar to 
                Can not open JSON schema file: {0}
+             
+            </summary>
+        </member>
+        <member name="P:TestJsonCmdletStrings.InvalidUriScheme">
+            <summary>
+              Looks up a localized string similar to 
+               URI scheme '{0}' is not supported. Only HTTP(S) and local file system URIs are allowed.
              
             </summary>
         </member>
@@ -11723,13 +11760,6 @@
             <summary>
               Overrides the current threads CurrentUICulture property for all
               resource lookups using this strongly typed resource class.
-            </summary>
-        </member>
-        <member name="P:TraceCommandStrings.FileListenerNotFound">
-            <summary>
-              Looks up a localized string similar to 
-               A file listener with name '{0}' was not found.
-             
             </summary>
         </member>
         <member name="P:TraceCommandStrings.TraceFileOnly">
@@ -11837,13 +11867,6 @@
             <summary>
               Looks up a localized string similar to 
                Cannot update a member with type "{0}". Specify a different type for the MemberType parameter.
-             
-            </summary>
-        </member>
-        <member name="P:UpdateDataStrings.SerializationDepthNegative">
-            <summary>
-              Looks up a localized string similar to 
-               The value of the SerializationDepth property should not be negative.
              
             </summary>
         </member>
@@ -12018,13 +12041,6 @@
               resource lookups using this strongly typed resource class.
             </summary>
         </member>
-        <member name="P:UtilityCommonStrings.NoMatchFound">
-            <summary>
-              Looks up a localized string similar to 
-               There are no matching results found for {2}.
-             
-            </summary>
-        </member>
         <member name="P:UtilityCommonStrings.Invalidpath">
             <summary>
               Looks up a localized string similar to 
@@ -12130,13 +12146,6 @@
              
             </summary>
         </member>
-        <member name="P:UtilityCommonStrings.AlgorithmTypeNotSupported">
-            <summary>
-              Looks up a localized string similar to 
-               Algorithm '{0}' is not supported in this system.
-             
-            </summary>
-        </member>
         <member name="P:UtilityCommonStrings.CouldNotParseAsPowerShellDataFile">
             <summary>
               Looks up a localized string similar to 
@@ -12148,6 +12157,20 @@
             <summary>
               Looks up a localized string similar to 
                Cannot construct a security descriptor from the given SDDL due to the following error: {0}
+             
+            </summary>
+        </member>
+        <member name="P:UtilityCommonStrings.IEXWDACLogTitle">
+            <summary>
+              Looks up a localized string similar to 
+               Invoke-Expression Cmdlet
+             
+            </summary>
+        </member>
+        <member name="P:UtilityCommonStrings.IEXWDACLogMessage">
+            <summary>
+              Looks up a localized string similar to 
+               Invoke-Expression cmdlet script block will be run in ConstrainedLanguage mode.
              
             </summary>
         </member>
@@ -12195,20 +12218,6 @@
             <summary>
               Looks up a localized string similar to 
                Name: {0} Value: {1}
-             
-            </summary>
-        </member>
-        <member name="P:VariableCommandStrings.AddVariableAction">
-            <summary>
-              Looks up a localized string similar to 
-               Add variable
-             
-            </summary>
-        </member>
-        <member name="P:VariableCommandStrings.AddVariableTarget">
-            <summary>
-              Looks up a localized string similar to 
-               Name: {0}
              
             </summary>
         </member>
@@ -12357,20 +12366,6 @@
              
             </summary>
         </member>
-        <member name="P:WebCmdletStrings.KeysWithDifferentCasingInJsonString">
-            <summary>
-              Looks up a localized string similar to 
-               Cannot convert the JSON string because it contains keys with different casing. Please use the -AsHashTable switch instead. The key that was attempted to be added to the existing key '{0}' was '{1}'.
-             
-            </summary>
-        </member>
-        <member name="P:WebCmdletStrings.ExtendedProfileRequired">
-            <summary>
-              Looks up a localized string similar to 
-               The ConvertTo-Json and ConvertFrom-Json cmdlets require the installation of the .NET Client Profile, sometimes called the .NET extended profile.
-             
-            </summary>
-        </member>
         <member name="P:WebCmdletStrings.IEDomNotSupported">
             <summary>
               Looks up a localized string similar to 
@@ -12378,10 +12373,17 @@
              
             </summary>
         </member>
-        <member name="P:WebCmdletStrings.JsonStringInBadFormat">
+        <member name="P:WebCmdletStrings.InsecureRedirection">
             <summary>
               Looks up a localized string similar to 
-               The converted JSON string is in bad format.
+               Cannot follow an insecure redirection by default. Reissue the command specifying the -AllowInsecureRedirect switch. 
+             
+            </summary>
+        </member>
+        <member name="P:WebCmdletStrings.KeysWithDifferentCasingInJsonString">
+            <summary>
+              Looks up a localized string similar to 
+               Cannot convert the JSON string because it contains keys with different casing. Please use the -AsHashTable switch instead. The key that was attempted to be added to the existing key '{0}' was '{1}'.
              
             </summary>
         </member>
@@ -12451,28 +12453,28 @@
         <member name="P:WebCmdletStrings.ReadResponseComplete">
             <summary>
               Looks up a localized string similar to 
-               Reading web response completed. (Number of bytes read: {0})
+               Reading web response stream completed. Bytes downloaded: {0}
              
             </summary>
         </member>
         <member name="P:WebCmdletStrings.ReadResponseProgressActivity">
             <summary>
               Looks up a localized string similar to 
-               Reading web response
+               Reading web response stream
              
             </summary>
         </member>
         <member name="P:WebCmdletStrings.ReadResponseProgressStatus">
             <summary>
               Looks up a localized string similar to 
-               Reading response stream... (Number of bytes read: {0})
+               Downloaded: {0} of {1}
              
             </summary>
         </member>
-        <member name="P:WebCmdletStrings.RequestTimeout">
+        <member name="P:WebCmdletStrings.ResumeNotFilePath">
             <summary>
               Looks up a localized string similar to 
-               The operation has timed out.
+               The Resume switch can only be used if OutFile targets a file but it resolves to a directory: {0}.
              
             </summary>
         </member>
@@ -12497,6 +12499,13 @@
              
             </summary>
         </member>
+        <member name="P:WebCmdletStrings.WriteRequestCancelled">
+            <summary>
+              Looks up a localized string similar to 
+               Web request cancelled. (Number of bytes processed: {0})
+             
+            </summary>
+        </member>
         <member name="P:WebCmdletStrings.WriteRequestProgressActivity">
             <summary>
               Looks up a localized string similar to 
@@ -12507,35 +12516,7 @@
         <member name="P:WebCmdletStrings.WriteRequestProgressStatus">
             <summary>
               Looks up a localized string similar to 
-               Number of bytes processed: {0}
-             
-            </summary>
-        </member>
-        <member name="P:WebCmdletStrings.JsonNetModuleRequired">
-            <summary>
-              Looks up a localized string similar to 
-               The ConvertTo-Json and ConvertFrom-Json cmdlets require the 'Json.Net' module. {0}
-             
-            </summary>
-        </member>
-        <member name="P:WebCmdletStrings.PSModuleAutoloadingPreferenceNotEnable">
-            <summary>
-              Looks up a localized string similar to 
-               The cmdlet cannot run because the 'Json.Net' module cannot be loaded. Import the module manually or set the $PSModuleAutoLoadingPreference variable to enable module auto loading. For more information, see 'get-help about_Preference_Variables'.
-             
-            </summary>
-        </member>
-        <member name="P:WebCmdletStrings.CouldNotAutoImportJsonNetModule">
-            <summary>
-              Looks up a localized string similar to 
-               However, the 'Json.Net' module could not be loaded. For more information, run 'Import-Module Json.Net'.
-             
-            </summary>
-        </member>
-        <member name="P:WebCmdletStrings.JsonNetModuleFilesRequired">
-            <summary>
-              Looks up a localized string similar to 
-               Ensure 'Json.Net.psd1' and 'Newtonsoft.Json.dll' are available in a versioned subdirectory of '{0}'.
+               Downloaded: {0} of {1}
              
             </summary>
         </member>
@@ -12563,7 +12544,7 @@
         <member name="P:WebCmdletStrings.WebMethodInvocationVerboseMsg">
             <summary>
               Looks up a localized string similar to 
-               HTTP/{0} {1} with {2}-byte payload
+               Requested HTTP/{0} {1} with {2}-byte payload
              
             </summary>
         </member>
@@ -12577,7 +12558,14 @@
         <member name="P:WebCmdletStrings.WebResponseVerboseMsg">
             <summary>
               Looks up a localized string similar to 
-               received {0}-byte response of content type {1}
+               Received HTTP/{0} {1}-byte response of content type {2}
+             
+            </summary>
+        </member>
+        <member name="P:WebCmdletStrings.WebResponseNoSizeVerboseMsg">
+            <summary>
+              Looks up a localized string similar to 
+               Received HTTP/{0} response of content type {1} of unknown size
              
             </summary>
         </member>
@@ -12592,6 +12580,13 @@
             <summary>
               Looks up a localized string similar to 
                Resulting JSON is truncated as serialization has exceeded the set depth of {0}.
+             
+            </summary>
+        </member>
+        <member name="P:WebCmdletStrings.WebSessionConnectionRecreated">
+            <summary>
+              Looks up a localized string similar to 
+               The WebSession properties were changed between requests forcing all HTTP connections in the session to be recreated.
              
             </summary>
         </member>

@@ -59,13 +59,6 @@
             <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo"/> that holds the serialized object data about the exception being thrown.</param>
             <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext"/> that contains contextual information about the source or destination.</param>
         </member>
-        <member name="M:Microsoft.PowerShell.Cmdletization.Cim.CimJobException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
-            <summary>
-            Sets the SerializationInfo with information about the exception.
-            </summary>
-            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo"/> that holds the serialized object data about the exception being thrown.</param>
-            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext"/> that contains contextual information about the source or destination.</param>
-        </member>
         <member name="P:Microsoft.PowerShell.Cmdletization.Cim.CimJobException.ErrorRecord">
             <summary>
             <see cref="P:Microsoft.PowerShell.Cmdletization.Cim.CimJobException.ErrorRecord"/> which provides additional information about the error.
@@ -803,28 +796,6 @@
             </param>
             <param name="innerException">
             An exception that led to this exception.
-            </param>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.RestartComputerTimeoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
-            <summary>
-            Serialization constructor for class RestartComputerTimeoutException.
-            </summary>
-            <param name="info">
-            serialization information
-            </param>
-            <param name="context">
-            streaming context
-            </param>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.RestartComputerTimeoutException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
-            <summary>
-            Serializes the RestartComputerTimeoutException.
-            </summary>
-            <param name="info">
-            serialization information
-            </param>
-            <param name="context">
-            streaming context
             </param>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.WaitForServiceTypes">
@@ -2037,7 +2008,7 @@
             </param>
             <returns>
             A Nullable<typeparamref name="T"/> enum object. If the value
-            is convertable to a valid enum value, the returned object's
+            is convertible to a valid enum value, the returned object's
             value will contain the converted value, otherwise the returned
             object will be null.
             </returns>
@@ -3092,7 +3063,7 @@
         </member>
         <member name="P:Microsoft.PowerShell.Commands.ComputerInfo.OsPagingFiles">
             <summary>
-            Array of fiel paths to the operating system's paging files.
+            Array of file paths to the operating system's paging files.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.ComputerInfo.OsHardwareAbstractionLayer">
@@ -5099,8 +5070,7 @@
         </member>
         <member name="P:Microsoft.PowerShell.Commands.GetContentCommand.TotalCount">
             <summary>
-            The number of content items to retrieve. By default this
-            value is -1 which means read all the content.
+            The number of content items to retrieve.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.GetContentCommand.Tail">
@@ -5121,11 +5091,6 @@
             An object representing the dynamic parameters for the cmdlet or null if there
             are none.
             </returns>
-        </member>
-        <member name="F:Microsoft.PowerShell.Commands.GetContentCommand._totalCount">
-            <summary>
-            The number of content items to retrieve.
-            </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.GetContentCommand.ProcessRecord">
             <summary>
@@ -5681,7 +5646,7 @@
         </member>
         <member name="T:Microsoft.PowerShell.Commands.NewPSDriveCommand">
             <summary>
-            Mounts a drive in the Monad namespace.
+            Mounts a drive in PowerShell runspace.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.NewPSDriveCommand.Name">
@@ -5797,7 +5762,7 @@
         </member>
         <member name="T:Microsoft.PowerShell.Commands.RemovePSDriveCommand">
             <summary>
-            Removes a drive that is mounted in the Monad namespace.
+            Removes a drive that is mounted in the PowerShell runspace.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.RemovePSDriveCommand.Name">
@@ -5853,7 +5818,7 @@
         </member>
         <member name="T:Microsoft.PowerShell.Commands.GetPSDriveCommand">
             <summary>
-            Gets a specified or listing of drives that are mounted in the Monad
+            Gets a specified or listing of drives that are mounted in PowerShell
             namespace.
             </summary>
         </member>
@@ -6713,8 +6678,8 @@
         </member>
         <member name="T:Microsoft.PowerShell.Commands.SplitPathCommand">
             <summary>
-            A command to resolve MSH paths containing glob characters to
-            MSH paths that match the glob strings.
+            A command to resolve PowerShell paths containing glob characters to
+            PowerShell paths that match the glob strings.
             </summary>
         </member>
         <member name="F:Microsoft.PowerShell.Commands.SplitPathCommand.parentSet">
@@ -6774,7 +6739,7 @@
             <value>
             If true the qualifier of the path will be returned.
             The qualifier is the drive or provider that is qualifying
-            the MSH path.
+            the PowerShell path.
             </value>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.SplitPathCommand.NoQualifier">
@@ -6784,7 +6749,7 @@
             <value>
             If true the qualifier of the path will be returned.
             The qualifier is the drive or provider that is qualifying
-            the MSH path.
+            the PowerShell path.
             </value>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.SplitPathCommand.Parent">
@@ -6926,90 +6891,6 @@
             A CmdletProviderContext instance initialized to the context of the current
             command.
             </returns>
-        </member>
-        <member name="T:Microsoft.PowerShell.Commands.TestPathType">
-            <summary>
-            The valid values for the -PathType parameter for test-path.
-            </summary>
-        </member>
-        <member name="F:Microsoft.PowerShell.Commands.TestPathType.Any">
-            <summary>
-            If the item at the path exists, true will be returned.
-            </summary>
-        </member>
-        <member name="F:Microsoft.PowerShell.Commands.TestPathType.Container">
-            <summary>
-            If the item at the path exists and is a container, true will be returned.
-            </summary>
-        </member>
-        <member name="F:Microsoft.PowerShell.Commands.TestPathType.Leaf">
-            <summary>
-            If the item at the path exists and is not a container, true will be returned.
-            </summary>
-        </member>
-        <member name="T:Microsoft.PowerShell.Commands.TestPathCommand">
-            <summary>
-            A command to determine if an item exists at a specified path.
-            </summary>
-        </member>
-        <member name="P:Microsoft.PowerShell.Commands.TestPathCommand.Path">
-            <summary>
-            Gets or sets the path parameter to the command.
-            </summary>
-        </member>
-        <member name="P:Microsoft.PowerShell.Commands.TestPathCommand.LiteralPath">
-            <summary>
-            Gets or sets the literal path parameter to the command.
-            </summary>
-        </member>
-        <member name="P:Microsoft.PowerShell.Commands.TestPathCommand.Filter">
-            <summary>
-            Gets or sets the filter property.
-            </summary>
-        </member>
-        <member name="P:Microsoft.PowerShell.Commands.TestPathCommand.Include">
-            <summary>
-            Gets or sets the include property.
-            </summary>
-        </member>
-        <member name="P:Microsoft.PowerShell.Commands.TestPathCommand.Exclude">
-            <summary>
-            Gets or sets the exclude property.
-            </summary>
-        </member>
-        <member name="P:Microsoft.PowerShell.Commands.TestPathCommand.PathType">
-            <summary>
-            Gets or sets the isContainer property.
-            </summary>
-        </member>
-        <member name="P:Microsoft.PowerShell.Commands.TestPathCommand.IsValid">
-            <summary>
-            Gets or sets the IsValid parameter.
-            </summary>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.TestPathCommand.GetDynamicParameters(System.Management.Automation.CmdletProviderContext)">
-            <summary>
-            A virtual method for retrieving the dynamic parameters for a cmdlet. Derived cmdlets
-            that require dynamic parameters should override this method and return the
-            dynamic parameter object.
-            </summary>
-            <param name="context">
-            The context under which the command is running.
-            </param>
-            <returns>
-            An object representing the dynamic parameters for the cmdlet or null if there
-            are none.
-            </returns>
-        </member>
-        <member name="F:Microsoft.PowerShell.Commands.TestPathCommand._paths">
-            <summary>
-            The path to the item to ping.
-            </summary>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.TestPathCommand.ProcessRecord">
-            <summary>
-            Determines if an item at the specified path exists.
-            </summary>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.ProcessBaseCommand">
             <summary>
@@ -7184,12 +7065,12 @@
         </member>
         <member name="P:Microsoft.PowerShell.Commands.GetProcessCommand.Module">
             <summary>
-             To display the modules of a process.
+            To display the modules of a process.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.GetProcessCommand.FileVersionInfo">
             <summary>
-             To display the fileversioninfo of the main module of a process.
+            To display the fileversioninfo of the main module of a process.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.GetProcessCommand.BeginProcessing">
@@ -7239,6 +7120,16 @@
         <member name="P:Microsoft.PowerShell.Commands.WaitProcessCommand.Timeout">
             <summary>
             If specified, wait for this number of seconds.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.WaitProcessCommand.Any">
+            <summary>
+            Gets or sets a value indicating whether to return after any one process exits.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.WaitProcessCommand.PassThru">
+            <summary>
+            Gets or sets a value indicating whether to return the Process objects after waiting.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.WaitProcessCommand.Dispose">
@@ -7456,6 +7347,11 @@
             Default Environment.
             </summary>
         </member>
+        <member name="P:Microsoft.PowerShell.Commands.StartProcessCommand.Environment">
+            <summary>
+            Gets or sets the environment variables for the process.
+            </summary>
+        </member>
         <member name="M:Microsoft.PowerShell.Commands.StartProcessCommand.BeginProcessing">
             <summary>
             BeginProcessing.
@@ -7469,11 +7365,6 @@
         <member name="M:Microsoft.PowerShell.Commands.StartProcessCommand.Dispose">
             <summary>
             Dispose WaitHandle used to honor -Wait parameter.
-            </summary>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.StartProcessCommand.myProcess_Exited(System.Object,System.EventArgs)">
-            <summary>
-            When Process exits the wait handle is set.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.StartProcessCommand.StartWithCreateProcess(System.Diagnostics.ProcessStartInfo)">
@@ -7503,7 +7394,7 @@
             ProcessCollection constructor.
             </summary>
         </member>
-        <member name="M:Microsoft.PowerShell.Commands.ProcessCollection.AssignProcessToJobObject(System.Diagnostics.Process)">
+        <member name="M:Microsoft.PowerShell.Commands.ProcessCollection.AssignProcessToJobObject(Microsoft.Win32.SafeHandles.SafeProcessHandle)">
             <summary>
             Start API assigns the process to the JobObject and starts monitoring
             the child processes hosted by the process created by Start-Process cmdlet.
@@ -7524,6 +7415,13 @@
             <param name="waitHandleToUse">
             WaitHandle to use for waiting on the job object.
             </param>
+        </member>
+        <member name="T:Microsoft.PowerShell.Commands.ProcessInformation">
+            <summary>
+            ProcessInformation is a helper class that wraps the native PROCESS_INFORMATION structure
+            returned by CreateProcess or CreateProcessWithLogon. It ensures the process and thread
+            HANDLEs are disposed once it's not needed.
+            </summary>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.JOBOBJECT_BASIC_PROCESS_ID_LIST">
             <summary>
@@ -7550,17 +7448,6 @@
             Array elements 0 through NumberOfProcessIdsInList minus 1
             contain valid process identifiers.
             </summary>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.SafeNativeMethods.PROCESS_INFORMATION.Dispose">
-            <summary>
-            Dispose.
-            </summary>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.SafeNativeMethods.PROCESS_INFORMATION.Dispose(System.Boolean)">
-            <summary>
-            Dispose.
-            </summary>
-            <param name="disposing"></param>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.ProcessCommandException">
             <summary>
@@ -7594,13 +7481,6 @@
             <param name="info"></param>
             <param name="context"></param>
             <returns>Constructed object.</returns>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.ProcessCommandException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
-            <summary>
-            Serializer.
-            </summary>
-            <param name="info">Serialization information.</param>
-            <param name="context">Streaming context.</param>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.ProcessCommandException.ProcessName">
             <summary>
@@ -7742,8 +7622,8 @@
         </member>
         <member name="T:Microsoft.PowerShell.Commands.ResolvePathCommand">
             <summary>
-            A command to resolve MSH paths containing glob characters to
-            MSH paths that match the glob strings.
+            A command to resolve PowerShell paths containing glob characters to
+            PowerShell paths that match the glob strings.
             </summary>
         </member>
         <member name="P:Microsoft.PowerShell.Commands.ResolvePathCommand.Path">
@@ -7762,14 +7642,25 @@
             be resolved to its relative version.
             </summary>
         </member>
+        <member name="P:Microsoft.PowerShell.Commands.ResolvePathCommand.RelativeBasePath">
+            <summary>
+            Gets or sets the path the resolved relative path should be based off.
+            </summary>
+        </member>
         <member name="F:Microsoft.PowerShell.Commands.ResolvePathCommand._paths">
             <summary>
             The path to resolve.
             </summary>
         </member>
+        <member name="M:Microsoft.PowerShell.Commands.ResolvePathCommand.BeginProcessing">
+            <summary>
+            Finds the path and drive that should be used for relative path resolution
+            represents.
+            </summary>
+        </member>
         <member name="M:Microsoft.PowerShell.Commands.ResolvePathCommand.ProcessRecord">
             <summary>
-            Resolves the path containing glob characters to the MSH paths that it
+            Resolves the path containing glob characters to the PowerShell paths that it
             represents.
             </summary>
         </member>
@@ -8378,13 +8269,6 @@
             <param name="context"></param>
             <returns>Constructed object.</returns>
         </member>
-        <member name="M:Microsoft.PowerShell.Commands.ServiceCommandException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
-            <summary>
-            Serializer.
-            </summary>
-            <param name="info">Serialization information.</param>
-            <param name="context">Streaming context.</param>
-        </member>
         <member name="P:Microsoft.PowerShell.Commands.ServiceCommandException.ServiceName">
             <summary>
             Name of the service which could not be found or operated upon.
@@ -8408,20 +8292,6 @@
             If the function succeeds, the return value is a handle to the job object.
             If the object existed before the function call, the function
             returns a handle to the existing job object.
-            </returns>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.NativeMethods.AssignProcessToJobObject(System.Runtime.InteropServices.SafeHandle,System.IntPtr)">
-            <summary>
-            AssignProcessToJobObject API is used to assign a process to an existing job object.
-            </summary>
-            <param name="hJob">
-            A handle to the job object to which the process will be associated.
-            </param>
-            <param name="hProcess">
-            A handle to the process to associate with the job object.
-            </param>
-            <returns>If the function succeeds, the return value is nonzero.
-            If the function fails, the return value is zero.
             </returns>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.NativeMethods.QueryInformationJobObject(System.Runtime.InteropServices.SafeHandle,System.Int32,Microsoft.PowerShell.Commands.JOBOBJECT_BASIC_PROCESS_ID_LIST@,System.Int32,System.IntPtr)">
@@ -8503,6 +8373,11 @@
             Gets or sets if the values sent down the pipeline.
             </summary>
         </member>
+        <member name="P:Microsoft.PowerShell.Commands.SetClipboardCommand.AsOSC52">
+            <summary>
+            Gets or sets whether to use OSC52 escape sequence to set the clipboard of host instead of target.
+            </summary>
+        </member>
         <member name="M:Microsoft.PowerShell.Commands.SetClipboardCommand.BeginProcessing">
             <summary>
             This method implements the BeginProcessing method for Set-Clipboard command.
@@ -8524,6 +8399,12 @@
             </summary>
             <param name="contentList">The content to store into the clipboard.</param>
             <param name="append">If true, appends to clipboard instead of overwriting.</param>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.SetClipboardCommand.SetClipboardContent(System.String)">
+            <summary>
+            Set the clipboard content.
+            </summary>
+            <param name="content">The content to store into the clipboard.</param>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.SetContentCommand">
             <summary>
@@ -8684,6 +8565,12 @@
             With this switch, standard ping and -Traceroute returns only true / false, and -MtuSize returns an integer.
             </summary>
         </member>
+        <member name="F:Microsoft.PowerShell.Commands.TestConnectionCommand.Detailed">
+            <summary>
+            Gets or sets whether to enable detailed output mode while running a TCP connection test.
+            Without this flag, the TCP test will return a boolean result.
+            </summary>
+        </member>
         <member name="P:Microsoft.PowerShell.Commands.TestConnectionCommand.TimeoutSeconds">
             <summary>
             Gets or sets the timeout value for an individual ping in seconds.
@@ -8716,6 +8603,7 @@
         <member name="M:Microsoft.PowerShell.Commands.TestConnectionCommand.BeginProcessing">
             <summary>
             BeginProcessing implementation for TestConnectionCommand.
+            Sets Count for different types of tests unless specified explicitly.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.TestConnectionCommand.ProcessRecord">
@@ -8741,6 +8629,64 @@
             <param name="disposing">
             Specified as true when Dispose() was called, false if this is called from the finalizer.
             </param>
+        </member>
+        <member name="T:Microsoft.PowerShell.Commands.TestConnectionCommand.TcpPortStatus">
+            <summary>
+            The class contains information about the TCP connection test.
+            </summary>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.TestConnectionCommand.TcpPortStatus.#ctor(System.Int32,System.String,System.String,System.Net.IPAddress,System.Int32,System.Int64,System.Boolean,System.Net.Sockets.SocketError)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.PowerShell.Commands.TestConnectionCommand.TcpPortStatus"/> class.
+            </summary>
+            <param name="id">The number of this test.</param>
+            <param name="source">The source machine name or IP of the test.</param>
+            <param name="target">The target machine name or IP of the test.</param>
+            <param name="targetAddress">The resolved IP from the target.</param>
+            <param name="port">The port used for the connection.</param>
+            <param name="latency">The latency of the test.</param>
+            <param name="connected">If the test connection succeeded.</param>
+            <param name="status">Status of the underlying socket.</param>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.TestConnectionCommand.TcpPortStatus.Id">
+            <summary>
+            Gets and sets the count of the test.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.TestConnectionCommand.TcpPortStatus.Source">
+            <summary>
+            Gets the source from which the test was sent.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.TestConnectionCommand.TcpPortStatus.Target">
+            <summary>
+            Gets the target name.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.TestConnectionCommand.TcpPortStatus.TargetAddress">
+            <summary>
+            Gets the resolved address for the target.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.TestConnectionCommand.TcpPortStatus.Port">
+            <summary>
+            Gets the port used for the test.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.TestConnectionCommand.TcpPortStatus.Latency">
+            <summary>
+            Gets or sets the latancy of the connection.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.TestConnectionCommand.TcpPortStatus.Connected">
+            <summary>
+            Gets or sets the result of the test.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.TestConnectionCommand.TcpPortStatus.Status">
+            <summary>
+            Gets or sets the state of the socket after the test.
+            </summary>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.TestConnectionCommand.PingStatus">
             <summary>
@@ -8903,6 +8849,90 @@
         <member name="M:Microsoft.PowerShell.Commands.TestConnectionCommand.Finalize">
             <summary>
             Finalizes an instance of the <see cref="T:Microsoft.PowerShell.Commands.TestConnectionCommand"/> class.
+            </summary>
+        </member>
+        <member name="T:Microsoft.PowerShell.Commands.TestPathType">
+            <summary>
+            The valid values for the -PathType parameter for test-path.
+            </summary>
+        </member>
+        <member name="F:Microsoft.PowerShell.Commands.TestPathType.Any">
+            <summary>
+            If the item at the path exists, true will be returned.
+            </summary>
+        </member>
+        <member name="F:Microsoft.PowerShell.Commands.TestPathType.Container">
+            <summary>
+            If the item at the path exists and is a container, true will be returned.
+            </summary>
+        </member>
+        <member name="F:Microsoft.PowerShell.Commands.TestPathType.Leaf">
+            <summary>
+            If the item at the path exists and is not a container, true will be returned.
+            </summary>
+        </member>
+        <member name="T:Microsoft.PowerShell.Commands.TestPathCommand">
+            <summary>
+            A command to determine if an item exists at a specified path.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.TestPathCommand.Path">
+            <summary>
+            Gets or sets the path parameter to the command.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.TestPathCommand.LiteralPath">
+            <summary>
+            Gets or sets the literal path parameter to the command.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.TestPathCommand.Filter">
+            <summary>
+            Gets or sets the filter property.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.TestPathCommand.Include">
+            <summary>
+            Gets or sets the include property.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.TestPathCommand.Exclude">
+            <summary>
+            Gets or sets the exclude property.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.TestPathCommand.PathType">
+            <summary>
+            Gets or sets the isContainer property.
+            </summary>
+        </member>
+        <member name="P:Microsoft.PowerShell.Commands.TestPathCommand.IsValid">
+            <summary>
+            Gets or sets the IsValid parameter.
+            </summary>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.TestPathCommand.GetDynamicParameters(System.Management.Automation.CmdletProviderContext)">
+            <summary>
+            A virtual method for retrieving the dynamic parameters for a cmdlet. Derived cmdlets
+            that require dynamic parameters should override this method and return the
+            dynamic parameter object.
+            </summary>
+            <param name="context">
+            The context under which the command is running.
+            </param>
+            <returns>
+            An object representing the dynamic parameters for the cmdlet or null if there
+            are none.
+            </returns>
+        </member>
+        <member name="F:Microsoft.PowerShell.Commands.TestPathCommand._paths">
+            <summary>
+            The path to the item to ping.
+            </summary>
+        </member>
+        <member name="M:Microsoft.PowerShell.Commands.TestPathCommand.ProcessRecord">
+            <summary>
+            Determines if an item at the specified path exists.
             </summary>
         </member>
         <member name="T:Microsoft.PowerShell.Commands.GetTimeZoneCommand">
@@ -10526,6 +10556,13 @@
              
             </summary>
         </member>
+        <member name="P:ComputerResources.ShutdownCommandNotFound">
+            <summary>
+              Looks up a localized string similar to 
+               The required native command 'shutdown' was not found.
+             
+            </summary>
+        </member>
         <member name="T:HotFixResources">
             <summary>
               A strongly-typed resource class, for looking up localized strings, etc.
@@ -10993,6 +11030,13 @@
             <summary>
               Looks up a localized string similar to 
                This command cannot be run completely because the system cannot find all the information required.
+             
+            </summary>
+        </member>
+        <member name="P:ProcessResources.FailedToCreateProcessObject">
+            <summary>
+              Looks up a localized string similar to 
+               Failed to retrieve the new process handle: "{0}". The Process object outputted may have some properties and methods that do not work properly.
              
             </summary>
         </member>

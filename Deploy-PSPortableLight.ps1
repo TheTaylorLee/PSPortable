@@ -4,6 +4,12 @@ Function Deploy-PSPortableLight {
     if (Test-Path $env:ProgramData\PS7x64) {
         Remove-Item $env:ProgramData\PS7x64 -Recurse -Force
     }
+    if (Test-Path $env:ProgramData\PS7x64.zip) {
+        Remove-Item $env:ProgramData\PS7x64.zip -Force
+    }
+    if (Test-Path $env:ProgramData\PSPortable-main) {
+        Remove-Item $env:ProgramData\PSPortable-main -Recurse -Force
+    }
 
     #Download new package as zip file
     Function Invoke-DLPSPortable {

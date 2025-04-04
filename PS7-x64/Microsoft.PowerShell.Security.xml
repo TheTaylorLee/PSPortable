@@ -126,13 +126,6 @@
              
             </summary>
         </member>
-        <member name="P:CertificateProviderStrings.NotSupported_CertificateProvider">
-            <summary>
-              Looks up a localized string similar to 
-                 {0} is not supported in the current operating system. 
-             
-            </summary>
-        </member>
         <member name="P:CertificateProviderStrings.MoveItemTemplate">
             <summary>
               Looks up a localized string similar to 
@@ -1231,34 +1224,34 @@
             </exception>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.CertificateProvider.NewItem(System.String,System.String,System.Object)">
-             <summary>
-             Creates a certificate store with the given path.
-             </summary>
-             <remarks>
-             New-Item doesn't go through the method "ItemExists". But for the
-             CertificateProvider, New-Item can create an X509Store and return
-             it, and the user can access the certificates within the store via its
-             property "Certificates". We want the extra new properties of the
-             X509Certificate2 objects to be shown to the user, so we also need
-             to import the PKI module in this method, if we haven't tried it yet.
-             </remarks>
-             <param name="path">
-             The path of the certificate store to create.
-             </param>
+            <summary>
+            Creates a certificate store with the given path.
+            </summary>
+            <remarks>
+            New-Item doesn't go through the method "ItemExists". But for the
+            CertificateProvider, New-Item can create an X509Store and return
+            it, and the user can access the certificates within the store via its
+            property "Certificates". We want the extra new properties of the
+            X509Certificate2 objects to be shown to the user, so we also need
+            to import the PKI module in this method, if we haven't tried it yet.
+            </remarks>
+            <param name="path">
+            The path of the certificate store to create.
+            </param>
             <param name="type">
-             Ignored.
-             Only support store.
-             </param>
-             <param name="value">
-             Ignored
-             </param>
-             <returns>
-             Nothing.  The new certificate store object is
-             written to the context's pipeline.
-             </returns>
-             <exception cref="T:System.ArgumentException">
-                 path is null or empty.
-             </exception>
+            Ignored.
+            Only support store.
+            </param>
+            <param name="value">
+            Ignored
+            </param>
+            <returns>
+            Nothing.  The new certificate store object is
+            written to the context's pipeline.
+            </returns>
+            <exception cref="T:System.ArgumentException">
+                path is null or empty.
+            </exception>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.CertificateProvider.InitializeDefaultDrives">
             <summary>
@@ -1962,6 +1955,18 @@
             class with the default message.
             </summary>
         </member>
+        <member name="M:Microsoft.PowerShell.Commands.CertificateStoreNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the CertificateStoreNotFoundException
+            class with the specified serialization information, and context.
+            </summary>
+            <param name="info">
+            The serialization information.
+            </param>
+            <param name="context">
+            The streaming context.
+            </param>
+        </member>
         <member name="M:Microsoft.PowerShell.Commands.CertificateStoreNotFoundException.#ctor(System.String)">
             <summary>
             Initializes a new instance of the CertificateStoreNotFoundException
@@ -1981,18 +1986,6 @@
             </param>
             <param name="innerException">
             The inner exception to be included in the exception.
-            </param>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.CertificateStoreNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
-            <summary>
-            Initializes a new instance of the CertificateStoreNotFoundException
-            class with the specified serialization information, and context.
-            </summary>
-            <param name="info">
-            The serialization information.
-            </param>
-            <param name="context">
-            The streaming context.
             </param>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.CertificateStoreNotFoundException.#ctor(System.Exception)">
@@ -2016,6 +2009,18 @@
             class with the default message.
             </summary>
         </member>
+        <member name="M:Microsoft.PowerShell.Commands.CertificateStoreLocationNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the CertificateStoreLocationNotFoundException
+            class with the specified serialization information, and context.
+            </summary>
+            <param name="info">
+            The serialization information.
+            </param>
+            <param name="context">
+            The streaming context.
+            </param>
+        </member>
         <member name="M:Microsoft.PowerShell.Commands.CertificateStoreLocationNotFoundException.#ctor(System.String)">
             <summary>
             Initializes a new instance of the CertificateStoreLocationNotFoundException
@@ -2035,18 +2040,6 @@
             </param>
             <param name="innerException">
             The inner exception to be included in the exception.
-            </param>
-        </member>
-        <member name="M:Microsoft.PowerShell.Commands.CertificateStoreLocationNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
-            <summary>
-            Initializes a new instance of the CertificateStoreLocationNotFoundException
-            class with the specified serialization information, and context.
-            </summary>
-            <param name="info">
-            The serialization information.
-            </param>
-            <param name="context">
-            The streaming context.
             </param>
         </member>
         <member name="M:Microsoft.PowerShell.Commands.CertificateStoreLocationNotFoundException.#ctor(System.Exception)">
@@ -2210,7 +2203,7 @@
             <summary>
             Defines the implementation of the 'get-credential' cmdlet.
             The get-credential Cmdlet establishes a credential object called a
-            Msh credential, by pairing a given username with
+            PSCredential, by pairing a given username with
             a prompted password. That credential object can then be used for other
             operations involving security.
             </summary>

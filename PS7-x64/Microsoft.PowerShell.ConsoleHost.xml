@@ -26,14 +26,7 @@
         <member name="P:CommandLineParameterParserStrings.CommandAlreadySpecified">
             <summary>
               Looks up a localized string similar to 
-               Cannot process command because a command is already specified with -Command or -EncodedCommand.
-             
-            </summary>
-        </member>
-        <member name="P:CommandLineParameterParserStrings.CannotReadFile">
-            <summary>
-              Looks up a localized string similar to 
-               Unable to read from file '{0}'.
+               Cannot process command because a command is already specified with -Command, -CommandWithArgs, or -EncodedCommand.
              
             </summary>
         </member>
@@ -300,20 +293,6 @@
              
             </summary>
         </member>
-        <member name="P:ConsoleControlStrings.AttachToParentConsoleExceptionTemplate">
-            <summary>
-              Looks up a localized string similar to 
-               The Win32 internal error "{0}" 0x{1:X} occurred while attaching to parent console. Contact Microsoft Customer Support Services.
-             
-            </summary>
-        </member>
-        <member name="P:ConsoleControlStrings.DetachFromConsoleExceptionTemplate">
-            <summary>
-              Looks up a localized string similar to 
-               The Win32 internal error "{0}" 0x{1:X} occurred while detaching from the console. Contact Microsoft Customer Support Services.
-             
-            </summary>
-        </member>
         <member name="P:ConsoleControlStrings.GetInputModeExceptionTemplate">
             <summary>
               Looks up a localized string similar to 
@@ -461,13 +440,6 @@
              
             </summary>
         </member>
-        <member name="P:ConsoleControlStrings.SetConsoleCursorPositionExceptionTemplate">
-            <summary>
-              Looks up a localized string similar to 
-               The Win32 internal error "{0}" 0x{1:X} occurred while trying to set the cursor position. Contact Microsoft Customer Support Services.
-             
-            </summary>
-        </member>
         <member name="P:ConsoleControlStrings.GetConsoleCursorInfoExceptionTemplate">
             <summary>
               Looks up a localized string similar to 
@@ -493,13 +465,6 @@
             <summary>
               Looks up a localized string similar to 
                The Win32 internal error "{0}" 0x{1:X} occurred while sending keyboard input. Contact Microsoft Customer Support Services.
-             
-            </summary>
-        </member>
-        <member name="P:ConsoleControlStrings.SetConsoleFontInfoExceptionTemplate">
-            <summary>
-              Looks up a localized string similar to 
-               The Win32 internal error "{0}" 0x{1:X} occurred while setting console font information. Contact Microsoft Customer Support Services.
              
             </summary>
         </member>
@@ -651,14 +616,7 @@
         <member name="P:ConsoleHostRawUserInterfaceStrings.WindowTitleElevatedPrefix">
             <summary>
               Looks up a localized string similar to 
-               Administrator
-             
-            </summary>
-        </member>
-        <member name="P:ConsoleHostRawUserInterfaceStrings.WindowTitleTemplate">
-            <summary>
-              Looks up a localized string similar to 
-               {0}: {1}
+               Administrator: 
              
             </summary>
         </member>
@@ -695,24 +653,10 @@
              
             </summary>
         </member>
-        <member name="P:ConsoleHostStrings.NestedPromptEntryError">
-            <summary>
-              Looks up a localized string similar to 
-               A nested prompt cannot be entered until the host is running at least one prompt loop.
-             
-            </summary>
-        </member>
         <member name="P:ConsoleHostStrings.DefaultPrompt">
             <summary>
               Looks up a localized string similar to 
                PS>
-             
-            </summary>
-        </member>
-        <member name="P:ConsoleHostStrings.InitScriptFailed">
-            <summary>
-              Looks up a localized string similar to 
-               Execution of initialization script has failed. The shell cannot be started.
              
             </summary>
         </member>
@@ -759,13 +703,6 @@
               
              </summary>
         </member>
-        <member name="P:ConsoleHostStrings.ConsoleHostIsSingleton">
-            <summary>
-              Looks up a localized string similar to 
-               An instance of the ConsoleHost class has already been created for this process.
-             
-            </summary>
-        </member>
         <member name="P:ConsoleHostStrings.InitialCommandNotExecuted">
             <summary>
               Looks up a localized string similar to 
@@ -798,13 +735,6 @@
             <summary>
               Looks up a localized string similar to 
                {0}:{1,-3} {2}
-             
-            </summary>
-        </member>
-        <member name="P:ConsoleHostStrings.CommandFailed">
-            <summary>
-              Looks up a localized string similar to 
-               An error occurred while running '{0}': {1}
              
             </summary>
         </member>
@@ -1099,6 +1029,34 @@
              
             </summary>
         </member>
+        <member name="P:ManagedEntranceStrings.ShellBannerCLMode">
+            <summary>
+              Looks up a localized string similar to 
+               [Constrained Language Mode]
+             
+            </summary>
+        </member>
+        <member name="P:ManagedEntranceStrings.ShellBannerCLAuditMode">
+            <summary>
+              Looks up a localized string similar to 
+               [Constrained Language AUDIT Mode : No Restrictions]
+             
+            </summary>
+        </member>
+        <member name="P:ManagedEntranceStrings.ShellBannerNLMode">
+            <summary>
+              Looks up a localized string similar to 
+               [No Language Mode]
+             
+            </summary>
+        </member>
+        <member name="P:ManagedEntranceStrings.ShellBannerRLMode">
+            <summary>
+              Looks up a localized string similar to 
+               [Restricted Language Mode]
+             
+            </summary>
+        </member>
         <member name="P:ManagedEntranceStrings.PSReadLineDisabledWhenScreenReaderIsActive">
             <summary>
               Looks up a localized string similar to 
@@ -1195,13 +1153,6 @@
             <summary>
               Overrides the current threads CurrentUICulture property for all
               resource lookups using this strongly typed resource class.
-            </summary>
-        </member>
-        <member name="P:TranscriptStrings.HostDoesNotSupportTranscript">
-            <summary>
-              Looks up a localized string similar to 
-               This host does not support transcription.
-             
             </summary>
         </member>
         <member name="P:TranscriptStrings.TranscriptionStarted">
@@ -2085,7 +2036,7 @@
              if true, then flag the parent ConsoleHost that it should shutdown the session.  If false, then only the current
              executing instance is stopped.
             
-            </param>
+             </param>
         </member>
         <member name="M:Microsoft.PowerShell.ConsoleHost.CreateSingletonInstance">
             <summary>
@@ -2864,7 +2815,7 @@
              the advantage is portability through abstraction. Does not support
              arrow key movement, but supports backspace.
              </summary>
-            <param name="isSecureString">
+             <param name="isSecureString">
              True to specify reading a SecureString; false reading a string
              </param>
              <param name="printToken">
@@ -3211,10 +3162,10 @@
         </member>
         <member name="M:Microsoft.PowerShell.ConsoleHostUserInterface.RemoveNulls(System.String)">
             <summary>
-            Strip nulls from a string...
+            Strip nulls from a string.
             </summary>
             <param name="input">The string to process.</param>
-            <returns>The string with any \0 characters removed...</returns>
+            <returns>The string with any '\0' characters removed.</returns>
         </member>
         <member name="M:Microsoft.PowerShell.ConsoleHostUserInterface.ReadLineWithTabCompletion(Microsoft.PowerShell.Executor)">
             <summary>
@@ -3422,8 +3373,8 @@
         </member>
         <member name="T:Microsoft.PowerShell.ConsoleShell">
             <summary>
-            This class provides an entry point which is called by minishell's main
-            to transfer control to Msh console host implementation.
+            This class provides an entry point which is called
+            to transfer control to console host implementation.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.ConsoleShell.Start(System.String,System.String,System.String[])">
@@ -3634,18 +3585,18 @@
         </member>
         <member name="T:Microsoft.PowerShell.UnmanagedPSEntry">
             <summary>
-            Defines an entry point from unmanaged code to managed Msh.
+            Defines an entry point from unmanaged code to PowerShell.
             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.UnmanagedPSEntry.Start(System.String,System.String[],System.Int32)">
             <summary>
-            Starts managed MSH.
+            Starts PowerShell.
             </summary>
             <param name="consoleFilePath">
-            Deprecated: Console file used to create a runspace configuration to start MSH
+            Deprecated: Console file used to create a runspace configuration to start PowerShell
             </param>
             <param name="args">
-            Command line arguments to the managed MSH
+            Command line arguments to the PowerShell
             </param>
             <param name="argc">
             Length of the passed in argument array.
@@ -3653,10 +3604,10 @@
         </member>
         <member name="M:Microsoft.PowerShell.UnmanagedPSEntry.Start(System.String[],System.Int32)">
             <summary>
-            Starts managed MSH.
+            Starts PowerShell.
             </summary>
             <param name="args">
-            Command line arguments to the managed MSH
+            Command line arguments to PowerShell
             </param>
             <param name="argc">
             Length of the passed in argument array.
@@ -3872,7 +3823,7 @@
              <returns>
              The number of nodes that were made invisible during the compression.
             
-            </returns>
+             </returns>
         </member>
         <member name="M:Microsoft.PowerShell.PendingProgress.NodeVisitor.Visit(Microsoft.PowerShell.ProgressNode,System.Collections.ArrayList,System.Int32)">
             <summary>
@@ -4059,7 +4010,7 @@
              ProgressPane is a class that represents the "window" in which outstanding activities for which the host has received
              progress updates are shown.
             
-            </summary>
+             </summary>
         </member>
         <member name="M:Microsoft.PowerShell.ProgressPane.#ctor(Microsoft.PowerShell.ConsoleHostUserInterface)">
             <summary>
@@ -4076,7 +4027,7 @@
              <value>
              true if the pane is visible, false if not.
             
-            </value>
+             </value>
         </member>
         <member name="M:Microsoft.PowerShell.ProgressPane.Show">
             <summary>
