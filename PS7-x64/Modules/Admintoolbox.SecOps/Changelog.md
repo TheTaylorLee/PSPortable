@@ -10,3 +10,12 @@
 * **1.2.0.0** Add function get-hiddenservices
 * **1.3.0.0** Add Functions get-bitlockerrecover and initialize-bitlocker
 * **1.3.0.1** CI Maintenance Release
+* **1.3.1.0** Fix quiet parameter for function initialize-bitlocker
+* **1.3.1.1** CI Maintenance Release
+* **1.4.0.0** Added multiple functions to the module.
+* **1.4.0.1** CI Maintenance Release
+* **1.4.0.2** CI Maintenance Release
+* **1.4.0.3** CI Maintenance Release
+* **1.4.0.4** CI Maintenance Release
+* **1.5.0.0** Added functions for loading profile registries.
+* **1.5.0.1** CI Maintenance Release

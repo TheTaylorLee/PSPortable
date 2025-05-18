@@ -270,3 +270,9 @@
 * **2.22.0.18** CI Maintenance Release
 * **2.22.0.19** CI Maintenance Release
 * **2.22.0.20** CI Maintenance Release
+* **2.22.0.21** CI Maintenance Release
+* **2.22.0.22** CI Maintenance Release
+* **2.22.0.23** CI Maintenance Release
+* **2.22.0.24** CI Maintenance Release
+* **2.22.0.25** CI Maintenance Release
+* **2.22.0.26** CI Maintenance Release
