@@ -11,6 +11,7 @@ function Get-Office365 {
     Write-Host " "
 
     Write-Host "Az Module Functions"                                                                                  -ForegroundColor green
+    Write-Host "Add-AzRoutesToRouteTable        ..Adds routes to a route table in Azure"                              -ForegroundColor cyan
     Write-Host "Get-TenantDiagrams              ..Gets and generates dependency Diagrams"                             -ForegroundColor cyan
     Write-Host "Get-VMDetails                   ..Gets AzureVM details from multiple functions"                       -ForegroundColor cyan
     Write-Host "Invoke-PowerState               ..Invokes power state changes on VMs and can get their status"        -ForegroundColor cyan
@@ -21,6 +22,7 @@ function Get-Office365 {
     Write-Host "Convert-MailboxToShared         ..Convert Disabled mailbox to a Shared Mailbox"                       -ForegroundColor cyan
     Write-Host "Enable-MailboxAccess            ..Enables full access to a mailbox without a license"                 -ForegroundColor cyan
     Write-Host "Get-DistributionGroupMembers    ..Gets Exchange Online Auth Policy"                                   -ForegroundColor cyan
+    Write-Host "Get-MailboxDelegatesReport      ..Gets delegates and sendas rights for mailboxes"                     -ForegroundColor cyan
     Write-Host "Get-Messagetrace                ..Gets an log of email messages"                                      -ForegroundColor cyan
     Write-Host "Get-Quarantine                  ..Gets quarantine messages beyond the 1000 limit Microsoft Sets"      -ForegroundColor cyan
     Write-Host "Set-365GroupVisibility          ..Sets a office365 group visible in the Outlook Client"               -ForegroundColor cyan

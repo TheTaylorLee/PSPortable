@@ -287,3 +287,10 @@
 * **5.1.1.7** CI Maintenance Release
 * **5.1.1.8** CI Maintenance Release
 * **5.1.1.9** CI Maintenance Release
+* **5.1.1.10** CI Maintenance Release
+* **5.1.1.11** CI Maintenance Release
+* **5.1.1.12** CI Maintenance Release
+* **5.2.0.0** Added the function get-mailboxdelegatesreport
+* **5.2.0.1** CI Maintenance Release
+* **5.3.0.0** Added the function Add-AzRoutesToRouteTable
+* **5.3.0.1** CI Maintenance Release
