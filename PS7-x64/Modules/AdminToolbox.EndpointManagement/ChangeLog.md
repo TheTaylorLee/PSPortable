@@ -93,3 +93,12 @@
 * **4.14.0.13** CI Maintenance Release
 * **4.14.0.14** CI Maintenance Release
 * **4.14.0.15** CI Maintenance Release
+* **4.15.0.0** Removed disabled-standby function
+* **4.15.0.1** CI Maintenance Release
+* **4.15.0.2** CI Maintenance Release
+* **4.15.0.3** CI Maintenance Release
+* **4.15.0.4** CI Maintenance Release
+* **4.15.0.5** CI Maintenance Release
+* **4.15.1.0** Add get-windowsprofiles function and removed a couple legacy functions.
+* **4.15.1.1** Replace usage of an automatic variable with a unique variable
+* **4.15.1.2** CI Maintenance Release

@@ -119,3 +119,4 @@
      - 8.1.0 Update all admintoolbox modules
      - 8.2.0 Update all admintoolbox modules
      - 8.3.0 Update all admintoolbox modules
+     - 8.4.0 Update all admintoolbox modules
