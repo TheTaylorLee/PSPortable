@@ -120,3 +120,4 @@
      - 8.2.0 Update all admintoolbox modules
      - 8.3.0 Update all admintoolbox modules
      - 8.4.0 Update all admintoolbox modules
+     - 8.5.0 Add MSCommerce module and functions
