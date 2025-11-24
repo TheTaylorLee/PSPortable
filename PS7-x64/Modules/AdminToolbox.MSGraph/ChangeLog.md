@@ -51,3 +51,13 @@
 * **1.5.0.79** CI Maintenance Release
 * **1.5.0.80** CI Maintenance Release
 * **1.5.0.81** CI Maintenance Release
+* **1.5.0.82** CI Maintenance Release
+* **1.5.0.83** CI Maintenance Release
+* **1.5.0.84** CI Maintenance Release
+* **1.5.0.85** CI Maintenance Release
+* **1.5.0.86** CI Maintenance Release
+* **1.5.0.87** CI Maintenance Release
+* **1.5.0.88** CI Maintenance Release
+* **1.5.0.89** CI Maintenance Release
+* **1.5.0.90** CI Maintenance Release
+* **1.5.0.91** CI Maintenance Release

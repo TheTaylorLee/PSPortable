@@ -121,4 +121,5 @@
      - 8.3.0 Update all admintoolbox modules
      - 8.4.0 Update all admintoolbox modules
      - 8.5.0 Add MSCommerce module and functions
-     - 8.6.0 Add functions to admintoolbox.filemanagement module and update all admintoolbox modules. New functions use sebackuprivlege functionality to manipulate files that you don't have direct acl access to. Allows native powershell functions to carry to do what robocopy /b parameter does and more.
+     - 8.6.0 Add functions to admintoolbox.filemanagement module and update all admintoolbox modules. New functions use sebackuprivlege functionality to manipulate files that you don't have direct acl access to. Allows native powershell functions to do what robocopy /b parameter does and more.
+     - 8.7.0 Update all admintoolbox modules

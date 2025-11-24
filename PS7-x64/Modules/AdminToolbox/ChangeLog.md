@@ -220,3 +220,13 @@
 * **12.0.0.41** CI Maintenance Release
 * **12.0.0.42** CI Maintenance Release
 * **12.0.0.43** CI Maintenance Release
+* **12.0.0.44** CI Maintenance Release
+* **12.0.0.45** CI Maintenance Release
+* **12.0.0.46** CI Maintenance Release
+* **12.0.0.47** CI Maintenance Release
+* **12.0.0.48** CI Maintenance Release
+* **12.0.0.49** CI Maintenance Release
+* **12.0.0.50** CI Maintenance Release
+* **12.0.0.51** CI Maintenance Release
+* **12.0.0.52** CI Maintenance Release
+* **12.0.0.53** CI Maintenance Release
