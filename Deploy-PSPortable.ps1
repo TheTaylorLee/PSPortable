@@ -1,7 +1,7 @@
-Function Deploy-PSPortable {
+function Deploy-PSPortable {
 
     [CmdletBinding()]
-    Param (
+    param (
         [Parameter(Mandatory = $false)][switch]$installextra
     )
 
@@ -18,7 +18,7 @@ Function Deploy-PSPortable {
 
 
     #Download new package as zip file
-    Function Invoke-DLPSPortable {
+    function Invoke-DLPSPortable {
         [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
         $url = "https://github.com/thetaylorlee/psportable/archive/main.zip"
         $output = "$env:ProgramData\PS7x64.zip"
@@ -82,7 +82,7 @@ Function Deploy-PSPortable {
 
     #Pin shortcut to taskbar
     Invoke-Item "$env:ProgramData\PS7x64\PS7-x64\pwsh.exe.lnk"
-    Function Show-Statement {
+    function Show-Statement {
         Write-Host "
     ***************************************************
     *                                                 *
@@ -112,6 +112,8 @@ Function Deploy-PSPortable {
     Install-Module PSGraph -Force -Scope AllUsers -Confirm:$false -AllowClobber
     Install-Module PSTeams -Force -Scope AllUsers -Confirm:$false -AllowClobber
     Install-Module ReportHTML -Force -Scope AllUsers -Confirm:$false -AllowClobber
+    Install-Module SharePointPnPPowerShellOnline -Force -Scope AllUsers -Confirm:$false -AllowClobber
+    Install-Module Microsoft.Online.SharePoint.PowerShell -Force -Scope AllUsers -Confirm:$false -AllowClobber
     Install-Module VMWare.Powercli -Force -Scope AllUsers -Confirm:$false -AllowClobber
     exit
 

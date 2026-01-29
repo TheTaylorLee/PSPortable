@@ -125,3 +125,4 @@
      - 8.7.0 Update all admintoolbox modules
      - 8.8.0 Update all admintoolbox modules
      - 8.8.1 Update the prompt to handle the latest oh-my-posh versions from store.
+     - 8.9.0 Add sharepoint modules to the full install
