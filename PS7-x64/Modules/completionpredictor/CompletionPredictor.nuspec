@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>CompletionPredictor</id>
+    <version>0.1.1</version>
+    <authors>PowerShell</authors>
+    <owners>Microsoft Corporation</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/PowerShell/CompletionPredictor</projectUrl>
+    <description>Command-line intellisense based on PowerShell auto-completion</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright (c) Microsoft Corporation.</copyright>
+    <tags>PSEdition_Core PSModule</tags>
+  </metadata>
+</package>

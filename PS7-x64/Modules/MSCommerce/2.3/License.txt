@@ -1,0 +1,4 @@
+PLEASE NOTE:
+Use of MSCommerce 1.9 Powershell Cmdlet software requires a valid Microsoft Azure Active Directory subscription license.
+Your access to the software through Azure Active Directory must comply with the existing terms for the service that apply to you through your subscription license.
+You may not use the software if you have not acquired a license for Azure Active Directory.

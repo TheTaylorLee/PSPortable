@@ -1,0 +1,169 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">MSCommerce</S>
+      <Version N="Version">2.3</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Powershell Module for accessing Microsoft Commerce APIs</S>
+      <S N="Author">Microsoft Corporation</S>
+      <Obj N="CompanyName" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>tonymadkins</S>
+          <S>pstarrin</S>
+          <S>jeeshn</S>
+        </LST>
+      </Obj>
+      <S N="Copyright">(c) 2024 Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2024-04-10T22:24:21-05:00</DT>
+      <Obj N="InstalledDate" RefId="2">
+        <DT>2024-04-01T08:31:44.9878494-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="3">
+            <TN RefId="2">
+              <T>Deserialized.Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>Deserialized.System.Enum</T>
+              <T>Deserialized.System.ValueType</T>
+              <T>Deserialized.System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Obj N="UpdatedDate" RefId="4">
+        <DT>2025-08-27T11:26:33.4223117-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="5">
+            <TN RefId="3">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://aka.ms/selfserviceblockdocumentation</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="6">
+        <TNRef RefId="1" />
+        <LST>
+          <S>Microsoft</S>
+          <S>Commerce</S>
+          <S>Licensing</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="7">
+        <TN RefId="4">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="8">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="8" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="9">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Connect-MSCommerce</S>
+                <S>Get-MSCommercePolicies</S>
+                <S>Get-MSCommercePolicy</S>
+                <S>Get-MSCommerceProductPolicies</S>
+                <S>Get-MSCommerceProductPolicy</S>
+                <S>Update-MSCommerceProductPolicy</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="10">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Connect-MSCommerce</S>
+                <S>Get-MSCommercePolicies</S>
+                <S>Get-MSCommercePolicy</S>
+                <S>Get-MSCommerceProductPolicies</S>
+                <S>Get-MSCommerceProductPolicy</S>
+                <S>Update-MSCommerceProductPolicy</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="8" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="8" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="11">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="12">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2024 Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Powershell Module for accessing Microsoft Commerce APIs</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">381264</S>
+          <S N="downloadCount">516062</S>
+          <S N="packageSize">579715</S>
+          <S N="published">4/10/2024 10:24:21 PM -05:00</S>
+          <S N="created">4/10/2024 10:24:21 PM -05:00</S>
+          <S N="lastUpdated">8/27/2025 4:20:00 PM -05:00</S>
+          <S N="tags">Microsoft Commerce Licensing PSModule PSFunction_Connect-MSCommerce PSCommand_Connect-MSCommerce PSFunction_Get-MSCommercePolicies PSCommand_Get-MSCommercePolicies PSFunction_Get-MSCommercePolicy PSCommand_Get-MSCommercePolicy PSFunction_Get-MSCommerceProductPolicies PSCommand_Get-MSCommerceProductPolicies PSFunction_Get-MSCommerceProductPolicy PSCommand_Get-MSCommerceProductPolicy PSFunction_Update-MSCommerceProductPolicy PSCommand_Update-MSCommerceProductPolicy PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-08-27T16:20:00Z</S>
+          <S N="NormalizedVersion">2.3.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">MSCommerce.nuspec|License.txt|Microsoft.Identity.Client.dll|Microsoft.IdentityModel.Abstractions.dll|MSCommerce.psd1|MSCommerce.psm1</S>
+          <S N="GUID">0141756d-17fc-4ea8-9169-d034b210847e</S>
+          <S N="DotNetFrameworkVersion">4.5</S>
+          <S N="CLRVersion">4.0</S>
+          <S N="ProcessorArchitecture">None</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\taylor\Documents\PowerShell\Modules\MSCommerce\2.3</S>
+    </MS>
+  </Obj>
+</Objs>

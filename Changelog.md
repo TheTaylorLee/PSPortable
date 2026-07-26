@@ -1,0 +1,132 @@
+**Changelog**
+
+     - 1.0.0  Added Version Control
+     - 1.1.0  Updated the readme with a getting started function
+     - 1.2.0  Updated the readme with a changelog
+     - 1.3.0  Updated Admintoolbox.ActiveDirectory module version and the Invoke-VersionUpdate function
+     - 1.4.0  Added Conemu color schemes
+     - 1.5.0  Updated PSReadline Version
+     - 1.6.0  Upgraded to powershell v7.2.0-preview.5
+     - 1.7.0  Upgraded Admintoolbox.Remoting Module
+     - 1.7.1  Upgraded Admintoolbox.Remoting Module to fix a function not being exported
+     - 1.8.0  Upgraded Admintoolbox.Remoting Module with new functions
+     - 1.9.0  Upgrades to Admintoolbox Modules
+     - 1.10.0 Updated the powershell profile and Version checking process
+     - 1.11.0 Removed reliance on Internet explorer web engine by updating invoke-webrequest functions to use basic parsing
+     - 1.11.1 Added work around reset-colors function for this issue. https://github.com/PowerShell/PowerShell/issues/14506
+     - 1.11.2 Added a reset-colors function
+     - 1.12.0 Updated Admintoolbox Modules
+     - 1.13.0 Added FortiWizard Module
+     - 1.14.0 Added Admintoolbox.Fortiwizard Module and remove FortiWizard Module
+     - 1.15.0 Updated Admintoolbox.FortiWizard and Admintoolbox Modules
+     - 1.16.0 Updated Admintoolbox.VMWareAutomate and Admintoolbox Modules
+     - 1.17.0 Added PSWindowsUpdate Module
+     - 1.18.0 Updated Admintoolbox.FortiWizard and Admintoolbox Modules
+     - 1.19.0 Updated Admintoolbox.FortiWizard and Admintoolbox Modules
+     - 1.20.0 Updated Admintoolbox.FortiWizard and Admintoolbox Modules
+     - 1.21.0 Update all Admintoolbox Modules
+     - 1.22.0 Updated Admintoolbox.FortiWizard and Admintoolbox Modules
+     - 2.0.0  Updated modules versions, and Pwsh to version 7.2.0-preview.8
+     - 2.0.1  Updated the profile to implement the temporary workaround to ansireadline experimental bugs
+     - 2.1.0  Updated Admintoolbox.Networking with Invoke-Ethr
+     - 2.2.0  Updated Admintoolbox.Networking with Invoke-Iperf
+     - 2.3.0  Updated Admintoolbox.Filemanagement and Admintoolbox
+     - 2.4.0  Fixes for Admintoolbox.Fortiwizard
+     - 2.5.0  Updated Admintoolbox and Admintoolbox.Networking Modules
+     - 2.6.0  Updated Admintoolbox, Admintoolbox.fortiwizard, and Admintoolbox.Networking Modules
+     - 2.7.0  Updated Admintoolbox and Admintoolbox.Office365
+     - 2.8.0  Updated Admintoolbox and Admintoolbox.FileManagement with changes to Remove-All
+     - 2.9.0  Updated Admintoolbox and Admintoolbox.FortiWizard with changes for tunnel functions
+     - 2.10.0 Updated Admintoolbox and Admintoolbox.FortiWizard with changes for tunnel functions
+     - 2.11.0 Updated Admintoolbox and Admintoolbox.Networking and Conemu settings
+     - 2.12.0 Updated Admintoolbox and Admintoolbox.FortiWizard
+     - 2.13.0 Updated Admintoolbox and Admintoolbox.VMwareAutomate
+     - 2.14.0 Updated PSReadline to 2.2.0-beta4
+     - 2.15.0 Bugfix Admintoolbox.Networking Modules
+     - 2.16.0 Bugfix for Admintoolbox.Office365
+     - 2.17.0 Add functions for Admintoolbox.office365
+     - 2.18.0 Update all Admintoolbox module manifest to remove broken helpinfouri
+     - 2.19.0 admintoolbox.office365 2.18.0
+     - 2.20.0 admintoolbox.fortiwizard 2.12.0
+     - 2.21.0 admintoolbox 10.0.0
+     - 2.22.0 admintoolbox.fortiwizard 2.12.1
+     - 2.23.0 Added Custom themes
+     - 2.24.0 Updated Powershell Profile
+     - 2.25.0 Updated Fortiwizard 2.13.1
+     - 2.26.0 Restructured PSProfile to use snippets for easy management
+     - 2.27.0 Updated profile and added nerdfonts install function
+     - 2.27.1 Fix Get-tips
+     - 2.27.2 Fix Get-tips
+     - 2.28.0 Update profile with new custom Oh-My-Posh theme -> SonicBoom
+     - 2.29.0 Admintoolbox.ActiveDirectory 1.6.3
+     - 3.0.0 Updated to PowerShell 7.2.1 and PSReadline to version 2.2.1-rc1
+     - 3.1.0 Updated psreadline to 2.2.2 and fixed redraw issue in Microsoft Terminal
+     - 3.2.0 Multiple Admintoolbox Module and function upgrades
+     - 3.3.0 Admintoolbox.Filemanagement 1.10.0
+     - 3.4.0 Admintoolbox.FFtools 4.10.0
+     - 3.5.0 Admintoolbox.Filemanagement 1.12.0 use-wslnano
+     - 3.6.0 Admintoolbox.FFtools 4.11.0
+     - 4.0.0 Admintoolbox 11.0.0 & Admintoolbox.msgraph 1.0.0
+     - 4.1.0 Admintoolbox 11.0.1 & Admintoolbox.msgraph 1.2.0
+     - 4.2.0 Admintoolbox 11.0.3 & Admintoolbox.msgraph 1.3.0
+     - 4.3.0 Admintoolbox.FortiWizard 2.16.0 and other modules version bump
+     - 4.4.0 Admintoolbox.FileManagement 1.14.0
+     - 4.5.0 Admintoolbox.FFtools 4.13.1
+     - 4.6.0 Admintoolbox.FFtools 4.13.3
+     - 4.7.0 Admintoolbox.FFtools 4.14.0
+     - 4.8.0 Update all admintoolbox modules
+     - 4.9.0 Update version check to look for host path. Both PSPortables now support same profile without differences.
+     - 5.0.0 Updated PowerShell to 7.3.0
+     - 6.0.0 Updated modules and reworked install/update functions. Now this downloads minimal modules unless specified otherwise.
+     - 6.1.0 Upgraded oh-my-posh package
+     - 6.2.0 Admintoolbox.networking 2.14.0
+     - 6.3.0 Admintoolbox.fftools 4.15.0
+     - 6.4.0 Admintoolbox.Networking 2.15.0
+     - 6.5.0 Admintoolbox.Networking 2.15.3
+     - 6.6.0 Update admintoolbox modules
+     - 6.7.0 Update admintoolbox modules
+     - 6.8.0 Update admintoolbox modules
+     - 6.9.0 Admintoolbox.Fun 1.6.49
+     - 6.10.0 Admintoolbox.Fortiwizard 2.17.0
+     - 6.10.1 Admintoolbox.Fortiwizard 2.17.1
+     - 6.11.0 Admintoolbox.Networking 2.17.0
+     - 6.12.0 Add completionpredictor module 0.1.1
+     - 6.13.0 Add asset icon
+     - 6.14.0 Update all admintoolbox modules
+     - 6.15.0 Update Nerd font Version & Update prompt for newer oh-my-posh versions fix.
+     - 6.16.0 Admintoolbox.Activedirectory 1.10.0
+     - 6.17.0 Update all admintoolbox modules
+     - 6.18.0 admintoolbox.office365 4.0.1
+     - 6.19.0 Update all admintoolbox modules
+     - 6.20.0 Update admintoolbox.fortiwizard. Add Wildcard p2 selectors
+     - 6.21.0 Update admintoolbox.msgraph. Add the Disable--UserServicePlan function
+     - 6.22.0 Update get-publicip to accept a string array, add a rate limit, and provide custompsobject outputs.
+     - 6.23.0 Update all admintoolbox modules
+     - 6.24.0 Update all admintoolbox modules
+     - 6.25.0 Update all admintoolbox modules
+     - 6.26.0 Update all admintoolbox modules for update pnp.powershell login method
+     - 6.27.0 Update all admintoolbox modules
+     - 6.28.0 Update all admintoolbox modules
+     - 6.29.0 Update all admintoolbox modules
+     - 6.30.0 Update all admintoolbox modules
+     - 6.31.0 Remove outdated profile snippets
+     - 6.31.1 Fix admintoolbox.msgraph test-requirements connect function.
+     - 6.32.0 Update all admintoolbox modules
+     - 6.33.0 Update all admintoolbox modules
+     - 7.0.0 Introducing AdminToolbox.SecOps Module
+     - 7.1.0 Update all admintoolbox modules
+     - 8.0.0 Updating to powershell version 7.4.7. Refraining from 7.5 until out-gridview binaryformatter problems are resolved. This will fix exchangeonlinemanagement import failures on version 3.7
+     - 8.1.0 Update all admintoolbox modules
+     - 8.2.0 Update all admintoolbox modules
+     - 8.3.0 Update all admintoolbox modules
+     - 8.4.0 Update all admintoolbox modules
+     - 8.5.0 Add MSCommerce module and functions
+     - 8.6.0 Add functions to admintoolbox.filemanagement module and update all admintoolbox modules. New functions use sebackuprivlege functionality to manipulate files that you don't have direct acl access to. Allows native powershell functions to do what robocopy /b parameter does and more.
+     - 8.7.0 Update all admintoolbox modules
+     - 8.8.0 Update all admintoolbox modules
+     - 8.8.1 Update the prompt to handle the latest oh-my-posh versions from store.
+     - 8.9.0 Add sharepoint modules to the full install
+     - 8.10.0 Update all admintoolbox modules
+     - 8.11.0 Update all admintoolbox modules
+     - 8.12.0 Update all admintoolbox modules
+     - 8.13.0 Update all admintoolbox modules
